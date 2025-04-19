@@ -1,0 +1,1560 @@
+<div class="post-content">
+ <p>
+  FROM: High Command
+  <br/>
+  TO: Arma 3 Users
+  <br/>
+  UNIT: Main Branch
+  <br/>
+  ACTIVITY: Game Update 2.10 (Thermal Imagery Enhancements, Scripted Terrain Deformation, Platform Support)
+  <br/>
+  SIZE: ~504 MB / ~36 MB (depends on Contact ownership)
+  <br/>
+ </p>
+ <h1>
+  NOTES
+ </h1>
+ <ul>
+  <li>
+   Contact consists of 2 data packs / folders:
+   <ul>
+    <li>
+     Contact (via
+     <i>
+      PLAY CONTACT
+     </i>
+     or
+     <i>
+      -mod=Contact
+     </i>
+     ): for the singleplayer "First Contact" campaign experience (accessible only to owners - optionally loaded)
+    </li>
+    <li>
+     Contact (Platform): for most other use cases, including sandbox multiplayer (loaded by default for all players)
+    </li>
+   </ul>
+  </li>
+  <li>
+   Consider using the Steam client option to verify the integrity of the local game cache to avoid corrupted data after downloading this update.
+  </li>
+  <li>
+   Consider defragmenting your HDD after downloading large updates.
+  </li>
+  <li>
+   Updating a deeply moddable game and its platform is not without risks. We use various methods to communicate upcoming changes to our awesome modding community, such as via the
+   <a href="https://dev.arma3.com/" target="">
+    Dev Hub
+   </a>
+   . We also co-operate directly on troubleshooting, and we offer an opportunity to test updates via our
+   <a href="https://dev.arma3.com/rc-branch" target="">
+    Release Candidate tests
+   </a>
+   . Modders, server administrators, and other members of the community do their best to prepare for updates and to address issues post-release as quickly as possible. Please be mindful of some interruptions (especially in the first hours / days after a release) while we all work to improve the game together.
+  </li>
+  <li>
+   A
+   <i>
+    Legacy Build
+   </i>
+   Steam branch is available for advanced users. It contains the previous significant main branch version (2.08). It can be used to compare specific changes between major releases. The access code for this branch is:
+   <i>
+    Arma3Legacy208
+   </i>
+  </li>
+  <li>
+   This update does not apply to
+   <a href="http://dev.arma3.com/ports" target="">
+    the experimental Linux and Mac client port betas
+   </a>
+   .
+  </li>
+  <li>
+   You can find the servers in the Steam library (switch the filter to "Tools") - "Arma 3 Server" (based on your OS, it will download the Windows or Linux version).
+   <ul>
+    <li>
+     Administrators can also use the command-line
+     <a href="https://developer.valvesoftware.com/wiki/SteamCMD" target="">
+      SteamCMD
+     </a>
+     utility. The app ID is to be 233780.
+    </li>
+    <li>
+     NVIDIA GameWorks™ Technology provided under license from NVIDIA Corporation. Copyright © 2002-2018 NVIDIA Corporation. All rights reserved. NVIDIA® and PhysX® are trademarks of NVIDIA Corporation and are used under license.
+    </li>
+   </ul>
+  </li>
+  <li>
+   In case of problems, please check the
+   <a href="http://support.bistudio.com/arma-3" target="">
+    Bohemia Interactive support F.A.Q.
+   </a>
+   ,
+   <a href="http://arma3.com/faq" target="">
+    Arma 3 F.A.Q.
+   </a>
+   ,
+   <a href="http://www.battleye.com/support/faq/" target="">
+    BattlEye F.A.Q.
+   </a>
+   , or
+   <a href="https://arma3.com/launcher/troubleshooting" target="">
+    Launcher troubleshooting guide
+   </a>
+   .
+  </li>
+  <li>
+   You can help us to further improve the game by posting your feedback on the
+   <a href="http://feedback.arma3.com/" target="">
+    Feedback Tracker
+   </a>
+   .
+  </li>
+ </ul>
+ <h1>
+  CHANGELOG
+ </h1>
+ <h2>
+  DATA
+ </h2>
+ <ul>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/SQF_Bytecode" target="">
+    SQFC Bytecode
+   </a>
+   files for Functions_F and UI_F were reintroduced
+  </li>
+  <li>
+   Added: Local Only objects to Eden Editor statistics
+  </li>
+  <li>
+   Added:
+   <a href="https://reforger.armaplatform.com/" target="">
+    Arma Reforger
+   </a>
+   menu color preset
+  </li>
+  <li>
+   Added:
+   <a href="https://reforger.armaplatform.com/" target="">
+    Arma Reforger
+   </a>
+   controls preset (in so far possible to replicate)
+  </li>
+  <li>
+   Added: Helper script function
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_setRain" target="">
+    BIS_fnc_setRain
+   </a>
+  </li>
+  <li>
+   Tweaked: Hit registration on swimming and diving animations -
+   <a href="https://feedback.bistudio.com/T163263" target="">
+    FT-T163263
+   </a>
+  </li>
+  <li>
+   Tweaked: Materials on Kamysh and Gorgon turrets -
+   <a href="https://feedback.bistudio.com/T163395" target="">
+    FT-T163395
+   </a>
+  </li>
+  <li>
+   Tweaked: Expanded Virtual Arsenal
+   <i>
+    itemSelected
+   </i>
+   and
+   <i>
+    itemDeselected
+   </i>
+   Event Handlers so they also work with items and accessories
+  </li>
+  <li>
+   Tweaked: Character turning in
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_scriptedMove" target="">
+    BIS_fnc_scriptedMove
+   </a>
+   was improved -
+   <a href="https://feedback.bistudio.com/T164620" target="">
+    FT-T164620
+   </a>
+  </li>
+  <li>
+   Tweaked: Thermal light influence on Viper, CTRG and Ghillie uniforms (in reaction to engine TI tweaks below)
+  </li>
+  <li>
+   Tweaked: Environmental sounds of insects and birds are muted when
+   <i>
+    RainParticles
+   </i>
+   <i>
+    snow=1
+   </i>
+   (mod support, there is no vanilla snow coming) -
+   <a href="https://feedback.bistudio.com/T64553" target="">
+    FT-T64553
+   </a>
+  </li>
+  <li>
+   Tweaked:
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_scriptedMove" target="">
+    BIS_fnc_scriptedMove
+   </a>
+   now supports a group parameter -
+   <a href="https://feedback.bistudio.com/T164620" target="">
+    FT-T164620
+   </a>
+  </li>
+  <li>
+   Tweaked: Ambient temperatures on Livonia, Malden and Tanoa to match their geolocation better (especially in reaction to engine TI tweaks below) -
+   <a href="https://feedback.bistudio.com/T160044" target="">
+    FT-T160044
+   </a>
+  </li>
+  <li>
+   Tweaked: Rear view camera on AMV-7 -
+   <a href="https://feedback.bistudio.com/T164530" target="">
+    FT-T164530
+   </a>
+  </li>
+  <li>
+   Fixed: LDF mine specialist was created with the wrong backpack type -
+   <a href="https://feedback.bistudio.com/T163192" target="">
+    FT-T163192
+   </a>
+  </li>
+  <li>
+   Fixed: LDF weapons crate spawning with an incorrect .45 magazine -
+   <a href="https://feedback.bistudio.com/T163190" target="">
+    FT-T163190
+   </a>
+  </li>
+  <li>
+   Fixed: Bearing mismatch in the Rhino MGS commander sight -
+   <a href="https://feedback.bistudio.com/T163946" target="">
+    FT-T163946
+   </a>
+  </li>
+  <li>
+   Fixed: Init script error in some objects types
+  </li>
+  <li>
+   Fixed: Some of the CTRG units were missing role icons in the command bar -
+   <a href="https://feedback.bistudio.com/T163146" target="">
+    FT-T163146
+   </a>
+  </li>
+  <li>
+   Fixed: Init script error for Taru pods -
+   <a href="https://feedback.bistudio.com/T164036" target="">
+    FT-T164036
+   </a>
+  </li>
+  <li>
+   Fixed: Script error in a AI spawn module -
+   <a href="https://feedback.bistudio.com/T154991" target="">
+    FT-T154991
+   </a>
+  </li>
+  <li>
+   Fixed: NATO's speedboat minigun had a wrong rear gunner perspective when in aiming mode -
+   <a href="https://feedback.bistudio.com/T163134" target="">
+    FT-T163134
+   </a>
+  </li>
+  <li>
+   Fixed: Error when stacked Event Handler code was too large -
+   <a href="https://feedback.bistudio.com/T164036" target="">
+    FT-T164036
+   </a>
+  </li>
+  <li>
+   Fixed: Graphical glitches in the damaged model of
+   <i>
+    Land_i_Stone_HouseSmall_V2_F
+   </i>
+   -
+   <a href="https://feedback.bistudio.com/T163748" target="">
+    FT-T163748
+   </a>
+  </li>
+  <li>
+   Fixed: Typo in
+   <i>
+    RscDisplayMain
+   </i>
+   -
+   <a href="https://feedback.bistudio.com/T164000" target="">
+    FT-T164000
+   </a>
+  </li>
+  <li>
+   Fixed: NFOV UI indicator on Titan launcher -
+   <a href="https://feedback.bistudio.com/T71386" target="">
+    FT-T71386
+   </a>
+  </li>
+  <li>
+   Fixed: Zeus side selection in UI was not working properly -
+   <a href="https://feedback.bistudio.com/T156738" target="">
+    FT-T156738
+   </a>
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_scriptedMove" target="">
+    BIS_fnc_scriptedMove
+   </a>
+   function was upgraded to work with Arma 3 -
+   <a href="https://feedback.bistudio.com/T164620" target="">
+    FT-T164620
+   </a>
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_3DENNotification" target="">
+    BIS_fnc_3DENNotification
+   </a>
+   was playing the notification through the radio channel -
+   <a href="https://feedback.bistudio.com/T159739" target="">
+    FT-T159739
+   </a>
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_3DENNotification" target="">
+    BIS_fnc_3DENNotification
+   </a>
+   will now only play sound if used outside of Eden Editor -
+   <a href="https://feedback.bistudio.com/T159739" target="">
+    FT-T159739
+   </a>
+  </li>
+  <li>
+   Fixed: Abandoned vehicles would respawn only one time when using the respawn module -
+   <a href="https://feedback.bistudio.com/T123940#1629575" target="">
+    FT-T123940
+   </a>
+  </li>
+  <li>
+   Fixed: Script error on the Military Coffin (Flag) on Eden Editor undo -
+   <a href="https://feedback.bistudio.com/T162775" target="">
+    FT-T162775
+   </a>
+  </li>
+  <li>
+   Fixed: Nyx returned an incorrect number of available seats for some of the variants
+  </li>
+  <li>
+   Fixed: DAR rocket pod was missing its MFD icon on AH-99 Blackfoot -
+   <a href="https://feedback.bistudio.com/T164611" target="">
+    FT-T164611
+   </a>
+  </li>
+  <li>
+   Fixed: Static weapon visibility in spectator mode -
+   <a href="https://feedback.bistudio.com/T165786" target="">
+    FT-T165786
+   </a>
+  </li>
+  <li>
+   Fixed: Player rank in 2 "First Contact" scenarios
+  </li>
+  <li>
+   Fixed: Script error on Eden Editor undo for the decon showers -
+   <a href="https://feedback.bistudio.com/T162775" target="">
+    FT-T162775
+   </a>
+  </li>
+  <li>
+   Fixed: Modules always being listed as 0 in Eden Editor statistics
+   <br/>
+  </li>
+ </ul>
+ <h2>
+  ENGINE
+ </h2>
+ <ul>
+  <li>
+   <b>
+    Added: Ability to edit the terrain heightmap via script
+   </b>
+   (
+   <a href="https://community.bistudio.com/wiki/setTerrainHeight" target="">
+    setTerrainHeight
+   </a>
+   /
+   <a href="https://community.bistudio.com/wiki/getTerrainHeight" target="">
+    getTerrainHeight
+   </a>
+   - please read the documentation disclaimers)
+  </li>
+  <li>
+   <b>
+    Added: Terrain Locations can now be edited like dynamically created ones
+   </b>
+   (see
+   <a href="https://community.bistudio.com/wiki/createLocation" target="">
+    createLocation
+   </a>
+   for relevant commands) -
+   <a href="https://feedback.bistudio.com/T154323" target="">
+    FT-T154323
+   </a>
+  </li>
+  <li>
+   <b>
+    Added: Ability for mods to
+    <a href="https://community.bistudio.com/wiki/Eden_Editor:_Custom_Composition#Modding_Compositions" target="">
+     distribute Eden Editor Compositions
+    </a>
+    in their data
+   </b>
+  </li>
+  <li>
+   <b>
+    Added: Local Only option for certain objects in Eden Editor
+   </b>
+   (use primarily for static decorative objects in large-scale scenarios)
+  </li>
+  <li>
+   <b>
+    Added:
+    <a href="https://community.bistudio.com/wiki/Arma_3:_Event_Handlers#Group_Event_Handlers" target="">
+     Group Event Handlers
+    </a>
+   </b>
+  </li>
+  <li>
+   <b>
+    Added: Scripted
+    <a href="https://community.bistudio.com/wiki/Arma_3:_Event_Handlers#Projectile_Event_Handlers" target="">
+     Ammo Event Handlers
+    </a>
+   </b>
+  </li>
+  <li>
+   Added: Projectiles now have a variable namespace (local only)
+  </li>
+  <li>
+   Added:
+   <i>
+    CargoTypeWhitelist
+   </i>
+   for
+   <a href="https://community.bistudio.com/wiki/Arma_3:_Vehicle_in_Vehicle_Transport" target="">
+    Vehicle-in-Vehicle transport
+   </a>
+  </li>
+  <li>
+   Added: Automatically adding Creator DLC tags to compositions that contain CDLC objects
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/setUnitFreefallHeight" target="">
+    setUnitFreefallHeight
+   </a>
+   and
+   <a href="https://community.bistudio.com/wiki/getUnitFreefallInfo" target="">
+    getUnitFreefallInfo
+   </a>
+   script commands -
+   <a href="https://feedback.bistudio.com/T79436" target="">
+    FT-T79436
+   </a>
+   ,
+   <a href="https://feedback.bistudio.com/T86405" target="">
+    FT-T86405
+   </a>
+   ,
+   <a href="https://feedback.bistudio.com/T75547" target="">
+    FT-T75547
+   </a>
+  </li>
+  <li>
+   Added:
+   <i>
+    -noPauseAudio
+   </i>
+   start parameter to keep audio running while the game is not in focus -
+   <a href="https://feedback.bistudio.com/T163147" target="">
+    FT-T163147
+   </a>
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/findAny" target="">
+    findAny
+   </a>
+   script command -
+   <a href="https://feedback.bistudio.com/T154274" target="">
+    FT-T154274
+   </a>
+  </li>
+  <li>
+   Added: Script commands
+   <a href="https://community.bistudio.com/wiki/compatibleMagazines" target="">
+    compatibleMagazines
+   </a>
+   and
+   <a href="https://community.bistudio.com/wiki/compatibleItems" target="">
+    compatibleItems
+   </a>
+  </li>
+  <li>
+   Added: Alternate syntax for
+   <a href="https://community.bistudio.com/wiki/canAdd" target="">
+    canAdd
+   </a>
+   to check an item's or magazine's compatibility with weapons
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/setObjectTexture" target="">
+    setObjectTexture
+   </a>
+   (Global) and
+   <a href="https://community.bistudio.com/wiki/setObjectMaterial" target="">
+    setObjectMaterial
+   </a>
+   (Global) now accept strings defined in
+   <i>
+    hiddenSelections
+   </i>
+   config -
+   <a href="https://feedback.bistudio.com/T160604" target="">
+    FT-T160604
+   </a>
+  </li>
+  <li>
+   Added: Script command
+   <a href="https://community.bistudio.com/wiki/ropesAttachedTo" target="">
+    ropesAttachedTo
+   </a>
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/loadConfig" target="">
+    loadConfig
+   </a>
+   script command
+  </li>
+  <li>
+   Added: Use of
+   <a href="https://community.bistudio.com/wiki/setObjectTexture" target="">
+    setObjectTexture
+   </a>
+   (Global) to override a clan selection texture
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/getObjectID" target="">
+    getObjectID
+   </a>
+   script command -
+   <a href="https://feedback.bistudio.com/T163749" target="">
+    FT-T163749
+   </a>
+  </li>
+  <li>
+   Added: Script commands
+   <a href="https://community.bistudio.com/wiki/missionProfileNamespace" target="">
+    missionProfileNamespace
+   </a>
+   ,
+   <a href="https://community.bistudio.com/wiki/saveMissionProfileNamespace" target="">
+    saveMissionProfileNamespace
+   </a>
+   ,
+   <a href="https://community.bistudio.com/wiki/isMissionProfileNamespaceLoaded" target="">
+    isMissionProfileNamespaceLoaded
+   </a>
+   -
+   <a href="https://feedback.bistudio.com/T163751" target="">
+    FT-T163751
+   </a>
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/getOpticsMode" target="">
+    getOpticsMode
+   </a>
+   and
+   <a href="https://community.bistudio.com/wiki/setOpticsMode" target="">
+    setOpticsMode
+   </a>
+   scripts commands -
+   <a href="https://feedback.bistudio.com/T124258" target="">
+    FT-T124258
+   </a>
+  </li>
+  <li>
+   Added: Error message when trying to upload a scenario to Steam Workshop that is too large -
+   <a href="https://feedback.bistudio.com/T163783" target="">
+    FT-T163783
+   </a>
+  </li>
+  <li>
+   Added:
+   <i>
+    OpticsModeChanged
+   </i>
+   Event Handler -
+   <a href="https://feedback.bistudio.com/T151270" target="">
+    FT-T151270
+   </a>
+  </li>
+  <li>
+   Added:
+   <i>
+    OpticsSwitch
+   </i>
+   Event Handler -
+   <a href="https://feedback.bistudio.com/T151270" target="">
+    FT-T15127
+   </a>
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/actionKeysEx" target="">
+    actionKeysEx
+   </a>
+   script command
+  </li>
+  <li>
+   Added: Alternative syntax for the
+   <a href="https://community.bistudio.com/wiki/action" target="">
+    action
+   </a>
+   script command
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/weaponsInfo" target="">
+    weaponsInfo
+   </a>
+   script command
+  </li>
+  <li>
+   Added: Config
+   <i>
+    Init
+   </i>
+   Event Handler for
+   <i>
+    CfgAmmo
+   </i>
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/lineIntersectsSurfaces" target="">
+    lineIntersectsSurfaces
+   </a>
+   now returns
+   <a href="https://community.bistudio.com/wiki/selectionNames" target="">
+    selectionName
+   </a>
+   and surface material -
+   <a href="https://feedback.bistudio.com/T163473" target="">
+    FT-T163473
+   </a>
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/activeTitleEffectParams" target="">
+    activeTitleEffectParams
+   </a>
+   script command -
+   <a href="https://feedback.bistudio.com/T164385" target="">
+    FT-T164385
+   </a>
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/nearestMines" target="">
+    nearestMines
+   </a>
+   script command -
+   <a href="https://feedback.bistudio.com/T163398" target="">
+    FT-T163398
+   </a>
+  </li>
+  <li>
+   Added: Script command
+   <a href="https://community.bistudio.com/wiki/allObjects" target="">
+    allObjects
+   </a>
+   -
+   <a href="https://feedback.bistudio.com/T164242" target="">
+    FT-T164242
+   </a>
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/Post_Process_Effects#Resolution" target="">
+    "Resolution" Post Processing effect
+   </a>
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/playSoundUI" target="">
+    playSoundUI
+   </a>
+   script command
+  </li>
+  <li>
+   Added:
+   <i>
+    EntityCreated
+   </i>
+   and
+   <i>
+    ProjectileCreated
+   </i>
+   Mission Event Handlers -
+   <a href="https://feedback.bistudio.com/T124460" target="">
+    FT-T124460
+   </a>
+   ,
+   <a href="https://feedback.bistudio.com/T155096" target="">
+    FT-T155096
+   </a>
+  </li>
+  <li>
+   Added:
+   <i>
+    autoAdjustTexture
+   </i>
+   config parameter to
+   <i>
+    RscShortcutButton
+   </i>
+   to improve texture alignment -
+   <a href="https://feedback.bistudio.com/T164820" target="">
+    FT-T164820
+   </a>
+  </li>
+  <li>
+   Added:
+   <i>
+    title
+   </i>
+   attribute support for
+   <i>
+    a
+   </i>
+   <img/>
+   and
+   <i>
+    img
+   </i>
+   HTML and diary tags -
+   <a href="https://feedback.bistudio.com/T156361" target="">
+    FT-T156361
+   </a>
+  </li>
+  <li>
+   Added: Support for a diary record icon to
+   <a href="https://community.bistudio.com/wiki/createDiaryRecord" target="">
+    createDiaryRecord
+   </a>
+   and
+   <a href="https://community.bistudio.com/wiki/setDiaryRecordText" target="">
+    setDiaryRecordText
+   </a>
+   -
+   <a href="https://feedback.bistudio.com/T160326" target="">
+    FT-T160326
+   </a>
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/setTurretOpticsMode" target="">
+    setTurretOpticsMode
+   </a>
+   and
+   <a href="https://community.bistudio.com/wiki/getTurretOpticsMode" target="">
+    getTurretOpticsMode
+   </a>
+   commands
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/allDiaryRecords" target="">
+    allDiaryRecords
+   </a>
+   script command
+  </li>
+  <li>
+   Added:
+   <i>
+    filePatchingExceptions[]
+   </i>
+   <a href="https://community.bistudio.com/wiki/Arma_3:_Server_Config_File" target="">
+    server config
+   </a>
+   option
+  </li>
+  <li>
+   Added: Turret config
+   <i>
+    ballisticsComputerOverride
+   </i>
+   option that can force turret ballistics computer capabilities regardless of the used weapon
+  </li>
+  <li>
+   Added: "Unlisted" visibility setting to Scenario and Composition Workshop uploads -
+   <a href="https://feedback.bistudio.com/T163573" target="">
+    FT-T163573
+   </a>
+  </li>
+  <li>
+   Added: Alternative syntax to the
+   <a href="https://community.bistudio.com/wiki/resize" target="">
+    resize
+   </a>
+   command -
+   <a href="https://feedback.bistudio.com/T165862" target="">
+    FT-T165862
+   </a>
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/getTerrainInfo" target="">
+    getTerrainInfo
+   </a>
+   script command -
+   <a href="https://feedback.bistudio.com/T151907" target="">
+    FT-T151907
+   </a>
+  </li>
+  <li>
+   Added:
+   <i>
+    OnChildCreated
+   </i>
+   Display Event Handler
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/isSteamOverlayEnabled" target="">
+    isSteamOverlayEnabled
+   </a>
+   script command
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/ctrlSetURLOverlayMode" target="">
+    ctrlSetURLOverlayMode
+   </a>
+   and
+   <a href="https://community.bistudio.com/wiki/ctrlURLOverlayMode" target="">
+    ctrlURLOverlayMode
+   </a>
+   script commands
+  </li>
+  <li>
+   Added:
+   <i>
+    overlayMode
+   </i>
+   Control config parameter
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/ctrlSetShadow" target="">
+    ctrlSetShadow
+   </a>
+   and
+   <a href="https://community.bistudio.com/wiki/ctrlShadow" target="">
+    ctrlShadow
+   </a>
+   script commands
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/getEventHandlerInfo" target="">
+    getEventHandlerInfo
+   </a>
+   script command -
+   <a href="https://feedback.bistudio.com/T166230" target="">
+    FT-T166230
+   </a>
+  </li>
+  <li>
+   <b>
+    Tweaked: Thermal Imaging overhaul
+   </b>
+   (thanks also to
+   <i>
+    Dslyecxi
+   </i>
+   )
+  </li>
+  <li>
+   <b>
+    Tweaked: R2T now supports all Thermal Imaging modes
+   </b>
+   (previously only BHOT/WHOT/GHOT)
+  </li>
+  <li>
+   <b>
+    Tweaked:
+    <a href="https://community.bistudio.com/wiki/setPiPEffect" target="">
+     setPiPEffect
+    </a>
+    now supports all possible Thermal Imaging modes
+   </b>
+  </li>
+  <li>
+   <b>
+    Tweaked: Adjusted star visibility in Image Intensification night vision
+   </b>
+   -
+   <a href="https://www.reddit.com/r/arma/comments/ue1nho/for_what_purpose_doesnt_the_nightvision_show/" target="">
+    Reddit
+   </a>
+  </li>
+  <li>
+   Tweaked: Limited length of script errors so that on-screen error messages are always shown completely
+  </li>
+  <li>
+   Tweaked: Performance improvement on Linux servers
+  </li>
+  <li>
+   Tweaked: Removed network reports (
+   <i>
+    networkDiagInterval
+   </i>
+   ,
+   <i>
+    NetStrStatsExport
+   </i>
+   ) (still available in Profiling builds)
+  </li>
+  <li>
+   Tweaked: Performance improvement if there are many vehicles on the map
+  </li>
+  <li>
+   Tweaked:
+   <a href="https://community.bistudio.com/wiki/skipTime" target="">
+    skipTime
+   </a>
+   script command is now limited to a maximum ~1000 hours per skip -
+   <a href="https://feedback.bistudio.com/T68952" target="">
+    FT-T68952
+   </a>
+  </li>
+  <li>
+   Tweaked: Arma 3 Units default timeout was reduced from 30s to 10s
+  </li>
+  <li>
+   Tweaked: Submunition
+   <i>
+    _triggerOnImpact
+   </i>
+   now only triggers for actual hits, not for deflections
+  </li>
+  <li>
+   Tweaked:
+   <i>
+    HitPart
+   </i>
+   events now fire for remote rifle bullets (not missiles, grenades or other projectile types)
+  </li>
+  <li>
+   Tweaked: Persistent
+   <a href="https://community.bistudio.com/wiki/missionProfileNamespace" target="">
+    missionProfileNamespace
+   </a>
+   name can be overridden with
+   <i>
+    missionGroup
+   </i>
+   mission config parameter
+  </li>
+  <li>
+   Tweaked: Several adjustments to scripted vehicle towing -
+   <a href="https://feedback.bistudio.com/T163769" target="">
+    FT-T163769
+   </a>
+  </li>
+  <li>
+   Tweaked: Inventory item lists are now sorted -
+   <a href="https://feedback.bistudio.com/T163668" target="">
+    FT-T163668
+   </a>
+  </li>
+  <li>
+   Tweaked: Inventory UI listboxes now have the class names of the item inside
+   <a href="https://community.bistudio.com/wiki/lbData" target="">
+    lbData
+   </a>
+   (previously only magazines had them) -
+   <a href="https://feedback.bistudio.com/T163668" target="">
+    FT-T163668
+   </a>
+  </li>
+  <li>
+   Tweaked: New position names added to
+   <a href="https://community.bistudio.com/wiki/emptyPositions" target="">
+    emptyPositions
+   </a>
+  </li>
+  <li>
+   Tweaked:
+   <a href="https://community.bistudio.com/wiki/awake" target="">
+    awake
+   </a>
+   script command is extended to add the ability to nudge dead characters in a temporary ragdoll state -
+   <a href="https://feedback.bistudio.com/T73168" target="">
+    FT-T73168
+   </a>
+  </li>
+  <li>
+   Tweaked:
+   <i>
+    IncomingMissile
+   </i>
+   Event Handler now provides the actual missile as argument
+  </li>
+  <li>
+   Tweaked:
+   <i>
+    RscShortcutButton
+   </i>
+   <i>
+    TextPos
+   </i>
+   class has received an optional
+   <i>
+    forceMiddle
+   </i>
+   config parameter -
+   <a href="https://feedback.bistudio.com/T165085" target="">
+    FT-T165085
+   </a>
+  </li>
+  <li>
+   Tweaked:
+   <i>
+    onFlare.sqs
+   </i>
+   script now receives the flare projectile as argument
+  </li>
+  <li>
+   Tweaked: Added an explosion source projectile parameter to the
+   <i>
+    Explosion
+   </i>
+   Entity Event Handler
+  </li>
+  <li>
+   Tweaked: Unauthorized Headless Client log messages now also include the IP address
+  </li>
+  <li>
+   Tweaked: Improved performance of
+   <a href="https://community.bistudio.com/wiki/nearestObject" target="">
+    nearestObject
+   </a>
+   if the desired object is close to the source position
+  </li>
+  <li>
+   Tweaked: Improved performance of
+   <a href="https://community.bistudio.com/wiki/nearestObjects" target="">
+    nearestObjects
+   </a>
+   ,
+   <a href="https://community.bistudio.com/wiki/nearObjects" target="">
+    nearObjects
+   </a>
+   ,
+   <a href="https://community.bistudio.com/wiki/nearestTerrainObjects" target="">
+    nearestTerrainObjects
+   </a>
+   when scanning a large area
+  </li>
+  <li>
+   Tweaked: Improved performance of
+   <a href="https://community.bistudio.com/wiki/isFlatEmpty" target="">
+    isFlatEmpty
+   </a>
+   when objects blocking the space are close to the center
+  </li>
+  <li>
+   Tweaked: Improved performance of
+   <a href="https://community.bistudio.com/wiki/nearSupplies" target="">
+    nearSupplies
+   </a>
+   when scanning a large area
+  </li>
+  <li>
+   Tweaked: Improved performance of
+   <a href="https://community.bistudio.com/wiki/nearRoads" target="">
+    nearRoads
+   </a>
+   when scanning a large area
+  </li>
+  <li>
+   Tweaked: Added alternative syntax for
+   <a href="https://community.bistudio.com/wiki/allowCrewInImmobile" target="">
+    allowCrewInImmobile
+   </a>
+   -
+   <a href="https://feedback.bistudio.com/T165584" target="">
+    FT-T165584
+   </a>
+  </li>
+  <li>
+   Tweaked: Voice over Net is now by default handled via the server instead of peer-to-peer (a server option exists to switch it back)
+  </li>
+  <li>
+   Tweaked: Vehicles now change locality to the effective commander if no driver or copilot are available -
+   <a href="https://feedback.bistudio.com/T153212" target="">
+    FT-T153212
+   </a>
+  </li>
+  <li>
+   Tweaked: Performance improvement for PBO file lookups
+  </li>
+  <li>
+   Tweaked: Publishing a scenario to Steam Workshop now adds tags for used DLCs by default
+  </li>
+  <li>
+   Tweaked:
+   <a href="https://community.bistudio.com/wiki/isEqualTypeAll" target="">
+    isEqualTypeAll
+   </a>
+   and
+   <a href="https://community.bistudio.com/wiki/isEqualTypeArray" target="">
+    isEqualTypeArray
+   </a>
+   will return false instead of an error if input is not an array
+  </li>
+  <li>
+   Tweaked:
+   <a href="https://community.bistudio.com/wiki/ctrlSetAngle" target="">
+    ctrlSetAngle
+   </a>
+   and
+   <a href="https://community.bistudio.com/wiki/ctrlAngle" target="">
+    ctrlAngle
+   </a>
+   now support
+   <i>
+    CT_ACTIVETEXT
+   </i>
+   Controls
+  </li>
+  <li>
+   Tweaked: Lights with
+   <i>
+    dayTime
+   </i>
+   and
+   <i>
+    flare
+   </i>
+   now automatically increase their brightness during daytime in order to stay visible -
+   <a href="https://feedback.bistudio.com/T161893" target="">
+    FT-T161893
+   </a>
+  </li>
+  <li>
+   Tweaked: Objects attached to a unit now stay attached when entering a vehicle -
+   <a href="https://feedback.bistudio.com/T162552" target="">
+    FT-T162552
+   </a>
+  </li>
+  <li>
+   Tweaked:
+   <a href="https://community.bistudio.com/wiki/getResolution" target="">
+    getResolution
+   </a>
+   command output was extended with the current texture quality value
+  </li>
+  <li>
+   Tweaked: Logging to Windows dedicated console log is now asynchronous -
+   <a href="https://feedback.bistudio.com/T155902" target="">
+    FT-T155902
+   </a>
+   <br/>
+  </li>
+  <li>
+   Tweaked:
+   <i>
+    BuildingChanged
+   </i>
+   Event Handler is now also triggering for destroyed tents and walls
+  </li>
+  <li>
+   Fixed: Static or mounted M2 machine guns kept auto-reloading on remote clients -
+   <a href="https://feedback.bistudio.com/T161007" target="">
+    FT-T161007
+   </a>
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/canAdd" target="">
+    canAdd
+   </a>
+   script command did not check against cumulative container space of a character for multiple items -
+   <a href="https://feedback.bistudio.com/T127184" target="">
+    FT-T127184
+   </a>
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/ropeSegments" target="">
+    ropeSegments
+   </a>
+   script command reported an incorrect return type
+  </li>
+  <li>
+   Fixed: It was possible to see illegal in-game dates before 1970 -
+   <a href="https://feedback.bistudio.com/T163269" target="">
+    FT-T163269
+   </a>
+  </li>
+  <li>
+   Fixed: Incoming missile warnings were played through the radio instead of the effects channel -
+   <a href="https://feedback.bistudio.com/T163245" target="">
+    FT-T163245
+   </a>
+  </li>
+  <li>
+   Fixed: Server did not fully disable VoN when
+   <i>
+    disableVoN
+   </i>
+   config parameter was set
+  </li>
+  <li>
+   Fixed: Counter Measures did not provide the projectile in
+   <i>
+    Fired
+   </i>
+   /
+   <i>
+    FiredMan
+   </i>
+   Event Handlers
+  </li>
+  <li>
+   Fixed:
+   <i>
+    Fired
+   </i>
+   /
+   <i>
+    FiredMan
+   </i>
+   Event Handlers often did not provide the projectile when the shooter is remote in multiplayer
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/triggerAmmo" target="">
+    triggerAmmo
+   </a>
+   command not working on bullets, grenades, mines, flares, submunition -
+   <a href="https://feedback.bistudio.com/T163630" target="">
+    FT-T163630
+   </a>
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/ropeAttachTo" target="">
+    ropeAttachTo
+   </a>
+   errored when an object was passed as argument instead of an array
+  </li>
+  <li>
+   Fixed: Crash when inter-creating ropes between transport vehicles
+  </li>
+  <li>
+   Fixed: Cruise Control would not disengage when the engine is turned off -
+   <a href="https://feedback.bistudio.com/T163709" target="">
+    FT-T163709
+   </a>
+  </li>
+  <li>
+   Fixed: Cruise Control was not stopped when using a handbrake -
+   <a href="https://feedback.bistudio.com/T163813" target="">
+    FT-T163813
+   </a>
+  </li>
+  <li>
+   Fixed: Invalid "setting invalid pitch" log messages -
+   <a href="https://feedback.bistudio.com/T163807" target="">
+    FT-T163807
+   </a>
+  </li>
+  <li>
+   Fixed: Being unable to click the bottom-most item in the inventory if a scrollbar is present -
+   <a href="https://feedback.bistudio.com/T163667" target="">
+    FT-T163667
+   </a>
+  </li>
+  <li>
+   Fixed: Various crashes that could happen if a group had no leader unit
+  </li>
+  <li>
+   Fixed: Script compile errors due to missing a closing brace were not logged to RPT
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/exitWith" target="">
+    exitWith
+   </a>
+   potentially exiting the whole script (instead of just one layer) if the script also tried to compile a script file with a missing closing brace in it
+  </li>
+  <li>
+   Fixed: Tweaks in the audio system (possible crash fix)
+  </li>
+  <li>
+   Fixed: Wrong return type for
+   <a href="https://community.bistudio.com/wiki/setAutonomous" target="">
+    setAutonomous
+   </a>
+   -
+   <a href="https://feedback.bistudio.com/T164475" target="">
+    FT-T164475
+   </a>
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/trim" target="">
+    trim
+   </a>
+   command not behaving correctly if all except the first character is trimmed off
+  </li>
+  <li>
+   Fixed: Second argument in
+   <a href="https://community.bistudio.com/wiki/say" target="">
+    say
+   </a>
+   ,
+   <a href="https://community.bistudio.com/wiki/say2D" target="">
+    say2D
+   </a>
+   and
+   <a href="https://community.bistudio.com/wiki/say3D" target="">
+    say3D
+   </a>
+   was not optional -
+   <a href="https://feedback.bistudio.com/T164790" target="">
+    FT-T164790
+   </a>
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/awake" target="">
+    awake
+   </a>
+   script command was not always waking up EPE objects
+  </li>
+  <li>
+   Fixed: Floating dead characters and PhysX objects after a building collapse -
+   <a href="https://feedback.bistudio.com/T63050" target="">
+    FT-T63050
+   </a>
+  </li>
+  <li>
+   Fixed: Flag cloth would not animate on vehicles in 1st person view in some cases -
+   <a href="https://feedback.bistudio.com/T164798" target="">
+    FT-T164798
+   </a>
+  </li>
+  <li>
+   Fixed: Eden Editor script error when the undo action is used -
+   <a href="https://feedback.bistudio.com/T162775" target="">
+    FT-T162775
+   </a>
+  </li>
+  <li>
+   Fixed: The amount of surface dust generated from ammo impacts ignored surface humidity
+  </li>
+  <li>
+   Fixed: Helicopters 'hopping' when landing due to telling AI to disembark
+  </li>
+  <li>
+   Fixed:
+   <i>
+    onUnload
+   </i>
+   was not called when a title effect display was destroyed -
+   <a href="https://feedback.bistudio.com/T78917" target="">
+    FT-T78917
+   </a>
+  </li>
+  <li>
+   Fixed: Combobox entries were not properly clickable if the list was bigger than its parent control
+  </li>
+  <li>
+   Fixed: Redundant nulls returned by the
+   <a href="https://community.bistudio.com/wiki/agents" target="">
+    agents
+   </a>
+   script command -
+   <a href="https://feedback.bistudio.com/T75506" target="">
+    FT-T75506
+   </a>
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/isNull" target="">
+    isNull
+   </a>
+   did not support agents
+  </li>
+  <li>
+   Fixed: Floating ground weapon holders after building collapses -
+   <a href="https://feedback.bistudio.com/T63050" target="">
+    FT-T63050
+   </a>
+  </li>
+  <li>
+   Fixed: Buildings with an empty
+   <i>
+    replaceDamaged
+   </i>
+   parameter, but with a destruction animation, did not trigger the
+   <i>
+    BuildingChanged
+   </i>
+   Event Handler -
+   <a href="https://feedback.bistudio.com/T122234" target="">
+    FT-T122234
+   </a>
+  </li>
+  <li>
+   Fixed: Non-English
+   <i>
+    TreeView
+   </i>
+   search was not working as expected -
+   <a href="https://feedback.bistudio.com/T118270" target="">
+    FT-T118270
+   </a>
+  </li>
+  <li>
+   Fixed: Buildings'
+   <i>
+    allowDamage
+   </i>
+   state was not reset on mission change -
+   <a href="https://feedback.bistudio.com/T166527" target="">
+    FT-T166527
+   </a>
+  </li>
+  <li>
+   Fixed:
+   <i>
+    BuildingChanged
+   </i>
+   Event Handler was firing on building damage -
+   <a href="https://feedback.bistudio.com/T166632" target="">
+    FT-T166632
+   </a>
+  </li>
+  <li>
+   Fixed: Floating dead bodies above destroyed tents -
+   <a href="https://feedback.bistudio.com/T63050" target="">
+    FT-T63050
+   </a>
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/setDamage" target="">
+    setDamage
+   </a>
+   <i>
+    useEffects
+   </i>
+   option did not work on trees, walls, and tents
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/nearestObjects" target="">
+    nearestObjects
+   </a>
+   class name check did not work on "Ammo" -
+   <a href="https://feedback.bistudio.com/T166472" target="">
+    FT-T166472
+   </a>
+   <br/>
+  </li>
+ </ul>
+ <h2>
+  LAUNCHER
+ </h2>
+ <ul>
+  <li>
+   Added:
+   <i>
+    -noPauseAudio
+   </i>
+   start parameter
+  </li>
+  <li>
+   Tweaked: Mod Preset exports now use HTTPS URLs -
+   <a href="https://feedback.bistudio.com/T163802" target="">
+    FT-T163802
+   </a>
+  </li>
+  <li>
+   Tweaked: Header text of Launcher HTML preset files in order to better explain how to import a preset
+   <br/>
+  </li>
+ </ul>
+ <h2>
+  SERVER
+ </h2>
+ <ul>
+  <li>
+   Updated: Stand-alone Windows Dedicated Server (2.10)
+  </li>
+  <li>
+   Updated: Stand-alone Linux Dedicated Server (2.10)
+   <ul>
+    <li>
+     The data in
+     <i>
+      -mod=contact
+     </i>
+     is not fully multiplayer compatible (it is meant for the singleplayer campaign experience); we recommend only hosting servers with it for special use cases
+     <ul>
+      <li>
+       This data is signed by a new A3C key whose presence can be used to control what client data is allowed on the server
+      </li>
+     </ul>
+    </li>
+    <li>
+     Known issue: Steam client modifies the
+     <i>
+      steam_appid.txt
+     </i>
+     file incorrectly. In case of issues, verify its content is:
+     <b>
+      107410
+     </b>
+    </li>
+    <li>
+     Known issue: Sometimes the add-ons are loaded from the wrong installation (e.g. main game)
+    </li>
+    <li>
+     Try adding
+     <i>
+      -mod=curator;kart;heli;mark;expansion;jets;argo;orange;tacops;tank;enoch;aow
+     </i>
+     to your
+     <i>
+      arma3server.exe
+     </i>
+     shortcut
+    </li>
+   </ul>
+  </li>
+ </ul>
+</div>

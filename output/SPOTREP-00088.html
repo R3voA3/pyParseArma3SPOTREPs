@@ -1,0 +1,966 @@
+<div class="post-content">
+ <p>
+  FROM: High Command
+  <br/>
+  TO: Arma 3 Users
+  <br/>
+  UNIT: Main Branch
+  <br/>
+  ACTIVITY: Game Update 1.92 (Launcher DLC Section, Dynamic Weapon Magazines)
+  <br/>
+  SIZE: ~1.3 GB / ~186 MB
+  <br/>
+ </p>
+ <h1>
+  NOTES
+ </h1>
+ <ul>
+  <li>
+   Consider using the Steam client option to verify the integrity of the local game cache to avoid corrupted data after downloading this update.
+   <br/>
+  </li>
+  <li>
+   Consider defragmenting your HDD after downloading large updates.
+   <br/>
+  </li>
+  <li>
+   Updating a deeply moddable game and its platform is not without risks. We use various methods to communicate upcoming changes to our awesome modding community, such as via the Dev Hub. We also co-operate directly on troubleshooting, and we offer an opportunity to test updates via our Release Candidate tests. Modders, server administrators and other members of the community do their best to prepare for updates and to address issues post-release as quickly as possible. Please be mindful of some interruptions (especially in the first hours / days after a release) while we all work to improve the game together.
+   <br/>
+  </li>
+  <li>
+   A Legacy Build Steam branch is available for advanced users. It contains the previous significant main branch version (1.90). It can be used to compare specific changes between major releases. The access code for this branch is:
+   <i>
+    Arma3Legacy190
+   </i>
+   <br/>
+  </li>
+  <li>
+   This update does not apply to
+   <a href="http://dev.arma3.com/ports" target="_blank">
+    the experimental Linux and Mac port betas
+   </a>
+   .
+  </li>
+  <li>
+   You can find the servers in the Steam library (switch the filter to "Tools") - "Arma 3 Server" (based on your OS, it will download the Windows or Linux version).
+   <br/>
+  </li>
+  <ul>
+   <li>
+    Administrators can also use the command-line
+    <a href="https://developer.valvesoftware.com/wiki/SteamCMD" target="_blank">
+     SteamCMD
+    </a>
+    utility. The app ID is to be 233780.
+    <br/>
+   </li>
+   <li>
+    NVIDIA GameWorks™ Technology provided under license from NVIDIA Corporation. Copyright © 2002-2018 NVIDIA Corporation. All rights reserved. NVIDIA® and PhysX® are trademarks of NVIDIA Corporation and are used under license.
+    <br/>
+   </li>
+  </ul>
+  <li>
+   In case of problems, please check the
+   <a href="http://support.bistudio.com/arma-3" target="_blank">
+    Bohemia Interactive support F.A.Q
+   </a>
+   .,
+   <a href="http://arma3.com/faq" target="_blank">
+    Arma 3 F.A.Q
+   </a>
+   .,
+   <a href="http://www.battleye.com/support/faq/" target="_blank">
+    BattlEye F.A.Q
+   </a>
+   ., or
+   <a href="https://arma3.com/launcher/troubleshooting" target="_blank">
+    Launcher troubleshooting guide
+   </a>
+   .
+   <br/>
+  </li>
+  <li>
+   You can help us to further improve the game by posting your feedback on the
+   <a href="http://feedback.arma3.com/" target="">
+    Feedback Tracker
+   </a>
+   .
+   <br/>
+  </li>
+ </ul>
+ <h1>
+  CHANGELOG
+ </h1>
+ <h2>
+  DATA
+ </h2>
+ <p>
+  <b>
+   Highlights
+  </b>
+ </p>
+ <p>
+ </p>
+ <ul>
+  <li>
+   <b>
+    Added: Added: Dynamic magazines (proxies) to the following weapons: AKM, AK-12, AKS, MX, CAR-95, TRG-21, Mk20, Mk14, RPG-7, SPAR-16 (and expanded magazine wells with additional weapons)*
+   </b>
+  </li>
+  <li>
+   <b>
+    Added: Support for
+    <a href="https://arma3.com/dlc/creator" target="_blank">
+     Creator DLC
+    </a>
+    <br/>
+   </b>
+  </li>
+ </ul>
+ <p>
+  * This change allows different types (e.g. color) magazines to be loaded into the same weapon dynamically, but some faction loadouts (characters, containers, and vehicle cargos) have changed!
+  <br/>
+ </p>
+ <p>
+  <b>
+   Gameplay
+  </b>
+ </p>
+ <p>
+ </p>
+ <ul>
+  <li>
+   Added: Sand 5.56 STANAG magazines to the magazine wells
+   <br/>
+  </li>
+  <li>
+   Added: Checking of the noPop variable for Swivel Targets
+   <br/>
+  </li>
+  <li>
+   Added: EmptyLoadout config class for the creation of empty unit loadouts
+   <br/>
+  </li>
+  <li>
+   Tweaked: Adjusted camo of magazines used in the editor-placed weapons which are using magazine proxies
+   <br/>
+  </li>
+  <li>
+   Tweaked: Increased the MX SW rate of fire to 750 rounds per minute
+   <br/>
+  </li>
+  <li>
+   Fixed: The door on the Field Toilet and Toiletbox should work again
+   <br/>
+  </li>
+  <li>
+   Fixed: Pacific NATO and CSAT UGV groups should now have Tropical versions of UGVs
+   <br/>
+  </li>
+  <li>
+   Fixed: Respawn Backpacks / camps now work correctly in MP; can also be placed by Zeus
+   <br/>
+  </li>
+  <li>
+   Fixed: NATO vehicles in the "Remnants of War" campaign were using Pacific liveries
+   <br/>
+  </li>
+  <li>
+   Fixed: A few remaining vehicles in which it still was not possible to open the compass
+   <br/>
+  </li>
+  <li>
+   Fixed: CTRG story character loadouts
+   <br/>
+  </li>
+  <li>
+   Fixed: Zubr .45 ACP magazine well definition
+   <br/>
+  </li>
+ </ul>
+ <p>
+  <b>
+   Visual
+  </b>
+ </p>
+ <p>
+ </p>
+ <ul>
+  <li>
+   Tweaked: AKSU magazine proxy replacement timing
+   <br/>
+  </li>
+  <li>
+   Tweaked: The BLUFOR M320 does not shine so much anymore
+   <br/>
+  </li>
+  <li>
+   Tweaked: Adjusted RPG-7 magazine proxy switching and slightly adjusted the proxy position
+   <br/>
+  </li>
+  <li>
+   Fixed: Adjusted STANAG 5.56 magazine height to avoid clipping with some of the magwells
+   <br/>
+  </li>
+ </ul>
+ <p>
+  <b>
+   Audio
+  </b>
+ </p>
+ <p>
+ </p>
+ <ul>
+  <li>
+   Added: Forest SoundEnvironExt for backward compatibility (it's using the same samples as forest_exp)
+   <br/>
+  </li>
+  <li>
+   Added: Van (Ambulance) is now using a custom sound controller for its siren
+   <br/>
+  </li>
+  <li>
+   Fixed: The Varsuk turbine was audible even when the tank had been wrecked (
+   <a href="https://feedback.bistudio.com/T136457" target="_blank">
+    https://feedback.bistudio.com/T136457
+   </a>
+   )
+   <br/>
+  </li>
+ </ul>
+ <p>
+  <b>
+   Warlords
+  </b>
+ </p>
+ <p>
+ </p>
+ <ul>
+  <li>
+   Added: Unless their base is under attack, all playable units are now invulnerable after respawn until they leave the base (60 seconds maximum)
+   <br/>
+  </li>
+  <li>
+   Added: Long-range AA defense assets (SAM sites / radars)
+   <br/>
+  </li>
+  <li>
+   Added: Autonomous defenses are now limited to 3 per player
+   <br/>
+  </li>
+  <li>
+   Added: A parameter for maximum Command Points
+   <br/>
+  </li>
+  <li>
+   Added: A custom offset parameter for the Defenses
+   <br/>
+  </li>
+  <li>
+   Added: Friendly Fire protection for requested assets (first 3 minutes after being requested)
+   <br/>
+  </li>
+  <li>
+   Added: A team balance parameter
+   <br/>
+  </li>
+  <li>
+   Added: You can now blacklist units the AI will purchase by using WLAIRequisitonBlacklist[] = {}; with an array of blacklisted infantry classnames in you scenario's
+   <a href="https://community.bistudio.com/wiki/Description.ext" target="_blank">
+    description.ext
+   </a>
+   file
+   <br/>
+  </li>
+  <li>
+   Added: The cost of any asset can now be changed in the scenario's
+   <a href="https://community.bistudio.com/wiki/Description.ext" target="_blank">
+    description.ext
+   </a>
+   file (
+   <a href="https://community.bistudio.com/wiki/Arma_3_MP_Warlords" target="_blank">
+    details
+   </a>
+   )
+   <br/>
+  </li>
+  <li>
+   Tweaked: The cost of planes was increased
+   <br/>
+  </li>
+  <li>
+   Changed: Most requested assets are now locked by default and can be unlocked either directly via the Action menu or through the Strategy tab in the Request menu
+   <br/>
+  </li>
+  <li>
+   Changed: Increased the cost of repair and ammo trucks as well as the Rhino
+   <br/>
+  </li>
+  <li>
+   Changed: The Subordinates limit was increased to 3 for the 64-player Altis scenario
+   <br/>
+  </li>
+  <li>
+   Fixed: Various script errors
+   <br/>
+  </li>
+  <li>
+   Fixed: Static defenses no longer limit the maximum group size even when deleted
+   <br/>
+  </li>
+  <li>
+   Fixed: Vehicles presets in the editor would not be spawned for sectors owned from the start by BLUFOR or OPFOR
+   <br/>
+  </li>
+  <li>
+   Fixed: Friendly Fire penalty issues
+   <br/>
+  </li>
+  <li>
+   Fixed: Funds transfer exploit
+   <br/>
+  </li>
+  <li>
+   Fixed: Sector vote calculation for dead players
+   <br/>
+  </li>
+  <li>
+   Removed: Respawn backpacks from Virtual Arsenal
+  </li>
+  <li>
+   Removed: Mine dispensers from Virtual Arsenal (performance issues)
+   <br/>
+  </li>
+ </ul>
+ <p>
+  <b>
+   <a href="https://community.bistudio.com/wiki/Eden_Editor" target="_blank">
+    Eden Editor
+   </a>
+  </b>
+ </p>
+ <ul>
+  <li>
+   Added: Loading a scenario in Eden Editor will now call the "init3DEN.sqf" script in the scenario folder (when present). This can be useful for executing scenario-specific editor functionality.
+   <br/>
+  </li>
+  <li>
+   Tweaked: Added better error reporting for incompatible markers; upgraded to serialize the 3D position instead of 2D
+   <br/>
+  </li>
+  <li>
+   Tweaked: Increased precision of the marker position when serializing
+   <br/>
+  </li>
+  <li>
+   Tweaked: Key Frame Timelines are no longer calculated on each frame when their animation is not running
+   <br/>
+  </li>
+  <li>
+   Changed: Expanded the Tracers module with a few extra attributes for setting a custom weapon and target for the tracers
+   <br/>
+  </li>
+  <li>
+   Fixed: The Tracers module was able to run out of ammo
+   <br/>
+  </li>
+  <li>
+   Fixed: Environmental sounds were audible in the Eden Editor after loading or starting new scenarios even if they had been disabled in preferences
+   <br/>
+  </li>
+  <li>
+   Fixed: Eden Editor export to SQF was not saving vehicle appearances correctly
+   <br/>
+  </li>
+ </ul>
+ <p>
+  <b>
+   Scripting
+  </b>
+ </p>
+ <p>
+ </p>
+ <ul>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/getMarkerPos" target="_blank">
+    getMarkerPos
+   </a>
+   [
+   <i>
+    markerName, preserveElevation
+   </i>
+   ] for working with the Z coordinate
+   <br/>
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_markerToString" target="_blank">
+    BIS_fnc_markerToString
+   </a>
+   ,
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_stringToMarker" target="_blank">
+    BIS_fnc_stringToMarker
+   </a>
+   ,
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_stringToMarkerLocal" target="_blank">
+    BIS_fnc_stringToMarkerLocal
+   </a>
+   serialization functions
+   <br/>
+  </li>
+  <li>
+   Added: Scripted Event Handler
+   <a href="https://community.bistudio.com/wiki/Arma_3:_Event_Handlers#OnGameInterrupt" target="_blank">
+    OnGameInterrupt
+   </a>
+   <br/>
+  </li>
+  <li>
+   Tweaked:
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_switchLamp" target="_blank">
+    BIS_fnc_switchLamp
+   </a>
+   is now using recently 'fixed'
+   <a href="https://community.bistudio.com/wiki/switchLight" target="_blank">
+    switchLight
+   </a>
+   command instead of breaking / fixing the lamp's light bulb
+   <br/>
+  </li>
+  <li>
+   Fixed: Added
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_setIdentity" target="_blank">
+    BIS_fnc_setIdentity
+   </a>
+   safeguard from applying empty values (
+   <a href="https://forums.bohemia.net/forums/topic/221905-bis_fnc_setidentity-causing-severe-slow-down/" target="_blank">
+    https://forums.bohemia.net/forums/topic/221905-bis_fnc_setidentity-causing-severe-slow-down/
+   </a>
+   )
+   <br/>
+  </li>
+  <li>
+   Fixed: Identity not persisting in
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_arsenal" target="_blank">
+    BIS_fnc_arsenal
+   </a>
+   <br/>
+  </li>
+  <li>
+   Fixed: Camera bug in
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_arsenal" target="_blank">
+    BIS_fnc_arsenal
+   </a>
+   <br/>
+  </li>
+  <li>
+   Fixed: Typo in the function body of
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_setDate" target="_blank">
+    BIS_fnc_setDate
+   </a>
+   (
+   <a href="https://feedback.bistudio.com/T82819" target="_blank">
+    https://feedback.bistudio.com/T82819
+   </a>
+   )
+   <br/>
+  </li>
+ </ul>
+ <p>
+  <b>
+   General
+  </b>
+ </p>
+ <p>
+ </p>
+ <ul>
+  <li>
+   Changed: Tanks DLC addons have been converted from EBO to the PBO format
+  </li>
+  <li>
+   Fixed: IDAP's AR-2 drone was missing translations for its livery in Virtual Garage
+  </li>
+  <li>
+   Fixed: Texts for the Clear All Mines waypoint were not localized
+   <br/>
+  </li>
+  <li>
+   Fixed: RPT errors related to the
+   <i>
+    VTOL_01
+   </i>
+   hit points
+   <br/>
+  </li>
+ </ul>
+ <h2>
+  ENGINE
+ </h2>
+ <p>
+  <b>
+   Multiplayer
+  </b>
+ </p>
+ <p>
+ </p>
+ <ul>
+  <li>
+   Fixed: Non-local tank suspension looked wrong in multiplayer
+   <br/>
+  </li>
+  <li>
+   Added:
+   <i>
+    kickTimeout
+   </i>
+   settings in the
+   <a href="https://community.bistudio.com/wiki/server.cfg" target="_blank">
+    server configs
+   </a>
+   *
+   <br/>
+  </li>
+  <li>
+   Added:
+   <i>
+    OnUserKicked
+   </i>
+   event handler for the
+   <a href="https://community.bistudio.com/wiki/server.cfg" target="_blank">
+    server configs
+   </a>
+   *
+   <br/>
+  </li>
+  <li>
+   Added:
+   <i>
+    kick.txt
+   </i>
+   which works in sync with the new
+   <i>
+    kickTimeout
+   </i>
+   <a href="https://community.bistudio.com/wiki/server.cfg" target="_blank">
+    server config
+   </a>
+   parameter (it is stored alongside
+   <i>
+    ban.txt
+   </i>
+   )*
+   <br/>
+  </li>
+  <li>
+   Added: A server config parameter
+   <i>
+    lobbyIdleTime
+   </i>
+   to manage players sitting idle in the mission/role selection or briefing**
+   <br/>
+  </li>
+  <li>
+   Tweaked:
+   <i>
+    <a href="https://community.bistudio.com/wiki/Arma_3:_Mission_voting" target="_blank">
+     allowedVoteCmds
+    </a>
+   </i>
+   extended with a 'friendly ratio' - players are kicked if enough of players of the same side vote to kick*
+   <br/>
+  </li>
+  <li>
+   Fixed:
+   <i>
+    ban.txt
+   </i>
+   would sometimes be read from or written to the game root, other times the user folder. From now on, it's always the user folder.
+   <br/>
+  </li>
+  <li>
+   Fixed: It was not possible to write into
+   <i>
+    ban.txt
+   </i>
+   and
+   <i>
+    kick.txt
+   </i>
+   <br/>
+  </li>
+ </ul>
+ <div>
+  <i>
+   * Preliminary documentation for kickTimeout, onUserKicked, side-votekick-ratio on
+   <a href="https://forums.bohemia.net/forums/topic/160288-arma-3-stable-server-190-performance-binary-feedback/?do=findComment&amp;comment=3350010" target="_blank">
+    our forums
+   </a>
+   <br/>
+   ** Preliminary documentation for votingTimeOut, roleTimeOut, briefingTimeOut, debriefingTimeOut, lobbyIdleTimeout on
+   <a href="https://forums.bohemia.net/forums/topic/160288-arma-3-stable-server-190-performance-binary-feedback/?do=findComment&amp;comment=3351042" target="_blank">
+    our forums
+   </a>
+   <br/>
+  </i>
+ </div>
+ <p>
+  <b>
+   Audio
+  </b>
+ </p>
+ <p>
+ </p>
+ <ul>
+  <li>
+   Added: Support for a new simple expression in weapon sound configuration (
+   <i>
+    camPos
+   </i>
+   )
+   <br/>
+  </li>
+  <li>
+   Fixed: Extreme volumes are no longer possible with
+   <a href="https://community.bistudio.com/wiki/playSound3D" target="_blank">
+    playSound3D
+   </a>
+   <br/>
+  </li>
+ </ul>
+ <p>
+  <b>
+   Scripting
+  </b>
+ </p>
+ <p>
+ </p>
+ <ul>
+  <li>
+   Added: The
+   <a href="https://community.bistudio.com/wiki/lightIsOn" target="_blank">
+    lightIsOn
+   </a>
+   command can now be used on the same objects as the
+   <a href="https://community.bistudio.com/wiki/switchLight" target="_blank">
+    switchLight
+   </a>
+   command
+   <br/>
+  </li>
+  <li>
+   Added: A new scripting command (setBehaviourStrong) for forcing a behaviour to the Group itself
+   <br/>
+  </li>
+  <li>
+   Added: New scripting commands for simple graphs: getGraphValues, decayGraphValues, ctrlSetPositionX, ctrlSetPositionY, ctrlSetPositionW, ctrlSetPositionH, bezierInterpolation
+   <br/>
+  </li>
+  <li>
+   Added: New scripting commands for working with matrices and vectors interpolation:
+   <a href="https://community.bistudio.com/wiki/vectorLinearConversion" target="_blank">
+    vectorLinearConversion
+   </a>
+   , matrixTranspose, matrixMultiply
+   <br/>
+  </li>
+  <li>
+   Added: A getter (
+   <a href="https://community.bistudio.com/wiki/customWaypointPosition" target="_blank">
+    customWaypointPosition
+   </a>
+   ) for the player's custom waypoint (LShift + LMB)
+   <br/>
+  </li>
+  <li>
+   Added: Support for forcing the initial direction of 3D particles
+   <br/>
+  </li>
+  <li>
+   Added: A
+   <a href="https://community.bistudio.com/wiki/disableAI" target="_blank">
+    disableAI
+   </a>
+   /
+   <a href="https://community.bistudio.com/wiki/enableAI" target="_blank">
+    enableAI
+   </a>
+   "
+   <i>
+    NVG
+   </i>
+   " option for the AI to not use worn NVGs
+   <br/>
+  </li>
+  <li>
+   Added: A
+   <a href="https://community.bistudio.com/wiki/disableAI" target="_blank">
+    disableAI
+   </a>
+   /
+   <a href="https://community.bistudio.com/wiki/enableAI" target="_blank">
+    enableAI
+   </a>
+   "
+   <i>
+    LIGHTS
+   </i>
+   " option for disabling AI from controlling lights
+   <br/>
+  </li>
+  <li>
+   Added: Muzzle event handlers for reloading weapons (reload - start, reloaded - finished)
+   <br/>
+  </li>
+  <li>
+   Added: A mission event handler for the change of the time acceleration (
+   <a href="https://community.bistudio.com/wiki/Arma_3:_Event_Handlers/addMissionEventHandler#HandleAccTime" target="_blank">
+    HandleAccTime
+   </a>
+   - returning true also suppresses the IGUI message)
+   <br/>
+  </li>
+  <li>
+   Added: Scripted control over (legitimate) missile targets of guided missiles or target positions of manually guided missiles (
+   <a href="https://community.bistudio.com/wiki/setMissileTargetPos" target="_blank">
+    setMissileTargetPos
+   </a>
+   ,
+   <a href="https://community.bistudio.com/wiki/missileTargetPos" target="_blank">
+    missileTargetPos
+   </a>
+   ,
+   <a href="https://community.bistudio.com/wiki/setMissileTarget" target="_blank">
+    setMissileTarget
+   </a>
+   ,
+   <a href="https://community.bistudio.com/wiki/missileTarget" target="_blank">
+    missileTarget
+   </a>
+   )
+   <br/>
+  </li>
+  <li>
+   Added: A script command to trigger a munition (
+   <a href="https://community.bistudio.com/wiki/triggerAmmo" target="_blank">
+    triggerAmmo
+   </a>
+   )
+   <br/>
+  </li>
+  <li>
+   Added: Support for the green TI mode in render-to-target and the
+   <a href="https://community.bistudio.com/wiki/setPiPEffect" target="_blank">
+    setPiPEffect
+   </a>
+   scripting command
+   <br/>
+  </li>
+  <li>
+   Changed:
+   <a href="https://community.bistudio.com/wiki/switchLight" target="_blank">
+    switchLight
+   </a>
+   now supports terrain objects, entities, and terrain lamps (automatic when "on")
+   <br/>
+  </li>
+  <li>
+   Changed: Increased the limit of array length for scripting DLL extensions to 2048
+   <br/>
+  </li>
+  <li>
+   Changed: The
+   <a href="https://community.bistudio.com/wiki/getSuppression" target="_blank">
+    getSuppression
+   </a>
+   command now returns -1 if an object is invalid, non-local, or there is no suppression enabled
+   <br/>
+  </li>
+  <li>
+   Changed:
+   <a href="https://community.bistudio.com/wiki/boundingBox" target="_blank">
+    boundingBox
+   </a>
+   and
+   <a href="https://community.bistudio.com/wiki/boundingBoxReal" target="_blank">
+    boundingBoxReal
+   </a>
+   now can be passed a number (0-ClipVisual, 1-ClipShadow, 2-ClipGeometry, 3-ClipGeneral) and return the bounding sphere value
+   <br/>
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/lnbSetTooltip" target="_blank">
+    lnbSetTooltip
+   </a>
+   (
+   <a href="https://feedback.bistudio.com/T83315" target="_blank">
+    https://feedback.bistudio.com/T83315
+   </a>
+   )
+   <br/>
+  </li>
+  <li>
+   Fixed: The year would not always sync when
+   <a href="https://community.bistudio.com/wiki/setDate" target="_blank">
+    setDate
+   </a>
+   was called from the server
+   <br/>
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/animatePylon" target="_blank">
+    animatePylon
+   </a>
+   and
+   <a href="https://community.bistudio.com/wiki/setAmmoOnPylon" target="_blank">
+    setAmmoOnPylon
+   </a>
+   would not take a pylon name as an argument
+   <br/>
+  </li>
+ </ul>
+ <p>
+  <b>
+   <a href="https://community.bistudio.com/wiki/Eden_Editor" target="_blank">
+    Eden Editor
+   </a>
+  </b>
+ </p>
+ <ul>
+  <li>
+   Tweaked: Eden Editor model selection detection over character weapons has been improved
+   <br/>
+  </li>
+  <li>
+   Fixed: Module areas were not hiding along with the rest of the models in Eden Editor
+   <br/>
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/create3DENComposition" target="_blank">
+    create3DENComposition
+   </a>
+   created objects but did not return an array (
+   <a href="https://feedback.bistudio.com/T136400" target="_blank">
+    https://feedback.bistudio.com/T136400
+   </a>
+   )
+   <br/>
+  </li>
+ </ul>
+ <p>
+  <b>
+   General
+  </b>
+ </p>
+ <p>
+ </p>
+ <ul>
+  <li>
+   Fixed: A possible crash when reading the
+   <i>
+    headGforceLeaningFactor
+   </i>
+   parameter
+   <br/>
+  </li>
+  <li>
+   Fixed: Magazine proxy texture flickering (they were instanced)
+   <br/>
+  </li>
+  <li>
+   Fixed: Constant black in / out when a player's UGV was critically damaged
+   <br/>
+  </li>
+  <li>
+   Fixed: Allow Lights in the UAV Terminal did not work
+   <br/>
+  </li>
+  <li>
+   Fixed: RPT errors related to deprecated strings
+   <br/>
+  </li>
+  <li>
+   Fixed: Players were not considered in the list of a trigger when they entered a vehicle of another group
+  </li>
+ </ul>
+ <h2>
+  <b>
+   LAUNCHER
+  </b>
+ </h2>
+ <div>
+  <ul>
+   <li>
+    Added: DLC support in Launcher
+    <br/>
+   </li>
+   <li>
+    Added: Offical Servers tab in the SERVERS category
+    <br/>
+   </li>
+   <li>
+    Added:
+    <a href="https://store.steampowered.com/app/1042220/Arma_3_Creator_DLC_Global_Mobilization__Cold_War_Germany/" target="_blank">
+     Creator DLC Global Mobilization
+    </a>
+    is now visible as 'optional DLC'
+   </li>
+  </ul>
+  <h2>
+   SERVER
+  </h2>
+ </div>
+ <ul>
+  <li>
+   Updated: Stand-alone Windows Dedicated Server (1.92)
+   <br/>
+  </li>
+  <li>
+   Updated: Stand-alone Linux Dedicated Server (1.92)
+   <br/>
+  </li>
+  <ul>
+   <li>
+    Known issue: Steam client modifies the
+    <i>
+     steam_appid.txt
+    </i>
+    file incorrectly. In case of issues, verify its content is:
+    <b>
+     107410
+    </b>
+    <br/>
+   </li>
+   <li>
+    Known issue: Sometimes the add-ons are loaded from the wrong installation (e.g. main game)
+    <br/>
+   </li>
+   <li>
+    Try adding
+    <i>
+     -mod=curator;kart;heli;mark;expansion;jets;argo;orange;tacops;tank;dlcbundle;dlcbundle2
+    </i>
+    to your
+    <i>
+     arma3server.exe
+    </i>
+    shortcut
+    <br/>
+   </li>
+  </ul>
+ </ul>
+ <p>
+ </p>
+ <p>
+ </p>
+ <p>
+ </p>
+ <p>
+ </p>
+ <p>
+  <br/>
+ </p>
+</div>

@@ -1,0 +1,2541 @@
+<div class="post-content">
+ <p>
+  FROM: High Command
+  <br/>
+  TO: Arma 3 Users
+  <br/>
+  UNIT: Main Branch
+  <br/>
+  ACTIVITY: Game Update 1.68 (64-bit Executables, Ambient Occlusion Overhaul, Maintenance)
+  <br/>
+  SIZE: ~10.4 GB / ~1.3 GB (depends on Apex ownership)
+ </p>
+ <h1>
+  NOTES
+ </h1>
+ <ul>
+  <li>
+   Consider using the Steam client option to verify the integrity of the local game cache to avoid corrupted data after downloading this update.
+  </li>
+  <li>
+   Consider defragmenting your HDD after downloading large updates.
+  </li>
+  <li>
+   Updating a deeply moddable game and its platform is not without risks. We use various methods to communicate upcoming changes to our awesome modding community, such as via the
+   <a href="https://dev.arma3.com/" target="_blank">
+    Dev Hub
+   </a>
+   . We also co-operate directly on troubleshooting, and we offer an opportunity to test updates via our
+   <a href="https://dev.arma3.com/rc-branch" target="_blank">
+    Release Candidate tests
+   </a>
+   . Modders, server administrators and other members of the community do their best to prepare for updates and to address issues post-release as quickly as possible. Please be mindful of some interruptions (especially in the first hours / days after a release) while we all work to improve the game together.
+  </li>
+  <li>
+   A
+   <em>
+    Legacy Build
+   </em>
+   Steam branch is available for advanced users. It contains the previous significant main branch version (1.66). It can be used to compare specific changes between major releases. The access code for this branch is:
+   <em>
+    Arma3Legacy166
+   </em>
+  </li>
+  <li>
+   This update does not apply to
+   <a href="http://dev.arma3.com/ports" target="_blank">
+    the experimental Linux and Mac port betas
+   </a>
+   at time of writing. We hope to be updating those as soon as possible.
+  </li>
+  <li>
+   You can find the servers in the Steam library (switch the filter to "Tools") - "Arma 3 Server" (based on your OS, it will download the Windows or Linux version).
+   <ul>
+    <li>
+     Administrators can also use the command-line
+     <a href="https://developer.valvesoftware.com/wiki/SteamCMD" target="_blank">
+      SteamCMD
+     </a>
+     utility. The app ID is to be 233780.
+    </li>
+    <li>
+     <p>
+      NVIDIA GameWorks™ Technology provided under license from NVIDIA Corporation. Copyright © 2002-2017 NVIDIA Corporation. All rights reserved. NVIDIA® and PhysX® are trademarks of NVIDIA Corporation and are used under license.
+     </p>
+    </li>
+   </ul>
+  </li>
+  <li>
+   In case of problems, please check the
+   <a href="http://support.bistudio.com/arma-3" target="_blank">
+    Bohemia Interactive support F.A.Q.
+   </a>
+   ,
+   <a href="http://arma3.com/faq" target="_blank">
+    Arma 3 F.A.Q.
+   </a>
+   ,
+   <a href="http://www.battleye.com/support/faq/" target="_blank">
+    BattlEye F.A.Q.
+   </a>
+   , or
+   <a href="https://arma3.com/launcher/troubleshooting" target="_blank">
+    Launcher troubleshooting guide
+   </a>
+   .
+  </li>
+  <li>
+   You can help us to further improve the game by posting your feedback on the
+   <a href="http://feedback.arma3.com/" target="_blank">
+    Feedback Tracker
+   </a>
+   .
+  </li>
+ </ul>
+ <h1>
+  CHANGELOG
+ </h1>
+ <h2>
+  DATA:
+ </h2>
+ <ul>
+  <li>
+   <strong>
+    Added: New Ambient Occlusion settings in Video Options
+   </strong>
+  </li>
+  <li>
+   Added: Sounds for vehicles colliding with water (cars driving through water and planes falling into water)
+  </li>
+  <li>
+   Added: Sound for Turn In / Out actions for armored vehicles
+  </li>
+  <li>
+   Added: Titles of Advanced Hints are now structured text and can be multi-line
+  </li>
+  <li>
+   Added: The scene behind the Debriefing screen is now blurred
+  </li>
+  <li>
+   Added: A new Fuel hit point for tracked armored vehicles (so they can lose fuel)
+  </li>
+  <li>
+   Added A new Hull hit point for wheeled vehicles (so they can be destroyed on a single critical hit)
+  </li>
+  <li>
+   Added: When multiple
+   <a href="https://community.bistudio.com/wiki/Arma_3_Main_Menu" target="_blank">
+    Main Menu
+   </a>
+   spotlight options are available, they are cycled automatically. Users can browse them manually using arrows.
+  </li>
+  <li>
+   Added: Showcase NATO now has an updated voice-over (with a speakerphone effect)
+  </li>
+  <li>
+   Added: After calling an artillery support, a marker with ETA is shown in the map for the caller
+  </li>
+  <li>
+   Added: Ability to set a default number of rounds for artillery. Copy this code to the init field of the artillery vehicle:
+   <ul>
+    <li>
+     <em>
+      this
+      <a href="https://community.bistudio.com/wiki/setVariable" target="_blank">
+       setVariable
+      </a>
+      ["BIS_SUPP_useDefaultBurst",3];
+     </em>
+     //3 is the number of rounds
+    </li>
+    <li>
+     Also, if you don't want to think about a specific number of rounds, use the default value (usually 3 rounds):
+     <ul>
+      <li>
+       <em>
+        this
+        <a href="https://community.bistudio.com/wiki/setVariable" target="_blank">
+         setVariable
+        </a>
+        ["BIS_SUPP_useDefaultBurst",true];
+       </em>
+       //True to enable an automatic default burst
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li>
+   Added: Multi-line version UI classes
+   <em>
+    RscTextMulti
+   </em>
+   and
+   <em>
+    RscEditMulti
+   </em>
+   for use with scripted controls
+  </li>
+  <li>
+   Added: IR grenades now have a proper sound for impact with the ground
+  </li>
+  <li>
+   Added: Field Manual preview models for explosives
+  </li>
+  <li>
+   Added: Sounds when getting in and out of helicopters (incl. 3D processing type)
+  </li>
+  <li>
+   Added: Rain sounds on car surfaces while inside of the vehicle
+  </li>
+  <li>
+   Added:
+   <em>
+    <a href="https://community.bistudio.com/wiki/Arma_3_Sensors#typeRecognitionDistance" target="_blank">
+     TypeRecognitionDistance
+    </a>
+   </em>
+   to the sensor templates
+  </li>
+  <li>
+   Tweaked: Performance of high-caliber ammunition:
+   <ul>
+    <li>
+     Armor Piercing shells are now more likely to deflect from hard surfaces
+    </li>
+    <li>
+     High Explosive shells detonate on contact
+    </li>
+    <li>
+     HEAT shells now have average deflection behavior
+    </li>
+   </ul>
+  </li>
+  <li>
+   Added: Pressing the Esc key in
+   <a href="https://community.bistudio.com/wiki/Splendid_Camera" target="_blank">
+    Splendid Camera
+   </a>
+   now opens the Pause Menu. To exit the camera, click on the "CLOSE" button there.
+  </li>
+  <li>
+   Added: New samples for cabine opening and closing animations on the Caesar BTT airplanes
+  </li>
+  <li>
+   Added: Configured additional existing liveries for the CH-49
+  </li>
+  <li>
+   Added: 2 scripted variants of weapon holders:
+   <em>
+    GroundWeaponHolder_Scripted
+   </em>
+   and
+   <em>
+    WeaponHolderSimulated_Scripted
+   </em>
+   (
+   <a href="https://feedback.bistudio.com/T79535" target="_blank">
+    https://feedback.bistudio.com/T79535
+   </a>
+   )
+  </li>
+  <li>
+   Added: Locked door keypads on Tanoa are now indicated by a red light where appropriate
+  </li>
+  <li>
+   Added: Locked door keypads on Altis and Stratis are now indicated by a red light where appropriate
+  </li>
+  <li>
+   Added: Reverse camera display for the SUV
+  </li>
+  <li>
+   Added: Flag proxies for various vehicles
+  </li>
+  <li>
+   Added: A new
+   <em>
+    RscTreeSearch
+   </em>
+   class for scripted creation of the
+   <em>
+    RscTree
+   </em>
+   with search capability
+  </li>
+  <li>
+   Added: An option to prevent spawning on dead characters in the
+   <em>
+    BIS_fnc_moveToSpawnPos
+   </em>
+   function
+  </li>
+ </ul>
+ <ul>
+  <li>
+   <strong>
+    Tweaked: Ambient Occlusion and light maps of structures were overhauled
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Tweaked: Some Apex data has been decrypted (Weapons, Props, Vehicles, Missions, Dubbing, Sounds, and Music)
+   </strong>
+  </li>
+  <li>
+   Tweaked: Helpers (arrows, pointers) in the faction Showcases are not visible anymore
+  </li>
+  <li>
+   Tweaked: Collision geometries on various Tanoa structures
+  </li>
+  <li>
+   Tweaked: Decreased the range and volume of underwater mine explosions
+  </li>
+  <li>
+   Tweaked: The compositions in Showcase NATO and Showcase CSAT were updated (added objects, added an ambient Wipeout and many objects were converted to Simple Objects)
+  </li>
+  <li>
+   Tweaked: Accessing the Supports menu (0-8) now makes the menu active, which also displays a special cursor
+  </li>
+  <li>
+   Tweaked: Swimming sound assets were updated
+  </li>
+  <li>
+   Tweaked: Parachute sounds now use the
+   <em>
+    <a href="https://community.bistudio.com/wiki/Arma_3_Sound:_SoundSet" target="_blank">
+     SoundSet
+    </a>
+   </em>
+   and
+   <em>
+    <a href="https://community.bistudio.com/wiki/Arma_3_Sound:_SoundShader" target="_blank">
+     SoundShader
+    </a>
+   </em>
+   implementation
+  </li>
+  <li>
+   Tweaked: Footstep sound volumes are now more balanced
+  </li>
+  <li>
+   Tweaked: The black and white Orcas were changed to the ones with regular liveries in Support Katalaki
+  </li>
+  <li>
+   Tweaked: Color presets in the Game Options menu are now sorted alphabetically
+  </li>
+  <li>
+   Tweaked: The
+   <em>
+    <a href="https://community.bistudio.com/wiki/showScoretable" target="_blank">
+     showScoretable
+    </a>
+   </em>
+   command resets when a new Debriefing screen is created
+  </li>
+  <li>
+   Tweaked: Helicopters should now produce sounds when falling into water
+  </li>
+  <li>
+   Tweaked: The gear retraction sounds of the AH-99 Blackfoot were improved
+  </li>
+  <li>
+   Tweaked: Smaller buildings are now overall less durable than the large ones, especially against high caliber shells
+  </li>
+  <li>
+   Tweaked: Particular building hit points are now easier to destroy
+  </li>
+  <li>
+   Tweaked: All buildings now receive 25% more explosive damage
+  </li>
+  <li>
+   Tweaked: The volume for landing sounds of the AH-99 Blackfoot was increased
+  </li>
+  <li>
+   Tweaked: Appearance of the Field Manual - a tree structure is now used for topic and hint selection, and it's possible to search in it
+  </li>
+  <li>
+   Tweaked: Advanced hints are now formatted using the unified function
+   <em>
+    BIS_fnc_advHintFormat
+   </em>
+  </li>
+  <li>
+   Tweaked: Main Menu spotlights are now configured in CfgMainMenuSpotlight instead of RscDisplayMain &gt;&gt; Spotlight. The old path will still be accepted, but is considered obsolete.
+  </li>
+  <li>
+   Tweaked: Steering, internal engine, and thread sounds were updated for the FV-720 Mora, ZSU-39 Tigris, and BTR-K Kamysh
+  </li>
+  <li>
+   Tweaked: The collision sound settings of the T-100 Varsuk were improved
+  </li>
+  <li>
+   Tweaked: Config data for Simple Objects was regenerated, updated and rounded
+  </li>
+  <li>
+   Tweaked: When calling an artillery support, an option to pick the number of rounds is no longer offered when only the last round is left
+  </li>
+  <li>
+   Tweaked: Increased the volume of crash sounds for the Kajman gunship
+  </li>
+  <li>
+   Tweaked: The
+   <em>
+    <a href="https://community.bistudio.com/wiki/BIS_fnc_configPath" target="_blank">
+     BIS_fnc_configPath
+    </a>
+   </em>
+   function now has an optional strict mode
+  </li>
+  <li>
+   Tweaked: The audio configuration for quad bikes was improved
+  </li>
+  <li>
+   Tweaked: Get-in memory points on the Tempest Medical truck were adjusted
+  </li>
+  <li>
+   Tweaked: The list of planes after placing the CAS module by Zeus is now sorted alphabetically
+  </li>
+  <li>
+   Tweaked: Laser and NV Targets (strobes) are now detectable beyond view distance
+  </li>
+  <li>
+   Tweaked: The close shot sounds of the MX rifles were equalized
+  </li>
+  <li>
+   Tweaked: Compass, map, watch &amp; radio inventory items now use more visually appealing models when placed on the ground
+  </li>
+  <li>
+   Tweaked: Functions
+   <em>
+    <a href="https://community.bistudio.com/wiki/BIS_fnc_enemyDetected," target="_blank">
+     BIS_fnc_enemyDetected
+    </a>
+   </em>
+   and
+   <em>
+    <a href="https://community.bistudio.com/wiki/BIS_fnc_enemyTargets" target="_blank">
+     BIS_fnc_enemyTargets
+    </a>
+   </em>
+   were refactored for better performance
+  </li>
+  <li>
+   Tweaked: Decorative ammo boxes in Showcase NATO are now invincible
+  </li>
+  <li>
+   Tweaked: Server parameter "Time acceleration" is now localized
+  </li>
+  <li>
+   Tweaked: Static Taru pods are now showing damage textures correctly
+  </li>
+  <li>
+   Tweaked: Exiting of Showcases CSAT, NATO and AAF was adjusted
+  </li>
+  <li>
+   Tweaked: Hid antennas on various vehicles while they are being transported inside other vehicles
+  </li>
+  <li>
+   Tweaked: The
+   <em>
+    <a href="https://community.bistudio.com/wiki/BIS_fnc_selectRandomWeighted" target="_blank">
+     BIS_fnc_selectRandomWeighted
+    </a>
+   </em>
+   function now supports a single array of items and weights ([item, weight, item, weight...])
+  </li>
+  <li>
+   Tweaked: The
+   <em>
+    <a href="https://community.bistudio.com/wiki/BIS_fnc_setHitPointDamage" target="_blank">
+     BIS_fnc_setHitPointDamage
+    </a>
+   </em>
+   function now sets
+   <em>
+    HitPoint
+   </em>
+   damage with dependencies
+  </li>
+  <li>
+   Tweaked: Commands (move, get in, target) no longer fade out on Regular difficulty
+  </li>
+  <li>
+   Tweaked: VR entities do not bleed anymore
+  </li>
+  <li>
+   Tweaked: The
+   <em>
+    <a href="https://community.bistudio.com/wiki/BIS_fnc_moveToRespawnPosition" target="_blank">
+     BIS_fnc_moveToRespawnPosition
+    </a>
+   </em>
+   function was improved (even in scheduled environments)
+  </li>
+  <li>
+   Tweaked: The
+   <em>
+    <a href="https://community.bistudio.com/wiki/BIS_fnc_playVideo" target="_blank">
+     BIS_fnc_playVideo
+    </a>
+   </em>
+   function was improved
+  </li>
+  <li>
+   Tweaked: The config definition of 'AirDestructionEffects' was simplified. There is now 1 less smoke and fire effect. The remaining smoke and fire was sped up, which results in overall better visual quality.
+  </li>
+  <li>
+   Tweaked: Functions called on helicopters and airplanes on their destruction were optimized for better performance and reliability
+  </li>
+  <li>
+   Tweaked: Hit point positions in wheeled and tracked APCs and the position of hit points on the Kuma tank tracks were adjusted
+  </li>
+  <li>
+   Tweaked: Durability of armored vehicles to remove some damage inconsistencies introduced along with the addition of fuel hit points
+  </li>
+  <li>
+   Tweaked: Some of the missing UI_F sounds were added to CfgSounds
+  </li>
+  <li>
+   Tweaked: Added built-in GPS and radio into all tanks, APCs, MRAPs and boats (except rubber boats)
+  </li>
+  <li>
+   Tweaked: Turning main turrets of armored vehicles no longer starts their engines
+  </li>
+  <li>
+   Tweaked: Surface sounds of the HEMMT trucks were improved
+  </li>
+  <li>
+   Tweaked: The
+   <em>
+    FuelStation_01_Pump
+   </em>
+   can now be destroyed more easily
+  </li>
+  <li>
+   Tweaked: The door angle of
+   <em>
+    Warehouse_03
+   </em>
+   was improved to prevent incorrect collisions with characters
+  </li>
+  <li>
+   Tweaked: Nikos (Formal) now has a weapon visible in first person view
+  </li>
+  <li>
+   Tweaked: Various improvements to the
+   <em>
+    <a href="https://community.bistudio.com/wiki/BIS_fnc_unpackStaticWeapon," target="_blank">
+     BIS_fnc_unpackStaticWeapon
+    </a>
+   </em>
+   and
+   <em>
+    <a href="https://community.bistudio.com/wiki/BIS_fnc_packStaticWeapon" target="_blank">
+     BIS_fnc_packStaticWeapon
+    </a>
+   </em>
+   functions
+  </li>
+  <li>
+   Tweaked: Collision sounds for Hunter, Ifrit, Quad bike &amp; Offroad were increased (range)
+  </li>
+  <li>
+   Tweaked: Randomized the sounds of collisions into trees
+  </li>
+  <li>
+   Tweaked: The RPG-7 now has zeroing and a correct projectile drop (
+   <a href="https://feedback.bistudio.com/T120528" target="_blank">
+    https://feedback.bistudio.com/T120528
+   </a>
+   )
+  </li>
+  <li>
+   Tweaked: Sound configuration of the HEMTT trucks was improved
+  </li>
+  <li>
+   Tweaked: Boats, armored vehicles and drones now have different sound effects for rain in first-person view
+  </li>
+  <li>
+   Tweaked: The Taru Cargo pod now has an inventory for consistency
+  </li>
+  <li>
+   Tweaked: The
+   <em>
+    <a href="https://community.bistudio.com/wiki/BIS_fnc_inTrigger," target="_blank">
+     BIS_fnc_inTrigger
+    </a>
+   </em>
+   ,
+   <em>
+    <a href="https://community.bistudio.com/wiki/BIS_fnc_findSafePos," target="_blank">
+     BIS_fnc_findSafePos
+    </a>
+   </em>
+   ,
+   <em>
+    <a href="https://community.bistudio.com/wiki/BIS_fnc_moveIn," target="_blank">
+     BIS_fnc_moveIn
+    </a>
+   </em>
+   ,
+   <em>
+    <a href="https://community.bistudio.com/wiki/BIS_fnc_nearestPosition" target="_blank">
+     BIS_fnc_nearestPosition
+    </a>
+   </em>
+   ,
+   <em>
+    <a href="https://community.bistudio.com/wiki/BIS_fnc_textureMarker" target="_blank">
+     BIS_fnc_textureMarker
+    </a>
+   </em>
+   and
+   <em>
+    <a href="https://community.bistudio.com/wiki/BIS_fnc_textureVehicleIcon" target="_blank">
+     BIS_fnc_textureVehicleIcon
+    </a>
+   </em>
+   functions were optimized
+  </li>
+  <li>
+   Tweaked: The
+   <em>
+    <a href="https://community.bistudio.com/wiki/BIS_fnc_position" target="_blank">
+     BIS_fnc_position
+    </a>
+   </em>
+   function now returns the correct AGL position of an object
+  </li>
+  <li>
+   Tweaked: The
+   <em>
+    <a href="https://community.bistudio.com/wiki/BIS_fnc_inTrigger" target="_blank">
+     BIS_fnc_inTrigger
+    </a>
+   </em>
+   function now returns the distance to the 3D border when requested and its trigger height is used
+  </li>
+  <li>
+   Tweaked: The
+   <em>
+    <a href="https://community.bistudio.com/wiki/BIS_fnc_taskState" target="_blank">
+     BIS_fnc_taskState
+    </a>
+   </em>
+   function now returns "" instead of "CREATED" for undefined tasks
+  </li>
+  <li>
+   Tweaked: The
+   <em>
+    <a href="https://community.bistudio.com/wiki/BIS_fnc_taskCompleted" target="_blank">
+     BIS_fnc_taskCompleted
+    </a>
+   </em>
+   function no longer shows an error when used on an undefined task (so the function can be used in conditions which are running before a task is created)
+  </li>
+  <li>
+   Tweaked: The starting position of the
+   <a href="https://community.bistudio.com/wiki/Splendid_Camera" target="_blank">
+    Splendid Camera
+   </a>
+   now exactly matches the previous view
+  </li>
+  <li>
+   Tweaked: Cargo containers that are part of a terrain cannot be destroyed anymore
+  </li>
+  <li>
+   Tweaked: Duration configurations of several music and ambient radio files were updated
+  </li>
+  <li>
+   Tweaked: The 5.8x42mm 100Rnd Drum magazine now has only the last four rounds as tracers
+  </li>
+  <li>
+   Tweaked: The Ammo and Fuel variants of Zamak trucks now explode instead bursting into flames
+  </li>
+  <li>
+   Tweaked: Samples and audio configuration of the Wipeout plane were updated
+  </li>
+  <li>
+   Tweaked: Terrains in the main Editor Menu are now sorted alphabetically
+  </li>
+  <li>
+   Tweaked: Get in sound for the Caesar BTT plane
+  </li>
+  <li>
+   Tweaked: The
+   <em>
+    getInRadius
+   </em>
+   range for planes was reduced
+  </li>
+  <li>
+   Tweaked: Transitions from and to prone are now more flexible to be interrupted in unarmed stance
+  </li>
+  <li>
+   Tweaked: The Panther and Marid APCs now have Night Vision mode available for gunners and commanders
+  </li>
+  <li>
+   Tweaked: Difficulty preset changes: waypoints and commands are now hidden on veteran difficulty
+  </li>
+  <li>
+   Tweaked: Water Scooter handling and durability were improved (PiP mirrors were also added)
+  </li>
+  <li>
+   Tweaked: It is now possible to retexture the interior of the Zamak truck
+  </li>
+  <li>
+   Tweaked: Crew of the static GMG now holds the weapon properly
+  </li>
+  <li>
+   Tweaked: Dead crew of static weapons is now ejected
+  </li>
+  <li>
+   Tweaked: The shot and closure samples of MX rifles were improved
+  </li>
+  <li>
+   Tweaked: Suspension of the Caesar BTT plane is now supported by
+   <em>
+    PhysX
+   </em>
+  </li>
+  <li>
+   Tweaked: Pause Menu and Scoreboard keys are no longer hard-coded in the Respawn Screen
+  </li>
+  <li>
+   Tweaked: Difficulty Settings now contain more options about displaying units on the map
+  </li>
+  <li>
+   Tweaked: The crew of the Blackfish VTOL can now see their crewmates' aiming directions
+  </li>
+  <li>
+   Tweaked: Switching from combat pace to a sprint is now more fluent
+  </li>
+  <li>
+   Tweaked: The "popup" and "popdelay" variables can now be set directly on each pop-up target individually and will override global settings
+  </li>
+  <li>
+   Tweaked: The maximum fording depth of many vehicles
+  </li>
+  <li>
+   Tweaked: Dates in some scenarios were adjusted
+  </li>
+  <li>
+   Tweaked: A GPS item will only be added to Time Trial competitors if the slot isn't already full
+  </li>
+  <li>
+   Tweaked: It is now possible to change liveries on the Orca Black &amp; White variants through the Virtual Garage
+  </li>
+  <li>
+   Tweaked: The initial position detection in Time Trials was improved
+  </li>
+  <li>
+   Tweaked: Field of View in aircraft is no longer scaled according to their speed
+  </li>
+  <li>
+   Tweaked: The deflection of 30 mm MP shell used by the main gun of the Kamysh was slightly decreased
+  </li>
+  <li>
+   Tweaked: Waypoints are now permanently visible on Regular difficulty once again (
+   <a href="https://forums.bistudio.com/topic/188661-difficulty-overhaul/?page=9#comment-3150342" target="_blank">
+    https://forums.bistudio.com/topic/188661-difficulty-overhaul/?page=9#comment-3150342
+   </a>
+   )
+  </li>
+  <li>
+   Tweaked: Speed coefficient for mud surfaces
+  </li>
+  <li>
+   Tweaked: The function parameters for all faction showcases were adjusted
+  </li>
+  <li>
+   Tweaked: Compositions in the Sea area in Showcase NATO were improved
+  </li>
+  <li>
+   Tweaked: Rabbits, snakes and fish are no longer bleeding
+  </li>
+ </ul>
+ <ul>
+  <li>
+   Fixed: Zeus could not see newly created respawn vehicles correctly in some cases
+  </li>
+  <li>
+   Fixed: Swimming would make no sound
+  </li>
+  <li>
+   Fixed: Vaulting would not make any sound in some cases
+  </li>
+  <li>
+   Fixed: 'Alpha' and 'Beta' menu color presets had incorrect values
+  </li>
+  <li>
+   Fixed: Some footstep sounds could be heard behind the player (
+   <a href="https://forums.bistudio.com/topic/199866-166-audio-issue-with-footsteps/" target="_blank">
+    https://forums.bistudio.com/topic/199866-166-audio-issue-with-footsteps/
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: The whiteboard in Showcase CSAT was displaying incorrect Intel about the caliber of the T-100 Varsuk
+  </li>
+  <li>
+   Fixed: The Apex Protocol Main Menu spotlight was shown every time, even when Apex was not installed
+  </li>
+  <li>
+   Fixed: A-143 Buzzard and a few other vehicles were missing collision sounds
+  </li>
+  <li>
+   Fixed: Y-32 Xi'an was missing collision sounds
+  </li>
+  <li>
+   Fixed: PAPI lights
+  </li>
+  <li>
+   Fixed:
+   <em>
+    RscDisplayMultiplayer
+   </em>
+   had two default buttons
+  </li>
+  <li>
+   Fixed: Overlapping of mute buttons with a scrollbar in the map
+  </li>
+  <li>
+   Fixed: Many buildings and objects were not available for placing in Zeus Game Master scenarios (
+   <a href="https://feedback.bistudio.com/T120145" target="_blank">
+    https://feedback.bistudio.com/T120145
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: The vertical placement of props was improved
+  </li>
+  <li>
+   Fixed: Incorrect position of the character hands after loading a loadout which didn't have a weapon in the Virtual Arsenal
+  </li>
+  <li>
+   Fixed: Brake sounds were missing on several surfaces for the HEMMT trucks
+  </li>
+  <li>
+   Fixed: Pacific CSAT characters were sometimes using an English voice-set
+  </li>
+  <li>
+   Fixed: In dynamic groups, there was a chance the wrong parameters would be sent to
+   <em>
+    <a href="https://community.bistudio.com/wiki/BIS_fnc_removeScriptedEventHandler" target="_blank">
+     BIS_fnc_removeScriptedEventHandler
+    </a>
+   </em>
+  </li>
+  <li>
+   Fixed: Changes set by the Weather module were not applied instantly
+  </li>
+  <li>
+   Fixed: A video was still playing after clicking on one of the main menu spotlights and returning back
+  </li>
+  <li>
+   Fixed: The Campaign menu title bar was darker than other menus
+  </li>
+  <li>
+   Fixed: There was "Attempt to override final function" message spam in the RPT file
+  </li>
+  <li>
+   Fixed: The animation freeze at the start of Firing Drills and
+   <a href="https://community.bistudio.com/wiki/MP_End_Game" target="_blank">
+    End Game
+   </a>
+   scenarios was not reliable on sloped surfaces
+  </li>
+  <li>
+   Fixed: Switching from / to unarmed animations caused characters to slide
+  </li>
+  <li>
+   Fixed: Crouching and standing up from crouch sometimes wouldn't work after pressing the crouch button
+  </li>
+  <li>
+   Fixed: Going prone with a launcher equipped during combat pace movement was immediate and seemingly missing an animation (
+   <a href="https://feedback.bistudio.com/T116732" target="_blank">
+    https://feedback.bistudio.com/T116732
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Sling-load assistant was not functioning properly
+  </li>
+  <li>
+   Fixed: The sound of falling shells was removed from the starter pistol
+  </li>
+  <li>
+   Fixed: Burst fire from Slammer LMGs sounded like just one shot instead of a burst
+  </li>
+  <li>
+   Fixed: Pacific variants of NATO Autorifleman and AT Soldier had incorrect vests in their loadouts
+  </li>
+  <li>
+   Fixed:
+   <em>
+    Offroad_02_F
+   </em>
+   had an incorrectly aligned rear mirror (
+   <a href="https://feedback.bistudio.com/T119225" target="_blank">
+    https://feedback.bistudio.com/T119225
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Some parts of the AFV-4 Gorgon were not included in its hiddenSelection (
+   <a href="https://feedback.bistudio.com/T119594" target="_blank">
+    https://feedback.bistudio.com/T119594
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Pacific variants of static weapons could not be assembled (
+   <a href="https://feedback.bistudio.com/T119296" target="_blank">
+    https://feedback.bistudio.com/T119296
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: UGL sights of the SPAR16 GL rifle were unfolded when on a character's back
+  </li>
+  <li>
+   Fixed: The
+   <em>
+    <a href="https://community.bistudio.com/wiki/BIS_fnc_unpackStaticWeapon" target="_blank">
+     BIS_fnc_unpackStaticWeapon
+    </a>
+   </em>
+   function was not working properly
+  </li>
+  <li>
+   Fixed: The
+   <em>
+    <a href="https://community.bistudio.com/wiki/kbTell" target="_blank">
+     kbTell
+    </a>
+   </em>
+   command would not work properly if the
+   <em>
+    <a href="https://community.bistudio.com/wiki/BIS_fnc_kbTellLocal" target="_blank">
+     BIS_fnc_kbTellLocal
+    </a>
+   </em>
+   function was called with the parameter denying the direct channel (channel = true)
+  </li>
+  <li>
+   Fixed: Quadbikes would behave as submarines when driving through water
+  </li>
+  <li>
+   Fixed: The velocity of static GMG ammo was incorrect (
+   <a href="http://feedback.arma3.com/view.php?id=27469" target="_blank">
+    http://feedback.arma3.com/view.php?id=27469
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Some weapons were missing sounds of cases falling on the ground
+  </li>
+  <li>
+   Fixed: The Prowler would behave as a submarine when driving through water
+  </li>
+  <li>
+   Fixed: The MH-9 had inconsistent FFV view limits
+  </li>
+  <li>
+   Fixed: Missing SFX samples for vehicle UI actions (refuel, rearm, repair)
+  </li>
+  <li>
+   Fixed: JIP players could be killed when respawning far from their FOB, due to an incorrect area limit in the
+   <a href="https://community.bistudio.com/wiki/MP_End_Game" target="_blank">
+    End Game
+   </a>
+   scenarios
+  </li>
+  <li>
+   Fixed: Entering the
+   <a href="https://community.bistudio.com/wiki/Splendid_Camera" target="_blank">
+    Splendid Camera
+   </a>
+   would reset the fog settings
+  </li>
+  <li>
+   Fixed: Entering a sub-display (e.g. the Configure screen) from the
+   <a href="https://community.bistudio.com/wiki/Arma_3_Respawn:_New_Respawn_Screen" target="_blank">
+    Respawn Screen
+   </a>
+   could cause the display to get stuck until a respawn was performed
+  </li>
+  <li>
+   Fixed: Blackfoot gunners didn't have a crosshair when using DAGR missiles
+  </li>
+  <li>
+   Fixed: Tempest trucks now have correct UV mapping for mirrors
+  </li>
+  <li>
+   Fixed: The AK12 had a bullet in its magazine after the last round was fired
+  </li>
+  <li>
+   Fixed: The Options could not be closed using the Esc key from the
+   <a href="https://community.bistudio.com/wiki/Arma_3_Respawn:_New_Respawn_Screen" target="_blank">
+    Respawn Screen
+   </a>
+  </li>
+  <li>
+   Fixed: Closing a sub-display (e.g. Video Options) from the
+   <a href="https://community.bistudio.com/wiki/Arma_3_Respawn:_New_Respawn_Screen" target="_blank">
+    Respawn Screen
+   </a>
+   could cause all other displays to be closed as well
+  </li>
+  <li>
+   Fixed: The Strider MRAP now has smoother Picture-In-Picture feeds for its Gunner and Commander
+  </li>
+  <li>
+   Fixed: The Group Management title background would use an obsolete color
+  </li>
+  <li>
+   Fixed: The CAR-95-1 weapon had an incorrectly configured bipod (
+   <a href="https://feedback.bistudio.com/T122239" target="_blank">
+    https://feedback.bistudio.com/T122239
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: The Intel icon could be misplaced in
+   <a href="https://community.bistudio.com/wiki/MP_End_Game" target="_blank">
+    End Game
+   </a>
+   scenarios if placed above or under the water surface (e.g. sheds on the shores)
+  </li>
+  <li>
+   Fixed: The Phase indicator was not visible in the
+   <a href="https://community.bistudio.com/wiki/Arma_3_Respawn:_New_Respawn_Screen" target="_blank">
+    Respawn Screen
+   </a>
+   in
+   <a href="https://community.bistudio.com/wiki/MP_End_Game" target="_blank">
+    End Game
+   </a>
+   scenarios
+  </li>
+  <li>
+   Fixed: Seize scenarios would end seconds after starting with not respawn limit set
+  </li>
+  <li>
+   Fixed: Wrecks of the Wipeout and Buzzard airplanes were levitating
+  </li>
+  <li>
+   Fixed: Pop up error when a teammate is incapacitated while having the Group Manager open
+  </li>
+  <li>
+   Fixed: Returning to the Main Menu from the Scenarios or Multiplayer menus would lead to an FPS drop while playing the Main Menu video tiles
+  </li>
+  <li>
+   Fixed: The weapon UGL crosshair was not visible when crouching in combat pace
+  </li>
+  <li>
+   Fixed: Showcase Gunships would not fail if the player survived a crash landing (both on ground and in water)
+  </li>
+  <li>
+   Fixed: Showcase Gunships scenario flow would break if the helicopter touched the water and then immediately ascended again
+  </li>
+  <li>
+   Fixed: Export of parent classes from GUI editor didn't work because of a missing "GUI_styles.hpp" file (
+   <a href="https://www.reddit.com/r/armadev/comments/5pwvwr/missing_eden_files/" target="_blank">
+    https://www.reddit.com/r/armadev/comments/5pwvwr/missing_eden_files/
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Helicopters would have trouble landing if their occupants were killed meanwhile in Showcase Firing From Vehicles
+  </li>
+  <li>
+   Fixed: Hitting the button to close the
+   <a href="https://community.bistudio.com/wiki/Splendid_Camera" target="_blank">
+    Splendid Camera
+   </a>
+   in the Pause Menu would also prompt about leaving the game in the multiplayer environment (
+   <a href="https://forums.bistudio.com/topic/143930-general-discussion-dev-branch/?page=867#comment-3144508" target="_blank">
+    https://forums.bistudio.com/topic/143930-general-discussion-dev-branch/?page=867#comment-3144508
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Transport variants of the HEMTT truck now have fixed mirrors; characters no longer appear in them when they are getting into the vehicle
+  </li>
+  <li>
+   Fixed: The Caesar BTT plane would refuse to take damage when crashed
+  </li>
+  <li>
+   Fixed: The RPM indicator in the Caesar BTT plane was not working properly
+  </li>
+  <li>
+   Fixed: AI would refuse to shoot at air targets with some types of ammunition (9x21mm, .45ACP, .50BW, 5.56x45, 5.45x39, 7.62x39, 5.8x42)
+  </li>
+  <li>
+   Fixed: Players could end up back inside the helicopter after being inserted in Showcase Firing from Vehicles
+  </li>
+  <li>
+   Fixed: 35mm shells would not explode on hitting the Hummingbird in some cases
+  </li>
+  <li>
+   Fixed: Going prone from sprinting with a launcher had an unnecessary stand up transition (related to
+   <a href="https://feedback.bistudio.com/T116732" target="_blank">
+    https://feedback.bistudio.com/T116732
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Going prone from kneeling with a launcher caused an unnecessary stand up transition
+  </li>
+  <li>
+   Fixed: Going into the inventory with a binoculars would cause a transition to rifles (related to
+   <a href="https://feedback.bistudio.com/T120382" target="_blank">
+    https://feedback.bistudio.com/T120382
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Some weapons were missing the "baseWeapon" config attribute (
+   <a href="https://forums.bistudio.com/topic/143930-general-discussion-dev-branch/?do=findComment&amp;comment=3141143" target="_blank">
+    https://forums.bistudio.com/topic/143930-general-discussion-dev-branch/?do=findComment&amp;comment=3141143
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: The optics view on the static HMG could clip with the tripod (
+   <a href="https://feedback.bistudio.com/T120662" target="_blank">
+    https://feedback.bistudio.com/T120662
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: The Bobcat's spare wheels would heat in thermal vision when the vehicle was moving around
+  </li>
+  <li>
+   Fixed: It was not possible to open the Pause Menu while in the
+   <a href="https://community.bistudio.com/wiki/Arma_3_Respawn:_New_Respawn_Screen" target="_blank">
+    Respawn Screen
+   </a>
+   using the Pause key in some cases
+  </li>
+  <li>
+   Fixed: The Mk17 was heating in thermal vision when firing a primary weapon
+  </li>
+  <li>
+   Fixed: The cockpit glass of the Buzzard plane was too fragile
+  </li>
+  <li>
+   Fixed: Weapon switching from launcher to rifle was not working properly while sprinting / combat pacing
+  </li>
+  <li>
+   Fixed: Weapon switching from launcher to sidearm was not working properly while sprinting / combat pacing
+  </li>
+  <li>
+   Fixed: The commander and gunner of the FV-720 were clipping through the turret ring (
+   <a href="https://feedback.bistudio.com/T74854" target="_blank">
+    https://feedback.bistudio.com/T74854
+   </a>
+   ,
+   <a href="https://feedback.bistudio.com/T76233" target="_blank">
+    https://feedback.bistudio.com/T76233
+   </a>
+   ,
+   <a href="https://feedback.bistudio.com/T81983" target="_blank">
+    https://feedback.bistudio.com/T81983
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: There was an infinite animation loop caused by closing the inventory while removing a sidearm as the only weapon
+  </li>
+  <li>
+   Fixed: The Firing Drills freezing mechanic did not behave well under some circumstances
+  </li>
+  <li>
+   Fixed: JIP players did not see groups if coming from a scenario using Dynamic Groups and joining another one
+  </li>
+  <li>
+   Fixed: The NVS had an incorrect inventory icon
+  </li>
+  <li>
+   Fixed: Apex owners could get their vehicles stuck in sand (
+   <a href="https://feedback.bistudio.com/T120992" target="_blank">
+    https://feedback.bistudio.com/T120992
+   </a>
+   ,
+   <a href="https://feedback.bistudio.com/T120992" target="_blank">
+    https://feedback.bistudio.com/T120992
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Flag proxies on several models (
+   <a href="https://twitter.com/BXBX_BI/status/831455838753656832" target="_blank">
+    more Intel
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: The Respawn Timer was not visible after saving and loading a scenario in multiplayer
+  </li>
+  <li>
+   Fixed: The rail covers of the Rahim are now hidden when an appropriate slot (side or bottom) is filled with an attachment (
+   <a href="https://feedback.bistudio.com/T84605" target="_blank">
+    https://feedback.bistudio.com/T84605
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: The
+   <em>
+    BIS_fnc_unitPlay
+   </em>
+   function was not serialized and would break when a scenario was loaded (if it was saved during a unit play scene)
+  </li>
+  <li>
+   Fixed: The
+   <em>
+    BIS_fnc_unitPlay
+   </em>
+   function was not compatible with
+   <a href="https://community.bistudio.com/wiki/Arma_Dedicated_Server" target="_blank">
+    Dedicated Servers
+   </a>
+  </li>
+  <li>
+   Fixed: Occlusion and alpha sorting of the
+   <em>
+    Airport_01_terminal_F
+   </em>
+   building (
+   <a href="https://feedback.bistudio.com/T123379" target="_blank">
+    https://feedback.bistudio.com/T123379
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Hiding the interface in
+   <a href="https://community.bistudio.com/wiki/Arsenal" target="_blank">
+    Arsenal
+   </a>
+   did not hide the background of said icons
+  </li>
+  <li>
+   Fixed: NV Targets (strobes) were detectable by sensors other than Night Vision
+  </li>
+  <li>
+   Fixed: It was possible to get auto-zeroing against air targets with the APFSDS ammo
+  </li>
+  <li>
+   Fixed: The Xi'an VTOL was not able to take off vertically with minor damage
+  </li>
+  <li>
+   Fixed: Rotating in prone while moving caused kneeling in some cases (
+   <a href="https://feedback.bistudio.com/T123369" target="_blank">
+    https://feedback.bistudio.com/T123369
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Cars could get stuck on wooden bridges on Tanoa (
+   <a href="https://forums.bistudio.com/topic/143930-general-discussion-dev-branch/?do=findComment&amp;comment=3153369" target="_blank">
+    https://forums.bistudio.com/topic/143930-general-discussion-dev-branch/?do=findComment&amp;comment=3153369
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: UAVs at the airport were moved to a different position to prevent crashing with the plane piloted by autopilot in Showcase CSAT
+  </li>
+  <li>
+   Fixed: Passengers of the Support variants of Zamak trucks would clip through their seats
+  </li>
+  <li>
+   Fixed: The SDV periscope camera was overly sensitive when moving vertically
+  </li>
+  <li>
+   Fixed: Taru pods were missing icons in the Virtual Garage
+  </li>
+  <li>
+   Fixed: The
+   <a href="https://community.bistudio.com/wiki/Arma_3_Respawn:_New_Respawn_Screen" target="_blank">
+    Respawn Screen
+   </a>
+   did not support scenario-specific respawn messages
+  </li>
+  <li>
+   Fixed: Disconnected players would still count towards the loadout limit in the
+   <a href="https://community.bistudio.com/wiki/Arma_3_Respawn:_New_Respawn_Screen" target="_blank">
+    Respawn Screen
+   </a>
+  </li>
+  <li>
+   Fixed: Players could respawn onto the [0,0,0] coordinates when respawning on a position that was being removed
+  </li>
+  <li>
+   Fixed: Hands of Offroad gunners were stretching unnaturally while aiming to the sky
+  </li>
+  <li>
+   Fixed: The Syndikat MB 4WD had visual customization working incorrectly
+  </li>
+  <li>
+   Fixed: Trying to adjust stance while being unarmed had unexpected results (mainly because there are no adjusted stances when being unarmed)
+  </li>
+  <li>
+   Fixed: Players could not respawn into a specific type of vehicle when one of its kind was destroyed
+  </li>
+ </ul>
+ <p>
+  <strong>
+   <a href="https://community.bistudio.com/wiki/Eden_Editor" target="_blank">
+    Eden Editor
+   </a>
+  </strong>
+ </p>
+ <ul>
+  <li>
+   Added: An ability to access the Field Manual from the Eden workspace (Tools &gt; Field Manual)
+  </li>
+  <li>
+   Added: In the Advanced Hints system, it's now possible to access default variables (i.e. %1 to %10) in custom arguments
+  </li>
+  <li>
+   Added: All task modules now have a "Show Notification" attribute, allowing them to add / update a task without on-screen notifications
+  </li>
+  <li>
+   Added: A "Parent Task ID" attribute was added to the "Create Task" module
+  </li>
+  <li>
+   Added: A new group attribute controlling whether the group should be automatically deleted when empty
+  </li>
+  <li>
+   Added: When no player is present for an Eden Editor preview, Splendid Camera is opened by default
+  </li>
+  <li>
+   Added: The mod filter in the Asset Browser now shows mod icons
+  </li>
+ </ul>
+ <ul>
+  <li>
+   Tweaked: The default size of structured text (
+   <em>
+    ctrlStructuredText
+   </em>
+   ) now matches the size of plain text (
+   <em>
+    ctrlStatic
+   </em>
+   )
+  </li>
+  <li>
+   Tweaked: Behavior of the 'Center on Selected' function in the Eden Editor (the F key by default). It now works with layers (the position of the first entity found in the layer is used) and the camera is no longer moved when only an empty layer is selected.
+  </li>
+  <li>
+   Tweaked: Terrains in the 'Select Terrain' dialog are now sorted alphabetically
+  </li>
+  <li>
+   Tweaked: The current terrain is now auto-selected in the Eden Editor dialog
+  </li>
+  <li>
+   Tweaked: Current terrain is now auto-selected in the 'Select Terrain' dialog in Eden Editor
+  </li>
+ </ul>
+ <ul>
+  <li>
+   Fixed: Moving the camera to a comment (i.e. pressing 'F' when a comment is selected) didn't work
+  </li>
+  <li>
+   Fixed: Pacific variants of NATO AT Rifleman and Autorifleman had incorrect Eden Editor preview images
+  </li>
+  <li>
+   Fixed: Offroad (Repair) had an incorrect Eden Editor preview image
+  </li>
+  <li>
+   Fixed: The
+   <em>
+    <a href="https://community.bistudio.com/wiki/BIS_fnc_inTrigger" target="_blank">
+     BIS_fnc_inTrigger
+    </a>
+   </em>
+   function did not work properly when applied on an ellipse with B size larger than A size
+  </li>
+  <li>
+   Fixed: Eden Editor attributes which were using combo interfaces (e.g. a drop down menu) didn't have the current value selected by default in some cases
+  </li>
+  <li>
+   Fixed: Drop down menus with a sound preview in the Eden Editor (e.g. trigger music) did not react to mouse input in some cases
+  </li>
+  <li>
+   Fixed: Editing the loadout of characters with pre-filled backpacks (e.g. medic or AT specialist) would always restore the contents of the backpack
+  </li>
+ </ul>
+ <p>
+  <strong>
+   Apex Protocol (potential spoilers)
+  </strong>
+ </p>
+ <ul>
+  <li>
+   Fixed: The subtitles for conversations playing over the radio in Apex Protocol would display even if the players dropped their radio and couldn't hear them
+  </li>
+  <li>
+   Fixed: In the Apex Protocol lobby, players would end up with the leader's squad XML info instead of theirs
+  </li>
+  <li>
+   Fixed: The "Investigate the Drone" task could break in some cases in the Apex Protocol scenario
+  </li>
+  <li>
+   Fixed: Script error in the Apex Protocol campaign lobby when changing the respawn options
+  </li>
+  <li>
+   Fixed: Players were unable to use the ladder on the water tower at the Toronto objective in the Keystone scenario
+  </li>
+  <li>
+   Fixed: There were some incorrect names for new respawn positions in the End Game scenario
+  </li>
+  <li>
+   Fixed: Container doors were visibly open to the host but closed to clients in the Firestarter scenario
+  </li>
+  <li>
+   Fixed: Players couldn't climb the water tower at one of the variants of point New York in the Keystone scenario
+  </li>
+  <li>
+   Fixed: A quad bike getting damaged by an object composition in the Warm Welcome scenario
+  </li>
+  <li>
+   Fixed: There was a missing string when only one respawn ticket was available in the Keystone scenario
+  </li>
+ </ul>
+ <p>
+  <strong>
+   The East Wind
+   <strong>
+    (potential spoilers)
+   </strong>
+  </strong>
+ </p>
+ <ul>
+  <li>
+   Tweaked: MacKinnon's crashed Hunter is no longer being held up by its left rear-view mirror in the Drawdown 2035 scenario
+  </li>
+ </ul>
+ <ul>
+  <li>
+   Fixed: The progress of the Signal Lost scenario could get stuck
+  </li>
+  <li>
+   Fixed: Script error upon rendezvousing with the surviving NATO units in the Situation Normal scenario
+  </li>
+  <li>
+   Fixed: AI would have trouble driving the extraction Zamak out of the town in the Wet Work scenario
+  </li>
+  <li>
+   Fixed: Players could engage the enemies in the town without them engaging him in the Wet Work scenario
+  </li>
+  <li>
+   Fixed: Players could get damaged by McKinnon's Hunter
+  </li>
+  <li>
+   Fixed: The player could use the Save &amp; Exit option during the opening cutscene of the Air Superiority scenario
+  </li>
+  <li>
+   Fixed: Vehicles would move incorrectly in the Moral Fiber scenario
+  </li>
+  <li>
+   Fixed: There was no 3D task indicator for getting in a vehicle in the Moral Fiber scenario
+  </li>
+ </ul>
+ <p>
+  <strong>
+   Prologue
+   <strong>
+    (potential spoilers)
+   </strong>
+  </strong>
+ </p>
+ <ul>
+  <li>
+   Fixed: The Kajman helicopter would sometimes catch fire during the final cutscene of the Damage Control scenario
+  </li>
+  <li>
+   Fixed: Standing enemies would sometimes crouch when killed in the Reality Check scenario
+  </li>
+ </ul>
+ <h2>
+  ENGINE:
+ </h2>
+ <ul>
+  <li>
+   <strong>
+    Added:
+    <a href="https://dev.arma3.com/post/oprep-64-bit-executables" target="_blank">
+     64-bit Executables
+    </a>
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added:
+    <a href="https://community.bistudio.com/wiki/Arma_3_Dynamic_Simulation" target="_blank">
+     Dynamic Simulation
+    </a>
+   </strong>
+  </li>
+  <li>
+   Added: New
+   <em>
+    <a href="https://community.bistudio.com/wiki/Arma_3:_Event_Handlers#TurnIn" target="_blank">
+     TurnIn
+    </a>
+   </em>
+   and
+   <em>
+    <a href="https://community.bistudio.com/wiki/Arma_3:_Event_Handlers#TurnOut" target="_blank">
+     TurnOut
+    </a>
+   </em>
+   Event Handlers (firing when hatches are opened / closed; parameters: [vehicle, person, turret path])
+  </li>
+  <li>
+   Added: Tactical Pings are now shown on the 2D map as well
+  </li>
+  <li>
+   Added: Tactical Ping markers can now be placed through the map interface
+  </li>
+  <li>
+   Added: A new
+   <em>
+    <a href="https://community.bistudio.com/wiki/isRemoteExecutedJIP" target="_blank">
+     IsRemoteExecutedJIP
+    </a>
+   </em>
+   script command
+  </li>
+  <li>
+   Added: New vehicle sound parameter for opening / closing the hatches: "soundTurnIn", "soundTurnOut","soundTurnInInternal", "soundTurnOutInternal"
+  </li>
+  <li>
+   Added: New "engineTemp", "wheelsTemp" and "turretGunTemp" vehicle animation sources
+  </li>
+  <li>
+   Added: A new crosshair difficulty option (to disable the crosshair and crew aim indicator in vehicles; CCIP is visible only in optics)
+  </li>
+  <li>
+   Added: A new
+   <em>
+    terrainIntersectAt
+   </em>
+   script command
+  </li>
+  <li>
+   Added: A new
+   <em>
+    <a href="https://community.bistudio.com/wiki/enableWeaponDisassembly" target="_blank">
+     enableWeaponDisassembly
+    </a>
+   </em>
+   script command
+  </li>
+  <li>
+   Added: New
+   <em>
+    <a href="https://community.bistudio.com/wiki/setFlagAnimationPhase" target="_blank">
+     setFlagAnimationPhase
+    </a>
+   </em>
+   and
+   <em>
+    getFlagAnimationPhase
+   </em>
+   script commands
+  </li>
+  <li>
+   Added: A new
+   <em>
+    <a href="https://community.bistudio.com/wiki/isSimpleObject" target="_blank">
+     isSimpleObject
+    </a>
+   </em>
+   script command
+  </li>
+  <li>
+   Added: Support for randomly generated values based on a seed (
+   <em>
+    <a href="https://community.bistudio.com/wiki/random" target="_blank">
+     random
+    </a>
+   </em>
+   command)
+  </li>
+  <li>
+   Added: A new "
+   <em>
+    <a href="https://community.bistudio.com/wiki/Arma_3:_Event_Handlers/addMissionEventHandler#BuildingChanged" target="_blank">
+     BuildingChanged
+    </a>
+   </em>
+   " mission Event Handler
+  </li>
+  <li>
+   Added: Missiles now support sub-munitions. Previously, such feature was reserved only for CfgAmmo classes with simulation "shotSubmunitions". Now "shotMissile" works with it as well. See
+   <a href="https://community.bistudio.com/wiki/Arma_3_Weapon_Config_Guidelines#Ammo_changes_on_fly_and_on_hit" target="_blank">
+    https://community.bistudio.com/wiki/Arma_3_Weapon_Config_Guidelines#Ammo_changes_on_fly_and_on_hit
+   </a>
+   for more details.
+  </li>
+  <li>
+   Added: Support for destroying objects without effects (e.g. explosion, fire, etc.)
+  </li>
+  <li>
+   Added: Script variables are now available for Simple Objects
+  </li>
+  <li>
+   Added: A new "
+   <em>
+    cameradir
+   </em>
+   " MFD source
+  </li>
+  <li>
+   Added: Support for huge pages via the "
+   <em>
+    -hugePages
+   </em>
+   " command-line parameter
+  </li>
+  <li>
+   Added: Support for an
+   <em>
+    EnableHugePages
+   </em>
+   function for DLL interfaces
+  </li>
+  <li>
+   Added: Support of huge pages for the TBB4 memory allocator
+  </li>
+  <li>
+   Added: Sub-munition ammo type randomization (
+   <a href="https://community.bistudio.com/wiki/Arma_3_Weapon_Config_Guidelines#Ammo_changes_on_fly_and_on_hit" target="_blank">
+    https://community.bistudio.com/wiki/Arma_3_Weapon_Config_Guidelines#Ammo_changes_on_fly_and_on_hit
+   </a>
+   )
+  </li>
+  <li>
+   Added: It is now possible to transport non-vehicle objects in vehicles (via scripting only)
+  </li>
+  <li>
+   Added: A new "
+   <em>
+    featureType
+   </em>
+   " config parameter replacing "
+   <em>
+    featureSize
+   </em>
+   "
+  </li>
+  <li>
+   Added: A new
+   <em>
+    setFeatureType
+   </em>
+   script command (parameters: 0 - disable, 1 - object is always visible to object view distance, 2 - object is visible to terrain view distance, the limit is 500 for terrain / static objects and 200 for dynamic objects including config features and auto features (flying helicopters, airplanes))
+  </li>
+  <li>
+   Added: A new
+   <em>
+    <a href="https://community.bistudio.com/wiki/Arma_3:_Event_Handlers#Deleted" target="_blank">
+     Deleted
+    </a>
+   </em>
+   Event Handler
+  </li>
+  <li>
+   Added: A new
+   <em>
+    typeRecognitionDistance
+   </em>
+   sensor parameter
+  </li>
+  <li>
+   Added: New PAPI lights configuration (new parameters: VasiLight &gt;&gt; light &gt;&gt; cone, slope, angleLimitH, angleLimitV; check the class "CfgVehicles &gt;&gt; Land_Runway_PAPI &gt;&gt; VasiLight" from the config viewer for more Intel)
+  </li>
+  <li>
+   Added: New MFD options:
+   <ul>
+    <li>
+     For text: "sourceLength", "sourcePrecision"
+    </li>
+    <li>
+     For scale: "NeverEatSeaWeed": 1 - will show "N,E,S,W", 2 - will show "N,NE,E,SE,S,SW,W,NW" in the heading scale
+    </li>
+   </ul>
+  </li>
+  <li>
+   Added: Support for (helicopter) drones to output a 'fake' RPM value (for SFX e.g.)
+  </li>
+  <li>
+   Added: Support for the
+   <em>
+    <a href="https://community.bistudio.com/wiki/abs" target="_blank">
+     abs
+    </a>
+   </em>
+   command in simple expressions
+  </li>
+  <li>
+   Added: A new "Activate Mine" action
+  </li>
+  <li>
+   Added: A new
+   <em>
+    <a href="https://community.bistudio.com/wiki/parseSimpleArray" target="_blank">
+     parseSimpleArray
+    </a>
+   </em>
+   command to parse a string output of an extension into an array
+  </li>
+  <li>
+   Added: An alternative syntax for the
+   <em>
+    <a href="https://community.bistudio.com/wiki/callExtension" target="_blank">
+     callExtension
+    </a>
+   </em>
+   command
+  </li>
+  <li>
+   Added: A new "nightRangeCoef" parameter to enable the influence of day and night on visual sensors
+  </li>
+  <li>
+   Added: Heading for camera feeds
+  </li>
+  <li>
+   Added: A new "
+   <em>
+    hasUnderbarrel
+   </em>
+   " weapon animation source
+  </li>
+ </ul>
+ <ul>
+  <li>
+   Tweaked: The disassemble action is now available for vehicles with dead crew (e.g. static weapons)
+  </li>
+  <li>
+   Tweaked: The impact origin of ragdolls being triggered is now more precise
+  </li>
+  <li>
+   Tweaked: AI drivers of tracked vehicles should now drive more reliably in specific cases (less zig-zagging in high speeds, low-speed turning around)
+  </li>
+  <li>
+   Tweaked: The submunition trigger distance is now also affected by the target distance
+  </li>
+  <li>
+   Tweaked: The
+   <em>
+    <a href="https://community.bistudio.com/wiki/Arma_3:_Event_Handlers/addMissionEventHandler#BuildingChanged" target="_blank">
+     BuildingChanged
+    </a>
+   </em>
+   mission Event Handler is now triggered even when a building is repaired
+  </li>
+  <li>
+   Tweaked:
+   <em>
+    <a href="https://community.bistudio.com/wiki/setRank" target="_blank">
+     setRank
+    </a>
+   </em>
+   and
+   <em>
+    <a href="https://community.bistudio.com/wiki/setUnitRank" target="_blank">
+     setUnitRank
+    </a>
+   </em>
+   now work for all clients
+  </li>
+  <li>
+   Tweaked: AI following a path should now be more precise
+  </li>
+  <li>
+   Tweaked: The
+   <em>
+    <a href="https://community.bistudio.com/wiki/Arma_3:_Event_Handlers#InventoryOpened" target="_blank">
+     InventoryOpened
+    </a>
+   </em>
+   EH did not provide info on what containers were opened for dead bodies (
+   <a href="https://feedback.bistudio.com/T81559" target="_blank">
+    https://feedback.bistudio.com/T81559
+   </a>
+   )
+  </li>
+  <li>
+   Tweaked: The
+   <em>
+    setDriveOnPath
+   </em>
+   command now removes duplicate points (improves finishing the path for AI drivers)
+  </li>
+  <li>
+   Tweaked: Divers should now properly change weapon ammo when leaving water
+  </li>
+  <li>
+   Tweaked: The total amount of groups was increased by a factor of 2
+  </li>
+  <li>
+   Tweaked: Vehicles without waypoints should no longer start their engines at the beginning of scenarios
+  </li>
+  <li>
+   Tweaked: In one of the older presets, players were able to change weapon via the context menu to a weapon which they were already holding
+  </li>
+  <li>
+   Tweaked: Collisions with attached objects have been disabled
+  </li>
+  <li>
+   Tweaked: The MFD "
+   <em>
+    numberEach
+   </em>
+   " in source "scale" can be zero to disable text
+  </li>
+  <li>
+   Tweaked:
+   <a href="https://community.bistudio.com/wiki/CfgDisabledCommands" target="_blank">
+    CfgDisabledCommands
+   </a>
+   entries no longer need to be listed in lowercase in order to work properly
+  </li>
+  <li>
+   Tweaked: A target assigned by a UAV's turret was visible on the Sensor Overview
+  </li>
+  <li>
+   Tweaked:
+   <em>
+    PhysX
+   </em>
+   objects movement and collision precision were improved
+  </li>
+  <li>
+   Tweaked: The "maxFordingDepth" parameter can now be negative on cars and tanks (cars are measured from the center of the BBbox, helicopters need a positive value as they're measured from the land contacts)
+  </li>
+  <li>
+   Tweaked: The minimally required speed for airplane taxiing has been lowered
+  </li>
+  <li>
+   Tweaked: Enemy detection by plain sight is now limited by the object view distance
+  </li>
+  <li>
+   Tweaked: The
+   <em>
+    <a href="https://community.bistudio.com/wiki/Arma_3:_Event_Handlers#Killed" target="_blank">
+     Killed
+    </a>
+   </em>
+   ,
+   <em>
+    <a href="https://community.bistudio.com/wiki/Arma_3:_Event_Handlers#MPKilled" target="_blank">
+     MPKilled
+    </a>
+   </em>
+   and
+   <em>
+    <a href="https://community.bistudio.com/wiki/Arma_3:_Event_Handlers/addMissionEventHandler#EntityKilled" target="_blank">
+     EntityKilled
+    </a>
+   </em>
+   Event Handlers were extended with a damage effect value
+  </li>
+  <li>
+   Tweaked: Location
+   <em>
+    <a href="https://community.bistudio.com/wiki/getVariable" target="_blank">
+     getVariable
+    </a>
+   </em>
+   and Task
+   <em>
+    getVariable
+   </em>
+   now support a default value
+  </li>
+  <li>
+   Tweaked: Script commands
+   <em>
+    <a href="https://community.bistudio.com/wiki/setHit" target="_blank">
+     setHit
+    </a>
+   </em>
+   ,
+   <em>
+    <a href="https://community.bistudio.com/wiki/setHitIndex" target="_blank">
+     setHitIndex
+    </a>
+   </em>
+   and
+   <em>
+    <a href="https://community.bistudio.com/wiki/setHitPointDamage" target="_blank">
+     setHitpointDamage
+    </a>
+   </em>
+   now accept an optional parameter that allows partial object destruction without destruction effects
+  </li>
+  <li>
+   Tweaked: Dashed lock icons are now used whenever a target is not in a sensor's line-of-sight
+  </li>
+  <li>
+   Tweaked: When a variable space is null,
+   <em>
+    <a href="https://community.bistudio.com/wiki/getVariable" target="_blank">
+     getVariable
+    </a>
+   </em>
+   will return a default value (instead of null)
+  </li>
+  <li>
+   Tweaked: The
+   <em>
+    <a href="https://community.bistudio.com/wiki/enableEnvironment" target="_blank">
+     enableEnvironment
+    </a>
+   </em>
+   script command was extended to allow separate control over ambient life and ambient sound (
+   <a href="https://feedback.bistudio.com/T117789" target="_blank">
+    https://feedback.bistudio.com/T117789
+   </a>
+   )
+  </li>
+  <li>
+   Tweaked: The speed of vehicles commanded to move should now be smoother
+  </li>
+  <li>
+   Tweaked: The default probability of sub-munition ammo is now 1
+  </li>
+  <li>
+   Tweaked: The
+   <em>
+    <a href="https://community.bistudio.com/wiki/Arma_3:_Event_Handlers#Dammaged" target="_blank">
+     Dammaged
+    </a>
+   </em>
+   Event Handler is now extended with the hitPart index and hitPoint name parameters
+  </li>
+  <li>
+   Tweaked: The
+   <em>
+    <a href="https://community.bistudio.com/wiki/Arma_3:_Event_Handlers#HandleDamage" target="_blank">
+     HandleDamage
+    </a>
+   </em>
+   Event Handler is now extended with the hitPoint name parameter
+  </li>
+  <li>
+   Tweaked: The
+   <em>
+    <a href="https://community.bistudio.com/wiki/enableEnvironment" target="_blank">
+     enableEnvironment
+    </a>
+   </em>
+   command was improved (
+   <a href="https://feedback.bistudio.com/T79082" target="_blank">
+    https://feedback.bistudio.com/T79082
+   </a>
+   ,
+   <a href="https://feedback.bistudio.com/T117789" target="_blank">
+    https://feedback.bistudio.com/T117789
+   </a>
+   ,
+   <a href="https://feedback.bistudio.com/T116778" target="_blank">
+    https://feedback.bistudio.com/T116778
+   </a>
+   ,
+   <a href="https://feedback.bistudio.com/T84272" target="_blank">
+    https://feedback.bistudio.com/T84272
+   </a>
+   , etc.)
+  </li>
+  <li>
+   Tweaked: The getEnableEnvironment command was renamed to
+   <em>
+    <a href="https://community.bistudio.com/wiki/environmentEnabled" target="_blank">
+     environmentEnabled
+    </a>
+   </em>
+  </li>
+  <li>
+   Tweaked: The
+   <em>
+    <a href="https://community.bistudio.com/wiki/lineIntersectsSurfaces" target="_blank">
+     lineIntersectsSurfaces
+    </a>
+   </em>
+   command was rounding passed values incorrectly
+  </li>
+  <li>
+   Tweaked: The
+   <em>
+    <a href="https://community.bistudio.com/wiki/lineIntersectsSurfaces" target="_blank">
+     lineIntersectsSurfaces
+    </a>
+   </em>
+   command was extended with an optional parameter (allowing to return the same object intersections)
+  </li>
+ </ul>
+ <ul>
+  <li>
+   Fixed: Parachutes would not collide with objects attached to roadways
+  </li>
+  <li>
+   Fixed: There was a typo in the objectDistaceLimitCoef and viewDistaceLimitCoef parameters
+  </li>
+  <li>
+   Fixed: The
+   <em>
+    <a href="https://community.bistudio.com/wiki/isRemoteExecuted" target="_blank">
+     isRemoteExecuted
+    </a>
+   </em>
+   and
+   <em>
+    <a href="https://community.bistudio.com/wiki/isRemoteExecutedJIP" target="_blank">
+     isRemoteExecutedJIP
+    </a>
+   </em>
+   commands were not working properly in some cases
+  </li>
+  <li>
+   Fixed: Reading of the "enableParallax" parameter in MFD HUD was not correct
+  </li>
+  <li>
+   Fixed: Aiming down the iron sights with a lowered weapon would behave inconsistently
+  </li>
+  <li>
+   Fixed: UAVs would switch weapons despite the player having manual control over them in some cases
+  </li>
+  <li>
+   Fixed: Sorting of text parts of MFDs was incorrect
+  </li>
+  <li>
+   Fixed: A potential memory leak when using the
+   <em>
+    <a href="https://community.bistudio.com/wiki/detach" target="_blank">
+     detach
+    </a>
+   </em>
+   script command in multiplayer
+  </li>
+  <li>
+   Fixed: Setting a Control or Display variable to nil would not properly undefine the variable
+  </li>
+  <li>
+   Fixed: It was not possible to unhide an object hidden via an attribute or init script in some cases
+  </li>
+  <li>
+   Fixed: The server browser overflowed with data could discard some of it in some cases (making mod signature checking delayed or canceled)
+  </li>
+  <li>
+   Fixed: Crash (to desktop) connected to AI driving
+  </li>
+  <li>
+   Fixed:
+   <em>
+    <a href="https://community.bistudio.com/wiki/fadeRadio" target="_blank">
+     fadeRadio
+    </a>
+   </em>
+   would affect
+   <em>
+    <a href="https://community.bistudio.com/wiki/playMusic" target="_blank">
+     playMusic
+    </a>
+   </em>
+  </li>
+  <li>
+   Fixed: The "animate" parameter of the
+   <em>
+    <a href="https://community.bistudio.com/wiki/animateSource" target="_blank">
+     animateSource
+    </a>
+   </em>
+   script command was not correctly passed to remote clients
+  </li>
+  <li>
+   Fixed: It was not possible to connect to a Linux server once it loaded too many addons (
+   <a href="https://feedback.bistudio.com/T117183" target="_blank">
+    https://feedback.bistudio.com/T117183
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Potential fix for a Crash To Desktop (
+   <a href="https://feedback.bistudio.com/T123029" target="_blank">
+    https://feedback.bistudio.com/T123029
+   </a>
+   ,
+   <a href="https://feedback.bistudio.com/T120839" target="_blank">
+    https://feedback.bistudio.com/T120839
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: disableTI/NVGEquipment would not change the game state immediately
+  </li>
+  <li>
+   Fixed: The
+   <em>
+    <a href="https://community.bistudio.com/wiki/createSimpleObject" target="_blank">
+     createSimpleObject
+    </a>
+   </em>
+   command would create an object out of any string
+  </li>
+  <li>
+   Fixed: Inventory weight of loaded magazines was doubled (
+   <a href="https://forums.bistudio.com/topic/143930-general-discussion-dev-branch/?page=862#comment-3147196" target="_blank">
+    https://forums.bistudio.com/topic/143930-general-discussion-dev-branch/?page=862#comment-3147196
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Free Content Licensed DLC scenarios could not be started (e.g. TT1)
+  </li>
+  <li>
+   Fixed: Initial exposure of PiP scenes (first frame)
+  </li>
+  <li>
+   Fixed: Fleeing of vehicles unable to hit their targets was incorrect
+  </li>
+  <li>
+   Fixed:
+   <em>
+    ListBox
+   </em>
+   and
+   <em>
+    ListNBox
+   </em>
+   controls allowed to select only the first 7 items
+  </li>
+  <li>
+   Fixed: Server crash cases
+  </li>
+  <li>
+   Fixed: ComboBoxes would appear empty when expanded after all their items were removed
+  </li>
+  <li>
+   Fixed: AI infantry would flee when unable to engage
+  </li>
+  <li>
+   Fixed: Mortars controlled by the AI could not shoot more than one round at a time
+  </li>
+  <li>
+   Fixed: Crash when triggering a Tactical Ping
+  </li>
+  <li>
+   Fixed: Incorrect turret elevation text in the HUD
+  </li>
+  <li>
+   Fixed: Weapon switching actions between a rifle and a launcher were not working correctly (
+   <a href="https://feedback.bistudio.com/T123301" target="_blank">
+    https://feedback.bistudio.com/T123301
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Using the
+   <em>
+    <a href="https://community.bistudio.com/wiki/setUnitPos" target="_blank">
+     setUnitPos
+    </a>
+   </em>
+   command with Careless behavior would force units to look through their iron sights
+  </li>
+  <li>
+   Fixed: The Titan AA/AT lock was randomly broken (
+   <a href="https://feedback.bistudio.com/T123086" target="_blank">
+    https://feedback.bistudio.com/T123086
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: The
+   <em>
+    <a href="https://community.bistudio.com/wiki/lineIntersectsSurfaces" target="_blank">
+     lineIntersectsSurfaces
+    </a>
+   </em>
+   command behaved incorrectly when using the primary LOD on its own
+  </li>
+  <li>
+   Fixed: Weapon attachments could still work when switching from a FFV position to non-FFV one
+  </li>
+  <li>
+   Fixed: The
+   <em>
+    <a href="https://community.bistudio.com/wiki/forceSpeed" target="_blank">
+     forceSpeed
+    </a>
+   </em>
+   command value was not saved along with scenarios
+  </li>
+  <li>
+   Fixed: AI orders to repair a vehicle would loop infinitely (
+   <a href="https://feedback.bistudio.com/T120612" target="_blank">
+    https://feedback.bistudio.com/T120612
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Crash when changing unit grouping in the
+   <a href="https://community.bistudio.com/wiki/Arma_3_Zeus" target="_blank">
+    Zeus
+   </a>
+   interface
+  </li>
+  <li>
+   Fixed: Crash connected to broken animations
+  </li>
+  <li>
+   Fixed: AI drivers would move to the corner of the VR terrain on their own
+  </li>
+  <li>
+   Fixed: Potential crash when deleting characters
+  </li>
+  <li>
+   Fixed: Crash connected to weapon resting (
+   <a href="https://feedback.bistudio.com/T123657" target="_blank">
+    https://feedback.bistudio.com/T123657
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Armored vehicles would not attack targets properly on Dedicated Servers
+  </li>
+  <li>
+   Fixed: Planes controlled by AI were unable to lock a target
+  </li>
+  <li>
+   Fixed: Framerate drop when opening a map in several mods (
+   <a href="https://forums.bistudio.com/topic/160288-arma-3-stable-server-166-performance-binary-feedback/?do=findComment&amp;comment=3161290" target="_blank">
+    https://forums.bistudio.com/topic/160288-arma-3-stable-server-166-performance-binary-feedback/?do=findComment&amp;comment=3161290
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Custom face wear of AI soldiers would reset after loading a scenario
+  </li>
+  <li>
+   Fixed: Using the
+   <em>
+    <a href="https://community.bistudio.com/wiki/setObjectViewDistance" target="_blank">
+     setObjectViewDistance
+    </a>
+   </em>
+   command would also modify Video Options settings
+  </li>
+  <li>
+   Fixed: The camera was facing in the opposite direction in the "Loadmaster" position in Tarus when remotely controlling an entity
+  </li>
+  <li>
+   Fixed: The
+   <em>
+    <a href="https://community.bistudio.com/wiki/isRemoteExecuted" target="_blank">
+     isRemoteExecuted
+    </a>
+   </em>
+   command would not work as expected in some cases
+  </li>
+  <li>
+   Fixed: Gunship / UAV gunner optics were shaking when the pilot maneuvered an aircraft in multiplayer
+  </li>
+  <li>
+   Fixed: Players could not deny playing the Prologue when there was another instance of the game running (e.g. a Dedicated Server)
+  </li>
+  <li>
+   Fixed: AI vehicle gunners would continue shooting at a target even when it hid behind an obstacle
+  </li>
+  <li>
+   Fixed: Players could be trapped in a vehicle with disabled simulation in some cases
+  </li>
+  <li>
+   Fixed: UAV gunner optics were shaking when the FPS was low
+  </li>
+  <li>
+   Fixed: Weapon Info and Stance Indicator could not be switched in the difficulty settings
+  </li>
+  <li>
+   Fixed: The Score table tab did not show the Disconnect message box properly in the Debriefing Screen
+  </li>
+  <li>
+   Fixed: A rare crash when switching from the main menu to a campaign selection and back
+  </li>
+  <li>
+   Fixed: It was not possible to open the drop-down menu of the UAV terminal and Artillery Computer in some cases
+  </li>
+  <li>
+   Fixed: Several issues with the Dynamic Simulation on Dedicated Servers
+  </li>
+  <li>
+   Fixed: The Car "Hull" indicator behaved incorrectly
+  </li>
+  <li>
+   Fixed: the
+   <em>
+    <a href="https://community.bistudio.com/wiki/Arma_3:_Event_Handlers#TurnIn" target="_blank">
+     TurnIn
+    </a>
+    /
+   </em>
+   <em>
+    <a href="https://community.bistudio.com/wiki/Arma_3:_Event_Handlers#TurnOut" target="_blank">
+     TurnOut
+    </a>
+   </em>
+   Event Handlers would return [] for the driver turret (instead of [-1])
+  </li>
+  <li>
+   Fixed: Vehicles would start braking too late and could miss their waypoints
+  </li>
+  <li>
+   Fixed: Potential crash when the game is closed with a score table open
+  </li>
+  <li>
+   Fixed: The Respawn Menu would not work correctly after saving and loading a scenario in multiplayer
+  </li>
+  <li>
+   Fixed: The image type of a
+   <a href="https://community.bistudio.com/wiki/squad.xml" target="_blank">
+    squad.xml
+   </a>
+   logo was not checked in all cases
+  </li>
+  <li>
+   Fixed: AV pilots / drivers could open their inventory
+  </li>
+  <li>
+   Fixed: Potential crash when moving out of a vehicle in multiplayer
+  </li>
+  <li>
+   Fixed: The
+   <em>
+    shotInstigator
+   </em>
+   command would return an incorrect value if the vehicle commander used Manual Fire
+  </li>
+  <li>
+   Fixed: Tasks were not visible in the debriefing when a player died and had Team Switched before
+  </li>
+  <li>
+   Fixed: AI would ignore orders when the player was giving them from within a vehicle
+  </li>
+  <li>
+   Fixed: The minimap would not show UAVs
+  </li>
+  <li>
+   Fixed: Crash when accessing a not-yet-created UI
+  </li>
+  <li>
+   Fixed: Incorrect parsing of mission and map name from the Steam server response
+  </li>
+  <li>
+   Fixed: Airplanes controlled by AI had trouble taking off from most airfields on Altis
+  </li>
+  <li>
+   Fixed: The -enableHT parameter was not handled properly in some cases
+  </li>
+  <li>
+   Fixed: The "Showcasing" Steam Achievement could be unlocked without completing Showcase End Game
+  </li>
+ </ul>
+ <p>
+  <strong>
+   Eden Editor
+  </strong>
+ </p>
+ <ul>
+  <li>
+   Added: Engine support for sub-categories in the attribute system
+  </li>
+  <li>
+   Added: A new dashed line marking the probability of presence when dragging entities
+  </li>
+  <li>
+   Added: A new activation type for triggers (detected any player)
+  </li>
+  <li>
+   Added: A new "
+   <em>
+    <a href="https://community.bistudio.com/wiki/Arma_3:_Event_Handlers:_Eden_Editor#AttributesChanged3DEN" target="_blank">
+     AttributesChanged3DEN
+    </a>
+   </em>
+   " Event Handler (called when moving / rotating objects)
+  </li>
+  <li>
+   Added: A new "
+   <em>
+    <a href="https://community.bistudio.com/wiki/Arma_3:_Event_Handlers:_Eden_Editor#Dragged3DEN" target="_blank">
+     Dragged3DEN
+    </a>
+   </em>
+   " Event Handler for entities (fires when an object is dragged in the Eden Editor either by widget or by mouse)
+  </li>
+ </ul>
+ <ul>
+  <li>
+   Fixed: The rotation arrow would point in the incorrect direction when rotating a group after rotating its group leader
+  </li>
+  <li>
+   Fixed: The drop down menu of a combo box could overflow a parent's control group
+  </li>
+  <li>
+   Fixed: Selecting an item in the Asset List would cause its icon to flash at the [0,0,0] coordinates
+  </li>
+  <li>
+   Fixed: A change in a Logic's area shape would revert after coming back from previewing / restarting the scenario
+  </li>
+  <li>
+   Fixed: Object rotation via the area scale widget did not fire the "
+   <em>
+    <a href="https://community.bistudio.com/wiki/Arma_3:_Event_Handlers:_Eden_Editor#AttributesChanged3DEN" target="_blank">
+     attributesChanged3DEN
+    </a>
+   </em>
+   " event
+  </li>
+  <li>
+   Fixed: Placing a group in a vehicle above the group limit could result in placing an empty vehicle with group outside of it (
+   <a href="https://feedback.bistudio.com/T120533" target="_blank">
+    https://feedback.bistudio.com/T120533
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Forcing a group into a formation would not work if some units were deleted from the group before
+  </li>
+  <li>
+   Fixed: Characters could be moved to the corner of the terrain after a scenario preview
+  </li>
+  <li>
+   Fixed: Searching by mod in Groups mode did not work correctly
+  </li>
+  <li>
+   Fixed: Objects were sometimes moved out of their layer when their type was changed
+  </li>
+  <li>
+   Fixed: The multiplayer lobby in the Eden Editor scenario preview would not display position names of vehicle crewmen
+  </li>
+  <li>
+   Fixed: Ambient animals were missing in Scenario Previews
+  </li>
+ </ul>
+ <h2>
+  LAUNCHER:
+ </h2>
+ <ul>
+  <li>
+   <strong>
+    Added: An ability to select the game platform (32-bit or 64-bit). On 64-bit systems Launcher will start 64-bit version of the game by default.
+   </strong>
+  </li>
+  <li>
+   Added: Checks for compatibility of mods (or precisely its game extensions) with the selected platform
+  </li>
+  <li>
+   Added: When subscribing to a mod in the server browser, users are informed if the mod is platform-specific
+  </li>
+  <li>
+   Added: Hiding 32-bit/64-bit specific options based on the selected platform
+  </li>
+  <li>
+   Added: Support for the -hugePages startup parameter
+  </li>
+  <li>
+   Added: The "Patrol" game type was added to the server browser
+  </li>
+  <li>
+   Added: A message in the server details informing the user when some information about mods or signatures can be transmitted from the server
+  </li>
+  <li>
+   Added: Command line parameters -win32 and -win64 that will force a game platform when started with the -noLauncher parameter
+  </li>
+ </ul>
+ <ul>
+  <li>
+   <strong>
+    Tweaked: Performance was improved for users with a large amount of mods
+   </strong>
+  </li>
+  <li>
+   Tweaked: Replaced the mechanism for the retrieval of the Workshop mods list to an alternative API to work around the issues with incomplete lists
+  </li>
+  <li>
+   Tweaked: The memory limit for 32-bit executables on 64-bit Operating Systems is increased from 2047 MB to 3071 MB
+  </li>
+  <li>
+   Tweaked: Added mouse hover effect and tooltip for notification bar buttons
+  </li>
+  <li>
+   Tweaked: BattlEye messages are now properly wrapped on the
+   <em>
+    BattlEye
+   </em>
+   page
+  </li>
+ </ul>
+ <ul>
+  <li>
+   Fixed: Some elements in the News list could display excessive white space around them
+  </li>
+  <li>
+   Fixed: Potential crash of the server browser after receiving invalid data
+  </li>
+  <li>
+   Fixed: Mods from the 'Unsupported by the server' list ignored the 'Keep loaded' option and were omitted when starting the game
+  </li>
+  <li>
+   Fixed: Incorrect label text in a dialog subscribing mods while importing a preset
+  </li>
+  <li>
+   Fixed: Crash when repairing mods while Steam is offline
+  </li>
+ </ul>
+ <h2>
+  SERVER:
+ </h2>
+ <ul>
+  <li>
+   Updated: Stand-alone Windows Dedicated Server (1.68)
+  </li>
+  <li>
+   Updated: Stand-alone Linux Dedicated Server (1.68)
+   <ul>
+    <li>
+     Known issue: Steam client modifies the
+     <em>
+      steam_appid.txt
+     </em>
+     file incorrectly. In case of issues, verify its content is:
+     <strong>
+      107410
+     </strong>
+    </li>
+    <li>
+     Known issue: Sometimes the add-ons are loaded from the wrong installation (e.g. main game)
+    </li>
+    <li>
+     Try adding
+     <em>
+      -mod=curator;kart;heli;mark;expansion;dlcbundle
+     </em>
+     to your
+     <em>
+      arma3server.exe
+     </em>
+     shortcut
+    </li>
+   </ul>
+  </li>
+ </ul>
+</div>

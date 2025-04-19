@@ -1,0 +1,1001 @@
+<div class="post-content">
+ <p>
+  FROM: High Command
+  <br/>
+  TO: Arma 3 Users
+  <br/>
+  UNIT: Main Branch
+  <br/>
+  ACTIVITY: Game Update 1.72 (Malden DLC, Combat Patrol, Flight Model Tweaks)
+  <br/>
+  SIZE: ~6.5 GB / ~1.1 GB (depends on Apex ownership)
+ </p>
+ <h1>
+  NOTES
+ </h1>
+ <ul>
+  <li>
+   Consider using the Steam client option to verify the integrity of the local game cache to avoid corrupted data after downloading this update.
+  </li>
+  <li>
+   Consider defragmenting your HDD after downloading large updates.
+  </li>
+  <li>
+   Updating a deeply moddable game and its platform is not without risks. We use various methods to communicate upcoming changes to our awesome modding community, such as via the
+   <a href="https://dev.arma3.com/" target="_blank">
+    Dev Hub
+   </a>
+   . We also co-operate directly on troubleshooting, and we offer an opportunity to test updates via our
+   <a href="https://dev.arma3.com/rc-branch" target="_blank">
+    Release Candidate tests
+   </a>
+   . Modders, server administrators and other members of the community do their best to prepare for updates and to address issues post-release as quickly as possible. Please be mindful of some interruptions (especially in the first hours / days after a release) while we all work to improve the game together.
+  </li>
+  <li>
+   A
+   <em>
+    Legacy Build
+   </em>
+   Steam branch is available for advanced users. It contains the previous significant main branch version (1.70). It can be used to compare specific changes between major releases. The access code for this branch is:
+   <em>
+    Arma3Legacy170
+   </em>
+  </li>
+  <li>
+   This update does not apply to
+   <a href="http://dev.arma3.com/ports" target="_blank">
+    the experimental Linux and Mac port betas
+   </a>
+   at time of writing. We hope to be updating those as soon as possible.
+  </li>
+  <li>
+   You can find the servers in the Steam library (switch the filter to "Tools") - "Arma 3 Server" (based on your OS, it will download the Windows or Linux version).
+   <ul>
+    <li>
+     Administrators can also use the command-line
+     <a href="https://developer.valvesoftware.com/wiki/SteamCMD" target="_blank">
+      SteamCMD
+     </a>
+     utility. The app ID is to be 233780.
+    </li>
+    <li>
+     <p>
+      NVIDIA GameWorks™ Technology provided under license from NVIDIA Corporation. Copyright © 2002-2017 NVIDIA Corporation. All rights reserved. NVIDIA® and PhysX® are trademarks of NVIDIA Corporation and are used under license.
+     </p>
+    </li>
+   </ul>
+  </li>
+  <li>
+   In case of problems, please check the
+   <a href="http://support.bistudio.com/arma-3" target="_blank">
+    Bohemia Interactive support F.A.Q.
+   </a>
+   ,
+   <a href="http://arma3.com/faq" target="_blank">
+    Arma 3 F.A.Q.
+   </a>
+   ,
+   <a href="http://www.battleye.com/support/faq/" target="_blank">
+    BattlEye F.A.Q.
+   </a>
+   , or
+   <a href="https://arma3.com/launcher/troubleshooting" target="_blank">
+    Launcher troubleshooting guide
+   </a>
+   .
+  </li>
+  <li>
+   You can help us to further improve the game by posting your feedback on the
+   <a href="http://feedback.arma3.com/" target="_blank">
+    Feedback Tracker
+   </a>
+   .
+  </li>
+ </ul>
+ <h1>
+  CHANGELOG
+ </h1>
+ <h2>
+  DATA:
+ </h2>
+ <ul>
+  <li>
+   <strong>
+    Added: Malden 2035 terrain
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added:
+    <a href="https://dev.arma3.com/post/oprep-combat-patrol" target="_blank">
+     Combat Patrol
+    </a>
+    multiplayer scenarios
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Escape from Tanoa multiplayer scenario*
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Escape from Malden multiplayer scenario
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Zeus scenarios for the Malden terrain
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Community-made billboards
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: New skins for several structures
+   </strong>
+  </li>
+  <li>
+   Added: Variants of the in-game whiteboard, sleeved map and paper map (for Tanoa and Malden)
+  </li>
+  <li>
+   Added: Template for
+   <a href="https://community.bistudio.com/wiki/Arma_3_Sensors#Data_Link" target="_blank">
+    Data Link
+   </a>
+   targeting systems (sensors)
+  </li>
+  <li>
+   Added: HUD indication when using 12.7x108mm APDS magazines
+  </li>
+  <li>
+   Added: A visibility condition for the Blackfish horizon indicator
+  </li>
+  <li>
+   Added: Tigris and Cheetah now utilize
+   <a href="https://community.bistudio.com/wiki/Arma_3_Sensors#Data_Link" target="_blank">
+    Data Link
+   </a>
+  </li>
+  <li>
+   Added: Preview video for
+   <a href="https://arma3.com/dlc/jets" target="_blank">
+    Jets DLC
+   </a>
+   in the DLC Browser (Shift+P)
+  </li>
+  <li>
+   Added: A water impact effect to the 120mm APFSDS shells (
+   <a href="https://forums.bistudio.com/forums/topic/143930-general-discussion-dev-branch/?do=findComment&amp;comment=3186371" target="_blank">
+    https://forums.bistudio.com/forums/topic/143930-general-discussion-dev-branch/?do=findComment&amp;comment=3186371
+   </a>
+   )
+  </li>
+  <li>
+   Added: A new "Malden Sand" UI Color preset for Malden DLC
+  </li>
+  <li>
+   Added:
+   <a href="https://www.youtube.com/watch?v=HJUnMuKmW3E" target="_blank">
+    Jets Community Guide
+   </a>
+   in-game implementation
+  </li>
+  <li>
+   Added: Dynamic Loadout MFD information for the Neophron and Xi'an aircraft
+  </li>
+  <li>
+   Added: A laser designator indicator for the Xi'an and Blackfish crews
+  </li>
+  <li>
+   Added: Map symbols to several more objects
+  </li>
+  <li>
+   Added: Vehicle turret indicators to the remaining ground vehicles
+  </li>
+  <li>
+   Added: Audio-related memory points for certain structures
+  </li>
+ </ul>
+ <p>
+  <em>
+   * Restrictions apply to those who don't own the
+   <a href="https://arma3.com/apex" target="_blank">
+    Apex expansion
+   </a>
+   .
+  </em>
+ </p>
+ <ul>
+  <li>
+   <p>
+    <strong>
+     Tweaked: Flight model of the Gryphon plane (incl. fixed stall and better rudder authority)
+    </strong>
+   </p>
+  </li>
+  <li>
+   <p>
+    <strong>
+     Tweaked: Flight model of the Shikra plane (it should now have improved stability and more correct AoA behavior)
+    </strong>
+   </p>
+  </li>
+  <li>
+   <p>
+    <strong>
+     Tweaked: Flight model of the Sentinel UCAV (better stability, less maneuverability)
+    </strong>
+   </p>
+  </li>
+  <li>
+   <p>
+    <strong>
+     Tweaked: Flight model of the Buzzard plane (slightly more power, stability and fun)
+    </strong>
+   </p>
+  </li>
+  <li>
+   Tweaked: Ambient animals now seek a hiding spot while it rains
+  </li>
+  <li>
+   Tweaked: The Sentinel could explode when taking off in some cases
+  </li>
+  <li>
+   Tweaked: Ejection is now available only to non-stationary planes (when the Get Out action is not available)
+  </li>
+  <li>
+   Tweaked: Automated wing folding is now only active for planes with their engine(s) on and landing gear down and should be less performance demanding
+  </li>
+  <li>
+   Tweaked: The inverted plane flag proxy was inverted in an incorrect way
+  </li>
+  <li>
+   Tweaked: Spanish Welcome Screens now use a more appropriate separator style
+  </li>
+  <li>
+   Tweaked: AA missile performance
+  </li>
+  <li>
+   Tweaked: Automated tailhook operation for AI is now directly tied to the
+   <em>
+    <a href="https://community.bistudio.com/wiki/Arma_3:_Event_Handlers#Landing" target="_blank">
+     Landing
+    </a>
+   </em>
+   and
+   <a href="https://community.bistudio.com/wiki/Arma_3:_Event_Handlers#LandingCanceled" target="_blank">
+    <em>
+     LandingCanceled
+    </em>
+   </a>
+   events
+  </li>
+  <li>
+   Tweaked: The Ejection system was refactored to resolve multiple issues
+  </li>
+  <li>
+   Tweaked: Performance of AA missiles was improved
+  </li>
+  <li>
+   Tweaked: AI gunners of the Praetorian were too inaccurate
+  </li>
+  <li>
+   Tweaked: The
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_setPitchBank" target="_blank">
+    <em>
+     BIS_fnc_setPitchBank
+    </em>
+   </a>
+   function will now restore a moving vehicle's velocity after setting pitch and bank
+  </li>
+  <li>
+   Tweaked: The
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_findSafePos" target="_blank">
+    <em>
+     BIS_fnc_findSafePos
+    </em>
+   </a>
+   function now has a better position selection and blacklisting now supports all area formats
+  </li>
+  <li>
+   Tweaked: The
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_randomPosTrigger" target="_blank">
+    <em>
+     BIS_fnc_randomPosTrigger
+    </em>
+   </a>
+   function now supports areas in array format and random distribution within an ellipse was improved
+  </li>
+  <li>
+   Tweaked: The
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_getUnitInsignia" target="_blank">
+    <em>
+     BIS_fnc_getUnitInsignia
+    </em>
+   </a>
+   and
+   <em>
+    <a href="https://community.bistudio.com/wiki/BIS_fnc_setUnitInsignia" target="_blank">
+     BIS_fnc_setUnitInsignia
+    </a>
+   </em>
+   functions should now work correctly in MP
+  </li>
+  <li>
+   Tweaked: It is now possible to whitelist users able to access the debug console in multiplayer (
+   <a href="https://feedback.bistudio.com/T124835" target="_blank">
+    https://feedback.bistudio.com/T124835
+   </a>
+   )
+  </li>
+  <li>
+   Tweaked: When
+   <em>
+    test_EmptyObjectForBubbles
+   </em>
+   ,
+   <em>
+    test_EmptyObjectForFireBig
+   </em>
+   and
+   <em>
+    test_EmptyObjectForSmoke
+   </em>
+   are deleted, all their emitters are now deleted automatically
+  </li>
+  <li>
+   Tweaked: The Black Wasp is now more durable
+  </li>
+  <li>
+   Tweaked: Spatial targeting symbology
+  </li>
+  <li>
+   Tweaked: Credits and ORBAT credits were adjusted
+  </li>
+  <li>
+   Tweaked: The hand animation for the Protector SMG was improved
+  </li>
+  <li>
+   Tweaked: Carrier static defenses now partially rely on
+   <a href="https://community.bistudio.com/wiki/Arma_3_Sensors#Data_Link" target="_blank">
+    Data Link
+   </a>
+   from the Praetorian turret (it's the only one with a 360° scan coverage)
+  </li>
+  <li>
+   Tweaked: Wrecks of the MQ-4A and KH-3A UAVs were hovering
+  </li>
+  <li>
+   Tweaked: It is now possible again to mount bombs to the outer pylons of the Wipeout plane (
+   <a href="https://feedback.bistudio.com/T124725" target="_blank">
+    https://feedback.bistudio.com/T124725
+   </a>
+   )
+  </li>
+  <li>
+   Tweaked: The loadout of the Neophron was adjusted (more bombs can now be carried)
+  </li>
+  <li>
+   Tweaked: The template for the
+   <em>
+    NVSensor
+   </em>
+   is now on par with the
+   <em>
+    LaserSensor
+   </em>
+   (180° / 6km)
+  </li>
+  <li>
+   Tweaked: The Neophron now uses an improved canopy destruction system
+  </li>
+  <li>
+   Tweaked: The LOM 250-G bomb model was resized
+  </li>
+  <li>
+   Tweaked: Geometry of the Modular Bunker (Tall) was improved for better interior deployment
+  </li>
+  <li>
+   Tweaked: The damage model of the Shikra plane was improved
+  </li>
+  <li>
+   Tweaked: The head position of the Xi'an pilot was adjusted to make aiming with rockets easier
+  </li>
+  <li>
+   Tweaked: The gun pod of the Buzzard plane was aligned with its HUD
+  </li>
+  <li>
+   Tweaked: The flight model of the Buzzard plane was overhauled (
+   <a href="https://forums.bistudio.com/forums/topic/157525-fixed-wing-flight-model-dev-branch/" target="_blank">
+    https://forums.bistudio.com/forums/topic/157525-fixed-wing-flight-model-dev-branch/
+   </a>
+   )
+  </li>
+  <li>
+   Tweaked: Filtering of audio elements in the "Play Sounds" Zeus module was improved
+  </li>
+  <li>
+   Tweaked: Planes called by the CAS module will now release counter-measures after finishing the strike (does not apply to bomb strikes)
+  </li>
+  <li>
+   Tweaked: Military Base Wall debris is no longer tilting when destroyed
+  </li>
+  <li>
+   Tweaked: Armor values of the Speedboat were lowered
+  </li>
+  <li>
+   Tweaked: The UCAV Sentinel now unfolds its wings when taking off just like other planes
+  </li>
+  <li>
+   Tweaked: Hitpoints for the Gryphon plane were improved
+  </li>
+  <li>
+   Tweaked: Revive mode is now available in Zeus Game Master scenarios (customizable in the server parameters, off by default)
+  </li>
+  <li>
+   Tweaked: Loudspeakers in the faction Showcase scenarios are now louder
+  </li>
+  <li>
+   Tweaked: The flight model and overall performance of the Shikra jet were overhauled
+  </li>
+  <li>
+   Tweaked: Reduced intensity for the Flora / Fauna / Wind layers in environmental sounds (
+   <a href="https://forums.bistudio.com/forums/topic/145599-audio-tweaking-dev-branch/?do=findComment&amp;comment=3197303" target="_blank">
+    https://forums.bistudio.com/forums/topic/145599-audio-tweaking-dev-branch/?do=findComment&amp;comment=3197303
+   </a>
+   - will be further tweaked)
+  </li>
+  <li>
+   Tweaked: Defining a module function as "" no longer triggers an error message
+  </li>
+  <li>
+   Tweaked: Flight models of the Black Wasp and Shikra aircraft
+  </li>
+  <li>
+   Tweaked: Some structures were reconfigured (audio-wise)
+  </li>
+  <li>
+   Tweaked: Garage icons for several vehicles
+  </li>
+  <li>
+   Tweaked: The
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_vectorDirAndUpRelative" target="_blank">
+    <em>
+     BIS_fnc_vectorDirAndUpRelative
+    </em>
+   </a>
+   and
+   <em>
+    <a href="https://community.bistudio.com/wiki/BIS_fnc_weaponDirectionRelative" target="_blank">
+     BIS_fnc_weaponDirectionRelative
+    </a>
+   </em>
+   functions are now optimized
+  </li>
+  <li>
+   Tweaked: The
+   <a href="https://community.bistudio.com/wiki/Arma_3_Revive" target="_blank">
+    Revive
+   </a>
+   option on units is now disabled if Revive is disabled or non-existent
+  </li>
+  <li>
+   Tweaked: The
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_initVehicle" target="_blank">
+    BIS_fnc_initVehicle
+   </a>
+   function now skips the change of mass when used with a simple object
+  </li>
+  <li>
+   Tweaked: The
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_setVehicleMass" target="_blank">
+    BIS_fnc_setVehicleMass
+   </a>
+   function will now exit if the vehicle is a simple object
+  </li>
+  <li>
+   Tweaked: Unarmed variants of the LSVs no longer display weapon info in the IGUI
+  </li>
+ </ul>
+ <ul>
+  <li>
+   Fixed: Script error when using the side door of the CH-49
+  </li>
+  <li>
+   Fixed: Footstep sounds on a specific wooden surface were incorrect
+  </li>
+  <li>
+   Fixed: Some machine guns were incorrectly equipped with the
+   <a href="https://forums.bistudio.com/forums/topic/202603-tanks-fire-control-system/" target="_blank">
+    FCS
+   </a>
+   (
+   <a href="https://feedback.bistudio.com/T124824" target="_blank">
+    https://feedback.bistudio.com/T124824
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Building destruction sound could get delayed in some cases
+  </li>
+  <li>
+   Fixed: Transporting the UGV in the Blackfish was visually incorrect
+  </li>
+  <li>
+   Fixed: An incorrect LOD of the Blackfish was showing when looking via the co-pilot camera
+  </li>
+  <li>
+   Fixed: Canopies from all planes should now float on water a little bit before sinking
+  </li>
+  <li>
+   Fixed: Legs of MB 4WD passengers could clip through the floor
+  </li>
+  <li>
+   Fixed: AI crew of the Cheetah and Tigris would refuse to attack infantry (
+   <a href="https://feedback.bistudio.com/T124954" target="_blank">
+    https://feedback.bistudio.com/T124954
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: The Falcon UAV's camera in the UAV Terminal was misaligned
+  </li>
+  <li>
+   Fixed: Helicopter Time Trials involving Sling Loading did not always fail when the winch was destroyed
+  </li>
+  <li>
+   Fixed: The Sport Fence was appearing twice in Zeus in some cases
+  </li>
+  <li>
+   Fixed: Jets defense turrets were missing from the Field Manual
+  </li>
+  <li>
+   Fixed: Pylon proxies were not visible in certain resolution LODs
+  </li>
+  <li>
+   Fixed: Vehicle crew were headbanging too hard when firing the 40mm GM (
+   <a href="https://forums.bistudio.com/forums/topic/143930-general-discussion-dev-branch/?do=findComment&amp;comment=3151233" target="_blank">
+    https://forums.bistudio.com/forums/topic/143930-general-discussion-dev-branch/?do=findComment&amp;comment=3151233
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: The stealth variant of the Black Wasp jet had external pylons available
+  </li>
+  <li>
+   Fixed: Some HMDs were visible when turning to the sides
+  </li>
+  <li>
+   Fixed: Several localization glitches (e.g. the Splendid Camera)
+  </li>
+  <li>
+   Fixed: It was too difficult to shoot through the ruins of Church 02
+  </li>
+  <li>
+   Fixed: The "
+   <em>
+    scriptName
+   </em>
+   " parameter of the
+   <em>
+    <a href="https://community.bistudio.com/wiki/BIS_fnc_setVehicleMass" target="_blank">
+     BIS_fnc_setVehicleMass
+    </a>
+   </em>
+   function was incorrect
+  </li>
+  <li>
+   Fixed: The pilots of the WY-55 can now lock ASRAAM missiles
+  </li>
+  <li>
+   Fixed: The grenade launcher of the AK12 would be open at incorrect moments
+  </li>
+  <li>
+   Fixed: Brake lights on the Tempest trucks were not working correctly
+  </li>
+  <li>
+   Fixed: The occluder of the Tent Hangar was inverted
+  </li>
+  <li>
+   Fixed: The altitude indicator on the Blackfish was displaying incorrect values
+  </li>
+ </ul>
+ <p>
+  <strong>
+   <a href="https://community.bistudio.com/wiki/Eden_Editor" target="_blank">
+    Eden Editor
+   </a>
+  </strong>
+ </p>
+ <ul>
+  <li>
+   Fixed: A missing string error when placing a trigger with
+   <a href="https://arma3.com/dlc/jets" target="_blank">
+    Jets DLC
+   </a>
+   music as an Effects attribute
+  </li>
+  <li>
+   Fixed: Eden Editor marker shapes had an incorrect tooltip text
+  </li>
+  <li>
+   Fixed: The tutorial about scenario attributes contained an incorrect item
+  </li>
+ </ul>
+ <p>
+  <strong>
+   The East Wind (potential spoilers)
+  </strong>
+ </p>
+ <ul>
+  <li>
+   Fixed: There were some floating objects in the Moral Fiber scenario
+  </li>
+ </ul>
+ <h2>
+  ENGINE:
+ </h2>
+ <ul>
+  <li>
+   Added: Air friction parameters for planes (
+   <em>
+    gearsUpFrictionCoef
+   </em>
+   ,
+   <em>
+    airBrakeFrictionCoef
+   </em>
+   ,
+   <em>
+    airFrictionCoefs2
+   </em>
+   ,
+   <em>
+    airFrictionCoefs1
+   </em>
+   ,
+   <em>
+    airFrictionCoefs0
+   </em>
+   )
+  </li>
+  <li>
+   Added: A new
+   <a href="https://community.bistudio.com/wiki/isVehicleRadarOn" target="_blank">
+    <em>
+     isVehicleRadarOn
+    </em>
+   </a>
+   script command
+  </li>
+  <li>
+   Added: New
+   <a href="https://community.bistudio.com/wiki/listVehicleSensors" target="_blank">
+    <em>
+     listVehicleSensors
+    </em>
+   </a>
+   ,
+   <em>
+    <a href="https://community.bistudio.com/wiki/listRemoteTargets" target="_blank">
+     listRemoteTargets
+    </a>
+   </em>
+   ,
+   <em>
+    <a href="https://community.bistudio.com/wiki/enableVehicleSensor" target="_blank">
+     enableVehicleSensor
+    </a>
+   </em>
+   , and
+   <a href="https://community.bistudio.com/wiki/isVehicleSensorEnabled" target="_blank">
+    <em>
+     isVehicleSensorEnabled
+    </em>
+   </a>
+   script commands
+  </li>
+  <li>
+   Added: A new
+   <a href="https://community.bistudio.com/wiki/getCompatiblePylonMagazines" target="_blank">
+    <em>
+     getCompatiblePylonMagazines
+    </em>
+   </a>
+   script command
+  </li>
+  <li>
+   Added: New "
+   <em>
+    turret
+   </em>
+   " and "
+   <em>
+    turrettoview
+   </em>
+   " MFD animation sources
+  </li>
+  <li>
+   Added: A new "
+   <em>
+    projection
+   </em>
+   " MFD parameter
+  </li>
+  <li>
+   Added: A new "
+   <em>
+    lineType
+   </em>
+   " MFD line parameter (0 - full line, 1 - dotted line, 2 - dashed line, 3 - dot-dashed line)
+  </li>
+  <li>
+   Added: New
+   <a href="https://community.bistudio.com/wiki/addForce" target="_blank">
+    <em>
+     addForce
+    </em>
+   </a>
+   and
+   <a href="https://community.bistudio.com/wiki/addTorque" target="_blank">
+    <em>
+     addTorque
+    </em>
+   </a>
+   script commands
+  </li>
+  <li>
+   Added: New
+   <em>
+    <a href="https://community.bistudio.com/wiki/vectorModelToWorld" target="_blank">
+     vectorModelToWorld
+    </a>
+   </em>
+   ,
+   <em>
+    <a href="https://community.bistudio.com/wiki/vectorModelToWorld" target="_blank">
+     vector
+    </a>
+   </em>
+   <em>
+    <a href="https://community.bistudio.com/wiki/vectorModelToWorldVisual" target="_blank">
+     ModelToWorldVisual
+    </a>
+   </em>
+   ,
+   <em>
+    <a href="https://community.bistudio.com/wiki/vectorModelToWorld" target="_blank">
+     vector
+    </a>
+   </em>
+   <em>
+    <a href="https://community.bistudio.com/wiki/vectorWorldToModel" target="_blank">
+     WorldToModel
+    </a>
+   </em>
+   , and
+   <em>
+    <a href="https://community.bistudio.com/wiki/vectorModelToWorld" target="_blank">
+     vector
+    </a>
+   </em>
+   <a href="https://community.bistudio.com/wiki/vectorWorldToModelVisual" target="_blank">
+    <em>
+     WorldToModelVisual
+    </em>
+   </a>
+   script commands
+  </li>
+  <li>
+   Added: A new "
+   <em>
+    defaultUserMFDvalues
+   </em>
+   " transport config variable
+  </li>
+  <li>
+   Added: A new "
+   <em>
+    nvg
+   </em>
+   " MFD condition
+  </li>
+  <li>
+   Added: 'Malden DLC' and 'Malden 2035' scenario Workshop tags
+  </li>
+ </ul>
+ <ul>
+  <li>
+   Tweaked: The
+   <a href="https://community.bistudio.com/wiki/callExtension" target="_blank">
+    <em>
+     CallExtension
+    </em>
+   </a>
+   interface was enhanced with a RVVersion function
+  </li>
+  <li>
+   Tweaked: AI boat movement in shallow waters was improved
+  </li>
+  <li>
+   Tweaked: AI plane path-finding at high altitudes was improved
+  </li>
+  <li>
+   Tweaked: AI driving heavy vehicles should not stop for small obstacles anymore
+  </li>
+  <li>
+   Tweaked: Precision of the
+   <em>
+    IntersectWithGround
+   </em>
+   functionality was improved
+  </li>
+  <li>
+   Tweaked: It is now possible to mark
+   <a href="https://community.bistudio.com/wiki/Arma_3_Sensors#Data_Link" target="_blank">
+    Data Link
+   </a>
+   targets using remote sensors
+  </li>
+  <li>
+   Tweaked: The
+   <a href="https://community.bistudio.com/wiki/toFixed" target="_blank">
+    <em>
+     toFixed
+    </em>
+   </a>
+   script command was extended
+  </li>
+  <li>
+   Tweaked: The
+   <a href="https://community.bistudio.com/wiki/setUserMFDvalue" target="_blank">
+    setUserMFDvalue
+   </a>
+   now supports more parameters
+  </li>
+  <li>
+   Tweaked: The count of "
+   <em>
+    userXX
+   </em>
+   " MFD user values was raised from 10 to 50
+  </li>
+  <li>
+   Tweaked: The MFD variable color is now a simple expression
+  </li>
+  <li>
+   Tweaked: Heavy gunfire situations should now be slightly less performance demanding
+  </li>
+ </ul>
+ <ul>
+  <li>
+   Fixed: Automatic landing gear retracting was not consistent for players in all situations
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/Arma_3_Sensors#Data_Link" target="_blank">
+    Data Link
+   </a>
+   could receive contacts even when it was disabled
+  </li>
+  <li>
+   Fixed: Crash when using the
+   <a href="https://forums.bistudio.com/forums/topic/202603-tanks-fire-control-system/" target="_blank">
+    FCS
+   </a>
+   in some cases (
+   <a href="https://feedback.bistudio.com/T124830" target="_blank">
+    https://feedback.bistudio.com/T124830
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Crash to desktop (
+   <a href="https://feedback.bistudio.com/T124832" target="_blank">
+    https://feedback.bistudio.com/T124832
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Players could lock onto enemy laser designators
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/vectorWorldToModel" target="_blank">
+    <em>
+     vectorWorldToModel
+    </em>
+   </a>
+   did not work as expected
+  </li>
+ </ul>
+ <p>
+  <strong>
+   Eden Editor
+  </strong>
+ </p>
+ <ul>
+  <li>
+   Fixed: Layers were not enabled correctly after loading a scenario
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/Arma_3_Vehicle_Loadouts" target="_blank">
+    Dynamic Loadouts
+   </a>
+   check boxes in the Attributes were not working correctly in some cases
+  </li>
+ </ul>
+ <h2>
+  LAUNCHER:
+ </h2>
+ <ul>
+  <li>
+   Added: A mod counter for loaded / available mods
+  </li>
+  <li>
+   Added: Escape game type support to Launcher's Server Browser
+  </li>
+  <li>
+   Added: Malden terrain as an option for the
+   <em>
+    -world
+   </em>
+   parameter
+  </li>
+  <li>
+   Tweaked: Automatic re-scan of watched folders is now more specifically targeted and should ignore changes in those folders irrelevant to mods
+  </li>
+  <li>
+   Tweaked: The background color for the Server Browser's filter panel was changed
+  </li>
+  <li>
+   Fixed: When all mods where unloaded while the Launcher was being closed, the mods from the last active preset were loaded (ignoring the unsaved modification done to it)
+  </li>
+ </ul>
+ <h2>
+  SERVER:
+ </h2>
+ <ul>
+  <li>
+   Updated: Stand-alone Windows Dedicated Server (1.72)
+  </li>
+  <li>
+   Updated: Stand-alone Linux Dedicated Server (1.72)
+   <ul>
+    <li>
+     Known issue: Steam client modifies the
+     <em>
+      steam_appid.txt
+     </em>
+     file incorrectly. In case of issues, verify its content is:
+     <strong>
+      107410
+     </strong>
+    </li>
+    <li>
+     Known issue: Sometimes the add-ons are loaded from the wrong installation (e.g. main game)
+    </li>
+    <li>
+     Try adding
+     <em>
+      -mod=curator;kart;heli;mark;expansion
+      <em>
+       ;jets;argo
+      </em>
+      ;dlcbundle;dlcbundle2
+     </em>
+     to your
+     <em>
+      arma3server.exe
+     </em>
+     shortcut
+    </li>
+   </ul>
+  </li>
+ </ul>
+</div>

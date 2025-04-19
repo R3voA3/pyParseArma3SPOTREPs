@@ -1,0 +1,608 @@
+<div class="post-content">
+ <p>
+  FROM: High Command
+  <br/>
+  TO: Arma 3 Users
+  <br/>
+  UNIT: Main Branch
+  <br/>
+  ACTIVITY: Game Update 1.98 (Old Man, PhysX)
+  <br/>
+  SIZE: ~ 1.65 GB / ~ 486 MB (depends on Contact ownership)
+  <br/>
+ </p>
+ <h2>
+  NOTES
+ </h2>
+ <ul>
+  <li>
+   Please be sure to unsubscribe or disable the
+   <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1938939381" target="">
+    Steam Workshop version
+   </a>
+   of the "Old Man" scenario. It contained the beta version, but an improved version has now been integrated into the vanilla platform. The Workshop item will no longer contain game data (to avoid conflicts), but is no longer necessary for anybody.
+  </li>
+  <li>
+   Contact consists of 2 data packs / folders:
+   <ul>
+    <li>
+     Contact (via PLAY CONTACT or -mod=Contact): for the singleplayer "First Contact" campaign experience (accessible only to owners - optionally loaded)
+    </li>
+    <li>
+     Contact (Platform): for most other use cases, including sandbox multiplayer (loaded by default for all players)
+    </li>
+   </ul>
+  </li>
+  <li>
+   Consider using the Steam client option to verify the integrity of the local game cache to avoid corrupted data after downloading this update.
+  </li>
+  <li>
+   Consider defragmenting your HDD after downloading large updates.
+  </li>
+  <li>
+   Updating a deeply moddable game and its platform is not without risks. We use various methods to communicate upcoming changes to our awesome modding community, such as via the
+   <a href="https://dev.arma3.com/" target="">
+    Dev Hub
+   </a>
+   . We also co-operate directly on troubleshooting, and we offer an opportunity to test updates via our Release Candidate tests. Modders, server administrators and other members of the community do their best to prepare for updates and to address issues post-release as quickly as possible. Please be mindful of some interruptions (especially in the first hours / days after a release) while we all work to improve the game together.
+  </li>
+  <li>
+   A Legacy Build Steam branch is available for advanced users. It contains the previous significant main branch version (1.96). It can be used to compare specific changes between major releases. The access code for this branch is: Arma3Legacy196
+  </li>
+  <li>
+   This update does not apply to the
+   <a href="http://dev.arma3.com/ports" target="">
+    experimental Linux and Mac port betas
+   </a>
+   .
+  </li>
+  <li>
+   You can find the servers in the Steam library (switch the filter to "Tools") - "Arma 3 Server" (based on your OS, it will download the Windows or Linux version).
+   <ul>
+    <li>
+     Administrators can also use the command-line
+     <a href="https://developer.valvesoftware.com/wiki/SteamCMD" target="">
+      SteamCMD
+     </a>
+     utility. The app ID is to be 233780.
+    </li>
+    <li>
+     NVIDIA GameWorks™ Technology provided under license from NVIDIA Corporation. Copyright © 2002-2018 NVIDIA Corporation. All rights reserved. NVIDIA® and PhysX® are trademarks of NVIDIA Corporation and are used under license.
+    </li>
+   </ul>
+  </li>
+  <li>
+   In case of problems, please check the
+   <a href="http://support.bistudio.com/arma-3" target="">
+    Bohemia Interactive support F.A.Q.
+   </a>
+   ,
+   <a href="http://arma3.com/faq" target="">
+    Arma 3 F.A.Q.
+   </a>
+   ,
+   <a href="http://www.battleye.com/support/faq/" target="">
+    BattlEye F.A.Q.
+   </a>
+   , or
+   <a href="https://arma3.com/launcher/troubleshooting" target="">
+    Launcher troubleshooting guide
+   </a>
+   .
+  </li>
+  <li>
+   You can help us to further improve the game by posting your feedback on the
+   <a href="http://feedback.arma3.com/" target="">
+    Feedback Tracker
+   </a>
+   .
+   <br/>
+  </li>
+ </ul>
+ <h1>
+  CHANGELOG
+ </h1>
+ <h2>
+  DATA
+ </h2>
+ <ul>
+  <li>
+   <b>
+    Added: "Old Man" open-world singleplayer scenario*
+   </b>
+   (unsubscribe or disable the
+   <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1938939381" style="" target="">
+    Workshop mod
+   </a>
+   )
+  </li>
+  <li>
+   <b>
+    Added: Static M2 (low / raised)
+   </b>
+   , with optional ballistic shield and collimator sight
+  </li>
+  <li>
+   Added: Red Beret
+  </li>
+  <li>
+   Added: Infected Characters (not accessible in the editor; documentation pending)
+  </li>
+  <li>
+   Added: Old Man items and props (medicine, bank cards, ID cards, etc.)
+  </li>
+  <li>
+   Added: Old Man decals
+  </li>
+  <li>
+   Added: Old Man Welcome Screen
+  </li>
+  <li>
+   Added: Old Man Field Manual records
+  </li>
+  <li>
+   Added: Old Man main menu tile (image only for now)
+  </li>
+  <li>
+   Added: The old Czech Hedgehog asset is no longer hidden
+  </li>
+  <li>
+   Added: Localization strings to some of the armed variants of vehicles (Qilin, Prowler (AT), MB 4WD (AT))
+  </li>
+  <li>
+   Added: Additional geometry to Tanoa Fire Escape Stairs -
+   <a href="https://feedback.bistudio.com/T145614" target="">
+    FT - T145614
+   </a>
+  </li>
+  <li>
+   Added: RscListBoxMulti config class for scripted UI creation of multi-selection list boxes
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_transformVectorDirAndUp" target="">
+    BIS_fnc_transformVectorDirAndUp
+   </a>
+   function for rotating vectorDir and vectorUp in 3 axes
+  </li>
+  <li>
+   Added: Optional
+   <a href="https://community.bistudio.com/wiki/missionConfigFile" target="">
+    mission config
+   </a>
+   property
+   <i>
+    arsenalRestrictedItems to blacklist
+   </i>
+   undesired
+   <a href="https://community.bistudio.com/wiki/Arma_3_Arsenal" style="" target="">
+    Arsenal
+   </a>
+   equipment
+   <ul>
+    <li>
+     <i>
+      Example: arsenalRestrictedItems[] = {"U_B_Soldier_VR"};
+     </i>
+    </li>
+   </ul>
+  </li>
+ </ul>
+ <ul>
+  <li>
+   Tweaked:
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_startLoadingScreen" target="">
+    BIS_fnc_startLoadingScreen
+   </a>
+   - activated support for different loading screen resources
+  </li>
+  <li>
+   Tweaked:
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_rotateVector3D" target="">
+    BIS_fnc_rotateVector3D
+   </a>
+   was optimized and should now run up to 5x faster
+  </li>
+  <li>
+   Tweaked:
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_ambientFlyby" target="">
+    BIS_fnc_ambientFlyBy
+   </a>
+   was improved and cleaned up
+  </li>
+  <li>
+   Tweaked: Van should now be able to drive over bridges correctly -
+   <a href="https://feedback.bistudio.com/T146150" target="">
+    FT - T146150
+   </a>
+  </li>
+  <li>
+   Tweaked: View Geometry of some Altis structures -
+   <a href="https://feedback.bistudio.com/T146447" target="">
+    FT - T146447
+   </a>
+  </li>
+  <li>
+   Tweaked: Medikits and Toolkits can be now stored in vests if there is enough space -
+   <a href="https://feedback.bistudio.com/T128710" target="">
+    FT - T128710
+   </a>
+  </li>
+  <li>
+   Tweaked: AH-9 / M-900 fording depth
+  </li>
+  <li>
+   Tweaked: Crouched walking with sidearm animation collision shape -
+   <a href="https://feedback.bistudio.com/T147980" target="">
+    FT - T147980
+   </a>
+  </li>
+  <li>
+   Tweaked: Skin tone matching on various characters and their injury materials
+  </li>
+  <li>
+   Tweaked: Made consistent the Fire Geometry across all characters
+  </li>
+  <li>
+   Tweaked: Light configuration on the To-199 aircraft -
+   <a href="https://feedback.bistudio.com/T127800" target="">
+    FT - T127800
+   </a>
+  </li>
+  <li>
+   Tweaked: Re-binarized key terrain assets to match the updated PhysX version (more in the next update)
+  </li>
+  <li>
+   Tweaked: Copyrights mentions updated to 2020
+  </li>
+ </ul>
+ <ul>
+  <li>
+   Changed: Tanoa was made the default world once again in support of the "Old Man" release
+  </li>
+ </ul>
+ <ul>
+  <li>
+   Fixed: Miscellaneous translation issues (kudos to
+   <i>
+    POLPOX, KC45, Kaoru Uduki
+   </i>
+   , and various others for their help with improving Japanese texts especially)
+  </li>
+  <li>
+   Fixed: Broken tooltip in object equipment storage in 3DEN - FT -
+   <a href="https://feedback.bistudio.com/T117193" target="">
+    T117193
+   </a>
+  </li>
+  <li>
+   Fixed: CTRG Northgate had an incorrect magazine
+  </li>
+  <li>
+   Fixed: Script error in Splendid Camera when mouse or joystick inputs were mapped to camera controls - FT -
+   <a href="https://feedback.bistudio.com/T146601" target="">
+    T146601
+   </a>
+   /
+   <a href="https://feedback.bistudio.com/T117681" target="">
+    T117681
+   </a>
+  </li>
+  <li>
+   Fixed: Rugged Tablet custom texture - FT -
+   <a href="https://feedback.bistudio.com/T145005" target="">
+    T145005
+   </a>
+  </li>
+  <li>
+   Fixed: The medical decal on Medical Tent should no longer flicker
+  </li>
+  <li>
+   Fixed: Typo in Livonia's ILS configuration
+  </li>
+  <li>
+   Fixed: Scrollable building door states in 3DEN
+  </li>
+  <li>
+   Fixed: NATO Pacific Mk6 Mortar, HMG and GMG were assembled into Independent versions instead of NATO Pacific -
+   <a href="https://feedback.bistudio.com/T145362" target="">
+    FT - T145362
+   </a>
+  </li>
+  <li>
+   Fixed: Warlords - The inventory screen no longer remains open when opening Arsenal -
+   <a href="https://feedback.bistudio.com/T147759" target="">
+    FT - T147759
+   </a>
+  </li>
+  <li>
+   Fixed: Broken Offroad (Repair) damage and destruction materials -
+   <a href="https://forums.bohemia.net/forums/topic/143930-general-discussion-dev-branch/?do=findComment&amp;comment=3390793" target="">
+    Forums - General Discussion
+   </a>
+  </li>
+  <li>
+   Fixed: Potential script error in the patrol module -
+   <a href="https://feedback.bistudio.com/T117706" target="">
+    FT - T117706
+   </a>
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/hintC" target="">
+    hintC
+   </a>
+   not showing special characters when used with alternative syntax -
+   <a href="https://feedback.bistudio.com/T76965" target="">
+    FT - T76965
+   </a>
+  </li>
+  <li>
+   Fixed: Corrected a typo in
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_ambientBlacklist" target="">
+    BIS_fnc_ambientBlacklist
+   </a>
+  </li>
+  <li>
+   Fixed: Some Spectrum Device values disappeared after unequipping the device and equipping it again -
+   <a href="https://feedback.bistudio.com/T148160" target="">
+    FT - T148160
+   </a>
+  </li>
+  <li>
+   Fixed: Ifrit shadows were broken when
+   <i>
+    hiddenSelectionsMaterials
+   </i>
+   were used -
+   <a href="https://feedback.bistudio.com/T148354" target="">
+    FT - T148354
+   </a>
+  </li>
+  <li>
+   Fixed: Spectrum Device antenna ground holders were broken when Contact was not loaded
+  </li>
+  <li>
+   Fixed: Y-axis of the Spectrum Device was incorrect when Contact was not loaded -
+   <a href="https://feedback.bistudio.com/T148470" target="">
+    FT - T148470
+   </a>
+  </li>
+  <li>
+   Fixed: Ability to climb down from Garage (Large)
+  </li>
+  <li>
+   Fixed: Floating bricks in the Scaffolding (New) prop
+  </li>
+  <li>
+   Fixed: Removed obsolete Fire Geometry elements in the Scaffolding (New) prop
+  </li>
+  <li>
+   Fixed: Removed ill-defined glass panels in the Dome (White, Under Construction, Nearly) prop to prevent issues with impact sounds and grenade throwing
+  </li>
+  <li>
+   Fixed: Pole Wall 03 was indestructible
+  </li>
+  <li>
+   Fixed: Wipeout airbrakes rotating in the opposite direction -
+   <a href="https://feedback.bistudio.com/T144897" target="">
+    FT - T144897
+   </a>
+  </li>
+  <li>
+   Fixed: Turret indicator on the armed Speed Boat -
+   <a href="https://feedback.bistudio.com/T148400" target="">
+    FT - T148400
+   </a>
+  </li>
+  <li>
+   Fixed: When setting the date in Eden Editor, days of the week were incorrect in January of a leap year (e.g. January 2020) -
+   <a href="https://feedback.bistudio.com/T148292" target="">
+    FT - T148292
+   </a>
+  </li>
+  <li>
+   Fixed: Script error at the beginning of "Remnants of War" campaign scenario "The Redacted" -
+   <a href="https://feedback.bistudio.com/T142535" target="">
+    FT - T142535
+   </a>
+  </li>
+  <li>
+   Fixed: An undefined variable error in the Functions Library
+  </li>
+  <li>
+   Fixed: Various RPT spam errors on several terrains
+  </li>
+  <li>
+   Fixed: The random placement radius could be too big when using large markers in
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_moveToRespawnPosition" target="">
+    BIS_fnc_moveToRespawnPosition
+   </a>
+  </li>
+  <li>
+   Fixed: Zeroing text offset in the GUI
+  </li>
+  <li>
+   Fixed: Shadows on CSAT APR masks -
+   <a href="https://feedback.bistudio.com/T149715" target="">
+    FT - T149715
+   </a>
+  </li>
+  <li>
+   Fixed: The default marker description was replaced
+   <br/>
+  </li>
+ </ul>
+ <p>
+  * Content requires ownership of
+  <a href="https://arma3.com/apex" target="">
+   Arma 3 Apex expansion
+  </a>
+ </p>
+ <p>
+  <b>
+   <i>
+    Potential Spoilers ("First Contact")
+   </i>
+  </b>
+ </p>
+ <ul>
+  <li>
+   Fixed: Issue where dialogue got stuck if the player entered the mini UGV before Čapek finished his biopsy probe briefing in Anomalous Phenomena
+   <br/>
+  </li>
+ </ul>
+ <h2>
+  ENGINE
+ </h2>
+ <ul>
+  <li>
+   Added: Updated to PhysX 4.1.1
+  </li>
+  <li>
+   Added: BattlEye anti-cheat update
+  </li>
+  <li>
+   Added: Script commands
+   <a href="https://community.bistudio.com/wiki/triggerInterval" target="">
+    triggerInterval
+   </a>
+   and
+   <a href="https://community.bistudio.com/wiki/setTriggerInterval" target="">
+    setTriggerInterval
+   </a>
+   to make it possible to alter the trigger condition check frequency of detectors
+  </li>
+  <li>
+   Added: Script command
+   <a href="https://community.bistudio.com/wiki/getTextWidth" target="">
+    getTextWidth
+   </a>
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/allActiveTitleEffects" target="">
+    allActiveTitleEffects
+   </a>
+   script command to detect currently active title effects
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/vehicleMoveInfo" target="">
+    vehicleMoveInfo
+   </a>
+   now returns sendSimpleCommand status
+  </li>
+  <li>
+   Added: Possibility to change armor simulation of a character hitpoint via classes defined in
+   <i>
+    HitpointsProtectionInfo
+   </i>
+   with a
+   <i>
+    simulation
+   </i>
+   parameter
+  </li>
+  <li>
+   Added: FOV is now synced in Picture-in-Picture screens if a
+   <i>
+    turret[]
+   </i>
+   parameter is used in the
+   <i>
+    RenderTargets
+   </i>
+   definition
+  </li>
+  <li>
+   Changed: Network synchronization when two vehicles collide improved (local versus remote)
+  </li>
+  <li>
+   Fixed: Some task commands returned nil when their argument was null
+  </li>
+  <li>
+   Fixed: Crash when you request support for a soldier in your squad
+  </li>
+  <li>
+   Fixed: Simulated things should no longer fall too fast and fall through the ground (e.g. weapons)
+  </li>
+  <li>
+   Fixed: Optics Post Process Effects (
+   <i>
+    opticsPPEffects
+   </i>
+   ) not being loaded correctly
+  </li>
+  <li>
+   Fixed: Crash when releasing a joint constraint without any actor
+  </li>
+  <li>
+   Fixed: PhysX CCD for small objects with a different PhysX shape and object bounding box
+  </li>
+  <li>
+   Fixed: Event Handler "
+   <a href="https://community.bistudio.com/wiki/Arma_3:_Event_Handlers#HitPart" target="">
+    HitPart
+   </a>
+   " did not return selection names properly when a vehicle was damaged by an explosion (this prevented accomplishing the Mass Virtual Destruction Steam Achievement)
+  </li>
+  <li>
+   Fixed: Ability to equip vehicle weapons as a player (has been disabled)
+   <br/>
+  </li>
+  <li>
+   Fixed: Various potential exploit vectors
+   <br/>
+  </li>
+ </ul>
+ <h2>
+  SERVER
+ </h2>
+ <ul>
+  <li>
+   Updated: Stand-alone Windows Dedicated Server (1.98)
+  </li>
+  <li>
+   Updated: Stand-alone Linux Dedicated Server (1.98)
+   <ul>
+    <li>
+     The data in
+     <i>
+      -mod=contact
+     </i>
+     is not fully multiplayer compatible (it is meant for the singleplayer campaign experience); we recommend only hosting servers with it for special use cases
+     <ul>
+      <li>
+       This data is signed by a new A3C key whose presence can be used to control what client data is allowed on the server
+      </li>
+     </ul>
+    </li>
+    <li>
+     Known issue: Steam client modifies the
+     <i>
+      steam_appid.txt
+     </i>
+     file incorrectly. In case of issues, verify its content is:
+     <b>
+      107410
+     </b>
+    </li>
+    <li>
+     Known issue: Sometimes the add-ons are loaded from the wrong installation (e.g. main game)
+    </li>
+    <li>
+     Try adding
+     <i>
+      -mod=curator;kart;heli;mark;expansion;jets;argo;orange;tacops;tank;enoch
+     </i>
+     to your
+     <i>
+      arma3server.exe
+     </i>
+     shortcut
+    </li>
+   </ul>
+  </li>
+ </ul>
+</div>

@@ -1,0 +1,157 @@
+<div class="post-content">
+ <p>
+  FROM: Project Lead
+  <br>
+   TO: Arma 3 Users
+   <br>
+    UNIT: Main Branch
+    <br>
+     ACTIVITY: Hotfix: 1.42 (Server Passwords, Weapon Deployment Glitches, Controller Sensitivity)
+     <br/>
+     SIZE: ~72 MB / ~10 MB
+    </br>
+   </br>
+  </br>
+ </p>
+ <h1>
+  NOTES
+ </h1>
+ <ul>
+  <li>
+   <strong>
+    Connecting to a passworded hotfixed server using a pre-hotfix client, may result in a crash
+   </strong>
+   (please be patient while everyone updates their data).
+  </li>
+  <li>
+   Consider using the Steam client option to verify the integrity of the local game cache to avoid corrupted data after downloading this update.
+  </li>
+  <li>
+   Consider defragmenting your HDD after downloading large updates.
+  </li>
+  <li>
+   A
+   <em>
+    Legacy Build
+   </em>
+   Steam branch is available for advanced users. It contains the previous significant main branch version (1.40). It can be used to compare specific changes between major releases. The access code for this branch is:
+   <em>
+    Arma3Legacy140
+   </em>
+  </li>
+  <li>
+   You can find the servers in the Steam library (switch the filter to "Tools") - "Arma 3 Server" (based on your OS, it will download the Windows or Linux version).
+   <ul>
+    <li>
+     Administrators can also use the command-line
+     <a href="https://developer.valvesoftware.com/wiki/SteamCMD" target="_blank">
+      SteamCMD
+     </a>
+     utility. The app ID is to be 233780.
+    </li>
+    <li>
+     NVIDIA GameWorks™ Technology provided under license from NVIDIA Corporation. Copyright © 2002-2015 NVIDIA Corporation. All rights reserved.
+    </li>
+   </ul>
+  </li>
+ </ul>
+ <h1>
+  CHANGELOG
+ </h1>
+ <h3>
+  DATA:
+ </h3>
+ <ul>
+  <li>
+   Fixed: End Game would not end on Dedicated Servers correctly
+  </li>
+  <li>
+   Added: Set up proper values for 'permanent recoil' in deployment
+  </li>
+  <li>
+   Fixed: Adjusted geometry of the lowest VR block
+  </li>
+  <li>
+   Fixed: Digital Deluxe Edition soundtrack file-name and meta-data of 1 Marksmen track
+  </li>
+ </ul>
+ <h3>
+  ENGINE:
+ </h3>
+ <ul>
+  <li>
+   Fixed: Dedicated Servers would not accept some passwords as valid for
+   <em>
+    #login
+   </em>
+   and
+   <a href="https://community.bistudio.com/wiki/serverCommand" target="_blank">
+    serverCommand
+   </a>
+  </li>
+  <li>
+   Fixed: Xbox controller - digital to analog sensitivity
+  </li>
+  <li>
+   Fixed: Recoil applied incorrectly when deployed (camera was being pushed out of the FOV after many shots)
+  </li>
+  <li>
+   Fixed: Persistent effect for recoil when deployed
+  </li>
+  <li>
+   Fixed: Weapon Deployment - if players use a UAV terminal when they have deployed a weapon, they get stuck and cannot undeploy
+  </li>
+  <li>
+   Fixed: Weapon Deployment - if players are on the higher part of a building in prone deployment, and the building is destroyed, they would stay deployed in mid-air (and similarly on a vehicle that is moved away)
+  </li>
+  <li>
+   Fixed: Weapon Deployment - players were able to 'rappel' down buildings by deploying their weapon
+  </li>
+  <li>
+   Fixed: Deploying on low rocky walls caused weapon to sometimes not be able to aim right
+  </li>
+  <li>
+   Fixed: Problem with remotely controlling a laser designator and disassembling
+  </li>
+  <li>
+   Tweaked: Smoother leg transform for prone deployment
+  </li>
+ </ul>
+ <h3>
+  SERVER:
+ </h3>
+ <ul>
+  <li>
+   Updated: Stand-alone Windows Dedicated Server (hotfix 1.42)
+  </li>
+  <li>
+   Updated: Stand-alone Linux Dedicated Server (hotfix 1.42)
+   <ul>
+    <li>
+     Known issue: Steam client modifies the
+     <em>
+      steam_appid.txt
+     </em>
+     file incorrectly. In case of issues, verify its content is:
+     <strong>
+      107410
+     </strong>
+    </li>
+    <li>
+     Known issue: Sometimes the add-ons are loaded from the wrong installation (e.g. main game)
+    </li>
+    <li>
+     Try adding
+     <em>
+      -mod=curator;kart;heli;mark;dlcbundle
+     </em>
+     to your
+     <em>
+      arma3server.exe
+     </em>
+     shortcut
+    </li>
+   </ul>
+  </li>
+ </ul>
+</div>

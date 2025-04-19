@@ -1,0 +1,294 @@
+<div class="post-content">
+ <p>
+  FROM: Project Lead
+  <br>
+   TO: Alpha Users
+   <br>
+    UNIT: Arma 3 Alpha, Arma 3 Alpha Lite
+    <br>
+     ACTIVITY: Game Update: 0.60 (Sniper Package)
+     <br/>
+     SIZE: ~552 MB
+    </br>
+   </br>
+  </br>
+ </p>
+ <h1>
+  CHANGELOG
+ </h1>
+ <h2>
+  DATA
+ </h2>
+ <ul>
+  <li>
+   Added 1 x BLUFOR M320 LRR .408 sniper rifle
+  </li>
+  <li>
+   Added 1 x BLUFOR ghillie suit sniper and spotter duo
+  </li>
+  <li>
+   Added 1 x OPFOR GM6 Lynx 12.7mm sniper rifle
+  </li>
+  <li>
+   Added 1 x OPFOR ghillie suit sniper and spotter duo
+  </li>
+  <li>
+   Added 1 x Rangefinder binoculars
+  </li>
+  <li>
+   Added sniper Field Manual records
+  </li>
+  <li>
+   <span>
+    Added rangefinder hint
+   </span>
+  </li>
+  <li>
+   <span>
+    Added
+   </span>
+   Stance Indicator
+   <ul>
+    <li>
+     Not yet linked to options, but it will be
+    </li>
+    <li>
+     Known issue: sometimes shown off-screen - reset user profile or wait for positioning option in Beta
+    </li>
+   </ul>
+  </li>
+  <li>
+   Fixed: Adjusted rotation speed of turrets for Speedboat
+  </li>
+  <li>
+   Fixed:
+   <a class="hghl" href="http://feedback.arma3.com/view.php?id=3351" rel="nofollow" target="_blank">
+    http://feedback.arma3.com/view.php?id=3351
+   </a>
+   (BLUFOR Speedboat shouldn't have optics for rear gunner)
+  </li>
+  <li>
+   Fixed:
+   <a class="hghl" href="http://feedback.arma3.com/view.php?id=8558" rel="nofollow" target="_blank">
+    http://feedback.arma3.com/view.php?id=8558
+   </a>
+   (adjusted speedometers for Ifrit, Hunter and Offroad)
+  </li>
+  <li>
+   Revamped hitpoints for wheels in all soft vehicles to destroy correct wheels
+  </li>
+  <li>
+   Vehicle weapons are now lockable to prevent losing lock during weapon change
+  </li>
+  <li>
+   TRG now uses correct 5.56x45mm ammunition
+  </li>
+  <li>
+   Fixed: Ammo for MXM in special ammo box
+  </li>
+  <li>
+   Combat pace transition from stand to kneel while moving FL fixed
+  </li>
+  <li>
+   Weapons disabled in running states
+  </li>
+  <li>
+   <span>
+    Radio Protocol: enlarged Combat Protocol - over 100 lines (additionally recorded and configured)
+   </span>
+  </li>
+  <li>
+   Radio Protocol: fixed missing Stealth sentences (additionally recorded and configured)
+  </li>
+  <li>
+   <span>
+    Radio Protocol: 53 new names added for identity usage
+   </span>
+  </li>
+  <li>
+   Disabled Difficulty tab in Game Options in MP
+  </li>
+  <li>
+   Fixed: When respawnOnStart was set to 1 in description.ext, death scripts were sometimes executed after respawn scripts
+  </li>
+  <li>
+   BIS_fnc_addCommMenuItem: Arguments [caller:Object, cursorPos:Array, target:Object, is3D:Bool, itemID:String] are now passed into expression field as _this
+  </li>
+  <li>
+   Removed doubled
+   <em>
+    onPauseScript
+   </em>
+   execution
+  </li>
+  <li>
+   Ballistic penetration of bushes (foliage) adjusted
+  </li>
+  <li>
+   <span>
+    Fixed: Evasive left and Lean left toggle are not conflicting actions
+   </span>
+  </li>
+  <li>
+   <span>
+    Adjusted default friction material to allow vehicles to slide a bit over the rocks and boats over terrain
+   </span>
+  </li>
+  <li>
+   <span>
+    Fixed:
+    <a class="hghl" href="http://feedback.arma3.com/view.php?id=8414" rel="nofollow" target="_blank">
+     http://feedback.arma3.com/view.php?id=8414
+    </a>
+    (particle effect was always generated on the ground)
+   </span>
+  </li>
+  <li>
+   Fixed:
+   <a class="hghl" href="http://feedback.arma3.com/view.php?id=4620" rel="nofollow" target="_blank">
+    http://feedback.arma3.com/view.php?id=4620
+   </a>
+   (light of vehicles’ destruction is disabled under water now)
+  </li>
+  <li>
+   <em>
+    oxygenCapacity
+   </em>
+   <span>
+    parameter of all units changed
+   </span>
+  </li>
+  <li>
+   Fixed:
+   <a class="hghl" href="http://feedback.arma3.com/view.php?id=8589" rel="nofollow" target="_blank">
+    http://feedback.arma3.com/view.php?id=8589
+   </a>
+   (OPFOR squad leader was named "Rifleman")
+  </li>
+  <li>
+   Fixed: Number of group members of motorized groups
+  </li>
+  <li>
+   <span>
+    Changed: Minefield Site now rotates all mines in the direction of the Site module
+   </span>
+  </li>
+  <li>
+   Added: Dialog for custom init code for virtual providers in Supports module
+  </li>
+  <li>
+   Added: Dialog for custom supply crate init code for supply drop in Supports module
+  </li>
+  <li>
+   Fixed: broken Showcase Helicopters texts
+  </li>
+ </ul>
+ <h2>
+  ENGINE
+ </h2>
+ <ul>
+  <li>
+   <span>
+    Fixed: Incorrect reloading while in optics
+   </span>
+  </li>
+  <li>
+   Fixed: Crash on exiting the game (audio-related)
+  </li>
+  <li>
+   Fixed: Crash while ordering subordinate to fire artillery same time as having Hunter selected to receive orders
+  </li>
+  <li>
+   Helicopter AI improvements (e.g. diving too much during attack runs)
+  </li>
+  <li>
+   <span>
+    Improved ship AI path planning
+   </span>
+  </li>
+  <li>
+   <span>
+    Added: Reveal action reveals mines
+   </span>
+  </li>
+  <li>
+   Decreased mine reveal angle
+  </li>
+  <li>
+   Dynamic light influence on AI visibility tweaked further
+  </li>
+  <li>
+   Changed threshold for when AI puts on NVG
+  </li>
+  <li>
+   Decreased flashlight influence on side recognition
+  </li>
+  <li>
+   Terrain decal fix (Stratis runway)
+  </li>
+  <li>
+   Fixed: Stabilize car turrets
+  </li>
+  <li>
+   Fixes to refreshing of difficulty indicator in Campaign and Scenarios displays
+  </li>
+  <li>
+   Fixed: Selection of first RscTree item after opening Scenarios dialogue
+  </li>
+  <li>
+   Added: UI controls validator (inventory can recognize which UI controls were not properly initialized, and show some error information)
+  </li>
+  <li>
+   Fixed: Visual representation of broken wheels not matching the correct wheel for wheels destroyed using scripts
+  </li>
+  <li>
+   Fixed: Tree destruction animation
+  </li>
+  <li>
+   Sprint now overrides Combat Pace in all cases
+  </li>
+  <li>
+   Aiming down in combat pace doesn't make player start running anymore
+  </li>
+  <li>
+   Added config multiplier of damage that crew receives when vehicle crashes to object
+  </li>
+  <li>
+   <span>
+    MP score table properly integrated into debriefing display
+   </span>
+  </li>
+  <li>
+   Fixed: Ragdoll could interfere with cargo poses in multiplayer
+  </li>
+  <li>
+   Fixed: Ragdoll launching into air by destroyed objects
+  </li>
+  <li>
+   Fixed: When user tries to pick an item from a corpse to a slot and that slot already contains another item, linked item would disappear
+  </li>
+  <li>
+   Non-local objects shouldn't collide with ground (breaking joints -
+   <a class="hghl" href="http://feedback.arma3.com/view.php?id=7884" rel="nofollow" target="_blank">
+    http://feedback.arma3.com/view.php?id=7884
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Random rotation of the submunition pattern (artillery)
+  </li>
+  <li>
+   Fixed: Setting of full-screen gamma
+  </li>
+  <li>
+   Fixed:
+   <em>
+    markerDir
+   </em>
+   return value type
+  </li>
+  <li>
+   Improved loading of scenario overview images from PBOs (one known issues to do with subfolders remains)
+  </li>
+ </ul>
+</div>

@@ -1,0 +1,217 @@
+<div class="post-content">
+ <p>
+  FROM: Project Lead
+  <br>
+   TO: Alpha Users
+   <br>
+    UNIT: Arma 3 Alpha, Arma 3 Alpha Lite
+    <br>
+     ACTIVITY: Game Update: 0.56 (multiplayer security)
+     <br/>
+     SIZE: ~38 MB
+    </br>
+   </br>
+  </br>
+ </p>
+ <h1>
+  CHANGELOG
+ </h1>
+ <h2>
+  DATA
+ </h2>
+ <ul>
+  <li>
+   Added: Functions are now compiled using newly introduced
+   <a class="hghl" href="http://community.bistudio.com/wiki/compileFinal">
+    compileFinal
+   </a>
+  </li>
+  <li>
+   Added: Functions meta data are now secured against rewriting
+  </li>
+  <li>
+   Removed use of vulnerable script commands in DynO functions
+  </li>
+  <li>
+   Added: BIS_fnc_log enabled in public version when 'allowFunctionsLog = 1;' is set in description.ext
+  </li>
+  <li>
+   Fixed: BIS_fnc_sideColor can now load non-number values
+  </li>
+  <li>
+   Fixed: BIS_fnc_functionMeta was not working with scenario and campaign functions
+  </li>
+  <li>
+   Added: Scenario / campaign functions now support 'forced' param, allowing them to be executed automatically upon mission start
+  </li>
+  <li>
+   Added: BIS_fnc_spawn
+  </li>
+  <li>
+   Added: Ability to execute BIS_fnc_execVM and BIS_fnc_execFSM without arguments
+  </li>
+  <li>
+   Fixed: BIS_fnc_error was not working correctly
+  </li>
+  <li>
+   Changed: Splendid Camera roll speed decreased, users should no longer be inclined to take screens with too extreme roll
+  </li>
+ </ul>
+ <h2>
+  ENGINE
+ </h2>
+ <ul>
+  <li>
+   Fog is now really enabled for this branch
+  </li>
+  <li>
+   <a class="hghl" href="http://community.bistudio.com/wiki/getFuelCargo">
+    getFuelCargo
+   </a>
+   ,
+   <a class="hghl" href="http://community.bistudio.com/wiki/getAmmoCargo">
+    getAmmoCargo
+   </a>
+   ,
+   <a class="hghl" href="http://community.bistudio.com/wiki/getRepairCargo">
+    getRepairCargo
+   </a>
+   commands added
+  </li>
+  <li>
+   Fixes to serialization of particle emitters
+  </li>
+  <li>
+   Fixed: shoreline was not covered by fog properly
+  </li>
+  <li>
+   Correct
+   <em>
+    vonCodecQuality
+   </em>
+   is set now
+  </li>
+  <li>
+   Fixed: Animation source gear for PhysX vehicles
+  </li>
+  <li>
+   Fixed: Ships are now using the correct Arma 3 gearbox
+  </li>
+  <li>
+   Merge from OA: attack helicopter was unable to engage with rockets (PhysX-compatible)
+  </li>
+  <li>
+   Fixed:
+   <em>
+    canMove
+   </em>
+   on a vehicle with dead driver would return false in some cases
+  </li>
+  <li>
+   Improved synchronization of structure destruction in MP
+  </li>
+  <li>
+   Hotfixed:
+   <a class="hghl" href="http://feedback.arma3.com/view.php?id=5928" target="_blank">
+    http://feedback.arma3.com/view.php?id=5928
+   </a>
+   (MP crash)
+  </li>
+  <li>
+   Fixed: AI now uses optics better to detect enemies
+  </li>
+  <li>
+   Fixed: Switching HDR settings could cause graphical corruption
+  </li>
+  <li>
+   Added: Removing destroyed buildings from PhysX simulation
+  </li>
+  <li>
+   Fixed: Crash opportunity related to PhysX
+  </li>
+  <li>
+   <span>
+    Added: new events for inventory event handlers: "Take" and "Put"
+   </span>
+  </li>
+  <li>
+   <span>
+    Fixed: improved path planning related to roads
+   </span>
+  </li>
+  <li>
+   Tweaked darkness detection and use of NVG by AI
+  </li>
+  <li>
+   Minor optimizations to dynamic lights
+  </li>
+  <li>
+   Added:
+   <a class="hghl" href="http://community.bistudio.com/wiki/difficulty">
+    difficulty
+   </a>
+   command to return high-level selected difficulty mode
+  </li>
+  <li>
+   Added:
+   <a class="hghl" href="http://community.bistudio.com/wiki/getArtilleryETA">
+    getArtilleryETA
+   </a>
+   script command
+   <ul>
+    <li>
+     Input Array: [unit, targetX, targetY, targetZ, magazineType]
+    </li>
+    <li>
+     Returns: ETA of the first available mode (the mode the AI will probably use)
+    </li>
+   </ul>
+  </li>
+  <li>
+   Fixed: Glitch in blending of 2 animations masks
+  </li>
+  <li>
+   Added:
+   <a class="hghl" href="http://community.bistudio.com/wiki/compileFinal">
+    compileFinal
+   </a>
+   <span>
+    command
+   </span>
+  </li>
+  <li>
+   Removed fully script commands:
+   <a class="hghl" href="http://community.bistudio.com/wiki/setVehicleInit">
+    setVehicleInit
+   </a>
+   ,
+   <a class="hghl" href="http://community.bistudio.com/wiki/clearVehicleInit">
+    clearVehicleInit
+   </a>
+   ,
+   <a class="hghl" href="http://community.bistudio.com/wiki/processInitCommands">
+    processInitCommands
+   </a>
+  </li>
+  <li>
+   Made all script commands final (no longer possible to reassign in most circumstances)
+  </li>
+  <li>
+   Fixed: healing sound could play in an endless loop
+  </li>
+  <li>
+   Attenuation of dynamic lights can now be influenced by a new parameter in asset configuration - maximum distance of light
+  </li>
+  <li>
+   On steep surfaces, players now crouch instead of fully standing up
+  </li>
+  <li>
+   -showScriptErrors enabled by default
+   <ul>
+    <li>
+     To allow better debugging (may or may not be changed for final release)
+    </li>
+   </ul>
+  </li>
+ </ul>
+</div>

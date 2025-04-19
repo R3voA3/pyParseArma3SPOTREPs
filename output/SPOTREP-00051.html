@@ -1,0 +1,254 @@
+<div class="post-content">
+ <p>
+  FROM: High Command
+  <br>
+   TO: Arma 3 Users
+   <br>
+    UNIT: Main Branch (Windows)
+    <br>
+     ACTIVITY: Hotfix: 1.54 (Miscellaneous)
+     <br/>
+     SIZE: ~119 MB / ~97 MB
+    </br>
+   </br>
+  </br>
+ </p>
+ <h1>
+  NOTES
+ </h1>
+ <ul>
+  <li>
+   Consider using the Steam client option to verify the integrity of the local game cache to avoid corrupted data after downloading this update.
+  </li>
+  <li>
+   Consider defragmenting your HDD after downloading large updates.
+  </li>
+  <li>
+   A
+   <em>
+    Legacy Build
+   </em>
+   Steam branch is available for advanced users. It contains the previous significant main branch version (1.52). It can be used to compare specific changes between major releases. The access code for this branch is:
+   <em>
+    Arma3Legacy152
+   </em>
+  </li>
+  <li>
+   This update does not apply to
+   <a href="http://dev.arma3.com/ports">
+    the experimental Linux and Mac port betas
+   </a>
+   at time of writing. We'll be updating those to 1.54 as soon as possible.
+  </li>
+  <li>
+   You can find the servers in the Steam library (switch the filter to "Tools") - "Arma 3 Server" (based on your OS, it will download the Windows or Linux version).
+   <ul>
+    <li>
+     Administrators can also use the command-line
+     <a href="https://developer.valvesoftware.com/wiki/SteamCMD" target="_blank">
+      SteamCMD
+     </a>
+     utility. The app ID is to be 233780.
+    </li>
+    <li>
+     NVIDIA GameWorks™ Technology provided under license from NVIDIA Corporation. Copyright © 2002-2015 NVIDIA Corporation. All rights reserved.
+    </li>
+   </ul>
+  </li>
+  <li>
+   In case of problems, please check the
+   <a href="http://support.bistudio.com/arma-3" target="_blank">
+    Bohemia Interactive support F.A.Q.
+   </a>
+   ,
+   <a href="http://arma3.com/faq" target="_blank">
+    Arma 3 F.A.Q.
+   </a>
+   or
+   <a href="http://www.battleye.com/support/faq/" target="_blank">
+    BattlEye F.A.Q.
+   </a>
+  </li>
+  <li>
+   You can help us to further improve the game by posting your feedback on the
+   <a href="http://feedback.arma3.com/" target="_blank">
+    Feedback Tracker
+   </a>
+   .
+  </li>
+ </ul>
+ <h1>
+  CHANGELOG
+ </h1>
+ <h3>
+  DATA:
+ </h3>
+ <ul>
+  <li>
+   Fixed: Possible data corruption of the Altis terrain (
+   <a href="http://feedback.arma3.com/view.php?id=26725" target="_blank">
+    http://feedback.arma3.com/view.php?id=26725
+   </a>
+   /
+   <a href="http://feedback.arma3.com/view.php?id=26798" target="_blank">
+    http://feedback.arma3.com/view.php?id=26798
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Function
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_deleteTask" target="_blank">
+    BIS_fnc_deleteTask
+   </a>
+   now properly deletes variables holding the task-related data (
+   <a href="http://feedback.arma3.com/view.php?id=26894" target="_blank">
+    http://feedback.arma3.com/view.php?id=26894
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Function
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_taskExists" target="_blank">
+    BIS_fnc_taskExists
+   </a>
+   now correctly returns false for tasks that have been deleted
+  </li>
+  <li>
+   Fixed: Function
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_objectVar" target="_blank">
+    BIS_fnc_objectVar
+   </a>
+   now generates
+   <a href="https://community.bistudio.com/wiki/vehicleVarName" target="_blank">
+    vehicleVarName
+   </a>
+   and global variable according to a more generic template; prefix changed from
+   <em>
+    #obj
+   </em>
+   to
+   <em>
+    bis_o
+   </em>
+  </li>
+  <li>
+   Fixed: Too hard to walk through narrow doors with a launcher equipped (
+   <a href="http://feedback.arma3.com/view.php?id=26806" target="_blank">
+    http://feedback.arma3.com/view.php?id=26806
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Character is no longer forced to crouch when switching away from a launcher when standing and not possessing any other weapon
+  </li>
+  <li>
+   Fixed: Error message when using
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_getRespawnInventories" target="_blank">
+    BIS_fnc_getRespawnInventories
+   </a>
+  </li>
+  <li>
+   Added: Pressing Ctrl+Shift+C when the class list is active in the config viewer will now copy all class names within the selected container
+  </li>
+  <li>
+   Tweaked: Adjusted the magnitude of weapon sway levels; increased stability in rested and deployed states to provide more benefit for active reduction of weapon sway and to reward tactical gameplay
+  </li>
+  <li>
+   Tweaked: Optimized weapon sway magnitude and duration of the hold breath penalty. Improved benefits of resting and deployment with regards to weapon sway and weapon recoil.
+  </li>
+ </ul>
+ <h3>
+  ENGINE:
+ </h3>
+ <ul>
+  <li>
+   Fixed: Experimental fix for
+   <em>
+    LoadObject
+   </em>
+   -related crashes (i.e. handling corrupt data more gracefully)
+  </li>
+  <li>
+   Fixed: Potential CTD when spectating
+  </li>
+  <li>
+   Fixed: Potential CTD during loading job destruction
+  </li>
+  <li>
+   Fixed: Players could equip non-backpack items as backpack and it would CTD when they tried to move
+  </li>
+  <li>
+   Fixed: CTD when entering multiplayer when Steam initialization had failed (
+   <a href="http://feedback.arma3.com/view.php?id=26910" target="_blank">
+    http://feedback.arma3.com/view.php?id=26910
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Fall damage is no longer reduced by wearing different armor
+  </li>
+  <li>
+   Fixed: Stamina Bar was sometimes shown when
+   <a href="https://community.bistudio.com/wiki/Arma_3_Stamina" target="_blank">
+    Stamina
+   </a>
+   was disabled
+  </li>
+  <li>
+   Tweaked: Turning off white-listing for
+   <a href="https://community.bistudio.com/wiki?title=Arma_3_Remote_Execution" target="_blank">
+    Remote Execution
+   </a>
+   (this is a temporary measure until solutions for problems with the current approach are found)
+  </li>
+ </ul>
+ <h3>
+  LAUNCHER:
+ </h3>
+ <ul>
+  <li>
+   Fixed: Explicitly ignoring the duplicate join requests from Steam that are send to both
+   <a href="https://community.bistudio.com/wiki/Arma_3_Launcher" target="_blank">
+    Launcher
+   </a>
+   and the game while the game is running
+  </li>
+ </ul>
+ <h3>
+  SERVER:
+ </h3>
+ <ul>
+  <li>
+   Updated: Stand-alone Windows Dedicated Server (hotfix 1.54)
+  </li>
+  <li>
+   Updated: Stand-alone Linux Dedicated Server (hotfix 1.54)
+   <ul>
+    <li>
+     Known issue: Steam client modifies the
+     <em>
+      steam_appid.txt
+     </em>
+     file incorrectly. In case of issues, verify its content is:
+     <strong>
+      107410
+     </strong>
+    </li>
+    <li>
+     Known issue: Sometimes the add-ons are loaded from the wrong installation (e.g. main game)
+    </li>
+    <li>
+     Try adding
+     <em>
+      -mod=curator;kart;heli;mark;dlcbundle
+     </em>
+     to your
+     <em>
+      arma3server.exe
+     </em>
+     shortcut
+    </li>
+   </ul>
+  </li>
+ </ul>
+</div>

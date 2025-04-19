@@ -1,0 +1,625 @@
+<div class="post-content">
+ <p>
+  FROM: Project Lead
+  <br>
+   TO: Arma 3 Users
+   <br>
+    UNIT: Main Branch
+    <br>
+     ACTIVITY: Game Update: 1.20 (Karts DLC)
+     <br/>
+     SIZE: ~655 MB
+    </br>
+   </br>
+  </br>
+ </p>
+ <h1>
+  CHANGELOG
+ </h1>
+ <h2 class="box_title">
+  DATA
+ </h2>
+ <ul>
+  <li>
+   <strong>
+    Added: Kart vehicle (4 liveries and 1 random color variant)*
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Racer character (with overalls and helmets matching the kart liveries / colors)*
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Marshal character*
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Starter pistol*
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Race objects (racetrack barriers and more)
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Time Trials Challenge mode
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: 5 Kart Time Trials**
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Zeus Race modules
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: 2 pre-set Zeus Race Kart multiplayer races
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: 16 Steam Achievements (for Firing Drills, Time Trials and Zeus)
+   </strong>
+  </li>
+ </ul>
+ <p>
+  <strong>
+   * Restrictions apply for those who don't own
+   <a href="http://www.arma3.com/dlc/karts" target="_blank">
+    Arma 3 Karts DLC
+   </a>
+   . Read
+   <a href="http://www.bistudio.com/english/company/developers-blog/465-roadmap-14-15-dlc-strategy-blog" target="_blank">
+    our blog
+   </a>
+   for more information.
+  </strong>
+ </p>
+ <p>
+  <strong>
+   ** 1 Time Trial is available to everyone, the remaining 4 require ownership of
+   <a href="http://www.arma3.com/dlc/karts" target="_blank">
+    Arma 3 Karts DLC
+   </a>
+   .
+  </strong>
+ </p>
+ <ul>
+  <li>
+   Added: Selection for damage materials in the cockpit of the UH-80
+  </li>
+  <li>
+   Added: Animation of fingers in ragdoll
+  </li>
+  <li>
+   Added: Particle effect modules can be synchronized with triggers
+  </li>
+  <li>
+   Added: New parameter
+   <em>
+    noImage
+   </em>
+   (bool) for
+   <em>
+    CfgHints
+   </em>
+   classes. You can use no image in context hint even if an image is configured (and used in Field Manual).
+  </li>
+  <li>
+   Added: Sound occlude and obstruct parameters for vehicles
+  </li>
+  <li>
+   Added: Correct hit effects for mini-gun sub-munition ammo
+  </li>
+  <li>
+   Fixed: A visual issue with the SDV's lights
+  </li>
+  <li>
+   Fixed: Suit packs now have textures according to uniforms
+  </li>
+  <li>
+   Fixed: Backpacks with some pre-defined content have an empty backpack of the same type as parent (used e.g. in campaign hubs)
+  </li>
+  <li>
+   Fixed: An issue where dropping Kerry's diving uniform spawned a headless body
+  </li>
+  <li>
+   Fixed:
+   <em>
+    BIS_fnc_itemType
+   </em>
+   didn't recognize UAV terminal
+  </li>
+  <li>
+   Fixed: Some interior textures of a Tempest heavy truck variant (
+   <a href="http://feedback.arma3.com/view.php?id=18533" target="_blank">
+    http://feedback.arma3.com/view.php?id=18533
+   </a>
+   )
+  </li>
+  <li>
+   Fixed:
+   <em>
+    BIS_fnc_getCfgDataArray
+   </em>
+   now returns [] if the value cannot be found
+  </li>
+  <li>
+   Fixed: Wrong backpacks used for static weapon disassembling
+  </li>
+  <li>
+   Fixed: Bullet penetrability on some parts of the trucks
+  </li>
+  <li>
+   Fixed: saveVar issue work-around for campaign persistency
+  </li>
+  <li>
+   Fixed: Weapon disappears when taken through context menu on Dedicated Servers
+  </li>
+  <li>
+   Firing Drills:
+   <ul>
+    <li>
+     Added: Firing Drills - visibility of 3D icons is now linked to the difficulty option controlling waypoint indicators
+    </li>
+    <li>
+     Added: Firing Drills - extra debriefing section with results (medal times, your personal best and all times this session)
+    </li>
+    <li>
+     Fixed: Firing Drills - result times were sometimes incorrectly colored (when setting a non-medal time following a run rewarded with a medal time)
+    </li>
+    <li>
+     Fixed: Firing Drills - missing localization for 2 strings
+    </li>
+    <li>
+     Fixed: Firing Drills - 3D icons did not work after restart
+    </li>
+    <li>
+     Fixed: CoF Green - parked SUV was colliding with ambient objects
+    </li>
+    <li>
+     Fixed: CoF Red 2 - CP 9 targets could be placed inside a rock
+    </li>
+    <li>
+     Fixed: CoF Red 2 - CP 11 could be encountered without any hostile targets
+    </li>
+    <li>
+     Updated: Firing Drills - Immediately quitting the drill now fails the primary task
+    </li>
+    <li>
+     Updated: CoF Orange 2 - CP 6 disappearing target time made a little more relaxed to allow spotting it
+    </li>
+   </ul>
+  </li>
+  <li>
+   Zeus
+   <ul>
+    <li>
+     Added: Proper logo, tooltip, name and Field Manual link to Zeus DLC
+    </li>
+    <li>
+     Fixed: Players in ZGM missions can now have combat life saver / repair specialist / explosive specialist abilities
+    </li>
+    <li>
+     Fixed: Running Game Master or Seize modules without proper configuration froze the game in loading screen instead of showing an error
+    </li>
+    <li>
+     Fixed: Enemy units were not spawned automatically when no Zeus was present in Defend missions
+    </li>
+    <li>
+     Tweaked: Zeus
+     <em>
+      onHover
+     </em>
+     logo
+    </li>
+    <li>
+     Added: Zeus icon to icon-less FM records
+    </li>
+   </ul>
+  </li>
+ </ul>
+ <h2 class="box_title">
+  ENGINE
+ </h2>
+ <ul>
+  <li>
+   Changed update system for EPE objects (to address a problem with grenades)
+  </li>
+  <li>
+   Improved: AI's losing sight of target
+  </li>
+  <li>
+   Unit classes in the editor are now sorted alphabetically
+  </li>
+  <li>
+   Now preventing empty bindings for disabled actions
+  </li>
+  <li>
+   Small PhysX optimizations
+  </li>
+  <li>
+   Removed more pointless RPT spam
+  </li>
+  <li>
+   Increased
+   <em>
+    errorGrowInTime
+   </em>
+   for empty vehicles (AI optimization)
+  </li>
+  <li>
+   Avoiding server crash due to wrong index in player role packet
+  </li>
+  <li>
+   Magazine animated when weapon is reloaded for the first time
+  </li>
+  <li>
+   Script command
+   <a href="https://community.bistudio.com/wiki/weaponsItems" target="_blank">
+    weaponsItems
+   </a>
+   now works also for ammo crates
+  </li>
+  <li>
+   If connecting to a remote controlling unit, now also switching the camera
+  </li>
+  <li>
+   Security enhancements for clients connected to a Dedicated Server (pre-processing limitation)
+  </li>
+  <li>
+   Repairing a destroyed building now removes the partially destroyed building and ruins better
+  </li>
+  <li>
+   Armored vehicles now correctly display optics for commander upon launching the mission
+  </li>
+  <li>
+   Additional functions for MFD - blinking effect on HUD elements
+  </li>
+  <li>
+   Added: Support for
+   <em>
+    allowedLoadFileExtension
+   </em>
+   parameter in Dedicated Server config file in order to make it impossible to read contents of files with unlisted extension (security improvement)
+  </li>
+  <li>
+   Added: AI aiming error is now influenced by wounds and reloading
+  </li>
+  <li>
+   Added: Min and Max boundary for scale HUD element
+  </li>
+  <li>
+   Added: Support for sub-folders in multiplayer scenarios
+  </li>
+  <li>
+   Added: Support for coloring pictures on a single line in a
+   <em>
+    ListBox
+   </em>
+  </li>
+  <li>
+   Added: New action that support opening inventory of soldiers under your control
+  </li>
+  <li>
+   Added: Missing Zeus event handler
+   <em>
+    ObjectSelectionChanged
+   </em>
+  </li>
+  <li>
+   Added: Support for
+   <em>
+    allowedPreprocessFileExtensions
+   </em>
+   parameter in Dedicated Server config file in order to make it impossible to read contents of files with an unlisted extension (security improvement for
+   <a href="https://community.bistudio.com/wiki/preprocessFile" target="_blank">
+    preprocessFile
+   </a>
+   and
+   <a href="https://community.bistudio.com/wiki/preprocessFileLineNumbers" target="_blank">
+    preprocessFileLineNumbers
+   </a>
+   script commands)
+  </li>
+  <li>
+   Added: Support for mission white-listing for Dedicated Server (
+   <em>
+    missionWhitelist
+   </em>
+   parameter in DS config file)
+  </li>
+  <li>
+   Added: Surface parameter (
+   <em>
+    surfaceFriction
+   </em>
+   )
+  </li>
+  <li>
+   Added:
+   <em>
+    autoScroll
+   </em>
+   default values
+  </li>
+  <li>
+   Added: Command line parameter '
+   <em>
+    -enableHT
+   </em>
+   ' added to enable hyper-threading
+  </li>
+  <li>
+   Added: Support for camera shaking when you encounter big G forces in transport of helicopters - not yet configured in our data
+  </li>
+  <li>
+   Fixed: Changing focus breaks volume levels
+  </li>
+  <li>
+   Fixed: CTD in Zeus
+  </li>
+  <li>
+   Fixed: Possible CTD in Zeus when a NULL unit occurs in the list of editables
+  </li>
+  <li>
+   Fixed: Resource leaks in splash window
+  </li>
+  <li>
+   Fixed: Deletion of remote controlled unit (Zeus) while someone else is remote controlling it
+  </li>
+  <li>
+   Fixed: An issue where ragdoll would cause bodies to fall through non-local buildings (
+   <a href="http://feedback.arma3.com/view.php?id=9532" target="_blank">
+    http://feedback.arma3.com/view.php?id=9532
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Flaps &amp; gear sounds gradually transition based on camera position
+  </li>
+  <li>
+   Fixed: HUD heading scale was disappearing prematurely when displaying negative values
+  </li>
+  <li>
+   Fixed: Quadrotor UAV with disabled autonomy was changing height on its own
+  </li>
+  <li>
+   Fixed: An issue that might lead to a crash (related to
+   <a href="http://feedback.arma3.com/view.php?id=18663" target="_blank">
+    http://feedback.arma3.com/view.php?id=18663
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Multiplication of sub-munition in multiplayer (related to
+   <a href="http://feedback.arma3.com/view.php?id=18671" target="_blank">
+    http://feedback.arma3.com/view.php?id=18671
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: An issue that could prevent the start of a multiplayer scenario
+  </li>
+  <li>
+   Fixed: Loss of ammo when loading from an automatic / user save (
+   <a href="http://feedback.arma3.com/view.php?id=18668" target="_blank">
+    http://feedback.arma3.com/view.php?id=18668
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Steam browser should be compatible with the GameSpy favorites
+  </li>
+  <li>
+   Fixed: Partial word search in Steam server browser (
+   <a href="http://feedback.arma3.com/view.php?id=18681" target="_blank">
+    http://feedback.arma3.com/view.php?id=18681
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Passing '
+   <em>
+    -ip=
+   </em>
+   ' command parameter to Steam server (
+   <a href="http://feedback.arma3.com/view.php?id=18667" target="_blank">
+    http://feedback.arma3.com/view.php?id=18667
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Star emissiveness was not correctly set when changing landscape
+  </li>
+  <li>
+   Fixed: Zoom is not used in the AV Camera feed
+  </li>
+  <li>
+   Fixed: Unknown action Surrender RPT spam
+  </li>
+  <li>
+   Fixed: Possible CTD in scripting command when passing non-Zeus unit as Zeus argument
+  </li>
+  <li>
+   Sound:
+   <ul>
+    <li>
+     Fixed: Crew audible outside of their vehicle
+    </li>
+    <li>
+     Enabled
+     <em>
+      soundInsideCoeff
+     </em>
+    </li>
+    <li>
+     Fixed: CTD when switching views in vehicles on Dedicated Server
+    </li>
+    <li>
+     Fixed: Crash during access of sound waves based on parameters
+    </li>
+    <li>
+     Fixed: Simulation of sound speed for all weapons
+    </li>
+    <li>
+     Collision sound volume based on speed
+    </li>
+    <li>
+     Damage sample volume based on speed
+    </li>
+   </ul>
+  </li>
+  <li>
+   Fixed: Possible CTD when player is JIPing
+  </li>
+  <li>
+   Fixed: TI rendering for
+   <em>
+    OnSurface
+   </em>
+   objects
+  </li>
+  <li>
+   Fixed: RPT render target not found message
+  </li>
+  <li>
+   Fixed: Collision bug where soldiers could sometimes go through thin obstacles
+  </li>
+  <li>
+   Fixed: Locking turret by
+   <a href="https://community.bistudio.com/wiki/lockTurret" target="_blank">
+    lockTurret
+   </a>
+   command
+  </li>
+  <li>
+   Fixed: Players jumping in a partially destroyed and destroyed building
+  </li>
+  <li>
+   Fixed: CTD when passing a not existing side to
+   <a href="https://community.bistudio.com/wiki/createCenter" target="_blank">
+    createCenter
+   </a>
+  </li>
+  <li>
+   Fixed: Driver ejects when heli is configured to not allow driver ejection
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/removeUniform" target="_blank">
+    removeUniform
+   </a>
+   doesn't work within non-local client when connection was started in JIP mode (graphical representation of undressed soldier doesn't work even when uniform was removed through gear)
+  </li>
+  <li>
+   Hotfixed: Remote state positioning when an object is stable (PhysX optimization)
+  </li>
+  <li>
+   Fixed: Frozen manual fire on Dedicated Server when no one is in the gunner position
+  </li>
+  <li>
+   Fixed: Automatic get out from damaged vehicle when user is remote controlling unit
+  </li>
+  <li>
+   Fixed: Zeus automatic returning of unit dragged from a vehicle
+  </li>
+  <li>
+   Fixed: Possible CTD when someone deletes units which is under remote control of another Zeus
+  </li>
+  <li>
+   Fixed: Possible CTD in MP servers
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/addUniform" target="_blank">
+    addUniform
+   </a>
+   script command didn't work well in MP
+  </li>
+  <li>
+   Fixed: Empty vehicles can be locked (with missile)
+  </li>
+  <li>
+   Fixed: Allowed ejection when a transport has ejection disabled on a person's position
+  </li>
+  <li>
+   Fixed: Wrong return type in scripting command
+   <a href="https://community.bistudio.com/wiki/everyBackpack" target="_blank">
+    everyBackpack
+   </a>
+   (was Object, should be Array)
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/hideObjectGlobal" target="_blank">
+    hideObjectGlobal
+   </a>
+   script command (was working in the opposite way)
+  </li>
+  <li>
+   Fixed: Visible UAV units in MP
+  </li>
+  <li>
+   Fixed: Setting scenario description as structured text
+  </li>
+  <li>
+   Fixed: Talking through remotely controlled characters (Zeus)
+  </li>
+  <li>
+   Fixed: AI not reloading their weapon when the camera was focused on it
+  </li>
+  <li>
+   Fixed: Assembly and dis-assembly of static autonomous weapons in MP
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/createVehicleCrew" target="_blank">
+    createVehicleCrew
+   </a>
+   command in MP when called on a non-local autonomous static weapon
+  </li>
+  <li>
+   Fixed: Expensive simulations on destroyed buildings
+  </li>
+  <li>
+   Fixed: Admin commands
+   <em>
+    #kick
+   </em>
+   and
+   <em>
+    #exec ban
+   </em>
+   not working properly
+  </li>
+  <li>
+   Fixed: Possible CTD in
+   <em>
+    InterpolateQuaternion
+   </em>
+  </li>
+  <li>
+   Fixed: Crash when loading PBO placed in a sub-folder
+  </li>
+  <li>
+   Fixed: Mutliplayer scenario in sub-folders not working on Linux Dedicated Server
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/commandArtilleryFire" target="_blank">
+    commandArtilleryFire
+   </a>
+   could crash the game when a target was inside a 'Seized By' trigger
+  </li>
+ </ul>
+</div>

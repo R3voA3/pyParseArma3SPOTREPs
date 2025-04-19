@@ -5,48 +5,10 @@
 #	beautifulsoup4
 # 	requests
 
-from bs4 import BeautifulSoup
-import requests
-import time
+
 
 pathChangelogRaw = r"output\ChangelogRaw.txt"
 pathChangelogFormatted = r"output\ChangelogFormatted.txt"
-startPageIndex = 1
-endPageIndex = 10#118
-
-def indexToUrl(i):
-    if i < 3:
-        return f"https://dev.arma3.com/post/spotrep-00{i:02d}" # The first two SPOTREPs have a different number of leading zeros than the rest.
-    else:
-        return f"https://dev.arma3.com/post/spotrep-00{i:03d}"
-
-indices = range(startPageIndex, endPageIndex) # The latest SPOTREP is #00117.
-sourceFile = open(pathChangelogRaw,"w+", encoding="utf-8")
-
-for i in indices:
-    url = indexToUrl(i)
-
-    print(f"Fetching {url}")
-
-    response = requests.get(url)
-
-    if response.status_code == 200:
-        # Parse the HTML and find the changelog:
-        soup = BeautifulSoup(response.text, "html.parser")
-        changelog = soup.find("div", class_ = "post-content")
-
-        # Format title and add link to official page
-        spotrepTitle = url.split(r"/")[-1].upper()
-        spotrepTitle = f"== {spotrepTitle} ==\n\n" + r"{{Link|" + f"{url}|{spotrepTitle}" + r"}}" + "\n"
-        sourceFile.write(spotrepTitle)
-
-        content = changelog.prettify()
-
-        sourceFile.writelines(content)
-    else:
-        raise Exception(f"Received unexpected response status code {response.status_code} for {url}")
-
-    time.sleep(0.1) # Avoid flooding the server with requests.
 
 # Format sourceFile
 sourceFile = open(pathChangelogRaw,"r", encoding="utf-8")

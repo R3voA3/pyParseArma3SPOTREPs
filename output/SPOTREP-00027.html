@@ -1,0 +1,837 @@
+<div class="post-content">
+ <p>
+  FROM: Project Lead
+  <br>
+   TO: Arma 3 Users
+   <br>
+    UNIT: Main Branch
+    <br>
+     ACTIVITY: Game Update: 1.22 (Campaign improvements, Linux server performance, GameSpy removal)
+     <br/>
+     SIZE: ~1021 MB
+    </br>
+   </br>
+  </br>
+ </p>
+ <h1>
+  CHANGELOG
+ </h1>
+ <h2>
+  DATA
+ </h2>
+ <ul>
+  <li>
+   <strong>
+    Server browser:
+   </strong>
+   <ul>
+    <li>
+     Removed: GameSpy logo
+    </li>
+    <li>
+     Removed: GameSpy / Steam switch
+    </li>
+    <li>
+     Server count is now in-engine instead of scripted
+    </li>
+    <li>
+     Added: Player's name
+    </li>
+   </ul>
+  </li>
+ </ul>
+ <ul>
+  <li>
+   Fixed: Devbranch watermark is no longer displayed after exiting Splendid Camera in the main branch
+  </li>
+  <li>
+   Fixed: Mistake in condition of function
+   <em>
+    BIS_fnc_randomPosTrigger
+   </em>
+   (
+   <a href="http://feedback.arma3.com/view.php?id=17937" target="_blank">
+    http://feedback.arma3.com/view.php?id=17937
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Script error in function
+   <em>
+    BIS_fnc_spawnGroup
+   </em>
+   (
+   <a href="http://feedback.arma3.com/view.php?id=16889" target="_blank">
+    http://feedback.arma3.com/view.php?id=16889
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Tactical vest camo ground model
+  </li>
+  <li>
+   Fixed: Wrong default values (
+   <a href="https://community.bistudio.com/wiki/getVariable" target="_blank">
+    getVariable
+   </a>
+   ) in the fire and smoke effect modules fixed (it is only safety-check, it shouldn't have any impact on functionality)
+  </li>
+  <li>
+   Fixed: Iron sights and camo of armed offroad
+  </li>
+  <li>
+   Fixed: Dispersion and engagement ranges of TRG 20 and TRG 21 were switched
+  </li>
+  <li>
+   Fixed: TT05 - tweaked misplaced barrier
+  </li>
+  <li>
+   Fixed: Unknown Community Author for static weapons backpacks
+  </li>
+  <li>
+   Fixed: Align of holographic reticle
+  </li>
+  <li>
+   Fixed: Typo in strength of handbrake for quad bike
+  </li>
+  <li>
+   Fixed: Aimpoint visibility at night for MRD attachment
+  </li>
+  <li>
+   Fixed: Player can no longer respawn into vehicle stolen by an enemy
+  </li>
+  <li>
+   Fixed: Tasks were not auto-assigned correctly
+  </li>
+  <li>
+   Fixed: When a vehicle respawn position was moved while a vehicle was waiting for respawn, the vehicle was respawned on the position before the change
+  </li>
+  <li>
+   Fixed: Deleting a vehicle while it was waiting for respawn caused a scripting error
+  </li>
+  <li>
+   Fixed: Pressing Up and Enter while in the MP pause menu closed the Zeus interface
+  </li>
+  <li>
+   Fixed: Zeroing on EBR's ironsights
+  </li>
+  <li>
+   Fixed: CAS modules in the editor were not trigger activated
+  </li>
+  <li>
+   Fixed and updated all helicopters with proper inventory loads
+  </li>
+  <li>
+   Fixed: Camo selection on the Beanie
+  </li>
+  <li>
+   Fixed: RPT error when spawning a lightning bolt
+  </li>
+  <li>
+   Fixed: UI texture of Black MX with muzzle accessory
+  </li>
+  <li>
+   Fixed: Geometries of UAV entities
+  </li>
+  <li>
+   Fixed: Decelerons on the Wipeout so that they both extend to the same extent when banking
+  </li>
+  <li>
+   Fixed: Map icon size of portable mortars, offroad variants and assault boats
+  </li>
+  <li>
+   Fixed: Missing vehicle dust effects for desert surface (only on Altis)
+  </li>
+  <li>
+   Fixed: Unable to throw grenade through window of
+   <em>
+    d_house_small_02_v1_f.p3d
+   </em>
+   (
+   <a href="http://feedback.arma3.com/view.php?id=15704" target="_blank">
+    http://feedback.arma3.com/view.php?id=15704
+   </a>
+   )
+  </li>
+ </ul>
+ <ul>
+  <li>
+   Added: Stall warnings in HUDs of fixed-wings now flash
+  </li>
+  <li>
+   Added: Altitude scales in HUDs of fixed-wings now show ASL instead of ATL. However, terrain indicators have been added.
+  </li>
+  <li>
+   Added: Names and icons for
+   <em>
+    CfgVoice
+   </em>
+   classes
+  </li>
+  <li>
+   Added: Bubble particle effect module
+  </li>
+  <li>
+   Added: Empty cartridges effect module
+  </li>
+  <li>
+   Added: "Vote Kick" and "Vote Admin" buttons are now visible in the Players list on Dedicated Servers
+  </li>
+  <li>
+   Added: Inertia coefficients for all weapons and their attachments
+  </li>
+  <li>
+   Added: Sounds for more cutscene animations
+  </li>
+  <li>
+   Added: Ability to set number to
+   <em>
+    XX
+   </em>
+   for a kart by adding:
+   <em>
+    this setVariable [‘number’, XX];
+   </em>
+  </li>
+  <li>
+   Added: New parameter DLC to Kart DLC assets (
+   <em>
+    DLC = Kart;
+   </em>
+   )
+  </li>
+  <li>
+   Added: Camo selection to journalist vest to allow changing of its texture \ material
+  </li>
+  <li>
+   Added: New sounds for reloading some weapons
+  </li>
+  <li>
+   Added: Correct ammo icons for Zafir MG
+  </li>
+  <li>
+   Added: New zeroing adjustments for GL (50,75,100,150,200,250,300,350,400)
+  </li>
+  <li>
+   Added:
+   <em>
+    H_Booniehat_tan
+   </em>
+   's ground holder
+  </li>
+  <li>
+   Added: New textures for some of the caps
+  </li>
+  <li>
+   Added:
+   <em>
+    disableInventory=false
+   </em>
+   to both fuel pumps as preparation for fixing unwanted inventory space
+  </li>
+  <li>
+   Added: Damage and map properties and plate selection to the geometry LOD of steel plate training targets
+  </li>
+  <li>
+   Added: Possibility to turn on auto-refreshing of the unit identity on mission start (used for Win missions without hub)
+  </li>
+  <li>
+   Updated: TRG mass
+  </li>
+  <li>
+   Updated: Credits with new developers
+  </li>
+  <li>
+   Updated: Duty values for some animations states
+  </li>
+  <li>
+   Updated: Thermal signature of Mk200, Khaybar, Zubr and MX
+  </li>
+ </ul>
+ <ul>
+  <li>
+   Adjusted: Guerrilla uniforms of various sides so they can only be picked by a character of their side
+  </li>
+  <li>
+   Adjusted: Inventory radius of Supply Crates
+  </li>
+  <li>
+   Adjusted: Selections for texture variations of Offroad
+  </li>
+  <li>
+   Adjusted: Supply capacity of supply boxes
+  </li>
+  <li>
+   Adjusted: Positions and radii of Mi-48 inventory supplies
+  </li>
+  <li>
+   Adjusted: Fire mode volumes
+  </li>
+  <li>
+   Adjusted: Side of shelters and sports ground assets so they can show up in Zeus
+  </li>
+  <li>
+   Revised: Armor of lampposts in config and added as properties in their models
+  </li>
+  <li>
+   Changed: vehicleclass for
+   <em>
+    SportsGrounds_base_F
+   </em>
+   from
+   <em>
+    Structures
+   </em>
+   to
+   <em>
+    Structures_Sports
+   </em>
+  </li>
+  <li>
+   Changed: Field Manual icon used for highlighting displayed hints
+  </li>
+  <li>
+   Changed: Sounds for unsynchronized weapon reloading
+  </li>
+  <li>
+   Changed volume for reloading
+  </li>
+  <li>
+   Changed reloading sound of Zafir and Mk200
+  </li>
+  <li>
+   Changed: Scope parameter of some of the headgear
+  </li>
+  <li>
+   Changed: Sound for animations of lying wounded
+  </li>
+ </ul>
+ <ul>
+  <li>
+   Ejection seats in planes now propel the pilot high enough to parachute (from ground)
+  </li>
+  <li>
+   Increased mass of the UAV console
+  </li>
+  <li>
+   Tweaked memory point for guns on the Stomper
+  </li>
+  <li>
+   Rahim rifle is no longer able to attach Rail attachments
+  </li>
+  <li>
+   Surface friction has been tweaked for various terrain types
+  </li>
+  <li>
+   Increased supply radii of fuel/ammo/medical support trucks and substantially increased ammunition load of ammo trucks to fix the unpleasant issues where several vehicles were not able to reload a reasonable amount of ammunition for their weapons
+  </li>
+  <li>
+   Removed inventory from Fuel Station Feed
+  </li>
+  <li>
+   Optimized ladder actions
+  </li>
+  <li>
+   Access set to Read and Write for
+   <em>
+    cfgMovesBasic
+   </em>
+  </li>
+  <li>
+   Ordering a medic to heal someone now displays the correct icon
+  </li>
+  <li>
+   Changed volume for change of weapon fire mode
+  </li>
+  <li>
+   Access to
+   <em>
+    cfgRecoils
+   </em>
+   set to Read and Write (see
+   <a href="http://feedback.arma3.com/view.php?id=12419" target="_blank">
+    http://feedback.arma3.com/view.php?id=12419
+   </a>
+   )
+  </li>
+  <li>
+   Standardized inventory configuration for armored vehicles and added basic equipment even for MBTs
+  </li>
+  <li>
+   Civilian and guerrilla trucks have proper selections for custom texture variants
+  </li>
+  <li>
+   Redefined aim point of Supply Boxes
+  </li>
+  <li>
+   Introduced weapon inertia settings for launchers
+  </li>
+  <li>
+   Scoped out redundant Titan long / short classes from editor (due to configuration class names integrity the classes should remain)
+  </li>
+  <li>
+   AI is more likely to target enemy transports
+  </li>
+  <li>
+   Minor volume changes for closure and fire mode change sounds
+  </li>
+  <li>
+   Particle effect modules localized
+  </li>
+  <li>
+   Reduced: Armor of light bulbs on street lamps for they were very hard to destroy even with concentrated machine gun fire from close vicinity. Also changed the material for Decor Lamp to improve over-penetration issues.
+  </li>
+  <li>
+   Adjusted: Mass of barrels to reflect their contents
+  </li>
+  <li>
+   Changed: Damage property of buckets from building to tree so that they fall over
+  </li>
+  <li>
+   Changed: Penetration materials so that the geometry of the dome of all radars is consistent
+  </li>
+  <li>
+   Changed: Penetration material of metal parts to make it consistent through stages of the tent hangar
+  </li>
+  <li>
+   Mapped granite penetration material instead of concrete on ancient walls
+  </li>
+  <li>
+   Checked and fixed penetration materials and properties of walls
+  </li>
+  <li>
+   Mapped concrete penetration material on the base of phone booths
+  </li>
+  <li>
+   Minor code and debug print adjustments
+  </li>
+ </ul>
+ <ul>
+  <li>
+   <strong>
+    Potential campaign spoilers:
+   </strong>
+   <ul>
+    <li>
+     <strong>
+      Implemented: Patrol squad and vehicles
+     </strong>
+    </li>
+    <li>
+     Implemented: Patrol spawnpoint selection
+    </li>
+    <li>
+     String "Camps" replaced for reference to already localized string
+    </li>
+    <li>
+     Commands weaponsItems and magazinesAmmo replaced for *Cargo versions
+    </li>
+    <li>
+     Removed: Checking of persistent variables against
+     <em>
+      &lt;nil&gt;
+     </em>
+    </li>
+    <li>
+     Adjusted: Loadout of several units on hubs
+    </li>
+    <li>
+     Functions now support vests and uniforms as containers
+    </li>
+    <li>
+     Container functions updated to use accurate magazinesAmmo, that was recently updated to work with containers as well
+    </li>
+    <li>
+     Thanks to command addItem being fixed, there are now goggles / glasses in the hub Armory
+    </li>
+    <li>
+     Hub markers added to strategic map - for quick start and skirmish spawnpoint selection
+    </li>
+    <li>
+     Improved: Hub marker visuals
+    </li>
+    <li>
+     There is now a simple get in animation played when "start patrol" is executed
+    </li>
+    <li>
+     Friendly fire is now monitored also on patrol vehicles and crew
+    </li>
+    <li>
+     Updated: Hub composition
+    </li>
+    <li>
+     Added: Patrol starting points
+    </li>
+    <li>
+     Adjusted: Skirmish triggers
+    </li>
+    <li>
+     Added: Cargo content interaction with pool
+    </li>
+    <li>
+     Patrol characters now properly interact with the pool
+    </li>
+    <li>
+     Patrol character identities are now correctly set
+    </li>
+    <li>
+     Patrol tasks on hub now point to the suggested transport vehicle
+    </li>
+    <li>
+     Added: Customization template definitions for all randomized vehicles
+    </li>
+    <li>
+     Added: Template for patrol squad members
+    </li>
+    <li>
+     If player loses a car, he gets a new default one, once he arrives back on the hub
+    </li>
+    <li>
+     On-hub scene when player returns from patrol is now created
+    </li>
+    <li>
+     Added: System for persistent customization
+    </li>
+    <li>
+     Patrol trigger now shows the spawn point location on the map
+    </li>
+    <li>
+     Localized: User action label
+    </li>
+    <li>
+     <em>
+      BIS_fnc_ambientAnimCombat
+     </em>
+     doesn't attach the unit anymore
+    </li>
+    <li>
+     Added: Possibility to define bottom text, hide labels at mission markers and define a custom mission marker texture
+    </li>
+    <li>
+     Uniforms added via forceAddUniform when needed
+    </li>
+    <li>
+     Added: Some micro compositions for patrol
+    </li>
+    <li>
+     Added: Support for multiple vehicles returning from patrol. Only the player's vehicle will appear on the hub, but the cargo of all vehicles get stored to the pool.
+    </li>
+    <li>
+     Persistent identities between
+     <em>
+      B_hub02
+     </em>
+     ,
+     <em>
+      B_m02_1
+     </em>
+     and
+     <em>
+      B_m02_2
+     </em>
+     now work correctly
+    </li>
+    <li>
+     Used names are permanently removed from the pool of names for the auto-generated identities
+    </li>
+    <li>
+     Icons added to user actions on hub, namely: open strategic map, start briefing, start patrol and get recommended gear
+    </li>
+    <li>
+     Added specific identities to story characters
+    </li>
+    <li>
+     Fixed: Transition from patrol to hub
+    </li>
+    <li>
+     Fixed: Wrong initialization of the equipment pool
+    </li>
+    <li>
+     Fixed: 2 broken uniforms removed from Adapt pool
+    </li>
+    <li>
+     Fixed: Gear persistence issue between
+     <em>
+      C_out2
+     </em>
+     and
+     <em>
+      C_EB
+     </em>
+    </li>
+    <li>
+     Fixed: Implicit persistent variable values solution
+    </li>
+    <li>
+     Fixed: Issue where mission providers after debriefing didn't have a weapon (James in
+     <em>
+      B_hub01
+     </em>
+     now has a weapon after debriefing)
+    </li>
+    <li>
+     Fixed: Problem with briefing date detection
+    </li>
+    <li>
+     Fixed: Typos in character definitions
+    </li>
+    <li>
+     Fixed: Locking of patrol vehicle when player returns from patrol
+    </li>
+    <li>
+     Fixed: Colliding position by two soldiers at Rogain
+    </li>
+   </ul>
+  </li>
+ </ul>
+ <h2>
+  ENGINE
+ </h2>
+ <ul>
+  <li>
+   <strong>
+    Optimized: Linux Dedicated Server performance
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Disabled: GameSpy technology
+   </strong>
+  </li>
+  <li>
+   Fixed: Diary closing when tasks are not selected
+  </li>
+  <li>
+   Fixed: Task position when attached target is deleted
+  </li>
+  <li>
+   Fixed: Ironsights zeroed to a non-default value after the removal of optics
+  </li>
+  <li>
+   Fixed: Voice-Over-Net: Custom channel volume based on distance
+  </li>
+  <li>
+   Fixed: Switching from
+   <em>
+    -joinString
+   </em>
+   to
+   <em>
+    -connect
+   </em>
+   in the in-game requests
+  </li>
+  <li>
+   Fixed: Position determination for tasks attached to a target object / unit
+  </li>
+  <li>
+   Fixed: Dead soldiers on ladders
+  </li>
+  <li>
+   Fixed: Buldozer brush size change (was possible to go above maximum size)
+  </li>
+  <li>
+   Fixed: Buldozer brush strength settings (now it is individual for each brush mode)
+  </li>
+  <li>
+   Fixed: Possible CTDs in network server
+  </li>
+  <li>
+   Fixed: Blinking of caustics when texture memory is low
+  </li>
+  <li>
+   Fixed: Possibility to change a soldier's faction by grouping him with a group from another faction (Zeus)
+  </li>
+  <li>
+   Fixed: Blue line artifact on the horizon
+  </li>
+  <li>
+   Fixed: Desync in MP after the revision 124842 fix
+  </li>
+  <li>
+   Fixed: Possible crash when an AI brain is not present
+  </li>
+  <li>
+   Fixed: Player starts without rebreather in the Wet Work scenario despite being assigned one
+  </li>
+  <li>
+   Fixed: Missing class name in campaign tree for old structure campaign configs
+  </li>
+  <li>
+   Fixed: Possible CTD while the world is destroying itself
+  </li>
+  <li>
+   Fixed: Possible CTD in Zeus when ungrouping soldiers
+  </li>
+  <li>
+   Fixed: Fog on craters (bullet impacts)
+  </li>
+  <li>
+   Fixed: Formatting of number of servers in the multiplayer display
+  </li>
+  <li>
+   Fixed: Possibility to change scenario parameters in MP after a game has already started
+  </li>
+  <li>
+   Fixed: Dead body icon
+  </li>
+  <li>
+   Fixed: Catching missing callback from Steam
+  </li>
+  <li>
+   Fixed: CTD when opening inventory in combination with createAgent
+  </li>
+  <li>
+   Fixed: Possible CTD in airplanes
+  </li>
+  <li>
+   Fixed: Exploitable command
+   <a href="https://community.bistudio.com/wiki/forceRespawn" target="_blank">
+    forceRespawn
+   </a>
+  </li>
+  <li>
+   Fixed: CTD occurred when ejecting dead unit from a car (Zeus)
+  </li>
+  <li>
+   Added: Fuel explosion power value for all vehicles
+  </li>
+  <li>
+   Added: Script commands for basic 3D vector operations (
+   <a href="https://community.bistudio.com/wiki/vectorAdd" target="_blank">
+    vectorAdd
+   </a>
+   ,
+   <a href="https://community.bistudio.com/wiki/vectorDiff" target="_blank">
+    vectorDiff
+   </a>
+   ,
+   <a href="https://community.bistudio.com/wiki/vectorCrossProduct" target="_blank">
+    vectorCrossProduct
+   </a>
+   ,
+   <a href="https://community.bistudio.com/wiki/vectorDotProduct" target="_blank">
+    vectorDotProduct
+   </a>
+   ,
+   <a href="https://community.bistudio.com/wiki/vectorCos" target="_blank">
+    vectorCos
+   </a>
+   ,
+   <a href="https://community.bistudio.com/wiki/vectorMagnitude" target="_blank">
+    vectorMagnitude
+   </a>
+   ,
+   <a href="https://community.bistudio.com/wiki/vectorMagnitudeSqr" target="_blank">
+    vectorMagnitudeSqr
+   </a>
+   ,
+   <a href="https://community.bistudio.com/wiki/vectorMultiply" target="_blank">
+    vectorMultiply
+   </a>
+   )
+  </li>
+  <li>
+   Added: Script commands for vector distance and square distance (
+   <a href="https://community.bistudio.com/wiki/vectorDistance" target="_blank">
+    vectorDistance
+   </a>
+   ,
+   <a href="https://community.bistudio.com/wiki/vectorDistanceSqr" target="_blank">
+    vectorDistanceSqr
+   </a>
+   )
+  </li>
+  <li>
+   Added: Class names to campaign tree (if they are defined)
+  </li>
+  <li>
+   Added: Logging of unsuccessful attempts to call
+   <a href="https://community.bistudio.com/wiki/loadFile" target="_blank">
+    loadFile
+   </a>
+   ,
+   <a href="https://community.bistudio.com/wiki/preprocessFile" target="_blank">
+    preprocessFile
+   </a>
+   ,
+   <a href="https://community.bistudio.com/wiki/preprocessFileLineNumbers" target="_blank">
+    preprocessFileLineNumbers
+   </a>
+   script commands
+  </li>
+  <li>
+   Added: New brush mode to Buldozer.
+  </li>
+  <li>
+   Added: Limits for setWindSpeed because of the possibility to completely destroy meshes
+  </li>
+  <li>
+   Added: Script commands
+   <a href="https://community.bistudio.com/wiki/magazinesAmmoCargo" target="_blank">
+    magazinesAmmoCargo
+   </a>
+   and
+   <a href="https://community.bistudio.com/wiki/weaponsItemsCargo" target="_blank">
+    weaponsItemsCargo
+   </a>
+  </li>
+  <li>
+   Added: New script command to open YouTube videos (
+   <a href="https://community.bistudio.com/wiki/openYoutubeVideo" target="_blank">
+    openYoutubeVideo
+   </a>
+   )
+  </li>
+  <li>
+   Updated: In-game help for
+   <a href="https://community.bistudio.com/wiki/loadFile" target="_blank">
+    loadFile
+   </a>
+   ,
+   <a href="https://community.bistudio.com/wiki/preprocessFile" target="_blank">
+    preprocessFile
+   </a>
+   ,
+   <a href="https://community.bistudio.com/wiki/preprocessFileLineNumbers" target="_blank">
+    preprocessFileLineNumbers
+   </a>
+   script commands
+  </li>
+  <li>
+   Optimized: Weapon effect simulations
+  </li>
+  <li>
+   Driver proxy for Inverse Kinematics taken from correct LOD
+  </li>
+  <li>
+   New parameters for fatigue thresholds moved to config
+  </li>
+  <li>
+   Refactored: Current recoil mechanics for better understanding and easier future changes (again, may not yet be fully noticeable in devbranch - but gives an indication of what’s being worked on)
+  </li>
+  <li>
+   Threaded sensor network updates are now enabled in all versions
+  </li>
+  <li>
+   Minor dead bodies optimization
+  </li>
+  <li>
+   UAV - Camera stabilization
+  </li>
+  <li>
+   Public description for commands
+   <a href="https://community.bistudio.com/wiki/magazinesAmmo" target="_blank">
+    magazinesAmmo
+   </a>
+   and
+   <a href="https://community.bistudio.com/wiki/magazinesAmmoCargo" target="_blank">
+    magazinesAmmoCargo
+   </a>
+   received minor changes
+  </li>
+  <li>
+   Inventory load now affects stamina regeneration
+  </li>
+ </ul>
+</div>

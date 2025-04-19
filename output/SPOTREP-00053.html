@@ -1,0 +1,243 @@
+<div class="post-content">
+ <p>
+  FROM: High Command
+  <br>
+   TO: Arma 3 Users
+   <br>
+    UNIT: Main Branch (Windows)
+    <br>
+     ACTIVITY: Hotfix: 1.56 (Eden Editor, Miscellaneous)
+     <br/>
+     SIZE: ~43 MB / ~33 MB
+    </br>
+   </br>
+  </br>
+ </p>
+ <h2>
+  NOTES
+ </h2>
+ <ul>
+  <li>
+   Consider using the Steam client option to verify the integrity of the local game cache to avoid corrupted data after downloading this update.
+  </li>
+  <li>
+   Consider defragmenting your HDD after downloading large updates.
+  </li>
+  <li>
+   A
+   <em>
+    Legacy Build
+   </em>
+   Steam branch is available for advanced users. It contains the previous significant main branch version (1.54). It can be used to compare specific changes between major releases. The access code for this branch is:
+   <em>
+    Arma3Legacy154
+   </em>
+  </li>
+  <li>
+   This update does not apply to
+   <a href="http://dev.arma3.com/ports">
+    the experimental Linux and Mac port betas
+   </a>
+   at time of writing. We'll be updating those as soon as possible.
+  </li>
+  <li>
+   You can find the servers in the Steam library (switch the filter to "Tools") - "Arma 3 Server" (based on your OS, it will download the Windows or Linux version).
+   <ul>
+    <li>
+     Administrators can also use the command-line
+     <a href="https://developer.valvesoftware.com/wiki/SteamCMD" target="_blank">
+      SteamCMD
+     </a>
+     utility. The app ID is to be 233780.
+    </li>
+    <li>
+     NVIDIA GameWorks™ Technology provided under license from NVIDIA Corporation. Copyright © 2002-2016 NVIDIA Corporation. All rights reserved. NVIDIA® and PhysX® are trademarks of NVIDIA Corporation and are used under license.
+    </li>
+   </ul>
+  </li>
+  <li>
+   In case of problems, please check the
+   <a href="http://support.bistudio.com/arma-3" target="_blank">
+    Bohemia Interactive support F.A.Q.
+   </a>
+   ,
+   <a href="http://arma3.com/faq" target="_blank">
+    Arma 3 F.A.Q.
+   </a>
+   or
+   <a href="http://www.battleye.com/support/faq/" target="_blank">
+    BattlEye F.A.Q.
+   </a>
+  </li>
+  <li>
+   You can help us to further improve the game by posting your feedback on the
+   <a href="http://feedback.arma3.com/" target="_blank">
+    Feedback Tracker
+   </a>
+   .
+  </li>
+ </ul>
+ <h2>
+  CHANGELOG
+ </h2>
+ <p>
+  <strong>
+   DATA:
+  </strong>
+ </p>
+ <ul>
+  <li>
+   Fixed: The
+   <em>
+    "Hbarrier_5_F"
+   </em>
+   barrier was missing a texture in one of its LODs
+  </li>
+  <li>
+   Fixed: Multiplayer scenario initialization would get stuck with the
+   <em>
+    respawnDelay
+   </em>
+   configured as a string (should be a number)
+  </li>
+  <li>
+   Tweaked: Improved behavior of ladders on the Barracks building
+  </li>
+ </ul>
+ <p>
+  <em>
+   <a href="https://community.bistudio.com/wiki/Eden_Editor" target="_blank">
+    Eden Editor
+   </a>
+   :
+  </em>
+ </p>
+ <ul>
+  <li>
+   Fixed: Some module attributes would reset when re-opening the attribute window
+  </li>
+  <li>
+   Tweaked: All objects are created as editable if
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_diagPreview" target="_blank">
+    BIS_fnc_diagPreview
+   </a>
+   is called
+  </li>
+ </ul>
+ <p>
+  <strong>
+   ENGINE:
+  </strong>
+ </p>
+ <ul>
+  <li>
+   Fixed: Module category
+   <em>
+    “Other”
+   </em>
+   was hidden in the 2D editor
+  </li>
+  <li>
+   Fixed: Every second JIP client was spawned into a seagull
+  </li>
+  <li>
+   Tweaked: Access to the
+   <em>
+    NamedMutex
+   </em>
+   is now enabled for all users in the system (
+   <a href="https://forums.bistudio.com/topic/188275-eden-merge-feature-removed-copy-pasting-removes-synchronizations/" target="_blank">
+    https://forums.bistudio.com/topic/188192-server-linux-156-strange-issue/
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: The
+   <em>
+    cpuCount
+   </em>
+   startup parameter set to 1 would cause no sound playing in game
+  </li>
+ </ul>
+ <p>
+  <em>
+   <a href="https://community.bistudio.com/wiki/Eden_Editor" target="_blank">
+    Eden Editor
+   </a>
+   :
+  </em>
+ </p>
+ <ul>
+  <li>
+   Fixed: Triggers in multiplayer scenarios created in the Eden Editor would not trigger on clients
+  </li>
+  <li>
+   Fixed: Author serialization support in SQMs was missing
+  </li>
+  <li>
+   Fixed: Connections between pasted objects were not preserved (
+   <a href="https://forums.bistudio.com/topic/188275-eden-merge-feature-removed-copy-pasting-removes-synchronizations/" target="_blank">
+    https://forums.bistudio.com/topic/188275-eden-merge-feature-removed-copy-pasting-removes-synchronizations/
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Some playable logics (e.g.
+   <a href="https://community.bistudio.com/wiki/EG_Spectator_Mode" target="_blank">
+    Virtual Spectator
+   </a>
+   ) were not playable from the Eden Editor
+  </li>
+  <li>
+   Fixed: Some entities would not be created in a multiplayer environment
+  </li>
+  <li>
+   Fixed: Players could spawn as seagulls in some missions run from the Eden Editor
+  </li>
+  <li>
+   Fixed: Some Init scripts were not called for players who Joined-In-Progress
+  </li>
+  <li>
+   Fixed: Custom Intel attributes were not called for a running function
+  </li>
+ </ul>
+ <p>
+  <strong>
+   SERVER:
+  </strong>
+ </p>
+ <ul>
+  <li>
+   Updated: Stand-alone Windows Dedicated Server (hotfix 1.56)
+  </li>
+  <li>
+   Updated: Stand-alone Linux Dedicated Server (hotfix 1.56)
+   <ul>
+    <li>
+     Known issue: Steam client modifies the
+     <em>
+      steam_appid.txt
+     </em>
+     file incorrectly. In case of issues, verify its content is:
+     <strong>
+      107410
+     </strong>
+    </li>
+    <li>
+     Known issue: Sometimes the add-ons are loaded from the wrong installation (e.g. main game)
+    </li>
+    <li>
+     Try adding
+     <em>
+      -mod=curator;kart;heli;mark;dlcbundle
+     </em>
+     to your
+     <em>
+      arma3server.exe
+     </em>
+     shortcut
+    </li>
+   </ul>
+  </li>
+ </ul>
+</div>

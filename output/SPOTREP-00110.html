@@ -1,0 +1,267 @@
+<div class="post-content">
+ <p>
+  FROM: High Command
+  <br/>
+  TO: Arma 3 Users
+  <br/>
+  UNIT: Main Branch
+  <br/>
+  ACTIVITY: Game Mini-Update 2.12 (Creator DLC Support)
+  <br/>
+  SIZE: ~60 MB / ~18 MB
+  <br/>
+ </p>
+ <h1>
+  NOTES
+ </h1>
+ <ul>
+  <li>
+   Contact consists of 2 data packs / folders:
+   <ul>
+    <li>
+     Contact (via
+     <i>
+      PLAY CONTACT
+     </i>
+     or
+     <i>
+      -mod=Contact
+     </i>
+     ): for the singleplayer "First Contact" campaign experience (accessible only to owners - optionally loaded)
+    </li>
+    <li>
+     Contact (Platform): for most other use cases, including sandbox multiplayer (loaded by default for all players)
+    </li>
+   </ul>
+  </li>
+  <li>
+   Consider using the Steam client option to verify the integrity of the local game cache to avoid corrupted data after downloading this update.
+  </li>
+  <li>
+   Consider defragmenting your HDD after downloading large updates.
+  </li>
+  <li>
+   Updating a deeply moddable game and its platform is not without risks. We use various methods to communicate upcoming changes to our awesome modding community, such as via the
+   <a href="https://dev.arma3.com/" target="">
+    Dev Hub
+   </a>
+   . We also co-operate directly on troubleshooting, and we offer an opportunity to test updates via our
+   <a href="https://dev.arma3.com/rc-branch" target="">
+    Release Candidate tests
+   </a>
+   . Modders, server administrators, and other members of the community do their best to prepare for updates and to address issues post-release as quickly as possible. Please be mindful of some interruptions (especially in the first hours / days after a release) while we all work to improve the game together.
+  </li>
+  <li>
+   A
+   <i>
+    Legacy Build
+   </i>
+   Steam branch is available for advanced users. It contains the previous significant main branch version (2.10). It can be used to compare specific changes between major releases. The access code for this branch is:
+   <i>
+    Arma3Legacy210
+   </i>
+  </li>
+  <li>
+   This update does not apply to
+   <a href="http://dev.arma3.com/ports" target="">
+    the experimental Mac client ports
+   </a>
+   .
+  </li>
+  <li>
+   You can find the servers in the Steam library (switch the filter to "Tools") - "Arma 3 Server" (based on your OS, it will download the Windows or Linux version).
+   <ul>
+    <li>
+     Administrators can also use the command-line
+     <a href="https://developer.valvesoftware.com/wiki/SteamCMD" target="">
+      SteamCMD
+     </a>
+     utility. The app ID is to be 233780.
+    </li>
+    <li>
+     NVIDIA GameWorks™ Technology provided under license from NVIDIA Corporation. Copyright © 2002-2018 NVIDIA Corporation. All rights reserved. NVIDIA® and PhysX® are trademarks of NVIDIA Corporation and are used under license.
+    </li>
+   </ul>
+  </li>
+  <li>
+   In case of problems, please check the
+   <a href="http://support.bistudio.com/arma-3" target="">
+    Bohemia Interactive support F.A.Q.
+   </a>
+   ,
+   <a href="http://arma3.com/faq" target="">
+    Arma 3 F.A.Q.
+   </a>
+   ,
+   <a href="http://www.battleye.com/support/faq/" target="">
+    BattlEye F.A.Q.
+   </a>
+   , or
+   <a href="https://arma3.com/launcher/troubleshooting" target="">
+    Launcher troubleshooting guide
+   </a>
+   .
+  </li>
+  <li>
+   You can help us to further improve the game by posting your feedback on the
+   <a href="http://feedback.arma3.com/" target="">
+    Feedback Tracker
+   </a>
+   .
+   <br/>
+  </li>
+ </ul>
+ <h1>
+  CHANGELOG
+ </h1>
+ <h2>
+  DATA
+ </h2>
+ <ul>
+  <li>
+   <b>
+    Added: Platform support for
+    <a href="https://store.steampowered.com/app/1175380/Arma_3_Creator_DLC_Spearhead_1944/" target="">
+     Arma 3 Creator DLC: Spearhead 1944
+    </a>
+   </b>
+   (actual DLC content is not part of this update)
+   <br/>
+  </li>
+ </ul>
+ <h2>
+  ENGINE
+  <br/>
+ </h2>
+ <ul>
+  <li>
+   Fixed:
+   <i>
+    wheel_*
+   </i>
+   animation sources would not animate for remote vehicles -
+   <a href="https://feedback.bistudio.com/T150837" target="">
+    FT-T150837
+   </a>
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/stopSound" target="">
+    stopSound
+   </a>
+   script command -
+   <a href="https://feedback.bistudio.com/T170618" target="">
+    FT-T170618
+   </a>
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/soundParams" target="">
+    soundParams
+   </a>
+   script command -
+   <a href="https://feedback.bistudio.com/T170618" target="">
+    FT-T170618
+   </a>
+  </li>
+  <li>
+   Tweaked: Added
+   <i>
+    offset
+   </i>
+   parameter to
+   <a href="https://community.bistudio.com/wiki/playSoundUI" target="">
+    playSoundUI
+   </a>
+   -
+   <a href="https://feedback.bistudio.com/T170618" target="">
+    FT-T170618
+   </a>
+  </li>
+  <li>
+   Fixed: "GetOut" Event Handler was not always firing -
+   <a href="https://feedback.bistudio.com/T170613" target="">
+    FT-T170613
+   </a>
+  </li>
+  <li>
+   Fixed: Vehicles on an empty layer in Eden Editor would be incorrectly assigned to a group if one was created earlier -
+   <a href="https://feedback.bistudio.com/T169079" target="">
+    FT-T169079
+   </a>
+  </li>
+  <li>
+   Fixed: Possible server crash if a vehicle's assigned driver is not a person
+  </li>
+  <li>
+   Fixed:
+   <i>
+    explosionForceCoef
+   </i>
+   was ignored for direct hits
+   <br/>
+  </li>
+ </ul>
+ <h2>
+  LAUNCHER
+ </h2>
+ <ul>
+  <li>
+   Added: Support for launching
+   <a href="https://store.steampowered.com/app/1175380/Arma_3_Creator_DLC_Spearhead_1944/" target="">
+    Arma 3 Creator DLC: Spearhead 1944
+   </a>
+   (actual DLC content is not part of this update)
+   <br/>
+  </li>
+ </ul>
+ <h2>
+  SERVER
+ </h2>
+ <ul>
+  <li>
+   Updated: Stand-alone Windows Dedicated Server (2.12)
+  </li>
+  <li>
+   Updated: Stand-alone Linux Dedicated Server (2.12)
+   <ul>
+    <li>
+     The data in
+     <i>
+      -mod=contact
+     </i>
+     is not fully multiplayer compatible (it is meant for the singleplayer campaign experience); we recommend only hosting servers with it for special use cases
+     <ul>
+      <li>
+       This data is signed by a new A3C key whose presence can be used to control what client data is allowed on the server
+      </li>
+     </ul>
+    </li>
+    <li>
+     Known issue: Steam client modifies the
+     <i>
+      steam_appid.txt
+     </i>
+     file incorrectly. In case of issues, verify its content is:
+     <b>
+      107410
+     </b>
+    </li>
+    <li>
+     Known issue: Sometimes the add-ons are loaded from the wrong installation (e.g. main game)
+    </li>
+    <li>
+     Try adding
+     <i>
+      -mod=curator;kart;heli;mark;expansion;jets;argo;orange;tacops;tank;enoch;aow
+     </i>
+     to your
+     <i>
+      arma3server.exe
+     </i>
+     shortcut
+    </li>
+   </ul>
+  </li>
+ </ul>
+</div>

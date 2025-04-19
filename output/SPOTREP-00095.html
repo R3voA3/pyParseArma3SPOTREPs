@@ -1,0 +1,1442 @@
+<div class="post-content">
+ <p>
+  FROM: High Command
+  <br/>
+  TO: Arma 3 Users
+  <br/>
+  UNIT: Main Branch
+  <br/>
+  ACTIVITY: Game Update 2.00 (CoF: Gray, Workshop Compositions, 64-bit Linux Server)
+  <br/>
+  SIZE: ~1.6 GB / ~558 MB (depends on Contact ownership)
+  <br/>
+ </p>
+ <h1>
+  <span style="font-weight: normal;">
+   NOTES
+  </span>
+ </h1>
+ <p>
+ </p>
+ <ul>
+  <li>
+   Contact consists of 2 data packs / folders:
+   <ul>
+    <li>
+     <span style="font-weight: normal;">
+      Contact (via
+      <i>
+       PLAY CONTACT
+      </i>
+      or
+      <i>
+       -mod=Contact
+      </i>
+      ): for the singleplayer "First Contact" campaign experience (accessible only to owners - optionally loaded)
+     </span>
+    </li>
+    <li>
+     <span style="font-weight: normal;">
+      Contact (Platform): for most other use cases, including sandbox multiplayer (loaded by default for all players)
+     </span>
+    </li>
+   </ul>
+  </li>
+  <li>
+   <span style="font-weight: normal;">
+    Consider using the Steam client option to verify the integrity of the local game cache to avoid corrupted data after downloading this update.
+   </span>
+  </li>
+  <li>
+   <span style="font-weight: normal;">
+    Consider defragmenting your HDD after downloading large updates.
+   </span>
+  </li>
+  <li>
+   <span style="font-weight: normal;">
+    Updating a deeply moddable game and its platform is not without risks. We use various methods to communicate upcoming changes to our awesome modding community, such as via the
+    <a href="https://dev.arma3.com/" target="">
+     Dev Hub
+    </a>
+    . We also co-operate directly on troubleshooting, and we offer an opportunity to test updates via our
+    <a href="https://dev.arma3.com/rc-branch" target="">
+     Release Candidate tests
+    </a>
+    . Modders, server administrators and other members of the community do their best to prepare for updates and to address issues post-release as quickly as possible. Please be mindful of some interruptions (especially in the first hours / days after a release) while we all work to improve the game together.
+   </span>
+  </li>
+  <li>
+   <span style="font-weight: normal;">
+    A
+    <i>
+     Legacy Build
+    </i>
+    Steam branch is available for advanced users. It contains the previous significant main branch version (1.98). It can be used to compare specific changes between major releases. The access code for this branch is:
+    <i>
+     Arma3Legacy198
+    </i>
+   </span>
+  </li>
+  <li>
+   <span style="font-weight: normal;">
+    This update does not apply to the
+    <a href="http://dev.arma3.com/ports" target="">
+     experimental Linux and Mac port betas
+    </a>
+    .
+   </span>
+  </li>
+  <li>
+   <span style="font-weight: normal;">
+    You can find the servers in the Steam library (switch the filter to "Tools") - "Arma 3 Server" (based on your OS, it will download the Windows or Linux version).
+   </span>
+   <ul>
+    <li>
+     <span style="font-weight: normal;">
+      Administrators can also use the command-line
+      <a href="https://developer.valvesoftware.com/wiki/SteamCMD" target="">
+       SteamCMD
+      </a>
+      utility. The app ID is to be 233780.
+     </span>
+    </li>
+    <li>
+     <span style="font-weight: normal;">
+      NVIDIA GameWorks™ Technology provided under license from NVIDIA Corporation. Copyright © 2002-2018 NVIDIA Corporation. All rights reserved. NVIDIA® and PhysX® are trademarks of NVIDIA Corporation and are used under license.
+     </span>
+    </li>
+   </ul>
+  </li>
+  <li>
+   <span style="font-weight: normal;">
+    In case of problems, please check the
+    <a href="http://support.bistudio.com/arma-3" target="">
+     Bohemia Interactive support F.A.Q
+    </a>
+    .,
+    <a href="http://arma3.com/faq" target="">
+     Arma 3 F.A.Q.
+    </a>
+    ,
+    <a href="http://www.battleye.com/support/faq/" target="">
+     BattlEye F.A.Q.
+    </a>
+    , or
+    <a href="https://arma3.com/launcher/troubleshooting" target="">
+     Launcher troubleshooting guide
+    </a>
+    .
+   </span>
+  </li>
+  <li>
+   <span style="font-weight: normal;">
+    You can help us to further improve the game by posting your feedback on the
+    <a href="http://feedback.arma3.com/" target="">
+     Feedback Tracker
+    </a>
+    .
+   </span>
+  </li>
+ </ul>
+ <p>
+  <br/>
+ </p>
+ <h1>
+  CHANGELOG
+ </h1>
+ <p>
+ </p>
+ <h2>
+  DATA
+ </h2>
+ <ul>
+  <li>
+   <b>
+    Added: "CoF: Gray" Firing Drill
+   </b>
+  </li>
+  <li>
+   <b>
+    Added: Black P07
+   </b>
+  </li>
+  <li>
+   <b>
+    Added: Arid CTRG Stealth Uniforms*
+   </b>
+  </li>
+  <li>
+   <b>
+    Added: Arid CTRG Stealth Combat Helmet*
+   </b>
+  </li>
+  <li>
+   <b>
+    Added: CTRG-13 insignia
+   </b>
+  </li>
+  <li>
+   <b>
+    Added: Various (pop-up) target pictures
+   </b>
+  </li>
+  <li>
+   <b>
+    Added: "Eau de Combat" Aftershave (bottle / boxed)
+   </b>
+  </li>
+  <li>
+   Added: Old Man main menu tile hover video
+  </li>
+  <li>
+   Added: Base
+   <i>
+    CfgDustEffects
+   </i>
+   classes to config (
+   <i>
+    CfgDustEffectsAir, CfgDustEffectsMan, CfgDustEffectsCar, CfgDustEffectsTank, CfgDustEffectsTankSmall
+   </i>
+   ) and implemented them on vanilla vehicles -
+   <a href="https://feedback.bistudio.com/T131130" target="">
+    FT-T131130
+   </a>
+  </li>
+  <li>
+   Added: "Vehicles only" difficulty setting to the 3rd person view option
+  </li>
+  <li>
+   Added: Support for the Dueling Target in Firing Drills (optional hit conditions for targets)
+  </li>
+  <li>
+   Added: Firing Drill ability to disable automatic recoloring of optional targets (per target type and per target instance)
+  </li>
+  <li>
+   Added: Nicer pling hit SFX for metal plate, rule, restart, and quit targets in Firing Drills
+  </li>
+  <li>
+   Added: Simple spam filter for bonus target VO feedback in Firing Drills
+  </li>
+  <li>
+   Added: Firing Drill event scripts per target instance (next to per target type)
+  </li>
+  <li>
+   Added: Firing Drill support for 3D helper objects as moving target waypoint and random position references (as alternative to markers, when designing in Eden Editor)
+  </li>
+  <li>
+   Added: Firing Drills bonus target support for: Orange / Pumpkin / Aftershave / Dueling Target
+  </li>
+  <li>
+   Added: Option for Firing Drill CP targets to get re-randomized on reset
+  </li>
+  <li>
+   Added: Gray color support for Firing Drills and target VFX
+  </li>
+  <li>
+   Added: SFX feedback for Firing Drill missed targets and no-shoot hits
+  </li>
+  <li>
+   Added: Ability to disable radio feedback per CP in Firing Drills
+  </li>
+  <li>
+   Added: Firing Drill CP
+   <i>
+    onDeactivate
+   </i>
+   and
+   <i>
+    onClear
+   </i>
+   script hooks
+  </li>
+  <li>
+   Added: Gray color support for Firing Drills and target VFX
+  </li>
+  <li>
+   Added: "
+   <i>
+    OnGameOptionsExited
+   </i>
+   " scripted Event Handler
+  </li>
+ </ul>
+ <p>
+  * Restrictions apply for those who don't own
+  <a href="https://store.steampowered.com/app/395180/Arma_3_Apex/">
+   Arma 3 Apex
+  </a>
+  expansion.
+ </p>
+ <ul>
+  <li>
+   Tweaked: Improved detection of compatible accessories in Virtual Arsenal when an alternative syntax is used
+  </li>
+  <li>
+   Tweaked:
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_findSafePos" target="">
+    BIS_fnc_findSafePos
+   </a>
+   in-game function description corrected -
+   <a href="https://feedback.bistudio.com/T149812" target="">
+    FT-T149812
+   </a>
+  </li>
+  <li>
+   Tweaked: Kipchak vest was made more compatible with full ghillie suits
+  </li>
+  <li>
+   Tweaked: View Geometries of various Livonia and Tanoa buildings -
+   <a href="https://feedback.bistudio.com/T146447" target="">
+    FT-T146447
+   </a>
+  </li>
+  <li>
+   Tweaked: Collision shapes of the Livonia Small Church -
+   <a href="https://feedback.bistudio.com/T149484" target="">
+    FT-T149484
+   </a>
+  </li>
+  <li>
+   Tweaked: Fire Geometry on the Garage Office structure -
+   <a href="https://feedback.bistudio.com/T149647" target="">
+    FT-T149647
+   </a>
+  </li>
+  <li>
+   Tweaked: SPAR rifle series iron sights -
+   <a href="https://feedback.bistudio.com/T149711" target="">
+    FT-T149711
+   </a>
+  </li>
+  <li>
+   Tweaked: Position of optics on SPAR-16 and SPAR-16S
+  </li>
+  <li>
+   Tweaked: The size of the Eden Editor module description box was tweaked to prevent potentially cut off words
+  </li>
+  <li>
+   Tweaked: HMG M2 gunner resistance against grenades -
+   <a href="https://feedback.bistudio.com/T150710" target="">
+    FT-T150710
+   </a>
+  </li>
+  <li>
+   Tweaked: HMG M2 land contact snap points
+  </li>
+  <li>
+   Tweaked: Appearance of wheels in the last resolution LOD of AMV-7 to make it more in line with the rest of the vehicles
+  </li>
+  <li>
+   Tweaked: Display names of guided bombs in planes' HUDs -
+   <a href="https://feedback.bistudio.com/T131756" target="">
+    FT-T131756
+   </a>
+  </li>
+  <li>
+   Tweaked: Frangible target destruction FX now consistently use ASL, so they work better above other surfaces than the terrain
+  </li>
+  <li>
+   Tweaked: Applied better scripted loading screen method to Firing Drills
+  </li>
+  <li>
+   Tweaked: Improved Training Mine behaviour in the multiplayer environment (and less visible glitching on triggering)
+  </li>
+  <li>
+   Tweaked: Special times now always count as better than the gold medal in Firing Drills and Time Trials (i.e. unlocking Achievements and marking the challenge as done)
+  </li>
+  <li>
+   Tweaked: Firing Drill radio feedback spam filter for missed targets
+  </li>
+  <li>
+   Tweaked: VLS launch sound range
+  </li>
+ </ul>
+ <ul>
+  <li>
+   Changed: Virtual Garage mod icons are no longer tied to
+   <i>
+    CfgMods
+   </i>
+   and the mod folder name - instead they are using the same methods as Virtual Arsenal
+  </li>
+ </ul>
+ <ul>
+  <li>
+   Fixed: Inverted faces on a ZSU-39 hatch handle
+  </li>
+  <li>
+   Fixed: Camo selections were missing for hatches on ZSU-39 and BTR-K Kamysh -
+   <a href="https://feedback.bistudio.com/T139602" target="">
+    FT-T139602
+   </a>
+  </li>
+  <li>
+   Fixed: Slat and camo net Virtual Garage hidden selections for MSE-3 Marid
+  </li>
+  <li>
+   Fixed: Gorgon driver animation so their legs are no longer sticking out from the hull
+  </li>
+  <li>
+   Fixed: Missing Virtual Garage vehicle statistics
+  </li>
+  <li>
+   Fixed: Virtual Garage dummy characters now respect locked turrets
+  </li>
+  <li>
+   Fixed: Various script errors -
+   <a href="https://feedback.bistudio.com/T149790" target="">
+    FT-T149790
+   </a>
+  </li>
+  <li>
+   Fixed: Freeze when function
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_findOverwatch" target="">
+    BIS_fnc_findOverwatch
+   </a>
+   is called with incorrect parameters -
+   <a href="https://feedback.bistudio.com/T149845" target="">
+    FT-T149845
+   </a>
+  </li>
+  <li>
+   Fixed: Script error in the patrol module -
+   <a href="https://feedback.bistudio.com/T117706" target="">
+    FT-T117706
+   </a>
+   ,
+  </li>
+  <li>
+   Fixed: Script error in Zeus when a vehicle is locked with LOCKEDPLAYER -
+   <a href="https://feedback.bistudio.com/T151000" target="">
+    FT-T151000
+   </a>
+  </li>
+  <li>
+   Fixed: Unlocalized hint in Eden Editor
+  </li>
+  <li>
+   Fixed: Commander turret indicator direction in interior views -
+   <a href="https://feedback.bistudio.com/T151429" target="">
+    FT-T151429
+   </a>
+  </li>
+  <li>
+   Fixed: Zeroed ironsights on MX, Katiba, TRG, Mk20, Zafir, M320, GM6, Mk18, Rahim, Protector, Sting, Vermin, Zafir and Mk200
+  </li>
+  <li>
+   Fixed: Virtual Arsenal / Garage would incorrectly show the previous DLC icon in the right tab
+  </li>
+  <li>
+   Fixed: If the Destroyer boat rack moved or turned, the 'recover' action could disappear -
+   <a href="https://feedback.bistudio.com/T151178" target="">
+    FT-T151178
+   </a>
+  </li>
+  <li>
+   Fixed: The (grenade) throwing sound while holding a pistol, launcher or no weapon at all, was not correctly triggered -
+   <a href="https://feedback.bistudio.com/T151956" target="">
+    FT-T151956
+   </a>
+  </li>
+  <li>
+   Fixed: Smoke not being visible while looking through Kiosk glass -
+   <a href="https://feedback.bistudio.com/T151139" target="">
+    FT-T151139
+   </a>
+  </li>
+  <li>
+   Fixed: Missing
+   <i>
+    displayName
+   </i>
+   for
+   <i>
+    NoPop
+   </i>
+   variants of Orange / Pumpkin
+  </li>
+  <li>
+   Fixed: Virtual Arsenal now properly removes magazines belonging to the previously selected weapon
+  </li>
+  <li>
+   Fixed: Firing Drill FF systems were also active on actual enemies
+  </li>
+  <li>
+   Fixed: Only updating the Firing Drill CP HUD box when a cleared CP is the active one
+  </li>
+  <li>
+   Fixed: Removed duplicate AT mines from Virtual Arsenal -
+   <a href="https://feedback.bistudio.com/T152995" target="">
+    FT-T152995
+   </a>
+  </li>
+  <li>
+   Fixed: Potential script error in the animal behavior FSM
+  </li>
+  <li>
+   Fixed: Adjusted stance while being armed animations had broken interpolations -
+   <a href="https://feedback.bistudio.com/T152304" target="">
+    FT-T152304
+   </a>
+  </li>
+  <li>
+   Fixed: Increased lifetime of GPR-T 40mm rounds so they can reach targets beyond 2.5 km -
+   <a href="https://feedback.bistudio.com/T127965" target="">
+    FT-T127965
+   </a>
+  </li>
+  <li>
+   Fixed: Missing editor preview for NATO post-EMP Ammo Bearer
+  </li>
+ </ul>
+ <p>
+  <i>
+   Warlords
+  </i>
+ </p>
+ <ul>
+  <li>
+   Added: Periodic removal of assets spawned or moved below terrain
+  </li>
+  <li>
+   Fixed: Enemies should no longer be spawned inside rocks
+  </li>
+  <li>
+   Fixed: Players should no longer be able to get APERS Mine Dispensers or vehicle armaments from pre-saved loadouts
+  </li>
+  <li>
+   Fixed: It is no longer possible to deploy static defenses through walls, rocks, etc.
+  </li>
+ </ul>
+ <p>
+  <i>
+   Potential Spoilers (Old Man)
+  </i>
+ </p>
+ <ul>
+  <li>
+   Fixed: After a first interaction with a market in "Old Man", the marker was not shown on the map
+  </li>
+  <li>
+   Fixed: Impossibility to download the Geolocator app from Keystone's laptop after finishing the quest to find CSAT evidence in "Old Man"
+  </li>
+  <li>
+   Fixed: Arthur in a certain "Old Man" hideout (and also few more civilians there) would talk to the player over the radio instead directly
+  </li>
+  <li>
+   Fixed: The Syndikat boss reply call for the delivered wallet could be missing in "Old Man"
+  </li>
+  <li>
+   Fixed: A discussion with Keystone at St. Maria island was interrupted by an incorrect line
+  </li>
+  <li>
+   Fixed: An explosive charge placed by Syndikat would not detonate every time
+  </li>
+  <li>
+   Fixed: Possible script error when the player gets into Koumac and the task received there was not created
+  </li>
+  <li>
+   Fixed: Some markers in "Old Man" would be created in the left bottom corner, instead of their intended location
+  </li>
+ </ul>
+ <h2>
+  ENGINE
+ </h2>
+ <ul>
+  <li>
+   <b>
+    Added: Publishing / subscribing Eden Editor
+    <a href="https://community.bistudio.com/wiki/Eden_Editor:_Custom_Composition" target="">
+     custom compositions
+    </a>
+    to / from
+    <a href="https://steamcommunity.com/workshop/browse/?appid=107410&amp;requiredtags%5B%5D=Composition" target="">
+     Steam Workshop
+    </a>
+   </b>
+  </li>
+  <li>
+   <b>
+    Added: 64-bit Linux Dedicated Server
+   </b>
+  </li>
+  <li>
+   Added: New
+   <i>
+    -limitFPS=
+   </i>
+   start parameter to adjust server FPS limit between 5-1000 FPS (default and previous limit 50)
+  </li>
+  <li>
+   Added: New command
+   <a href="https://community.bistudio.com/wiki/getAssetDLCInfo" target="">
+    getAssetDLCInfo
+   </a>
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/ctrlTextSelection" target="">
+    ctrlTextSelection
+   </a>
+   ,
+   <a href="https://community.bistudio.com/wiki/ctrlSetTextSelection" target="">
+    ctrlSetTextSelection
+   </a>
+   for Edit box cursor / selection manipulation -
+   <a href="https://feedback.bistudio.com/T147688" target="">
+    FT-T147688
+   </a>
+   /
+   <a href="https://feedback.bistudio.com/T176514" target="">
+    FT-T76514
+   </a>
+  </li>
+  <li>
+   Added: New command
+   <a href="https://community.bistudio.com/wiki/getRoadInfo">
+    getRoadInfo
+   </a>
+   -
+   <a class="external-link" href="https://feedback.bistudio.com/T147630" rel="nofollow" style="text-decoration: none;">
+    FT-T147630
+   </a>
+  </li>
+  <li>
+   Added: New
+   <a href="https://community.bistudio.com/wiki/waypointLoiterAltitude">
+    waypointLoiterAltitude
+   </a>
+   <em>
+    ,
+   </em>
+   <a href="https://community.bistudio.com/wiki/setWaypointLoiterAltitude">
+    setWaypointLoiterAltitude
+   </a>
+   commands
+  </li>
+  <li>
+   Added: Command
+   <a href="https://community.bistudio.com/wiki/diag_allMissionEventHandlers">
+    diag_allMissionEventHandlers
+   </a>
+  </li>
+  <li>
+   Added: Script commands
+   <a href="https://community.bistudio.com/wiki/allAddonsInfo">
+    allAddonsInfo
+   </a>
+   and
+   <a href="https://community.bistudio.com/wiki/addonFiles">
+    addonFiles
+   </a>
+  </li>
+  <li>
+   Added: Config setting to configure the Steam Query limit (limitation of the mod list in Launcher) -
+   <a class="external-link" href="https://feedback.bistudio.com/T123655" rel="nofollow" target="_blank">
+    FT-T123655
+   </a>
+  </li>
+  <li>
+   Added: New
+   <em>
+    DustEffects
+   </em>
+   class syntax -
+   <a class="external-link" href="https://feedback.bistudio.com/T131130" rel="nofollow" style="text-decoration-line: none;">
+    FT-T131130
+   </a>
+  </li>
+  <li>
+   Added:
+   <a class="external-link" href="https://community.bistudio.com/wiki/getAllUnitTraits" rel="nofollow" style="text-decoration-line: none;">
+    getAllUnitTraits
+   </a>
+   script command
+  </li>
+  <li>
+   Added:
+   <a class="external-link" href="https://community.bistudio.com/wiki/surfaceTexture" rel="nofollow" style="text-decoration-line: none;">
+    surfaceTexture
+   </a>
+   script command
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/getVehicleTIPars">
+    getVehicleTIPars
+   </a>
+   script command
+  </li>
+  <li>
+   Added: Optional parameter to
+   <a class="external-link" href="https://community.bistudio.com/wiki/roadsConnectedTo" rel="nofollow" style="text-decoration-line: none;">
+    roadsConnectedTo
+   </a>
+   to perform an extended search and return pedestrian 'roads'
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/connectToServer">
+    connectToServer
+   </a>
+   script command
+  </li>
+  <li>
+   Added: "Vehicles only" difficulty option to
+   <em>
+    thirdPersonView
+   </em>
+   . Current values:
+   <ul>
+    <li>
+     0 - disabled
+    </li>
+    <li>
+     1 - enabled
+    </li>
+    <li>
+     2 - enabled only for vehicles
+    </li>
+   </ul>
+  </li>
+  <li>
+   Added: New script command
+   <a class="external-link" href="https://community.bistudio.com/wiki/getLoadedModsInfo" rel="nofollow" style="text-decoration-line: none;">
+    getLoadedModsInfo
+   </a>
+   -
+   <a class="external-link" href="https://feedback.bistudio.com/T151377" rel="nofollow" style="text-decoration-line: none;">
+    FT-T151377
+   </a>
+  </li>
+  <li>
+   Added: New script command
+   <a class="external-link" href="https://community.bistudio.com/wiki/getAttackTarget" rel="nofollow" style="text-decoration-line: none;">
+    getAttackTarget
+   </a>
+  </li>
+  <li>
+   Added: New script command
+   <a class="external-link" href="https://community.bistudio.com/wiki/unitTurret" rel="nofollow" style="text-decoration-line: none;">
+    unitTurret
+   </a>
+  </li>
+  <li>
+   Added: New script command
+   <a class="external-link" href="https://community.bistudio.com/wiki/selectionNames" rel="nofollow" style="text-decoration-line: none;">
+    selectionNames
+   </a>
+   to retrieve such names per LOD -
+   <a class="external-link" href="https://feedback.bistudio.com/T123926" rel="nofollow" style="text-decoration-line: none;">
+    FT-T123926
+   </a>
+  </li>
+  <li>
+   Added: New script command
+   <a class="external-link" href="https://community.bistudio.com/wiki/namedProperties" rel="nofollow" style="text-decoration-line: none;">
+    namedProperties
+   </a>
+   -
+   <a class="external-link" href="https://feedback.bistudio.com/T151256" rel="nofollow" style="text-decoration-line: none;">
+    FT-T151256
+   </a>
+  </li>
+  <li>
+   Added: New script command
+   <a class="external-link" href="https://community.bistudio.com/wiki/is3DENPreview" rel="nofollow" style="text-decoration-line: none;">
+    is3DENPreview
+   </a>
+  </li>
+  <li>
+   Added: New script commands
+   <a class="external-link" href="https://community.bistudio.com/wiki/ctrlScrollValues" rel="nofollow" style="text-decoration-line: none;">
+    ctrlScrollValues
+   </a>
+   ,
+   <a class="external-link" href="https://community.bistudio.com/wiki/ctrlSetScrollValues" rel="nofollow" style="text-decoration-line: none;">
+    ctrlSetScrollValues
+   </a>
+   for working with control scrollbars
+  </li>
+  <li>
+   Added: Ability to select
+   <em>
+    RscListBox
+   </em>
+   entries with the right mouse button (enabled via config entry) -
+   <a class="external-link" href="https://feedback.bistudio.com/T151053" rel="nofollow" style="text-decoration-line: none;">
+    FT-T151053
+   </a>
+  </li>
+  <li>
+   Added:
+   <a class="external-link" href="https://community.bistudio.com/wiki/diaryRecordNull" rel="nofollow" style="text-decoration-line: none;">
+    diaryRecordNull
+   </a>
+   script command and support for null records to ==, != and the
+   <a class="external-link" href="https://community.bistudio.com/wiki/isNull" rel="nofollow" style="text-decoration-line: none;">
+    isNull
+   </a>
+   command -
+   <a class="external-link" href="https://feedback.bistudio.com/T152448" rel="nofollow" style="text-decoration-line: none;">
+    FT-T152448
+   </a>
+  </li>
+  <li>
+   Added: New namespace
+   <a href="https://community.bistudio.com/wiki/localNamespace">
+    localNamespace
+   </a>
+   , for safer MP scripting (comparison operators == and != are also extended to accept this namespace type) -
+   <a class="external-link" href="https://feedback.bistudio.com/T66917" rel="nofollow" style="text-decoration-line: none;">
+    FT-T66917
+   </a>
+  </li>
+  <li>
+   Added:
+   <a class="external-link" href="https://community.bistudio.com/wiki/systemTime" rel="nofollow" style="text-decoration-line: none;">
+    systemTime
+   </a>
+   /
+   <a class="external-link" href="https://community.bistudio.com/wiki/systemTimeUTC" rel="nofollow" style="text-decoration-line: none;">
+    systemTimeUTC
+   </a>
+   script commands
+  </li>
+  <li>
+   Added: Support for Boolean type to == and != -
+   <a class="external-link" href="https://feedback.bistudio.com/T64965" rel="nofollow" style="text-decoration-line: none;">
+    FT-T64965
+   </a>
+  </li>
+  <li>
+   Added: The
+   <a class="external-link" href="https://community.bistudio.com/wiki/supportInfo" rel="nofollow" style="text-decoration-line: none;">
+    supportInfo
+   </a>
+   script command received a new
+   <em>
+    "i:&lt;command&gt;"
+   </em>
+   filter, which returns extended information about the passed command -
+   <a class="external-link" href="https://feedback.bistudio.com/T83862" rel="nofollow" style="text-decoration-line: none;">
+    FT-T83862
+   </a>
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/isFinal">
+    <em>
+     isFinal
+    </em>
+   </a>
+   script command to complement
+   <a class="external-link" href="https://community.bistudio.com/wiki/compileFinal" rel="nofollow" style="text-decoration-line: none;">
+    compileFinal
+   </a>
+  </li>
+  <li>
+   Added: New script command
+   <a class="external-link" href="https://community.bistudio.com/wiki/radioChannelInfo" rel="nofollow" style="text-decoration-line: none;">
+    radioChannelInfo
+   </a>
+   -
+   <a class="external-link" href="https://feedback.bistudio.com/T150855" rel="nofollow" style="text-decoration-line: none;" title="Follow link">
+    FT-T150855
+   </a>
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/elevatePeriscope">
+    elevatePeriscope
+   </a>
+   script command
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/periscopeElevation">
+    periscopeElevation
+   </a>
+   script command
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bohemia.net/wiki/Arma_3:_Event_Handlers#PeriscopeElevationChanged">
+    PeriscopeElevationChanged
+   </a>
+   entity Event Handler
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bohemia.net/wiki/lockInventory">
+    lockInventory
+   </a>
+   script command to lock/disable vehicle inventory access
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bohemia.net/wiki/lockedInventory">
+    lockedInventory
+   </a>
+   script command
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/ctrlMousePosition">
+    ctrlMousePosition
+   </a>
+   script command
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/Arma_3:_Event_Handlers#Disassembled">
+    Disassembled
+   </a>
+   entity Event Handler
+  </li>
+  <li>
+   Added: New script commands
+   <a class="external-link" href="https://community.bistudio.com/wiki/getPlayerVoNVolume" rel="nofollow" style="text-decoration-line: none;">
+    getPlayerVoNVolume
+   </a>
+   and
+   <a class="external-link" href="https://community.bistudio.com/wiki/setPlayerVoNVolume" rel="nofollow" style="text-decoration-line: none;">
+    setPlayerVoNVolume
+   </a>
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/Arma_3:_Event_Handlers/addMissionEventHandler#HandleChatMessage" target="">
+    HandleChatMessage
+   </a>
+   Mission Event Handler -
+   <a href="https://feedback.bistudio.com/T150854" target="">
+    FT-T150854
+   </a>
+  </li>
+ </ul>
+ <ul>
+  <li>
+   Tweaked: Steam Workshop scenario description made more readable in-game -
+   <a class="external-link" href="https://feedback.bistudio.com/T147399" rel="nofollow" style="text-decoration-line: none;">
+    FT-T147399
+   </a>
+  </li>
+  <li>
+   Tweaked: Magazines are now set to a default config capacity when -1 is passed as ammo count in various commands
+  </li>
+  <li>
+   Tweaked: It is now possible to create empty magazines with
+   <a class="external-link" href="https://community.bistudio.com/wiki/addMagazineAmmoCargo" rel="nofollow" style="text-decoration-line: none;">
+    addMagazineAmmoCargo
+   </a>
+   -
+   <a class="external-link" href="https://feedback.bistudio.com/T143153" rel="nofollow" style="text-decoration-line: none;">
+    FT-T143153
+   </a>
+  </li>
+  <li>
+   Tweaked: Eden Editor compositions are now placed in a new layer (this behavior can be switched off via the preferences)
+  </li>
+  <li>
+   Tweaked: Security improvements concerning Headless Clients
+  </li>
+  <li>
+   Tweaked: Forced whitelisting of 127.0.0.1 in
+   <em>
+    headlessClients[]
+   </em>
+  </li>
+  <li>
+   Tweaked: Performance improvements on network processing in MP versus AI
+  </li>
+  <li>
+   Tweaked:
+   <a href="https://community.bistudio.com/wiki/getRoadInfo">
+    getRoadInfo
+   </a>
+   's return is extended with the road start and end positions and an
+   <em>
+    isBridge
+   </em>
+   Boolean toggle -
+   <a href="https://feedback.bistudio.com/T151014">
+    FT-T151014
+   </a>
+  </li>
+  <li>
+   Tweaked: Most
+   <em>
+    magazinesX
+   </em>
+   commands received an optional parameter to return empty magazines -
+   <a class="external-link" href="https://feedback.bistudio.com/T151895" rel="nofollow" style="text-decoration-line: none;" title="Follow link">
+    FT-T151895
+   </a>
+  </li>
+  <li>
+   Tweaked:
+   <span class="inline-comment-marker" data-ref="b0ff757b-63c0-48db-80bf-166d07b02dda">
+    Extended
+   </span>
+   <a class="external-link" href="https://community.bistudio.com/wiki/playSound" rel="nofollow" style="text-decoration-line: none;">
+    playSound
+   </a>
+   /
+   <a class="external-link" href="https://community.bistudio.com/wiki/playSound3D" rel="nofollow" style="text-decoration-line: none;">
+    playSound3D
+   </a>
+   /
+   <a class="external-link" href="https://community.bistudio.com/wiki/say3D" rel="nofollow" style="text-decoration-line: none;">
+    say3D
+   </a>
+   script commands with a start offset parameter
+  </li>
+  <li>
+   Tweaked:
+   <a class="external-link" href="https://community.bistudio.com/wiki/playSound" rel="nofollow" style="text-decoration-line: none;">
+    playSound
+   </a>
+   /
+   <a class="external-link" href="https://community.bistudio.com/wiki/say3D" rel="nofollow" style="text-decoration-line: none;">
+    say3D
+   </a>
+   script commands now return a sound source object
+  </li>
+  <li>
+   Tweaked: All vector operation commands now accept 2D vectors as arguments -
+   <a class="external-link" href="https://feedback.bistudio.com/T152659" rel="nofollow" style="text-decoration-line: none;" title="Follow link">
+    FT-T152659
+   </a>
+   ,
+   <a class="external-link" href="https://feedback.bistudio.com/T152658" rel="nofollow" style="text-decoration-line: none;" title="Follow link">
+    FT-T152658
+   </a>
+   ,
+   <a class="external-link" href="https://feedback.bistudio.com/T152657" rel="nofollow" style="text-decoration-line: none;" title="Follow link">
+    FT-T152657
+   </a>
+  </li>
+  <li>
+   Tweaked:
+   <a href="https://community.bistudio.com/wiki/isOnRoad" target="">
+    isOnRoad
+   </a>
+   /
+   <a href="https://community.bistudio.com/wiki/roadAt" target="">
+    roadAt
+   </a>
+   now have better detection on bridges or when a 2D position is supplied
+  </li>
+  <li>
+   Fixed: Eden Editor object names were nil on remote machines when the 'simple object' option is used
+  </li>
+  <li>
+   Fixed: It was possible to add a weapon to a container with incompatible magazines via
+   <a class="external-link" href="https://community.bistudio.com/wiki/addWeaponWithAttachmentsCargo" rel="nofollow" style="text-decoration-line: none;">
+    addWeaponWithAttachmentsCargo
+   </a>
+  </li>
+  <li>
+   Fixed: Ability to move items in the player's inventory while aboard a vehicle -
+   <a class="external-link" href="https://feedback.bistudio.com/T81676" rel="nofollow" style="text-decoration-line: none;">
+    FT-T81676
+   </a>
+  </li>
+  <li>
+   Fixed: Misaligned flashlight cone
+  </li>
+  <li>
+   Fixed: Players could get kicked when a multiplayer scenario spawns custom models -
+   <a class="external-link" href="https://feedback.bistudio.com/T147191" rel="nofollow" style="text-decoration-line: none;">
+    FT-T147191
+   </a>
+  </li>
+  <li>
+   Fixed:
+   <a class="external-link" href="https://community.bistudio.com/wiki/taskParent" rel="nofollow" style="text-decoration-line: none;">
+    taskParent
+   </a>
+   -related crash
+  </li>
+  <li>
+   Fixed:
+   <a class="external-link" href="https://community.bistudio.com/wiki/tvSort" rel="nofollow" style="text-decoration-line: none;">
+    tvSort
+   </a>
+   and
+   <a class="external-link" href="https://community.bistudio.com/wiki/tvSortByValue" rel="nofollow" style="text-decoration-line: none;">
+    tvSortByValue
+   </a>
+   error on absence of optional parameter: reversed
+  </li>
+  <li>
+   Fixed: Broken alternative syntax for
+   <a class="external-link" href="https://community.bistudio.com/wiki/menuAction" rel="nofollow" style="text-decoration-line: none;">
+    menuAction
+   </a>
+  </li>
+  <li>
+   Fixed:
+   <a class="external-link" href="https://community.bistudio.com/wiki/airportSide" rel="nofollow" style="text-decoration-line: none;">
+    airportSide
+   </a>
+   /
+   <a class="external-link" href="https://community.bistudio.com/wiki/setAirportSide" rel="nofollow" style="text-decoration-line: none;">
+    setAirportSide
+   </a>
+   -related crash -
+   <a class="external-link" href="https://feedback.bistudio.com/T149781" rel="nofollow" style="text-decoration-line: none;">
+    FT-T149781
+   </a>
+  </li>
+  <li>
+   Fixed: List
+   <em>
+    _trigger
+   </em>
+   returned nil when called immediately after trigger creation
+  </li>
+  <li>
+   Fixed: Editor waypoint loiter altitude did not broadcast to clients -
+   <a class="external-link" href="https://feedback.bistudio.com/T126772" rel="nofollow" style="text-decoration-line: none;">
+    FT-T126772
+   </a>
+  </li>
+  <li>
+   Fixed:
+   <a class="external-link" href="https://community.bistudio.com/wiki/createSimpleObject" rel="nofollow" style="text-decoration-line: none;">
+    createSimpleObject
+   </a>
+   could fail when used directly with a model config entry
+  </li>
+  <li>
+   Fixed: null objects were not removed from the
+   <a class="external-link" href="https://community.bistudio.com/wiki/attachedObjects" rel="nofollow" style="text-decoration-line: none;">
+    attachedObjects
+   </a>
+   result -
+   <a class="external-link" href="https://feedback.bistudio.com/T147753" rel="nofollow" style="text-decoration-line: none;">
+    FT-T147753
+   </a>
+  </li>
+  <li>
+   Fixed: Exported singleplayer scenarios did not show
+   <em>
+    overviewPicture
+   </em>
+   or
+   <em>
+    author
+   </em>
+   -
+   <a class="external-link" href="https://feedback.bistudio.com/T147399" rel="nofollow" style="text-decoration-line: none;">
+    FT-T147399
+   </a>
+  </li>
+  <li>
+   Fixed: Texture not found when using
+   <a class="external-link" href="https://community.bistudio.com/wiki/setObjectTextureGlobal" rel="nofollow" style="text-decoration-line: none;">
+    setObjectTextureGlobal
+   </a>
+   from a Dedicated Server -
+   <a class="external-link" href="https://feedback.bistudio.com/T80668" rel="nofollow" style="text-decoration-line: none;">
+    FT-T80668
+   </a>
+  </li>
+  <li>
+   Fixed: Workshop scenario overviews sometimes used previously cached values
+  </li>
+  <li>
+   Fixed: False RPT spam about certain missing sounds
+  </li>
+  <li>
+   Fixed:
+   <a class="external-link" href="https://community.bistudio.com/wiki/delete3DENEntities" rel="nofollow" style="text-decoration-line: none;">
+    delete3DENEntities
+   </a>
+   did not create a history entry -
+   <a class="external-link" href="https://feedback.bistudio.com/T121797" rel="nofollow" style="text-decoration-line: none;">
+    FT-T121797
+   </a>
+  </li>
+  <li>
+   Fixed:
+   <a class="external-link" href="https://community.bistudio.com/wiki/allowDamage" rel="nofollow" style="text-decoration-line: none;">
+    allowDamage
+   </a>
+   serialization for mines
+  </li>
+  <li>
+   Fixed: CTD on
+   <a class="external-link" href="https://community.bistudio.com/wiki/ctrlCreate" rel="nofollow" style="text-decoration-line: none;">
+    ctrlCreate
+   </a>
+   -
+   <a class="external-link" href="https://feedback.bistudio.com/T136596" rel="nofollow" style="text-decoration-line: none;">
+    FT-T136596
+   </a>
+  </li>
+  <li>
+   Fixed: Glitched Speedboat physics when under water in high waves
+  </li>
+  <li>
+   Fixed:
+   <a class="external-link" href="https://community.bistudio.com/wiki/addMagazineGlobal" rel="nofollow" style="text-decoration-line: none;">
+    addMagazineGlobal
+   </a>
+   duplicated items per the number of clients -
+   <a class="external-link" href="https://feedback.bistudio.com/T149788" rel="nofollow" style="text-decoration-line: none;">
+    FT-T149788
+   </a>
+  </li>
+  <li>
+   Fixed:
+   <a class="external-link" href="https://community.bistudio.com/wiki/addWeaponGlobal" rel="nofollow" style="text-decoration-line: none;">
+    addWeaponGlobal
+   </a>
+   could add multiple weapons to the player -
+   <a class="external-link" href="https://feedback.bistudio.com/T149788" rel="nofollow" style="text-decoration-line: none;">
+    FT-T149788
+   </a>
+  </li>
+  <li>
+   Fixed: Incorrect control behavior on text underflow
+  </li>
+  <li>
+   Fixed: Memory Allocator issue causing "Too many virtual memory blocks requested" crashes (this may help some to load old / large "Old Man" saves, but a fresh restart is still recommended) -
+   <a class="external-link" href="https://feedback.bistudio.com/T150427" rel="nofollow" style="text-decoration-line: none;">
+    FT-T150427
+   </a>
+  </li>
+  <li>
+   Fixed: Dead crew would not delete when a vehicle was deleted with
+   <a class="external-link" href="https://community.bistudio.com/wiki/deleteVehicle" rel="nofollow" style="text-decoration-line: none;">
+    deleteVehicle
+   </a>
+   -
+   <a class="external-link" href="https://feedback.bistudio.com/T148420" rel="nofollow" style="text-decoration-line: none;">
+    FT-T148420
+   </a>
+  </li>
+  <li>
+   Fixed: Server crash when trying to load a scenario with a dot in its filename -
+   <a class="external-link" href="https://feedback.bistudio.com/T150767" rel="nofollow" style="text-decoration-line: none;" title="Follow link">
+    FT-T150767
+   </a>
+  </li>
+  <li>
+   Fixed:
+   <a class="external-link" href="https://community.bistudio.com/wiki/nearestTerrainObjects" rel="nofollow" style="text-decoration-line: none;">
+    nearestTerrainObjects
+   </a>
+   would not return roads
+  </li>
+  <li>
+   Fixed: Inability to store Code type variables in
+   <a href="https://community.bistudio.com/wiki/profileNamespace">
+    profileNamespace
+   </a>
+   ("Global namespace not passed during" error in RPT)
+  </li>
+  <li>
+   Fixed: Squad / Arma 3 Units logo not showing up on Linux servers -
+   <a class="external-link" href="https://feedback.bistudio.com/T136477" rel="nofollow" style="text-decoration-line: none;">
+    FT-T136477
+   </a>
+   ,
+   <a class="external-link" href="https://feedback.bistudio.com/T80864" rel="nofollow" style="text-decoration-line: none;">
+    FT-T80864
+   </a>
+  </li>
+  <li>
+   Fixed: CTD when a helicopter's HUD / cockpit digital clock reached a full hour -
+   <a class="external-link" href="https://feedback.bistudio.com/T148480" rel="nofollow" style="text-decoration-line: none;">
+    FT-T148480
+   </a>
+  </li>
+  <li>
+   Fixed: "unknown animation source" RPT spam for Simple Objects
+  </li>
+  <li>
+   Fixed: Topography / exportnogrid cheats not working in Eden Editor -
+   <a class="external-link" href="https://feedback.bistudio.com/T151119" rel="nofollow" style="text-decoration-line: none;">
+    FT-T151119
+   </a>
+  </li>
+  <li>
+   Fixed
+   <a class="external-link" href="https://community.bistudio.com/wiki/getMousePosition" rel="nofollow" style="text-decoration-line: none;">
+    getMousePosition
+   </a>
+   script command not handling sampling resolution correctly -
+   <a class="external-link" href="https://feedback.bistudio.com/T84241" rel="nofollow" style="text-decoration-line: none;">
+    FT-T84241
+   </a>
+  </li>
+  <li>
+   Fixed:
+   <a class="external-link" href="https://community.bistudio.com/wiki/isOnRoad" rel="nofollow" style="text-decoration-line: none;">
+    isOnRoad
+   </a>
+   /
+   <a class="external-link" href="https://community.bistudio.com/wiki/roadAt" rel="nofollow" style="text-decoration-line: none;">
+    roadAt
+   </a>
+   can now detect pedestrian 'roads' -
+   <a class="external-link" href="https://feedback.bistudio.com/T151014" rel="nofollow" style="text-decoration-line: none;">
+    FT-T151014
+   </a>
+  </li>
+  <li>
+   Fixed: Killing friendly units could in certain cases increase the rating of the shooter -
+   <a href="https://feedback.bistudio.com/T151495">
+    FT-T151495
+   </a>
+  </li>
+  <li>
+   Fixed: Pop-up error when
+   <a class="external-link" href="https://community.bistudio.com/wiki/getNumber" rel="nofollow" style="text-decoration-line: none;">
+    getNumber
+   </a>
+   is used with a config array or class -
+   <a class="external-link" href="https://feedback.bistudio.com/T151967" rel="nofollow" style="text-decoration-line: none;">
+    FT-T151967
+   </a>
+  </li>
+  <li>
+   Fixed: Invisible
+   <em>
+    CT_TREE
+   </em>
+   scrollbars would block item selection
+  </li>
+  <li>
+   Fixed:
+   <em>
+    CT_XSLIDER
+   </em>
+   was created with
+   <em>
+    CT_SLIDER
+   </em>
+   type
+  </li>
+  <li>
+   Fixed: Crash when trying to host a server if a non-existent include exists in an exported PBO -
+   <a class="external-link" href="https://feedback.bistudio.com/T139189" rel="nofollow" style="text-decoration-line: none;">
+    FT-T139189
+   </a>
+  </li>
+  <li>
+   Fixed: Forced crash on broken
+   <em>
+    #include
+   </em>
+   when trying to host a server -
+   <a class="external-link" href="https://feedback.bistudio.com/T139189" rel="nofollow" style="text-decoration-line: none;">
+    FT-139189
+   </a>
+  </li>
+  <li>
+   Fixed:
+   <em>
+    #include
+   </em>
+   in description.ext was failing on files outside of a scenario's PBO -
+   <a class="external-link" href="https://feedback.bistudio.com/T77179" rel="nofollow" style="text-decoration-line: none;">
+    FT-T77179
+   </a>
+  </li>
+  <li>
+   Fixed:
+   <em>
+    disabledChannels[]
+   </em>
+   defined in
+   <a class="external-link" href="https://community.bistudio.com/wiki/Description.ext" rel="nofollow" style="text-decoration-line: none;">
+    description.ext
+   </a>
+   or
+   <a class="external-link" href="https://community.bistudio.com/wiki/server.cfg#Server_Behavior" rel="nofollow" style="text-decoration-line: none;">
+    server.cfg
+   </a>
+   config failed when a user rejoined from the lobby -
+   <a class="external-link" href="https://feedback.bistudio.com/T117205" rel="nofollow" style="text-decoration-line: none;" title="Follow link">
+    FT-T117205
+   </a>
+  </li>
+  <li>
+   Fixed: "Wrong Color Format" error when
+   <a class="external-link" href="https://community.bistudio.com/wiki/Structured_Text#Link_Color" rel="nofollow" style="text-decoration-line: none;">
+    linkColor
+   </a>
+   is empty -
+   <a class="external-link" href="https://feedback.bistudio.com/T152776" rel="nofollow" title="Follow link">
+    FT-T152776
+   </a>
+   ,
+   <a class="external-link" href="https://feedback.bistudio.com/T139588" rel="nofollow" style="text-decoration-line: none;" title="Follow link">
+    FT-T139588
+   </a>
+  </li>
+  <li>
+   Fixed: Target indicators in the HUD of some jets were jittering
+  </li>
+  <li>
+   Fixed: Missiles would bounce and fail to explode if the scripted view distance exceeded the view distance set in video options -
+   <a href="https://feedback.bistudio.com/T150535">
+    FT-T150535
+   </a>
+  </li>
+ </ul>
+ <h2>
+  SERVER
+ </h2>
+ <ul>
+  <li>
+   Updated: Stand-alone Windows Dedicated Server (2.00)
+  </li>
+  <li>
+   Updated: Stand-alone Linux Dedicated Server (2.00)
+   <ul>
+    <li>
+     The data in
+     <i>
+      -mod=contact
+     </i>
+     is not fully multiplayer compatible (it is meant for the singleplayer campaign experience); we recommend only hosting servers with it for special use cases
+     <ul>
+      <li>
+       This data is signed by a new A3C key whose presence can be used to control what client data is allowed on the server
+      </li>
+     </ul>
+    </li>
+    <li>
+     Known issue: Steam client modifies the
+     <i>
+      steam_appid.txt
+     </i>
+     file incorrectly. In case of issues, verify its content is:
+     <b>
+      107410
+     </b>
+    </li>
+    <li>
+     Known issue: Sometimes the add-ons are loaded from the wrong installation (e.g. main game)
+    </li>
+    <li>
+     Try adding
+     <i>
+      -mod=curator;kart;heli;mark;expansion;jets;argo;orange;tacops;tank;enoch
+     </i>
+     to your
+     <i>
+      arma3server.exe
+     </i>
+     shortcut
+    </li>
+   </ul>
+  </li>
+ </ul>
+</div>

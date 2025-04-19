@@ -1,0 +1,268 @@
+<div class="post-content">
+ <p>
+  FROM: High Command
+  <br/>
+  TO: Arma 3 Users
+  <br/>
+  UNIT: Main Branch
+  <br/>
+  ACTIVITY: Hotfix 1.68 (GPU Selection, Crash Fixes, Audio Fixes)
+  <br/>
+  SIZE: ~66 MB / ~25 MB (depends on Apex ownership)
+ </p>
+ <h1>
+  NOTES
+ </h1>
+ <ul>
+  <li>
+   Consider using the Steam client option to verify the integrity of the local game cache to avoid corrupted data after downloading this update.
+  </li>
+  <li>
+   Consider defragmenting your HDD after downloading large updates.
+  </li>
+  <li>
+   Updating a deeply moddable game and its platform is not without risks. We use various methods to communicate upcoming changes to our awesome modding community, such as via the
+   <a href="https://dev.arma3.com/" target="_blank">
+    Dev Hub
+   </a>
+   . We also co-operate directly on troubleshooting, and we offer an opportunity to test updates via our
+   <a href="https://dev.arma3.com/rc-branch" target="_blank">
+    Release Candidate tests
+   </a>
+   . Modders, server administrators and other members of the community do their best to prepare for updates and to address issues post-release as quickly as possible. Please be mindful of some interruptions (especially in the first hours / days after a release) while we all work to improve the game together.
+  </li>
+  <li>
+   A
+   <em>
+    Legacy Build
+   </em>
+   Steam branch is available for advanced users. It contains the previous significant main branch version (1.66). It can be used to compare specific changes between major releases. The access code for this branch is:
+   <em>
+    Arma3Legacy166
+   </em>
+  </li>
+  <li>
+   This update does not apply to
+   <a href="http://dev.arma3.com/ports" target="_blank">
+    the experimental Linux and Mac port betas
+   </a>
+   at time of writing. We hope to be updating those as soon as possible.
+  </li>
+  <li>
+   You can find the servers in the Steam library (switch the filter to "Tools") - "Arma 3 Server" (based on your OS, it will download the Windows or Linux version).
+   <ul>
+    <li>
+     Administrators can also use the command-line
+     <a href="https://developer.valvesoftware.com/wiki/SteamCMD" target="_blank">
+      SteamCMD
+     </a>
+     utility. The app ID is to be 233780.
+    </li>
+    <li>
+     NVIDIA GameWorks™ Technology provided under license from NVIDIA Corporation. Copyright © 2002-2017 NVIDIA Corporation. All rights reserved. NVIDIA® and PhysX® are trademarks of NVIDIA Corporation and are used under license.
+    </li>
+   </ul>
+  </li>
+  <li>
+   In case of problems, please check the
+   <a href="http://support.bistudio.com/arma-3" target="_blank">
+    Bohemia Interactive support F.A.Q.
+   </a>
+   ,
+   <a href="http://arma3.com/faq" target="_blank">
+    Arma 3 F.A.Q.
+   </a>
+   ,
+   <a href="http://www.battleye.com/support/faq/" target="_blank">
+    BattlEye F.A.Q.
+   </a>
+   , or
+   <a href="https://arma3.com/launcher/troubleshooting" target="_blank">
+    Launcher troubleshooting guide
+   </a>
+   .
+  </li>
+  <li>
+   You can help us to further improve the game by posting your feedback on the
+   <a href="http://feedback.arma3.com/" target="_blank">
+    Feedback Tracker
+   </a>
+   .
+  </li>
+ </ul>
+ <h1>
+  CHANGELOG
+ </h1>
+ <h2>
+  DATA:
+ </h2>
+ <ul>
+  <li>
+   Fixed: The
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_initRespawn" target="_blank">
+    BIS_fnc_initRespawn
+   </a>
+   handle disconnect event was returning true and causing units previously controlled by a disconnected player to be transferred to the server and become AI (
+   <a href="https://feedback.bistudio.com/T123785" target="_blank">
+    https://feedback.bistudio.com/T123785
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: The Vehicle Respawn Module would only respawn a vehicle once (
+   <a href="https://feedback.bistudio.com/T123940" target="_blank">
+    https://feedback.bistudio.com/T123940
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Weapons would sound muffled when out of direct line of sight (
+   <a href="https://feedback.bistudio.com/T123789" style="text-decoration: underline;" target="_blank">
+    https://feedback.bistudio.com/T123789
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Footstep sound were incorrect in first person view
+  </li>
+  <li>
+   Fixed: Showcase Fixed-Wings used some script commands meant for the next update
+  </li>
+ </ul>
+ <p>
+  The East Wind (potential spoilers)
+ </p>
+ <ul>
+  <li>
+   Fixed: Flow of the Moral Fiber scenario could get stuck in some cases (
+   <a href="https://feedback.bistudio.com/T123781" target="_blank">
+    https://feedback.bistudio.com/T123781
+   </a>
+   )
+  </li>
+ </ul>
+ <h2>
+  ENGINE:
+ </h2>
+ <ul>
+  <li>
+   Tweaked: The game will now override incorrectly configured hardware drivers to use the high-performance GPU in hybrid GPU systems (e.g. laptops)
+  </li>
+ </ul>
+ <ul>
+  <li>
+   Fixed: The
+   <em>
+    <a href="https://community.bistudio.com/wiki/hintC" target="_blank">
+     hintC
+    </a>
+   </em>
+   script command could produce an incorrect layout
+  </li>
+  <li>
+   Fixed: Zoom would not work in the mutiplayer environment in some cases (
+   <a href="https://feedback.bistudio.com/T121720" target="_blank">
+    https://feedback.bistudio.com/T121720
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: "User" and "Reload" actions for AI are once again available through the player's commanding menu (
+   <a href="https://feedback.bistudio.com/T123863" target="_blank">
+    https://feedback.bistudio.com/T123863
+   </a>
+   /
+   <a href="https://feedback.bistudio.com/T123981" target="_blank">
+    https://feedback.bistudio.com/T123981
+   </a>
+   )
+  </li>
+ </ul>
+ <p>
+  64-bit
+ </p>
+ <ul>
+  <li>
+   Fixed: There was a different behavior of the
+   <em>
+    <a href="https://community.bistudio.com/wiki/ceil">
+     ceil
+    </a>
+   </em>
+   script command on 64-bit game executables
+  </li>
+ </ul>
+ <h2>
+  LAUNCHER:
+ </h2>
+ <ul>
+  <li>
+   Tweaked: Launcher now has a more robust way to ensure that only one instance of it is running
+  </li>
+ </ul>
+ <ul>
+  <li>
+   Fixed: Crash when accessing an existing folder that doesn't exist - "I see dead folders" (
+   <a href="https://feedback.bistudio.com/T123839">
+    https://feedback.bistudio.com/T123839
+   </a>
+   )
+  </li>
+ </ul>
+ <h2>
+  SERVER:
+ </h2>
+ <ul>
+  <li>
+   Updated: Stand-alone Windows Dedicated Server (1.68)
+  </li>
+  <li>
+   Updated: Stand-alone Linux Dedicated Server (1.68)
+   <ul>
+    <li>
+     Known issue: Steam client modifies the
+     <em>
+      steam_appid.txt
+     </em>
+     file incorrectly. In case of issues, verify its content is:
+     <strong>
+      107410
+     </strong>
+    </li>
+    <li>
+     Known issue: Sometimes the add-ons are loaded from the wrong installation (e.g. main game)
+    </li>
+    <li>
+     Try adding
+     <em>
+      -mod=curator;kart;heli;mark;expansion;dlcbundle
+     </em>
+     to your
+     <em>
+      arma3server.exe
+     </em>
+     shortcut
+    </li>
+   </ul>
+  </li>
+ </ul>
+ <ul>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/callExtension" target="_blank">
+    CallExtensions
+   </a>
+   were not being loaded on Linux Dedicated Servers
+  </li>
+  <li>
+   Fixed: Crash connected to weapon ammo recognition
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/Arma_3_Headless_Client" target="_blank">
+    Headless Client
+   </a>
+   crash
+  </li>
+ </ul>
+</div>

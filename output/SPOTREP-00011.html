@@ -1,0 +1,644 @@
+<div class="post-content">
+ <p>
+  FROM: Project Lead
+  <br>
+   TO: Arma 3 Users
+   <br>
+    UNIT: Main Branch
+    <br>
+     ACTIVITY: Game Update: 1.02 (Altis performance, AI tweaks, Fixathon)
+     <br/>
+     SIZE: ~1 GB
+    </br>
+   </br>
+  </br>
+ </p>
+ <h1>
+  CHANGELOG
+ </h1>
+ <h2>
+  DATA
+ </h2>
+ <ul>
+  <li>
+   Potential Altis performance optimization (especially when using a lot of AI units): removed class properties from models in
+   <em>
+    Structures_F
+   </em>
+   that don't need it
+  </li>
+  <li>
+   Many small Altis object positioning tweaks and other terrain fixes
+  </li>
+  <li>
+   Fixed: Flipped moon texture
+  </li>
+  <li>
+   The moon halo object can now be different from the sun halo object (new world config parameter
+   <em>
+    moonHaloObject
+   </em>
+   )
+  </li>
+  <li>
+   The light reflected by the moon has been made more realistic
+  </li>
+  <li>
+   Added: New runway parts for left and right airstrip on Altis
+  </li>
+  <li>
+   Runway lights have new models and configuration
+  </li>
+  <li>
+   Fixed: Darker runway at a distance and with overcast weather
+  </li>
+  <li>
+   Fixed: Ladder on hospital building has been reversed (
+   <a href="http://feedback.arma3.com/view.php?id=13399" target="_blank">
+    http://feedback.arma3.com/view.php?id=13399
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Blinking resolution LODs on signs
+  </li>
+  <li>
+   Configured power line wires to be destroyed along with power line towers
+  </li>
+  <li>
+   Animals should be avoiding roads more now
+  </li>
+  <li>
+   Fashionable LCD panels for MBT gunners instead of old-style optics, and new reticles displayed on them
+  </li>
+  <li>
+   Player tank driver can turn out, while commander is turned in
+  </li>
+  <li>
+   Civilian (and FIA) trucks have been revamped
+  </li>
+  <li>
+   Added: Ability to mount Marshall driver position from right side
+  </li>
+  <li>
+   Fixed: Slammer recoil
+  </li>
+  <li>
+   Added: T-100 recoil animation for main gun
+  </li>
+  <li>
+   T-100 commander optics features in line with OPFOR tracked vehicles
+  </li>
+  <li>
+   T-100 back armor made thinner
+  </li>
+  <li>
+   Improved handling of terminal ballistics on armored vehicles
+  </li>
+  <li>
+   More realistic water fording ability for tracked armor
+  </li>
+  <li>
+   Added compass and additional radars for copilot seats
+  </li>
+  <li>
+   Removed magic disappearance of rotor blades for some helicopters
+  </li>
+  <li>
+   AH-99 badly placed exhausts fixed (
+   <a href="http://feedback.arma3.com/view.php?id=9909" target="_blank">
+    http://feedback.arma3.com/view.php?id=9909
+   </a>
+   )
+  </li>
+  <li>
+   Adjusted position of Blackfoot pilot crosshair in HMD
+  </li>
+  <li>
+   Added stabilization for UAV optics
+  </li>
+  <li>
+   Fixed: Incorrect duplicate of get-in points for Speedboats
+  </li>
+  <li>
+   Fixed: Zooms of armed offroad gunner set to standard naked eye level (
+   <a href="http://feedback.arma3.com/view.php?id=14213" target="_blank">
+    http://feedback.arma3.com/view.php?id=14213
+   </a>
+   and
+   <a href="http://feedback.arma3.com/view.php?id=14699" target="_blank">
+    http://feedback.arma3.com/view.php?id=14699
+   </a>
+   )
+  </li>
+  <li>
+   Added: Mortar/HMG/GMG/Bipod/Tripod bags for every faction
+   <ul>
+    <li>
+     Added missing backpacks for Mk6 weapon
+    </li>
+   </ul>
+  </li>
+  <li>
+   Capacity tweaking for mortars, GMGs and HMGs (inventory)
+  </li>
+  <li>
+   Fixed: Animations of static weapons
+  </li>
+  <li>
+   Tweaked: Bag weight for static weapons. It was too high for our maximum soldier load.
+  </li>
+  <li>
+   Fixed bombs of CAS UAVs
+  </li>
+  <li>
+   Re-balanced mine damage and overall mine usability
+  </li>
+  <li>
+   Tweaked: Pistol weights to match maximum soldier load count
+  </li>
+  <li>
+   Fixed: Negative friction of 120mm shells
+  </li>
+  <li>
+   Reticle materials for 3D scopes now glow in the dark
+  </li>
+  <li>
+   Fixed: Problem with 3D scope alpha sorting
+  </li>
+  <li>
+   Added:
+   <em>
+    BIS_fnc_unitPlay
+   </em>
+   function severely optimized. Unit playback is now smooth even when applied on multiple vehicles at the same time. Backwards compatible - will improve already released missions without need to change anything.
+  </li>
+  <li>
+   Tweaked: Action menu priorities
+   <ul>
+    <li>
+     Increased action priority for weapon assembly
+    </li>
+   </ul>
+  </li>
+  <li>
+   Fixed: Radio protocol is no longer played during story conversations triggered by
+   <em>
+    BIS_fnc_kbTell
+   </em>
+  </li>
+  <li>
+   Fixed: Some groups spawned by Sites module had their skill set too high
+  </li>
+  <li>
+   Fixed: CAS bombing issues in Supports Module
+  </li>
+  <li>
+   Fixed: Rare occurrence of undefined variable for civilian randomization scripts
+  </li>
+  <li>
+   Fixed: Game sometimes got stuck in loading screen after respawn (
+   <a href="http://feedback.arma3.com/view.php?id=14474" target="_blank">
+    http://feedback.arma3.com/view.php?id=14474
+   </a>
+   )
+  </li>
+  <li>
+   Added: Warning about using
+   <em>
+    BIS_fnc_addRespawnPosition
+   </em>
+   - calling the function on client at the mission start will result in data not being broadcasted correctly
+  </li>
+  <li>
+   Fixed: Modules were not executed in the right order on server
+  </li>
+  <li>
+   Fixed: Sending multiple recipients to
+   <em>
+    BIS_fnc_MP
+   </em>
+   caused the function to be ignored in singleplayer
+  </li>
+  <li>
+   Added: Recipient sent to
+   <em>
+    BIS_fnc_MP
+   </em>
+   can now be string - variable name of an object. The function will be executed where the object is local.
+  </li>
+  <li>
+   Fixed: Incorrect returned value when task checked by
+   <em>
+    BIS_fnc_taskCompleted
+   </em>
+   didn't exist
+  </li>
+  <li>
+   Fixed: "Vehicle Respawn" module didn't recognize airplanes, rendering them non-respawnable (
+   <a href="http://feedback.arma3.com/view.php?id=13078" target="_blank">
+    http://feedback.arma3.com/view.php?id=13078
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: HQ entities created by Headquarters module (used for example in Defend and Seize missions) were all using European voice. Correct voices (English for NATO and Persian for CSAT) are assigned now.
+  </li>
+  <li>
+   Fixed: "Set Task Destination" module is now optional, destination can now be configured in "Create Task" module. The same is true for task state (
+   <a href="http://feedback.arma3.com/view.php?id=4144" target="_blank">
+    http://feedback.arma3.com/view.php?id=4144
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Functions with tag without specific name (i.e., no 'tag' attribute) were incorrectly categorized in the functions viewer
+  </li>
+  <li>
+   Fixed:
+   <em>
+    BIS_fnc_sandStorm
+   </em>
+   was using incorrect particle texture (
+   <a href="http://feedback.arma3.com/view.php?id=13773" target="_blank">
+    http://feedback.arma3.com/view.php?id=13773
+   </a>
+   )
+  </li>
+  <li>
+   Added: Delay before respawn menu is applied only when player is simulated
+  </li>
+  <li>
+   Fixed: "EndMission" respawn template failed a mission even when some players were still alive after respawn tickets were exceeded
+  </li>
+  <li>
+   Fixed: Module effects were applied to vehicle commanders, not to vehicles themselves
+  </li>
+  <li>
+   Fixed: Debug console was not available for logged admins (
+   <a href="http://feedback.arma3.com/view.php?id=13764" target="_blank">
+    http://feedback.arma3.com/view.php?id=13764
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Respawn display sometimes didn't close once player respawned
+  </li>
+  <li>
+   Fixed: Advanced hints save / load issue
+  </li>
+  <li>
+   Added:
+   <em>
+    BIS_fnc_countdown
+   </em>
+   - allows setting and managing countdown
+  </li>
+  <li>
+   Function
+   <em>
+    BIS_fnc_findInPairs
+   </em>
+   renamed to BIS_fnc_getFromPairs and now supports all variable types
+  </li>
+  <li>
+   New function
+   <em>
+    BIS_fnc_findInPairs
+   </em>
+   returns index of an item from the associative array found under the key
+  </li>
+  <li>
+   Fixed: Notifications are no longer displayed after player dies in singleplayer missions
+  </li>
+  <li>
+   Fixed: Zone Restriction module would sometimes fire a warning event when a unit left a vehicle
+  </li>
+  <li>
+   Fixed: Info about ability to sync "Respawn Position" module to a vehicle was missing
+  </li>
+  <li>
+   BLUFOR soldiers are now able to switch textures via
+   <em>
+    setObjectTexture
+   </em>
+  </li>
+  <li>
+   CSAT soldiers have been trained to distinguish fixed-wing UAV of their side better when standing next to it
+  </li>
+  <li>
+   Less pronounced character lip sync animations
+  </li>
+  <li>
+   Fixed: Several inventory capacity issues
+  </li>
+  <li>
+   Fixed: OPFOR pilots ammo load
+  </li>
+  <li>
+   Fixed: Guerrilla Rifleman AT backpack load out
+  </li>
+  <li>
+   Fixed: Guerrilla Engineer bag type
+  </li>
+  <li>
+   Fixed: Khaki vest camo for OPFOR snipers and Olive vests for AAF
+  </li>
+  <li>
+   Minor fix in BLUFOR repair specialist chest rig
+  </li>
+  <li>
+   Added: New icon for BLUFOR chest rig
+  </li>
+  <li>
+   Added: New icons for Guerrilla uniform types
+  </li>
+  <li>
+   Added side-specific textures and pictures for mortar bags
+  </li>
+  <li>
+   Introduced mass difference between normal and light helmets
+  </li>
+  <li>
+   Various characters models and textures tweaks, most notably the US flag being removed from AS and SMDI maps
+  </li>
+  <li>
+   Civilians are more prone to be fatally wounded by anything (damage tolerance and armor)
+   <ul>
+    <li>
+     Tweaked hitpoints of civilians. Now they will be fatally injured by one hit (5.56 mm and better caliber) to torso.
+    </li>
+   </ul>
+  </li>
+  <li>
+   Configured destruction of
+   <em>
+    wreck_heli_attack_01
+   </em>
+   (Blackfoot wreck)
+  </li>
+  <li>
+   Added Korean and Japanese characters from other fonts to EtelkaMonospacePro (fixes missing texts in e.g. establishing shots in those languages)
+  </li>
+  <li>
+   Font:
+   <em>
+    EtelkaMonospaceProBold
+   </em>
+   added for backwards compatibility (inherits everything from
+   <em>
+    EtelkaMonospacePro
+   </em>
+   )
+  </li>
+  <li>
+   Rolling credits now end after finishing and a short timeout
+  </li>
+  <li>
+   Fixed: Class name in title bar can't be edited any more in Insert Unit and Insert module in mission editor
+  </li>
+  <li>
+   Fixed: Positions of location labels (e.g., town names) in Splendid Camera were offset
+  </li>
+  <li>
+   Fixed: Respawn position selection list was blinking
+  </li>
+  <li>
+   Fixed: Tile effects were interactive, stealing mouse focus
+  </li>
+  <li>
+   Fixed: Error message for "Viper Green in trouble" conversation in Showcase Vehicles
+  </li>
+  <li>
+   Removed: Showcase Night radio at the enemy camp
+  </li>
+  <li>
+   Tweaked: Showcase Night player is now sitting on the front of the boat during insertion
+  </li>
+  <li>
+   Tweaked: Showcase Night boat driver now has a beanie hat
+  </li>
+  <li>
+   Tweaked: Showcase Night when player is detected near a site, enemies should now better hunt him
+  </li>
+  <li>
+   Tweaked: Showcase Night enemy patrols on sites are now on in safe behavior
+  </li>
+  <li>
+   Tweaked: Showcase Night enemies now play ambient animations
+  </li>
+  <li>
+   Tweaked: Showcase Night when player is detected on an enemy site, the nearest, not yet cleared, enemy site will become combat aware
+  </li>
+  <li>
+   Fixed: Showcase Night random patrols had skill of 1, now it's 0.4
+  </li>
+  <li>
+   Fixed: Showcase Night soldier leaning on the lighthouse was going through it
+  </li>
+  <li>
+   Fixed: Showcase Night enemies don't have NVGoggles any more (they wrongly had them because of class name changes)
+  </li>
+  <li>
+   New: Showcase Night enemy vehicle will now come and investigate the south after half the chaos threshold has been reached
+  </li>
+  <li>
+   Fixed: In Combined Arms single player you could kill insertion choppers crew without triggering friendly fire
+  </li>
+  <li>
+   Fixed: Defend Syrta character classes had wrong backpack
+  </li>
+  <li>
+   Fixed: Defend Syrta CSAT AA class had wrong backpack
+  </li>
+  <li>
+   Fixed: Seize and Defend missions were sometimes not executed properly on Dedicated Server
+  </li>
+  <li>
+   Tweaked: Civilian vehicles are now unlocked in MP scenarios
+  </li>
+  <li>
+   Tweaked: Lowered cost of enemy vehicles by 0.5 in MP scenarios
+  </li>
+  <li>
+   Tweaked: Tanks should now only spawn on last zone (MP)
+  </li>
+  <li>
+   New: Added Spotter and Sniper load outs on the last objective (MP)
+  </li>
+  <li>
+   Changed: Defend Syrta now has disabled AI by default
+  </li>
+  <li>
+   Firing Drills: CoF Green - removed manual hiding of barriers now they were removed from Stratis globally
+  </li>
+  <li>
+   Firing Drills: CoF Red 3 - disabled detecting statue as no-shoot until new solution is found (old one removed due to map optimizations)
+  </li>
+  <li>
+   Music has been reorganized to new class names, old ones are kept for compatibility
+  </li>
+  <li>
+   Main menu music track fix (different version of same track)
+  </li>
+  <li>
+   British Radio Protocol voices added (1 x Jay Crowe + 3 x Jayholder as data placeholder for future recordings)
+  </li>
+  <li>
+   Removed occasional animation glitch after Team Switch
+  </li>
+  <li>
+   Digital Deluxe Edition: Tactical Guide updated with various tweaks
+  </li>
+  <li>
+   Digital Deluxe Edition: Map updated with higher resolution
+  </li>
+ </ul>
+ <h2>
+  ENGINE
+ </h2>
+ <ul>
+  <li>
+   <a href="http://forums.bistudio.com/showthread.php?159711-Development-Branch-Captain-s-AI-Log" target="_blank">
+    Many AI tweaks and fixes
+   </a>
+  </li>
+  <li>
+   Enabled blood when Korean language is selected
+  </li>
+  <li>
+   Improved: Tank collisions / flipping
+  </li>
+  <li>
+   <em>
+    epeImpulseDamageCoef
+   </em>
+   parameter can now be changed for any vehicle
+  </li>
+  <li>
+   AI drivers are now better able to navigate out of obstacle and unstuck themselves
+  </li>
+  <li>
+   New possibility to turn off adaptive crosshair in options
+  </li>
+  <li>
+   Fixed: Favorite sessions in LAN view
+  </li>
+  <li>
+   Increased the limit of shown servers in the server browser from 500 to 10000
+  </li>
+  <li>
+   Fixed: Broken location detection of MP clients - people should be finally able to see servers close to them
+  </li>
+  <li>
+   Fixed: Country detection in MP
+  </li>
+  <li>
+   Crouch (toggle) now works correctly for launchers
+  </li>
+  <li>
+   Fixed: Aiming while holding 'sprint' key and not moving
+  </li>
+  <li>
+   Removed zoom warp (by using sprint while in optics)
+  </li>
+  <li>
+   Fixed: More strange zoom while sprinting with fatigue removed
+  </li>
+  <li>
+   NRemoved strange zoom when aiming while trying to sprint with high fatigue
+  </li>
+  <li>
+   Improved: Helicopter dropping like a stone when AA hits them
+  </li>
+  <li>
+   Fixed: Crash when player engages in conversation and has no topic
+  </li>
+  <li>
+   Added: Random angular velocity for dropped weapons in ragdoll
+  </li>
+  <li>
+   Fixed: DnD with container on soldier's container tab caused wrong behavior
+  </li>
+  <li>
+   Fixed: DnD with container on soldier's linked backpack caused wrong behavior
+  </li>
+  <li>
+   Fixed: Replacing linked weapon from weapon stored in backpack caused wrong behavior
+  </li>
+  <li>
+   Fixed: Bag disappearance and duplication
+  </li>
+  <li>
+   Fixed: Gear shows no magazines except handguns
+  </li>
+  <li>
+   <em>
+    removeWeapon
+   </em>
+   can also unlink assigned items now
+  </li>
+  <li>
+   Fixed: Command removeBackpack
+  </li>
+  <li>
+   Fixed:
+   <em>
+    removeAllContainers
+   </em>
+   leaves unit with uniform model even though their uniform is removed (
+   <a href="http://feedback.arma3.com/view.php?id=7879" target="_blank">
+    http://feedback.arma3.com/view.php?id=7879
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Action Drop Backpack was not working
+  </li>
+  <li>
+   The
+   <em>
+    Men
+   </em>
+   category is now properly sorted in the unit dialog in editor
+  </li>
+  <li>
+   Fixed:
+   <em>
+    saveStatus
+   </em>
+   and loadStatus commands did not work
+  </li>
+  <li>
+   Fixed:
+   <em>
+    CheckCursorActionTarget
+   </em>
+   performance
+  </li>
+  <li>
+   Skybox lighting is now done per-pixel
+  </li>
+  <li>
+   New
+   <a href="http://forums.bistudio.com/showthread.php?160330-Development-Branch-Scripting-Discussion&amp;p=2509659&amp;viewfull=1#post2509659" target="_blank">
+    scripting commands
+   </a>
+   for getting and setting identity parameters
+  </li>
+  <li>
+   New scripting command for getting fog parameters (
+   <em>
+    fogParams
+   </em>
+   )
+  </li>
+  <li>
+   Added parameter
+   <em>
+    turretCanSee
+   </em>
+   config parameter to distinguish usability of compass for copilots
+  </li>
+ </ul>
+</div>

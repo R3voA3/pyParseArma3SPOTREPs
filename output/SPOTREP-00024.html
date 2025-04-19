@@ -1,0 +1,741 @@
+<div class="post-content">
+ <p>
+  FROM: Project Lead
+  <br>
+   TO: Arma 3 Users
+   <br>
+    UNIT: Main Branch
+    <br>
+     ACTIVITY: Game Update: 1.18 (Zeus enhancements, MP stability, Miscellaneous fixes)
+     <br/>
+     SIZE: ~794 MB
+    </br>
+   </br>
+  </br>
+ </p>
+ <h1>
+  CHANGELOG
+ </h1>
+ <h2>
+  DATA
+ </h2>
+ <ul>
+  <li>
+   Added: Customizable area for scenario-specific on-screen information (e.g. info about time and place)
+  </li>
+  <li>
+   Added: Custom scenario name is now shown also in diary
+  </li>
+  <li>
+   Added: SMG optic variants to appropriate ammo boxes
+  </li>
+  <li>
+   Added 6.5mm LMG sound suppressor into INDEP support ammo box for M200 machine-gun
+  </li>
+  <li>
+   Added: Possibility to disable randomization and set a color to randomized vehicles by using ‘this setVariable ["color",X]’ in the init of the vehicle where X is a number ranging from 0 to the number of skins (minus 1). If the number is out of range, the skin is still randomized.
+  </li>
+  <li>
+   Added: LAND waypoint (can be found under "Scripted" category)
+  </li>
+  <li>
+   Added: New parameter with ability to disable sound of advanced hint in
+   <em>
+    BIS_fnc_advHint
+   </em>
+   function
+  </li>
+  <li>
+   Added: Support of variables (%#) in arguments array of advanced hints
+  </li>
+  <li>
+   Fixed: Looking up or down while operating a raised static weapon in the bunker (
+   <a href="http://feedback.arma3.com/view.php?id=14960" target="_blank">
+    http://feedback.arma3.com/view.php?id=14960
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Shapes of batteries and duct tape objects
+  </li>
+  <li>
+   Fixed: Invalid string for gatling cannon in HUD of AH-99 'Blackfoot'
+  </li>
+  <li>
+   Fixed: Levitating missiles on helicopter gunships
+  </li>
+  <li>
+   Fixed: Unified re-spawn weapon for BLUFOR AT specialist
+  </li>
+  <li>
+   Fixed: Unified chem-light color of BLUFOR helicopter pilots and helicopter crew
+  </li>
+  <li>
+   Fixed: Stadium model position and roadways
+  </li>
+  <li>
+   Fixed: Damaging of Tempest with the device
+  </li>
+  <li>
+   Fixed: Escape from Altis - Forced wait for respawn causes a mission failure
+  </li>
+  <li>
+   Fixed: Get in / get out points of fuel and box version of Zamak
+  </li>
+  <li>
+   Fixed: Shadows of H-barriers
+  </li>
+  <li>
+   Fixed: Artillery vehicles moved to FIRE MISSION waypoint after running out of ammo
+  </li>
+  <li>
+   Fixed: Artillery fire sometimes didn't resume after reloading a magazine
+  </li>
+  <li>
+   Fixed: COOP 12 Tanks: Random tank destruction when starting mission without all crewmen
+  </li>
+  <li>
+   Fixed: Selections in flag models and changed flag simulation
+  </li>
+  <li>
+   Fixed: Excessive side sliding collision damage for Pawnee
+  </li>
+  <li>
+   Fixed: UH-80 radar animation mirrored for fancy looks
+  </li>
+  <li>
+   Fixed: MBT-52 Kuma retexture issue with spawned vehicle
+  </li>
+  <li>
+   Fixed: When respawning into vehicles, player was sometimes stuck inside and couldn't get out (often being switched through multiple vehicle positions as well)
+  </li>
+  <li>
+   Fixed: Flipping static GMG when firing by decreasing Hit and indirectHit parameter while increasing explosive parameter above and beyond 1 to maintain ammo destructive potential at the same level
+  </li>
+  <li>
+   Fixed: RPT spam of "weapon:"?" with ? modes needs weapon mode with index ?, but given silencer ( ? ) has only ? modes" by adding a specific suppressor for MX SW
+  </li>
+  <li>
+   Fixed: Offroad braking on its own too much
+  </li>
+  <li>
+   Fixed: Players should now be able to distinguish AH-99 'Blackfoot' as itself, not just as a 'Helicopter'
+  </li>
+  <li>
+   Fixed: Casings from Ghosthawk's left gun are no longer ejected from the right gun (
+   <a href="http://feedback.arma3.com/view.php?id=17621" target="_blank">
+    http://feedback.arma3.com/view.php?id=17621
+   </a>
+   )
+  </li>
+  <li>
+   Animals should have textures even when not local in MP
+  </li>
+  <li>
+   Re-introduced radar for AAAs
+  </li>
+  <li>
+   Adjusted geometry of the cargo deck and decreased roadway levitation of Trawler
+  </li>
+  <li>
+   You weren't able to show hints when tutorial hints were disabled. Now you have parameter for it and you can set if hint will be shown when tutorial hints are disabled or not (_this select 5).
+  </li>
+  <li>
+   Header of
+   <em>
+    BIS_fnc_advHint
+   </em>
+   corrected: (_this select 3) and (_this select 4) parameters (condition and duration for full version of hint) were already implemented
+  </li>
+  <li>
+   Further optimization of animals randomization using call instead of execVM
+  </li>
+  <li>
+   IR laser intensity over distances has been tweaked
+  </li>
+  <li>
+   Adjusted maximum vertical angle of static weapons
+  </li>
+  <li>
+   Minor optimization of explosive parameters to better scale explosive damage capabilities amongst various ammo types
+  </li>
+  <li>
+   Increased weight of 30 round 6.5mm magazine to 10 mass, for it should be heavier than 30 round 5.56mm STANAG magazine (which has 8 mass)
+  </li>
+  <li>
+   Set up proper mass values for all optics. Previous values did not considered used models (generally too small)
+  </li>
+  <li>
+   Decreased weight of PCML (NLAW) rocket allowing Independent Rifleman (AT) to carry one more rocket of this type in his backpack. Since the BLUFOR counterpart has better personal protection and more durable armored vehicles, there is a nice balance.
+  </li>
+  <li>
+   Optimized load out for urban camouflage ammo bearer backpack
+  </li>
+  <li>
+   Added proper tracer color for M200 machine gun after description change
+  </li>
+  <li>
+   Allowed anti-personnel mines to be stored in vests. Previously they inherited only in backpack policy from AT mine.
+  </li>
+  <li>
+   Neophron has correct descriptions in its interior
+  </li>
+  <li>
+   Shadows of boonie hats and caps have been improved
+  </li>
+  <li>
+   Removed: Forced respawn at the start of Escape: Altis
+  </li>
+  <li>
+   Adjusted distant LODs of road cones
+  </li>
+  <li>
+   Countermeasures of tracked APCs are working yet again
+  </li>
+  <li>
+   Blackfoot crew has correct dead poses
+  </li>
+  <li>
+   Tempest crew has improved animations
+  </li>
+  <li>
+   Many small localization fixes in various languages
+  </li>
+  <li>
+   Adjusted icon for item holders to be more generic
+  </li>
+  <li>
+   Purge of obsolete cfgPatches entries
+  </li>
+  <li>
+   The GUARD animation set was removed from the pool of possible sets (
+   <a href="http://feedback.arma3.com/view.php?id=17085" target="_blank">
+    http://feedback.arma3.com/view.php?id=17085
+   </a>
+   )
+  </li>
+  <li>
+   Advanced hint argument preprocessor (
+   <em>
+    BIS_fnc_advHintArg
+   </em>
+   ) - optimizations, info about undefined key is now logged via
+   <em>
+    BIS_fnc_log
+   </em>
+   instead of
+   <em>
+    BIS_fnc_error
+   </em>
+  </li>
+  <li>
+   Attempt at a creative solution to this minor, yet quite interesting issue: Ghosthawk minigun is able to damage the heli carrying it
+  </li>
+  <li>
+   Tweaked: Kamysh destruction textures
+  </li>
+  <li>
+   Gunner optics view disabled when turned out for AAA
+  </li>
+  <li>
+   Revised: indirectHit parameter amongst several calibers up to 40mm, NLAW and RPG to match actual infantry resistance levels against that damage. Indirect damage is generally lesser, but has greater range.
+  </li>
+  <li>
+   Scaled down Titan AP indirect hit damage to better match infantry protection levels. Damage is lesser, but previous changes increased range substantially.
+  </li>
+  <li>
+   Tweaked: Ballistics of 105mm rounds and increased splash damage radius of 105mm HEAT-MP rounds
+  </li>
+  <li>
+   Refresh support for advanced hint system. Calling of an advanced hint which is already shown just refreshes it instead of closing and opening it.
+  </li>
+  <li>
+   Variable
+   <em>
+    BIS_fnc_advHint_state
+   </em>
+   (missionNameSpace) contains info about the currently displayed advanced hint
+  </li>
+  <li>
+   Decreased triggerTime of Minigun ammo. Also removed explosive effects from 7.62mm Minigun ammo that were inevitably inherited from SubmunitionBase class of ammo (AH-9 minigun should behave well yet again)
+  </li>
+  <li>
+   Modified helicopter pilot head limits
+  </li>
+  <li>
+   Made floating structures indestructible as they were supposed to be
+  </li>
+  <li>
+   Improved destructive capability of under-barrel and GMG grenade projectiles against vehicles
+  </li>
+  <li>
+   Helicopter damage handling improvements:
+   <ul>
+    <li>
+     Reasonable protection from small arms
+    </li>
+    <li>
+     Added: Fuel hitpoints to helicopters
+    </li>
+    <li>
+     Engines better (reasonably) protected from small arms
+    </li>
+    <li>
+     Fixed: Gunship turret gun animations and optics locations
+    </li>
+   </ul>
+  </li>
+ </ul>
+ <h2>
+  Potential campaign spoilers:
+ </h2>
+ <ul>
+  <li>
+   Game Over: Deleted duplicated scientists in the Dome
+  </li>
+  <li>
+   Game Over: Repositioning of some aerial vehicles for better in-game effect
+  </li>
+  <li>
+   Moral Fiber: Instant death if player moves more than ~300m from target tank (
+   <a href="http://feedback.arma3.com/view.php?id=18317" target="_blank">
+    http://feedback.arma3.com/view.php?id=18317
+   </a>
+   )
+  </li>
+  <li>
+   Hubs
+   <ul>
+    <li>
+     Many tweaks and improvements to the campaign hub mechanics (will be detailed in a future OPREP)
+    </li>
+    <li>
+     Added: Full item / gear persistence
+    </li>
+    <li>
+     Backpacks removed from the briefing pool
+    </li>
+    <li>
+     Zone restriction extended to cover all situations when player is leaving hubs
+    </li>
+    <li>
+     Skirmish trigger removed; it is now handled by zone restriction
+    </li>
+    <li>
+     Ambient and POI conversations are now enabled
+    </li>
+    <li>
+     Starting pool for Win adjusted. Overall counts were lowered.
+    </li>
+    <li>
+     Correct armory animation is now set after player is redressed
+    </li>
+    <li>
+     Smart detection of magazines to be added for a weapon was implemented
+    </li>
+    <li>
+     The required list is now sorted the way that first are non-magazine and non-weapon equipment, then are magazines and last are weapons
+    </li>
+    <li>
+     Fixed: Issue with given weapon without loaded magazine
+    </li>
+    <li>
+     Added: Cutscene animations without weapon and their transition animations
+    </li>
+    <li>
+     Weapon is auto-forced to player only for "Welcome on Hub" cutscenes
+    </li>
+    <li>
+     Functions of easy detection of player being close or at armory added
+    </li>
+    <li>
+     Detection of player at or close to armory improved
+    </li>
+    <li>
+     If Rearm is not necessary an optional task is not given to player anymore. Instead player gets a notification about the rearm possibility.
+    </li>
+    <li>
+     A hint with the list of required gear is always shown at the armory
+    </li>
+    <li>
+     Auto-adding of required gear now happens only for the first time the player visits the armory
+    </li>
+    <li>
+     Added: Possibility to return all required gear, not only the required gear that is missing
+    </li>
+    <li>
+     Campaign CfgHints included into every campaign mission
+    </li>
+    <li>
+     Time limit increased to 15 minutes, player gets warning at 15 and 3 minutes
+    </li>
+    <li>
+     If the player won't get to assemble point in the 15 minutes:
+    </li>
+    <li>
+     Task fails
+    </li>
+    <li>
+     Player gets the recommended gear
+    </li>
+    <li>
+     Mission is auto-started
+    </li>
+    <li>
+     Hub composition updated; boxes for persistent gear renamed, repositioned and added
+    </li>
+    <li>
+     Gear on units with "adjustArmory = 0" is shown in the armory composition
+    </li>
+    <li>
+     Containers and goggles removed from mission briefing pools
+    </li>
+    <li>
+     Tweaks in Skirmishes
+    </li>
+    <li>
+     Fixed: Ambient animations
+    </li>
+    <li>
+     Fixed: Bug with gear not saving when transiting to skirmish
+    </li>
+    <li>
+     Stance "UP" forced for all units in ambient combat
+    </li>
+    <li>
+     Forced change of player's loadout after Bommos debriefing disabled. Player will retain his gear.
+    </li>
+    <li>
+     Added: Several extra hub notifications
+    </li>
+    <li>
+     Added: Hub / armory sounds
+    </li>
+    <li>
+     Added: Hub notification for "Required Gear"
+    </li>
+    <li>
+     Timeout (3 mins) added for debriefing attendance in hubs
+    </li>
+    <li>
+     Radios and maps added to the starting pool for all 3 episodes
+    </li>
+    <li>
+     "map" and "radio" added to player's required gear list
+    </li>
+    <li>
+     Swapping of backpacks at hubs is now more safe
+    </li>
+    <li>
+     Required radio and map are now auto-equipped when obtained at an armory
+    </li>
+    <li>
+     Action "Take Recommended Gear" is now added to the Armorer after the required gear is obtained
+    </li>
+    <li>
+     Starting pool definition improved to better translate from pre-1.18 savegames to the 1.18 update
+    </li>
+    <li>
+     Rangefinder definition added to
+     <em>
+      BIS_fnc_camp_getEquipType
+     </em>
+    </li>
+    <li>
+     Added function for detection of empty variants of the special backpacks
+    </li>
+   </ul>
+  </li>
+  <li>
+   Fixed: Credits at the end of campaign episodes
+  </li>
+ </ul>
+ <h2 class="box_title">
+  ZEUS:
+ </h2>
+ <ul>
+  <li>
+   Added: "Scenario Name" module which allows Zeus to set the name of the current scenario. It's shown to every player who joins or respawns.
+  </li>
+  <li>
+   Added: Skill can now be set also in group attributes. The adjusted value is applied to all group members.
+  </li>
+  <li>
+   Added: Ability to set the Game Master module’s "Default addons" attribute to "All", which will automatically add every addon in the game, including community ones
+  </li>
+  <li>
+   Added: Speed mode can now be set in the group and waypoint attributes windows
+  </li>
+  <li>
+   Added: New attribute for Custom Objective allowing Zeus to disable the objective destination. Useful for more abstract tasks, e.g., "Remain stealthy".
+  </li>
+  <li>
+   Added: New markers are now created with the color of the previously set marker
+  </li>
+  <li>
+   Added: Custom channels for each side in a ZGM scenario. E.g. BLUFOR can now communicate with Zeus without other sides hearing it.
+  </li>
+  <li>
+   Added: Icon for HQ module
+  </li>
+  <li>
+   Added: List of recent entities in the CREATE bar. Stores up to 20 objects, groups, modules or markers which Zeus placed.
+  </li>
+  <li>
+   Added: Groups can now be marked as respawn position. Players will respawn on the position of its leader.
+  </li>
+  <li>
+   Added: It's now possible to change a MOVE waypoint to a different type in its attributes. Available are GET OUT, UNLOAD, TRANSPORT UNLOAD, LAND and FIRE MISSION.
+  </li>
+  <li>
+   Added: HQ entity is now created automatically when no speaker is given
+  </li>
+  <li>
+   Added: Objectives and briefing entries can now be added to individual groups or players, not only sides
+  </li>
+  <li>
+   Added: Better label for group respawn attribute
+  </li>
+  <li>
+   Added: "Wait until" waypoint attribute, allowing Zeus to set when a waypoint will be completed in order to synchronize the movement of multiple squads
+  </li>
+  <li>
+   Fixed: Objective modules were registered as respawn positions (
+   <a href="http://feedback.arma3.com/view.php?id=18312" target="_blank">
+    http://feedback.arma3.com/view.php?id=18312
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: 'respawnOnStart' attribute in description.ext was ignored (
+   <a href="http://feedback.arma3.com/view.php?id=14585" target="_blank">
+    http://feedback.arma3.com/view.php?id=14585
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Autonomous vehicles are now respawned with virtual crew inside
+  </li>
+  <li>
+   Fixed: Players were removed from Zeus' list after they died in ZSC scenarios
+  </li>
+  <li>
+   Fixed: Zeus in ZGM scenario with God mode enabled still had challenges
+  </li>
+  <li>
+   Fixed: Incorrect players count in MP header in ZGM 48+2 Master Stratis
+  </li>
+  <li>
+   Fixed: When Zeus played some music, other Zeus players couldn't hear it
+  </li>
+  <li>
+   Fixed: Deleting an object to which "Move", "Neutralize" or "Protect" objective is attached resulted in the objective being moved to the bottom left map corner
+  </li>
+  <li>
+   Fixed: "Neutralize" and "Protect" objectives no longer require objects to be completely destroyed, disabling them (e.g., shooting vehicle tires) or killing their crew will complete them as well
+  </li>
+  <li>
+   Fixed: When one Zeus took control over a unit and another Zeus did the same with the unit as well, the first Zeus lost the ability to control any further units. Now, the seconds Zeus won't be able to take over already controlled units.
+  </li>
+  <li>
+   Fixed: Editing the Intel item deleted previously saved text
+  </li>
+  <li>
+   Fixed: Weather module didn't show a fog preview in singleplayer
+  </li>
+  <li>
+   Fixed: Hiding and showing the Zeus interface ('Backspace' by default) created a non-interactive area where a notification is shown, preventing Zeus from selecting or editing units there
+  </li>
+  <li>
+   Fixed: Entity icons were hidden when Zeus returned to the interface after leaving it with hidden menus (by 'Backspace')
+  </li>
+  <li>
+   Fixed: Vehicles can no longer be configured as respawns for sides without any players present in the mission
+  </li>
+  <li>
+   Fixed: Vehicles were unintentionally repaired when editing attributes (
+   <a href="http://feedback.arma3.com/view.php?id=18423" target="_blank">
+    http://feedback.arma3.com/view.php?id=18423
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: "Play Radio Message" module didn't work
+  </li>
+  <li>
+   Fixed: HQ module didn't initialize properly when created on-the-fly
+  </li>
+  <li>
+   Secret Documents are now properly marked as being made by Bohemia Interactive
+  </li>
+ </ul>
+ <h2>
+  ENGINE
+ </h2>
+ <ul>
+  <li>
+   Added: New animation sources for car throttle and brake
+  </li>
+  <li>
+   Added: World parameter for sky / fog color influence (skyColorInfluencesFogColor - default true)
+  </li>
+  <li>
+   Added: Overloading for
+   <a href="https://community.bistudio.com/wiki/hideObjectGlobal" target="_blank">
+    hideObjectGlobal
+   </a>
+   (
+   <object>
+    hideObjectGlobal )
+   </object>
+  </li>
+  <li>
+   Added: Squad icons to Zeus
+  </li>
+  <li>
+   Added: Support for native Linux extensions via the
+   <a href="https://community.bistudio.com/wiki/callExtension" target="_blank">
+    callExtension
+   </a>
+   command
+  </li>
+  <li>
+   Added: New scripting command
+   <a href="https://community.bistudio.com/wiki/moveInAny" target="_blank">
+    moveInAny
+   </a>
+  </li>
+  <li>
+   Added: List of recently used / created items to Zeus
+  </li>
+  <li>
+   Added: New scripting command
+   <a href="https://community.bistudio.com/wiki/squadParams" target="_blank">
+    squadParams
+   </a>
+  </li>
+  <li>
+   Fixed: CTD when assigning NULL unit to Zeus
+  </li>
+  <li>
+   Fixed: Removed possibility to add map object as editable in Zeus
+  </li>
+  <li>
+   Fixed: Pasting group with disabled units in it (Zeus)
+  </li>
+  <li>
+   Fixed: Inability to open interrupt dialog when no save folder is there (unsaved scenario started from editor)
+  </li>
+  <li>
+   Fixed: Creating a ground weapon holder and using the action to drop primary weapon to it caused a freeze
+  </li>
+  <li>
+   Fixed: Computation of server-side net error of muzzle infos (optimization)
+  </li>
+  <li>
+   Fixed: You can't put items directly to respective slots from a non-initialized container on a dead body
+  </li>
+  <li>
+   Fixed: Picking up an unequipable uniform broke the gear UI
+  </li>
+  <li>
+   Fixed: Possible cause of CTD on Dedicated Server
+  </li>
+  <li>
+   Fixed: Placing units over each other in the 2D map (Zeus)
+  </li>
+  <li>
+   Fixed: Empty action on dead body with only a handgun
+  </li>
+  <li>
+   Fixed: Possible crash in MP games
+  </li>
+  <li>
+   Fixed: Possible CTD while adding experience to AI (global situation knowledge)
+  </li>
+  <li>
+   Fixed: Crash related to
+   <a href="https://community.bistudio.com/wiki/currentZeroing" target="_blank">
+    currentZeroing
+   </a>
+  </li>
+  <li>
+   Fixed: Wrong zeroing returned for soldiers
+  </li>
+  <li>
+   Fixed: Needless searching for commander units in cargo space
+  </li>
+  <li>
+   Fixed: Firing from the artillery computer while remote controlling a gunner unit
+  </li>
+  <li>
+   Fixed: Drawing of icons on UAVs controlled by players
+  </li>
+  <li>
+   Fixed: Zeus composition placement
+  </li>
+  <li>
+   Fixed: Bool mismatch when enabling breathing sound
+  </li>
+  <li>
+   Fixed: Never ending handler for damage when helo crashes into water
+  </li>
+  <li>
+   Fixed: Broken weapon sway when running
+  </li>
+  <li>
+   Fixed: Possible CTD
+  </li>
+  <li>
+   Fixed: Sound: Changing focus breaks volume levels
+  </li>
+  <li>
+   Switched priority of checks in paste command (Zeus)
+  </li>
+  <li>
+   Ailerons, rudders, elevators and flaps on a plane controllable normally even with engine is off. No resetting of their position after turning the engine on.
+  </li>
+  <li>
+   Sound: Removed environment sounds influence by rain density; rain volume was affected by rain density
+  </li>
+  <li>
+   Support for hidden selection materials on soldier proxies (eg. headgear)
+  </li>
+  <li>
+   Optimized sounds in -nosound mode and on Dedicated Servers
+  </li>
+  <li>
+   Sound: Added: APO fadeout effect
+  </li>
+  <li>
+   Changed behavior of throttle animation source
+  </li>
+  <li>
+   Possible crash fix when silent join is used
+  </li>
+  <li>
+   Changed Zeus group / sync controls
+  </li>
+  <li>
+   Stars don't change size when zoomed in
+  </li>
+  <li>
+   Animation state "static" parameter for ignoring step when computing slowdown
+  </li>
+  <li>
+   PhysX entities don't collide with invisible objects
+  </li>
+  <li>
+   <a href="https://community.bistudio.com/wiki/lbSort" target="_blank">
+    lbSort
+   </a>
+   accepts another parameter to specify ascending / descending order
+  </li>
+  <li>
+   Update: Make animation soundOverride search case-insensitive
+  </li>
+  <li>
+   No longer updating attached and invisible EPE objects. Remove attached objects from PhysX scene.
+  </li>
+ </ul>
+</div>

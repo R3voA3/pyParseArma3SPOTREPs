@@ -1,0 +1,705 @@
+<div class="post-content">
+ <p>
+  FROM: Project Lead
+  <br>
+   TO: Arma 3 Users
+   <br>
+    UNIT: Main Branch
+    <br>
+     ACTIVITY: Game Update: 1.10 (Campaign episode "Adapt", MP optimizations, HDAO)
+     <br/>
+     SIZE: ~961 MB
+    </br>
+   </br>
+  </br>
+ </p>
+ <h1>
+  CHANGELOG
+ </h1>
+ <h2 class="box_title">
+  DATA
+ </h2>
+ <ul>
+  <li>
+   <strong>
+    Added: Campaign episode “Adapt”
+   </strong>
+   <ul>
+    <li>
+     We recommend not using active mods - or at least accept that we cannot influence their effects on the campaign.
+    </li>
+    <li>
+     Consider checking for data corruption by verifying local data in the Steam client.
+    </li>
+   </ul>
+  </li>
+  <li>
+   <strong>
+    Added: "Adapt" music
+   </strong>
+   <ul>
+    <li>
+     4 event tracks (with variants)
+    </li>
+    <li>
+     1 ambient track
+    </li>
+    <li>
+     1 background track
+    </li>
+    <li>
+     4 lead tracks (with variants)
+    </li>
+   </ul>
+  </li>
+  <li>
+   <strong>
+    Added: 2 new voices to Radio Protocol
+   </strong>
+   <ul>
+    <li>
+     1 British English
+    </li>
+    <li>
+     1 Altian English
+    </li>
+   </ul>
+  </li>
+  <li>
+   Wy-55 Hellcat cockpit visually tweaked
+  </li>
+  <li>
+   Fixed: Distant LOD of Hellcat making it transparent
+  </li>
+  <li>
+   Added: When all sides are using respawn tickets, their numbers will be automatically shown in the debriefing
+  </li>
+  <li>
+   Fixed: Missing scrollbar in "Scenarios" and other displays
+  </li>
+  <li>
+   Properties of scrollbars are handled by
+   <em>
+    CScrollBar
+   </em>
+   itself now
+  </li>
+  <li>
+   Added
+   <em>
+    blinkingPattern
+   </em>
+   and
+   <em>
+    blinkingPatternGuarantee
+   </em>
+   parameters where appropriate and restructured
+   <em>
+    MarkerLights
+   </em>
+   config
+  </li>
+  <li>
+   Emissive materials for
+   <em>
+    MarkerLights
+   </em>
+   are now animated according to the lights being on or off or blinking
+  </li>
+  <li>
+   Models: reworked position lights selections
+  </li>
+  <li>
+   HMD of Hellcat has been re-centered
+  </li>
+  <li>
+   Reworked proxies of Buzzard to be useful for user armament
+  </li>
+  <li>
+   Tweaked PhysX collision damage for tanks
+  </li>
+  <li>
+   Tracks of tanks should not get damaged up to 30 KPH collisions
+  </li>
+  <li>
+   Zeroing for Kuma commander HMG
+  </li>
+  <li>
+   Configured animation sources and animations for
+   <em>
+    MarkerLights
+   </em>
+   on
+   <em>
+    Boat_Civil_04
+   </em>
+   ,
+   <em>
+    RoadCone
+   </em>
+   and
+   <em>
+    RoadBarrier
+   </em>
+  </li>
+  <li>
+   Fine-tuned position of various group members in editor
+  </li>
+  <li>
+   Darter doesn't have FAKs anymore (
+   <a class="external-link" href="http://feedback.arma3.com/view.php?id=13089" rel="nofollow">
+    http://feedback.arma3.com/view.php?id=13089
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Using non-existent rank resulted in incorrect returned value (
+   <em>
+    BIS_fnc_rankParams
+   </em>
+   )
+  </li>
+  <li>
+   Added: When commander rank is missing, it's not displayed (
+   <em>
+    BIS_fnc_ORBATGetGroupParams
+   </em>
+   )
+  </li>
+  <li>
+   Fixed: Scripting error when no respawn position was found
+  </li>
+  <li>
+   Fixed: Script header of
+   <em>
+    BIS_fnc_MP
+   </em>
+   contained misleading description
+  </li>
+  <li>
+   <em>
+    BIS_fnc_playVideo
+   </em>
+   : default variable for skipping videos was incorrectly set, resulting in instant termination under certain circumstances
+  </li>
+  <li>
+   Added: In module config, '
+   <em>
+    isGlobal = 2
+   </em>
+   ' now has the same effect as '
+   <em>
+    isPersistent = 1
+   </em>
+   '. The
+   <em>
+    isPersistent
+   </em>
+   attribute remains supported, but is considered deprecated. See
+   <a class="external-link" href="http://community.bistudio.com/wiki/Arma_3_Modules" rel="nofollow">
+    http://community.bistudio.com/wiki/Arma_3_Modules
+   </a>
+   for more info.
+  </li>
+  <li>
+   New scripted geometry function added
+  </li>
+  <li>
+   Redistributed proper helmets among Grenadiers
+  </li>
+  <li>
+   Small fix of OPFOR Leader's helmet inheritance class
+  </li>
+  <li>
+   Miller now has some basic equipment when placed in the editor
+  </li>
+  <li>
+   New character heads received some polishing
+  </li>
+  <li>
+   Changed: Simulation Manager now ignores helper objects
+  </li>
+  <li>
+   Added: Poster Module
+   <ul>
+    <li>
+     Removed graffiti, leaflets and posters from editor
+    </li>
+    <li>
+     Added: Variable (
+     <em>
+      postersArray
+     </em>
+     ) with all posters in namespace of a building added
+    </li>
+   </ul>
+  </li>
+  <li>
+   Fixed: Roadways of chapels and the airport tower
+  </li>
+  <li>
+   Fixed: Missing empty parameter for battlefield sounds (
+   <a class="external-link" href="http://feedback.arma3.com/view.php?id=16512" rel="nofollow">
+    http://feedback.arma3.com/view.php?id=16512
+   </a>
+   )
+  </li>
+  <li>
+   Added non-homogenous material for radar dome
+  </li>
+  <li>
+   Configured
+   <em>
+    posterSize
+   </em>
+   , icons and
+   <em>
+    mapSizes
+   </em>
+   for graffiti
+  </li>
+  <li>
+   Fixed: Non-functional binoculars
+  </li>
+  <li>
+   Added: Black background when player is off the map
+  </li>
+  <li>
+   Increased weight of machine guns while maintaining their weight differences
+  </li>
+  <li>
+   Fixed: Localization for yellow flare and for 3rnd flare magazines
+  </li>
+  <li>
+   Fixed: Zubr .45 had stretched / misplaced textures on the cartridges (
+   <a class="external-link" href="http://feedback.arma3.com/view.php?id=16491" rel="nofollow">
+    http://feedback.arma3.com/view.php?id=16491
+   </a>
+   )
+  </li>
+  <li>
+   Increased number of suppressors and flashlights in Support ammo boxes and Air Supply boxes
+  </li>
+  <li>
+   The material of craters has been tweaked
+  </li>
+  <li>
+   Added modest camera shaking from nearby hits for infantry weapons
+  </li>
+  <li>
+   SMGs have improved zeroing for iron sights
+  </li>
+  <li>
+   Tweak: Higher AI engagement ranges. AI snipers with GM6 should attack from greater distances.
+  </li>
+  <li>
+   Fixed: Hellcat hitpoints
+  </li>
+  <li>
+   Fixed: An issue with animations getting stuck when using a medikit with a handgun
+  </li>
+  <li>
+   Fixed: An issue with standing up when trying to strafe in fast prone
+  </li>
+  <li>
+   Added: New helmet camouflages
+  </li>
+  <li>
+   Adjusted: Carbine rifles distribution
+  </li>
+  <li>
+   Added:
+   <em>
+    BIS_fnc_bleedTickets
+   </em>
+   - system which will decrease amount of side respawn tickets based on sector dominance
+  </li>
+  <li>
+   Added:
+   <em>
+    BIS_fnc_counter
+   </em>
+   now supports multiple name spaces
+  </li>
+  <li>
+   Added: Executing
+   <em>
+    call bis_fnc_respawnTickets
+   </em>
+   will now return an array containing side with the lowest number of tickets and their value
+  </li>
+  <li>
+   Fixed: Glasses were not recognized correctly (
+   <a class="external-link" href="http://feedback.arma3.com/view.php?id=16574" rel="nofollow">
+    http://feedback.arma3.com/view.php?id=16574
+   </a>
+   )
+  </li>
+  <li>
+   Added:
+   <em>
+    BIS_fnc_sortAlphabetically
+   </em>
+   - a function to sort an array of strings alphabetically
+  </li>
+  <li>
+   Fixed:
+   <em>
+    BIS_fnc_dirTo
+   </em>
+   returns negative value in some situations (
+   <a class="external-link" href="http://feedback.arma3.com/view.php?id=16556" rel="nofollow">
+    http://feedback.arma3.com/view.php?id=16556
+   </a>
+   )
+  </li>
+  <li>
+   Added: Corresponding AA and AT static launcher backpacks for every respective faction (
+   <a class="external-link" href="http://feedback.arma3.com/view.php?id=16520" rel="nofollow">
+    http://feedback.arma3.com/view.php?id=16520
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: A typo in Industry Standard preset and cleared some redundant entries
+  </li>
+  <li>
+   Fixed: AI disembarking from WY-55 Hellcat sometimes breaks main rotor
+  </li>
+  <li>
+   Radio Protocol: preview samples used in profile editor now include all speakers for each voice type
+  </li>
+  <li>
+   Fixed: Missing classes of the Altian Radio Protocol
+  </li>
+  <li>
+   Roadways of small chapels have been tweaked
+  </li>
+  <li>
+   Added: Empty ORBAT sizes
+  </li>
+  <li>
+   Fixed: KIA cargo pose of Hellcat crew
+  </li>
+  <li>
+   Fixed: Some situations in which credits would not execute
+  </li>
+  <li>
+   Fixed: An error that appeared when changing mission parameters during hosting a multiplayer game
+  </li>
+  <li>
+   Added:
+   <em>
+    colorFocused
+   </em>
+   and
+   <em>
+    colorBackgroundFocused
+   </em>
+   parameters for setting colors of focused
+   <em>
+    RscShortcutButton
+   </em>
+  </li>
+  <li>
+   Fixed: Support calls should now be globally limited instead of per player in Defend Kamino MP mission
+  </li>
+  <li>
+   Fixed: A flying H-barrier in the AA outpost has been grounded
+  </li>
+  <li>
+   Fixed: Bugged left sleeve of FIA soldier model
+  </li>
+  <li>
+   Added:
+   <em>
+    BIS_fnc_fixDate
+   </em>
+   - checks and ev. fixes the date and time, when it goes out of the boundaries
+  </li>
+  <li>
+   Added:
+   <em>
+    BIS_fnc_isLeapYear
+   </em>
+   - returns true if given year is leap year
+  </li>
+  <li>
+   Added:
+   <em>
+    BIS_fnc_monthDays
+   </em>
+   - returns number of days in given month
+  </li>
+  <li>
+   Fixed: An issue where NVGs could remain on during cutscenes
+  </li>
+  <li>
+   Fixed: CSAT Grenadier now has correct helmet
+  </li>
+  <li>
+   Tweaked: Effects of suppressors on bullets
+  </li>
+  <li>
+   Tweaked: Underwater ammo speed and damage
+  </li>
+  <li>
+   Function
+   <em>
+    BIS_fnc_setToPairs
+   </em>
+   now has a correct example
+  </li>
+  <li>
+   Added new functions to control the stacking of disabled save games
+   <ul>
+    <li>
+     Modified
+     <em>
+      BIS_fnc_cinemaBorder
+     </em>
+     and
+     <em>
+      BIS_fnc_quotations
+     </em>
+     to support stacking of disabled save games
+    </li>
+    <li>
+     Modified all “Survive” missions to support new stacked handling of disabled saving
+    </li>
+   </ul>
+  </li>
+  <li>
+   Continued work upon soldier protection:
+   <ul>
+    <li>
+     Slightly decreased collateral resistance of OPFOR soldiers’ extremities
+    </li>
+    <li>
+     Decreased OPFOR advanced uniform protectiveness of extremities for it was too powerful. Still, it protects comparatively better than other uniforms.
+    </li>
+    <li>
+     Set up specific protection values for BLUFOR Helipilot and Pilot coveralls. It will not save you much more than the standard uniform, but there is a certain difference.
+    </li>
+    <li>
+     Set up proper protection values for OPFOR Officer uniform
+    </li>
+    <li>
+     Range-master belt, bandoleer and chest-rig armor values set to zero (serving as just equipment holders)
+    </li>
+    <li>
+     Tweaked helmet protection levels
+    </li>
+    <li>
+     Minor tweaks in ammunition, precise adjusting of
+     <em>
+      minimalHitRange
+     </em>
+     values, damage scaling rounds up, pistol ammunition damage adjustments and grenade tweaks
+    </li>
+    <li>
+     Adjusted explosives to maintain the protection of grenadier vests against explosives and grenades
+    </li>
+    <li>
+     Minor changes in soldier equipment due to changes in headgear. Purpose of classes is not affected in any meaningful manner.
+    </li>
+    <li>
+     Impacts of bullets cause soldiers to ragdoll a bit (flinch) even if they are fully absorbed by armor
+    </li>
+    <li>
+     Decreased overall helmet protection values to increase significance of head-shots and general lethality of damage to the head
+    </li>
+    <li>
+     Increased density of soldiers’ bodies to improve headshot lethality
+    </li>
+    <li>
+     Because of the previous change it was also necessary to halve the explosion shielding of head hitpoint in general to maintain helmet protection levels for collateral indirect damage and explosions
+    </li>
+    <li>
+     Fixed HE grenade from underbarrel GL weapon to match his RGO Frag grenade counterpart
+    </li>
+    <li>
+     Elevated OPFOR collateral protection for hands and legs for the previous values were not sufficient to create meaningful difference between OPFOR and soldiers of other factions
+    </li>
+   </ul>
+  </li>
+  <li>
+   Mk20 rifle now has correct zeroing steps of iron sights
+  </li>
+  <li>
+   Fixed: Possible issues with cinema border function being called badly
+  </li>
+  <li>
+   Engineer should be no longer stuck after repairing a vehicle
+  </li>
+ </ul>
+ <h2 class="box_title">
+  ENGINE
+ </h2>
+ <ul>
+  <li>
+   <strong>
+    Added: Initial implementation of HDAO method for ambient occlusion computation
+   </strong>
+   <ul>
+    <li>
+     Kudos to AMD engineer Layla Mah!
+    </li>
+    <li>
+     It's available only for DX11 GPUs (uses compute shaders)
+    </li>
+    <li>
+     Can be found in video options in AO settings
+    </li>
+   </ul>
+  </li>
+  <li>
+   <strong>
+    Several multiplayer optimizations
+   </strong>
+   <ul>
+    <li>
+     Optimized dynamic errors for server
+    </li>
+    <li>
+     Better load spread across several CPU cores
+    </li>
+   </ul>
+  </li>
+  <li>
+   <strong>
+    Various PhysX-related crash opportunities fixed
+   </strong>
+  </li>
+  <li>
+   Various small fix merges from core RV engine
+  </li>
+  <li>
+   Fixed: Possible crash in Dedicated Servers
+  </li>
+  <li>
+   Removed:
+   <em>
+    setAIS
+   </em>
+   scripting function
+  </li>
+  <li>
+   Optimization of bleeding splatters creation
+  </li>
+  <li>
+   Optimization of footstep marks creation
+  </li>
+  <li>
+   Fixed: AI's selection of rifle and handgun
+  </li>
+  <li>
+   <a class="external-link" href="https://community.bistudio.com/wiki/switchCamera" rel="nofollow">
+    switchCamera
+   </a>
+   command now works for external / internal camera when gunner camera is not allowed
+  </li>
+  <li>
+   Merged and used some optimization of collision detection from DayZ
+  </li>
+  <li>
+   Fixed: Crash caused by wrong vertex data in specific objects
+  </li>
+  <li>
+   Added several safety checks to prevent unnecessary AI calculations (optimization)
+  </li>
+  <li>
+   Stolen (different side) vehicle is unassigned from group - to prevent AI team members from destroying it
+  </li>
+  <li>
+   Fixed: 3rd person mortar view
+  </li>
+  <li>
+   Fixed: Artillery not shooting at given position
+  </li>
+  <li>
+   Fix for low skill AI turret gunners shooting at impossible-to-hit targets
+  </li>
+  <li>
+   Tripwire mines now work properly when put in buildings
+  </li>
+  <li>
+   Swimming soldiers stop levitating / swimming on land
+  </li>
+  <li>
+   Fixed: Creation of duplicate post process effect handles after saved game is loaded
+  </li>
+  <li>
+   No longer creating target lists for empty groups (small AI optimization)
+  </li>
+  <li>
+   Fixed: CTD caused by broken skeletons - added index check
+  </li>
+  <li>
+   Fixed: An inventory issue with backpacks in crates
+  </li>
+  <li>
+   Fixed: Spawned medikits and FAKs sometimes have zero weight
+  </li>
+  <li>
+   Simulation of dead bodies has been optimized
+  </li>
+  <li>
+   Adjusted: Dynamic Calculated Error for AI, working on turrets, reacting to loosing sight of target
+  </li>
+  <li>
+   Slight rendering optimization in stencil buffer usage
+  </li>
+  <li>
+   Fixed: Disappearing tags when publishing a mission to Steam Workshop
+  </li>
+  <li>
+   Fixed: Shadow of a proxy object when the proxy itself or the main object are not visible
+  </li>
+  <li>
+   Fixed: AI unit is no longer repeatedly swapping gunner / observer position
+  </li>
+  <li>
+   Fixed: The
+   <a class="external-link" href="https://community.bistudio.com/wiki/addItem" rel="nofollow">
+    addItem
+   </a>
+   command didn't register that a unit has magazines (
+   <a class="external-link" href="http://feedback.arma3.com/view.php?id=15885#c62694" rel="nofollow">
+    http://feedback.arma3.com/view.php?id=15885#c62694
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Houses no longer have inventory
+  </li>
+  <li>
+   Fixed: An issue with inability to play a mission that was subscribed from in-game overlay in offline mode right after the subscription
+  </li>
+  <li>
+   Fixed: An issue where AI switched to sidearm but seemed to still be holding their primary weapon
+  </li>
+  <li>
+   Fixed: Connecting headless client to password-protected server
+  </li>
+  <li>
+   Fixed: AI avoiding dead bodies
+  </li>
+  <li>
+   Tweaked: Low-skilled AI soldiers and gunners to be minimally effective
+  </li>
+  <li>
+   Fixed: Low-skilled AI tank gunner couldn't engage targets properly
+  </li>
+  <li>
+   Hotfixed: SubSkeleton log spam
+  </li>
+  <li>
+   Added: Server option
+   <em>
+    enablePlayerDiag
+   </em>
+   for printing diagnostics about players and pending messages
+  </li>
+ </ul>
+</div>

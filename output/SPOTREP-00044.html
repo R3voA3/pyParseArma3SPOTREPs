@@ -1,0 +1,136 @@
+<div class="post-content">
+ <p>
+  FROM: Project Lead
+  <br>
+   TO: Arma 3 Users
+   <br>
+    UNIT: Main Branch
+    <br>
+     ACTIVITY: Hotfix: 1.46 (Display Driver Crashes, Server Crashes, BattlEye White-Listing)
+     <br/>
+     SIZE: ~17 MB / ~6 MB
+    </br>
+   </br>
+  </br>
+ </p>
+ <h1>
+  NOTES
+ </h1>
+ <ul>
+  <li>
+   Consider using the Steam client option to verify the integrity of the local game cache to avoid corrupted data after downloading this update.
+  </li>
+  <li>
+   Consider defragmenting your HDD after downloading large updates.
+  </li>
+  <li>
+   A
+   <em>
+    Legacy Build
+   </em>
+   Steam branch is available for advanced users. It contains the previous significant main branch version (1.44). It can be used to compare specific changes between major releases. The access code for this branch is:
+   <em>
+    Arma3Legacy144
+   </em>
+  </li>
+  <li>
+   You can find the servers in the Steam library (switch the filter to "Tools") - "Arma 3 Server" (based on your OS, it will download the Windows or Linux version).
+   <ul>
+    <li>
+     Administrators can also use the command-line
+     <a href="https://developer.valvesoftware.com/wiki/SteamCMD" target="_blank">
+      SteamCMD
+     </a>
+     utility. The app ID is to be 233780.
+    </li>
+    <li>
+     NVIDIA GameWorks™ Technology provided under license from NVIDIA Corporation. Copyright © 2002-2015 NVIDIA Corporation. All rights reserved.
+    </li>
+   </ul>
+  </li>
+ </ul>
+ <h1>
+  CHANGELOG
+ </h1>
+ <h3>
+  DATA:
+ </h3>
+ <ul>
+  <li>
+   Fixed: Player can no longer get stuck in a restrained animation when standing up from an unarmed sitting pose (
+   <a href="http://feedback.arma3.com/view.php?id=24345" target="_blank">
+    http://feedback.arma3.com/view.php?id=24345
+   </a>
+   )
+  </li>
+ </ul>
+ <h3>
+  ENGINE:
+ </h3>
+ <ul>
+  <li>
+   Changed:
+   <a href="http://www.battleye.com/" target="_blank">
+    BattlEye
+   </a>
+   anti-cheat blocking of not white-listed processes temporarily disabled
+  </li>
+  <li>
+   Fixed: Incorrect setting of weapon proxy drawing LOD (causing
+   <em>
+    DXGI_ERROR_DEVICE_REMOVED
+   </em>
+   crashes of primarily NVIDIA display drivers)
+  </li>
+  <li>
+   Fixed: Incompatibility of the terrain vertex shader and its depth priming pixel shader
+  </li>
+  <li>
+   Hotfixed: Potential crash mostly observed while playing the
+   <a href="https://twitter.com/EpochMod" target="_blank">
+    Epoch
+   </a>
+   mod
+  </li>
+  <li>
+   Fixed: Potential server crash
+  </li>
+ </ul>
+ <h3>
+  SERVER:
+ </h3>
+ <ul>
+  <li>
+   Updated: Stand-alone Windows Dedicated Server (hotfix 1.46)
+  </li>
+  <li>
+   Updated: Stand-alone Linux Dedicated Server (hotfix 1.46)
+   <ul>
+    <li>
+     Known issue: Steam client modifies the
+     <em>
+      steam_appid.txt
+     </em>
+     file incorrectly. In case of issues, verify its content is:
+     <strong>
+      107410
+     </strong>
+    </li>
+    <li>
+     Known issue: Sometimes the add-ons are loaded from the wrong installation (e.g. main game)
+    </li>
+    <li>
+     Try adding
+     <em>
+      -mod=curator;kart;heli;mark;dlcbundle
+     </em>
+     to your
+     <em>
+      arma3server.exe
+     </em>
+     shortcut
+    </li>
+   </ul>
+  </li>
+ </ul>
+</div>

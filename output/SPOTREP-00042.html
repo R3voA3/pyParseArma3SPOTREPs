@@ -1,0 +1,1465 @@
+<div class="post-content">
+ <p>
+  FROM: Project Lead
+  <br>
+   TO: Arma 3 Users
+   <br>
+    UNIT: Main Branch
+    <br>
+     ACTIVITY: Game Update: 1.44 (BattlEye Service, Open-source PhysX, Netcode Optimizations, Launcher Improvements)
+     <br/>
+     SIZE: ~1.2 GB / ~623 MB
+    </br>
+   </br>
+  </br>
+ </p>
+ <h1>
+  NOTES
+ </h1>
+ <ul>
+  <li>
+   Consider using the Steam client option to verify the integrity of the local game cache to avoid corrupted data after downloading this update.
+  </li>
+  <li>
+   Consider defragmenting your HDD after downloading large updates.
+  </li>
+  <li>
+   A
+   <em>
+    Legacy Build
+   </em>
+   Steam branch is available for advanced users. It contains the previous significant main branch version (1.42). It can be used to compare specific changes between major releases. The access code for this branch is:
+   <em>
+    Arma3Legacy142
+   </em>
+  </li>
+  <li>
+   You can find the servers in the Steam library (switch the filter to "Tools") - "Arma 3 Server" (based on your OS, it will download the Windows or Linux version).
+   <ul>
+    <li>
+     Administrators can also use the command-line
+     <a href="https://developer.valvesoftware.com/wiki/SteamCMD" target="_blank">
+      SteamCMD
+     </a>
+     utility. The app ID is to be 233780.
+    </li>
+    <li>
+     NVIDIA GameWorks™ Technology provided under license from NVIDIA Corporation. Copyright © 2002-2015 NVIDIA Corporation. All rights reserved.
+    </li>
+   </ul>
+  </li>
+ </ul>
+ <h1>
+  CHANGELOG
+ </h1>
+ <h3>
+  DATA:
+ </h3>
+ <ul>
+  <li>
+   Added: Healing other characters now has its own animation
+  </li>
+  <li>
+   Added : Another height to Weapon Deployment
+  </li>
+  <li>
+   Added: Amphibious vehicles have a proper gearbox for water movement
+  </li>
+  <li>
+   Added: DLC Content Browser can now be closed using the same shortcut as for opening (LShift + P)
+  </li>
+  <li>
+   Added : Stomper RCWS and variants are available in Virtual Garage
+  </li>
+  <li>
+   Added: "Default" faction
+  </li>
+  <li>
+   Added: Possibility to override both mission config and respawn template respawn delay by using:
+   <em>
+    missionNamespace setVariable ["BIS_customRespawnDelay", 60]
+   </em>
+  </li>
+  <li>
+   Added: Respawn delay can now be dynamically overridden in scenarios
+  </li>
+  <li>
+   Added: The profiles containing a huge variable
+   <em>
+    BIS_fnc_diagAAR_data
+   </em>
+   now trigger a performance warning which offers an option to wipe it out when the pause menu is displayed
+  </li>
+  <li>
+   Added: Camouflaged face variants from standard profile faces, not available in profile selection, seen on full ghillie snipers
+  </li>
+  <li>
+   Added: Localized indicators in Virtual Arsenal
+  </li>
+  <li>
+   Added:
+   <em>
+    buoyancy = 1
+   </em>
+   property and value for all models that use buoyancy
+  </li>
+  <li>
+   Added: Command bar icons for launchers (
+   <a href="http://feedback.arma3.com/view.php?id=23920" target="_blank">
+    http://feedback.arma3.com/view.php?id=23920
+   </a>
+   )
+  </li>
+  <li>
+   Added: New config parameters for setting the color of text on the right side of
+   <em>
+    ListBox
+   </em>
+   and
+   <em>
+    ComboBox
+   </em>
+   items
+  </li>
+  <li>
+   Fixed: VR Garage script error
+  </li>
+  <li>
+   Fixed: Cannot try a vehicle once you've clicked on a UAV in Garage
+  </li>
+  <li>
+   Fixed: FD vehicles did not have their direction / speed reset on restart
+  </li>
+  <li>
+   Fixed: Screen would sometimes fade in, in MP, before it was supposed to (Showcase FFV)
+  </li>
+  <li>
+   Fixed: Wrong class name in the
+   <em>
+    model.cfg
+   </em>
+   of M320 camo
+  </li>
+  <li>
+   Fixed: Proper names for new music tracks
+  </li>
+  <li>
+   Fixed: FPS drop in the respawn menu when too many inventory load-outs are present
+  </li>
+  <li>
+   Fixed: Dust created on the water surface when SDAR was fired underwater
+  </li>
+  <li>
+   Fixed: Muzzle flash of Panther GMG was not visible at a low framerate
+  </li>
+  <li>
+   Fixed: MBT main cannon zeroing didn't work for the highest values (see
+   <a href="http://feedback.arma3.com/view.php?id=23318" target="_blank">
+    http://feedback.arma3.com/view.php?id=23318
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: High caliber rifle ammo was able to pass through the VR Gorgon (see
+   <a href="http://feedback.arma3.com/view.php?id=23064" target="_blank">
+    http://feedback.arma3.com/view.php?id=23064
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Sound of the bounding mine trigger
+  </li>
+  <li>
+   Fixed: Silenced Rook 40 sound inside buildings
+  </li>
+  <li>
+   Fixed: Pre-loading of textures for the stance indicator
+  </li>
+  <li>
+   Fixed: VR Garage vehicle position was sometimes incorrect
+  </li>
+  <li>
+   Fixed: VR humming was missing from Arsenal
+  </li>
+  <li>
+   Fixed: Arsenal script error
+  </li>
+  <li>
+   Fixed: When changing crewed vehicle type in Garage, crew in the new vehicle was using an incorrect shader
+  </li>
+  <li>
+   Fixed: Vehicle crew in Garage sometimes left the vehicle
+  </li>
+  <li>
+   Fixed: Cargo positions in some vehicles in Garage were duplicated
+  </li>
+  <li>
+   Fixed: Displaying of usage statistics in DLC Debriefing for models whose path is missing a
+   <em>
+    .P3D
+   </em>
+   extension
+  </li>
+  <li>
+   Fixed: Start-up timer animation exploit - sit down and salute disabled
+  </li>
+  <li>
+   Fixed: Hitting ‘Enter’ to save a vehicle didn't work
+  </li>
+  <li>
+   Fixed: FIA Quad Bike has a proper woodland texture variant
+  </li>
+  <li>
+   Fixed: It was possible to make the right glass of the Offroad levitating in the air
+  </li>
+  <li>
+   Fixed: The components (animation sources) of the Offroad took long to show / hide themselves
+  </li>
+  <li>
+   Fixed: Zeus wasn't able to put bipods to ammo boxes
+  </li>
+  <li>
+   Fixed: Binoculars switch while moving forward, crouching with your weapon lowered (both rifle and sidearm)
+  </li>
+  <li>
+   Fixed: Missing muzzle flashes for the GMGs of RCWS turrets on M4 Scorcher and 2S9 Sochor
+  </li>
+  <li>
+   Fixed: “Support” markers were visible in the editor
+  </li>
+  <li>
+   Fixed: Attenuation for commander and gunner positions of the Strider / added bush collision
+  </li>
+  <li>
+   Fixed: Default coordinates were missing in
+   <em>
+    RscListNBox
+   </em>
+  </li>
+  <li>
+   Fixed: Added sound for walking - crouched - with lowered sidearm
+  </li>
+  <li>
+   Fixed:
+   <em>
+    BIS_fnc_getParamValue
+   </em>
+   didn't work when
+   <em>
+    paramsArray
+   </em>
+   was undefined
+  </li>
+  <li>
+   Fixed: Drivers of randomized Karts now have the appropriate uniform and headgear
+  </li>
+  <li>
+   Fixed: ZSU-39 Tigris commander's turret was not rotating in external view
+  </li>
+  <li>
+   Fixed: Cleared paths to non-existent and unused SFX samples
+  </li>
+  <li>
+   Fixed:
+   <em>
+    BIS_fnc_diagAARRecord
+   </em>
+   is no longer called automatically to avoid accidental
+   <a href="https://community.bistudio.com/wiki/profileNamespace" target="_blank">
+    profileNamespace
+   </a>
+   spam (scenario designers can still call it manually for debugging purposes)
+  </li>
+  <li>
+   Fixed: Commanders of the Strider no longer have the manual fire option
+  </li>
+  <li>
+   Fixed: Vermin has a magazine with red tracers at the end by default, added tracer magazines for all colors (
+   <a href="http://feedback.arma3.com/view.php?id=21399" target="_blank">
+    http://feedback.arma3.com/view.php?id=21399
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: L / BL / B / BR rifle lowered movement binocular switch (
+   <a href="http://feedback.arma3.com/view.php?id=23349" target="_blank">
+    http://feedback.arma3.com/view.php?id=23349
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Zamak first set of rear wheels didn't change into destroyed shape
+  </li>
+  <li>
+   Fixed: Cropped Singleplayer tab text in Czech translation in the DLC Content Browser
+  </li>
+  <li>
+   Fixed: Missing link to silenced interior tail for automatic shooting of Katiba
+  </li>
+  <li>
+   Fixed: Wrong samples linked for silenced shots in automatic fire mode of MX
+  </li>
+  <li>
+   Fixed: Unarmed version of PO-30 Orca didn't have countermeasures
+  </li>
+  <li>
+   Fixed: RCWS versions of Stomper / Saif now have distinguishable tracers per side
+  </li>
+  <li>
+   Fixed: AI can now correctly see through ground floor windows of shops
+  </li>
+  <li>
+   Fixed: The iron sights on the
+   <em>
+    MMG_01
+   </em>
+   (Navid) are now being hidden when an optic is attached to avoid model clipping
+  </li>
+  <li>
+   Fixed: The animation source
+   <em>
+    AddGunHolder
+   </em>
+   was not defined in the config of the Mohawk
+  </li>
+  <li>
+   Fixed: Arm-shields of the AAF heavy vest to fit with BLUFOR / OPFOR
+  </li>
+  <li>
+   Fixed: When exporting from Garage when there is no animation source to change, the export will force the default state of the animations (instead of a randomization)
+  </li>
+  <li>
+   Fixed: Static HMGs now have distinguishable tracers per side
+  </li>
+  <li>
+   Fixed: Wrong assignment of the flashlight in Showcase AAF
+  </li>
+  <li>
+   Fixed: Wheels on the Zamak that were clipping through the model
+  </li>
+  <li>
+   Fixed: Self-healing animation speeds to avoid sound desynchronization
+  </li>
+  <li>
+   Fixed: Greyhawk had a broken damage indicator in vehicle info
+  </li>
+  <li>
+   Tweaked: Weapon Deployment heights regarding new engine behavior
+  </li>
+  <li>
+   Tweaked: Many translations for Marksmen
+  </li>
+  <li>
+   Tweaked: FD12 - Medal times nerfed based on play testing
+  </li>
+  <li>
+   Tweaked: Lowered the volume of the music to not overwhelm the voice-acting (Showcase FFV)
+  </li>
+  <li>
+   Tweaked: Music for Marksmen
+  </li>
+  <li>
+   Tweaked: Stance Indicator - ‘can deploy’ and ‘rested can deploy’ separated
+  </li>
+  <li>
+   Tweaked: Fire particle effect for Fireplace and Campfire
+  </li>
+  <li>
+   Tweaked: Minor tweaks in VR courses
+  </li>
+  <li>
+   Tweaked: Smoke screen for Strider and Ifrit
+  </li>
+  <li>
+   Tweaked: Centered all Zamak models
+  </li>
+  <li>
+   Tweaked: Adjusted ambient animals density
+  </li>
+  <li>
+   Tweaked: Refactored weapon deployed actions
+  </li>
+  <li>
+   Tweaked: Defined Inverse Kinematics for warming up animations (plus tweaks and optimizations)
+  </li>
+  <li>
+   Tweaked: Improved launcher sway in all stances and also optimized the differences between walking and tactical pace in crouch with a launcher
+  </li>
+  <li>
+   Tweaked: Marksmen characters re-factored
+  </li>
+  <li>
+   Tweaked: Cleaned radio static from clicks and fade in and fade out applied
+  </li>
+  <li>
+   Tweaked: Slightly increased Zafir's inertia coefficient to better correspond with the gun's weight
+  </li>
+  <li>
+   Tweaked: Shadows of the xH-9 family of helicopters
+  </li>
+  <li>
+   Tweaked: Volume of closure samples for MX
+  </li>
+  <li>
+   Tweaked: Positions of optics on Navid
+  </li>
+  <li>
+   Tweaked: Some OPFOR Recon soldiers got LBV Harnesses instead of obsolete ELBV Harnesses
+  </li>
+  <li>
+   Tweaked: Configured
+   <em>
+    countsForScoreboard
+   </em>
+   for base classes
+  </li>
+  <li>
+   Tweaked: Sound for Check Point Clear used in Firing Drills and Time Trials
+  </li>
+  <li>
+   Tweaked: Dirt runways were not producing dust effects and now are
+  </li>
+  <li>
+   Tweaked: Configured
+   <em>
+    isLockingDisabled
+   </em>
+   to disable locking and targeting on
+   <em>
+    House_F
+   </em>
+   ,
+   <em>
+    FloatingStructure_F
+   </em>
+   and
+   <em>
+    Lamp_base_F
+   </em>
+  </li>
+  <li>
+   Tweaked: Vermin magazines tracer variants localized
+  </li>
+  <li>
+   Tweaked: Changed audibility of footsteps
+  </li>
+  <li>
+   Tweaked: Changed names of samples for swimming
+  </li>
+  <li>
+   Changed: External camera position for static laser designators
+  </li>
+  <li>
+   Changed: Default muzzle flash of ASP-1 Kir to be on par with other suppressed weapons
+  </li>
+  <li>
+   Changed: Disabled Sling Load Assistant for Taru helicopters with pods
+  </li>
+  <li>
+   Changed: ELBV Harnesses are not visible in the game anymore, since they are now obsolete. LBV Harnesses can be used instead.
+  </li>
+  <li>
+   Changed:
+   <em>
+    BIS_fnc_initVehicle_textures
+   </em>
+   is no longer defined by the
+   <a href="https://community.bistudio.com/wiki/Vehicle_Customization_(VhC)" target="_blank">
+    VhC
+   </a>
+   function because it was a duplicate of the command
+   <a href="https://community.bistudio.com/wiki/getObjectTextures" target="_blank">
+    getObjectTextures
+   </a>
+  </li>
+  <li>
+   Removed: Obsolete backpacks containing parts of non-existing autonomous weapons
+  </li>
+  <li>
+   Removed: Surplus items from
+   <em>
+    CfgPatches
+   </em>
+  </li>
+  <li>
+   Removed:
+   <em>
+    CA_TextReserved
+   </em>
+   class from
+   <em>
+    RscDisplayConfigureAction.hpp
+   </em>
+   (label about reserved keys)
+  </li>
+  <li>
+   Removed:
+   <em>
+    FlareLoop
+   </em>
+   effect from the editor
+  </li>
+ </ul>
+ <p>
+  <a href="http://dev.arma3.com/post/oprep-end-game" target="_blank">
+   End Game
+  </a>
+ </p>
+ <ul>
+  <li>
+   Added: Time Acceleration parameters to lobby
+  </li>
+  <li>
+   Added: Timer for End Game (scenario can now end in a draw if sides are not able to upload schematics before the timer runs out)
+  </li>
+  <li>
+   Added: There are no predefined tasks anymore, users can create their own unique set of tasks for End Game
+  </li>
+  <li>
+   Added: Module parameters exposed
+  </li>
+  <li>
+   Added: Safe check for undefined gvar
+   <em>
+    BIS_fnc_respawnMenuPosition_systemSelect
+   </em>
+  </li>
+  <li>
+   Added: Respawn handling now specific to End Game instead of scenario
+  </li>
+  <li>
+   Added: Last phase timer can now be changed in the lobby
+  </li>
+  <li>
+   Added:
+   <em>
+    "Attacking Side"
+   </em>
+   parameters to the
+   <em>
+    StartGame
+   </em>
+   objective module that flags the side which will have to establish their FOB at the given
+   <em>
+    StartGame
+   </em>
+   objective
+  </li>
+  <li>
+   Added: Respawn delay can now be dynamically overriden in mission
+  </li>
+  <li>
+   Added: When player is the carrier, he now sees a icon on his screen when he is not concealed from the enemy
+  </li>
+  <li>
+   Added: Retrieve Intel objectives can now have side specific respawn points
+  </li>
+  <li>
+   Fixed:
+   <em>
+    AreaManager
+   </em>
+   locations are now unregistered after End Game has started
+  </li>
+  <li>
+   Fixed: Retrieve Intel tasks icons (3D and 2D) were not attached to their object
+  </li>
+  <li>
+   Fixed: Missing textures for
+   <em>
+    RscHvtPhase
+   </em>
+  </li>
+  <li>
+   Fixed: Laptop could not be destroyed after the intel was being downloaded from it
+  </li>
+  <li>
+   Fixed: The destroy Intel container conversation was playing even if the object was already destroyed
+  </li>
+  <li>
+   Fixed: After a side downloads Intel, the opposite side could not download Intel from the same objective
+  </li>
+  <li>
+   Fixed: Function header
+  </li>
+  <li>
+   Fixed: Pick-up locations on dead bodies were not blacklisted from the garbage collector
+  </li>
+  <li>
+   Fixed: Possible bad initialization for remote players
+  </li>
+  <li>
+   Fixed: Respawns at the enemy upload points were not unlocking after the last phase started
+  </li>
+  <li>
+   Fixed: In singleplayer there was a chance that the rules would never display
+  </li>
+  <li>
+   Fixed: Both
+   <em>
+    RscHvtPhase
+   </em>
+   and
+   <em>
+    RscRespawnCounter
+   </em>
+   did not use proper
+   <em>
+    rscLayer
+   </em>
+   and could be overridden by a
+   <a href="https://community.bistudio.com/wiki/cutText" target="_blank">
+    cutText
+   </a>
+  </li>
+  <li>
+   Fixed: Proper names given to rules-specific sound effects
+  </li>
+  <li>
+   Fixed: Sound effects' names localized
+  </li>
+  <li>
+   Fixed: Area markers would not be deleted when the last phase would start
+  </li>
+  <li>
+   Fixed: Players could download Intel while incapacitated
+  </li>
+  <li>
+   Fixed:
+   <em>
+    RscHvtPhase
+   </em>
+   was visible upon death
+  </li>
+  <li>
+   Fixed: Respawn at the enemy upload points were not unlocking after the last phase started
+  </li>
+  <li>
+   Tweaked: Major improvements to
+   <em>
+    RscHvtPhase
+   </em>
+  </li>
+  <li>
+   Tweaked: The destroy Intel container conversation now plays sooner after the download has completed
+  </li>
+  <li>
+   Tweaked: Modules work
+  </li>
+  <li>
+   Tweaked: Rifleman (AT) replaced with Engineer to allow players to repair knocked-out vehicles
+  </li>
+  <li>
+   Tweaked: Mines removed from Virtual Ammoboxes, now they are available only at certain ammo crates, vehicles and AAF units
+  </li>
+  <li>
+   Tweaked: Lobby display names of units are now localized
+  </li>
+  <li>
+   Tweaked: Carrier icon visuals
+  </li>
+  <li>
+   Tweaked: Decreased respawn delay when in the last phase of End Game
+  </li>
+ </ul>
+ <p>
+  Dynamic Groups:
+ </p>
+ <ul>
+  <li>
+   Fixed: When selecting themselves, players would see kick / ban instead of disband as options
+  </li>
+  <li>
+   Fixed: UI would flash every time there was an update to it
+  </li>
+  <li>
+   Fixed: Making a group private would require closing / opening the UI to be able to make the group public again
+  </li>
+  <li>
+   Fixed: Script error
+  </li>
+  <li>
+   Fixed: Pressing the open / close key would close the interface when a player would have focus on the group name edit box
+  </li>
+  <li>
+   Removed: Log in the
+   <em>
+    PlayerIsLeader
+   </em>
+   sub-function
+  </li>
+ </ul>
+ <p>
+  Revive:
+ </p>
+ <ul>
+  <li>
+   Added: Units close to death are now visualized
+  </li>
+  <li>
+   Added: Units being revived are now visualized
+  </li>
+  <li>
+   Added: Showing when a unit becomes incapacitated
+  </li>
+  <li>
+   Added: Showing when a unit dies
+  </li>
+  <li>
+   Added: Fail-safe to ensure icon effects do not get applied prematurely
+  </li>
+  <li>
+   Added:
+   <em>
+    BIS_fnc_keyHold
+   </em>
+   to allow custom hold 'Space' interactions
+  </li>
+ </ul>
+ <p>
+  Potential spoilers:
+ </p>
+ <ul>
+  <li>
+   Added: New method of ensuring AI properly board the extraction truck (Wet Work)
+   <br/>
+  </li>
+  <li>
+   Fixed: The wrong ending could sometimes be shown if the player used all of the UAV's ammo to destroy the wreck in Showcase FFV
+  </li>
+  <li>
+   Fixed: Checkpoint inspector's animation would break if the player failed to pass the checkpoint (Drawdown 2035)
+  </li>
+  <li>
+   Fixed: No longer possible to disable the Marshalls and break the mission (Resurgent West)
+  </li>
+  <li>
+   Fixed: Crash landing on water wasn't properly handled (Gunships)
+  </li>
+  <li>
+   Fixed: Paratroopers would not exit their helicopters correctly (Tipping Point)
+  </li>
+  <li>
+   Fixed: Truck would sometimes be too damaged to drive away (Wet Work)
+  </li>
+  <li>
+   Fixed: Mi-48 pilots should now behave properly if they successfully bail from their helicopter (Tipping Point)
+  </li>
+  <li>
+   Fixed: Depending on the circumstances, AI squad mates would occasionally fail to board the truck properly (Wet Work)
+  </li>
+  <li>
+   Fixed: Player can no longer shoot from the helicopter (Drawdown 2035)
+  </li>
+  <li>
+   Tweaked: UAV returns to base after the helo wreck is destroyed (Firing From Vehicles)
+  </li>
+  <li>
+   Tweaked: Removed camera shake caused by
+   <em>
+    UnitPlay
+   </em>
+   (Wet Work)
+  </li>
+ </ul>
+ <h3>
+  ENGINE:
+ </h3>
+ <ul>
+  <li>
+   <strong>
+    Added:
+    <a href="http://www.battleye.com/" target="_blank">
+     BattlEye
+    </a>
+    Service implementation (
+    <a href="http://forums.bistudio.com/showthread.php?190426-BattlEye-service-implementation&amp;p=2910511#post2910511" target="_blank">
+     more info
+    </a>
+    )
+   </strong>
+  </li>
+  <li>
+   Added: New scripting command
+   <a href="https://community.bistudio.com/wiki/sort" target="_blank">
+    sort
+   </a>
+   for sorting arrays (ascending or descending)
+  </li>
+  <li>
+   Added: New script commands
+   <em>
+    diag_activeSQFScripts
+   </em>
+   ,
+   <em>
+    diag_activeSQSScripts
+   </em>
+   ,
+   <em>
+    diag_activeMissionFSMs
+   </em>
+  </li>
+  <li>
+   Added: Possibility to configure crew in each turret separately (property
+   <em>
+    gunnerType
+   </em>
+   in turrets)
+  </li>
+  <li>
+   Added: Reloading magazines properly shows bullets in the new one (e.g. for MMGs)
+  </li>
+  <li>
+   Added: New parameter
+   <em>
+    countsForScoreboard
+   </em>
+   to ignore MP score for some objects
+  </li>
+  <li>
+   Added: Extended logging for simple serialization in the netcode (to assist with diagnostics)
+  </li>
+  <li>
+   Added: New config parameters for setting the color of text on the right side of
+   <em>
+    ListBox
+   </em>
+   and
+   <em>
+    ComboBox
+   </em>
+   items (
+   <em>
+    colorTextRight
+   </em>
+   ,
+   <em>
+    colorSelectRight
+   </em>
+   ,
+   <em>
+    colorSelect2Right
+   </em>
+   )
+   <br/>
+  </li>
+  <li>
+   Hotfixed: Sound: Null pointer access
+  </li>
+  <li>
+   Fixed: Weapon attachments properly affect AI aiming
+  </li>
+  <li>
+   Fixed: Assembled autonomous turrets have a default 0.5 skill now
+  </li>
+  <li>
+   Fixed: Occasional error where player gets stuck in a cargo animation when 2 players try to get in the same position at the same time in MP
+  </li>
+  <li>
+   Fixed: Rare turret desync if turning out at the very beginning of a MP mission
+  </li>
+  <li>
+   Fixed: Update vision mode when switched through binoculars
+  </li>
+  <li>
+   Fixed: Items disappearing after dragging from a non-local linked bag
+  </li>
+  <li>
+   Fixed: Invalid initialization of the
+   <em>
+    sessionInfo
+   </em>
+   class for the MP browser
+  </li>
+  <li>
+   Fixed: Weapon Deployment - Player can end under a building or end up levitating when deploying a weapon
+  </li>
+  <li>
+   Fixed: Weapon Holders were not removed automatically (even empty ones) when near an ammo box
+  </li>
+  <li>
+   Fixed: Correct position and direction of weapon particle effects while in a FFV position
+  </li>
+  <li>
+   Fixed: AI got stuck if it joined another group during healing
+  </li>
+  <li>
+   Fixed: Deleting corrupted items right after failed publishing and in published list processing (SteamLayer)
+  </li>
+  <li>
+   Fixed: Item update - updated data was not copied (SteamLayer)
+  </li>
+  <li>
+   Fixed: Weapon crosshair visible for turned out commanders even if disabled in difficulty
+  </li>
+  <li>
+   Fixed: Correct server status in MP browser
+  </li>
+  <li>
+   Fixed: Popping of subscribed items (SteamLayer)
+  </li>
+  <li>
+   Fixed: Content list checking period (SteamLayer)
+  </li>
+  <li>
+   Fixed: Possible CTD on weapon effects when in FFV
+  </li>
+  <li>
+   Fixed: Saves for Steam scenarios could get lost if the scenario would be updated
+  </li>
+  <li>
+   Fixed: Old versions of Steam scenarios were loaded if a scenario would change its name
+  </li>
+  <li>
+   Fixed: Using mouse, sticks or head-trackers in combo keys
+  </li>
+  <li>
+   Fixed: Maximum aiming deadzone clamped by aiming limits from a unit's class
+  </li>
+  <li>
+   Fixed: Scripts blocking keys
+  </li>
+  <li>
+   Fixed: Crash when users try to delete a listbox column with negative index
+  </li>
+  <li>
+   Fixed: Reloading while on a ladder consumes a magazine from inventory
+  </li>
+  <li>
+   Fixed: Selecting more appropriate level of details for land clutter with the
+   <em>
+    "Objects"
+   </em>
+   setting set to
+   <em>
+    "Standard"
+   </em>
+   in the video options
+  </li>
+  <li>
+   Fixed: Enabled strict parsing rules for
+   <em>
+    squad.xml
+   </em>
+   in an attempt to get rid of RPT spam and
+   <em>
+    squad.xml
+   </em>
+   abuse
+  </li>
+  <li>
+   Fixed: Crash by script command
+   <a href="https://community.bistudio.com/wiki/lnbDeleteColumn" target="_blank">
+    lnbDeleteColumn
+   </a>
+  </li>
+  <li>
+   Fixed: Key combinations - can do combos on dragged keys
+  </li>
+  <li>
+   Fixed: Possible CTD when working with cargo items if there's no supply,
+  </li>
+  <li>
+   Fixed: Sun was getting brighter with higher levels of FSAA
+  </li>
+  <li>
+   Fixed: It is no longer possible to deploy a weapon on the quad copter
+  </li>
+  <li>
+   Fixed: Correct title text in MP browser when selecting different modes (Internet / Recent / LAN / Friends)
+  </li>
+  <li>
+   Fixed:
+   <em>
+    ExplosionEffects
+   </em>
+   are shown only if a projectile stops
+  </li>
+  <li>
+   Fixed: Countermeasure always considered successful for airplanes even when it shouldn't be
+  </li>
+  <li>
+   Fixed: Airplanes were moving on their own with their engine on
+  </li>
+  <li>
+   Fixed: Random crash in AI reload checks
+  </li>
+  <li>
+   Fixed: CTD when an object is animated and dead at the same time
+  </li>
+  <li>
+   Fixed: Possible CTD
+  </li>
+  <li>
+   Fixed: Possible CTD in the server browser
+  </li>
+  <li>
+   Fixed: Fire disappeared after loading
+  </li>
+  <li>
+   Fixed: Strange soldier neck glitch
+  </li>
+  <li>
+   Fixed: Sound: Looped sound repeating with short empty gap
+  </li>
+  <li>
+   Fixed: Occasional stuttering of 2D icons
+  </li>
+  <li>
+   Fixed: Crash after respawning
+  </li>
+  <li>
+   Fixed: Crash when releasing constraint without any actor (PhysX-related)
+  </li>
+  <li>
+   Fixed: Spam of
+   <em>
+    AskForPilotLight
+   </em>
+   network messages
+  </li>
+  <li>
+   Fixed: Player will not lose command after use of the respawn button
+  </li>
+  <li>
+   Fixed:
+   <em>
+    #logEntities
+   </em>
+   admin command
+  </li>
+  <li>
+   Fixed: Deaths not being recorded in all cases
+  </li>
+  <li>
+   Fixed: Teary movement when unable to deploy a weapon
+  </li>
+  <li>
+   Fixed: Canceling Steam server search when creating a new session in the server browser
+  </li>
+  <li>
+   Fixed: Crash caused by a null pointer
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/switchCamera" target="_blank">
+    switchCamera
+   </a>
+   to a unit inside of a vehicle
+   <br/>
+  </li>
+  <li>
+   Tweaked: Ground weapon holders are ignored when looking for focus objects in optics
+  </li>
+  <li>
+   Tweaked: Gestures ignored when positioning soldiers against deployment points
+  </li>
+  <li>
+   Tweaked: Stance indicator shows
+   <em>
+    Rested
+   </em>
+   and
+   <em>
+    CanDeploy
+   </em>
+   as separate states
+  </li>
+  <li>
+   Tweaked: Smoother deployment camera transitions
+  </li>
+  <li>
+   Tweaked: Sound: Supersonic crack improvements
+  </li>
+  <li>
+   Tweaked: Coloring tabs in the MP browser according to current filter (Online / LAN / Friends / Recent) selection
+  </li>
+  <li>
+   Tweaked: Keyboard &amp; mouse combos
+  </li>
+  <li>
+   Tweaked:
+   <a href="https://community.bistudio.com/wiki/drawIcon3D" target="_blank">
+    drawIcon3D
+   </a>
+   improvements (
+   <em>
+    align
+   </em>
+   , do not rotate
+   <em>
+    sideArrow
+   </em>
+   )
+  </li>
+  <li>
+   Tweaked: Published corrupted items detection (SteamLayer)
+  </li>
+  <li>
+   Tweaked: Adjusted number of network messages
+  </li>
+  <li>
+   Tweaked: Removed restrictions for the
+   <em>
+    squad.xml
+   </em>
+   header
+  </li>
+  <li>
+   <strong>
+    Changed: Switched to open-source version of PhysX
+   </strong>
+  </li>
+  <li>
+   Changed: Script command
+   <a href="https://community.bistudio.com/wiki/load" target="_blank">
+    load
+   </a>
+   and
+   <a href="https://community.bistudio.com/wiki/loadAbs" target="_blank">
+    loadAbs
+   </a>
+   return 0 instead of &lt;null&gt; when a wrong parameter is given
+  </li>
+  <li>
+   Changed: Script commands
+   <a href="https://community.bistudio.com/wiki/loadUniform" target="_blank">
+    loadUniform
+   </a>
+   ,
+   <a href="https://community.bistudio.com/wiki/loadVest" target="_blank">
+    loadVest
+   </a>
+   ,
+   <a href="https://community.bistudio.com/wiki/loadBackpack" target="_blank">
+    loadBackpack
+   </a>
+   and
+   <a href="https://community.bistudio.com/wiki/getMass" target="_blank">
+    getMass
+   </a>
+   return 0 instead of &lt;null&gt; when a wrong parameter is given
+  </li>
+  <li>
+   Changed:
+   <a href="https://community.bistudio.com/wiki/createTrigger" target="_blank">
+    createTrigger
+   </a>
+   command - trigger can be created locally
+  </li>
+  <li>
+   Changed: Command menu no longer offers Team Switch to a dead soldier
+  </li>
+  <li>
+   Changed: Weapon resting / deployment indicator hidden while healing yourself
+  </li>
+  <li>
+   Optimized: Inventory-related network message
+  </li>
+  <li>
+   Optimized: Inventory networking
+  </li>
+  <li>
+   Optimized: Minor
+   <em>
+    CheckVisibility
+   </em>
+   improvements
+  </li>
+  <li>
+   Optimized: Network traffic for some of the AI related messages
+  </li>
+  <li>
+   Optimized: Re-factored FFV visual states and simulation
+  </li>
+  <li>
+   <strong>
+    Optimized: Refactored and optimized serialization functions for the
+    <em>
+     *variable
+    </em>
+    messages
+   </strong>
+   (optimized the size of various types of data sent across the network via scripts, e.g. arrays, groups and nils)
+  </li>
+  <li>
+   Optimized: Small performance optimization for the
+   <a href="https://community.bistudio.com/wiki/str" target="_blank">
+    str
+   </a>
+   script command
+  </li>
+  <li>
+   <strong>
+    Optimized: Various netcode optimizations to reduce the amount of redundant information being synchronized
+   </strong>
+   (in gear, position, turret and other updates)
+  </li>
+  <li>
+   Removed: Deprecated
+   <em>
+    "Addon"
+   </em>
+   tag for Workshop
+  </li>
+  <li>
+   Removed: Error message for unknown
+   <em>
+    GlassesType
+   </em>
+   (moved to RPT)
+  </li>
+ </ul>
+ <h3>
+  LAUNCHER:
+ </h3>
+ <ul>
+  <li>
+   <strong>
+    Added:
+    <a href="http://www.battleye.com/" target="_blank">
+     BattlEye
+    </a>
+    Service support
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Support for branch name
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: A branch ribbon for indicating the currently active beta branch of Arma 3
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Game version information
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Minimize to tray support
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: A combo box that sets Launcher behavior after the game is started
+   </strong>
+   (Do nothing | Minimize | Shutdown before game starts | Shutdown after game ends)
+  </li>
+  <li>
+   <strong>
+    Added: A preset list to a play split button that allows you load a mod preset and play the game in a single click
+   </strong>
+   (OK, actually it's two clicks)
+  </li>
+  <li>
+   Added: An indication of signed mods (presence of a
+   <em>
+    BISIGN
+   </em>
+   file)
+  </li>
+  <li>
+   Added: Caching for news to speed-up loading process
+  </li>
+  <li>
+   Added: Animations to the news expander
+  </li>
+  <li>
+   Added: Animations to the mod detail expander
+  </li>
+  <li>
+   Added: A notification about unusual / unexpected endings of the game process
+  </li>
+  <li>
+   Added: A special case for the mod signatures check when no PBO is found in the
+   <em>
+    Addons
+   </em>
+   folder
+  </li>
+  <li>
+   Added: Copyright information the for wpf tray license
+  </li>
+  <li>
+   Added: Support for new BattlEye states and messages
+  </li>
+  <li>
+   Added: A menu item to access the BattlEye log
+  </li>
+  <li>
+   Added: Localizations for 1.44
+   <br/>
+  </li>
+  <li>
+   Fixed: Localization of the filter of the dialog for
+   <em>
+    Cgf
+   </em>
+   parameter in Japanese
+  </li>
+  <li>
+   Fixed: The list of presets expands beyond popup boundaries and it is clipped instead of enabling a vertical scroll bar
+  </li>
+  <li>
+   Fixed: Profile Path parameter quotes were not enforced when a path element contained a space in its name (a more complex fix may follow)
+  </li>
+  <li>
+   Fixed:
+   <em>
+    null
+   </em>
+   in a
+   <em>
+    BasePath
+   </em>
+   property can cause a CTD when a dialog is displayed for a folder value parameter
+  </li>
+  <li>
+   Fixed: The play shortcut Ctrl+P was not bound correctly
+  </li>
+  <li>
+   Fixed: Typo in code
+  </li>
+  <li>
+   Fixed: The game parameter processor was not properly initialized before use
+  </li>
+  <li>
+   Fixed: Handling of missing executables and informing the user about existing problems
+  </li>
+  <li>
+   Fixed: If there is a problem with running the game, the
+   <em>
+    PLAY
+   </em>
+   button is now immediately re-activated
+  </li>
+  <li>
+   Fixed: Updated implementation to match changes in the SteamLayer library
+   <br/>
+  </li>
+  <li>
+   Changed: The last update and the file size of a mod is now displayed in a system format and better formatted overall
+  </li>
+  <li>
+   Changed:
+   <em>
+    ArmaExecutor
+   </em>
+   functionality has been divided into separate classes
+   <em>
+    ArmaLocator
+   </em>
+   and
+   <em>
+    ArmaExecutor
+   </em>
+  </li>
+  <li>
+   Tweaked: When the Launcher is automatically minimized when the game starts, it's then automatically restored after the game ends
+  </li>
+  <li>
+   Tweaked: Parameter styles moved to separate sub-folder, shared styles extracted to a special file
+  </li>
+  <li>
+   Tweaked: Small update of animations and positioning of visual elements
+  </li>
+  <li>
+   Updated: Launcher / game version info and safe-mode and HW acceleration flags
+  </li>
+  <li>
+   Updated: Localization
+  </li>
+  <li>
+   Optimized: News post content is now pre-processed a little bit more and then processed faster on the UI thread
+  </li>
+  <li>
+   Optimized: Caching of the news
+  </li>
+  <li>
+   Improved: English texts
+  </li>
+  <li>
+   Improved: Parameter quoting is more reliable
+  </li>
+  <li>
+   Improved: The parameter label is clickable for all parameter types (it toggles the check box next to it)
+  </li>
+  <li>
+   Improved:
+   <em>
+    -maxMem
+   </em>
+   and
+   <em>
+    -maxVRAM
+   </em>
+   minimum value and increment has been updated
+  </li>
+  <li>
+   Removed: All localizations of the
+   <em>
+    FontWeight
+   </em>
+   property of the
+   <em>
+    WhyButton
+   </em>
+  </li>
+  <li>
+   Removed: All localizations of the
+   <em>
+    Click
+   </em>
+   event from buttons in the remove local mod dialog
+  </li>
+  <li>
+   Removed: Localizations from non-localizable elements
+  </li>
+ </ul>
+ <h3>
+  SERVER:
+ </h3>
+ <ul>
+  <li>
+   <strong>
+    Updated: Stand-alone Windows Dedicated Server (1.44)
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Updated: Stand-alone Linux Dedicated Server (1.44)
+   </strong>
+   <ul>
+    <li>
+     Known issue: Steam client modifies the
+     <em>
+      steam_appid.txt
+     </em>
+     file incorrectly. In case of issues, verify its content is:
+     <strong>
+      107410
+     </strong>
+    </li>
+    <li>
+     Known issue: Sometimes the add-ons are loaded from the wrong installation (e.g. main game)
+    </li>
+    <li>
+     Try adding
+     <em>
+      -mod=curator;kart;heli;mark;dlcbundle
+     </em>
+     to your
+     <em>
+      arma3server.exe
+     </em>
+     shortcut
+    </li>
+   </ul>
+  </li>
+ </ul>
+</div>

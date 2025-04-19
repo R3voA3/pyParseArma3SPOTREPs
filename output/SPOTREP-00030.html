@@ -1,0 +1,1417 @@
+<div class="post-content">
+ <p>
+  FROM: Project Lead
+  <br>
+   TO: Arma 3 Users
+   <br>
+    UNIT: Main Branch
+    <br>
+     ACTIVITY: Game Update: 1.26 (Guaranteed network messaging, Sharpen filter, Launcher presets, Launcher newsfeed)
+     <br/>
+     SIZE: ~846 MB
+    </br>
+   </br>
+  </br>
+ </p>
+ <h2>
+  NOTES
+ </h2>
+ <ul>
+  <li>
+   Consider using the Steam client option to verify the integrity of the local game cache to avoid corrupted data after downloading this update.
+  </li>
+  <li>
+   Consider defragmenting your HDD after downloading large updates.
+  </li>
+  <li>
+   We've enabled Steam-based redistrutables for Visual C++, .NET and DirectX, which may run one time if they had not been installed previously.
+  </li>
+  <li>
+   A new Steam branch is now available for advanced users: Legacy Build (1.24). As its name implies, it contains the previous main branch version. It can be used to compare specific changes between major releases. The access code for this branch is:
+   <em>
+    Arma3Legacy124
+   </em>
+  </li>
+ </ul>
+ <h1>
+  CHANGELOG
+ </h1>
+ <h2>
+  DATA:
+ </h2>
+ <ul>
+  <li>
+   Fixed: Damage and destruction materials for Hunter, Greyhawk and Offroad variants
+  </li>
+  <li>
+   Fixed: Altian civilians should speak their language correctly
+  </li>
+  <li>
+   Fixed: Demolition charge has correct model when dropped from inventory
+  </li>
+  <li>
+   Fixed: Mi-48 optics
+  </li>
+  <li>
+   Fixed: It was possible to access Arsenal on a destroyed ammo box
+  </li>
+  <li>
+   Fixed: Sound of Wipeout rocket explosions
+  </li>
+  <li>
+   Fixed: Alternative sights don't have optic effects from main sights anymore (
+   <a href="http://feedback.arma3.com/view.php?id=13057" target="_blank">
+    http://feedback.arma3.com/view.php?id=13057
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Pitch shift of grenades
+  </li>
+  <li>
+   Fixed:
+   <em>
+    CfgPatches
+   </em>
+   for camo versions of sniper rifles
+  </li>
+  <li>
+   Fixed: Zone Protection worked only when there was an entire AO defined
+  </li>
+  <li>
+   Fixed: Supports module no longer lists vehicles with protected scope as available Virtual Providers
+  </li>
+  <li>
+   Fixed: Wrong localization of "Watch" button for Community Guides in French
+  </li>
+  <li>
+   Fixed: Possible error message in Supports module when calling in artillery after a bombing run using Virtual Providers
+  </li>
+  <li>
+   Fixed: Player's appearance consistent with the overview image of Showcase Supports
+  </li>
+  <li>
+   Fixed: Panther no longer throws itself over the edge during insertion in Showcase Combined Arms
+  </li>
+  <li>
+   FIxed: Changed squad movement speed modes in Showcase Combined Arms to accommodate changes to fatigue
+  </li>
+  <li>
+   Fixed: Kuma vulnerability mitigated
+  </li>
+  <li>
+   Fixed: Kart Trolley had a bad shadow
+  </li>
+  <li>
+   Fixed:
+   <em>
+    CfgPatches
+   </em>
+   have been tweaked for Bootcamp components
+  </li>
+  <li>
+   Fixed: Optimized overall car inventory maximum loads to more reasonable levels
+  </li>
+  <li>
+   Fixed: Adjusted memory points of Bobcat LMG
+  </li>
+  <li>
+   Fixed: Driver of Sochor may be shot while turned out (
+   <a href="http://feedback.arma3.com/view.php?id=19876" target="_blank">
+    http://feedback.arma3.com/view.php?id=19876
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Issue with OPFOR grenadier harness variant providing unreasonable amount of armor protection
+  </li>
+  <li>
+   Fixed: Error message in MP Virtual Arsenal
+  </li>
+  <li>
+   Fixed: Slightly adjusted damper size of quad-bike
+  </li>
+  <li>
+   Fixed: Strange chromatic aberration in alternate scopes
+  </li>
+  <li>
+   Fixed: Adjusted fire geometry of Blackfoot
+  </li>
+  <li>
+   Fixed: Crawling animation are played slowly
+  </li>
+  <li>
+   Fixed: Speedboat turret doesn't disappear after being hit
+  </li>
+  <li>
+   Fixed: Faces now show proper author in Virtual Arsenal
+  </li>
+  <li>
+   Fixed: Various visual issues with Tempests
+  </li>
+  <li>
+   Fixed: Pilots' visibility of compass if radar is disabled
+  </li>
+  <li>
+   Fixed: Adjusted water resistance of Mohawk
+  </li>
+  <li>
+   Fixed: Sochor is now usable for the Artillery support module
+  </li>
+  <li>
+   Fixed: Skinning of back shields of VR Soldier improved
+  </li>
+  <li>
+   Fixed: Adjusted durability of rear glass of SUV
+  </li>
+  <li>
+   Fixed: Adjusted geometries of Zamak
+  </li>
+  <li>
+   Fixed: Nasty hit point settings issue that caused Helicopter Pilots, Helicopter Crews and Pilots across all factions to be able to sustain an unreasonable amount of damage suffered to their extremities. Their coveralls now offer much less protection against direct hits, however, they now offer some protection against explosive damage.
+  </li>
+  <li>
+   Fixed: Model of Supply Crate has been recreated to prevent script issues (
+   <a href="http://feedback.arma3.com/view.php?id=19324" target="_blank">
+    http://feedback.arma3.com/view.php?id=19324
+   </a>
+   and
+   <a href="http://feedback.arma3.com/view.php?id=19339" target="_blank">
+    http://feedback.arma3.com/view.php?id=19339
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: OPFOR VR Soldier and Entity tweaked to receive the same damage as their counterparts
+  </li>
+  <li>
+   Fixed: Unarmed player standing up from prone stance no longer players a swimming animation
+  </li>
+  <li>
+   Fixed: Orientation of insignia (left arm), insignia / clan area made smaller to fit other BLUFOR units (like coveralls)
+  </li>
+  <li>
+   Fixed: Possible scripting error in some instances of the player receiving damage
+  </li>
+  <li>
+   Fixed: Self-propelled artillery is now correctly categorized as artillery instead of as tank
+  </li>
+  <li>
+   Fixed: Possible error message when using Transport support module
+  </li>
+  <li>
+   Fixed: Lights of HEMTT are no longer shining while off when looking from a distance
+  </li>
+  <li>
+   Fixed: Showcase Combined Arms: Time limit is ignored once one member of the players' group boards the helicopter
+  </li>
+  <li>
+   Fixed: Missing icons in
+   <em>
+    ComboBoxes
+   </em>
+   in editor
+  </li>
+  <li>
+   Fixed: Incorrect colors of pictures in the Insert Marker display
+  </li>
+  <li>
+   Fixed: Color of
+   <em>
+    RscCombo
+   </em>
+  </li>
+  <li>
+   Fixed: Missing rank picture in the map
+  </li>
+  <li>
+   Fixed: Shadow for TRG-21 EGLM
+  </li>
+  <li>
+   Fixed: UI icons of P07
+  </li>
+  <li>
+   Fixed: ARCO accuracy
+  </li>
+  <li>
+   Fixed: TI on GMG static turret
+  </li>
+  <li>
+   Fixed: Color of pictures in variables
+   <em>
+    ListBox
+   </em>
+   in Colors tab
+  </li>
+  <li>
+   Fixed: Removed excessive smoke magazines for Speedboat
+  </li>
+  <li>
+   Fixed: Adjusted damage resistance of raised static weapons
+  </li>
+  <li>
+   Fixed: Raised static GMG had a wrong get-out animation
+  </li>
+  <li>
+   Fixed: Tweaked selections for the GM-6 model
+  </li>
+  <li>
+   Fixed: Decreased too high maximum inventory capacity of several vehicles
+  </li>
+  <li>
+   Fixed: Repaired shadow &amp; placement of suppressor of 4-Five
+  </li>
+  <li>
+   Fixed: Turning on the spot now has a negative impact over resting with all weapons in all stances correctly
+  </li>
+  <li>
+   Fixed: Incorrect color of the side picture of a selected player in Role Assignment
+  </li>
+  <li>
+   Fixed: Minor volume changes of crash sounds
+  </li>
+  <li>
+   Fixed: Wrong structural armor of static GMGs
+  </li>
+  <li>
+   Fixed: Rahim 7.62 - The iron sights on the barrel are too cold in thermal
+  </li>
+  <li>
+   Fixed: Repaired fire geometry of the Ghosthawk
+  </li>
+  <li>
+   Fixed: Default collective and auto-hover tweaks
+  </li>
+  <li>
+   Fixed: Binoculars and range finders were not exported correctly from Arsenal (
+   <a href="http://feedback.arma3.com/view.php?id=20026" target="_blank">
+    http://feedback.arma3.com/view.php?id=20026
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Missing camo selection added to the remaining LODs of Press (Vest)
+  </li>
+  <li>
+   Fixed: Pitch indicator of Blackfoot was reversed
+  </li>
+  <li>
+   Fixed: Decreased direct impact of damage suffered over breathing
+  </li>
+  <li>
+   Fixed: Pop-up error with Zubr .45
+  </li>
+  <li>
+   Fixed: Various changes in localization and scope parameter of uniforms
+  </li>
+  <li>
+   Fixed: Pedals and collective of helicopters work correctly
+  </li>
+  <li>
+   Fixed: Removed random rotor from PhysX LOD of xH-9 family of copters
+  </li>
+  <li>
+   Fixed: Arsenal module placed by Zeus didn't work correctly when Zeus was client
+  </li>
+  <li>
+   Fixed: Adjusted durability of the Devices
+  </li>
+  <li>
+   Fixed: Cargo get in side for Fuel Trucks
+  </li>
+  <li>
+   Fixed: Civilian Fuel Truck has correct textures
+  </li>
+  <li>
+   Fixed: Banking of cyclic for Mohawk
+  </li>
+  <li>
+   Fixed: Flags on shoulders now look better
+  </li>
+  <li>
+   Fixed: Missing camo-selection on trousers and gloves of BLUFOR soldier
+  </li>
+  <li>
+   Fixed: Path LODs for AI in military cargo HQ buildings
+  </li>
+  <li>
+   Fixed: Missing material for last LOD of the big transmitter tower
+  </li>
+  <li>
+   Fixed: Buoyancy warning of the wave power plant
+  </li>
+  <li>
+   Fixed: The ruins of barracks now have proper penetration materials and impact effects on the floor
+  </li>
+  <li>
+   Fixed: Adjusted front and side plating of Panther
+  </li>
+  <li>
+   Fixed: Centered external camera position of AMV-7 Marshall
+  </li>
+  <li>
+   Fixed: Maximum and minimum elevation of RCWS guns on armored vehicles
+  </li>
+  <li>
+   Fixed: An error when turning out in ZSU-39 Tigris
+  </li>
+  <li>
+   Fixed: Removed borders on icons of ZSU-39 Tigris
+  </li>
+  <li>
+   Fixed: An issue that guns on ZSU-39 Tigris could disappear when observed from far away
+  </li>
+  <li>
+   Fixed: Enormous network traffic caused by Simulation Manager module
+  </li>
+  <li>
+   <strong>
+    Added: Opening / closing building doors now has sounds
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Sharpen filter option (separated from PPAA filters)
+   </strong>
+  </li>
+  <li>
+   Added: Proper sound to VR surface when hit by fire
+  </li>
+  <li>
+   Added: Area-restriction for missile-specific HUD feature for PO-30
+  </li>
+  <li>
+   Added: New "Arsenal" module (when placed on top of a unit, Zeus can configure its load-out)
+  </li>
+  <li>
+   Added: Seagull sound
+  </li>
+  <li>
+   Added: Sound of church bells
+  </li>
+  <li>
+   Added:
+   <em>
+    RscTestControlTypes
+   </em>
+   - display with all available control types
+  </li>
+  <li>
+   Added: Sound of reloading the static GMG, Titan and Mortar
+  </li>
+  <li>
+   Added: Sound of tank cannon reloading
+  </li>
+  <li>
+   Added: Sound of HMG reloading
+  </li>
+  <li>
+   Added: Ground Vehicle Crew community guide
+  </li>
+  <li>
+   Added: Hint for using the UAV terminal into Showcase Drones
+  </li>
+  <li>
+   Added: RCWS Stomper has a proper icon
+  </li>
+  <li>
+   Added:
+   <em>
+    ListNBox
+   </em>
+   data and value
+  </li>
+  <li>
+   Added: Configured position lights for Greyhawk / Ababil
+  </li>
+  <li>
+   Added: CheckBox for controlling AV lights in AV terminal
+  </li>
+  <li>
+   Added: IDC of lights CheckBox in AV terminal
+  </li>
+  <li>
+   Added: An option for turning off headgear randomization for civilian characters via
+   <em>
+    "this setVariable ["BIS_enableRandomization", false];"
+   </em>
+   in the character's init. For turning off facewear randomization, insert
+   <em>
+    "removeGoggles this;"
+   </em>
+   into the character's init, or simply use desired facewear via "this addGoggles "facewear_class_name";".
+  </li>
+  <li>
+   Added:
+   <em>
+    colorPicture
+   </em>
+   parameters to
+   <em>
+    ListBox
+   </em>
+   ,
+   <em>
+    XListBox
+   </em>
+   and
+   <em>
+    ComboBox
+   </em>
+  </li>
+  <li>
+   Added: New sounds for getting in planes
+  </li>
+  <li>
+   Added: Pressing Ctrl + Shift + C in Arsenal will export a load-out in config format, usable in
+   <em>
+    CfgVehicles
+   </em>
+   and
+   <em>
+    CfgRespawnInventories
+   </em>
+   . This option might be moved to interface later.
+  </li>
+  <li>
+   Added: Wheels of helicopters properly roll while taxiing
+  </li>
+  <li>
+   Added: Transmission hit points to helicopters
+  </li>
+  <li>
+   Added: Ability to completely disable ZGM moderator rights
+  </li>
+  <li>
+   Added: New option for Vehicle Respawn module, which lets the vehicle respawn only on synchronized respawn positions
+  </li>
+  <li>
+   Added: More crash sound variants for MRAPs, Offroad and Quadbike
+  </li>
+  <li>
+   Tweaked: Shadow LOD of beanies
+  </li>
+  <li>
+   Tweaked: Armor and mass of the party tent and winner's podium
+  </li>
+  <li>
+   Tweaked: Destruction effects for quad bikes and karts
+  </li>
+  <li>
+   Updated: Sounds for character roll animations
+  </li>
+  <li>
+   Updated: Improved skinning of main back shield on
+   <em>
+    VR_Protagonist_F
+   </em>
+  </li>
+  <li>
+   Updated: Optimized dust of some missile explosions
+  </li>
+  <li>
+   Updated: Visual tweaks for the AAF officer
+  </li>
+  <li>
+   Updated: Adjusted sound of fire mode selector on the Katiba rifle
+  </li>
+  <li>
+   Changed: Heads of story characters are now part of
+   <em>
+    Man_A3
+   </em>
+  </li>
+  <li>
+   Changed: Fuel explosion power for land vehicles
+  </li>
+  <li>
+   Changed: Set up correct fatigue exhaustion rate after the exhaustion rate multiplier gain from inventory load was fixed according to the original fatigue design
+  </li>
+  <li>
+   Changed: Virtual Arsenal has been moved from
+   <em>
+    Ui_f_Bootcamp
+   </em>
+   to
+   <em>
+    Ui_f
+   </em>
+  </li>
+  <li>
+   Changed: Increased opacity of the Kajman's HUD
+  </li>
+  <li>
+   Changed: Offroad maximum capacity
+  </li>
+  <li>
+   Changed: Quad-bike maximum capacity
+  </li>
+  <li>
+   Changed: Fuel explosion of various vehicle types has been tweaked
+  </li>
+  <li>
+   Changed: Moved VR Training icons from
+   <em>
+    Ui_f_Bootcamp
+   </em>
+   to
+   <em>
+    Ui_f
+   </em>
+  </li>
+  <li>
+   Changed: Adjusted flare size of the Speedboat reflector
+  </li>
+  <li>
+   Changed: Changed breathing speed coefficient to 10
+  </li>
+  <li>
+   Changed: Adjusted positions of all UI elements in AV terminal
+  </li>
+  <li>
+   Changed: OPFOR medic now has his rifle equipped with only a pointer by default just like medics of other factions
+  </li>
+  <li>
+   Changed: OPFOR repair specialist now has the correct weapon variant
+  </li>
+  <li>
+   Changed: Urban OPFOR medic now has the correct weapon variant
+  </li>
+  <li>
+   Changed: Urban OPFOR explosive specialist now has the correct weapon variant
+  </li>
+  <li>
+   Changed: Urban OPFOR engineer now has the correct weapon variant
+  </li>
+  <li>
+   Changed: Slight tweak of sound gain of closure pistols
+  </li>
+  <li>
+   Changed: Adjusted PAPI light material to shine at night
+  </li>
+  <li>
+   Changed: Light helicopters are now available for CAS support
+  </li>
+  <li>
+   Changed: Optimized character hit point settings. Actual damage dealt should be less random and more predictable according to the respective body parts.
+  </li>
+  <li>
+   Changed: Scaled Independents vests back to the standard values
+  </li>
+  <li>
+   Changed: Slightly increased capacity of the BLUFOR Rig and Grenadier vest to better compensate for their higher weight and avoid over-equipment
+  </li>
+  <li>
+   Changed: Showcase Helicopters: Starting experience improved a bit
+  </li>
+  <li>
+   Changed: Showcase Combined Arms: Increased time limit from 4 minutes to 6
+  </li>
+  <li>
+   Changed: Renamed
+   <em>
+    pictureColor
+   </em>
+   parameter of
+   <em>
+    ListBox
+   </em>
+   ,
+   <em>
+    XListBox
+   </em>
+   and
+   <em>
+    ComboBox
+   </em>
+   to
+   <em>
+    colorPicture
+   </em>
+  </li>
+  <li>
+   Changed: Increased weight of GPS and Radio items
+  </li>
+  <li>
+   Changed: Increased weight of Rangefinder and Laser Designator items
+  </li>
+  <li>
+   Changed: Sound of launcher reloading
+  </li>
+  <li>
+   Changed: Shadow of GM-6
+  </li>
+  <li>
+   Changed: UI icons for Rook
+  </li>
+  <li>
+   Changed: Optimized inventory capacities of helicopters
+  </li>
+  <li>
+   Changed: Optimized duty values of various resting positions. Resting is now dependent on what you are holding in a given position, how do you hold it (raised or down) and whether you are still or turning around. This differences applies to all weapons in all stances.
+  </li>
+  <li>
+   Changed: Also substantially increased fatigue gain when getting from prone to kneel
+  </li>
+  <li>
+   Changed: Set up correct breathing values for new breathing mechanics
+  </li>
+  <li>
+   Changed: Increased weight of the GM 6 Lynx and M320 LRR rifles to better match their real life counterparts
+  </li>
+  <li>
+   Changed: Water impacts of units (fall of soldier to the water) tweaked
+  </li>
+  <li>
+   Changed: Color of selected item in
+   <em>
+    ListBox
+   </em>
+   ,
+   <em>
+    XListBox
+   </em>
+   and
+   <em>
+    ComboBox
+   </em>
+   to white
+  </li>
+  <li>
+   Changed: Tweaked AAF officer
+  </li>
+  <li>
+   Changed: Parameter of the maximum audible distance of changing fire mode to 5 meters
+  </li>
+  <li>
+   Changed: Some AAF soldiers now use
+   <em>
+    U_I_CombatUniform_shortsleeve
+   </em>
+   instead of
+   <em>
+    U_I_CombatUniform_tshirt
+   </em>
+   , which is used no more
+  </li>
+  <li>
+   Changed: Explosive ammo (only for A-164) particle effects optimized
+  </li>
+  <li>
+   Changed: Resistance of OPFOR soldiers to grenades
+  </li>
+  <li>
+   Changed: Optimized following speeds of movement:
+   <ul>
+    <li>
+     Increased speed of walking in crouch with lowered pistol
+    </li>
+    <li>
+     Increased speed of walking in stand with lowered rifle. (credits to
+     <em>
+      Jester 814
+     </em>
+     for pointing this out)
+    </li>
+    <li>
+     Slightly slowed down running in crouch with lowered rifle
+    </li>
+    <li>
+     Increased fatigue gain while walking in kneel with raised weapon
+    </li>
+    <li>
+     Decreased speed from running in crouch with raised rifle
+    </li>
+    <li>
+     Slightly decreased speed for tactical movement in crouch with raised rifle
+    </li>
+    <li>
+     Increased fatigue gain while walking in crouch with raised pistol
+    </li>
+    <li>
+     Substantially increased speed while walking with launcher in crouch
+    </li>
+    <li>
+     Increased speed of walking while standing with launcher
+    </li>
+   </ul>
+  </li>
+  <li>
+   Localized: Arsenal module error states
+  </li>
+  <li>
+   Removed: Obsolete debug logs in Zone Restriction module
+  </li>
+  <li>
+   Moved: New
+   <em>
+    RscButton
+   </em>
+   attributes from
+   <em>
+    UI_F_Curator
+   </em>
+   to
+   <em>
+    UI_F
+   </em>
+  </li>
+ </ul>
+ <ul>
+  <li>
+   <strong>
+    Decreased general sway and breathing distortion speeds by 20%
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Decreased lateral sway movement by 20%
+   </strong>
+  </li>
+  <li>
+   Increased time window of holding breath to 8 seconds (previously 6) but also slightly decreased the time needed for holding breath to take full effect
+  </li>
+  <li>
+   Left leg is no longer used to brake in standard cars
+  </li>
+  <li>
+   Holder for LRPS should be available in Zeus
+  </li>
+  <li>
+   Miniguns don't use submunition anymore
+  </li>
+  <li>
+   Ability to steal UAVs by UAV Operators added (parameter
+   <em>
+    uavHacker
+   </em>
+   configured)
+  </li>
+  <li>
+   Dust effects for characters improved (there was no dust on some surfaces which are pretty dusty in real life)
+  </li>
+  <li>
+   Improved handling of multiple engine damage for helicopters
+  </li>
+  <li>
+   Removed
+   <em>
+    execVM
+   </em>
+   on fired Event Handler of the AH-99 Blackfoot
+  </li>
+  <li>
+   HULL damage indicator tied with total aircraft damage
+  </li>
+  <li>
+   Camo variants of sniper rifles added to their respective snipers
+  </li>
+  <li>
+   Sniper rifles camo variants added to their respective ammo boxes
+  </li>
+  <li>
+   230mm rockets have a proper rate of fire
+  </li>
+  <li>
+   Descending certain optimal slopes no longer restores fatigue; it 'only' prevents fatigue gain now
+  </li>
+  <li>
+   Resolved: Animation problem with Mi-48's gatling montage
+  </li>
+  <li>
+   Improved: Armored window hit points and crew protection hit points for the Mi-48
+  </li>
+  <li>
+   AI discouraged from firing too small arms at gunships (12.7mm and above are still a threat)
+  </li>
+  <li>
+   Moved Buzzard and Wipeout in Y axis in the model to allow them being spawned near ground
+  </li>
+  <li>
+   Placeholder icon for VR entity body replaced with real icon
+  </li>
+  <li>
+   Potential campaign spoilers:
+   <ul>
+    <li>
+     Common Denominator: Targets and RCO crate are now indestructible
+    </li>
+    <li>
+     Damage Control: The Hummingbird can no longer be destroyed
+    </li>
+    <li>
+     Diplomatic Relations: The Hellcat can no longer be destroyed
+    </li>
+    <li>
+     Diplomatic Relations: Friendly fire is now detecting whether kills were made by
+     <em>
+      BIS_lacey
+     </em>
+    </li>
+    <li>
+     Diplomatic Relations: Added check to ensure player has a weapon before cutscenes start
+    </li>
+    <li>
+     Fixed: Strider patrol not boarding its Strider in Situation Normal
+    </li>
+    <li>
+     Fixed: Paradise Found: Miller was too quiet in the final cutscene
+    </li>
+    <li>
+     Fixed: Campaign: Mike-26 is restricted even after Radio Silence
+    </li>
+    <li>
+     Added: Better visuals for the VR Material Penetration course
+    </li>
+    <li>
+     Added: MX magazines to the weapon crate in Common Denominator
+    </li>
+    <li>
+     Changed: Wind setting from manual to automatic in Bootcamp campaign
+    </li>
+    <li>
+     Changed: Damage Control: Adams will no longer occasionally order you to return while driving through Kavala
+    </li>
+    <li>
+     Changed: Improved handling of Zone Restriction
+    </li>
+    <li>
+     Fixed: Ensured Conway does not have any kind of face wear
+    </li>
+    <li>
+     Fixed: Forcing Adams' position when checking the wounded is now less obvious
+    </li>
+    <li>
+     Fixed: Strider patrol now reacts better to spotting the player in Situation Normal
+    </li>
+    <li>
+     Fixed: You will no longer be ordered to destroy the wreck if it's already destroyed in Blackfoot Down
+    </li>
+    <li>
+     Fixed: Replacement charges will now only be added to dead units in Blackfoot Down
+    </li>
+    <li>
+     Fixed: Killing Sgt. Lacey should always result in mission failure in Situation Normal
+    </li>
+    <li>
+     Fixed: Error at mission start in Situation Normal
+    </li>
+    <li>
+     Fixed: Friendly fire detection terminated in the final state of each mission in Bootcamp campaign
+    </li>
+    <li>
+     Fixed: Adams' map marker is now in the correct location in Bootcamp campaign
+    </li>
+    <li>
+     Added: Death Valley: Added savegame before the plane attack
+    </li>
+    <li>
+     Fixed: Script error after clearing the town in Infantry
+    </li>
+    <li>
+     Fixed: Mission wouldn't progress if the medic died while treating a soldier in Infantry
+    </li>
+   </ul>
+  </li>
+ </ul>
+ <h2>
+  ENGINE
+ </h2>
+ <ul>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/hideObjectGlobal" target="_blank">
+    hideObjectGlobal
+   </a>
+   for Dedicated Servers
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/enableSimulationGlobal" target="_blank">
+    enableSimulationGlobal
+   </a>
+   for Dedicated Servers
+  </li>
+  <li>
+   Fixed:
+   <em>
+    fuseDistance
+   </em>
+   is properly calculated for EPE shots
+  </li>
+  <li>
+   Fixed: Problem with color overflow in the VR world
+  </li>
+  <li>
+   Fixed: Shaking of camera in extreme conditions when normal values for G shake are not set up
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/setDamage" target="_blank">
+    setDamage
+   </a>
+   on static objects for JIPed players
+  </li>
+  <li>
+   Fixed: Profile editing issue
+  </li>
+  <li>
+   Fixed: Heading UI element in HUDs
+  </li>
+  <li>
+   Fixed: PiP when switching from vehicle to UAV
+  </li>
+  <li>
+   Fixed: Context menu can be accessed in tasks, main menu, players list
+  </li>
+  <li>
+   FIxed: Headless Client should not start scenarios
+  </li>
+  <li>
+   Fixed: Problems with create message ordering for JIP
+  </li>
+  <li>
+   Fixed: Possible CTD in selecting weapons
+  </li>
+  <li>
+   Fixed: Deactivate mine action for AI
+  </li>
+  <li>
+   Fixed: UAVs do not have collision with units, but units do
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/addMagazine" target="_blank">
+    addMagazine
+   </a>
+   duplicates items when executed more than once
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/setTimeMultiplier" target="_blank">
+    setTimeMultiplier
+   </a>
+   is no longer affecting wind change speed
+  </li>
+  <li>
+   Fixed: UAV cannot be connected after
+   <a href="https://community.bistudio.com/wiki/setCaptive" target="_blank">
+    setCaptive
+   </a>
+   true
+  </li>
+  <li>
+   Fixed: Dedicated Server CTD
+  </li>
+  <li>
+   Fixed: Possible CTD
+  </li>
+  <li>
+   Fixed: Wrong initial path planning checks
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/lnbValue" target="_blank">
+    lnbValue
+   </a>
+   scripting command
+  </li>
+  <li>
+   Fixed: UAV can not be hacked if
+   <a href="https://community.bistudio.com/wiki/setCaptive" target="_blank">
+    setCaptive
+   </a>
+   is true
+  </li>
+  <li>
+   Fixed: Problems with a wrong FSM for the mine deactivate action
+  </li>
+  <li>
+   Fixed: CTD after pressing M in UAV terminal view (
+   <a href="http://feedback.arma3.com/view.php?id=19890" target="_blank">
+    http://feedback.arma3.com/view.php?id=19890
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Removed animation spam when AI is trying to go from
+   <em>
+    Lying
+   </em>
+   to
+   <em>
+    HandGunLying
+   </em>
+  </li>
+  <li>
+   Fixed: Ordering of axes for UI object position getter
+  </li>
+  <li>
+   Fixed: Autohover info control
+  </li>
+  <li>
+   Fixed: Fatigue now not restored when holding breath
+  </li>
+  <li>
+   Fixed: AI soldiers: Dynamic error influenced by fatigue and damage
+  </li>
+  <li>
+   Fixed: UAV turrets rotation control restored
+  </li>
+  <li>
+   Fixed: Speed of sound simulation
+  </li>
+  <li>
+   Fixed: Multiplayer turrets movement not visible for other players
+  </li>
+  <li>
+   Fixed: Removed URL length limit in
+   <em>
+    structuredText
+   </em>
+   control
+  </li>
+  <li>
+   Fixed: AI is more resistant to bullets while moving
+  </li>
+  <li>
+   Fixed: Instancing of proxies with different heat source in TI
+  </li>
+  <li>
+   Fixed: An issues where crew of vehicles might not be rendered when observed through zoomed in optics
+  </li>
+  <li>
+   Fixed: Game freezes when player mouse-overs the DLC text in Field Manual
+  </li>
+  <li>
+   Added: Scripting command for camera locking (
+   <a href="https://community.bistudio.com/wiki/lockCameraTo" target="_blank">
+    lockCameraTo
+   </a>
+   )
+  </li>
+  <li>
+   Added: Script command
+   <a href="https://community.bistudio.com/wiki/getCargoIndex" target="_blank">
+    getCargoIndex
+   </a>
+  </li>
+  <li>
+   Added: Support for Sharpen PP in video options UI
+  </li>
+  <li>
+   Added: Animation source sound controllers support
+  </li>
+  <li>
+   Added: New event
+   <em>
+    onCheckedChanged
+   </em>
+   for checkbox in UI
+  </li>
+  <li>
+   Added: Possibility to enable / disable UI control directly in configs
+  </li>
+  <li>
+   Added: Support for URL tags in
+   <em>
+    structuredText
+   </em>
+   control
+  </li>
+  <li>
+   Added: New command for getting class name of given UI control (
+   <em>
+    ctrlClassName
+   </em>
+   )
+  </li>
+  <li>
+   Added: Lock PhysX scene during buoyancy update for safety
+  </li>
+  <li>
+   Added: New command for setting orientation of UI object  (
+   <em>
+    ctrlSetDirection
+   </em>
+   )
+  </li>
+  <li>
+   Added: Reading of config parameters for sliders
+  </li>
+  <li>
+   Added: Loading of
+   <em>
+    visible
+   </em>
+   attribute for controls
+  </li>
+  <li>
+   Added: Support for multi-samples in animation sounds, direction controller fix
+  </li>
+  <li>
+   Added: New commands for setting and getting models for
+   <em>
+    ControlObject
+   </em>
+  </li>
+  <li>
+   Added: Dynamic creation of UI controls
+  </li>
+  <li>
+   Added: Getters for control object directions, etc.
+  </li>
+  <li>
+   Added: Detect interpolation change, added terminated parameter for doors
+  </li>
+  <li>
+   Added: Event Handler for clicking on HTML tag in a
+   <em>
+    structuredText
+   </em>
+   control
+  </li>
+  <li>
+   Changed: Small changes to fatigue formulas
+  </li>
+  <li>
+   Changed: Minor tweak to weapon sway formula
+  </li>
+  <li>
+   Changed: Disabled update of connection string in Steam profile (letting Steam to update connection string)
+  </li>
+  <li>
+   Changed: Improved
+   <a href="https://community.bistudio.com/wiki/createVehicleCrew" target="_blank">
+    createVehicleCrew
+   </a>
+   command to allow creating missing crew also in not empty vehicles
+  </li>
+  <li>
+   Changed: World array vehicles for PhysX simulation moved to separate array
+  </li>
+  <li>
+   Changed: Behavior of how fatigue and damage affects the ability to hold breath
+  </li>
+  <li>
+   Changed: Changed config parameter naming for listboxes
+  </li>
+  <li>
+   Changed: AI turrets aiming error now influences acceleration of rotation
+  </li>
+  <li>
+   Changed: Further tweaks to breathing mechanics
+  </li>
+  <li>
+   Changed: Commands
+   <a href="https://community.bistudio.com/wiki/everyBackpack" target="_blank">
+    everyBackpack
+   </a>
+   and
+   <a href="https://community.bistudio.com/wiki/everyContainer" target="_blank">
+    everyContainer
+   </a>
+   return empty array also for null objects
+  </li>
+  <li>
+   Changed: Separate DLL for the Steam interface which is used by Launcher and Publisher
+  </li>
+  <li>
+   Changed: Order of cleaning the PhysX scene (fetch simulation before world clean-up)
+  </li>
+  <li>
+   NV and TI mod in AV Terminal PiP
+  </li>
+  <li>
+   Custom waypoint from UAV (LMB + Shift)
+  </li>
+ </ul>
+ <h2>
+  LAUNCHER
+ </h2>
+ <ul>
+  <li>
+   Fixed: Crash when unable to read preview picture file
+  </li>
+  <li>
+   Fixed: Missing parameter setting property
+  </li>
+  <li>
+   Fixed: Addon management not updating addon number properly
+  </li>
+  <li>
+   Fixed: Launcher freezes after multiple clicks on the re-download addon button
+  </li>
+  <li>
+   Fixed: ‘Update available’ message is partially in the tick box
+  </li>
+  <li>
+   Fixed: Unsubscribing an addon via Steam Client causes Laucher updating progress bar to freeze
+  </li>
+  <li>
+   Fixed: Launcher doesn't finish download of some addons - colon is a volume separator char - replaced by '-'
+  </li>
+  <li>
+   Fixed: Multiple download of the same preview image
+  </li>
+  <li>
+   Fixed: Workshop item name change was not detected neither updated in launcher
+  </li>
+  <li>
+   Fixed: Space is missing between some words
+  </li>
+  <li>
+   Fixed: Launcher version can be one again copied to clipboard using shortcut Ctrl + . (Control + Dot)
+  </li>
+  <li>
+   Fixed: Drag and drop sorting doesn't work correctly after opening and closing info of a few addons
+  </li>
+  <li>
+   Fixed: Text overlaps when the overwrite dialog appears
+  </li>
+  <li>
+   Fixed: Image directories are deleted as well now
+  </li>
+  <li>
+   Fixed: Subscribed items filtering - items which have any of
+   <em>
+    addonreqtag
+   </em>
+   get into launcher
+  </li>
+  <li>
+   Fixed: Window is too small when user has DPI over 100%
+  </li>
+  <li>
+   Fixed: Removed padding change when mouse hover over button from default button style (was breaking custom message box)
+  </li>
+  <li>
+   Fixed: Sorting arrow is blurred (replaced with custom path)
+  </li>
+  <li>
+   Fixed: Removed dependency on assembly 'Microsoft.Expression.Drawing.dll'
+  </li>
+  <li>
+   Fixed: Server password is not disabled after restoring default settings
+  </li>
+  <li>
+   Fixed:
+   <em>
+    NetLog
+   </em>
+   parameter is named as Server and works as Server parameter
+  </li>
+  <li>
+   <strong>
+    Added: Feature "Addon Presets"
+   </strong>
+   (+ default file-based provider)
+  </li>
+  <li>
+   <strong>
+    Added: Page for News, displaying development reports from
+    <a href="http://dev.arma3.com/" target="_blank">
+     http://dev.arma3.com/
+    </a>
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Launcher is now localized into various languages
+   </strong>
+  </li>
+  <li>
+   Added: Automatic upgrade of application settings between versions
+  </li>
+  <li>
+   Added: Blurred background under main area if any content is displayed there
+  </li>
+  <li>
+   Added: Examples to parameters
+  </li>
+  <li>
+   Added: Configuration section for launcher-specific values
+  </li>
+  <li>
+   Added: Support for displaying hints and errors in adorned box under text box control
+  </li>
+  <li>
+   Added: HTML to XAML converter
+  </li>
+  <li>
+   Added: Styles
+  </li>
+  <li>
+   Added: Minidump and Windows Error Reporting support
+  </li>
+  <li>
+   Added: When trying to run another instance, a message box is displayed: hitting OK will bring the other (already running) instance to the front and give focus to it
+  </li>
+  <li>
+   Added: Launcher now saves the time and date of when it was last run
+  </li>
+  <li>
+   Added: Bounce effect to checkbox from transition fron unchecked to checked
+  </li>
+  <li>
+   Added: Restore factory defaults button to parameters
+  </li>
+  <li>
+   Added: Code ensuring that presets will be initialized only once
+  </li>
+  <li>
+   Added: Parameter control with Browse button for browsing folders
+  </li>
+  <li>
+   Added: Parameter control with Browse button for browsing files
+  </li>
+  <li>
+   Added: Value coercion to Parameter controls
+  </li>
+  <li>
+   Added: Browse buttons to relevant parameters
+  </li>
+  <li>
+   Changed: Options page header visually unified with the rest of the application
+  </li>
+  <li>
+   Changed: Icons for buttons in addon manager, Options icon
+  </li>
+  <li>
+   Changed: Visual tweaks to controls (check box, combo box, drop down menu, text box, scrollbar, expander, progress bar)
+  </li>
+  <li>
+   Changed: Modified label sizing of Parameters page
+  </li>
+  <li>
+   Changed: Unified visual style of news list and addons list
+  </li>
+  <li>
+   Changed: Moved advanced parameters to new tab
+  </li>
+  <li>
+   Changed: Modified alignment of status text in main window. It's displayed in the same position across different localizations.
+  </li>
+  <li>
+   Proper handling of invalid path characters in addon names
+  </li>
+  <li>
+   Slash in item name replaced by '-' to make it a valid directory name
+  </li>
+  <li>
+   Changed log filename to RPT
+  </li>
+  <li>
+   Preview images are saved in a separate directory according to a unique filehandle (fixed the case where two different items had an image with the same name)
+  </li>
+  <li>
+   Removed close on Esc key press
+  </li>
+  <li>
+   Adjusted margin of a label
+  </li>
+  <li>
+   Changed: Tab control style font
+  </li>
+ </ul>
+</div>

@@ -1,0 +1,153 @@
+<div class="post-content">
+ <p>
+  FROM: Project Lead
+  <br>
+   TO: Arma 3 Users
+   <br>
+    UNIT: Main Branch
+    <br>
+     ACTIVITY: Hotfix: 1.48 (Memory Footprint PhysX Data)
+     <br/>
+     SIZE: ~20 MB / ~6 MB
+    </br>
+   </br>
+  </br>
+ </p>
+ <h1>
+  NOTES
+ </h1>
+ <ul>
+  <li>
+   Consider using the Steam client option to verify the integrity of the local game cache to avoid corrupted data after downloading this update.
+  </li>
+  <li>
+   Consider defragmenting your HDD after downloading large updates.
+  </li>
+  <li>
+   A
+   <em>
+    Legacy Build
+   </em>
+   Steam branch is available for advanced users. It contains the previous significant main branch version (1.46). It can be used to compare specific changes between major releases. The access code for this branch is:
+   <em>
+    Arma3Legacy146
+   </em>
+  </li>
+  <li>
+   You can find the servers in the Steam library (switch the filter to "Tools") - "Arma 3 Server" (based on your OS, it will download the Windows or Linux version).
+   <ul>
+    <li>
+     Administrators can also use the command-line
+     <a href="https://developer.valvesoftware.com/wiki/SteamCMD" target="_blank">
+      SteamCMD
+     </a>
+     utility. The app ID is to be 233780.
+    </li>
+    <li>
+     NVIDIA GameWorks™ Technology provided under license from NVIDIA Corporation. Copyright © 2002-2015 NVIDIA Corporation. All rights reserved.
+    </li>
+   </ul>
+  </li>
+  <li>
+   In case of problems, please check the
+   <a href="http://support.bistudio.com/arma-3" target="_blank">
+    Bohemia Interactive support F.A.Q.
+   </a>
+   ,
+   <a href="http://arma3.com/faq" target="_blank">
+    Arma 3 F.A.Q.
+   </a>
+   or
+   <a href="http://www.battleye.com/support/faq/" target="_blank">
+    BattlEye F.A.Q.
+   </a>
+  </li>
+  <li>
+   You can help us to further improve the game by posting your feedback on the
+   <a href="http://feedback.arma3.com/" target="_blank">
+    Feedback Tracker
+   </a>
+   .
+  </li>
+ </ul>
+ <h1>
+  CHANGELOG
+ </h1>
+ <h3>
+  ENGINE:
+ </h3>
+ <ul>
+  <li>
+   Fixed: Memory consumption of loading binarized objects with PhysX convex components
+  </li>
+  <li>
+   Fixed: Crash caused by corruptions in (mod) data
+  </li>
+ </ul>
+ <h3>
+  LAUNCHER:
+ </h3>
+ <ul>
+  <li>
+   Fixed: Unable to start BattlEye Launcher if its compatibility settings force the system to elevate it (
+   <em>
+    "Run this program as an administrator"
+   </em>
+   is set in the
+   <em>
+    arma3battleye.exe
+   </em>
+   compatibility settings)
+  </li>
+  <li>
+   Added: New message boxes to communicate problems with the game or BattlEye start
+  </li>
+  <li>
+   Fixed: CTD that occurred when
+   <em>
+    arma3.exe
+   </em>
+   was missing, the user disregarded the warning, and clicked on the PLAY button in the Launcher
+  </li>
+  <li>
+   Fixed: Simple fix for false-positive detection of termination of the game process when in fact the game hadn't started due to waiting for BattlEye Launcher to start it
+  </li>
+ </ul>
+ <h3>
+  SERVER:
+ </h3>
+ <ul>
+  <li>
+   Updated: Stand-alone Windows Dedicated Server (hotfix 1.48)
+  </li>
+  <li>
+   Updated: Stand-alone Linux Dedicated Server (hotfix 1.48)
+   <ul>
+    <li>
+     Known issue: Steam client modifies the
+     <em>
+      steam_appid.txt
+     </em>
+     file incorrectly. In case of issues, verify its content is:
+     <strong>
+      107410
+     </strong>
+    </li>
+    <li>
+     Known issue: Sometimes the add-ons are loaded from the wrong installation (e.g. main game)
+    </li>
+    <li>
+     Try adding
+     <em>
+      -mod=curator;kart;heli;mark;dlcbundle
+     </em>
+     to your
+     <em>
+      arma3server.exe
+     </em>
+     shortcut
+    </li>
+   </ul>
+  </li>
+ </ul>
+</div>

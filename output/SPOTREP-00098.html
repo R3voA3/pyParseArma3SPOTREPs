@@ -1,0 +1,1024 @@
+<div class="post-content">
+ <p>
+  FROM: High Command
+  <br/>
+  TO: Arma 3 Users
+  <br/>
+  UNIT: Main Branch
+  <br/>
+  ACTIVITY: Game Update 2.04 (Audio Options, SQF Bytecode, Creator DLC Support)
+  <br/>
+  SIZE: ~765 MB / ~104 MB (depends on Contact ownership)
+  <br/>
+ </p>
+ <h1>
+  NOTES
+  <br/>
+ </h1>
+ <ul>
+  <li>
+   Contact consists of 2 data packs / folders:
+   <ul>
+    <li>
+     Contact (via
+     <i>
+      PLAY CONTACT
+     </i>
+     or
+     <i>
+      -mod=Contact
+     </i>
+     ): for the singleplayer "First Contact" campaign experience (accessible only to owners - optionally loaded)
+    </li>
+    <li>
+     Contact (Platform): for most other use cases, including sandbox multiplayer (loaded by default for all players)
+    </li>
+   </ul>
+  </li>
+  <li>
+   Consider using the Steam client option to verify the integrity of the local game cache to avoid corrupted data after downloading this update.
+  </li>
+  <li>
+   Consider defragmenting your HDD after downloading large updates.
+  </li>
+  <li>
+   Updating a deeply moddable game and its platform is not without risks. We use various methods to communicate upcoming changes to our awesome modding community, such as via the
+   <a href="https://dev.arma3.com/" target="">
+    Dev Hub
+   </a>
+   . We also co-operate directly on troubleshooting, and we offer an opportunity to test updates via our
+   <a href="https://dev.arma3.com/rc-branch" target="">
+    Release Candidate tests
+   </a>
+   . Modders, server administrators, and other members of the community do their best to prepare for updates and to address issues post-release as quickly as possible. Please be mindful of some interruptions (especially in the first hours / days after a release) while we all work to improve the game together.
+  </li>
+  <li>
+   A
+   <i>
+    Legacy Build
+   </i>
+   Steam branch is available for advanced users. It contains the previous significant main branch version (2.02). It can be used to compare specific changes between major releases. The access code for this branch is:
+   <i>
+    Arma3Legacy202
+   </i>
+  </li>
+  <li>
+   This update does not apply to the experimental Linux and Mac client port betas.
+  </li>
+  <li>
+   You can find the servers in the Steam library (switch the filter to "Tools") - "Arma 3 Server" (based on your OS, it will download the Windows or Linux version).
+   <ul>
+    <li>
+     Administrators can also use the command-line
+     <a href="https://developer.valvesoftware.com/wiki/SteamCMD" target="">
+      SteamCMD
+     </a>
+     utility. The app ID is to be 233780.
+    </li>
+    <li>
+     NVIDIA GameWorks™ Technology provided under license from NVIDIA Corporation. Copyright © 2002-2018 NVIDIA Corporation. All rights reserved. NVIDIA® and PhysX® are trademarks of NVIDIA Corporation and are used under license.
+    </li>
+   </ul>
+  </li>
+  <li>
+   In case of problems, please check the
+   <a href="http://support.bistudio.com/arma-3" target="">
+    Bohemia Interactive support F.A.Q.
+   </a>
+   ,
+   <a href="http://arma3.com/faq" target="">
+    Arma 3 F.A.Q.
+   </a>
+   ,
+   <a href="http://www.battleye.com/support/faq/" target="">
+    BattlEye F.A.Q.
+   </a>
+   , or
+   <a href="https://arma3.com/launcher/troubleshooting" target="">
+    Launcher troubleshooting guide
+   </a>
+   .
+  </li>
+  <li>
+   You can help us to further improve the game by posting your feedback on the
+   <a href="http://feedback.arma3.com/" target="">
+    Feedback Tracker
+   </a>
+   .
+   <br/>
+  </li>
+ </ul>
+ <h1>
+  CHANGELOG
+  <br/>
+ </h1>
+ <h2>
+  DATA
+  <br/>
+ </h2>
+ <ul>
+  <li>
+   <b>
+    Added: Platform support for
+    <a href="https://store.steampowered.com/app/1227700/" target="">
+     Arma 3 Creator DLC: S.O.G. Prairie Fire
+    </a>
+   </b>
+   (actual DLC content is not part of this update)
+  </li>
+  <li>
+   <b>
+    Added: New Audio Options for map volume reduction while in vehicles and output device selection
+   </b>
+   -
+   <a href="https://feedback.bistudio.com/T75079" target="">
+    FT-T75079
+   </a>
+  </li>
+  <li>
+   Added:
+   <i>
+    gunnerReversedGetOut
+   </i>
+   parameter to the
+   <i>
+    StaticWeapon
+   </i>
+   class and inverted the pos and dir memory points responsible for get in actions. After this change, the get in action should be visible as default action when the weapon is approached from the rear. If you are inheriting from the
+   <i>
+    StaticWeapon
+   </i>
+   class and you are overwriting
+   <i>
+    memoryPointsGetInGunner
+   </i>
+   or
+   <i>
+    memoryPointsGetInGunnerDir
+   </i>
+   parameters, please adjust your configs so your character disembarks in the correct direction.
+  </li>
+  <li>
+   Added:
+   <i>
+    OnDisplayRegistered
+   </i>
+   and
+   <i>
+    OnDisplayUnregistered
+   </i>
+   scripted Event Handlers
+  </li>
+  <li>
+   Added: Virtual Arsenal scripted Event Handler when a weapon is selected or removed (Weapon Config &gt;&gt;
+   <i>
+    VirtualArsenal
+   </i>
+   &gt;&gt;
+   <i>
+    Eventhandlers
+   </i>
+   &gt;&gt;
+   <i>
+    itemSelected
+   </i>
+   or
+   <i>
+    itemDeselected
+   </i>
+   )
+  </li>
+  <li>
+   Added: Command Points failsafe restoration in Warlords
+  </li>
+  <li>
+   Tweaked: Made materials used on MBT-52 consistent with those used on Nyx (the new materials should also be more friendly for community retextures)
+  </li>
+  <li>
+   Tweaked: Position of Square Shades and Square Spectacles
+  </li>
+  <li>
+   Tweaked: Increased vertical limits on UH-80 and CH-67 doorguns -
+   <a href="https://feedback.bistudio.com/T157654" target="">
+    FT-T157654
+   </a>
+  </li>
+  <li>
+   Tweaked: Improved static weapon unflipping
+  </li>
+  <li>
+   Fixed: Eden Editor attributes on Scientists and Parade Officers when changing loadouts
+  </li>
+  <li>
+   Fixed: Rotation of Diorama Units on Dedicated Servers
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_selectDiarySubject" target="">
+    BIS_fnc_selectDiarySubject
+   </a>
+   was not working -
+   <a href="https://feedback.bistudio.com/T142552" target="">
+    FT-T142552
+   </a>
+  </li>
+  <li>
+   Fixed: Aperture set during scenario preview persisted when returning back to Eden Editor
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_fadeEffect" target="">
+    BIS_fnc_fadeEffect
+   </a>
+   was not unmuting music after fading out -
+   <a href="https://feedback.bistudio.com/T156413" target="">
+    FT-T156413
+   </a>
+  </li>
+  <li>
+   Fixed: An exploit in Warlords
+  </li>
+  <li>
+   Fixed: Unresponsive AI in some cases in Warlords
+  </li>
+  <li>
+   Fixed: Spawn protection invulnerability would not get terminated properly in some cases in Warlords
+   <br/>
+  </li>
+ </ul>
+ <h2>
+  ENGINE
+  <br/>
+ </h2>
+ <ul>
+  <li>
+   <b>
+    Added: Support for precompiled SQF Bytecode
+   </b>
+   (vanilla data is not currently precompiled, so this is initially to benefit community mods)
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/markerShadow" target="">
+    markerShadow
+   </a>
+   ,
+   <a href="https://community.bistudio.com/wiki/setMarkerShadow" target="">
+    setMarkerShadow
+   </a>
+   ,
+   <a href="https://community.bistudio.com/wiki/setMarkerShadowLocal" target="">
+    setMarkerShadowLocal
+   </a>
+   script commands -
+   <a href="https://feedback.bistudio.com/T155728" target="">
+    FT-T155728
+   </a>
+  </li>
+  <li>
+   Added: New
+   <a href="https://community.bistudio.com/wiki/allControls" target="">
+    allControls
+   </a>
+   script command syntax that takes a Controls Group -
+   <a href="https://feedback.bistudio.com/T154801" target="">
+    FT-T154801
+   </a>
+  </li>
+  <li>
+   Added: New script command
+   <a href="https://community.bistudio.com/wiki/apertureParams" target="">
+    apertureParams
+   </a>
+   -
+   <a href="https://feedback.bistudio.com/T154354" target="">
+    FT-T154354
+   </a>
+  </li>
+  <li>
+   Added: Ability to configure outside terrain generation
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/setDiarySubjectPicture" target="">
+    setDiarySubjectPicture
+   </a>
+   script command
+  </li>
+  <li>
+   Added: server.cfg option to ignore errors that would otherwise abort scenario starts
+  </li>
+  <li>
+   Added: Missing
+   <a href="https://community.bistudio.com/wiki/speechVolume" target="">
+    speechVolume
+   </a>
+   command -
+   <a href="https://feedback.bistudio.com/T72093" target="">
+    FT-T72093
+   </a>
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/allDiarySubjects" target="">
+    allDiarySubjects
+   </a>
+   command -
+   <a href="https://feedback.bistudio.com/T154260" target="">
+    FT-T154260
+   </a>
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/fadeEnvironment" target="">
+    fadeEnvironment
+   </a>
+   and
+   <a href="https://community.bistudio.com/wiki/environmentVolume" target="">
+    environmentVolume
+   </a>
+   script commands
+  </li>
+  <li>
+   Added:
+   <i>
+    -language=
+   </i>
+   command line option
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/localize" target="">
+    localize
+   </a>
+   and
+   <a href="https://community.bistudio.com/wiki/isLocalized" target="">
+    isLocalized
+   </a>
+   now support
+   <i>
+    $STR
+   </i>
+   prefixes
+  </li>
+  <li>
+   Added:
+   <i>
+    GroupCreated
+   </i>
+   /
+   <i>
+    GroupDeleted
+   </i>
+   Event Handlers -
+   <a href="https://feedback.bistudio.com/T156211" target="">
+    FT-T156211
+   </a>
+  </li>
+  <li>
+   Added:
+   <i>
+    forceMapOutsideColor
+   </i>
+   config parameter to
+   <i>
+    CfgWorlds
+   </i>
+   &gt;&gt;
+   <i>
+    OutsideTerrain
+   </i>
+   to disable rendering of outside terrain on the 2D map -
+   <a href="https://feedback.bistudio.com/T156243" target="">
+    FT-T156243
+   </a>
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/combatBehaviour" target="">
+    combatBehaviour
+   </a>
+   and
+   <a href="https://community.bistudio.com/wiki/setCombatBehaviour" target="">
+    setCombatBehaviour
+   </a>
+   commands -
+   <a href="https://feedback.bistudio.com/T71588" target="">
+    FT-T71588
+   </a>
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/ropeSegments" target="">
+    ropeSegments
+   </a>
+   script command -
+   <a href="https://feedback.bistudio.com/T153606" target="">
+    FT-T153606
+   </a>
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/setWeaponZeroing" target="">
+    setWeaponZeroing
+   </a>
+   script command and
+   <a href="https://community.bistudio.com/wiki/currentZeroing" target="">
+    currentZeroing
+   </a>
+   alternative syntax
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/diag_localized" target="">
+    diag_localized
+   </a>
+   command
+  </li>
+  <li>
+   Added: Ability to grab magazines out of weapons on the ground -
+   <a href="https://feedback.bistudio.com/T155812" target="">
+    FT-T155812
+   </a>
+  </li>
+  <li>
+   Added: Optional parameter to the
+   <a href="https://community.bistudio.com/wiki/showHUD" target="">
+    showHUD
+   </a>
+   command to show
+   <a href="https://community.bistudio.com/wiki/drawIcon3D" target="">
+    drawIcon3D
+   </a>
+   even when the HUD is hidden -
+   <a href="https://feedback.bistudio.com/T154136" target="">
+    FT-T154136
+   </a>
+   ,
+   <a href="https://feedback.bistudio.com/T116714" target="">
+    FT-T116714
+   </a>
+   ,
+   <a href="https://feedback.bistudio.com/T154180" target="">
+    FT-T154180
+   </a>
+   ,
+   <a href="https://feedback.bistudio.com/T154138" target="">
+    FT-T154138
+   </a>
+  </li>
+  <li>
+   Added: Server-side log message when mods / signatures do not fit into the Steam Query data limit
+  </li>
+  <li>
+   Added: New script command
+   <a href="https://community.bistudio.com/wiki/focusedCtrl" target="">
+    focusedCtrl
+   </a>
+   -
+   <a href="https://feedback.bistudio.com/T154790" target="">
+    FT-T154790
+   </a>
+  </li>
+  <li>
+   Added: Parameter to
+   <a href="https://community.bistudio.com/wiki/playSound" target="">
+    playSound
+   </a>
+   /
+   <a href="https://community.bistudio.com/wiki/say3D" target="">
+    say3D
+   </a>
+   to disable attenuation without changing sounds to speech
+  </li>
+  <li>
+   Added: New scenario config parameter
+   <i>
+    AllowProfileGlasses
+   </i>
+   -
+   <a href="https://feedback.bistudio.com/T156414" target="">
+    FT-T156414
+   </a>
+   ,
+   <a href="https://feedback.bistudio.com/T155328" target="">
+    FT-T155328
+   </a>
+   ,
+   <a href="https://feedback.bistudio.com/T81911" target="">
+    FT-T81911
+   </a>
+  </li>
+  <li>
+   Added: Warning message when attempting to edit a scenario which was saved using a modded Eden Editor -
+   <a href="https://feedback.bistudio.com/T154222" target="">
+    FT-T154222
+   </a>
+  </li>
+  <li>
+   Added: Ability to configure audio output device via the settings -
+   <a href="https://feedback.bistudio.com/T75079" target="">
+    FT-T75079
+   </a>
+  </li>
+  <li>
+   Added: Config parameters to control whether a vehicle
+   <i>
+    GetOut
+   </i>
+   direction is opposite of its
+   <i>
+    GetIn
+   </i>
+   direction
+  </li>
+  <li>
+   Added: Audio option to configure the volume reduction on the map screen while inside vehicles
+  </li>
+  <li>
+   Added:
+   <i>
+    _local
+   </i>
+   parameter to all marker Event Handlers
+  </li>
+  <li>
+   Added:
+   <i>
+    affectedByWind
+   </i>
+   <i>
+    CfgAmmo
+   </i>
+   entry for flares to let them be affected by wind speed (off by default)
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/openGPS" target="">
+    openGPS
+   </a>
+   script command -
+   <a href="https://feedback.bistudio.com/T124710" target="">
+    FT-T124710
+   </a>
+   ,
+   <a href="https://feedback.bistudio.com/T157028" target="">
+    FT-T157028
+   </a>
+   ,
+   <a href="https://feedback.bistudio.com/T74039" target="">
+    FT-T74039
+   </a>
+   ,
+   <a href="https://feedback.bistudio.com/T78824" target="">
+    FT-T78824
+   </a>
+  </li>
+  <li>
+   Added:
+   <i>
+    setDefault
+   </i>
+   parameter to the
+   <a href="https://community.bistudio.com/wiki/getOrDefault" target="">
+    getOrDefault
+   </a>
+   command -
+   <a href="https://feedback.bistudio.com/T157359" target="">
+    FT-T157359
+   </a>
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/toArray" target="">
+    toArray
+   </a>
+   <a href="https://community.bistudio.com/wiki/HashMap" target="">
+    HashMap
+   </a>
+   script command
+  </li>
+  <li>
+   Added: Alternative syntax to the
+   <a href="https://community.bistudio.com/wiki/insert" target="">
+    insert
+   </a>
+   script command for
+   <a href="https://community.bistudio.com/wiki/HashMap" target="">
+    HashMap
+   </a>
+  </li>
+  <li>
+   Added: Preprocessor definition
+   <i>
+    __IS_DEDICATED__
+   </i>
+   on Dedicated Server / Client
+  </li>
+  <li>
+   Tweaked: Steam client libraries were updated to the latest version (to support recent
+   <a href="https://steamcommunity.com/discussions/forum/14/2974028351344359625/" target="">
+    opt-in security enhancements
+   </a>
+   for server admins)
+  </li>
+  <li>
+   Tweaked: Some in-game help command descriptions were improved and corrected -
+   <a href="https://feedback.bistudio.com/T155675" target="">
+    FT-T155675
+   </a>
+  </li>
+  <li>
+   Tweaked:
+   <a href="https://community.bistudio.com/wiki/fullCrew" target="">
+    fullCrew
+   </a>
+   now returns all position names in consistent lower-case -
+   <a href="https://feedback.bistudio.com/T155660" target="">
+    FT-T155660
+   </a>
+  </li>
+  <li>
+   Tweaked: Added
+   <a href="https://community.bistudio.com/wiki/taskName" target="">
+    taskName
+   </a>
+   command alias to the
+   <a href="https://community.bistudio.com/wiki/type" target="">
+    type
+   </a>
+   command, which returns the task name (for consistency)
+  </li>
+  <li>
+   Tweaked:
+   <a href="https://community.bistudio.com/wiki/ppEffectEnabled" target="">
+    ppEffectEnabled
+   </a>
+   can now take an effect name as an argument
+  </li>
+  <li>
+   Tweaked:
+   <i>
+    HandleChatMessage
+   </i>
+   Event Handler now also returns unlocalized string names where applicable
+  </li>
+  <li>
+   Tweaked: Active server browser tabs after disconnecting from a server -
+   <a href="https://feedback.bistudio.com/T156008" target="">
+    FT-T156008
+   </a>
+  </li>
+  <li>
+   Tweaked:
+   <a href="https://community.bistudio.com/wiki/addForce" target="">
+    addForce
+   </a>
+   can now be applied to objects of simulation class
+   <i>
+    Man
+   </i>
+   , while forcing an unconscious ragdoll state
+  </li>
+  <li>
+   Tweaked: Added optional offsets for text drawing to
+   <a href="https://community.bistudio.com/wiki/drawIcon3D" target="">
+    drawIcon3D
+   </a>
+  </li>
+  <li>
+   Tweaked:
+   <a href="https://community.bistudio.com/wiki/drawIcon3D" target="">
+    drawIcon3D
+   </a>
+   now has an option to separate the icon and text colors
+  </li>
+  <li>
+   Tweaked: Added an
+   <a href="https://community.bistudio.com/wiki/addMissionEventHandler" target="">
+    addMissionEventHandler
+   </a>
+   parameter to pass optional arguments to the Event Handler code
+  </li>
+  <li>
+   Tweaked: Performance optimizations for
+   <i>
+    CostMap
+   </i>
+   generation
+  </li>
+  <li>
+   Tweaked: User profile
+   <i>
+    CustomDifficulty
+   </i>
+   <i>
+    aiLevelPreset
+   </i>
+   is now stored by name instead of index
+  </li>
+  <li>
+   Tweaked: Performance optimization for handling map markers
+  </li>
+  <li>
+   Fixed: Sound listener position not following the camera while the map screen is open
+  </li>
+  <li>
+   Fixed: Vehicle sound attenuation being disabled while the map screen is open
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/selectDiarySubject" target="">
+    selectDiarySubject
+   </a>
+   was not working -
+   <a href="https://feedback.bistudio.com/T154260" target="">
+    FT-T154260
+   </a>
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/createDiarySubject" target="">
+    createDiarySubject
+   </a>
+   picture parameters would have no effect -
+   <a href="https://feedback.bistudio.com/T154260" target="">
+    FT-T154260
+   </a>
+  </li>
+  <li>
+   Fixed: AI not reacting if the player shot from a vehicle and left the vehicle before the shot impacted
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/processDiaryLink" target="">
+    processDiaryLink
+   </a>
+   was not working during briefings
+  </li>
+  <li>
+   Fixed: Backpack duplication issue
+  </li>
+  <li>
+   Fixed: When diary records share the same title, some records could not be selected
+  </li>
+  <li>
+   Fixed: UI control sounds being affected by
+   <a href="https://community.bistudio.com/wiki/fadeRadio" target="">
+    fadeRadio
+   </a>
+   -
+   <a href="https://feedback.bistudio.com/T156517" target="">
+    FT-T156517
+   </a>
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/playSound3D" target="">
+    playSound3D
+   </a>
+   would not play remotely if volume was set over 5
+  </li>
+  <li>
+   Fixed:
+   <i>
+    xxxVolume
+   </i>
+   commands would not return the current volume
+  </li>
+  <li>
+   Fixed: Some
+   <i>
+    fadeXXX
+   </i>
+   commands would not check for the allowed sound volume level
+  </li>
+  <li>
+   Fixed: Crash on startup when the installation path contained Unicode characters -
+   <a href="https://feedback.bistudio.com/T156271" target="">
+    FT-T156271
+   </a>
+  </li>
+  <li>
+   Fixed: Radio protocol messages were showing in the language of the sender -
+   <a href="https://feedback.bistudio.com/T156062" target="">
+    FT-T156062
+   </a>
+  </li>
+  <li>
+   Fixed:
+   <i>
+    CEdit
+   </i>
+   mouse selection was not able to select text that is on the left outside of the view area (partial) -
+   <a href="https://feedback.bistudio.com/T156218" target="">
+    FT-T156218
+   </a>
+  </li>
+  <li>
+   Fixed:
+   <i>
+    CfgEnvSound
+   </i>
+   sound when used as trigger effect would not stop on trigger deactivation
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/setSoundEffect" target="">
+    setSoundEffect
+   </a>
+   <i>
+    envSound
+   </i>
+   did not delete with its trigger
+  </li>
+  <li>
+   Fixed:
+   <i>
+    "left"
+   </i>
+   align on
+   <a href="https://community.bistudio.com/wiki/drawIcon3D" target="">
+    drawIcon3D
+   </a>
+   was not working correctly -
+   <a href="https://feedback.bistudio.com/T82067" target="">
+    FT-T82067
+   </a>
+  </li>
+  <li>
+   Fixed: It was possible to activate the Get In action multiple times if a vehicle is using slow opening door animations (precise get in)
+  </li>
+  <li>
+   Fixed: Serialization of most
+   <a href="https://community.bistudio.com/wiki/showHUD" target="">
+    showHUD
+   </a>
+   parameters was absent
+  </li>
+  <li>
+   Fixed: Field Manual 3D objects sometimes rendering as a pure white shape
+  </li>
+  <li>
+   Fixed: CTD when deleting a marker in the
+   <i>
+    MarkerCreated
+   </i>
+   Event Handler -
+   <a href="https://feedback.bistudio.com/T157170" target="">
+    FT-T157170
+   </a>
+  </li>
+  <li>
+   Fixed: CTD in the
+   <i>
+    SCENARIOS
+   </i>
+   menu while subscribed to Steam Workshop scenarios that have an incomplete filename -
+   <a href="https://feedback.bistudio.com/T157230" target="">
+    FT-T157230
+   </a>
+  </li>
+  <li>
+   Fixed:
+   <i>
+    CfgFunctions
+   </i>
+   not found error in Eden Editor -
+   <a href="https://feedback.bistudio.com/T154708" target="">
+    FT-T154708
+   </a>
+  </li>
+  <li>
+   Fixed: When using deadzone, the aim would sometimes autocenter when zoomed -
+   <a href="https://feedback.bistudio.com/T119242" target="">
+    FT-T119242
+   </a>
+  </li>
+  <li>
+   Fixed: Units that were assigned to a custom channel would not delete properly -
+   <a href="https://forums.bohemia.net/forums/topic/232760-ghost-objects/?tab=comments#comment-3430900" target="">
+    forums
+   </a>
+  </li>
+  <li>
+   Fixed: Crash caused by the array
+   <a href="https://community.bistudio.com/wiki/insert" target="">
+    insert
+   </a>
+   script command -
+   <a href="https://feedback.bistudio.com/T155531" target="">
+    FT-T155531
+   </a>
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/setObjectScale" target="">
+    setObjectScale
+   </a>
+   on static objects (f.e. houses) not synchronizing properly in multiplayer
+  </li>
+  <li>
+   Fixed: Issue with camo face textures not loading in some cases -
+   <a href="https://feedback.bistudio.com/T154485" target="">
+    FT-T154485
+   </a>
+  </li>
+  <li>
+   Fixed: Possible freeze in the main menu when using a single / dual core CPU -
+   <a href="https://feedback.bistudio.com/T156456" target="">
+    FT-T156456
+   </a>
+  </li>
+  <li>
+   Fixed: The language option sometimes failed to save (the changed language option would reset if the menu was accessed again before a game restart)
+  </li>
+  <li>
+   Fixed: Not being able to use scripts in Eden Editor that do not return Nothing
+  </li>
+  <li>
+   Fixed:
+   <i>
+    RscEdit
+   </i>
+   controls not rendering text if a parent container is scrolled down but the control is at a Y offset -
+   <a href="https://feedback.bistudio.com/T157448" target="">
+    FT-T157448
+   </a>
+   <br/>
+  </li>
+ </ul>
+ <h2>
+  LAUNCHER
+  <br/>
+ </h2>
+ <ul>
+  <li>
+   Added:
+   <a href="https://store.steampowered.com/app/1042220/" target="">
+    Global Mobilization CDLC
+   </a>
+   banner
+  </li>
+  <li>
+   Added:
+   <a href="https://store.steampowered.com/app/1227700/" target="">
+    S.O.G. Prairie Fire CDLC
+   </a>
+   banner
+  </li>
+  <li>
+   Fixed: Launcher was not listing the official servers
+  </li>
+ </ul>
+ <h2>
+  SERVER
+ </h2>
+ <ul>
+  <li>
+   Updated: Stand-alone Windows Dedicated Server (2.04)
+  </li>
+  <li>
+   Updated: Stand-alone Linux Dedicated Server (2.04)
+   <ul>
+    <li>
+     The data in
+     <i>
+      -mod=contact
+     </i>
+     is not fully multiplayer compatible (it is meant for the singleplayer campaign experience); we recommend only hosting servers with it for special use cases
+     <ul>
+      <li>
+       This data is signed by a new A3C key whose presence can be used to control what client data is allowed on the server
+      </li>
+     </ul>
+    </li>
+    <li>
+     Known issue: Steam client modifies the
+     <i>
+      steam_appid.txt
+     </i>
+     file incorrectly. In case of issues, verify its content is:
+     <b>
+      107410
+     </b>
+    </li>
+    <li>
+     Known issue: Sometimes the add-ons are loaded from the wrong installation (e.g. main game)
+    </li>
+    <li>
+     Try adding
+     <i>
+      -mod=curator;kart;heli;mark;expansion;jets;argo;orange;tacops;tank;enoch;aow
+     </i>
+     to your
+     <i>
+      arma3server.exe
+     </i>
+     shortcut
+     <br/>
+    </li>
+   </ul>
+  </li>
+ </ul>
+</div>

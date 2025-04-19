@@ -1,0 +1,451 @@
+<div class="post-content">
+ <p>
+  FROM: High Command
+  <br/>
+  TO: Arma 3 Users
+  <br/>
+  UNIT: Main Branch
+  <br/>
+  ACTIVITY: Game Mini-Update 2.16 (Creator DLC Support, Haze, Ultrawide)
+  <br/>
+  SIZE: ~28 MB / ~4 MB
+  <br/>
+ </p>
+ <h1>
+  NOTES
+ </h1>
+ <ul>
+  <li>
+   Contact consists of 2 data packs / folders:
+   <ul>
+    <li>
+     Contact (via
+     <i>
+      PLAY CONTACT
+     </i>
+     or
+     <i>
+      -mod=Contact
+     </i>
+     ): for the singleplayer "First Contact" campaign experience (accessible only to owners - optionally loaded)
+    </li>
+    <li>
+     Contact (Platform): for most other use cases, including sandbox multiplayer (loaded by default for all players)
+    </li>
+   </ul>
+  </li>
+  <li>
+   Consider using the Steam client option to verify the integrity of the local game cache to avoid corrupted data after downloading this update.
+  </li>
+  <li>
+   Consider defragmenting your HDD after downloading large updates.
+  </li>
+  <li>
+   Updating a deeply moddable game and its platform is not without risks. We use various methods to communicate upcoming changes to our awesome modding community, such as via the
+   <a href="https://dev.arma3.com/" target="">
+    Dev Hub
+   </a>
+   . We also co-operate directly on troubleshooting, and we offer an opportunity to test updates via our
+   <a href="https://dev.arma3.com/rc-branch" target="">
+    Release Candidate tests
+   </a>
+   . Modders, server administrators, and other members of the community do their best to prepare for updates and to address issues post-release as quickly as possible. Please be mindful of some interruptions (especially in the first hours / days after a release) while we all work to improve the game together.
+  </li>
+  <li>
+   A
+   <i>
+    Legacy Build
+   </i>
+   Steam branch is available for advanced users. It contains the previous significant main branch version (2.14). It can be used to compare specific changes between major releases. The access code for this branch is:
+   <i>
+    Arma3Legacy214
+   </i>
+  </li>
+  <li>
+   This update does not apply to
+   <a href="http://dev.arma3.com/ports" target="">
+    the experimental Mac client ports
+   </a>
+   .
+  </li>
+  <li>
+   You can find the servers in the Steam library (switch the filter to "Tools") - "Arma 3 Server" (based on your OS, it will download the Windows or Linux version).
+   <ul>
+    <li>
+     Administrators can also use the command-line
+     <a href="https://developer.valvesoftware.com/wiki/SteamCMD" target="">
+      SteamCMD
+     </a>
+     utility. The app ID is to be 233780.
+    </li>
+    <li>
+     NVIDIA GameWorks™ Technology provided under license from NVIDIA Corporation. Copyright © 2002-2018 NVIDIA Corporation. All rights reserved. NVIDIA® and PhysX® are trademarks of NVIDIA Corporation and are used under license.
+    </li>
+   </ul>
+  </li>
+  <li>
+   In case of problems, please check the
+   <a href="http://support.bistudio.com/arma-3" target="">
+    Bohemia Interactive support F.A.Q.
+   </a>
+   ,
+   <a href="http://arma3.com/faq" target="">
+    Arma 3 F.A.Q.
+   </a>
+   ,
+   <a href="http://www.battleye.com/support/faq/" target="">
+    BattlEye F.A.Q.
+   </a>
+   , or
+   <a href="https://arma3.com/launcher/troubleshooting" target="">
+    Launcher troubleshooting guide
+   </a>
+   .
+  </li>
+  <li>
+   You can help us to further improve the game by posting your feedback on the
+   <a href="http://feedback.arma3.com/" target="">
+    Feedback Tracker
+   </a>
+   .
+   <br/>
+  </li>
+ </ul>
+ <h1>
+  CHANGELOG
+ </h1>
+ <h2>
+  ENGINE
+ </h2>
+ <ul>
+  <li>
+   <b>
+    Added: Video option that allows overriding and reducing haze strength
+   </b>
+   (
+   <i>
+    Standard
+   </i>
+   is default and means the world config settings are used)
+  </li>
+  <li>
+   Added:
+   <i>
+    overrideHazeQuality
+   </i>
+   server and scenario parameters, and also added haze to the
+   <a href="https://community.bistudio.com/wiki/getVideoOptions" target="">
+    getVideoOptions
+   </a>
+   command
+  </li>
+  <li>
+   <b>
+    Tweaked: Ultrawide is now the default for high aspect ratio screens (instead of triple-head)
+   </b>
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/focusOn" target="">
+    focusOn
+   </a>
+   script command
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/setWaterLeakiness" target="">
+    setWaterLeakiness
+   </a>
+   /
+   <a href="https://community.bistudio.com/wiki/setWaterFillPercentage" target="">
+    setWaterFillPercentage
+   </a>
+   /
+   <a href="https://community.bistudio.com/wiki/getWaterFillPercentage" target="">
+    getWaterFillPercentage
+   </a>
+   script commands
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/getWaterLeakiness" target="">
+    getWaterLeakiness
+   </a>
+   script command
+  </li>
+  <li>
+   Added: Ability to draw
+   <a href="https://community.bistudio.com/wiki/cutRsc" target="">
+    cutRsc
+   </a>
+   /
+   <a href="https://community.bistudio.com/wiki/cutText" target="">
+    cutText
+   </a>
+   /
+   <a href="https://community.bistudio.com/wiki/cutObj" target="">
+    cutObj
+   </a>
+   behind the game HUD using a new bool parameter -
+   <a href="https://feedback.bistudio.com/T72205" target="">
+    FT-T72205
+   </a>
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/PreProcessor_Commands" target="">
+    Preprocessor
+   </a>
+   definitions
+   <i>
+    __YEAR__
+   </i>
+   /
+   <i>
+    __MONTH__
+   </i>
+   /
+   <i>
+    __DAY__
+   </i>
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/Description.ext" target="">
+    description.ext
+   </a>
+   <i>
+    DifficultyOverride
+   </i>
+   class
+  </li>
+  <li>
+   Added: Aspect ratio settings for ultrawide monitors (disables triple-head detection)
+  </li>
+  <li>
+   Added: "Restart required" dialog when changing aspect ratio's triple-head state
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/setFuelConsumptionCoef" target="">
+    set
+   </a>
+   /
+   <a href="https://community.bistudio.com/wiki/getFuelConsumptionCoef" target="">
+    getFuelConsumptionCoef
+   </a>
+   script commands -
+   <a href="https://feedback.bistudio.com/T172144" target="">
+    FT-T172144
+   </a>
+  </li>
+  <li>
+   Tweaked: "HandleDamage" event was extended with additional context
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/clientOwner" target="">
+    clientOwner
+   </a>
+   of the server host changed after loading a save (e.g. leading to never-ending secondary tank explosions) -
+   <a href="https://feedback.bistudio.com/T175731" target="">
+    FT-T175731
+   </a>
+  </li>
+  <li>
+   Fixed: Sling loading hooks could get duplicated on loading saves -
+   <a href="https://feedback.bistudio.com/T177659" target="">
+    FT-T177659
+   </a>
+  </li>
+  <li>
+   Fixed: Disabled helicopters exploding when turned upside down (previously experimental only, switched to all builds enabled)
+  </li>
+  <li>
+   Fixed: Bug / crash where file reads could be mixed up and the wrong file was attempted to be read -
+   <a href="https://feedback.bistudio.com/T164178" target="">
+    FT-T164178
+   </a>
+  </li>
+  <li>
+   Fixed: Possible crash when being disconnected from a multiplayer server
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/createHashMapObject" target="">
+    createHashMapObject
+   </a>
+   passed a wrong value in the constructor's
+   <i>
+    _self
+   </i>
+   variable, if called in a scheduled environment -
+   <a href="https://feedback.bistudio.com/T175632" target="">
+    FT-T175632
+   </a>
+  </li>
+  <li>
+   Fixed: Game freeze when changing unit group assignment inside Zeus when a unit is synced to a trigger -
+   <a href="https://feedback.bistudio.com/T175342" target="">
+    FT-T175342
+   </a>
+  </li>
+  <li>
+   Fixed: Crash when trying to use
+   <i>
+    playTrigger
+   </i>
+   or
+   <i>
+    volume
+   </i>
+   expressions in
+   <i>
+    CfgSoundSets
+   </i>
+   on a
+   <i>
+    SoundObject
+   </i>
+  </li>
+  <li>
+   Fixed: Server could get stuck in a state where every player was kicked due to BattlEye timeout
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/createHashMapObject" target="">
+    createHashMapObject
+   </a>
+   when using Object/HashMap as
+   <i>
+    #base
+   </i>
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/Procedural_Textures#UI_On_Texture" target="">
+    UI to Texture
+   </a>
+   would not reload after being unloaded (out of VRAM or changing texture quality)
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/createHashMapObject" target="">
+    HashMapObject
+   </a>
+   with an unscheduled flag would not return any values when methods are called -
+   <a href="https://feedback.bistudio.com/T176535" target="">
+    FT-T176535
+   </a>
+  </li>
+  <li>
+   Fixed:
+   <i>
+    damageEffects
+   </i>
+   material swapping did not consider
+   <i>
+    hiddenSelection
+   </i>
+   material changes (on hit points without a visual selection) -
+   <a href="https://feedback.bistudio.com/T173561" target="">
+    FT-T173561
+   </a>
+  </li>
+  <li>
+   Fixed: Vehicles'
+   <i>
+    VisualSensor
+   </i>
+   could see targets through buildings and objects -
+   <a href="https://feedback.bistudio.com/T176526" target="">
+    FT-T176526
+   </a>
+  </li>
+  <li>
+   Fixed: Default system memory detection on 64bit systems was limited to 4GB (now is 16GB)
+  </li>
+  <li>
+   Fixed: Default system memory detection on 64bit Linux servers was limited to 4GB (now is 8GB)
+  </li>
+  <li>
+   Fixed: A possible crash connected to sling loading
+  </li>
+  <li>
+   Fixed: Various PhysX issues related to the vehicle suspension system
+  </li>
+ </ul>
+ <h2>
+  LAUNCHER
+ </h2>
+ <ul>
+  <li>
+   <b>
+    Added: Support for
+    <a href="https://store.steampowered.com/app/2647760/" target="">
+     Reaction Forces Creator DLC
+    </a>
+   </b>
+  </li>
+  <li>
+   Tweaked: The Launcher now does not create the
+   <i>
+    !Workshop
+   </i>
+   folder anymore in Proton (because it did not work correctly) -
+   <a href="https://feedback.bistudio.com/T178177" target="">
+    FT-T178177
+   </a>
+   <br/>
+  </li>
+ </ul>
+ <h2>
+  SERVER
+ </h2>
+ <ul>
+  <li>
+   Updated: Stand-alone Windows Dedicated Server (2.16)
+  </li>
+  <li>
+   Updated: Stand-alone Linux Dedicated Server (2.16)
+   <ul>
+    <li>
+     The data in
+     <i>
+      -mod=contact
+     </i>
+     is not fully multiplayer compatible (it is meant for the singleplayer campaign experience); we recommend only hosting servers with it for special use cases
+     <ul>
+      <li>
+       This data is signed by a new A3C key whose presence can be used to control what client data is allowed on the server
+      </li>
+     </ul>
+    </li>
+    <li>
+     Known issue: Steam client modifies the
+     <i>
+      steam_appid.txt
+     </i>
+     file incorrectly. In case of issues, verify its content is:
+     <b>
+      107410
+     </b>
+    </li>
+    <li>
+     Known issue: Sometimes the add-ons are loaded from the wrong installation (e.g. main game)
+    </li>
+    <li>
+     Try adding
+     <i>
+      -mod=curator;kart;heli;mark;expansion;jets;argo;orange;tacops;tank;enoch;aow
+     </i>
+     to your
+     <i>
+      arma3server.exe
+     </i>
+     shortcut
+    </li>
+   </ul>
+  </li>
+ </ul>
+</div>

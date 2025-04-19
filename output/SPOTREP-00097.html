@@ -1,0 +1,247 @@
+<div class="post-content">
+ <p>
+  FROM: High Command
+  <br/>
+  TO: Arma 3 Users
+  <br/>
+  UNIT: Main Branch
+  <br/>
+  ACTIVITY: Hotfix 2.02 (Miscellaneous Fixes)
+  <br/>
+  SIZE: ~419 MB / ~41 MB (depends on Contact ownership)
+  <br/>
+ </p>
+ <h1>
+  NOTES
+ </h1>
+ <ul>
+  <li>
+   Contact consists of 2 data packs / folders:
+   <ul>
+    <li>
+     Contact (via
+     <i>
+      PLAY CONTACT
+     </i>
+     or
+     <i>
+      -mod=Contact
+     </i>
+     ): for the singleplayer "First Contact" campaign experience (accessible only to owners - optionally loaded)
+    </li>
+    <li>
+     Contact (Platform): for most other use cases, including sandbox multiplayer (loaded by default for all players)
+    </li>
+   </ul>
+  </li>
+  <li>
+   Consider using the Steam client option to verify the integrity of the local game cache to avoid corrupted data after downloading this update.
+  </li>
+  <li>
+   Consider defragmenting your HDD after downloading large updates.
+  </li>
+  <li>
+   Updating a deeply moddable game and its platform is not without risks. We use various methods to communicate upcoming changes to our awesome modding community, such as via the
+   <a href="https://dev.arma3.com/" target="">
+    Dev Hub
+   </a>
+   . We also co-operate directly on troubleshooting, and we offer an opportunity to test updates via our
+   <a href="https://dev.arma3.com/rc-branch" target="">
+    Release Candidate tests
+   </a>
+   . Modders, server administrators and other members of the community do their best to prepare for updates and to address issues post-release as quickly as possible. Please be mindful of some interruptions (especially in the first hours / days after a release) while we all work to improve the game together.
+  </li>
+  <li>
+   A
+   <i>
+    Legacy Build
+   </i>
+   Steam branch is available for advanced users. It contains the previous significant main branch version (2.00). It can be used to compare specific changes between major releases. The access code for this branch is:
+   <i>
+    Arma3Legacy200
+   </i>
+  </li>
+  <li>
+   This update does not apply to
+   <a href="http://dev.arma3.com/ports" target="">
+    the experimental Linux and Mac port betas
+   </a>
+   .
+  </li>
+  <li>
+   You can find the servers in the Steam library (switch the filter to "Tools") - "Arma 3 Server" (based on your OS, it will download the Windows or Linux version).
+   <ul>
+    <li>
+     Administrators can also use the command-line
+     <a href="https://developer.valvesoftware.com/wiki/SteamCMD" target="">
+      SteamCMD
+     </a>
+     utility. The app ID is to be 233780.
+    </li>
+    <li>
+     NVIDIA GameWorks™ Technology provided under license from NVIDIA Corporation. Copyright © 2002-2018 NVIDIA Corporation. All rights reserved. NVIDIA® and PhysX® are trademarks of NVIDIA Corporation and are used under license.
+    </li>
+   </ul>
+  </li>
+  <li>
+   In case of problems, please check the
+   <a href="http://support.bistudio.com/arma-3" target="">
+    Bohemia Interactive support F.A.Q.
+   </a>
+   ,
+   <a href="http://arma3.com/faq" target="">
+    Arma 3 F.A.Q.
+   </a>
+   ,
+   <a href="http://www.battleye.com/support/faq/" target="">
+    BattlEye F.A.Q.
+   </a>
+   , or
+   <a href="https://arma3.com/launcher/troubleshooting" target="">
+    Launcher troubleshooting guide
+   </a>
+   .
+  </li>
+  <li>
+   You can help us to further improve the game by posting your feedback on the
+   <a href="http://feedback.arma3.com/" target="">
+    Feedback Tracker
+   </a>
+   .
+   <br/>
+  </li>
+ </ul>
+ <p>
+  <br/>
+ </p>
+ <h1>
+  CHANGELOG
+  <br/>
+ </h1>
+ <h2>
+  DATA
+ </h2>
+ <ul>
+  <li>
+   Fixed: Visibility of some Art of War DLC props in Zeus Game Master mode -
+   <a href="https://feedback.bistudio.com/T156965" target="">
+    FT-T156965
+   </a>
+  </li>
+  <li>
+   Tweaked: Replaced Chromatic Aberration Post Processing effects on ACRO, RCO, MRCO and Promet Modular Sight by Radial Blur (this effect can be tweaked via the Radial Blur slider in Video Settings &gt; AA &amp; PP) -
+   <a href="https://feedback.bistudio.com/T156991" target="">
+    FT-T156991
+   </a>
+   <br/>
+  </li>
+ </ul>
+ <h2>
+  ENGINE
+ </h2>
+ <ul>
+  <li>
+   Fixed: Placing entities in Zeus was not always correctly deducting their price -
+   <a href="https://feedback.bistudio.com/T156972" target="">
+    FT-T156972
+   </a>
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/magazinesTurret" target="">
+    magazinesTurret
+   </a>
+   would produce an error when the turret path length was greater than 1 -
+   <a href="https://feedback.bistudio.com/T156981" target="">
+    FT-T156981
+   </a>
+  </li>
+  <li>
+   Fixed: Art of War DLC was not handled fully in Steam-based server browsing (this also affected Creator DLC servers)
+  </li>
+  <li>
+   Fixed: CTD in the
+   <i>
+    SCENARIOS
+   </i>
+   menu in case a mod deleted vanilla category entries
+  </li>
+  <li>
+   Fixed: CTD if there were errors in a file in the user profile directory and the user name contains a whitespace followed by "S" -
+   <a href="https://feedback.bistudio.com/T156988" target="">
+    FT-T156988
+   </a>
+  </li>
+  <li>
+   Fixed: The in-game official servers list not loading if the cache directory was not yet present
+   <br/>
+  </li>
+ </ul>
+ <h2>
+  LAUNCHER
+ </h2>
+ <ul>
+  <li>
+   Fixed: Art of War DLC was not handled fully in Launcher server details
+   <br/>
+  </li>
+  <li>
+   Known Issue: Official servers may not be listed in the dedicated tab correctly (you can still find them via the
+   <i>
+    INTERNET
+   </i>
+   tab or in-game)
+   <br/>
+  </li>
+ </ul>
+ <h2>
+  SERVER
+ </h2>
+ <ul>
+  <li>
+   Updated: Stand-alone Windows Dedicated Server (2.02)
+  </li>
+  <li>
+   Updated: Stand-alone Linux Dedicated Server (2.02)
+   <ul>
+    <li>
+     The data in
+     <i>
+      -mod=contact
+     </i>
+     is not fully multiplayer compatible (it is meant for the singleplayer campaign experience); we recommend only hosting servers with it for special use cases
+     <ul>
+      <li>
+       This data is signed by a new A3C key whose presence can be used to control what client data is allowed on the server
+      </li>
+     </ul>
+    </li>
+    <li>
+     Known issue: Steam client modifies the
+     <i>
+      steam_appid.txt
+     </i>
+     file incorrectly. In case of issues, verify its content is:
+     <b>
+      107410
+     </b>
+    </li>
+    <li>
+     Known issue: Sometimes the add-ons are loaded from the wrong installation (e.g. main game)
+    </li>
+    <li>
+     Try adding
+     <i>
+      -mod=curator;kart;heli;mark;expansion;jets;argo;orange;tacops;tank;enoch;aow
+     </i>
+     to your
+     <i>
+      arma3server.exe
+     </i>
+     shortcut
+     <br/>
+    </li>
+   </ul>
+  </li>
+ </ul>
+</div>

@@ -1,0 +1,633 @@
+<div class="post-content">
+ <p>
+  FROM: High Command
+  <br/>
+  TO: Arma 3 Users
+  <br/>
+  UNIT: Main Branch
+  <br/>
+  ACTIVITY: Game Update 1.90 (Multiplayer Security, Warlords Improvements)
+  <br/>
+  SIZE: ~745.0 MB / ~249.3 MB
+ </p>
+ <h1>
+  NOTES
+ </h1>
+ <ul>
+  <li>
+   Consider using the Steam client option to verify the integrity of the local game cache to avoid corrupted data after downloading this update.
+  </li>
+  <li>
+   Consider defragmenting your HDD after downloading large updates.
+  </li>
+  <li>
+   Updating a deeply moddable game and its platform is not without risks. We use various methods to communicate upcoming changes to our awesome modding community, such as via the
+   <a href="https://dev.arma3.com/" rel="noopener noreferrer" target="_blank">
+    Dev Hub
+   </a>
+   . We also co-operate directly on troubleshooting, and we offer an opportunity to test updates via our
+   <a href="https://dev.arma3.com/rc-branch" rel="noopener noreferrer" target="_blank">
+    Release Candidate tests
+   </a>
+   . Modders, server administrators and other members of the community do their best to prepare for updates and to address issues post-release as quickly as possible. Please be mindful of some interruptions (especially in the first hours / days after a release) while we all work to improve the game together.
+  </li>
+  <li>
+   A
+   <em>
+    Legacy Build
+   </em>
+   Steam branch is available for advanced users. It contains the previous significant main branch version (1.88). It can be used to compare specific changes between major releases. The access code for this branch is:
+   <em>
+    Arma3Legacy188
+   </em>
+  </li>
+  <li>
+   This update does not apply to
+   <a href="http://dev.arma3.com/ports" rel="noopener noreferrer" target="_blank">
+    the experimental Linux and Mac port betas
+   </a>
+   .
+  </li>
+  <li>
+   You can find the servers in the Steam library (switch the filter to "Tools") - "Arma 3 Server" (based on your OS, it will download the Windows or Linux version).
+   <ul>
+    <li>
+     Administrators can also use the command-line
+     <a href="https://developer.valvesoftware.com/wiki/SteamCMD" rel="noopener noreferrer" target="_blank">
+      SteamCMD
+     </a>
+     utility. The app ID is to be 233780.
+    </li>
+    <li>
+     NVIDIA GameWorks™ Technology provided under license from NVIDIA Corporation. Copyright © 2002-2018 NVIDIA Corporation. All rights reserved. NVIDIA® and PhysX® are trademarks of NVIDIA Corporation and are used under license.
+    </li>
+   </ul>
+  </li>
+  <li>
+   In case of problems, please check the
+   <a href="http://support.bistudio.com/arma-3" rel="noopener noreferrer" target="_blank">
+    Bohemia Interactive support F.A.Q.
+   </a>
+   ,
+   <a href="http://arma3.com/faq" rel="noopener noreferrer" target="_blank">
+    Arma 3 F.A.Q.
+   </a>
+   ,
+   <a href="http://www.battleye.com/support/faq/" rel="noopener noreferrer" target="_blank">
+    BattlEye F.A.Q.
+   </a>
+   , or
+   <a href="https://arma3.com/launcher/troubleshooting" rel="noopener noreferrer" target="_blank">
+    Launcher troubleshooting guide
+   </a>
+   .
+  </li>
+  <li>
+   You can help us to further improve the game by posting your feedback on the
+   <a href="http://feedback.arma3.com/" rel="noopener noreferrer" target="_blank">
+    Feedback Tracker
+   </a>
+   .
+  </li>
+ </ul>
+ <h1>
+  CHANGELOG
+ </h1>
+ <h2>
+  DATA
+ </h2>
+ <p>
+  <strong>
+   Highlights
+  </strong>
+ </p>
+ <ul>
+  <li>
+   <strong>
+    Added: Improved multiplayer security*
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Additional olive reskins for NATO Pacific vehicles**
+   </strong>
+   <br/>
+  </li>
+ </ul>
+ <p>
+  <!--StartFragment-->
+  * May affect loading times when the game or certain mods are run for the first time after installing the update.
+  <br/>
+  ** Restrictions may apply to those who don't own
+  <a class="external-link" href="https://arma3.com/apex" rel="nofollow">
+   Arma 3 Apex expansion
+  </a>
+  .
+  <!--EndFragment-->
+  <br/>
+  <br/>
+ </p>
+ <ul>
+ </ul>
+ <p>
+  <strong>
+   Gameplay
+  </strong>
+ </p>
+ <ul>
+  <li>
+   Added: A new variant of the Dragon Teeth (old looking)
+  </li>
+  <li>
+   Added: Small animation for raising the engine of Assault Boats when they are transported in other vehicles
+  </li>
+  <li>
+   Added: Gorgon commander now has a settle-in animation
+  </li>
+  <li>
+   Tweaked: All supply trucks now have a consistent supply radius, resource capacity, and destruction explosion
+  </li>
+  <li>
+   Tweaked: Durability of vehicle wheels - the damage required for a flat tire and a fully destroyed wheel
+  </li>
+  <li>
+   Tweaked: Added a
+   <em>
+    wheel_x_x_damage
+   </em>
+   selection in visual LODs for visual damage representation
+  </li>
+  <li>
+   Tweaked: Static AA and AT now use the Titan AT and AA FM descriptions
+  </li>
+  <li>
+   Tweaked: Improved the syntax of the power line wire destruction script
+  </li>
+  <li>
+   Fixed: Assault Boat was missing a vehicle transport class and it did not use memory point defined bounding boxes
+  </li>
+  <li>
+   Fixed: AI can now walk inside of Castle Tower
+  </li>
+  <li>
+   Fixed: Gendarmerie Commander Uniform was not displaying insignia
+  </li>
+  <li>
+   Fixed:
+   <em>
+    Cloth_plate.bisurf
+   </em>
+   was missing the
+   <em>
+    thickness
+   </em>
+   parameter for a proper plate-like behavior
+  </li>
+  <li>
+   Fixed: AAF crewmen were respawning with a wrong vest
+  </li>
+  <li>
+   Fixed: The ADR-97 magazine name did not mention the caliber
+  </li>
+  <li>
+   Fixed: It should be easier to interact with the Infostand (2-leg) (
+   <a href="https://feedback.bistudio.com/T128135" rel="noopener noreferrer" target="_blank">
+    https://feedback.bistudio.com/T128135
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Xi'an FFV seat view when in optics mode (
+   <a href="https://feedback.bistudio.com/T136046" rel="noopener noreferrer" target="_blank">
+    https://feedback.bistudio.com/T136046
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: The VR Training Placeables Course would not finish properly due to a tank not running over a mine (fix iteration)
+  </li>
+  <li>
+   Fixed: T-100 Varsuk &amp; 2S9 Sochor driver PiP camera views were obstructed by their cannon (
+   <a href="https://feedback.bistudio.com/T136231" rel="noopener noreferrer" target="_blank">
+    https://feedback.bistudio.com/T136231
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: It was not possible to open the compass in vehicles (
+   <a href="https://feedback.bistudio.com/T133142" rel="noopener noreferrer" target="_blank">
+    https://feedback.bistudio.com/T133142
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Hatchback fuel &amp; engine hitpoints
+  </li>
+ </ul>
+ <p>
+  <strong>
+   Visual
+  </strong>
+ </p>
+ <ul>
+  <li>
+   Added: Unique Virtual Garage icons to Mk41 VLS / Mk45 Hammer
+  </li>
+  <li>
+   Changed: MH-9 no longer has a crosshair. A new section was added:
+   <em>
+    aiming_dot
+   </em>
+   . Now it can be retextured or removed using
+   <a href="https://community.bistudio.com/wiki/setObjectTexture" rel="noopener noreferrer" target="_blank">
+    setObjectTexture
+   </a>
+   (index 1).
+  </li>
+  <li>
+   Changed: Enabled retexturing of the FV-720 Mora exterior pilot view
+  </li>
+  <li>
+   Tweaked: The RPG-42 sight cover is now closed when the weapon is not being used
+  </li>
+  <li>
+   Tweaked: A bullet gets hidden now when reloading the Protector 9mm
+  </li>
+  <li>
+   Tweaked: Adjusted the occluder shape for BluntRock_wallH (
+   <a href="https://feedback.bistudio.com/T135887" rel="noopener noreferrer" target="_blank">
+    https://feedback.bistudio.com/T135887
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: SPAR-16S pistol grip textures
+  </li>
+  <li>
+   Fixed: Camo nets shadow flickering when the model switched to the second shadow LOD
+  </li>
+  <li>
+   Fixed: Shading issues of the UAV Terminal models
+  </li>
+  <li>
+   Fixed: Some Titan launcher icons were using wrong icons or missed the rear caps
+  </li>
+  <li>
+   Fixed: HEMTT wrecks (NATO Pacific variants) now have the correct camo applied
+  </li>
+  <li>
+   Fixed: White edges on the icons of some of the accessories
+  </li>
+  <li>
+   Fixed: High variants of HMG / GMG were using wrong icons in Virtual Garage
+  </li>
+  <li>
+   Fixed: Camo selections for AK12 and added a third camo selection to the AK12 with grenade launcher
+  </li>
+ </ul>
+ <p>
+  <strong>
+   Warlords
+  </strong>
+ </p>
+ <ul>
+  <li>
+   Added: 64 player version of the Whole Altis scenario
+  </li>
+  <li>
+   Added: 32 player version of the Malden scenario
+  </li>
+  <li>
+   Added: 32 player version of the Stratis scenario
+  </li>
+  <li>
+   Added: Individual asset lists
+  </li>
+  <li>
+   Added: The sector zone restriction border width is now customizable for each sector in the module window
+  </li>
+  <li>
+   Added: The maximum group size is now defined in the Warlords Init module
+  </li>
+  <li>
+   Added: You can now further customize various classes for dynamically spawned assets (
+   <a href="https://community.bistudio.com/wiki/Arma_3_MP_Warlords#3._Custom_factions" rel="noopener noreferrer" target="_blank">
+    https://community.bistudio.com/wiki/Arma_3_MP_Warlords#3._Custom_factions
+   </a>
+   )
+  </li>
+  <li>
+   Added: Unless their base is under attack, all playable units are now invulnerable after respawn until they leave the base (60 seconds maximum)
+  </li>
+  <li>
+   Tweaked: Asset requesting routines for AI
+  </li>
+  <li>
+   Tweaked: Path planning routines for AI
+  </li>
+  <li>
+   Tweaked: Dead unit deleting procedures
+  </li>
+  <li>
+   Tweaked: Arming mines in your own base is no longer allowed unless the base is under attack
+  </li>
+  <li>
+   Tweaked: The team killing penalty duration is now increased progressively up to 5 minutes for each 3 player kills or 6 AI kills
+  </li>
+  <li>
+   Tweaked: Various sector and zone border sizes were adjusted to avoid pointless zone restriction triggering
+  </li>
+  <li>
+   Fixed: Vehicle descriptions in some languages were too long
+  </li>
+  <li>
+   Fixed: Some airdropped assets could fall too abruptly
+  </li>
+  <li>
+   Fixed: Respawn locations far away from the base when it's targeted would not be selected on safe spots
+  </li>
+  <li>
+   Fixed: Some modded airplanes would crash upon landing
+  </li>
+  <li>
+   Fixed: Ejection seats and canopies from fighter jets no longer block runways
+  </li>
+  <li>
+   Fixed: Some airplanes would need to double-take a landing
+  </li>
+  <li>
+   Fixed: The mode would not work properly in a singleplayer environment
+  </li>
+  <li>
+   Fixed: It is now possible to get rid of vehicles purchased by AI (via the action menu) before a player took control over that AI
+  </li>
+  <li>
+   Fixed: Static defenses are now properly calculated towards the maximum amount of assets
+  </li>
+  <li>
+   Fixed: Sector voting is now handled properly even if the only player who voted disconnects before the voting has finished
+  </li>
+  <li>
+   Fixed: Fast travel to a contested sector no longer lands you in water if there is land somewhere around the sector
+  </li>
+  <li>
+   Fixed: Helicopters would land on inconvenient locations when ordered from the airstrip in the Tanoa (South) scenario
+  </li>
+  <li>
+   Fixed: Various script errors
+  </li>
+  <li>
+   Fixed: The "Starting CP" parameter in the Warlords Init module would set up incorrect values for some settings
+  </li>
+  <li>
+   Fixed: Several misleading Spanish translations
+  </li>
+  <li>
+   Fixed: It's no longer possible to obtain mortar bags in Warlords through an exploit in Arsenal
+  </li>
+  <li>
+   Fixed: Some independent garrison units would occasionally still carry mortar bags
+  </li>
+ </ul>
+ <p>
+  <a href="https://community.bistudio.com/wiki/Eden_Editor" rel="noopener noreferrer" target="_blank">
+   Eden Editor
+  </a>
+ </p>
+ <ul>
+  <li>
+   Added: Reference to the spawned airplane in the CAS module (
+   <em>
+    _module
+    <a href="https://community.bistudio.com/wiki/getVariable" rel="noopener noreferrer" target="_blank">
+     getVariable
+    </a>
+   </em>
+   <em>
+    "plane"
+   </em>
+   )
+  </li>
+  <li>
+   Added: "Combo" attribute in Eden Editor is now capable of showing a "tooltip" property defined in class Values of the attribute itself
+  </li>
+  <li>
+   Fixed: Keyframe Animation module texts have been localized
+  </li>
+ </ul>
+ <p>
+  <strong>
+   Scripting
+  </strong>
+ </p>
+ <ul>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_mapGridSize" rel="noopener noreferrer" target="_blank">
+    BIS_fnc_mapGridSize
+   </a>
+   (returns the current size of the map grid square)
+  </li>
+  <li>
+   Added: Parameter for the number of steps (animation frames) in
+   <a href="https://community.bohemia.net/wiki/BIS_fnc_resizeMarker" rel="noopener noreferrer" target="_blank">
+    BIS_fnc_resizeMarker
+   </a>
+  </li>
+  <li>
+   Fixed: Eden Editor export to SQF now executes init code in a non-scheduled environment to simulate regular scenarios better
+  </li>
+  <li>
+   Fixed: Eden Editor export to SQF now preserves the group of drone crews, so group settings and waypoints are not lost
+  </li>
+  <li>
+   Fixed: Eden Editor export to SQF was sometimes not assigning the group leader correctly
+  </li>
+  <li>
+   Fixed: Eden Editor export to SQF was not initializing vehicles in vehicles
+  </li>
+  <li>
+   Fixed: Eden Editor export to SQF accidentally exported virtual UAV crews to the layers list
+  </li>
+  <li>
+   Fixed: Eden Editor export to SQF was not creating mines and explosives correctly
+  </li>
+  <li>
+   Fixed: Eden Editor export to SQF did not preserve trigger altitude correctly
+  </li>
+  <li>
+   Fixed: Eden Editor export to SQF got corrupted when exporting attribute expressions longer than 8096 characters
+  </li>
+  <li>
+   Fixed: Eden Editor export to SQF returned incorrect entity ID values when autonomous drones were present in the scenario
+  </li>
+  <li>
+   Fixed: Pushing items of the same priority in the Priority Queue function
+  </li>
+  <li>
+   Fixed: DateTime function calculation for when the date goes over the actual year
+  </li>
+ </ul>
+ <p>
+  <strong>
+   General
+  </strong>
+ </p>
+ <ul>
+  <li>
+   Fixed: A typo in the UH-80 Ghosthawk gun
+   <em>
+    initElev
+   </em>
+   elevation parameter (kudos Kju!)
+  </li>
+ </ul>
+ <h2>
+  ENGINE
+ </h2>
+ <p>
+  <strong>
+   Multiplayer
+  </strong>
+ </p>
+ <ul>
+  <li>
+   Fixed: Various issues with the improved MP security measures (cache handling, v2 signature compatibility, -serverMod, etc.)
+  </li>
+ </ul>
+ <p>
+  <strong>
+   Audio
+  </strong>
+ </p>
+ <ul>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/say3D" rel="noopener noreferrer" target="_blank">
+    say3D
+   </a>
+   command extension to exclude speech category sounds from the filtering
+  </li>
+ </ul>
+ <p>
+  <strong>
+   AI
+  </strong>
+ </p>
+ <ul>
+  <li>
+   Fixed: AI directional radio reports now again use the relative direction from a formation instead of the world direction (
+   <a href="https://feedback.bistudio.com/T128200" rel="noopener noreferrer" target="_blank">
+    https://feedback.bistudio.com/T128200
+   </a>
+   )
+  </li>
+ </ul>
+ <p>
+  <strong>
+   Scripting
+  </strong>
+ </p>
+ <ul>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/addWaypoint" rel="noopener noreferrer" target="_blank">
+    addWaypoint
+   </a>
+   and
+   <a href="https://community.bistudio.com/wiki/setWaypointPosition" rel="noopener noreferrer" target="_blank">
+    setWaypointPosition
+   </a>
+   commands now accept a -1 radius for forced position
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/setGroupIconsSelectable" rel="noopener noreferrer" target="_blank">
+    setGroupIconsSelectable
+   </a>
+   would not return NOTHING
+  </li>
+ </ul>
+ <p>
+  <strong>
+   General
+  </strong>
+ </p>
+ <ul>
+  <li>
+   Fixed: The game could freeze on startup with the file system thread turned off (e.g. -exThreads=6)
+  </li>
+  <li>
+   Fixed: Some achievements couldn't be completed (Model Student, Puppeteer, Dressing Doll, Get Arrested, Punch Out)
+  </li>
+  <li>
+   Fixed: Proxies were not considered for object actions, only the parent object
+  </li>
+  <li>
+   Fixed: Removed compile caching that was responsible for memory issues (
+   <a href="https://feedback.bistudio.com/T135718" rel="noopener noreferrer" target="_blank">
+    https://feedback.bistudio.com/T135718
+   </a>
+   )
+  </li>
+ </ul>
+ <h2>
+  LAUNCHER
+ </h2>
+ <ul>
+  <li>
+   Changed: Vanguard game type is no longer highlighted
+  </li>
+  <li>
+   Fixed: Localization typos
+  </li>
+  <li>
+   Fixed: -malloc parameter tooltip (
+   <a href="https://feedback.bistudio.com/T136864" rel="noopener noreferrer" target="_blank">
+    https://feedback.bistudio.com/T136864
+   </a>
+   )
+  </li>
+ </ul>
+ <h2>
+  SERVER
+ </h2>
+ <ul>
+  <li>
+   Updated: Stand-alone Windows Dedicated Server (1.90)
+  </li>
+  <li>
+   Updated: Stand-alone Linux Dedicated Server (1.90)
+   <ul>
+    <li>
+     Known issue: Steam client modifies the
+     <em>
+      steam_appid.txt
+     </em>
+     file incorrectly. In case of issues, verify its content is:
+     <strong>
+      107410
+     </strong>
+    </li>
+    <li>
+     Known issue: Sometimes the add-ons are loaded from the wrong installation (e.g. main game)
+    </li>
+    <li>
+     Try adding
+     <em>
+      -mod=curator;kart;heli;mark;expansion
+      <em>
+       ;jets;argo;orange
+      </em>
+      ;tacops;tank;dlcbundle;dlcbundle2
+     </em>
+     to your
+     <em>
+      arma3server.exe
+     </em>
+     shortcut
+    </li>
+   </ul>
+  </li>
+ </ul>
+</div>

@@ -1,0 +1,783 @@
+<div class="post-content">
+ <p>
+  FROM: Project Lead
+  <br>
+   TO: Arma 3 Users
+   <br>
+    UNIT: Main Branch
+    <br>
+     ACTIVITY: Game Update: 1.06 (Surround sound dialogues, Campaign fixes)
+     <br/>
+     SIZE: ~841 MB
+    </br>
+   </br>
+  </br>
+ </p>
+ <h1>
+  CHANGELOG
+ </h1>
+ <h2>
+  DATA
+ </h2>
+ <ul>
+  <li>
+   Tweaked: Hiding of rocket pods on unarmed variants of light helicopters
+  </li>
+  <li>
+   Helicopters have their supplies transport capacity tweaked
+  </li>
+  <li>
+   Fixed: Vehicle equipment loads in response to this issue (
+   <a href="http://feedback.arma3.com/view.php?id=14161" target="_blank">
+    http://feedback.arma3.com/view.php?id=14161
+   </a>
+   )
+  </li>
+  <li>
+   Adjusted Buzzard's HUD
+  </li>
+  <li>
+   Adjusted rudder coefficient of Buzzard
+  </li>
+  <li>
+   Fixed: Dead pilots in Buzzards have a correct pose now
+  </li>
+  <li>
+   Better LCD screen resolution for current state of vehicle optics
+  </li>
+  <li>
+   Slammer fire geometry and damage setup improvement
+  </li>
+  <li>
+   Added: Missing PhysX and suspension settings on Kamysh and Tigris
+  </li>
+  <li>
+   Kamysh hull hitpoints improved
+  </li>
+  <li>
+   Kamysh and Tigris front side armor easier to pierce through
+  </li>
+  <li>
+   Reflection and macro UV stretching on Marshall wheels fixed
+  </li>
+  <li>
+   Marshall interior damage materials tweaked
+  </li>
+  <li>
+   Marid damage material UVs tweaked
+  </li>
+  <li>
+   Fixed: Panther material problems
+  </li>
+  <li>
+   Redefined camo selections on armored vehicles
+  </li>
+  <li>
+   Multiple tweaks and repaired hidden selections on armored vehicles
+  </li>
+  <li>
+   Fixed: SUV has a texture error inside (
+   <a href="http://feedback.arma3.com/view.php?id=13883" target="_blank">
+    http://feedback.arma3.com/view.php?id=13883
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: AH-9 minigun barrel axis is wrong (
+   <a href="http://feedback.arma3.com/view.php?id=645" target="_blank">
+    http://feedback.arma3.com/view.php?id=645
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: RAH-99 spot light emissive texture is always active (
+   <a href="http://feedback.arma3.com/view.php?id=12819" target="_blank">
+    http://feedback.arma3.com/view.php?id=12819
+   </a>
+   )
+  </li>
+  <li>
+   Flickering shadows in interiors of cars should be fixed
+  </li>
+  <li>
+   Getting out of a static turret now causes player to face the turret
+  </li>
+  <li>
+   Ejecting has been removed from action menu for static weapons because there is no need to eject when getting out is enough
+  </li>
+  <li>
+   Fixed: Bad penetration materials on static Titan launcher (AT)
+  </li>
+  <li>
+   Removed old lights from Zamak
+  </li>
+  <li>
+   Removed lights from lower LODs of Bobcat
+  </li>
+  <li>
+   View-pilot LOD of Gorgon tweaked
+  </li>
+  <li>
+   Fixed: Animation for gunner of Gorgon
+  </li>
+  <li>
+   Fixed: Missing textures on Gorgan (
+   <a href="http://feedback.arma3.com/view.php?id=16032" target="_blank">
+    http://feedback.arma3.com/view.php?id=16032
+   </a>
+   )
+  </li>
+  <li>
+   Speedboat has now correct sorting of anti-water material
+  </li>
+  <li>
+   Fixed: Hitpoints of main rotor for Mohawk
+  </li>
+  <li>
+   Fixed: More appropriately sized missiles for Cheetah
+  </li>
+  <li>
+   Fixed: Rear lights on HEMTTs
+  </li>
+  <li>
+   Fixed: The stick of xH-9 family helicopters works again
+  </li>
+  <li>
+   Fixed: FIA truck cabin was not visible from the back (
+   <a href="http://feedback.arma3.com/view.php?id=16043" target="_blank">
+    http://feedback.arma3.com/view.php?id=16043
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Offroad Armed was only enterable from drivers side (
+   <a href="http://feedback.arma3.com/view.php?id=16025" target="_blank">
+    http://feedback.arma3.com/view.php?id=16025
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Camo in view LOD of transport truck
+  </li>
+  <li>
+   Sabot hit effect tweaked
+  </li>
+  <li>
+   Tweaking of dust effects created by infantry
+  </li>
+  <li>
+   Hit of ground by rifles should be now better visible on medium and low particle quality
+  </li>
+  <li>
+   New underwater effect for smoke grenades
+  </li>
+  <li>
+   Fixed: inSpeed and inDir variables for explosion effects
+  </li>
+  <li>
+   Divers and their equipment has been visually tweaked
+  </li>
+  <li>
+   Independent soldiers have been visually tweaked
+  </li>
+  <li>
+   AAF have their helmets visually tweaked
+  </li>
+  <li>
+   Unified standardized ammo loads for each vehicle type for every faction
+  </li>
+  <li>
+   Unified smoke and smoke shell colors for every faction
+  </li>
+  <li>
+   Changed BLUFOR Recon Marksman default rifle to EBR (from MXM variant)
+  </li>
+  <li>
+   Small uniform weight / capacity ratio update
+  </li>
+  <li>
+   Updated setup of heli pilot / heli crew / pilot equipment so it's now comparable across factions
+  </li>
+  <li>
+   Swapped load order of some equipment to help engine to load inventory properly (heavier stuff should go first)
+  </li>
+  <li>
+   Weapon weight diversification:
+   <ul>
+    <li>
+     Overall weapons weight increased
+    </li>
+    <li>
+     Increased weight of heavy pistols
+    </li>
+    <li>
+     Greater and better scaled weight differences between various weapons of the same type
+    </li>
+   </ul>
+  </li>
+  <li>
+   Minor balance of OPFOR equipment:
+   <ul>
+    <li>
+     Decreased weight of pilot uniform
+    </li>
+    <li>
+     Decreased capacity of standard uniforms
+    </li>
+    <li>
+     Increased weight of standard uniforms
+    </li>
+    <li>
+     Increased capacity of harnesses vests
+    </li>
+   </ul>
+  </li>
+  <li>
+   Lowered damage of destroyed house hitpoints
+  </li>
+  <li>
+   New materials, improved textures for timbers and wood pile
+  </li>
+  <li>
+   Assistant Missile Specialist (AT) for all factions now carries one Anti-Personnel rocket and three Anti-Tank rockets, instead of just four Anti-Tanks rockets. Thus he offers somewhat broader spectrum of possibilities for Missile Specialist.
+  </li>
+  <li>
+   Increased amount of supplementary ammo carried by Assistant Automatic Rifleman for all factions to:
+   <ul>
+    <li>
+     BLUFOR 12x 6.5mm 100 round magazine
+    </li>
+    <li>
+     OPFOR 8x 7.62mm 150 round magazine
+    </li>
+    <li>
+     INDEP 6x 6.5mm 200 round magazine
+    </li>
+   </ul>
+  </li>
+  <li>
+   Fixed: Minor fix of INDEP equipment. GL vest variant for INDEP Squad and Team leaders to match the distribution with other factions
+  </li>
+  <li>
+   Fixed: Rebalanced independent vests to introduce even more diversity among armors
+  </li>
+  <li>
+   Fixed: Minor redistribution of Guerrilla weapons
+  </li>
+  <li>
+   Fixed: Introduced minor variability in BLUFOR assistant automatic rifleman supplementary ammunition
+  </li>
+  <li>
+   Added: Titan AP rockets for BLUOR IFV and INDEP IFV
+  </li>
+  <li>
+   Added: RPG HE rockets for OPFOR BTR
+  </li>
+  <li>
+   Added: Tactical vest for OPFOR Helipilot
+  </li>
+  <li>
+   Decreased weight of OPFOR Marksman Rahim rifle
+  </li>
+  <li>
+   Increased weight of BLUFOR Marksman MXM variant rifle
+  </li>
+  <li>
+   Tweaked camera shaking from medium and heavy ordnance firing, hits and explosions
+  </li>
+  <li>
+   Grenades now cast shadow while flying towards their target
+  </li>
+  <li>
+   Mines now have a correct side
+  </li>
+  <li>
+   The artillery computer of mortars has been re-calibrated to actual computer type (slightly more accurate)
+  </li>
+  <li>
+   Zephyr missiles have their distinctive magazines
+  </li>
+  <li>
+   Fixed: Stretched LCD overlay UV for CROWS optics
+  </li>
+  <li>
+   Fixed: Bad normal mapping on MRCO optic
+  </li>
+  <li>
+   Fixed: Floating scope on MXM weapon (
+   <a href="http://feedback.arma3.com/view.php?id=3102" target="_blank">
+    http://feedback.arma3.com/view.php?id=3102
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Range on M2HMG misaligned (
+   <a href="http://feedback.arma3.com/view.php?id=15126" target="_blank">
+    http://feedback.arma3.com/view.php?id=15126
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Tweaked parameters of SDARs underwater ammo
+  </li>
+  <li>
+   Fixed: TRG rifles have correct mouse-over description of caliber
+  </li>
+  <li>
+   Repaired penetration material on some signs
+  </li>
+  <li>
+   Configured the second ladder for dp_smallFactory_F and added a second ladder
+  </li>
+  <li>
+   Thin armor plate surface added
+  </li>
+  <li>
+   Added: New armor plate materials for future appliances
+  </li>
+  <li>
+   All official objects should now in editor correctly show their author
+  </li>
+  <li>
+   Removed first red page from Notepad, File (documents) and File (top secret)
+  </li>
+  <li>
+   Improved: Falling into rocks by lighthouse and unable to get out (
+   <a href="http://feedback.arma3.com/view.php?id=7276" target="_blank">
+    http://feedback.arma3.com/view.php?id=7276
+   </a>
+   )
+  </li>
+  <li>
+   Various small objects have their models reworked (wooden piles and electronics)
+  </li>
+  <li>
+   Bunker object makes better use of its ladder
+  </li>
+  <li>
+   Configured new marker lights for e.g. runway lights and airport tower lights
+  </li>
+  <li>
+   Fixed: Label shading on ammo boxes
+  </li>
+  <li>
+   Fixed: Can we please get the ramps on the H-Barrier watchtowers working? (
+   <a href="http://feedback.arma3.com/view.php?id=15884" target="_blank">
+    http://feedback.arma3.com/view.php?id=15884
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Geometry component of Scrap Heap
+  </li>
+  <li>
+   Fixed: Textures of bridges in lower LODs
+  </li>
+  <li>
+   Fixed: Walking on stairs on cargo tower and cargo patrol tower
+  </li>
+  <li>
+   'colorBackground' attribute in CfgORBAT renamed to 'colorInsignia'
+  </li>
+  <li>
+   Bug caused by change of EH functionality in engine fixed
+  </li>
+  <li>
+   Updated: BIS_fnc_objectSide can now detect actual player's side, even after it was changed on the fly. This affects BIS_fnc_MP function, but the its behavior should remain same.
+  </li>
+  <li>
+   Removed: Chair on top of building in Showcase Armed Assault (would float after building destruction)
+  </li>
+  <li>
+   Fixed: Indestructible communications tower in Showcase Vehicles
+  </li>
+  <li>
+   Updated: Marker colors based on sides are now named consistently with other uses of sides. Previous classes were preserved because of backward compatibility.
+  </li>
+  <li>
+   Updated: Scripted side recognition - (side group player) and (playerSide) is now replaced by (player call BIS_fnc_objectSide)
+  </li>
+  <li>
+   Fixed: When using "Vehicle Respawn" module with respawn on start position, vehicles were not respawn precisely on the spot
+  </li>
+  <li>
+   Fixed: BIS_fnc_deleteTask no longer attempts to delete non-existent tasks
+  </li>
+  <li>
+   Fixed: Tasks were not deleted globally (by the previous function)
+  </li>
+  <li>
+   Fixed: handleDamage EH issue (
+   <a href="http://feedback.arma3.com/view.php?id=6644" target="_blank">
+    http://feedback.arma3.com/view.php?id=6644
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Sector icons in the 3D scene were not based on difficulty
+  </li>
+  <li>
+   Fixed: Flaw in the logic of BIS_fnc_quotations and BIS_fnc_cinemaBorder was preventing saving from being re-enabled when they terminated
+  </li>
+  <li>
+   Fixed: Returned distance from trigger border in BIS_fnc_inTrigger was twice the actual value
+  </li>
+  <li>
+   Added: CfgFactionClasses entries now contain 'flag' attribute defining what flag texture is used
+  </li>
+  <li>
+   Added: Holding right shift while moving Splendid Camera will slow down the movement. Useful for precise camera positioning.
+  </li>
+  <li>
+   Added: BIS_fnc_deleteTask - a function to completely remove a task
+  </li>
+  <li>
+   Added: When using "Vehicle Respawn" module with respawn on marker, vehicle now respawned on starting position when no marker is found. This is true only when the vehicle has simulation enabled.
+  </li>
+  <li>
+   Added: It's now possible to remove vehicle respawn (see header of BIS_fnc_moduleRespawnVehicle for more details)
+  </li>
+  <li>
+   Added: Triggers synchronized to "Sector" module through "Unlock" logic will be activated based on sector owner. This enables triggering specific events or modules based on who's in control of the sector. See in-game module description for more details.
+  </li>
+  <li>
+   Added: Some "Sector" module attributes (e.g., participating sides or sector areas) can now be modified on the fly.
+  </li>
+  <li>
+   Added: Improved visualization of sectors added by "Sector" module
+  </li>
+  <li>
+   Added: Faction flag is now used to visualize sector owned instead of side flag
+  </li>
+  <li>
+   Added: "Players cost" attribute in "Sector" module can now be a code, dynamically calculated during mission
+  </li>
+  <li>
+   Added: "Deserted delay" attribute replaced by more logical "Deserted distance". When vehicle is abandoned, a vehicle will respawn after no player is in the given distance from it.
+  </li>
+  <li>
+   Added: BIS_fnc_playerSideFaction - returns the representative faction of the given side
+  </li>
+  <li>
+   Added: New optional attribute for Sector - score reward. Defines how many points are awarded to a side which captured the sector.
+  </li>
+  <li>
+   Added: Calling 'true call BIS_fnc_moduleSector' will now list all sectors.
+  </li>
+  <li>
+   Correctly unsetting of texture in film grain PP
+  </li>
+  <li>
+   Game Options: Language switch changed to ComboBox
+  </li>
+  <li>
+   Updated: MP mission HUD (i.e. the bar visualizing sectors or remaining respawn tickets) now shows side score of all involved sides, instead of merely displaying the leading side
+  </li>
+  <li>
+   UI: Insert Marker - Flags are no longer colorized (the white parts were incorrectly colored)
+  </li>
+  <li>
+   Added: Expand button to campaign menu
+  </li>
+  <li>
+   Fixed: Cinematic borders didn't cover the screen edges (
+   <a href="http://feedback.arma3.com/view.php?id=15765" target="_blank">
+    http://feedback.arma3.com/view.php?id=15765
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Preview image for selecting interface colors was always white
+  </li>
+  <li>
+   Fixed: Text area for number of respawn tickets was too narrow
+  </li>
+  <li>
+   Fixed: Tooltips of controls in more than one control group
+  </li>
+  <li>
+   Fixed: Pause menu effects were visible after returning to a mission from which player previously exited the game while in pause menu
+  </li>
+  <li>
+   Added: Links to Community Wiki and editing forum to debug console header
+  </li>
+  <li>
+   Added: Faction score in debriefing screen
+  </li>
+  <li>
+   Fixed: Cinema borders now properly hide other GUI elements
+  </li>
+ </ul>
+ <h2>
+  CAMPAIGN (SPOILERS!)
+ </h2>
+ <ul>
+  <li>
+   More campaign texts have been adjusted to match voice-over work
+  </li>
+  <li>
+   Maxwell: Soldier that was leaning against a tree and was clipping removed
+  </li>
+  <li>
+   Maxwell composition updated to fix the clipping during the Wet Work briefing
+  </li>
+  <li>
+   Adjusted dates and time of briefings at Maxwell
+  </li>
+  <li>
+   Updated: Object compositions of Maxwell
+  </li>
+  <li>
+   Fixed: Players would sometimes get stuck after the introductory Maxwell animations
+  </li>
+  <li>
+   Fixed: Crossing Paths Camp Maxwell task was not declared completed
+  </li>
+  <li>
+   “Report In” task navigating to the mission providers will now properly show the waypoint in all situations
+  </li>
+  <li>
+   The 'discussion group' detection distance for ambient conversations was set generally too high
+  </li>
+  <li>
+   Simple termination of the 2nd ambient animation added to prevent unwanted collisions during briefing cutscene, where some of the soldiers suddenly had no weapons
+  </li>
+  <li>
+   The mission intel OSD was showing the wrong location information in Maxwell
+  </li>
+  <li>
+   Added: Safecheck code to prevent overlapping of the two different mission intel OSDs
+  </li>
+  <li>
+   Patrol notification was showing even if the Patrol gets disabled
+  </li>
+  <li>
+   Missing line breaks in “Patrol” task description were added
+  </li>
+  <li>
+   World object persistency detection / destruction was failing in case of the radio tower in A_in / A_in2
+  </li>
+  <li>
+   Fixed: Weapon pool persistent variables causing issues when reverting campaign
+  </li>
+  <li>
+   The starting gear in the equipment pool was adjusted
+  </li>
+  <li>
+   Adjusted the crash site composition to prevent the medic from getting stuck
+  </li>
+  <li>
+   Miller's identity was not set correctly
+  </li>
+  <li>
+   Fixed: Potential script error with mortars in Tipping Point
+  </li>
+  <li>
+   Improved behavior of mortars in the episode finale. Standing still when not in cover is guaranteed to kill you. Moving and staying in cover drastically decreases the chance.
+  </li>
+  <li>
+   Further improvements to the balance of the mortar segment
+  </li>
+  <li>
+   Slight adjustments to player's team's reactions to paratroopers
+  </li>
+  <li>
+   Further improvements to the behavior of the extraction boats
+  </li>
+  <li>
+   Name of Alpha Lead in ORBAT was not updating correctly
+  </li>
+  <li>
+   Added: Crossing Paths light flash on LZ Connor when AAF starts the attack
+  </li>
+  <li>
+   Dead identities should be now correctly replaced by new ones
+  </li>
+  <li>
+   Tried to prevent more cases of medics getting stuck after they tend to the wounded
+  </li>
+  <li>
+   Zone restriction module has been updated for soldiers
+  </li>
+  <li>
+   Tweaked: Code for triggering missions through strategic map to prevent blinking after the map fades to black
+  </li>
+  <li>
+   Improved ambient animation termination code to make it more reliable
+  </li>
+  <li>
+   Fixed: Duplicity in equipment visualization after briefings
+  </li>
+  <li>
+   Improved transition from strategic map into briefing
+  </li>
+  <li>
+   Player can now freely switch between 1st and 3rd person views during briefings
+  </li>
+  <li>
+   Player can now freely switch between 1st and 3rd person views during ‘welcome to Maxwell’ cutscenes
+  </li>
+  <li>
+   Pressing [Space] before the scene is rendered should not break the intro walk-in part
+  </li>
+  <li>
+   Transition from Patrol to Maxwell improved; it is not playing an intro animation anymore
+  </li>
+  <li>
+   Force-started briefings now directly trigger the default mission and there is no armory after the briefing is done
+  </li>
+  <li>
+   The ambient animation function now auto-terminates if it is executed on unit that is already playing ambient animation
+  </li>
+  <li>
+   Hub briefing skip mechanics fixed &amp; improved. Players can now skip the whole briefing and get directly to the armory if they press [Space] before it loads.
+  </li>
+  <li>
+   Weather is now correctly updated when the time shifts for a briefing (e.g. fixes out-of-place rain during one briefing). Wind and rain are handled better.
+  </li>
+  <li>
+   Fixed: Safecheck mechanic that could break the campaign progression
+  </li>
+ </ul>
+ <h2>
+  ENGINE
+ </h2>
+ <ul>
+  <li>
+   Fixed: Surround sound issues with conversations especially
+  </li>
+  <li>
+   <a href="https://community.bistudio.com/wiki/ctrlAddEventHandler" target="_blank">
+    ctrlAddEventHandler
+   </a>
+   and
+   <a href="https://community.bistudio.com/wiki/displayAddEventHandler" target="_blank">
+    displayAddEventHandler
+   </a>
+   now accept game code as well as strings
+  </li>
+  <li>
+   Command
+   <a href="https://community.bistudio.com/wiki/removeAllActions" target="_blank">
+    removeAllActions
+   </a>
+   changed
+  </li>
+  <li>
+   New network script function
+   <a href="https://community.bistudio.com/wiki/setObjectTextureGlobal" target="_blank">
+    setObjectTextureGlobal
+   </a>
+  </li>
+  <li>
+   <a href="https://community.bistudio.com/wiki/playableSlotsNumber" target="_blank">
+    playableSlotsNumber
+   </a>
+   command added - returns number of available slots or playable units
+  </li>
+  <li>
+   Removed parameter from
+   <a href="https://community.bistudio.com/wiki/getShadowDistance" target="_blank">
+    getShadowDistance
+   </a>
+   script command
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/setShadowDistance" target="_blank">
+    setShadowDistance
+   </a>
+   works again
+  </li>
+  <li>
+   Event handlers return value is used only if non-null (
+   <a href="http://forums.bistudio.com/showthread.php?160330-Development-Branch-Scripting-Discussion&amp;p=2550677&amp;viewfull=1#post2550677" target="_blank">
+    details
+   </a>
+   )
+  </li>
+  <li>
+   If no handleDamage handler returns a value the damage remains unchanged instead of setting it to zero
+  </li>
+  <li>
+   handleHeal event handler is now also called for self-healing
+  </li>
+  <li>
+   Fixed: SP mission sometimes didn't end when some display was opened
+  </li>
+  <li>
+   Merged from OA / DayZ: Small MP optimization related to simulation precision
+  </li>
+  <li>
+   Fixed: Campaign menu double-click behavior
+  </li>
+  <li>
+   Fixed: Campaign / Scenarios / Challenges menus expand &amp; collapse buttons
+  </li>
+  <li>
+   Added: All UI trees can now be expanded by double-click on an item
+  </li>
+  <li>
+   Added: New CTree config option to expand / collapse tree using double-click
+  </li>
+  <li>
+   Added: RscTree expandOnDoubleclick parameter
+  </li>
+  <li>
+   Fixed: exThreads parameter can break some script commands (e.g. scriptDone) (
+   <a href="http://feedback.arma3.com/view.php?id=7456" target="_blank">
+    http://feedback.arma3.com/view.php?id=7456
+   </a>
+   )
+  </li>
+  <li>
+   Added: zeroing for AI target tracking
+  </li>
+  <li>
+   Helicopters are no longer able to move with destroyed main rotor
+  </li>
+  <li>
+   Stop propeller animation for ships when engine is hit
+  </li>
+  <li>
+   Terrain shadows tweaked
+  </li>
+  <li>
+   Moon and stars are now affected by fog
+  </li>
+  <li>
+   Fixed sun flare intensity computation
+  </li>
+  <li>
+   Added: New parameter drawLightSize for simple point light
+  </li>
+  <li>
+   Fixed: Taking a sidearm could break the weapon info
+  </li>
+  <li>
+   Fixed: HUDinfo does not show grenade info when character has no weapon
+  </li>
+  <li>
+   Fixed: AI gun shots inaudible after reload (
+   <a href="http://feedback.arma3.com/view.php?id=15044" style="text-decoration: underline;" target="_blank">
+    http://feedback.arma3.com/view.php?id=15044
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Disappearing magazines when changing to same weapon
+  </li>
+  <li>
+   Fixed: CTD when lasing a target with an UAV as a team leader
+  </li>
+  <li>
+   Fixed: Crash when double-clicking tree in campaign menu
+  </li>
+  <li>
+   Fixed: Crash when setting zero or negative mass
+  </li>
+  <li>
+   Fixed: Crash while starting -server
+  </li>
+ </ul>
+</div>

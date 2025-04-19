@@ -1,0 +1,2018 @@
+<div class="post-content">
+ <p>
+  FROM: High Command
+  <br>
+   TO: Arma 3 Users
+   <br>
+    UNIT: Main Branch
+    <br>
+     ACTIVITY: Game Update 1.60 (Visual Upgrade, Quick Play, Line Drawing, Respawn Screen, Targeting, Limping)
+     <br/>
+     SIZE: ~3.2 GB / ~469 MB
+    </br>
+   </br>
+  </br>
+ </p>
+ <h1>
+  NOTES
+ </h1>
+ <ul>
+  <li>
+   Consider using the Steam client option to verify the integrity of the local game cache to avoid corrupted data after downloading this update.
+  </li>
+  <li>
+   Consider defragmenting your HDD after downloading large updates.
+  </li>
+  <li>
+   Updating a deeply moddable game and its platform is not without risks. We use various methods to communicate upcoming changes to our awesome modding community, such as via the
+   <a href="https://dev.arma3.com/" target="_blank">
+    Dev Hub
+   </a>
+   . We also co-operate directly on troubleshooting, and we offer an opportunity to test updates via our
+   <a href="https://dev.arma3.com/rc-branch" target="_blank">
+    Release Candidate tests
+   </a>
+   . Modders, server administrators and other members of the community do their best to prepare for updates and to address issues post-release as quickly as possible. Please be mindful of some interruptions (especially in the first hours / days after a release) while we all work to improve the game together.
+  </li>
+  <li>
+   A
+   <em>
+    Legacy Build
+   </em>
+   Steam branch is available for advanced users. It contains the previous significant main branch version (1.58). It can be used to compare specific changes between major releases. The access code for this branch is:
+   <em>
+    Arma3Legacy158
+   </em>
+  </li>
+  <li>
+   This update does not apply to
+   <a href="http://dev.arma3.com/ports" target="_blank">
+    the experimental Linux and Mac port betas
+   </a>
+   at time of writing. We'll be updating those as soon as possible.
+  </li>
+  <li>
+   You can find the servers in the Steam library (switch the filter to "Tools") - "Arma 3 Server" (based on your OS, it will download the Windows or Linux version).
+   <ul>
+    <li>
+     Administrators can also use the command-line
+     <a href="https://developer.valvesoftware.com/wiki/SteamCMD" target="_blank">
+      SteamCMD
+     </a>
+     utility. The app ID is to be 233780.
+    </li>
+    <li>
+     NVIDIA GameWorks™ Technology provided under license from NVIDIA Corporation. Copyright © 2002-2016 NVIDIA Corporation. All rights reserved. NVIDIA® and PhysX® are trademarks of NVIDIA Corporation and are used under license.
+    </li>
+   </ul>
+  </li>
+  <li>
+   In case of problems, please check the
+   <a href="http://support.bistudio.com/arma-3" target="_blank">
+    Bohemia Interactive support F.A.Q.
+   </a>
+   ,
+   <a href="http://arma3.com/faq" target="_blank">
+    Arma 3 F.A.Q.
+   </a>
+   or
+   <a href="http://www.battleye.com/support/faq/" target="_blank">
+    BattlEye F.A.Q.
+   </a>
+  </li>
+  <li>
+   You can help us to further improve the game by posting your feedback on the
+   <a href="http://feedback.arma3.com/" target="_blank">
+    Feedback Tracker
+   </a>
+   .
+  </li>
+ </ul>
+ <h1>
+  CHANGELOG
+ </h1>
+ <h2>
+  DATA:
+ </h2>
+ <ul>
+  <li>
+   <strong>
+    Added: Altis and Stratis
+    <a href="https://dev.arma3.com/post/oprep-visual-upgrade" target="_blank">
+     Visual Upgrade
+    </a>
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: A new
+    <a href="https://dev.arma3.com/post/oprep-respawn-overhaul" target="_blank">
+     Respawn Screen
+    </a>
+    interface
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Characters with injured legs are now limping instead of being forced to walk
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: An ability to draw lines in map interfaces
+   </strong>
+   (default by CTRL + LMB)
+  </li>
+  <li>
+   <strong>
+    Added: A Constantly Computed Impact Point (CCIP) for guns, rockets and bombs
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Virtual targeting pods to all airplanes
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Radio protocol sentences for suppressing
+   </strong>
+  </li>
+  <li>
+   Added: New samples for bullets hitting rubber
+  </li>
+  <li>
+   Added: New functions of an overhauled respawn system
+  </li>
+  <li>
+   Added: New icons for targeting improvements
+  </li>
+  <li>
+   Added: A new
+   <em>
+    iconSize
+   </em>
+   property for
+   <em>
+    CfgNotifications
+   </em>
+   classes (defines the size coefficient of the notification icon with values in range from 0 to 1)
+  </li>
+  <li>
+   <span>
+    Added: Publication date and version disclaimer to the
+    <a href="https://www.youtube.com/playlist?list=PLfUcrRpCM_fLrk4KKLkQKrlTBh7txPaO3" target="_blank">
+     Community Guides
+    </a>
+   </span>
+  </li>
+  <li>
+   <span>
+    Added: It is now possible to cycle through the spectated units with the arrow key in the
+    <a href="https://community.bistudio.com/wiki/EG_Spectator_Mode" target="_blank">
+     Virtual Spectator
+    </a>
+   </span>
+  </li>
+  <li>
+   Added: Available laser targets are now indicated to the crews of vehicles equipped with a laser tracker (
+   <em>
+    laserScanner
+   </em>
+   )
+  </li>
+  <li>
+   Added: A new
+   <em>
+    BIS_fnc_exportConfigHierarchy
+   </em>
+   function (exporting the inheritance of classes to a Wiki syntax)
+  </li>
+  <li>
+   Added: New icons for vehicle radars (laser-designated and Night-Vision targets)
+  </li>
+  <li>
+   Added: The
+   <a href="https://www.youtube.com/watch?v=9CuBMsHAtFw" target="_blank">
+    Reconnaissance Community Guide
+   </a>
+   is now accessible from the in-game menu
+  </li>
+  <li>
+   Added: An ability to block the third person view for the
+   <a href="https://community.bistudio.com/wiki/EG_Spectator_Mode" target="_blank">
+    Virtual Spectator
+   </a>
+  </li>
+  <li>
+   Added: New sounds for grenade throwing and weapon switching
+  </li>
+  <li>
+   Added: A sound edge parameter for a grenade throwing animation
+  </li>
+  <li>
+   Added: A new
+   <em>
+    BIS_fnc_controlConfigs
+   </em>
+   function returning the config paths of all controls within a given display
+  </li>
+  <li>
+   Added: Narrow Tree 3D Sound Processing Type
+  </li>
+  <li>
+   Added: New config parameters for setting colors of item pictures in the
+   <em>
+    RscTree
+   </em>
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/Splendid_Camera" target="_blank">
+    Splendid Camera
+   </a>
+   (
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_camera" target="_blank">
+    BIS_fnc_camera
+   </a>
+   ) can now be called with an
+   <em>
+    "InitDummy"
+   </em>
+   mode and camera parameters (it will create a camera according to exported data, but it will be a simple, non-interactive camera. Example:
+   <em>
+    ["InitDummy",["Altis",[20065.6,20023,18.9501],21.2237,0.32,[-26.3095,7.33259],10,0,363.087,0,1,1.16209,-0.0469839,1.11101]] call bis_fnc_camera;
+   </em>
+   )
+  </li>
+  <li>
+   Added: Frequency randomizers for sound tails
+  </li>
+  <li>
+   Added: New Visual Upgrade parameters to the
+   <em>
+    CAWorld
+   </em>
+   based on a community request
+  </li>
+  <li>
+   Added:
+   <a href="https://arma3.com/eden" target="_blank">
+    Eden Update
+   </a>
+   Field Manual section
+  </li>
+ </ul>
+ <ul>
+  <li>
+   <strong>
+    Tweaked:
+    <em>
+     "The East Wind"
+    </em>
+    campaign has been unified into one episode (saves from previous versions may be not compatible - you can use Legacy Build Steam branch)
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Tweaked: The
+    <a href="https://community.bistudio.com/wiki/Arma_3_Zeus" target="_blank">
+     Zeus
+    </a>
+    ,
+    <a href="https://community.bistudio.com/wiki/EG_Spectator_Mode" target="_blank">
+     Spectator
+    </a>
+    and
+    <a href="https://community.bistudio.com/wiki/Splendid_Camera" target="_blank">
+     Splendid Camera
+    </a>
+    are now using the controls configurable in the 'Camera' category in options
+   </strong>
+  </li>
+  <li>
+   Tweaked: Textures of the garbage containers were adjusted
+  </li>
+  <li>
+   Tweaked: The performance of the
+   <a href="https://community.bistudio.com/wiki/EG_Spectator_Mode" target="_blank">
+    Spectator
+   </a>
+   Entity list with high unit counts was improved
+  </li>
+  <li>
+   Tweaked: The
+   <em>
+    BIS_fnc_EGSpectator
+   </em>
+   function now accepts additional parameters (
+   <em>
+    ShowCameraButtons
+   </em>
+   ,
+   <em>
+    ShowHeader
+   </em>
+   ,
+   <em>
+    ShowControlsHelper
+   </em>
+   ,
+   <em>
+    ShowLists
+   </em>
+   )
+  </li>
+  <li>
+   Tweaked: The hold-breath sample durations were updated
+  </li>
+  <li>
+   Tweaked: The volume of small caliber weapons was increased
+  </li>
+  <li>
+   Tweaked: Some sounds of small caliber weapons
+  </li>
+  <li>
+   Tweaked: The “Task Creation” module now accepts new 'task type' and 'always visible' attributes
+  </li>
+  <li>
+   Tweaked: The Civilian Offroad (Repair) was renamed to Offroad (Services)
+  </li>
+  <li>
+   Tweaked: The DLC icons in the
+   <a href="https://community.bistudio.com/wiki/Arsenal" target="_blank">
+    Arsenal
+   </a>
+   and Garage are now read by the
+   <em>
+    <a href="https://community.bistudio.com/wiki/configSourceModList" target="_blank">
+     configSourceModList
+    </a>
+   </em>
+   script command (instead of config properties)
+  </li>
+  <li>
+   Tweaked: The
+   <em>
+    "Sector"
+   </em>
+   ,
+   <em>
+    "Cover Map"
+   </em>
+   ,
+   <em>
+    "Add Camera Area"
+   </em>
+   and
+   <em>
+    "Add Editing Area"
+   </em>
+   modules now have their area configurable via a Scaling Widget (synchronizing them to a trigger through a
+   <em>
+    "Location"
+   </em>
+   logic entity is not needed anymore)
+  </li>
+  <li>
+   Tweaked: The
+   <em>
+    "Confirm"
+   </em>
+   respawn template no longer appears in the Editor’s list
+  </li>
+  <li>
+   Tweaked: The targeting pods now indicate an altitude and a target distance
+  </li>
+  <li>
+   Tweaked: The texture of the RPG-42 Alamut can now be changed via camo selections (
+   <em>
+    "Camo_1"
+   </em>
+   ,
+   <em>
+    "Camo_2"
+   </em>
+   ). Loaded/empty versions are handled via model config (a rocket as a
+   <em>
+    "magazine"
+   </em>
+   selection) instead of the
+   <em>
+    modelSpecial
+   </em>
+   property in the rockets'
+   <em>
+    CfgMagazines
+   </em>
+   entries.
+  </li>
+  <li>
+   Tweaked: The camo selections of the Tempest Transport truck were updated and are now reskinnable
+  </li>
+  <li>
+   Tweaked: The sound volumes of some cannons and launchers were adjusted
+  </li>
+  <li>
+   Tweaked: The smoke launchers and communication equipment of the Ifrit can now be retextured
+  </li>
+  <li>
+   Tweaked: The distortion of some explosions was improved
+  </li>
+  <li>
+   Tweaked: The turret hiding animation for the AMV-7 Marshall now hides also the turret hatch
+  </li>
+  <li>
+   Tweaked: The
+   <a href="https://community.bistudio.com/wiki/CfgPatches" target="_blank">
+    CfgPatches
+   </a>
+   were rewritten to prep for new
+   <a href="https://community.bistudio.com/wiki/Eden_Editor" target="_blank">
+    Eden Editor
+   </a>
+   functionality
+  </li>
+  <li>
+   Tweaked: The weight of the Light Combat Helmets was decreased (lighter than standard Combat Helmets as they provide lesser protection)
+  </li>
+  <li>
+   Tweaked: The weight of some CSAT uniforms (e.g. Officer uniforms are now lighter)
+  </li>
+  <li>
+   Tweaked: The crew aiming direction indicators are now limited to tanks only
+  </li>
+  <li>
+   Tweaked: The difficulty selection and indication are now present in the multiplayer Create Game dialogue
+  </li>
+  <li>
+   Tweaked: The appearance of soldiers equipment and accessories was improved in Thermal Imaging
+  </li>
+  <li>
+   Tweaked: The aiming direction indicators were limited to tank crews
+  </li>
+  <li>
+   Tweaked: The manual control over the Titan AP rocket was improved
+  </li>
+  <li>
+   Tweaked: The head bob for all movement types with launchers was improved
+  </li>
+  <li>
+   Tweaked: Structure lines in the GUI trees are no longer visible
+  </li>
+  <li>
+   Tweaked: Expanding and collapsing icons were updated for GUI of the trees
+  </li>
+  <li>
+   Tweaked: The Sling Load Assistant was localized
+  </li>
+  <li>
+   Tweaked: The speed of animations with a lowered sidearm in a stand pose and a tactical pace has been lowered for forward, forward-left and forward-right directions
+  </li>
+  <li>
+   Tweaked: The radar (
+   <em>
+    irScan
+   </em>
+   ) was removed from static weapons and helicopters (excluding the gunships and the Orca)
+  </li>
+ </ul>
+ <ul>
+  <li>
+   Fixed: The RPG-42 Alamut optics did not correspond with the actual ranges
+  </li>
+  <li>
+   Fixed: The Spectator Entity list would show incorrect groups when the
+   <em>
+    <a href="https://community.bistudio.com/wiki/setGroupId" target="_blank">
+     setGroupID
+    </a>
+   </em>
+   command was used (
+   <a href="https://forums.bistudio.com/topic/189095-bis-fnc-egspectator-issues-with-setgroupid/" target="_blank">
+    https://forums.bistudio.com/topic/189095-bis-fnc-egspectator-issues-with-setgroupid/
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Some entries in the Spectator Entity list were duplicated
+  </li>
+  <li>
+   Fixed: The third person camera would reset when the camera mode was switched
+  </li>
+  <li>
+   Fixed: Zeus was unable to see players in the Seize scenarios
+  </li>
+  <li>
+   Fixed: There were some minor spelling mistakes in Zeus functions
+  </li>
+  <li>
+   Fixed: Respawn would not work in some scenarios created in the
+   <a href="https://community.bistudio.com/wiki/Eden_Editor" target="_blank">
+    Eden Editor
+   </a>
+  </li>
+  <li>
+   Fixed: The
+   <em>
+    "UAV in a Backpack"
+   </em>
+   hint in the Field Manual was not localized
+  </li>
+  <li>
+   Fixed: The visibility line trace would collide with the ground for carriers in vehicles in
+   <a href="https://community.bistudio.com/wiki/MP_End_Game" target="_blank">
+    End Game
+   </a>
+   scenarios
+  </li>
+  <li>
+   Fixed: The 30mm and 40mm shell explosions were not audible correctly in a larger distance
+  </li>
+  <li>
+   Fixed: The Taru pods would have an incorrect color when spawning the black variants using script commands
+  </li>
+  <li>
+   Fixed: The controls helper texts were not localized in the
+   <a href="https://community.bistudio.com/wiki/EG_Spectator_Mode" target="_blank">
+    Virtual Spectator
+   </a>
+  </li>
+  <li>
+   Fixed: Using Slider attribute GUI could result in script errors in some cases (
+   <a href="https://forums.bistudio.com/topic/188714-eden-editor-bugs/?p=3020297" target="_blank">
+    https://forums.bistudio.com/topic/188714-eden-editor-bugs/?p=3020297
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Script error when using the Patrol module under Sites
+  </li>
+  <li>
+   Fixed: Players were unable to place entities in the Showcase Zeus scenario
+  </li>
+ </ul>
+ <p>
+  <strong>
+   <a href="https://community.bistudio.com/wiki/Arma_3_Tasks_Overhaul" target="_blank">
+    Tasks Overhaul
+   </a>
+  </strong>
+ </p>
+ <ul>
+  <li>
+   Tweaked: New tasks types were implemented for these showcases: Helicopters, Infantry, SCUBA, Vehicles, Combined Arms, Commanding, Night, Supports, Drones, Gunship, Tanks, Factions showcases, Fixed Wings, Firing from Vehicles, Marksmen, Slingloading and the Bootcamp scenarios
+  </li>
+  <li>
+   Tweaked: The
+   <em>
+    “Task Type”
+   </em>
+   and
+   <em>
+    “Always Visible”
+   </em>
+   flag texts are now correctly localized
+  </li>
+  <li>
+   Tweaked: The Regular difficulty preset now uses Limited distance and Fade-out options to reduce the number of displayed artificial elements
+  </li>
+ </ul>
+ <p>
+  <strong>
+   <a href="https://community.bistudio.com/wiki/Eden_Editor" target="_blank">
+    Eden Editor
+   </a>
+  </strong>
+ </p>
+ <ul>
+  <li>
+   <strong>
+    Added: Preview images of units are now available in the
+    <a href="https://community.bistudio.com/wiki/Eden_Editor" target="_blank">
+     Eden Editor
+    </a>
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: An armillion of rocks is now available in
+    <a href="https://community.bistudio.com/wiki/Eden_Editor" target="_blank">
+     Eden Editor
+    </a>
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Moving time or weather sliders in the Intel window now offers an immediate preview of the scene
+   </strong>
+  </li>
+  <li>
+   Added: An ability to search in the Locations list
+  </li>
+  <li>
+   Added: Support for opening the scenario and log folders from the menu strip
+  </li>
+  <li>
+   Added: The list of required addons is now sorted with the missing addons on top
+  </li>
+ </ul>
+ <ul>
+  <li>
+   <strong>
+    Tweaked: The
+    <a href="https://community.bistudio.com/wiki/Eden_Editor" target="_blank">
+     Eden Editor
+    </a>
+    ’s GUI scale now respects the Interface Size settings in the video options
+   </strong>
+  </li>
+  <li>
+   Tweaked: The Entity Editing tutorial now contains information about entities with areas
+  </li>
+ </ul>
+ <ul>
+  <li>
+   Fixed: The
+   <em>
+    "Enable Stamina"
+   </em>
+   attribute was available even for objects without stamina (e.g. vehicles and props)
+  </li>
+  <li>
+   Fixed: Starting the game in the
+   <a href="https://community.bistudio.com/wiki/Eden_Editor" target="_blank">
+    Eden Editor
+   </a>
+   could result in the screen being covered by a black overlay
+  </li>
+  <li>
+   Fixed: Error message after
+   <a href="https://community.bistudio.com/wiki/Eden_Editor" target="_blank">
+    Eden Editor
+   </a>
+   ’s start
+  </li>
+  <li>
+   Fixed: Toggling the
+   <em>
+    "Environmental Sounds"
+   </em>
+   attribute in the
+   <a href="https://community.bistudio.com/wiki/Eden_Editor" target="_blank">
+    Eden Editor
+   </a>
+   preferences had no effect (
+   <a href="http://feedback.arma3.com/view.php?id=27943" target="_blank">
+    http://feedback.arma3.com/view.php?id=27943
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Initialization of a numeric value of the
+   <em>
+    "SliderTime"
+   </em>
+   <a href="https://community.bistudio.com/wiki/Eden_Editor" target="_blank">
+    Eden Editor
+   </a>
+   attribute was not correct
+  </li>
+  <li>
+   Fixed: A numeric value of the
+   <em>
+    "SliderMultiplier"
+   </em>
+   <a href="https://community.bistudio.com/wiki/Eden_Editor" target="_blank">
+    Eden Editor
+   </a>
+   attribute was not applied correctly
+  </li>
+ </ul>
+ <p>
+  <strong>
+   Potential spoilers
+  </strong>
+ </p>
+ <ul>
+  <li>
+   Tweaked: The IFV Entity FSM in the Preventive Diplomacy campaign scenario
+  </li>
+ </ul>
+ <h2>
+  ENGINE:
+ </h2>
+ <ul>
+  <li>
+   <strong>
+    Added: A Quick Play feature
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Support for line drawing in a map interface
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Screen Space Reflections on water
+   </strong>
+   (optional)
+  </li>
+  <li>
+   <strong>
+    Added: Multi-component fog
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: The description and image previews of a selected
+    <a href="https://community.bistudio.com/wiki/Arma_3_Difficulty_Overhaul" target="_blank">
+     difficulty
+    </a>
+    option are now displayed in the difficulty menu
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Triggers with height and bottom limitations are now supported
+   </strong>
+  </li>
+  <li>
+   Added: Changing the
+   <a href="https://community.bistudio.com/wiki/Arma_3_Zeus" target="_blank">
+    Zeus
+   </a>
+   camera control keybindings is now supported
+  </li>
+  <li>
+   Added: A list of server mods is now generated to the
+   <a href="https://community.bistudio.com/wiki?title=Crash_Files" target="_blank">
+    RPT
+   </a>
+   when the game crashes
+  </li>
+  <li>
+   Added: New
+   <em>
+    slingLoading
+   </em>
+   and
+   <em>
+    slingLoaded
+   </em>
+   animation sources
+  </li>
+  <li>
+   Added: New
+   <em>
+    <a href="https://community.bistudio.com/wiki/commandSuppressiveFire" target="_blank">
+     commandSuppressiveFire
+    </a>
+   </em>
+   and
+   <em>
+    <a href="https://community.bistudio.com/wiki/doSuppressiveFire" target="_blank">
+     doSuppressiveFire
+    </a>
+   </em>
+   script commands
+  </li>
+  <li>
+   Added: A new
+   <em>
+    <a href="https://community.bistudio.com/wiki/userInputDisabled" target="_blank">
+     userInputDisabled
+    </a>
+   </em>
+   script command (returns true when the user input is disabled)
+  </li>
+  <li>
+   Added: A new
+   <em>
+    <a href="https://community.bistudio.com/wiki/getTerrainGrid" target="_blank">
+     getTerrainGrid
+    </a>
+   </em>
+   script command (returns the current size of the terrain grid)
+  </li>
+  <li>
+   Added: A
+   <em>
+    "Hide"
+   </em>
+   option for the Weapon Info difficulty option
+  </li>
+  <li>
+   Added: It is now possible to set a
+   <em>
+    "Limited distance"
+   </em>
+   parameter for the
+   <em>
+    “Group indicators”
+   </em>
+   ,
+   <em>
+    “Friendly name tags”
+   </em>
+   ,
+   <em>
+    “Enemy name tags”
+   </em>
+   and
+   <em>
+    “Detected mines”
+   </em>
+   Difficulty options
+  </li>
+  <li>
+   Added: A new
+   <em>
+    <a href="https://community.bistudio.com/wiki/pixelGrid" target="_blank">
+     pixelGrid
+    </a>
+   </em>
+   script command (computing the best size of grid based on resolution and UI scale)
+  </li>
+  <li>
+   Added: A new
+   <em>
+    <a href="https://community.bistudio.com/wiki/screenshot" target="_blank">
+     screenshot
+    </a>
+   </em>
+   script command
+  </li>
+  <li>
+   Added: Support for muting the VON channels in the
+   <a href="https://community.bistudio.com/wiki/server.cfg" target="_blank">
+    server.cfg
+   </a>
+  </li>
+  <li>
+   Added: Support for setting a color and a selection color in a UI tree
+  </li>
+  <li>
+   Added: A new
+   <em>
+    canUseScanners
+   </em>
+   vehicle / turret parameter
+  </li>
+  <li>
+   Added:
+   <em>
+    <a href="https://community.bistudio.com/wiki/Arma_Dedicated_Server" target="_blank">
+     Dedicated Servers
+    </a>
+   </em>
+   check the Steam AppId set for the current process and produce a warning to the console and to the log when it doesn't match expected value
+  </li>
+  <li>
+   Added: The
+   <em>
+    soundOverride
+   </em>
+   config parameter can now be used also for gestures
+  </li>
+  <li>
+   Added: A new
+   <em>
+    modParams
+   </em>
+   script command for getting details about a mod
+  </li>
+  <li>
+   Added: Improvements to Night Vision grain
+  </li>
+  <li>
+   Added: A new
+   <em>
+    forcedDifficulty
+   </em>
+   <a href="https://community.bistudio.com/wiki/server.cfg" target="_blank">
+    server.cfg
+   </a>
+   parameter
+  </li>
+  <li>
+   Added: AppId for a
+   <a href="https://community.bistudio.com/wiki/Arma_Dedicated_Server" target="_blank">
+    Dedicated Server
+   </a>
+   when the Steam client is not running is now checked against
+   <em>
+    steam_appid.txt
+   </em>
+  </li>
+  <li>
+   Added: A glow post-process is now applied during saving of the game
+  </li>
+  <li>
+   Added: New functionality for configuring
+   <em>
+    TreeItem
+   </em>
+   left and right picture colors through configs and script commands
+  </li>
+  <li>
+   Added: A new startup parameter for
+   <a href="https://community.bistudio.com/wiki/BankRev" target="_blank">
+    BankRev
+   </a>
+   -prefix to extract the data to
+   <em>
+    Destination\Prefix\Data
+   </em>
+   (instead of
+   <em>
+    Destination\PBOName\Data
+   </em>
+   )
+  </li>
+  <li>
+   Added: A default value for the
+   <em>
+    AIAvoidStance
+   </em>
+   to the
+   <em>
+    Default
+   </em>
+   class of
+   <em>
+    CfgSurfaces
+   </em>
+   (0 means no change in the behavior on that surface, 1 means less preference for going prone, 2 means almost never going prone)
+  </li>
+ </ul>
+ <ul>
+  <li>
+   <strong>
+    Tweaked: Water refraction was improved
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Tweaked: Targeting was improved
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Tweaked: The Score / Stats display was improved and made more configurable
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Tweaked: Look-and-feel of the saving notification
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Tweaked: The Suppression command was overhauled
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Tweaked: The VON and chat channels are now separated
+   </strong>
+  </li>
+  <li>
+   Tweaked: The
+   <em>
+    <a href="https://community.bistudio.com/wiki/turretUnit" target="_blank">
+     turretUnit
+    </a>
+   </em>
+   script command description now contains an example of usage
+  </li>
+  <li>
+   Tweaked: The
+   <a href="https://community.bistudio.com/wiki/Arma_3:_Event_Handlers/addMissionEventHandler#PlayerDisconnected" target="_blank">
+    PlayerDisconnected
+   </a>
+   mission Event Handler is now called even when the
+   <em>
+    <a href="https://community.bistudio.com/wiki/onPlayerDisconnected" target="_blank">
+     OnPlayerDisconnected
+    </a>
+   </em>
+   command is not used
+  </li>
+  <li>
+   Tweaked: The
+   <em>
+    "logFile"
+   </em>
+   output from server config is now available for every executable type
+  </li>
+  <li>
+   Tweaked: The sliders for Post Process color corrections in the Video Options now inherit their values from the edit boxes
+  </li>
+  <li>
+   Tweaked: The multiplayer score table now toggles under the “P” key
+  </li>
+  <li>
+   Tweaked:
+   <a href="https://community.bistudio.com/wiki/Model_Config#Animation_sources" target="_blank">
+    Weapon animation sources
+   </a>
+   were improved
+  </li>
+  <li>
+   Tweaked:
+   <em>
+    AutoZeroing
+   </em>
+   does not need the
+   <em>
+    canLock
+   </em>
+   parameter anymore
+  </li>
+  <li>
+   Tweaked: The
+   <a href="https://community.bistudio.com/wiki/Arma_3_Zeus" target="_blank">
+    Zeus
+   </a>
+   unit icons now have a higher contrast
+  </li>
+  <li>
+   Tweaked: The
+   <em>
+    <a href="https://community.bistudio.com/wiki/setUnitLoadout" target="_blank">
+     setUnitLoadOut
+    </a>
+   </em>
+   script command now accepts a class name (e.g.
+   <em>
+    player setUnitLoadOut "B_Soldier_F"
+   </em>
+   )
+  </li>
+  <li>
+   Tweaked: The
+   <em>
+    weaponInfoType
+   </em>
+   now accepts the
+   <em>
+    driverWeaponsInfoType
+   </em>
+   parameter
+  </li>
+  <li>
+   Tweaked: The
+   <em>
+    <a href="https://community.bistudio.com/wiki/channelEnabled" target="_blank">
+     channelEnabled
+    </a>
+   </em>
+   and
+   <em>
+    <a href="https://community.bistudio.com/wiki/enableChannel" target="_blank">
+     enableChannel
+    </a>
+   </em>
+   script commands now support a separate muting of the VON and chat
+  </li>
+  <li>
+   Tweaked: The pilot camera now supports turret locking (default by the CTRL + T keys)
+  </li>
+  <li>
+   Tweaked: The User Interface for channel muting was improved
+  </li>
+  <li>
+   Tweaked: The
+   <em>
+    <a href="https://community.bistudio.com/wiki/getUnitLoadout" target="_blank">
+     getUnitLoadout
+    </a>
+   </em>
+   script command was changed (syntax:
+   <em>
+    getUnitLoadout [unit, fullMagazines]
+   </em>
+   )
+  </li>
+  <li>
+   Tweaked:
+   <a href="https://community.bistudio.com/wiki/Arma_3_Zeus" target="_blank">
+    Zeus
+   </a>
+   is now using the same entity categorization as the
+   <a href="https://community.bistudio.com/wiki/Eden_Editor" target="_blank">
+    Eden Editor
+   </a>
+  </li>
+  <li>
+   Tweaked: The
+   <em>
+    <a href="https://community.bistudio.com/wiki/remoteExec" target="_blank">
+     remoteExec*
+    </a>
+   </em>
+   messages JIPped via objects and groups can now be removed using the respective objects or groups
+  </li>
+  <li>
+   Tweaked: The pilot camera controls were slightly tweaked
+  </li>
+  <li>
+   Tweaked: Weapon switching between the standing and crouching stances was improved
+  </li>
+  <li>
+   Tweaked: The SCUD functionality has been separated to its own (engine) component for optimization purposes
+  </li>
+  <li>
+   Tweaked: AI visibility is now accustomed to the nights after the Visual Upgrade
+  </li>
+  <li>
+   Tweaked: The version numbers of the
+   <a href="https://community.bistudio.com/wiki/Addon_Builder" target="_blank">
+    Addon Builder
+   </a>
+   and the
+   <a href="https://community.bistudio.com/wiki/Publisher" target="_blank">
+    Publisher
+   </a>
+   were increased to 1.5
+  </li>
+  <li>
+   Tweaked: Animals now use a more optimized
+   <em>
+    aiBrainType
+   </em>
+   (
+   <em>
+    DefaultAnimalBrain
+   </em>
+   )
+  </li>
+  <li>
+   Tweaked: The
+   <em>
+    <a href="https://community.bistudio.com/wiki/setUnitLoadout" target="_blank">
+     setUnitLoadout
+    </a>
+   </em>
+   script command is now supported in the multiplayer environment
+  </li>
+  <li>
+   Tweaked: The current difficulty on the
+   <a href="https://community.bistudio.com/wiki/Arma_Dedicated_Server" target="_blank">
+    Dedicated Server
+   </a>
+   is now used as an initial difficulty on the Create Game screen
+  </li>
+  <li>
+   Tweaked: The Opus codec quality now better corresponds with the
+   <em>
+    vonCodecQuality
+   </em>
+   parameter of the
+   <a href="https://community.bistudio.com/wiki/server.cfg" target="_blank">
+    server.cfg
+   </a>
+  </li>
+  <li>
+   Tweaked: The
+   <a href="https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#irScanGround" target="_blank">
+    irScanGround
+   </a>
+   config parameter was expanded (0 = only air, 1 = ground and air, 2 = only ground)
+  </li>
+  <li>
+   Tweaked: RPT spam related to corrupted server data was removed
+  </li>
+ </ul>
+ <ul>
+  <li>
+   <strong>
+    Fixed: The Voice-Over-Net technology was stuttering on the Global and Side channels
+   </strong>
+  </li>
+  <li>
+   Fixed: The sounds of bullet casings hitting the ground were not audible
+  </li>
+  <li>
+   Fixed: The
+   <em>
+    <a href="https://community.bistudio.com/wiki/turretUnit" target="_blank">
+     turretUnit
+    </a>
+   </em>
+   command would return
+   <em>
+    objNull
+   </em>
+   even with a vehicle driver present (inconsistent with other turret related commands)
+  </li>
+  <li>
+   Fixed: It is no longer possible to place a waypoint by a
+   <a href="https://community.bistudio.com/wiki/Arma_3:_Event_Handlers/addMissionEventHandler#MapSingleClick" target="_blank">
+    MapSingleClick
+   </a>
+   mission Event Handler
+  </li>
+  <li>
+   Fixed: Vehicle explosions were not audible correctly when inside of another vehicle
+  </li>
+  <li>
+   Fixed: AI would slow down when running around dead bodies
+  </li>
+  <li>
+   Fixed: Characters would not be simulated properly for FFV positions in an attached vehicle
+  </li>
+  <li>
+   Fixed: The height parameter of a trigger was not synchronized in a multiplayer environment
+  </li>
+  <li>
+   Fixed: The new camera actions had incorrect names
+  </li>
+  <li>
+   Fixed: Pressing the CTRL key while zoomed in would zoom the view out (fix applies for the general
+   <em>
+    GetAction
+   </em>
+   usage -
+   <a href="http://feedback.arma3.com/view.php?id=24024" target="_blank">
+    http://feedback.arma3.com/view.php?id=24024
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: The
+   <em>
+    isInside
+   </em>
+   command did not reflect the existence of the height parameter for triggers
+  </li>
+  <li>
+   Fixed: The commanding cursor was offset in freelook
+  </li>
+  <li>
+   Fixed: A potential crash related to the
+   <em>
+    <a href="https://community.bistudio.com/wiki/commandSuppressiveFire" target="_blank">
+     commandSuppressiveFire
+    </a>
+   </em>
+   script command
+  </li>
+  <li>
+   Fixed: Setting the
+   <em>
+    VonCodecQuality
+   </em>
+   <a href="https://community.bistudio.com/wiki/server.cfg" target="_blank">
+    server.cfg
+   </a>
+   parameter to a value higher than 20 would cause corrupted VON (
+   <a href="http://feedback.arma3.com/view.php?id=16789" target="_blank">
+    http://feedback.arma3.com/view.php?id=16789
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Pressing the CTRL key while zoomed in would cause zooming out (
+   <a href="http://feedback.arma3.com/view.php?id=24024" target="_blank">
+    http://feedback.arma3.com/view.php?id=24024
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: The color of some particles under dynamic lighting was incorrect when using the multi-component fog
+  </li>
+  <li>
+   Fixed: Car tracks would appear on the ground even with the shadows disabled
+  </li>
+  <li>
+   Fixed: The
+   <em>
+    <a href="https://community.bistudio.com/wiki/flyInHeight" target="_blank">
+     flyInHeight
+    </a>
+   </em>
+   script command would be applied also for stationary helicopters
+  </li>
+  <li>
+   Fixed: Deleting a vehicle’s crew would cause other crew members to disembark
+  </li>
+  <li>
+   Fixed: Filtering of duplicate targets for the
+   <em>
+    <a href="https://community.bistudio.com/wiki/remoteExec" target="_blank">
+     remoteExec*
+    </a>
+   </em>
+   commands was not working in singleplayer
+  </li>
+  <li>
+   Fixed: Crash when using the
+   <em>
+    <a href="https://community.bistudio.com/wiki/setDate" target="_blank">
+     setDate
+    </a>
+   </em>
+   script command with incorrect date values
+  </li>
+  <li>
+   Fixed: There was an issue when joining a scenario with the
+   <em>
+    autoAssign
+   </em>
+   enabled
+  </li>
+  <li>
+   Fixed: A potential crash connected to the
+   <em>
+    <a href="https://community.bistudio.com/wiki/isOnRoad" target="_blank">
+     isOnRoad
+    </a>
+   </em>
+   script command
+  </li>
+  <li>
+   Fixed: The config parameter
+   <em>
+    "thrustDelay"
+   </em>
+   was working incorrectly (its minimum value now is 0.5)
+  </li>
+  <li>
+   Fixed: Characters would get stuck when moving forward while changing to a pistol while standing up
+  </li>
+  <li>
+   Fixed: Characters would go prone too quickly when going prone while switching to a launcher
+  </li>
+  <li>
+   Fixed: Blending with an empty animation mask was incorrect
+  </li>
+  <li>
+   Fixed: Triggers created via the
+   <em>
+    <a href="https://community.bistudio.com/wiki/createTrigger" target="_blank">
+     createTrigger
+    </a>
+   </em>
+   script command had an incorrect angle
+  </li>
+  <li>
+   Fixed: A potential crash connected to the anti-spam feature for the RPT file
+  </li>
+  <li>
+   Fixed: A potential server crash
+  </li>
+  <li>
+   Fixed: Being in an area of a trigger with swapped sides was causing the
+   <em>
+    <a href="https://community.bistudio.com/wiki/inArea" target="_blank">
+     inArea
+    </a>
+   </em>
+   command to fail
+  </li>
+  <li>
+   Fixed: A potential crash when restarting a scenario with a SQM file that had meanwhile changed
+  </li>
+  <li>
+   Fixed: The camera behavior when selecting a launcher in a prone deployed stance was incorrect
+  </li>
+  <li>
+   Fixed: Players would be kicked from a
+   <a href="https://community.bistudio.com/wiki/Arma_Dedicated_Server" target="_blank">
+    Dedicated Server
+   </a>
+   after a scenario ended when the mission cycle was active
+  </li>
+  <li>
+   Fixed: A potential crash
+  </li>
+  <li>
+   Fixed: The in-game videos would be corrupted while playing (e.g. frame skipping and sound crackling)
+  </li>
+  <li>
+   Fixed: The
+   <em>
+    <a href="https://community.bistudio.com/wiki/ctrlDelete" target="_blank">
+     ctrlDelete
+    </a>
+   </em>
+   script command was not working in specific cases (e.g. inside controls groups)
+  </li>
+  <li>
+   Fixed: Crash when walking out of the water
+  </li>
+  <li>
+   Fixed: A potential crash in
+   <a href="https://community.bistudio.com/wiki/Arma_3_Zeus" target="_blank">
+    Zeus
+   </a>
+  </li>
+  <li>
+   Fixed: Taking control over a helicopter with a sensor pod from the copilot seat would cause an incorrect camera behavior (
+   <a href="http://feedback.arma3.com/view.php?id=27345" target="_blank">
+    http://feedback.arma3.com/view.php?id=27345
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Clutter would be generated incorrectly near roadways
+  </li>
+  <li>
+   Fixed: The weapon cursors would not move vertically in the Commander mode when the weapon was deployed (
+   <a href="http://feedback.arma3.com/view.php?id=27447" target="_blank">
+    http://feedback.arma3.com/view.php?id=27447
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Some weapon animations in multiplayer were incorrect
+  </li>
+  <li>
+   Fixed: Profile
+   <em>
+    .vars
+   </em>
+   would be deleted after switching between different game branches (thanks Alwarren and others -
+   <a href="https://forums.bistudio.com/topic/143930-general-discussion-dev-branch/page-976?p=3020259#entry3020259" target="_blank">
+    https://forums.bistudio.com/topic/143930-general-discussion-dev-branch/page-976?p=3020259#entry3020259
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: The
+   <em>
+    <a href="https://community.bistudio.com/wiki/camSetDir" target="_blank">
+     camSetDir
+    </a>
+   </em>
+   script command was working incorrectly
+  </li>
+  <li>
+   Fixed: It was possible to perform a step-over while switching weapons on the move
+  </li>
+  <li>
+   Fixed: Dedicated Server with a mission cycle would start with the second scenario listed
+  </li>
+  <li>
+   Fixed: Clutter cache computation was slightly incorrect
+  </li>
+  <li>
+   Fixed: Flashlight flares were not visible for graphics settings set to lower than Very High
+  </li>
+  <li>
+   Fixed: A logged-in administrator would be kicked off a
+   <a href="https://community.bistudio.com/wiki/Arma_Dedicated_Server" target="_blank">
+    Dedicated Server
+   </a>
+   after a scenario changed
+  </li>
+  <li>
+   Fixed: Video playback speed when no audio stream is present
+  </li>
+  <li>
+   Fixed: Shooting sounds were still playing after a weapon stopped shooting in some cases
+  </li>
+  <li>
+   Fixed: Some letters would be missing in the Russian localization
+  </li>
+  <li>
+   Fixed: Some Russian characters were not displayed correctly
+  </li>
+  <li>
+   Fixed: Depth calculations for characters would be incorrect for swimming
+  </li>
+  <li>
+   Fixed: The difficulty settings of the client would be inherited from the server even after disconnecting from the session in some cases
+  </li>
+  <li>
+   Fixed: The
+   <em>
+    <a href="https://community.bistudio.com/wiki/remoteExec" target="_blank">
+     remoteExec*
+    </a>
+   </em>
+   would not apply a correct message filter for the Joined-In-Progress players
+  </li>
+ </ul>
+ <p>
+  <strong>
+   Tasks Overhaul
+  </strong>
+ </p>
+ <ul>
+  <li>
+   Added: New
+   <em>
+    setTaskMarkerOffset
+   </em>
+   and
+   <em>
+    taskMarkerOffset
+   </em>
+   script commands
+  </li>
+  <li>
+   Fixed: All task markers would reappear if only one task was updated
+  </li>
+  <li>
+   Fixed: The
+   <em>
+    AutoAssign
+   </em>
+   command would not assign positions properly
+  </li>
+  <li>
+   Fixed: The ORBAT group icons would overlap with the task icons in the map interface
+  </li>
+  <li>
+   Fixed:
+   <em>
+    Assigned
+   </em>
+   and
+   <em>
+    AlwaysVisible
+   </em>
+   tasks would fade out at a different speed
+  </li>
+  <li>
+   Fixed:
+   <em>
+    Unassigned
+   </em>
+   tasks would be drawn after closing the Pause Menu
+  </li>
+  <li>
+   Fixed: The task map markers would not react to a mouse hover
+  </li>
+  <li>
+   Fixed: Tasks would be displayed incorrectly after a scenario was loaded from a save file
+  </li>
+ </ul>
+ <p>
+  <strong>
+   <a href="https://community.bistudio.com/wiki/Eden_Editor" target="_blank">
+    Eden Editor
+   </a>
+  </strong>
+ </p>
+ <ul>
+  <li>
+   <strong>
+    Added: A new “Comment” entity type
+   </strong>
+   (present only in the
+   <a href="https://community.bistudio.com/wiki/Eden_Editor" target="_blank">
+    Eden Editor
+   </a>
+   scene, can be used e.g. for personal notes)
+  </li>
+  <li>
+   <strong>
+    Added: Changing the
+    <a href="https://community.bistudio.com/wiki/Eden_Editor" target="_blank">
+     Eden Editor
+    </a>
+    camera control keybindings is now supported
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Support for ‘Create &amp; Scale’ for triggers and area markers
+   </strong>
+   (it is possible to click and drag to create an area with exactly sized dimensions)
+  </li>
+  <li>
+   <strong>
+    Added: Foliage toggle
+   </strong>
+  </li>
+  <li>
+   Added: A
+   <em>
+    "saved3DENInventory"
+   </em>
+   variable is saved to a character's variable space at the scenario start after the character's loadout was customized
+  </li>
+  <li>
+   Added: The entity selection is remembered after the entity was placed by double click (allows placing multiple times without re-selecting it)
+  </li>
+  <li>
+   Added: Listed scenarios can now be deleted from the Save / Load dialogs (select a scenario and press the 'Delete' key)
+  </li>
+  <li>
+   Added: Support for setting up an area inside objects and logics (e.g. modules)
+  </li>
+  <li>
+   Added: Support for Drag &amp; Drop of entities from the Edit list to the Scene
+  </li>
+  <li>
+   Added: Support for creating 3D areas in objects and a possibility to change their shape (e.g. from a rectangle to an ellipse)
+  </li>
+  <li>
+   Added: An ability to force Custom Object’s area attributes (e.g. shape, size) in the config to a specific value and disallow the user to change it in the
+   <a href="https://community.bistudio.com/wiki/Eden_Editor" target="_blank">
+    Eden Editor
+   </a>
+  </li>
+  <li>
+   Added: Support for changing the crew’s position in a vehicle
+  </li>
+  <li>
+   Added: Support for custom user connections
+  </li>
+  <li>
+   Added: Support for creating an entity and opening its attributes at the same time
+  </li>
+  <li>
+   Added: New icons for changing the seat context menu options
+  </li>
+  <li>
+   Added: A new
+   <em>
+    set3DENSelected
+   </em>
+   script command
+  </li>
+  <li>
+   Added: Preview of trigger models in 3D during their creation
+  </li>
+  <li>
+   Added: An option to display information about map objects in an on-hover tooltip
+  </li>
+  <li>
+   Added: A new trigger attribute forcing the trigger to be simulated only on the server
+  </li>
+  <li>
+   Added: A new Preferences parameter toggling the adaptive camera speed (e.g. slowing down near surfaces)
+  </li>
+  <li>
+   Added: Support for name and init attributes of groups
+  </li>
+  <li>
+   Added: Support for advanced searching in Edit trees (usage example:
+   <em>
+    "#object name NameOfMyObject"
+   </em>
+   will search for all objects with a name attribute equal to
+   <em>
+    NameOfMyObject
+   </em>
+   )
+  </li>
+  <li>
+   Added: Suggestions for an advanced search in the Edit list
+  </li>
+  <li>
+   Added: Support to open the mission and log folders
+  </li>
+  <li>
+   Added: Initial support for resizing triggers by dragging their corners
+  </li>
+  <li>
+   Added: A visualization part of a new resize widget
+  </li>
+  <li>
+   Added: Support for rotating the new Resize widget
+  </li>
+  <li>
+   Added: An automatic registration of scripted
+   <a href="https://community.bistudio.com/wiki/Arma_3:_Event_Handlers" target="_blank">
+    Event Handlers
+   </a>
+   requested from the configs
+  </li>
+  <li>
+   Added: A new interactive middle line for the Resize and Rotate widgets
+  </li>
+ </ul>
+ <ul>
+  <li>
+   Tweaked: Dragging an entity by its model was improved
+  </li>
+  <li>
+   Tweaked: The dialog displaying an alert about missing addons while importing a scenario was improved
+  </li>
+  <li>
+   Tweaked: Widgets are now calling the
+   <em>
+    AttributesChanged3DEN
+   </em>
+   <a href="https://community.bistudio.com/wiki/Arma_3:_Event_Handlers" target="_blank">
+    Event Handler
+   </a>
+   on objects
+  </li>
+  <li>
+   Tweaked: The
+   <em>
+    <a href="https://community.bistudio.com/wiki/move3DENCamera" target="_blank">
+     move3DENCamera
+    </a>
+   </em>
+   command would not work with a map interface open
+  </li>
+  <li>
+   Tweaked: The
+   <em>
+    <a href="https://community.bistudio.com/wiki/all3DENEntities" target="_blank">
+     all3DENEntities
+    </a>
+   </em>
+   now returns also layers and comments (full syntax:
+   <em>
+    [objects, groups, triggers, systems, waypoints, markers, layers, comments]
+   </em>
+   )
+  </li>
+  <li>
+   Tweaked: The DLC icons now appear on the left side of the Edit List
+  </li>
+  <li>
+   Tweaked: Eden attribute commands (
+   <em>
+    <a href="https://community.bistudio.com/wiki/get3DENAttribute" target="_blank">
+     get3DENAttribute
+    </a>
+   </em>
+   ,
+   <em>
+    <a href="https://community.bistudio.com/wiki/set3DENAttribute" target="_blank">
+     set3DENAttribute
+    </a>
+   </em>
+   ,
+   <em>
+    <a href="https://community.bistudio.com/wiki/set3DENAttributes" target="_blank">
+     set3DENAttributes
+    </a>
+   </em>
+   ) now accept the Entity ID
+  </li>
+  <li>
+   Fixed: The Scale Widget could be dragged even without any scalable item selected
+  </li>
+  <li>
+   Fixed: Moved object would always be dragged by the center of their mass
+  </li>
+  <li>
+   Fixed: The backup SQM file was removed when there were some addons missing during a scenario import
+  </li>
+  <li>
+   Fixed: The Rotation Widget would display a change before it really happened
+  </li>
+  <li>
+   Fixed: Dragging of a trigger by holding its area with a mouse was no longer possible
+  </li>
+  <li>
+   Fixed: Preview and a map drawing for rectangular object areas were incorrect
+  </li>
+  <li>
+   Fixed: The on-hover tooltips did not have any line breaks
+  </li>
+  <li>
+   Fixed: A history entry for the
+   <em>
+    “Create Comment”
+   </em>
+   operation was missing
+  </li>
+  <li>
+   Fixed: Dragging markers with a mouse cursor was not working correctly
+  </li>
+  <li>
+   Fixed: Temporary scenario data was not deleted after switching to another terrain in the
+   <a href="https://community.bistudio.com/wiki/Eden_Editor" target="_blank">
+    Eden Editor
+   </a>
+  </li>
+  <li>
+   Fixed: The camera’s position would not reset after changing a terrain
+  </li>
+  <li>
+   Fixed: Some icon markers were created on the [0,0,0] coordinates
+  </li>
+  <li>
+   Fixed: Vehicle crew would be selected after pasting a vehicle in the
+   <a href="https://community.bistudio.com/wiki/Eden_Editor" target="_blank">
+    Eden Editor
+   </a>
+  </li>
+  <li>
+   Fixed: The marker names were not localized in the Entity List
+  </li>
+  <li>
+   Fixed: Scenarios imported from the 2D editor would ignore the user’s binarization settings
+  </li>
+  <li>
+   Fixed: Logging a position of the Comment entity to the clipboard would produce a script error
+  </li>
+  <li>
+   Fixed: The UI sliders would react to user input even when no active cursor was hovering above them
+  </li>
+  <li>
+   Fixed: A rogue 2D line was occasionally drawn to the top left corner of the Eden scene
+  </li>
+  <li>
+   Fixed: The vehicle’s effective commander would not be able to give orders after switching seats in the
+   <a href="https://community.bistudio.com/wiki/Eden_Editor" target="_blank">
+    Eden Editor
+   </a>
+  </li>
+  <li>
+   Fixed: Marker creation by mouse double-click is now placing them correctly under mouse pointer (thanks to
+   <em>
+    <a href="https://twitter.com/Mitrail01" target="_blank">
+     Mitrail01
+    </a>
+   </em>
+   for reporting that)
+  </li>
+  <li>
+   Fixed: Connections are no longer drawn when some of the connection targets are inside a hidden layer (they are hidden)
+  </li>
+  <li>
+   Fixed: Default values of custom attributes are no longer saved to SQMs
+  </li>
+  <li>
+   Fixed: A potential crash when a Join-In-Progress unit for a non-existent center is requested
+  </li>
+ </ul>
+ <h2>
+  LAUNCHER:
+ </h2>
+ <ul>
+  <li>
+   <strong>
+    Added: Support for an utilization of the
+    <a href="https://steamcommunity.com/workshop/browse?appid=107410" target="_blank">
+     Steam Workshop
+    </a>
+    cache
+   </strong>
+   (shorter loading times, lower mod disk usage)
+  </li>
+  <li>
+   Added: An option to copy or backup Steam mods (similarly to the local mods)
+  </li>
+  <li>
+   Added: An option to copy Steam mods to an arbitrary folder
+  </li>
+  <li>
+   Added: A partial support for non Workshop mods (detection based on the match of the mod’s name)
+  </li>
+  <li>
+   Added: A DNS link to servers by parsing a server name
+  </li>
+  <li>
+   Added: The server joining window now contains detailed information about the server
+  </li>
+  <li>
+   Added: Locked servers are now marked with a lock symbol
+  </li>
+  <li>
+   Added: A detection of DLCs required by the server and marking missing DLCs
+  </li>
+  <li>
+   Added: Error details are now provided when an asynchronous operation performed on Steam fails in Publisher
+  </li>
+  <li>
+   Added: Notifications for installed modes
+  </li>
+  <li>
+   <strong>
+    Tweaked: The Server Browser was overhauled
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Tweaked: The mod handling by a server was simplified
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Tweaked: A better detection of server mods
+   </strong>
+  </li>
+  <li>
+   Tweaked: The version number was changed to 1.5
+  </li>
+  <li>
+   Tweaked: Incorrectly configured server mods are no longer required from the clients
+  </li>
+  <li>
+   Tweaked: The
+   <em>
+    SERVERS
+   </em>
+   tab can now be selected as a default choice.
+  </li>
+  <li>
+   Tweaked: The
+   <a href="https://steamcommunity.com/workshop/browse?appid=107410" target="_blank">
+    Workshop
+   </a>
+   mods are no longer automatically loaded when installed (there is a notification with quick action instead)
+  </li>
+  <li>
+   Tweaked: Launcher will automatically restore the mod folder in the
+   <a href="https://steamcommunity.com/workshop/browse?appid=107410" target="_blank">
+    Steam Workshop
+   </a>
+   cache in case it was incorrectly edited
+  </li>
+  <li>
+   Tweaked: The icon for signed mods was changed (the lock icon is now reserved for locked servers)
+  </li>
+  <li>
+   Tweaked: The icon for a mismatched server was updated
+  </li>
+  <li>
+   Tweaked: The Server Mods window is now resizable and bigger by default
+  </li>
+  <li>
+   Tweaked: The dialog windows are now adapting to a high DPI / small resolution screens better
+  </li>
+  <li>
+   Fixed: There were some typos in the command button descriptions in the Join Server window
+  </li>
+  <li>
+   Fixed: The Twitter embedded content was not displayed in some cases
+  </li>
+  <li>
+   Fixed: The
+   <em>
+    "Keep current selection and join"
+   </em>
+   button was bound to an incorrect action
+  </li>
+  <li>
+   Fixed: Server-side mods were filtered out for servers requiring the clients to have identical mods
+  </li>
+  <li>
+   Fixed: Synchronization with the Steam API was not working correctly when it was being shut down
+  </li>
+  <li>
+   Fixed: The Server Browser would not set up all mods correctly according to the selected actions
+  </li>
+  <li>
+   Fixed: An interaction with a context menu when reordering the lists was incorrect
+  </li>
+  <li>
+   Fixed: Legacy Steam mods could be auto-included in the mod list in some cases
+  </li>
+  <li>
+   Fixed: The Steam API would report the Launcher as being open even after players closed it in some cases
+  </li>
+  <li>
+   Fixed: Crash when entering the options immediately after Launcher's start
+  </li>
+  <li>
+   Fixed: The context menu items of Launcher’s tray icon were not correctly legible
+  </li>
+ </ul>
+ <h2>
+  SERVER:
+ </h2>
+ <ul>
+  <li>
+   <strong>
+    Updated: Stand-alone Windows Dedicated Server (1.60)
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Updated: Stand-alone Linux Dedicated Server (1.60)
+   </strong>
+   <ul>
+    <li>
+     Known issue: Steam client modifies the
+     <em>
+      steam_appid.txt
+     </em>
+     file incorrectly. In case of issues, verify its content is:
+     <strong>
+      107410
+     </strong>
+    </li>
+    <li>
+     Known issue: Sometimes the add-ons are loaded from the wrong installation (e.g. main game)
+    </li>
+    <li>
+     Try adding
+     <em>
+      -mod=curator;kart;heli;mark;dlcbundle
+     </em>
+     to your
+     <em>
+      arma3server.exe
+     </em>
+     shortcut
+    </li>
+   </ul>
+  </li>
+ </ul>
+</div>

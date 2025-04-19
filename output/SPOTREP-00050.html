@@ -1,0 +1,193 @@
+<div class="post-content">
+ <p>
+  FROM: High Command
+  <br>
+   TO: Arma 3 Users
+   <br>
+    UNIT: Main Branch (Windows)
+    <br>
+     ACTIVITY: Hotfix: 1.54 (Miscellaneous)
+     <br/>
+     SIZE: ~25 MB / ~6 MB
+    </br>
+   </br>
+  </br>
+ </p>
+ <h1>
+  NOTES
+ </h1>
+ <ul>
+  <li>
+   Consider using the Steam client option to verify the integrity of the local game cache to avoid corrupted data after downloading this update.
+  </li>
+  <li>
+   Consider defragmenting your HDD after downloading large updates.
+  </li>
+  <li>
+   A
+   <em>
+    Legacy Build
+   </em>
+   Steam branch is available for advanced users. It contains the previous significant main branch version (1.52). It can be used to compare specific changes between major releases. The access code for this branch is:
+   <em>
+    Arma3Legacy152
+   </em>
+  </li>
+  <li>
+   This update does not apply to
+   <a href="http://dev.arma3.com/ports">
+    the experimental Linux and Mac port betas
+   </a>
+   at time of writing. We'll be updating those to 1.54 as soon as possible.
+  </li>
+  <li>
+   You can find the servers in the Steam library (switch the filter to "Tools") - "Arma 3 Server" (based on your OS, it will download the Windows or Linux version).
+   <ul>
+    <li>
+     Administrators can also use the command-line
+     <a href="https://developer.valvesoftware.com/wiki/SteamCMD" target="_blank">
+      SteamCMD
+     </a>
+     utility. The app ID is to be 233780.
+    </li>
+    <li>
+     NVIDIA GameWorks™ Technology provided under license from NVIDIA Corporation. Copyright © 2002-2015 NVIDIA Corporation. All rights reserved.
+    </li>
+   </ul>
+  </li>
+  <li>
+   In case of problems, please check the
+   <a href="http://support.bistudio.com/arma-3" target="_blank">
+    Bohemia Interactive support F.A.Q.
+   </a>
+   ,
+   <a href="http://arma3.com/faq" target="_blank">
+    Arma 3 F.A.Q.
+   </a>
+   or
+   <a href="http://www.battleye.com/support/faq/" target="_blank">
+    BattlEye F.A.Q.
+   </a>
+  </li>
+  <li>
+   You can help us to further improve the game by posting your feedback on the
+   <a href="http://feedback.arma3.com/" target="_blank">
+    Feedback Tracker
+   </a>
+   .
+  </li>
+ </ul>
+ <h1>
+  CHANGELOG
+ </h1>
+ <h3>
+  DATA:
+ </h3>
+ <ul>
+  <li>
+   Fixed: Incompatibility with on-going development of our
+   <a href="http://dev.arma3.com/post/oprep-eden-editor-beta">
+    Eden Editor
+   </a>
+   on
+   <a href="http://dev.arma3.com/dev-branch">
+    Dev-Branch
+   </a>
+   and scenarios created in version 1.52 (
+   <a href="http://feedback.arma3.com/view.php?id=26519" target="_blank">
+    http://feedback.arma3.com/view.php?id=26519
+   </a>
+   )
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_setTask" target="_blank">
+    BIS_fnc_setTask
+   </a>
+   would not always work in MP (
+   <a href="http://feedback.arma3.com/view.php?id=26729" target="_blank">
+    http://feedback.arma3.com/view.php?id=26729
+   </a>
+   )
+  </li>
+ </ul>
+ <h3>
+  ENGINE:
+ </h3>
+ <ul>
+  <li>
+   Fixed: No longer forcing walk when Stamina is switched off by script (
+   <a href="http://feedback.arma3.com/view.php?id=26727" target="_blank">
+    http://feedback.arma3.com/view.php?id=26727
+   </a>
+   )
+  </li>
+  <li>
+   Tweaked: Increased the limit of
+   <a href="https://community.bistudio.com/wiki/remoteExec" target="_blank">
+    remoteExec
+   </a>
+   (Call) targets to 1000 (
+   <a href="http://feedback.arma3.com/view.php?id=26743" target="_blank">
+    http://feedback.arma3.com/view.php?id=26743
+   </a>
+   )
+  </li>
+ </ul>
+ <h3>
+  LAUNCHER:
+ </h3>
+ <ul>
+  <li>
+   Added: A workaround for a misconfigured or missing system file for the Task Bar API component, leading to potential CTDs (e.g.
+   <a href="http://feedback.arma3.com/view.php?id=26716" target="_blank">
+    http://feedback.arma3.com/view.php?id=26716
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Unsafe cross-thread call on the PLAY button status change (
+   <a href="http://feedback.arma3.com/view.php?id=26758" target="_blank">
+    http://feedback.arma3.com/view.php?id=26758
+   </a>
+   )
+  </li>
+ </ul>
+ <h3>
+  SERVER:
+ </h3>
+ <ul>
+  <li>
+   Updated: Stand-alone Windows Dedicated Server (hotfix 1.54)
+  </li>
+  <li>
+   Updated: Stand-alone Linux Dedicated Server (hotfix 1.54)
+   <ul>
+    <li>
+     Known issue: Steam client modifies the
+     <em>
+      steam_appid.txt
+     </em>
+     file incorrectly. In case of issues, verify its content is:
+     <strong>
+      107410
+     </strong>
+    </li>
+    <li>
+     Known issue: Sometimes the add-ons are loaded from the wrong installation (e.g. main game)
+    </li>
+    <li>
+     Try adding
+     <em>
+      -mod=curator;kart;heli;mark;dlcbundle
+     </em>
+     to your
+     <em>
+      arma3server.exe
+     </em>
+     shortcut
+    </li>
+   </ul>
+  </li>
+ </ul>
+</div>

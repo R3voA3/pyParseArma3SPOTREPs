@@ -1,0 +1,1332 @@
+<div class="post-content">
+ <p>
+  FROM: Project Lead
+  <br>
+   TO: Arma 3 Users
+   <br>
+    UNIT: Main Branch
+    <br>
+     ACTIVITY: Game Update: 1.46 (Enhanced BattlEye Protection, Explosives SFX Tweaks, Vehicle Weapon SFX Tweaks)
+     <br/>
+     SIZE: ~1014 MB / ~420 MB
+    </br>
+   </br>
+  </br>
+ </p>
+ <h1>
+  NOTES
+ </h1>
+ <ul>
+  <li>
+   Consider using the Steam client option to verify the integrity of the local game cache to avoid corrupted data after downloading this update.
+  </li>
+  <li>
+   Consider defragmenting your HDD after downloading large updates.
+  </li>
+  <li>
+   A
+   <em>
+    Legacy Build
+   </em>
+   Steam branch is available for advanced users. It contains the previous significant main branch version (1.44). It can be used to compare specific changes between major releases. The access code for this branch is:
+   <em>
+    Arma3Legacy144
+   </em>
+  </li>
+  <li>
+   You can find the servers in the Steam library (switch the filter to "Tools") - "Arma 3 Server" (based on your OS, it will download the Windows or Linux version).
+   <ul>
+    <li>
+     Administrators can also use the command-line
+     <a href="https://developer.valvesoftware.com/wiki/SteamCMD" target="_blank">
+      SteamCMD
+     </a>
+     utility. The app ID is to be 233780.
+    </li>
+    <li>
+     <p>
+      NVIDIA GameWorks™ Technology provided under license from NVIDIA Corporation. Copyright © 2002-2015 NVIDIA Corporation. All rights reserved.
+     </p>
+    </li>
+   </ul>
+  </li>
+ </ul>
+ <h1>
+  CHANGELOG
+ </h1>
+ <h3>
+  DATA:
+ </h3>
+ <ul>
+  <li>
+   Fixed: Rabbit infestation on both islands
+  </li>
+  <li>
+   Fixed: Missing UGL recoil
+  </li>
+  <li>
+   Fixed: ATRQ of Taru should no longer be easily destroyed while Sling Loading
+  </li>
+  <li>
+   Fixed: Incorrect injury materials for some faces with camo paint
+  </li>
+  <li>
+   Fixed: Raised / kneel transition while sprinting with binoculars (
+   <a href="http://feedback.arma3.com/view.php?id=23964" target="_blank">
+    http://feedback.arma3.com/view.php?id=23964
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Skinning on the central upper chest of the diver
+  </li>
+  <li>
+   Fixed: The
+   <em>
+    "grabCarry"
+   </em>
+   action causing players to get stuck in the animation (
+   <a href="http://feedback.arma3.com/view.php?id=23918" target="_blank">
+    http://feedback.arma3.com/view.php?id=23918
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Gorgon APC can no longer drive on the seabed and floats instead
+  </li>
+  <li>
+   Fixed: Functions
+   <em>
+    BIS_fnc_3dMarkers
+   </em>
+   and
+   <em>
+    BIS_fnc_sharedObjectives
+   </em>
+   are now properly terminated if the Shared Objectives (and new 2D / 3D task icons) are not active
+  </li>
+  <li>
+   Fixed: Carrier Lite (Black) vest now has the correct model
+  </li>
+  <li>
+   Fixed: Fighter Chest Rigs variants renamed to Chest Rigs
+  </li>
+  <li>
+   Fixed: Vehicle rotation and velocity is now reset upon opening the Garage interface
+  </li>
+  <li>
+   Fixed: Keyboard shortcut for opening DLC Content Browser is now properly mapped in all keyboard presets
+  </li>
+  <li>
+   Fixed: It wasn't possible to recompile single mission-specific functions (
+   <a href="http://feedback.arma3.com/view.php?id=24080" target="_blank">
+    http://feedback.arma3.com/view.php?id=24080
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: There were multiple footsteps after treating other soldiers (
+   <a href="http://feedback.arma3.com/view.php?id=23875" target="_blank">
+    http://feedback.arma3.com/view.php?id=23875
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: MP script framework issues
+  </li>
+  <li>
+   Fixed: Deleted routes to non-existed samples
+  </li>
+  <li>
+   Fixed: Zeus - Player spawning causes dummy riflemen to appear at [0, 0, 0]
+  </li>
+  <li>
+   Fixed: Animations for 80 / 90 variants of Weapon Deployment
+  </li>
+  <li>
+   Fixed: Missing FD / TT word localization
+  </li>
+  <li>
+   Fixed: Politely asked the Time Trial Marshal to resume firing his Starter Pistol
+  </li>
+  <li>
+   Fixed: Stance indicator arrows in prone and crouch stances
+  </li>
+  <li>
+   Fixed: Wrong updating of base class in RTP by Remote Designators
+  </li>
+  <li>
+   Fixed: Playground Slide caused weapons to use building attenuation while sliding
+  </li>
+  <li>
+   Fixed: Strange convex component warnings on various models of structures
+  </li>
+  <li>
+   Fixed: Speed and altitude indicators displayed during free fall
+  </li>
+  <li>
+   Fixed: Player can now vault (step over) while standing with binoculars (
+   <a href="http://feedback.arma3.com/view.php?id=24133" target="_blank">
+    http://feedback.arma3.com/view.php?id=24133
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Some parts of the VR MRAP Target were producing dirt particle effects when shot
+  </li>
+  <li>
+   Fixed: AAF Speedboat has proper tracers on the rear turret
+  </li>
+  <li>
+   Fixed: Darter pilot should only have a compass available, not a radar
+  </li>
+  <li>
+   Fixed: Soldiers in cargo positions of the HEMMT and Tempest transport trucks had their legs colliding with their body or hovering in air (
+   <a href="http://feedback.arma3.com/view.php?id=23902" target="_blank">
+    http://feedback.arma3.com/view.php?id=23902
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Launcher bug
+  </li>
+  <li>
+   Fixed: Usage of the
+   <a href="https://community.bistudio.com/wiki/playMove" target="_blank">
+    playMove
+   </a>
+   command to switch to warming-up animations in End Game scenarios
+  </li>
+  <li>
+   Fixed: Zeus player ignores
+   <a href="https://community.bistudio.com/wiki/Event_Scripts" target="_blank">
+    <em>
+     initPlayerLocal.sqf
+    </em>
+   </a>
+  </li>
+  <li>
+   Fixed: When the
+   <a href="https://community.bistudio.com/wiki/Arma_3_Module:_Game_Master" target="_blank">
+    Zeus Game Master module
+   </a>
+   was deleted, its script kept running (thanks
+   <em>
+    MDCCLXXVI
+   </em>
+   for the report)
+  </li>
+  <li>
+   Fixed: Even pilots have proper memory points for legs (
+   <a href="http://feedback.arma3.com/view.php?id=20761" target="_blank">
+    http://feedback.arma3.com/view.php?id=20761
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: It was possible to remotely rewrite BIS functions by inserting a 'recompile' property. This is now disabled; the property is now accepted only by root functions.
+  </li>
+  <li>
+   Fixed: Static weapon AI sensing put on par with normal soldiers
+  </li>
+  <li>
+   Fixed: Hummingbird FM hint is not marked as Helicopters DLC content anymore
+  </li>
+  <li>
+   Fixed: Switching between erect / kneel stance no longer stops character movement (
+   <a href="http://feedback.arma3.com/view.php?id=23964" target="_blank">
+    http://feedback.arma3.com/view.php?id=23964
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Rifle bug for civil sprint
+  </li>
+  <li>
+   Fixed: Splendid camera no longer breaks
+   <em>
+    <a href="https://community.bistudio.com/wiki/BIS_fnc_UnitPlay" target="_blank">
+     unitPlay
+    </a>
+   </em>
+   scripts
+  </li>
+  <li>
+   Fixed: Added proper ladder to big industry pipe construction (
+   <a href="http://feedback.arma3.com/view.php?id=24242" target="_blank">
+    http://feedback.arma3.com/view.php?id=24242
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Mines as vehicles have at least some simulation to prevent RPT warnings
+  </li>
+  <li>
+   Fixed: AI is willing to use Laser Designator from bigger distances
+  </li>
+  <li>
+   Fixed: Wrong animation was played while accessing UAV terminal while the character is a Mk6 Mortar gunner
+  </li>
+  <li>
+   Fixed: Bad transition between kneel / erect pose and vice versa while sprinting with binoculars
+  </li>
+  <li>
+   Fixed: Missing string warning (string was never seen by player)
+  </li>
+  <li>
+   Fixed: Possible fix of RPT warning message about missing inventory item
+  </li>
+  <li>
+   Fixed: FTW has taken their SUV back for maintenance of ARB which caused some malfunctions at low speeds
+  </li>
+  <li>
+   Fixed: Cropped names of certain hints in the Field Manual
+  </li>
+  <li>
+   Fixed: Transition between kneel sprint and going prone
+  </li>
+  <li>
+   Fixed: Problem with variable mismatch
+  </li>
+  <li>
+   Fixed: Splendid Camera bank angle was set to incorrect value when looking straight up or straight down
+  </li>
+  <li>
+   Fixed: Time acceleration before entering Splendid Camera is restored after exiting it (before it was set to 1)
+  </li>
+  <li>
+   Fixed: Kart-based Time Trials were executing a few helicopter-specific operations
+  </li>
+  <li>
+   Fixed: Icon of the remote laser designator backpack
+  </li>
+  <li>
+   Fixed: Tracer color of the Mi-48 Kajman cannon
+  </li>
+  <li>
+   Fixed: Muzzle axis of Sandstorm was misaligned a bit
+  </li>
+  <li>
+   Fixed: Destroyed front gun on speedboat now goes properly sad panda (
+   <a href="http://feedback.arma3.com/view.php?id=24088" target="_blank">
+    http://feedback.arma3.com/view.php?id=24088
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Missing semicolon in CoF: Orange 1 configuration
+  </li>
+  <li>
+   Fixed: Background color of mouse acceleration setting
+  </li>
+  <li>
+   Fixed: Player can no longer reload with hands tied behind back (state
+   <em>
+    "Acts_AidlPsitMstpSsurWnonDnon_loop"
+   </em>
+   and its
+   <em>
+    "Acts_AidlPsitMstpSsurWnonDnon01"
+   </em>
+   -
+   <em>
+    "...05"
+   </em>
+   variants)
+  </li>
+  <li>
+   Fixed: Hand twitching after prone unarmed / binoculars in hand roll
+  </li>
+  <li>
+   Fixed: Suffix of a texture for particle effects
+  </li>
+  <li>
+   Fixed: Grenades sometimes could not be taken from the grenade ammo boxes (MP Bootcamp)
+  </li>
+  <li>
+   Fixed: Play button is now focused when the game is launched
+  </li>
+  <li>
+   Fixed: Display of magazines in weapon holders was inconsistent
+  </li>
+  <li>
+   Added: New audio samples for Offroad HMG, Static HMG, vehicle HMG (Speedboat / Hunter / Ifrit / Strider). All samples have short, tail, close and distant variations.
+  </li>
+  <li>
+   Added: New audio samples for Explosive charge and Claymore
+  </li>
+  <li>
+   Added: New audio samples for grenade and launcher explosions and impacts on surface
+  </li>
+  <li>
+   Added: New sounds for 35mm autocannon (Cheetah, Tigris)
+  </li>
+  <li>
+   Added: Short / tail and distant variants of vehicle weapons
+  </li>
+  <li>
+   Added: New samples for M134 minigun 7.62mm (Pawnee)
+  </li>
+  <li>
+   Added: New samples for 6.5mm minigun (Huron)
+  </li>
+  <li>
+   Added: Whiteboards to Purple FD CoFs
+  </li>
+  <li>
+   Added:
+   <em>
+    buoyancy
+   </em>
+   property to weapon-related models that should have buoyancy simulated
+  </li>
+  <li>
+   Added: Field Manual fail-safe of logical sorting for hints that don't have the
+   <em>
+    logicalOrder
+   </em>
+   variable defined
+  </li>
+  <li>
+   Added: Even autonomous static weapons may be reset if they flip
+  </li>
+  <li>
+   Added: Auto-hover info added to UAV controls in Field Manual
+  </li>
+  <li>
+   Added: Waypoint icons for custom waypoints
+  </li>
+  <li>
+   Added: Unarmed crouched sprint
+  </li>
+  <li>
+   Added: Unarmed erected sprint
+  </li>
+  <li>
+   Added: Zeus hard-coded availability check, to ignore scripts for Zeus players
+  </li>
+  <li>
+   Added: It's now possible to disable
+   <em>
+    "XXX is now Zeus"
+   </em>
+   notifications by calling:
+   <em>
+    &lt;curatorModule&gt;
+    <a href="https://community.bistudio.com/wiki/setVariable" target="_blank">
+     setVariable
+    </a>
+    ["showNotification", false]
+   </em>
+  </li>
+  <li>
+   Added: New parameter for servo vertical movement and linked a new sound
+  </li>
+  <li>
+   Added: Animations of kneel sprint for unarmed / binoculars in hand (
+   <a href="http://feedback.arma3.com/view.php?id=23964" target="_blank">
+    http://feedback.arma3.com/view.php?id=23964
+   </a>
+   )
+  </li>
+  <li>
+   Added: Respawn positions which have enemies nearby are marked in the respawn menu in its list box entry and on the 2D map
+  </li>
+  <li>
+   Added: Turn out animation set for AFV-4 Gorgon
+  </li>
+  <li>
+   Added: Separate animations for kneel / erect sprint with binoculars (
+   <a href="http://feedback.arma3.com/view.php?id=23964" target="_blank">
+    http://feedback.arma3.com/view.php?id=23964
+   </a>
+   )
+  </li>
+  <li>
+   Added: Selections for changing of the texture for the TRG family of weapons
+  </li>
+  <li>
+   Added: Missing return values to script functions for structures and replaced plain function parameter loading by safer
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_param" target="_blank">
+    BIS_fnc_param
+   </a>
+   where appropriate
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/CfgVehicles_Config_Reference#hiddenSelections" target="_blank">
+    hiddenSelections
+   </a>
+   to Zafir, ABR and Rahim
+  </li>
+  <li>
+   Added: Icons for the OPFOR and AAF NVGs
+  </li>
+  <li>
+   Added: Animations for prone roll (left / right) with binoculars in hand (
+   <a href="http://feedback.arma3.com/view.php?id=24275" target="_blank">
+    http://feedback.arma3.com/view.php?id=24275
+   </a>
+   /
+   <a href="http://feedback.arma3.com/view.php?id=23964" target="_blank">
+    http://feedback.arma3.com/view.php?id=23964
+   </a>
+   )
+  </li>
+  <li>
+   Tweaked: Slightly increased armor and mass of Pilot Helmets, Helicopter Pilot Helmets and Helicopter Crew Helmets to better match their models
+  </li>
+  <li>
+   Tweaked: Audio samples for launcher and grenade explosions
+  </li>
+  <li>
+   Tweaked: Command
+   <a href="https://community.bistudio.com/wiki/setOwner" target="_blank">
+    setOwner
+   </a>
+   replaced by
+   <a href="https://community.bistudio.com/wiki/setGroupOwner" target="_blank">
+    setGroupOwner
+   </a>
+   for units in Support scenarios
+  </li>
+  <li>
+   Tweaked: Functions
+   <em>
+    BIS_fnc_getCargoSlots
+   </em>
+   and
+   <em>
+    BIS_fnc_countCargoSlots
+   </em>
+   re-factored to fix the issue related to copilot seats and FFV
+  </li>
+  <li>
+   Tweaked: Reworked accuracy parameter for House / House_F / House_Small_F, Ruins / Ruins_F, Wall / Wall_F, Church / Church_F, Wreck_Base / Wreck_Base_F base classes
+  </li>
+  <li>
+   Tweaked: Campaign hub - interaction with the equipment pool through the briefing menu is now properly covered
+  </li>
+  <li>
+   Tweaked: Better usability of sitting with tied hands / warming up (Marksmen scenes) animations
+  </li>
+  <li>
+   Tweaked: Substantially increased overall performance of Wipeout and Neophron cannons so they are now able to properly damage even heavily armored vehicles (
+   <a href="http://feedback.arma3.com/view.php?id=19993" target="_blank">
+    http://feedback.arma3.com/view.php?id=19993
+   </a>
+   ,
+   <a href="http://feedback.arma3.com/view.php?id=22146" target="_blank">
+    http://feedback.arma3.com/view.php?id=22146
+   </a>
+   )
+  </li>
+  <li>
+   Tweaked: CfgPatches purge
+  </li>
+  <li>
+   Tweaked: There should no longer be classes with
+   <em>
+    model = bmp;
+   </em>
+  </li>
+  <li>
+   Tweaked: Localized Open Parachute action
+  </li>
+  <li>
+   Tweaked: Volume of reload audio sample for tanks
+  </li>
+  <li>
+   Tweaked: In the campaign, vehicle randomization is now handled by the
+   <a href="https://community.bistudio.com/wiki/Vehicle_Customization_(VhC)" target="_blank">
+    VhC
+   </a>
+   system
+  </li>
+  <li>
+   Tweaked: Whiteboard of the Green FD CoF
+  </li>
+  <li>
+   Tweaked: NVG goggles are not unassigned from players when they enter the hub (in the campaign)
+  </li>
+  <li>
+   Tweaked: Decreased update rate of
+   <em>
+    BIS_fnc_moduleZoneProtection
+   </em>
+  </li>
+  <li>
+   Tweaked: Kestrel populations have been adjusted to match rabbit populations
+  </li>
+  <li>
+   Tweaked: MAR-10's optics proxy moved to have bigger scopes slightly further from the soldier's eye
+  </li>
+  <li>
+   Tweaked: Kir's side attachment proxy moved slightly forward, so the attachments won't collide with the soldier's hand
+  </li>
+  <li>
+   Tweaked: Disabled Time Trial achievement tracking in cases where it was redundant
+  </li>
+  <li>
+   Tweaked: Reduced shininess of the soles of ghillie boots
+  </li>
+  <li>
+   Changed: Minimal weight for an object to be Sling Loadable
+  </li>
+  <li>
+   Changed: VR vehicle targets are now static objects, meaning no PhysX behavior
+  </li>
+  <li>
+   Changed: Removed weapon info from unarmed vehicles
+  </li>
+  <li>
+   Updated: NATO helmets refactored: there are now three types – Combat Helmet (former ECH), Enhanced Combat Helmet (former SF Helmet), and Light Combat Helmet (former ECH (Light)) in six color variants (plus camouflaged version of the Combat Helmet). Snakeskin and Sand variants of Enhanced Combat Helmet are new.
+  </li>
+  <li>
+   Removed: Old
+   <em>
+    uiPicture
+   </em>
+   definition to prevent a
+   <em>
+    "member already defined"
+   </em>
+   startup error
+  </li>
+  <li>
+   Removed: Obsolete Cyrus icons
+  </li>
+  <li>
+   Removed: Parameters title from description (each sub-function has its own parameters)
+  </li>
+  <li>
+   Removed: class property from
+   <em>
+    GH_Fountain_F.p3d
+   </em>
+  </li>
+ </ul>
+ <p>
+  <a href="http://dev.arma3.com/post/oprep-end-game" target="_blank">
+   End Game
+  </a>
+ </p>
+ <ul>
+  <li>
+   Fixed: When a player state changes (dies / respawns / incapacitated / revived), the UI update is only send to players of the same side
+  </li>
+  <li>
+   Fixed: Initial Arsenal camera location and rotation
+  </li>
+  <li>
+   Fixed: Carrier could leave the AO and hand the scenario; now the scenario ends with the carrier side being the loser
+  </li>
+  <li>
+   Fixed: Log of player UID
+   <a href="https://community.bistudio.com/wiki/onPlayerConnected" target="_blank">
+    onPlayerConnected
+   </a>
+  </li>
+  <li>
+   Fixed: Script error related to
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_loop" target="_blank">
+    BIS_fnc_loop
+   </a>
+  </li>
+  <li>
+   Fixed: Wrong conversation would be played when the last phase would start
+  </li>
+  <li>
+   Fixed: Intel objects that are
+   <em>
+    “Instant Download”
+   </em>
+   could never be destroyed, even after one of the sides downloaded from them
+  </li>
+  <li>
+   Fixed: Error during downloading Intel
+  </li>
+  <li>
+   Fixed: The Officer objective had
+   <em>
+    ImmediateDownload
+   </em>
+   as false
+  </li>
+  <li>
+   Fixed:
+   <em>
+    ImediateDownload
+   </em>
+   &gt;
+   <em>
+    ImmediateDownload
+   </em>
+  </li>
+  <li>
+   Fixed: Error during downloading Intel
+  </li>
+  <li>
+   Fixed:
+   <em>
+    GetSideCompletedObjectivesCount
+   </em>
+   would always return 0
+  </li>
+  <li>
+   Fixed:
+   <em>
+    GetAllObjectives
+   </em>
+   would return an empty array on non-server machines
+  </li>
+  <li>
+   Fixed: Items can be put inside the Arsenal box, but not taken back
+  </li>
+  <li>
+   Fixed: Items can be put inside containers, but not taken back
+  </li>
+  <li>
+   Fixed: Download icon would be visible on download objects even when it was not possible to download
+  </li>
+  <li>
+   Added: Color to task type icon
+  </li>
+  <li>
+   Added: After establishing the FOB, a marker is created at its location in the map
+  </li>
+  <li>
+   Added:
+   <em>
+    WarmupDelay
+   </em>
+   property added to Objectives Instance Module and it sets the time players have to wait during the warm-up phase
+  </li>
+  <li>
+   Added: Caching of shared tasks for shared objectives
+  </li>
+  <li>
+   Added: Vehicles now enter the respawn sequence after taking a hit which immobilized them
+  </li>
+  <li>
+   Added: Debug print to monitor network traffic
+  </li>
+  <li>
+   Added: Vehicle Respawn Module can now respawn vehicles which are not destroyed but are immobilized
+  </li>
+  <li>
+   Tweaked: Command
+   <a href="https://community.bistudio.com/wiki/sleep" target="_blank">
+    sleep
+   </a>
+   replaced with
+   <a href="https://community.bistudio.com/wiki/uiSleep" target="_blank">
+    uiSleep
+   </a>
+   to allow
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_setTaskLocal" target="_blank">
+    BIS_fnc_setTaskLocal
+   </a>
+   execution even on the briefing screen
+  </li>
+  <li>
+   Tweaked: Respawn menu load-outs for both sides configured
+  </li>
+  <li>
+   Improved: Arsenal is now preloaded on mission start
+  </li>
+  <li>
+   Improved: Download with multiple players
+  </li>
+  <li>
+   Improved: Placement, legibility, and functionality of incapacitated screen elements
+  </li>
+  <li>
+   Optimized:
+   <em>
+    MiddleGame
+   </em>
+   objective tasks was sending data which did not change
+  </li>
+ </ul>
+ <p>
+  Revive:
+ </p>
+ <ul>
+  <li>
+   Fixed: Disabling HUD show group would break Revive functionality
+  </li>
+  <li>
+   Fixed: Incapacitated Post Process effects are now visible with NVGs equipped
+  </li>
+  <li>
+   Fixed:
+   <a href="http://respawnonstart/" target="_blank">
+    respawnOnStart
+   </a>
+   values other than -1 did not work correctly
+  </li>
+  <li>
+   Fixed: User-defined delays accidentally set the default force respawn delay to 0 seconds
+  </li>
+  <li>
+   Added: Scripted event handlers for entering and exiting the incapacitated state
+  </li>
+  <li>
+   Improved: Now possible to set custom revive, force respawn, and bleed out delays
+  </li>
+  <li>
+   Removed: Obsolete
+   <em>
+    RscKeyHold
+   </em>
+   resource
+  </li>
+ </ul>
+ <p>
+  Dynamic Groups:
+ </p>
+ <ul>
+  <li>
+   Fixed: Order of members after promoting a player
+  </li>
+  <li>
+   Fixed: Script error when a player disconnects / connects while the UI is open
+  </li>
+  <li>
+   Fixed: Group could become invalid after promoting a player
+  </li>
+  <li>
+   Fixed: Wrong color of player icon in groups tab after joining other player group
+  </li>
+  <li>
+   Fixed: If a group leader was editing the group name and an update would happen, he would lose the content he was writing
+  </li>
+  <li>
+   Fixed: Double clicking on a player to invite, would invite even if the player was already in the group
+  </li>
+  <li>
+   Fixed: Wrong button tooltips after clicking a member player as group leader
+  </li>
+  <li>
+   Fixed: Wrong MP initialization of the Virtual Arsenal ammo boxes
+  </li>
+  <li>
+   Fixed: When a player would join, the UI would not properly update
+  </li>
+  <li>
+   Fixed: A player could join another player's group by double clicking on the player even when the group was locked or the player was previously kicked from that group
+  </li>
+  <li>
+   Fixed: If there were ungrouped players, players in the group could not select themselves in the groups list
+  </li>
+  <li>
+   Fixed: Ungrouped container for players without group would deselect right after being selected
+  </li>
+  <li>
+   Fixed: Collapsed trees auto-expand again
+  </li>
+  <li>
+   Added: UI now correctly updates when a player state changes (incapacitated / revived)
+  </li>
+  <li>
+   Added: Pressing and holding the Dynamic Groups interface key will join you to the group which last invited you
+  </li>
+  <li>
+   Added: When a player was already invited to a group, the button now displays
+   <em>
+    "INVITED"
+   </em>
+   and has a tooltip explaining why it is disabled
+  </li>
+  <li>
+   Tweaked: High priority buttons are now bigger
+  </li>
+  <li>
+   Tweaked: Lowered key hold down time for accepting invites
+  </li>
+  <li>
+   Improved: Better looking font for group name in UI
+  </li>
+  <li>
+   Improved: Interface update doesn't reset interface anymore
+  </li>
+  <li>
+   Improved: Interface update is now done mostly locally, every second
+  </li>
+ </ul>
+ <p>
+  Shared Objectives:
+ </p>
+ <ul>
+  <li>
+   Optimized: Shared Objectives refactored to lessen the network load
+  </li>
+  <li>
+   Removed: Unneeded RPT spam from Shared Objectives functions
+  </li>
+ </ul>
+ <p>
+  Potential spoilers:
+ </p>
+ <ul>
+  <li>
+   Fixed: The gate at the checkpoint can no longer be destroyed (Drawdown 2035)
+  </li>
+  <li>
+   Fixed: Showcase briefing tab was not selected by default (Drones)
+  </li>
+  <li>
+   Fixed: Supply Network - Inconvenient autosave when the hideout is attacked
+  </li>
+  <li>
+   Fixed: In New Dawn, Kerry goes to the briefing and he has no equipment (no vest, rifle, pistol, etc.) but he has a NVG on his head
+  </li>
+  <li>
+   Fixed: Incorrect weapon classname for FIA sniper (Common Enemy)
+  </li>
+  <li>
+   Fixed: In the Within Reach and Preventive Diplomacy missions, the player could access the inventory during cut scenes
+  </li>
+  <li>
+   Fixed: In Showcase Armed Assault, the player could destroy (or kill the crew of) logistics vehicles and the mission would still end as succeeded
+  </li>
+  <li>
+   Fixed: Overlooked type in campaign hub armory update condition after some stuff is being taken from the mission briefing screen inventory
+  </li>
+  <li>
+   Changed: Air Superiority - Initial task waypoint moved directly to the rendezvous position
+  </li>
+ </ul>
+ <h3>
+  ENGINE:
+ </h3>
+ <ul>
+  <li>
+   Fixed: Some problems with empty UAVs
+  </li>
+  <li>
+   Fixed: Crash when simulating but not initialized (SteamLayer)
+  </li>
+  <li>
+   Fixed: Incorrect wind sound when paratrooping
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/switchCamera" target="_blank">
+    switchCamera
+   </a>
+   to a unit inside of a vehicle
+  </li>
+  <li>
+   Fixed: Multiplayer ocean waves synchronization
+  </li>
+  <li>
+   Fixed: Visual flickering or disappearance of Tactical Backpack Black
+  </li>
+  <li>
+   Fixed: TrackIR axis manipulation in gunner positions
+  </li>
+  <li>
+   Fixed: Inventory - Uniforms of other factions disappeared after removing your own uniform and attempting to equip them
+  </li>
+  <li>
+   Fixed: Crash related to weapon shot sounds evaluation
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/allMissionObjects" target="_blank">
+    allMissionObjects
+   </a>
+   no longer includes land decals
+  </li>
+  <li>
+   Fixed: Detection of collimator in shape
+  </li>
+  <li>
+   Fixed: Broken save during healing
+  </li>
+  <li>
+   Fixed: Sound - Firing From Vehicle not attenuated, servo sound plays only once
+  </li>
+  <li>
+   Fixed: Setting skill to hacked UAV pilot
+  </li>
+  <li>
+   Fixed: Server issue when using a larger list of BIKEY signature files
+  </li>
+  <li>
+   Fixed: Wrong positioning of interior sounds when a vehicle was turning around
+  </li>
+  <li>
+   Fixed: Stuttering interior engine sounds when looking around in a plane at high speed
+  </li>
+  <li>
+   Fixed: Skill
+   <a href="https://community.bistudio.com/wiki/AI_Sub-skills#reloadSpeed" target="_blank">
+    ReloadSpeed
+   </a>
+   0 will no longer break AI
+  </li>
+  <li>
+   Fixed: Healing should not push you away from an injured soldier
+  </li>
+  <li>
+   Fixed: Soldier's
+   <em>
+    upVector
+   </em>
+   is reset after deployment is interrupted
+  </li>
+  <li>
+   Fixed: Unable to throw grenades after changing the player by command
+   <a href="https://community.bistudio.com/wiki/selectPlayer" target="_blank">
+    selectPlayer
+   </a>
+  </li>
+  <li>
+   Fixed: CTD when changing status from online to offline (SteamLayer)
+  </li>
+  <li>
+   Fixed: Formatting of the altitude in the weapon UI
+  </li>
+  <li>
+   Fixed: Server crash
+  </li>
+  <li>
+   Fixed: Sound - Crash when the XA2Device was not created (server)
+  </li>
+  <li>
+   Fixed: Sound - Broken sounds of remote designators
+  </li>
+  <li>
+   Fixed: Synchronize end of damage effects over network and saves (also a fix for JIP players)
+  </li>
+  <li>
+   Fixed: Transition from land to water for vehicles with amphibious gearbox
+  </li>
+  <li>
+   Fixed: Simulating damage effects on Dedicated Servers
+  </li>
+  <li>
+   Fixed: JIP messages should be executed at the proper time now
+  </li>
+  <li>
+   Fixed: Weapons couldn’t be deployed on the parapet (Structures - Cargo tower)
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/Arma_3_Mission_Parameters" target="_blank">
+    paramsArray
+   </a>
+   available during the pre-init on the server
+  </li>
+  <li>
+   Fixed: Corrupted sounds with certain USB headsets (
+   <a href="http://feedback.arma3.com/view.php?id=21268" target="_blank">
+    http://feedback.arma3.com/view.php?id=21268
+   </a>
+   )
+  </li>
+  <li>
+   Added:
+   <a href="http://www.battleye.com/" target="_blank">
+    BattlEye
+   </a>
+   full protection enabled - the game is protected during its entire lifetime, not only when connected to a BE-protected server
+  </li>
+  <li>
+   Added: Grenade indicator changes color while a character is preparing the grenade for throwing
+  </li>
+  <li>
+   Added: New MFD animation sources
+   <em>
+    ClockHour
+   </em>
+   ,
+   <em>
+    ClockMinute
+   </em>
+   and
+   <em>
+    ClockSecond
+   </em>
+  </li>
+  <li>
+   Added: Minimal mass limit for Sling Loading cargo (vehicle property
+   <em>
+    slingLoadMinCargoMass
+   </em>
+   )
+  </li>
+  <li>
+   Added: Colors of the secondary text in listboxes can be set by config parameters and script commands
+  </li>
+  <li>
+   Added: Sound - separated turret servo sounds: vertical &amp; horizontal (properties
+   <em>
+    soundServo
+   </em>
+   and
+   <em>
+    soundServoVertical
+   </em>
+   )
+  </li>
+  <li>
+   Added: Background color support for edit boxes (parameter
+   <em>
+    colorBackground
+   </em>
+   )
+  </li>
+  <li>
+   Added: Script command for getting the Steam profile name of the current player (
+   <a href="https://community.bistudio.com/wiki/profileNameSteam" target="_blank">
+    profileNameSteam
+   </a>
+   )
+  </li>
+  <li>
+   Changed: VON is played in 3D for more channels (
+   <a href="http://feedback.arma3.com/view.php?id=20305" target="_blank">
+    http://feedback.arma3.com/view.php?id=20305
+   </a>
+   )
+  </li>
+  <li>
+   Tweaked: Disabling Sling Loading for objects under roofs
+  </li>
+  <li>
+   Tweaked: AI AT soldiers will not switch assigned target when holding fire
+  </li>
+  <li>
+   Tweaked: Localized Open Parachute action
+  </li>
+  <li>
+   Tweaked: Some improvements when
+   <a href="https://community.bistudio.com/wiki/switchCamera" target="_blank">
+    switchCamera
+   </a>
+   is used to spectate another player
+  </li>
+  <li>
+   Tweaked: Better interpolation for non-local FFV players in a player vehicle
+  </li>
+  <li>
+   Tweaked:
+   <a href="https://community.bistudio.com/wiki/setUnitRecoilCoefficient" target="_blank">
+    setUnitRecoilCoefficient
+   </a>
+   for new recoil
+  </li>
+  <li>
+   Tweaked:
+   <em>
+    hit
+   </em>
+   event is called even when only the hitpoint is damaged
+  </li>
+  <li>
+   Tweaked: Generated shadow buffer LODs are not used when they are not in the correct order
+  </li>
+  <li>
+   Optimized: Starting time offset for network update messages
+  </li>
+  <li>
+   Optimized: Serialization for Code and Config script values
+  </li>
+  <li>
+   Improved: Better client status handling (SteamLayer)
+  </li>
+  <li>
+   Improved: Supersonic crack and subsonic sounds
+  </li>
+  <li>
+   Improved: AI vehicles will react faster to hits with 0 damage
+  </li>
+  <li>
+   Improved: AI airplane is more autonomous when selecting targets (if none is assigned yet)
+  </li>
+  <li>
+   Improved: Hitting a target will reset me as available target
+  </li>
+  <li>
+   Removed:
+   <em>
+    askForPilotLights
+   </em>
+   message call in the netcode
+  </li>
+  <li>
+   Removed:
+   <em>
+    muzzleInner
+   </em>
+   recoil definition (deemed redundant)
+  </li>
+ </ul>
+ <h3>
+  LAUNCHER:
+ </h3>
+ <ul>
+  <li>
+   Fixed:
+   <em>
+    UGCMonitor
+   </em>
+   initialization
+  </li>
+  <li>
+   Fixed: Underscores in the author name were incorrectly considered to be accelerators
+  </li>
+  <li>
+   Fixed: Author names were not shown in mod details
+  </li>
+  <li>
+   Fixed: The Launcher reported an unrecognized local mod while adding a local mod by selecting its Addons folder and the folder name was not in lower-case
+  </li>
+  <li>
+   Fixed: A sub-message for a mod corruption reason was incorrect
+  </li>
+  <li>
+   Fixed: A hard-coded corruption reason was displayed instead of the detected reason in a local mod import result dialog
+  </li>
+  <li>
+   Fixed: BattlEye parameters
+  </li>
+  <li>
+   Fixed: Updated invalid application configuration exit code value
+  </li>
+  <li>
+   Fixed: The Windows Explorer or other file manager is no longer blocked by the local mod import result dialog after adding mods by drag &amp; drop
+  </li>
+  <li>
+   Fixed: Insert the
+   <em>
+    "File blocks can be ignored"
+   </em>
+   note only before a first
+   <em>
+    "File blocked"
+   </em>
+   BattlEye message in a row
+  </li>
+  <li>
+   Fixed: Various localizations
+  </li>
+  <li>
+   Added: Scroll-able menu style
+  </li>
+  <li>
+   Added: Detailed information about why a mod is considered corrupted
+  </li>
+  <li>
+   Added: Detailed information about why a local mod can't be added
+  </li>
+  <li>
+   Added: A dialog box that reports result after a local mod (or mods) is added (contains a list of mods that were added and a list of mods that were not added along with a reason)
+  </li>
+  <li>
+   Added: A BattlEye page with BattlEye log messages
+  </li>
+  <li>
+   Added: Hint on how to force an update of a Workshop item in Steam Client
+  </li>
+  <li>
+   Added: Localization identifiers and localization hints
+  </li>
+  <li>
+   Added: Updated localizations
+  </li>
+  <li>
+   Added: Missing localization attributes to the local mods import result dialog
+  </li>
+  <li>
+   Improved: Better Steam client status handling (SteamLayer)
+  </li>
+  <li>
+   Improved: Positioning of a window in bounds of screen work space
+  </li>
+  <li>
+   Improved: The algorithm that detects mods when users add a local mod; if a folder doesn't contain a mod it is scanned for mods in sub-folders
+  </li>
+  <li>
+   Improved: Mod status tooltip show duration increased to a maximum value (tooltip won't vanish that quickly)
+  </li>
+  <li>
+   Improved: Clarified error messages when app files are corrupted or can't be loaded
+  </li>
+  <li>
+   Improved: Steam fix hint dialog can't lose focus in favor of main window when switching apps
+  </li>
+  <li>
+   Improved: The minimum window size is reduced when DPI is greater than 144 ppi
+  </li>
+  <li>
+   Removed: Support for opening Workshop pages directly in the Steam Client, reverting back to the web-browser only solution. This is because of changes beyond our control. We're sorry and we'll do whatever we can to restore this feature.
+  </li>
+  <li>
+   Removed: Check-box
+   <em>
+    "Use Steam client instead of web browser"
+   </em>
+   because we can't reliably support this functionality due to recent changes in the Steam commands protocol
+  </li>
+  <li>
+   Removed: Check-box
+   <em>
+    "Use BattlEye"
+   </em>
+   from the Options page (moved to the separate BattlEye page)
+  </li>
+  <li>
+   Removed:
+   <em>
+    "Show BattlEye log..."
+   </em>
+   menu item removed from the application menu
+  </li>
+ </ul>
+ <h3>
+  SERVER:
+ </h3>
+ <ul>
+  <li>
+   <strong>
+    Updated: Stand-alone Windows Dedicated Server (1.46)
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Updated: Stand-alone Linux Dedicated Server (1.46)
+   </strong>
+   <ul>
+    <li>
+     Known issue: Steam client modifies the
+     <em>
+      steam_appid.txt
+     </em>
+     file incorrectly. In case of issues, verify its content is:
+     <strong>
+      107410
+     </strong>
+    </li>
+    <li>
+     Known issue: Sometimes the add-ons are loaded from the wrong installation (e.g. main game)
+    </li>
+    <li>
+     Try adding
+     <em>
+      -mod=curator;kart;heli;mark;dlcbundle
+     </em>
+     to your
+     <em>
+      arma3server.exe
+     </em>
+     shortcut
+    </li>
+   </ul>
+  </li>
+ </ul>
+</div>

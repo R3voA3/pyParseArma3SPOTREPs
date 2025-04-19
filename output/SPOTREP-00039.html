@@ -1,0 +1,989 @@
+<div class="post-content">
+ <p>
+  FROM: Encoding Lead
+  <br>
+   TO: Arma 3 Users
+   <br>
+    UNIT: Main Branch
+    <br>
+     ACTIVITY: Game Update: 1.40 (FFV Inertia, AI Improvements)
+     <br/>
+     SIZE: ~1.2 GB / ~675 MB
+    </br>
+   </br>
+  </br>
+ </p>
+ <h2>
+  NOTES
+ </h2>
+ <ul>
+  <li>
+   Consider using the Steam client option to verify the integrity of the local game cache to avoid corrupted data after downloading this update.
+  </li>
+  <li>
+   Consider defragmenting your HDD after downloading large updates.
+  </li>
+  <li>
+   A
+   <em>
+    Legacy Build
+   </em>
+   Steam branch is available for advanced users. It contains the previous significant main branch version (1.38). It can be used to compare specific changes between major releases. The access code for this branch is:
+   <em>
+    Arma3Legacy138
+   </em>
+  </li>
+  <li>
+   A
+   <em>
+    Make Arma Not War Build
+   </em>
+   branch is available for competitors and jury members. It will contain the 1.32 main branch version throughout the rest of the contest. The access code for this branch is:
+   <em>
+    MakeArmaNotWar
+   </em>
+  </li>
+  <li>
+   You can find the servers in the Steam library (switch the filter to "Tools") - "Arma 3 Server" (based on your OS, it will download the Windows or Linux version).
+   <ul>
+    <li>
+     Administrators can also use the command-line
+     <a class="external-link" href="https://developer.valvesoftware.com/wiki/SteamCMD" rel="nofollow">
+      SteamCMD
+     </a>
+     utility. The app ID is to be 233780.
+    </li>
+    <li>
+     Physics simulation powered by NVIDIA® PhysX™. NVIDIA® and PhysX™ are trademarks of NVIDIA Corporation and are used under license.
+    </li>
+   </ul>
+  </li>
+ </ul>
+ <h1>
+  CHANGELOG
+ </h1>
+ <h2>
+  DATA:
+ </h2>
+ <ul>
+  <li>
+   Added: New style of VR entity:
+   <ul>
+    <li>
+     * OPFOR - more red
+    </li>
+    <li>
+     * Injured - orange specular / ambient
+    </li>
+    <li>
+     * Dead - neutral gray specular / ambient
+    </li>
+   </ul>
+  </li>
+  <li>
+   Added: Config support for the dehardcoding of the number keys and function keys
+  </li>
+  <li>
+   Added: Weapon muzzle velocities are now correctly defined per weapon and not per magazine as before (backward compatibility is maintained as magazine initSpeed is now considered when there is no initSpeed defined in the weapon, while a weapon defined initSpeed overrides the magazine defined value)
+  </li>
+  <li>
+   Added: NVGs to Pilots' gear
+  </li>
+  <li>
+   Added: Stomper cargo is now able to use weapons to fire from the vehicle
+  </li>
+  <li>
+   Added: Conflict + collision groups for new actions
+  </li>
+  <li>
+   Added: aiRateOfFireDispersion parameter into the base fire mode class with a default value of 1 to introduce basic randomness in AI firing patterns (to-be-tweaked)
+  </li>
+  <li>
+   Added: FD support for AND target triggers
+  </li>
+  <li>
+   Added: Black variant of the civilian truck (texture)
+  </li>
+  <li>
+   Added: Indication of a modded game
+  </li>
+  <li>
+   Added: Game version indication to the Pause Menu
+  </li>
+  <li>
+   Added: Ability to disable ramp operation on the Mohawk, Huron and Taru by setting variable "bis_disabled_Ramp" to 1 for the vehicle
+  </li>
+  <li>
+   Added: Actions for raising and lowering turret. Please note that you need to select a preset again to map these to their default values or set them manually.
+  </li>
+  <li>
+   Added: Get in / get out actions for the motorboat, set proper animation states
+  </li>
+  <li>
+   Added: Driver animations for the Civilian Truck
+  </li>
+  <li>
+   Added: New procedurally generated icons for hand weapons (see
+   <a href="https://community.bistudio.com/wiki/Arma_3_Weapon_Config_Guidelines#Inventory_icons_overlay_method">
+    documentation
+   </a>
+   )
+  </li>
+  <li>
+   Added: Preview of default marker color to ComboBox in Insert Marker dialogue
+  </li>
+  <li>
+   Added: New danger cause (dcbulletClose) to danger.fsm (notes in AI Changelog)
+  </li>
+  <li>
+   Added: Retexturing OPFOR Ghillie Suit enabled
+  </li>
+  <li>
+   Added: New layer to make sound more sharp and realistic while hitting ground
+  </li>
+  <li>
+   Added: Retexturing AAF Ghillie Suit enabled
+  </li>
+  <li>
+   Added: Plastic_plate penetration material
+  </li>
+  <li>
+   Added: BIS_fnc_liveFeedSetTarget can be called with an optional parameter for smooth camera transition: [new target, duration of transition] call BIS_fnc_liveFeedSetTarget
+  </li>
+  <li>
+   Added: onHover texture to default mod logo
+  </li>
+  <li>
+   Added: Buldozer - Controls for keeping absolute elevation and releasing absolute elevation lock in
+  </li>
+  <li>
+   Fixed: Displaying of mod logo in the Main Menu via mod.cpp
+  </li>
+  <li>
+   Fixed: Privatization of the local variable _type in function loadInventory
+  </li>
+  <li>
+   Fixed: Car fixing wheel animation for the switchMove command (see
+   <a href="http://feedback.arma3.com/view.php?id=22346" target="_blank">
+    http://feedback.arma3.com/view.php?id=22346
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Camera was sometimes randomly stuck on the closest zoom
+  </li>
+  <li>
+   Fixed: Front cargo of Zamak trucks
+  </li>
+  <li>
+   Fixed: Silence gap in looped sample of the Mi-48 Kajman
+  </li>
+  <li>
+   Fixed: Arsenal meta data were missing
+  </li>
+  <li>
+   Fixed: Incorrect Z-ordering of the backgrounds of mod icons in the main menu
+  </li>
+  <li>
+   Fixed: CfgPatches for random classes
+  </li>
+  <li>
+   Fixed: Issues with a briefing animation
+  </li>
+  <li>
+   Fixed: Issue with a wrong KIA state while killing a unit getting out from certain vehicles
+  </li>
+  <li>
+   Fixed: Mortar geometries
+  </li>
+  <li>
+   Fixed: All stats were visible after hiding and revealing the Arsenal interface again
+  </li>
+  <li>
+   Fixed: BIS_fnc_VRSpawnEffect now correctly reflects the object's height
+  </li>
+  <li>
+   Fixed: Collision between optics and close context menu
+  </li>
+  <li>
+   Fixed: M-900 becomes invisible at medium distance (
+   <a href="http://feedback.arma3.com/view.php?id=21637" target="_blank">
+    http://feedback.arma3.com/view.php?id=21637
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Weapon accessories ignore 'scopeArsenal' property (
+   <a href="http://feedback.arma3.com/view.php?id=22319" target="_blank">
+    http://feedback.arma3.com/view.php?id=22319
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: 'scopeArsenal' now replaces value of 'scope' in Arsenal, instead of being checked alongside it
+  </li>
+  <li>
+   Fixed: The explosion of a car can destroy heavily armored vehicles - discovered certain confusion in the functionality of parameters "fuelExplosionPower" and "secondaryExplosion". This fix therefore revised all these parameters, optimized explosions of all vehicles and also added a (hopefully) proper description of relations between these parameters and vehicle destruction explosions
+  </li>
+  <li>
+   Fixed: Prone reload speed for Katiba, Mk200, TRG-20 and Zafir
+  </li>
+  <li>
+   Fixed: Speed of cargo idles
+  </li>
+  <li>
+   Fixed: Leg memory points were not in proper selections (
+   <a href="http://feedback.arma3.com/view.php?id=20761" target="_blank">
+    http://feedback.arma3.com/view.php?id=20761
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: BOOT04 scenario
+  </li>
+  <li>
+   Fixed: Possible error message in Supports module
+  </li>
+  <li>
+   Fixed: Impenetrable glass door, material on stairs and normal maps for tiles for Ghost Hotel
+  </li>
+  <li>
+   Fixed: Possible error message in BIS_fnc_traceBullets
+  </li>
+  <li>
+   Fixed: Scripting error in BIS_fnc_VRHitpart
+  </li>
+  <li>
+   Fixed: Task completion bug in MP Headhunters
+  </li>
+  <li>
+   Fixed: Simulation Manager now works correctly even for UAVs
+  </li>
+  <li>
+   Fixed: FFV positions in Civilian Truck. Slightly reduced head shake in one of the get in animations. Zamak should now be entered and exited correctly
+  </li>
+  <li>
+   Fixed: Kart drivers declared so their DLC icons would display
+  </li>
+  <li>
+   Fixed: setOwner was incorrectly used on a single module (it's part of a group)
+  </li>
+  <li>
+   Fixed: OK and TRY buttons were active even in lite versions of Arsenal
+  </li>
+  <li>
+   Fixed: CoF: Orange 3 sniper rifle on the ground would not always be there after restart
+  </li>
+  <li>
+   Fixed: FD competitors could receive 1 more magazine on restart compared to the first start
+  </li>
+  <li>
+   Fixed: Fatigue was not reset when a Firing Drill was (soft) restarted
+  </li>
+  <li>
+   Fixed: Using a more robust method of disabling saves in FDs / TTs (so that CoF: Green does not incorrectly allow saving)
+  </li>
+  <li>
+   Fixed: Zamak tires deflate correctly when destroyed
+  </li>
+  <li>
+   Fixed: RscHTML lacked x, y, w, h coordinates, leading to errors when created using ctrlCreate
+  </li>
+  <li>
+   Fixed: scope parameter used in CfgMarkerColors and CfgMarkerBrushes (1 - visible in editor, 2 - visible in editor and ingame map)
+  </li>
+  <li>
+   Fixed: Adjusted tail blade radius for Mohawk
+  </li>
+  <li>
+   Fixed: Assault boat front seat was able to aim through the Boat
+  </li>
+  <li>
+   Fixed: Several modules now display author properly
+  </li>
+  <li>
+   Fixed: Silenced MX should have the correct sample
+  </li>
+  <li>
+   Fixed: Commander hatch of Scorcher doesn't disappear anymoar
+  </li>
+  <li>
+   Fixed: Titan AA missile had a bad shape while fired
+  </li>
+  <li>
+   Fixed: Resolved a conflict of cfgSkeletons classes
+  </li>
+  <li>
+   Fixed: Broken macro in Team Switch dialogue (no visible change in the game, but less error messages in RPT)
+  </li>
+  <li>
+   Fixed: Some modules were in the editor wrongly marked as a part of Zeus DLC
+  </li>
+  <li>
+   Fixed: BIS_fnc_loadInventory had problem loading corrupted inventory save
+  </li>
+  <li>
+   Fixed: Wrong attachments order in loadInventory function
+  </li>
+  <li>
+   Fixed: Adjusted position of optics for static GMG
+  </li>
+  <li>
+   Fixed: Further decreased weights of various fences in an attempt to fix vehicle collision issue
+  </li>
+  <li>
+   Fixed: Adjusted memory points in tank turrets to prevent shooting through walls
+  </li>
+  <li>
+   Fixed: DLC Content Browser - DLC icons made sharper
+  </li>
+  <li>
+   Fixed: Diesel Power plant now shows on 2D map
+  </li>
+  <li>
+   Fixed: Default turret should not have a copilot capability
+  </li>
+  <li>
+   Fixed: Rear door cargo proxies in Huron should now be consistent across LODs
+  </li>
+  <li>
+   Tweaked: Rahim reload animation has proper right hand IK curve
+  </li>
+  <li>
+   Tweaked: Lowered armor of lights on Slammer, Kuma and Offroad
+  </li>
+  <li>
+   Tweaked: Mi-48 pilot shaking view pilot calmed down. Added settleIn free variants for basic cargo anims.
+  </li>
+  <li>
+   Tweaked: Tucked in the cargo in the Van
+  </li>
+  <li>
+   Tweaked: Adjusted FFV limits for the civilian Truck
+  </li>
+  <li>
+   Tweaked: Armex engineers have had to further improve the suspension of the Mora after an incident on Agia Marina military range where a squad of officers was transported and it turned over. AAN reports one wounded, two bruised and three severely humiliated.
+  </li>
+  <li>
+   Tweaked: UI textures for static weapons
+  </li>
+  <li>
+   Tweaked: Weapon SFX overhaul (sidearms, rifles, SMGs, machineguns and suppressors). Stay tuned to
+   <a href="http://dev.arma3.com/" target="_blank">
+    dev.arma3.com
+   </a>
+   for a related OPREP.
+  </li>
+  <li>
+   Tweaked: availableForSupportTypes for various helicopters to include Drop and Transport types for those that can perform it
+  </li>
+  <li>
+   Tweaked: Car fixing animation for switchMove / playMove commands
+  </li>
+  <li>
+   Tweaked: Better support for cutscene animations and playMove / switchMove (more briefing anims)
+  </li>
+  <li>
+   Tweaked: Decreased the positive impact of suppressors over the weapons’ muzzle speeds to more reasonable levels
+  </li>
+  <li>
+   Tweaked: Steering force coefficient of parachutes
+  </li>
+  <li>
+   Tweaked: Memory points of transport trucks
+  </li>
+  <li>
+   Tweaked: Pistol &lt;&gt; rifle transition
+  </li>
+  <li>
+   Tweaked: Get in / get out positions for the Motorboat model
+  </li>
+  <li>
+   Tweaked: Cargo proxies for Civilian Truck (soldier intersecting with van body)
+  </li>
+  <li>
+   Tweaked: Sounds have a new data structure. It is a work-in-progress, and the old references to sounds_f\weapons should still work fine for now
+  </li>
+  <li>
+   Tweaked: Minor adjustments to MX samples
+  </li>
+  <li>
+   Adjusted: Minor volume changes for launchers
+  </li>
+  <li>
+   Tweaked: AAF vests visually tweaked
+  </li>
+  <li>
+   Tweaked: Additional visual tweaks on AAF vests
+  </li>
+  <li>
+   Tweaked: Minor sound changes for static GMGs
+  </li>
+  <li>
+   Tweaked: Textures for pop-up targets
+  </li>
+  <li>
+   Tweaked: Texture of indicator of modded game
+  </li>
+  <li>
+   Changed: Renamed control menuBack to navigateMenu to fix profile customisations
+  </li>
+  <li>
+   Changed: Punishment animations are now triggered using playMove instead of playMoveNow in Zeus Bootcamp
+  </li>
+  <li>
+   Changed: Identity of VR Entities set so they won’t spawn with any facewear
+  </li>
+  <li>
+   Changed: Whitelisted setSpeaker for BIS_fnc_MP
+  </li>
+  <li>
+   Changed: Animation state for the land get in action for Motorboat
+  </li>
+  <li>
+   Changed: Altis and Stratis were binarized using a new version to optimize loading times and AI pathfinding capabilities
+  </li>
+  <li>
+   Changed: Adjusted dispersion of Starter pistol
+  </li>
+  <li>
+   Changed: AI detection distance of bullet hit/fly-by &amp; grenade explosion
+  </li>
+  <li>
+   Changed: Re-generated general macros for cfgVehicles
+  </li>
+  <li>
+   Changed: All new samples for UGL
+  </li>
+  <li>
+   Improved: Open / Close ramp commands localized
+  </li>
+  <li>
+   Improved: Hit detection in function VRHitpart
+  </li>
+  <li>
+   Optimized: Weights of various walls in an attempt to fix a vehicle collision issue
+  </li>
+  <li>
+   Removed: Unnecessary NV goggles from the player in Showcase Fixed-Wings
+  </li>
+ </ul>
+ <h2>
+  Potential spoilers
+ </h2>
+ <ul>
+  <li>
+   Tweaked: Showcase Fixed wings - Helicopter hit confirmation is dependent on which weapon the player used (cannon, AA, etc.)
+  </li>
+  <li>
+   Fixed: Showcase Commanding will fail if the player disables the Hummingbird
+  </li>
+  <li>
+   Fixed: Damage Control: The mission correctly fails if the Hunter becomes immobilized
+  </li>
+  <li>
+   Fixed: Common Denominator: Ensured the HUD is properly disabled during the opening cutscene
+  </li>
+  <li>
+   Fixed: Common Enemy: Mission will properly fail if Miller is killed by the player after regrouping
+  </li>
+  <li>
+   Fixed: Common Enemy: Miller will no longer run out of ammo
+  </li>
+ </ul>
+ <h2>
+  ENGINE
+ </h2>
+ <ul>
+  <li>
+   Added: Sound: Helper classes for effect management
+  </li>
+  <li>
+   Added: DLC notification for premium gear take actions
+  </li>
+  <li>
+   Added: AI rate of fire randomization (new parameter aiRateOfFireDispersion)
+  </li>
+  <li>
+   Added: Current app ID property / getter [SteamLayer]
+  </li>
+  <li>
+   Added: Indication of a modded game
+  </li>
+  <li>
+   Added: Game version indication to the Pause Menu
+  </li>
+  <li>
+   Added: Reworked gear tooltips to support DLC notifications
+  </li>
+  <li>
+   Added: Script function configSourceModList for listing the whole list of mods that modified a config class
+  </li>
+  <li>
+   Added: Command line parameter cfgDependencies for printing a list of all configs loaded with all dependencies (the list is in the order in which the configs are loaded)
+  </li>
+  <li>
+   Added: setGroupOwner script command for changing the locality of a group (setOwner will no longer work for objects with AI)
+  </li>
+  <li>
+   Added: DLC notification whitelist for selected scenarios (VR Arsenal)
+  </li>
+  <li>
+   Added: Sound: Additional sample for Hold Breath
+  </li>
+  <li>
+   Added: Enabled Firing From Vehicles inertia
+  </li>
+  <li>
+   Added: Drawing an icon next to non-owned drones in the UAV terminal label
+  </li>
+  <li>
+   Added: getGroupOwner - server-side script command for retrieval of group locality
+  </li>
+  <li>
+   Added: Unique ID to inventory items (for MP - WIP)
+  </li>
+  <li>
+   Added: Script command for listing weapon's attachments in cargo (weaponAttachments)
+  </li>
+  <li>
+   Added: DLC / mod icons in scenario lists (showcases, challenges)
+  </li>
+  <li>
+   Added: Detection of bullets flying close to unit
+  </li>
+  <li>
+   Added: Support for changing picture colours in tree
+  </li>
+  <li>
+   Added: PhysX library is able to run from network drive
+  </li>
+  <li>
+   Added: Support for server-only mods with new console parameter serverMod
+  </li>
+  <li>
+   Added: Improved detection of observed kills
+  </li>
+  <li>
+   Added: Procedurally composed icons for gear (
+   <a href="https://community.bistudio.com/wiki/Arma_3_Weapon_Config_Guidelines#Inventory_icons_overlay_method" target="_blank">
+    Documentation
+   </a>
+   )
+  </li>
+  <li>
+   Added: New commands for setting colour of pictures in lnb list box type
+  </li>
+  <li>
+   Added: "append" script command for appending one array to another
+  </li>
+  <li>
+   Added: Scrollbar for long script examples in help dialog
+  </li>
+  <li>
+   Added: Supersonic crack in 3D &amp; flying bullets sound
+  </li>
+  <li>
+   Added: New script commands enableUAVWaypoints and waypointsEnabledUAV to enable/disable option for player to set waypoints for UAV in AV terminal
+  </li>
+  <li>
+   Added: Buldozer - configurable user actions for Ability to lock elevation of objects during terrain sculpting
+  </li>
+  <li>
+   Added: Ai will not eject without parachutes, but will jump if heli is close to ground
+  </li>
+  <li>
+   Fixed: 3d person view camera shake caused by damage
+  </li>
+  <li>
+   Fixed: Added network support for turret elevation
+  </li>
+  <li>
+   Fixed: Wrong response for the SetMaxHitZoneDamage network message sent to servers
+  </li>
+  <li>
+   Fixed: Unable to switch positions in vehicles in MP
+  </li>
+  <li>
+   Fixed: Building game without enabling Dedicated Server
+  </li>
+  <li>
+   Fixed: AI reaction to being alerted by nearby explosions
+  </li>
+  <li>
+   Fixed: CTD after initializing MenuItem
+  </li>
+  <li>
+   Fixed: Menu item at the bottom of the list if its set for the "back" action
+  </li>
+  <li>
+   Fixed: Crash while processing disclosure info
+  </li>
+  <li>
+   Fixed: ZGM Virtual Reality - Crash while controlling UAV
+  </li>
+  <li>
+   Fixed: New NavigateMenu to force new key presets and fix opening the command menu on RMB
+  </li>
+  <li>
+   Fixed: All vehicle lights are handled using using context menu actions
+  </li>
+  <li>
+   Fixed: Ships are steerable by mouse the same way as ground vehicles
+  </li>
+  <li>
+   Fixed: setDamage 0 did not fix rotors for PhysX helicopters
+  </li>
+  <li>
+   Fixed: Attempt to fix more PhysX CTDs
+  </li>
+  <li>
+   Fixed: Properly reading allowedVote(dAdmin)Cmds in case they are left empty
+  </li>
+  <li>
+   Fixed: Tail rotor destruction
+  </li>
+  <li>
+   Fixed: Event handler "IncomingMissile" did not return the shooter when added to a laser target object (
+   <a href="http://feedback.arma3.com/view.php?id=20739" target="_blank">
+    http://feedback.arma3.com/view.php?id=20739
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Crash when releasing XA2Device
+  </li>
+  <li>
+   Fixed: Possible fix of sound dropping out during the game
+  </li>
+  <li>
+   Fixed: Sound: Waves not included into submix (weapon sounds heard too far away)
+  </li>
+  <li>
+   Fixed: CTD when reloading a weapon
+  </li>
+  <li>
+   Fixed: Using a directory name as mod ID (modDir) when a full path is defined
+  </li>
+  <li>
+   Fixed: Vote / voted admin commands in UI visible according to Dedicated Server settings
+  </li>
+  <li>
+   Fixed: Skill of AI units being propagated over the network properly
+  </li>
+  <li>
+   Fixed: PhysX scene lock assert when releasing actors
+  </li>
+  <li>
+   Fixed: Stick analog axis (gamepad triggers) can be used as triggers for toggled / click actions
+  </li>
+  <li>
+   Fixed: AI soldiers planning their path through objects along the coastline
+  </li>
+  <li>
+   Fixed: Problem with non-valid PhysX transforms and forces
+  </li>
+  <li>
+   Fixed: PersonTurret save backward compatibility
+  </li>
+  <li>
+   Fixed: Desync problem after changing locality of a vehicle
+  </li>
+  <li>
+   Fixed: Added missing serialization of FFV dynamic limits
+  </li>
+  <li>
+   Fixed: Paragliding should not be FPS-dependent
+  </li>
+  <li>
+   Fixed: Freefall should not be FPS-dependent
+  </li>
+  <li>
+   Fixed: Artillery scope info
+  </li>
+  <li>
+   Fixed: Negative axis for clicks, small refactoring
+  </li>
+  <li>
+   Fixed: Linux build issue for joysticks
+  </li>
+  <li>
+   Fixed: Various warnings
+  </li>
+  <li>
+   Fixed: Mouselook without weapons and FFV with lowered weapon
+  </li>
+  <li>
+   Fixed: scope parameter used in CfgMarkerColors and CfgMarkerBrushes (1 - visible in editor, 2 - visible in editor and ingame map)
+  </li>
+  <li>
+   Fixed: Dedicated Server vote / voted-admin commands pre-init / post-init settings handled properly by UI on a MP client
+  </li>
+  <li>
+   Fixed: CTD and Enable button in controller window
+  </li>
+  <li>
+   Fixed: Crash after using tvClear command
+  </li>
+  <li>
+   Fixed: Distance sliders in video options
+  </li>
+  <li>
+   Fixed: setOwner/setGroupOwner does not work when transferring locality from client to DS
+  </li>
+  <li>
+   Fixed: setGroupOwner should only transfer group locality when the group leader is a player
+  </li>
+  <li>
+   Fixed: AI could get stuck planning paths from inside to outside of a structure (and vice versa) while in close proximity to the exit/entrance.
+  </li>
+  <li>
+   Fixed: Ejected casing are now drawn correctly in 1st person (
+   <a href="http://feedback.arma3.com/view.php?id=9159" target="_blank">
+    http://feedback.arma3.com/view.php?id=9159
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Attempt to fix random PhysX ragdoll crashes
+  </li>
+  <li>
+   Fixed: Possible CTD in drawing waypoint in radar
+  </li>
+  <li>
+   Fixed: Telescopic turret elevation did not sync in MP
+  </li>
+  <li>
+   Fixed: Using undefined maths operations in scripts crashes the game
+  </li>
+  <li>
+   Fixed: getOwner/getGroupOwner return wrong playerID
+  </li>
+  <li>
+   Fixed: Stance indicator visible for pilots
+  </li>
+  <li>
+   Fixed: Disabled optics in vehicle after sprinting &amp; getIn action
+  </li>
+  <li>
+   Fixed: setGroupOwner can now transfer locality of HC groups
+  </li>
+  <li>
+   Fixed: Loading of thresholds for analog controller axes
+  </li>
+  <li>
+   Fixed: Strings for axes (plural of axis, not the wood chopping stuff) were localized internal strings instead of OS ones
+  </li>
+  <li>
+   Fixed: Passengers should not see broken radar in helicopter
+  </li>
+  <li>
+   Fixed: Added detection for local remote players for setGroupOwner
+  </li>
+  <li>
+   Fixed: Added support for NaN values for operators and maths functions
+  </li>
+  <li>
+   Fixed teamswichCommand does not open TS window, when TS is disabled
+  </li>
+  <li>
+   Fixed: Briefing - Game crashes when managing items in the briefing inventory
+  </li>
+  <li>
+   Fixed: Crash when accessing an out-of-bounds LOD level
+  </li>
+  <li>
+   Fixed: Possible CTD when loading Zeus game saved inside UI
+  </li>
+  <li>
+   Fixed: Soldier stops after reaching a position in the house if this position is located under his target position in one of the upper floors
+  </li>
+  <li>
+   Fixed: AI reaction to danger should be faster
+  </li>
+  <li>
+   Fixed: Incorrect sound on Linux DS
+  </li>
+  <li>
+   Fixed: Lock, lockdriver and lockturret also lock ability to control positions in UAV vehicles
+  </li>
+  <li>
+   Fixed: Cross-hair should not be visible for cargo
+  </li>
+  <li>
+   Fixed: Sling Load Assistant disabled for personTurrets
+  </li>
+  <li>
+   Fixed: soldier AI lay down for no reason
+  </li>
+  <li>
+   Fixed: cross-hair should not be visible for cargo
+  </li>
+  <li>
+   Fixed: Slingload manager disabled for FFV turrets
+  </li>
+  <li>
+   Fixed: Possible synchronization issue when splitting long network commands
+  </li>
+  <li>
+   Fixed: various issues with disabled personTurrets
+  </li>
+  <li>
+   Fixed: Properly reading LOD levels inside a vehicle
+  </li>
+  <li>
+   Fixed: Reinit weaponholder in physx scene and apply angular velocity
+  </li>
+  <li>
+   Fixed: FFV turrets enabled state propagation through network
+  </li>
+  <li>
+   Fixed: FFV crash when changing position of soldiers in MP
+  </li>
+  <li>
+   Fixed: Crash in GetFormationPosImmediate
+  </li>
+  <li>
+   Fixed: Crash whet releasing the PhysX scene
+  </li>
+  <li>
+   Fixed: Hovering weapons from remote ragdoll
+  </li>
+  <li>
+   Fixed: Double press of Enter was needed to switch to external cam in vehicle
+  </li>
+  <li>
+   Fixed: Crash when sooting to unit without defined hitpoints
+  </li>
+  <li>
+   Fixed: fixed zoom artifacts when switching optics mode in other view modes than gunner
+  </li>
+  <li>
+   Changed: In MP all players can switch seats
+  </li>
+  <li>
+   Changed: Unlocking hardcoded number keys and function keys
+  </li>
+  <li>
+   Changed: setSkill - AI skill can now be set for local units or for any if executed on the server
+  </li>
+  <li>
+   Changed: Allowing setOwner to be called the old way - even for objects with AI - for now
+  </li>
+  <li>
+   Changed: setOwner now works with agents
+  </li>
+  <li>
+   Changed: weaponAttachments renamed to weaponAccessoriesCargo (this set of technologies is not yet ready for use, heavily WIP)
+  </li>
+  <li>
+   Changed: Refactor PhysX scene thread synchronization to be more reliable
+  </li>
+  <li>
+   Tweaked: Changed the minimal message time prediction delta
+  </li>
+  <li>
+   Tweaked: Better localization handling in the paramfile for SteamLayer
+  </li>
+  <li>
+   Tweaked: Sound: Fireplaces and campfires
+  </li>
+  <li>
+   Tweaked: Backpack / AI inventory MP code refactored (should not change functionality, but clean up the implementation)
+  </li>
+  <li>
+   Tweaked: 2D stereo effect
+  </li>
+  <li>
+   Tweaked: Improved soldier zeroing precision (by 0.05%)
+  </li>
+  <li>
+   Tweaked: Adjusted mod detection for config classes
+  </li>
+  <li>
+   Tweaked: Send player position message as high priority once per second
+  </li>
+  <li>
+   Tweaked: Report more info on invalid matrices given to PhysX
+  </li>
+  <li>
+   Tweaked: Network diagnostics now show only necessary locality info
+  </li>
+  <li>
+   Tweaked: Replacing repeated code by methods for joysticks
+  </li>
+  <li>
+   Improved: AI will not eject from a plane nor heli, if it doesn't have a parachute
+  </li>
+  <li>
+   Improved: Dropped weapon objects now use hidden selections for drawing
+  </li>
+  <li>
+   Improved: Progress bar color can be set via the ctrlSetTextColor command
+  </li>
+  <li>
+   Improved: Registry keys were acquired and released periodically (merged from DayZ)
+  </li>
+  <li>
+   Modified: InitSpeed in weapons - zero value in weaponType::initSpeed means that magazineType::initSpeed will be used (initSpeed set to positive values in a weapon means a constant speed of the weapon independent on its magazine. Negative values mean a multiplier for initSpeed set in the magazine. Setting it to 0 means that the speed is going to be taken from magazine, this equals to setting initSpeed in the weapon to -1)
+  </li>
+  <li>
+   Optimized: Registry access
+  </li>
+ </ul>
+ <h2>
+  LAUNCHER
+ </h2>
+ <ul>
+  <li>
+   Added: Localization for check box "Use Steam client instead of web browser" on the Options
+  </li>
+  <li>
+   Fixed: A crash on start in case the configuration file is corrupted
+  </li>
+  <li>
+   Fixed: ConfigurationManager pre-initialization fails when ApplicationSettingsBase has corrupted settings files
+  </li>
+ </ul>
+ <h2>
+  SERVER
+ </h2>
+ <ul>
+  <li>
+   <strong>
+    Updated: Stand-alone Windows Dedicated Server (1.40)
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Updated: Stand-alone Linux Dedicated Server (1.40)
+   </strong>
+   <ul>
+    <li>
+     Known issue: Steam client modifies the
+     <em>
+      steam_appid.txt
+     </em>
+     file incorrectly. In case of issues, verify its content is:
+     <strong>
+      107410
+     </strong>
+    </li>
+    <li>
+     Known issue: Sometimes the add-ons are loaded from the wrong installation (e.g. main game)
+    </li>
+    <li>
+     Try adding
+     <em>
+      -mod=curator;kart;heli;dlcbundle
+     </em>
+     to your
+     <em>
+      arma3server.exe
+     </em>
+     shortcut
+    </li>
+   </ul>
+  </li>
+ </ul>
+</div>

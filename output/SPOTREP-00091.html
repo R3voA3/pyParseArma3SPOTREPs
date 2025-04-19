@@ -1,0 +1,1010 @@
+<div class="post-content">
+ <p>
+  FROM: High Command
+  <br/>
+  TO: Arma 3 Users
+  <br/>
+  UNIT: Main Branch
+  <br/>
+  ACTIVITY: Game Update 1.96 (Contact Improvements, Miscellaneous Fixes)
+  <br/>
+  SIZE: ~7.8 GB / ~841 MB (depends on Contact ownership)
+  <br/>
+ </p>
+ <h1>
+  NOTES
+ </h1>
+ <ul>
+  <li>
+   Contact consists of 2 data packs / folders:
+   <br/>
+  </li>
+  <ul>
+   <li>
+    Contact (via
+    <i>
+     PLAY CONTACT
+    </i>
+    or
+    <i>
+     -mod=Contact
+    </i>
+    ): for the singleplayer "First Contact" campaign experience (accessible only to owners - optionally loaded)
+    <br/>
+   </li>
+   <li>
+    Contact (Platform): for most other use cases, including sandbox multiplayer (loaded by default for all players)
+   </li>
+  </ul>
+  <li>
+   Consider using the Steam client option to verify the integrity of the local game cache to avoid corrupted data after downloading this update.
+   <br/>
+  </li>
+  <li>
+   Consider defragmenting your HDD after downloading large updates.
+   <br/>
+  </li>
+  <li>
+   Updating a deeply moddable game and its platform is not without risks. We use various methods to communicate upcoming changes to our awesome modding community, such as via the
+   <a href="https://dev.arma3.com/" target="_blank">
+    Dev Hub
+   </a>
+   . We also co-operate directly on troubleshooting, and we offer an opportunity to test updates via our
+   <a href="https://dev.arma3.com/rc-branch" target="_blank">
+    Release Candidate tests
+   </a>
+   . Modders, server administrators and other members of the community do their best to prepare for updates and to address issues post-release as quickly as possible. Please be mindful of some interruptions (especially in the first hours / days after a release) while we all work to improve the game together.
+   <br/>
+  </li>
+  <li>
+   A
+   <i>
+    Legacy Build
+   </i>
+   Steam branch is available for advanced users. It contains the previous significant main branch version (1.94). It can be used to compare specific changes between major releases. The access code for this branch is:
+   <i>
+    Arma3Legacy194
+   </i>
+   <br/>
+  </li>
+  <li>
+   This update does not apply to the
+   <a href="http://dev.arma3.com/ports" target="_blank">
+    experimental Linux and Mac port betas
+   </a>
+   .
+   <br/>
+  </li>
+  <li>
+   You can find the servers in the Steam library (switch the filter to "Tools") - "Arma 3 Server" (based on your OS, it will download the Windows or Linux version).
+   <br/>
+  </li>
+  <ul>
+   <li>
+    Administrators can also use the command-line
+    <a href="https://developer.valvesoftware.com/wiki/SteamCMD" target="_blank">
+     SteamCMD
+    </a>
+    utility. The app ID is to be 233780.
+    <br/>
+   </li>
+   <li>
+    NVIDIA GameWorks™ Technology provided under license from NVIDIA Corporation. Copyright © 2002-2018 NVIDIA Corporation. All rights reserved. NVIDIA® and PhysX® are trademarks of NVIDIA Corporation and are used under license.
+    <br/>
+   </li>
+  </ul>
+  <li>
+   In case of problems, please check the
+   <a href="http://support.bistudio.com/arma-3" target="_blank">
+    Bohemia Interactive support F.A.Q
+   </a>
+   .,
+   <a href="http://arma3.com/faq" target="_blank">
+    Arma 3 F.A.Q
+   </a>
+   .,
+   <a href="http://www.battleye.com/support/faq/" target="_blank">
+    BattlEye F.A.Q
+   </a>
+   ., or
+   <a href="https://arma3.com/launcher/troubleshooting" target="_blank">
+    Launcher troubleshooting guide
+   </a>
+   .
+   <br/>
+  </li>
+  <li>
+   You can help us to further improve the game by posting your feedback on the
+   <a href="http://feedback.arma3.com/" target="_blank">
+    Feedback Tracker
+   </a>
+   .
+   <br/>
+  </li>
+ </ul>
+ <h1>
+  CHANGELOG
+ </h1>
+ <h2>
+  DATA
+ </h2>
+ <ul>
+  <li>
+   Added: This is War 6th Anniversary Remix music track into the game and Digital Deluxe Edition
+   <br/>
+  </li>
+  <li>
+   Added: Localized Livonia PDF topographic maps to the Digital Deluxe Edition
+   <br/>
+  </li>
+  <li>
+   Added: Very limited platform functionality for the vanilla Spectrum Device (documentation forthcoming)
+   <br/>
+  </li>
+  <li>
+   Added: Missing private keywords to
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_3DENInterface" target="_blank">
+    BIS_fnc_3DENInterface
+   </a>
+   (
+   <a href="https://forums.bohemia.net/forums/topic/143930-general-discussion-dev-branch/?do=findComment&amp;comment=3363860" target="_blank">
+    General Discussion - Dev-Branch
+   </a>
+   )
+   <br/>
+  </li>
+  <li>
+   Added: DLC parameter to configs of Tractor, Offroad (Covered) &amp; Mini UGV -
+   <a href="https://feedback.bistudio.com/T143422" target="_blank">
+    FT-T143422
+   </a>
+   <br/>
+  </li>
+  <li>
+   Added: A new (5th)
+   <a href="https://community.bistudio.com/wiki/Arma_3_Utilities" target="_blank">
+    Utility
+   </a>
+   for searching and listing of available script commands
+   <br/>
+  </li>
+  <li>
+   Added: Support for an object's group for BIS_fnc_hasItem (the item will be searched in the inventory of all members of the group if a group is passed as parameter)
+   <br/>
+  </li>
+  <li>
+   Added: A new optional parameter to specify
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_drawArrow" target="_blank">
+    BIS_fnc_drawArrow
+   </a>
+   's base width
+   <br/>
+  </li>
+ </ul>
+ <ul>
+  <li>
+   Tweaked: Alien Entity behavior routines
+   <br/>
+  </li>
+  <li>
+   Tweaked: Livonia bushes' resistance against armored vehicles
+   <br/>
+  </li>
+  <li>
+   Tweaked: Reduced armed Striders' secondary ammo explosions
+   <br/>
+  </li>
+  <li>
+   Tweaked: Portable weather station wind indicator rotation direction
+   <br/>
+  </li>
+  <li>
+   Tweaked: Adjusted MAAWS position on characters' backs in order to fix clipping with some scopes in certain stances -
+   <a href="https://feedback.bistudio.com/T143005" target="_blank">
+    FT-T143005
+   </a>
+   <br/>
+  </li>
+  <li>
+   Tweaked: Body trail effect of some jets
+   <br/>
+  </li>
+  <li>
+   Tweaked: Small LDF loadout adjustments
+   <br/>
+  </li>
+  <li>
+   Tweaked: The Print Config
+   <a href="https://community.bistudio.com/wiki/Arma_3_Utilities" target="_blank">
+    Utility
+   </a>
+   will now show a selection dialog on multiple matches instead of auto-selecting the first match
+   <br/>
+  </li>
+  <li>
+   Tweaked: Chemical Detector digit display precision
+   <br/>
+  </li>
+ </ul>
+ <ul>
+  <li>
+   Changed: Moved Contact animations to the platform
+   <br/>
+  </li>
+  <li>
+   Changed: Moved Contact music to the platform
+   <br/>
+  </li>
+  <li>
+   Changed: Moved Contact hand-drawn map markers to the platform
+   <br/>
+  </li>
+  <li>
+   Changed: Moved Contact hand-drawn font to the platform
+   <br/>
+  </li>
+  <li>
+   Changed: Made the Chemical Detector part of the platform*
+   <br/>
+  </li>
+  <li>
+   Changed: Made the Spectrum Device part of the platform*
+   <br/>
+  </li>
+  <li>
+   Changed: Moved APR and Blindfold overlays to the platform
+   <br/>
+  </li>
+  <li>
+   Changed: Livonia prop addons were decrypted to PBO
+   <br/>
+  </li>
+ </ul>
+ <ul>
+  <li>
+   Fixed: The Contact Welcome Screen counter was not working correctly in Contact mode
+   <br/>
+  </li>
+  <li>
+   Fixed: Missing aircraft wing vortices -
+   <a href="https://feedback.bistudio.com/T142848" target="_blank">
+    FT-T142848
+   </a>
+   <br/>
+  </li>
+  <li>
+   Fixed: A typo in the LDF Mk6 mortar backpack led to the creation of the wrong weapon when assembling it -
+   <a href="https://feedback.bistudio.com/T142948" target="_blank">
+    FT-T142948
+   </a>
+   <br/>
+  </li>
+  <li>
+   Fixed: The sidearm proxy on Heli Coveralls [LDF] in 3rd person view
+   <br/>
+  </li>
+  <li>
+   Fixed: Footstep sounds of timber piles
+   <br/>
+  </li>
+  <li>
+   Fixed: The Skate Helmet was missing NOHQ and SMDI maps in-game
+   <br/>
+  </li>
+  <li>
+   Fixed: Missing attachments in Arsenal after loading a save
+   <br/>
+  </li>
+  <li>
+   Fixed: Profile voices 09-12 were not working correctly -
+   <a href="https://feedback.bistudio.com/T143719" target="_blank">
+    FT-T143719
+   </a>
+   <br/>
+  </li>
+  <li>
+   Fixed: Flickering face on the back of the Tractor
+   <br/>
+  </li>
+  <li>
+   Fixed: Offroad dashboard artifacts when HBAO was turned on
+   <br/>
+  </li>
+  <li>
+   Fixed: Shading artifacts on leaflets
+   <br/>
+  </li>
+  <li>
+   Fixed: Aileron movement for A-164 and MQ-4
+   <br/>
+  </li>
+  <li>
+   Fixed: The "
+   <i>
+    InBaseMoves_assemblingVehicleErc
+   </i>
+   " animation had small movement defined which caused the character to move away from the original position when used in a loop
+   <br/>
+  </li>
+  <li>
+   Fixed: AAF and CSAT ghillie injury materials -
+   <a href="https://feedback.bistudio.com/T137525" target="_blank">
+    FT-T137525
+   </a>
+   <br/>
+  </li>
+  <li>
+   Fixed: Eye flares popping up a low resolution texture upon first load
+   <br/>
+  </li>
+  <li>
+   Fixed: The death screen is now showing a vehicle and its weapon in case an enemy was operating a vehicle
+   <br/>
+  </li>
+  <li>
+   Fixed: The position of subtitles changed when using the optics mode of the Spectrum Device Jammer antenna even when it was not needed
+   <br/>
+  </li>
+  <li>
+   Fixed: Katiba GL muzzle flash in 3rd person view -
+   <a href="https://feedback.bistudio.com/T144083" target="_blank">
+    FT-T144083
+   </a>
+   <br/>
+  </li>
+  <li>
+   Fixed: Various object position issues on Livonia
+   <br/>
+  </li>
+  <li>
+   Fixed: Many translation / localization issues
+   <br/>
+  </li>
+  <li>
+   Fixed: Missing Contact music track durations added and incorrect durations were tweaked
+   <br/>
+  </li>
+ </ul>
+ <ul>
+  <li>
+   Removed: Get in actions for empty drones (UGV / UAV / Autonomous Static Turrets / SAM Sites, etc.) -
+   <a href="https://feedback.bistudio.com/T142713" target="_blank">
+    FT-T142713
+   </a>
+   <br/>
+  </li>
+ </ul>
+ <p>
+  * Note: this gear is primarily cosmetic; limited features are only available in the context of Contact's campaign and gameplay.
+  <br/>
+ </p>
+ <p>
+  <br/>
+ </p>
+ <p>
+  <i>
+   <b>
+    Potential Spoilers ("First Contact")
+   </b>
+  </i>
+  <br/>
+ </p>
+ <p>
+ </p>
+ <ul>
+  <li>
+   Added: Missing TI to the Alien Network's legs and core, and fixed other graphical artifacts
+   <br/>
+  </li>
+  <li>
+   Added: Missing Post Process effects in Going Dark and Close Encounters
+   <br/>
+  </li>
+  <li>
+   Added: Pistols to Krupin and Severov for that added Spetsnaz cool-factor in Carpe Noctem
+   <br/>
+  </li>
+  <li>
+   Added: An extra check to ensure dialogue is playing in the right order when the alien arrives at the radio tower in Carpe Noctem
+   <br/>
+  </li>
+ </ul>
+ <ul>
+  <li>
+   Tweaked: Raised an ammunition cover to avoid clipping in Anomalous Phenomena's hub
+   <br/>
+  </li>
+  <li>
+   Tweaked: Reduced the time between untying Kesson and taking his blindfold off in Anomalous Phenomena
+   <br/>
+  </li>
+  <li>
+   Tweaked: Made a slight adjustment to conversation sync, when Major Homewood complains about the sudden change of weather in False Negative
+   <br/>
+  </li>
+  <li>
+   Tweaked: The road block composition has been adjusted in Going Dark
+   <br/>
+  </li>
+  <li>
+   Tweaked: Anomalous Phenomena / Carpe Noctem - Parked and abandoned vehicles now have disabled electronics (some also will no longer start)
+   <br/>
+  </li>
+  <li>
+   Tweaked: Alien Entity will now also engage vehicles
+   <br/>
+  </li>
+ </ul>
+ <ul>
+  <li>
+   Fixed: The Alien Entity waypoint was not working if the initial movement grid was not initialized
+   <br/>
+  </li>
+  <li>
+   Fixed: The Alien Entity was scanning its own (matter) balls on some occasions
+   <br/>
+  </li>
+  <li>
+   Fixed: An exception case during the Mini UGV system check, where the player may have the arm already raised, is now handled in Close Encounters
+   <br/>
+  </li>
+  <li>
+   Fixed: Several conversations in Close Encounters are now terminated when a task is completed prematurely
+   <br/>
+  </li>
+  <li>
+   Fixed: The sampling anomaly task area in Close Encounters was a small distance from the main group of anomalies
+   <br/>
+  </li>
+  <li>
+   Fixed: The sound effects on the Mini UGV disconnect were a second or two out of sync in Close Encounters
+   <br/>
+  </li>
+  <li>
+   Fixed: The laptop now shows a black screen after the Mini UGV disconnect in Close Encounters
+   <br/>
+  </li>
+  <li>
+   Fixed: There were some missing static sound effects during the Mini UGV disconnect in Close Encounters
+   <br/>
+  </li>
+  <li>
+   Fixed: Cpt. Spender's remark about the lights flashing in the first contact scene came a few seconds too early in Close Encounters
+   <br/>
+  </li>
+  <li>
+   Fixed: Going Dark will now fail if the player tries to reach the sinkhole black site too early
+   <br/>
+  </li>
+  <li>
+   Fixed: LDF troops will now run, instead of walk, to investigate Cpl. Stype's distraction at the burn pit in Going Dark
+   <br/>
+  </li>
+  <li>
+   Fixed: The AFO could be seen with binoculars at certain points in Going Dark, before the final scene
+   <br/>
+  </li>
+  <li>
+   Fixed: Added additional fail safes for the blue-on-blue event, preventing laser guidance from the player's rangefinder in False Negative
+   <br/>
+  </li>
+  <li>
+   Fixed: Exception dialogue from Squad Leader is now dependent on his line of sight towards the player in False Negative
+   <br/>
+  </li>
+  <li>
+   Fixed: Matter balls had no TI when being carried by the Alien Entity
+   <br/>
+  </li>
+  <li>
+   Fixed: Alien Entity 'lights' were not glowing in TI
+   <br/>
+  </li>
+  <li>
+   Fixed: Some Alien Network's inner parts were not visible in TI in some LODs
+   <br/>
+  </li>
+  <li>
+   Fixed: Various smaller issues in Anomalous Phenomena and Carpe Noctem
+   <br/>
+  </li>
+ </ul>
+ <ul>
+  <li>
+   Removed: Disruptive save game during a blackout at the end of Carpe Noctem
+   <br/>
+  </li>
+ </ul>
+ <h2>
+  ENGINE
+ </h2>
+ <ul>
+  <li>
+   Added: Script commands
+   <a href="https://community.bistudio.com/wiki/removeDiarySubject" target="_blank">
+    removeDiarySubject
+   </a>
+   ,
+   <a href="https://community.bistudio.com/wiki/removeDiaryRecord" target="_blank">
+    removeDiaryRecord
+   </a>
+   , and
+   <a href="https://community.bistudio.com/wiki/setDiaryRecordText" target="_blank">
+    setDiaryRecordText
+   </a>
+   <br/>
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/calculatePath" target="_blank">
+    calculatePath
+   </a>
+   will now support both generic presets such as "car" or "man" and vehicle class names
+   <br/>
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/callExtension" target="_blank">
+    RVExtensionRegisterCallback
+   </a>
+   and an "ExtensionCallback" mission Event Handler
+   <br/>
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/Arma_3:_Event_Handlers/addMissionEventHandler#PlayerConnected" target="_blank">
+    PlayerConnected
+   </a>
+   and
+   <a href="https://community.bistudio.com/wiki/Arma_3:_Event_Handlers/addMissionEventHandler#PlayerDisconnected" target="_blank">
+    PlayerDisconnected
+   </a>
+   Event Handlers were extended with _idstr (a string version of _id)
+   <br/>
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/Multiplayer_Server_Commands" target="_blank">
+    #monitor
+   </a>
+   and
+   <a href="https://community.bistudio.com/wiki/Multiplayer_Server_Commands" target="_blank">
+    #monitorDS
+   </a>
+   was extended with player count info
+   <br/>
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/Multiplayer_Server_Commands" target="_blank">
+    #monitor
+   </a>
+   and
+   <a href="https://community.bistudio.com/wiki/Multiplayer_Server_Commands" target="_blank">
+    #monitorDS
+   </a>
+   are now retained after server restarts
+   <br/>
+  </li>
+  <li>
+   Added: Extended
+   <a href="https://community.bistudio.com/wiki/checkAIFeature" target="_blank">
+    checkAIFeature
+   </a>
+   and
+   <a href="https://community.bistudio.com/wiki/enableAIFeature" target="_blank">
+    enableAIFeature
+   </a>
+   to support the
+   <a href="https://community.bistudio.com/wiki/enableAI" target="_blank">
+    enableAI
+   </a>
+   /
+   <a href="https://community.bistudio.com/wiki/disableAI" target="_blank">
+    disableAI
+   </a>
+   feature set
+   <br/>
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/enableAI" target="_blank">
+    enableAI
+   </a>
+   /
+   <a href="https://community.bistudio.com/wiki/disableAI" target="_blank">
+    disableAI
+   </a>
+   "RADIOPROTOCOL"
+   <br/>
+  </li>
+  <li>
+   Added:
+   <a href="https://community.bistudio.com/wiki/toUpperANSI" target="_blank">
+    toUpperANSI
+   </a>
+   and
+   <a href="https://community.bistudio.com/wiki/toLowerANSI" target="_blank">
+    toLowerANSI
+   </a>
+   <br/>
+  </li>
+  <li>
+   Added: "drawLocations" parameter for toggling location name drawing on the map -
+   <a href="https://feedback.bistudio.com/T77593" target="_blank">
+    FT-T77593
+   </a>
+   <br/>
+  </li>
+  <li>
+   Added: Support for 'any' and '&lt;null&gt;
+   <null>
+    ' to
+    <a href="https://community.bistudio.com/wiki/parseSimpleArray" target="_blank">
+     parseSimpleArray
+    </a>
+   </null>
+   <br/>
+  </li>
+  <li>
+   <null>
+    Added:
+    <a href="https://community.bistudio.com/wiki/getObjectFOV" target="_blank">
+     getObjectFOV
+    </a>
+    command to get an object's FOV
+    <br/>
+   </null>
+  </li>
+  <li>
+   <null>
+    Added: New script command
+    <a href="https://community.bistudio.com/wiki/isActionMenuVisible" target="_blank">
+     isActionMenuVisible
+    </a>
+    <br/>
+   </null>
+  </li>
+  <li>
+   <null>
+    Added: New script command
+    <a href="https://community.bistudio.com/wiki/isGameFocused" target="_blank">
+     isGameFocused
+    </a>
+    <br/>
+   </null>
+  </li>
+  <li>
+   <null>
+    Added: New script command
+    <a href="https://community.bistudio.com/wiki/isGamePaused" target="_blank">
+     isGamePaused
+    </a>
+    <br/>
+   </null>
+  </li>
+  <li>
+   <null>
+    Added: New script command
+    <a href="https://community.bistudio.com/wiki/getMissionPath" target="_blank">
+     getMissionPath
+    </a>
+    <br/>
+   </null>
+  </li>
+  <li>
+   <null>
+    Added: New script command
+    <a href="https://community.bistudio.com/wiki/getPosWorldVisual" target="_blank">
+     getPosWorldVisual
+    </a>
+    <br/>
+   </null>
+  </li>
+  <li>
+   <null>
+    Added:
+    <a href="https://community.bistudio.com/wiki/currentPilot" target="_blank">
+     currentPilot
+    </a>
+    command (returns the currently piloting unit)
+    <br/>
+   </null>
+  </li>
+  <li>
+   <null>
+    Added:
+    <a href="https://community.bistudio.com/wiki/getDiverState" target="_blank">
+     getDiverState
+    </a>
+    command (returns the current diver state of the unit)
+    <br/>
+   </null>
+  </li>
+  <li>
+   <null>
+    Added: The
+    <a href="https://community.bistudio.com/wiki/in" target="">
+     in
+    </a>
+    scripting command can now be used also with strings
+    <br/>
+   </null>
+  </li>
+ </ul>
+ <ul>
+  <li>
+   Tweaked: The default
+   <a href="https://community.bistudio.com/wiki/server.cfg#Server_Behavior" target="_blank">
+    lobbyIdleTimeout
+   </a>
+   was increased to 300 seconds
+   <br/>
+  </li>
+  <li>
+   Tweaked: Default values for
+   <a href="https://community.bistudio.com/wiki/server.cfg#Server_Behavior" target="_blank">
+    timeout
+   </a>
+   were changed to: votingTimeOut=10 mins, roleTimeOut=15 mins, briefingTimeOut=10 mins, debriefingTimeOut=10 mins, lobbyIdleTimeout=25 mins
+   <br/>
+  </li>
+  <li>
+   Tweaked: Improved performance of
+   <a href="https://community.bistudio.com/wiki/toString" target="_blank">
+    toString
+   </a>
+   <br/>
+  </li>
+  <li>
+   Tweaked: Enabled the
+   <a href="https://community.bistudio.com/wiki/waitUntil" target="_blank">
+    waitUntil
+   </a>
+   return value warning instead of break as default
+   <br/>
+  </li>
+ </ul>
+ <ul>
+  <li>
+   Changed:
+   <a href="https://community.bistudio.com/wiki/createDiaryRecord" target="_blank">
+    createDiaryRecord
+   </a>
+   now accepts additional parameter showTitle, which can hide the typical Date, Time of entry format title
+   <br/>
+  </li>
+ </ul>
+ <ul>
+  <li>
+   Fixed:
+   <i>
+    DSCheckSignature
+   </i>
+   did not always work correctly with v3 signatures
+   <br/>
+  </li>
+  <li>
+   Fixed: The
+   <a href="https://community.bistudio.com/wiki/callExtension" target="_blank">
+    RVExtensionVersion
+   </a>
+   function definition not matching the Windows one (the "int outputSize" function arg was missing)
+   <br/>
+  </li>
+  <li>
+   Fixed: The
+   <i>
+    PathCalculated
+   </i>
+   Event Handler would fill each path node with [X, Z, Z] instead of [X, Z, Y]
+   <br/>
+  </li>
+  <li>
+   Fixed: The array version of the
+   <a href="https://community.bistudio.com/wiki/callExtension" target="_blank">
+    callExtension
+   </a>
+   script command did not check if the function name argument is a string
+   <br/>
+  </li>
+  <li>
+   Fixed: Random shadow artifacts when drawing roads in the map
+   <br/>
+  </li>
+  <li>
+   Fixed: The
+   <a href="https://community.bistudio.com/wiki/set" target="_blank">
+    set
+   </a>
+   command would allow creation of arrays with an over-the-limit size
+   <br/>
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/append" target="_blank">
+    append
+   </a>
+   would not check for infinite recursion when adding an array to another array
+   <br/>
+  </li>
+  <li>
+   Fixed: Incorrect color of thermal modes if the first optic mode was day light only and the second one was GHOT for example
+   <br/>
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/UAVControl" target="_blank">
+    UAVControl
+   </a>
+   would return either the driver or the gunner but never both
+   <br/>
+  </li>
+  <li>
+   Fixed: Server did not restart with missionsToServerRestart set
+   <br/>
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/Multiplayer_Server_Commands#Admin" target="_blank">
+    #monitor
+   </a>
+   and
+   <a href="https://community.bistudio.com/wiki/Multiplayer_Server_Commands#Admin" target="_blank">
+    #monitorDS
+   </a>
+   were showing wrong memory usage
+   <br/>
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/Multiplayer_Server_Commands#Admin" target="_blank">
+    #monitor
+   </a>
+   and
+   <a href="https://community.bistudio.com/wiki/Multiplayer_Server_Commands#Admin" target="_blank">
+    #monitorDS
+   </a>
+   were not transferred after server restart
+   <br/>
+  </li>
+  <li>
+   Fixed: Passing
+   <a href="https://community.bistudio.com/wiki/controlNull" target="_blank">
+    controlNull
+   </a>
+   to
+   <a href="https://community.bistudio.com/wiki/tvExpandAll" target="_blank">
+    tvExpandAll
+   </a>
+   caused a CTD
+   <br/>
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/tvDelete" target="_blank">
+    tvDelete
+   </a>
+   returned "" when it should return nothing when the control is null
+   <br/>
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/tvSort" target="_blank">
+    tvSort
+   </a>
+   and
+   <a href="https://community.bistudio.com/wiki/tvSortByValue" target="_blank">
+    tvSortByValue
+   </a>
+   would fail if an optional parameter was not passed to the command
+   <br/>
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/Arma_3:_Event_Handlers#Deleted" target="_blank">
+    Deleted EH
+   </a>
+   would trigger when a unit enters a vehicle
+   <br/>
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/currentMuzzle" target="_blank">
+    currentMuzzle
+   </a>
+   and
+   <a href="https://community.bistudio.com/wiki/currentWeaponMode" target="_blank">
+    currentWeaponMode
+   </a>
+   could return a number instead of a string
+   <br/>
+  </li>
+  <li>
+   Fixed: Compartments lights were drawing light flares in certain situations
+   <br/>
+  </li>
+  <li>
+   Fixed: The FOV of all vehicles would change when the player FOV changed
+   <br/>
+  </li>
+  <li>
+   Fixed: A potential Backpack inventory glitch
+   <br/>
+  </li>
+  <li>
+   Fixed: An issue where "-name=aaa bbb" would create a profile folder "aaa bbb" instead of just aaa bbb (without quotes)
+   <br/>
+  </li>
+  <li>
+   Fixed: Script file paths were trimmed too aggressively in error messages
+   <br/>
+  </li>
+  <li>
+   Fixed: Return value of
+   <a href="https://community.bistudio.com/wiki/attachedTo" target="">
+    attachedTo
+   </a>
+   if the command was used on objNull
+   <br/>
+  </li>
+  <li>
+   Fixed: Memory alignment issues
+   <br/>
+  </li>
+ </ul>
+ <h2>
+  SERVER
+ </h2>
+ <ul>
+  <li>
+   Updated: Stand-alone Windows Dedicated Server (1.96)
+   <br/>
+  </li>
+  <li>
+   Updated: Stand-alone Linux Dedicated Server (1.96)
+   <br/>
+  </li>
+  <ul>
+   <li>
+    The data in
+    <i>
+     -mod=contact
+    </i>
+    is not fully multiplayer compatible (it is meant for the singleplayer campaign experience); we recommend only hosting servers with it for special use cases
+    <br/>
+   </li>
+   <ul>
+    <li>
+     This data is signed by a new A3C key whose presence can be used to control what client data is allowed on the server
+     <br/>
+    </li>
+   </ul>
+  </ul>
+  <li>
+   Known issue: Steam client modifies the
+   <i>
+    steam_appid.txt
+   </i>
+   file incorrectly. In case of issues, verify its content is:
+   <b>
+    107410
+   </b>
+   <br/>
+  </li>
+  <li>
+   Known issue: Sometimes the add-ons are loaded from the wrong installation (e.g. main game)
+   <br/>
+  </li>
+  <li>
+   Try adding
+   <i>
+    -mod=curator;kart;heli;mark;expansion;jets;argo;orange;tacops;tank;enoch
+   </i>
+   to your arma3server.exe shortcut
+   <br/>
+  </li>
+ </ul>
+ <p>
+ </p>
+</div>

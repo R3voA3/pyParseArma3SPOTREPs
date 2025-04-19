@@ -1,0 +1,196 @@
+<div class="post-content">
+ <p>
+  FROM: High Command
+  <br>
+   TO: Arma 3 Users
+   <br>
+    UNIT: Main Branch
+    <br>
+     ACTIVITY: Hotfix: 1.60 (Crash Fixes, Miscellaneous)
+     <br/>
+     SIZE: ~23 MB / ~6.6 MB
+    </br>
+   </br>
+  </br>
+ </p>
+ <h1>
+  NOTES
+ </h1>
+ <ul>
+  <li>
+   Consider using the Steam client option to verify the integrity of the local game cache to avoid corrupted data after downloading this update.
+  </li>
+  <li>
+   Consider defragmenting your HDD after downloading large updates.
+  </li>
+  <li>
+   Updating a deeply moddable game and its platform is not without risks. We use various methods to communicate upcoming
+   <span class="inline-comment-marker" data-ref="e7f6b244-69f5-4ade-ae2f-9533b18f021f">
+    changes
+   </span>
+   to our awesome modding community, such as via the
+   <a href="https://dev.arma3.com/" target="_blank">
+    Dev Hub
+   </a>
+   . We also co-operate directly on troubleshooting, and we
+   <span class="inline-comment-marker" data-ref="a3cf5369-735f-46d5-a69f-1b2df3f91184">
+    offer an opportunity to test updates
+   </span>
+   via our
+   <a href="https://dev.arma3.com/rc-branch" target="_blank">
+    Release Candidate tests
+   </a>
+   . Modders, server administrators and other members of the community do their best to prepare for updates and to address issues post-release as quickly as possible. Please
+   <span class="inline-comment-marker" data-ref="a8495d35-5d79-4264-968d-7293635b086f">
+    be mindful of
+   </span>
+   some
+   <span class="inline-comment-marker" data-ref="3c66cbe2-6bca-494a-b6f0-4fc20e38cf01">
+    interruptions (especially in the first hours / days after a release)
+   </span>
+   while we all work to improve the game together.
+  </li>
+  <li>
+   A
+   <em>
+    Legacy Build
+   </em>
+   Steam branch is available for advanced users. It contains the previous significant main branch version (1.58). It can be used to compare specific changes between major releases. The access code for this branch is:
+   <em>
+    Arma3Legacy158
+   </em>
+  </li>
+  <li>
+   This update does not apply to
+   <a href="http://dev.arma3.com/ports" target="_blank">
+    the experimental Linux and Mac port betas
+   </a>
+   at time of writing. We'll be updating those as soon as possible.
+  </li>
+  <li>
+   You can find the servers in the Steam library (switch the filter to "Tools") - "Arma 3 Server" (based on your OS, it will download the Windows or Linux version).
+   <ul>
+    <li>
+     Administrators can also use the command-line
+     <a href="https://developer.valvesoftware.com/wiki/SteamCMD" target="_blank">
+      SteamCMD
+     </a>
+     utility. The app ID is to be 233780.
+    </li>
+    <li>
+     <p>
+      NVIDIA GameWorks™ Technology provided under license from NVIDIA Corporation. Copyright © 2002-2016 NVIDIA Corporation. All rights reserved. NVIDIA® and PhysX® are trademarks of NVIDIA Corporation and are used under license.
+     </p>
+    </li>
+   </ul>
+  </li>
+  <li>
+   In case of problems, please check the
+   <a href="http://support.bistudio.com/arma-3" target="_blank">
+    Bohemia Interactive support F.A.Q.
+   </a>
+   ,
+   <a href="http://arma3.com/faq" target="_blank">
+    Arma 3 F.A.Q.
+   </a>
+   or
+   <a href="http://www.battleye.com/support/faq/" target="_blank">
+    BattlEye F.A.Q.
+   </a>
+  </li>
+  <li>
+   You can help us to further improve the game by posting your feedback on the
+   <a href="http://feedback.arma3.com/" target="_blank">
+    Feedback Tracker
+   </a>
+   .
+  </li>
+ </ul>
+ <h1>
+  CHANGELOG
+ </h1>
+ <h2>
+  ENGINE:
+ </h2>
+ <ul>
+  <li>
+   Fixed: Server crash connected to inventory containers
+  </li>
+  <li>
+   Fixed: The
+   <em>
+    "No servers found"
+   </em>
+   message was displayed in the Quick Play screen even before connecting to a server in some cases
+  </li>
+  <li>
+   Fixed: The
+   <em>
+    "First"
+   </em>
+   option in the Quick Play screen would not work correctly in some cases
+  </li>
+ </ul>
+ <h2>
+  LAUNCHER:
+ </h2>
+ <ul>
+  <li>
+   Fixed: Corrupted PBO files sized smaller than 20 bytes could cause a crash
+  </li>
+  <li>
+   Fixed: The Launcher
+   <a href="https://community.bistudio.com/wiki/Arma_3_Analytics" target="_blank">
+    Analytics
+   </a>
+   setting was not remembered due to recent support for Unicode characters in profile names
+  </li>
+  <li>
+   Fixed: Potential crash when the
+   <em>
+    meta.cpp
+   </em>
+   file got corrupted
+  </li>
+  <li>
+   Fixed: Synchronization of already stored (legacy) mods was incorrect
+  </li>
+ </ul>
+ <h2>
+  SERVER:
+ </h2>
+ <ul>
+  <li>
+   Updated: Stand-alone Windows Dedicated Server (hotfix 1.60)
+  </li>
+  <li>
+   Updated: Stand-alone Linux Dedicated Server (hotfix 1.60)
+   <ul>
+    <li>
+     Known issue: Steam client modifies the
+     <em>
+      steam_appid.txt
+     </em>
+     file incorrectly. In case of issues, verify its content is:
+     <strong>
+      107410
+     </strong>
+    </li>
+    <li>
+     Known issue: Sometimes the add-ons are loaded from the wrong installation (e.g. main game)
+    </li>
+    <li>
+     Try adding
+     <em>
+      -mod=curator;kart;heli;mark;dlcbundle
+     </em>
+     to your
+     <em>
+      arma3server.exe
+     </em>
+     shortcut
+    </li>
+   </ul>
+  </li>
+ </ul>
+</div>

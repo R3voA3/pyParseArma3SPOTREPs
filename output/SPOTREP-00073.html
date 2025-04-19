@@ -1,0 +1,1801 @@
+<div class="post-content">
+ <p>
+  FROM: High Command
+  <br/>
+  TO: Arma 3 Users
+  <br/>
+  UNIT: Main Branch
+  <br/>
+  ACTIVITY: Game Update 1.76 (Laws of War DLC, Mine Detector Enhancements)
+  <br/>
+  SIZE: ~9.0 GB / ~1.4 GB (depends on Apex ownership)
+ </p>
+ <h1>
+  NOTES
+ </h1>
+ <ul>
+  <li>
+   Consider using the Steam client option to verify the integrity of the local game cache to avoid corrupted data after downloading this update.
+  </li>
+  <li>
+   Consider defragmenting your HDD after downloading large updates.
+  </li>
+  <li>
+   Updating a deeply moddable game and its platform is not without risks. We use various methods to communicate upcoming changes to our awesome modding community, such as via the
+   <a href="https://dev.arma3.com/" target="_blank">
+    Dev Hub
+   </a>
+   . We also co-operate directly on troubleshooting, and we offer an opportunity to test updates via our
+   <a href="https://dev.arma3.com/rc-branch" target="_blank">
+    Release Candidate tests
+   </a>
+   . Modders, server administrators and other members of the community do their best to prepare for updates and to address issues post-release as quickly as possible. Please be mindful of some interruptions (especially in the first hours / days after a release) while we all work to improve the game together.
+  </li>
+  <li>
+   A
+   <em>
+    Legacy Build
+   </em>
+   Steam branch is available for advanced users. It contains the previous significant main branch version (1.74). It can be used to compare specific changes between major releases. The access code for this branch is:
+   <em>
+    Arma3Legacy174
+   </em>
+  </li>
+  <li>
+   This update does not apply to
+   <a href="http://dev.arma3.com/ports" target="_blank">
+    the experimental Linux and Mac port betas
+   </a>
+   at time of writing. We hope to be updating those as soon as possible.
+  </li>
+  <li>
+   You can find the servers in the Steam library (switch the filter to "Tools") - "Arma 3 Server" (based on your OS, it will download the Windows or Linux version).
+   <ul>
+    <li>
+     Administrators can also use the command-line
+     <a href="https://developer.valvesoftware.com/wiki/SteamCMD" target="_blank">
+      SteamCMD
+     </a>
+     utility. The app ID is to be 233780.
+    </li>
+    <li>
+     NVIDIA GameWorks™ Technology provided under license from NVIDIA Corporation. Copyright © 2002-2017 NVIDIA Corporation. All rights reserved. NVIDIA® and PhysX® are trademarks of NVIDIA Corporation and are used under license.
+    </li>
+   </ul>
+  </li>
+  <li>
+   In case of problems, please check the
+   <a href="http://support.bistudio.com/arma-3" target="_blank">
+    Bohemia Interactive support F.A.Q.
+   </a>
+   ,
+   <a href="http://arma3.com/faq" target="_blank">
+    Arma 3 F.A.Q.
+   </a>
+   ,
+   <a href="http://www.battleye.com/support/faq/" target="_blank">
+    BattlEye F.A.Q.
+   </a>
+   , or
+   <a href="https://arma3.com/launcher/troubleshooting" target="_blank">
+    Launcher troubleshooting guide
+   </a>
+   .
+  </li>
+  <li>
+   You can help us to further improve the game by posting your feedback on the
+   <a href="http://feedback.arma3.com/" target="_blank">
+    Feedback Tracker
+   </a>
+   .
+  </li>
+ </ul>
+ <h1>
+  CHANGELOG
+ </h1>
+ <h2>
+  DATA:
+ </h2>
+ <ul>
+  <li>
+   <strong>
+    Added:
+    <a href="https://arma3.com/dlc/lawsofwar" target="_blank">
+     Laws of War DLC
+    </a>
+    *
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: International Development &amp; Aid Project faction (IDAP)
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: IDAP Vehicles (reskins)
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: IDAP Cap (variants)
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Aid Worker Clothes (variants)
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Van (Transport, Cargo, Ambulance variants - 20+ liveries)*
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Utility Drone (Cargo, Medical variants)*
+   </strong>
+   <ul>
+    <li>
+     <strong>
+      Added: Corresponding UAV bags
+     </strong>
+    </li>
+   </ul>
+  </li>
+  <li>
+   <strong>
+    Added: Demining Drone*
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: APERS Mine Dispenser*
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Training Mine*
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Cluster Bombs (3 factions - see Pylon settings of aircraft)
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Unexploded Ordnance (3 factions x 4 triggers)
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Safety Vest (variants)*
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Multi-Pocket Vest (variants)*
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Identification Vest (variants)*
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: EOD Vest (variants)*
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Messenger Bag (variants)*
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Leg Strap Bag (variants)*
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Wireless Earpiece*
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Ear Protectors (variants)*
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Hard Hat (variants)*
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Safari Hat (variants)*
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Head Bandage (variants)*
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Basic Helmet (variants)*
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Press Helmet (variants)*
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Respirator (variants)*
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Safety Goggles*
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Construction Coveralls
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Paramedic Outfit*
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: IDAP Objects
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Tent Objects
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Humanitarian Aid Objects
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Medical Objects
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Furniture Objects
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: “Remnants of War” mini-campaign**
+   </strong>
+   <ul>
+    <li>
+     <strong>
+      Added: Various campaign-related special character compositions
+     </strong>
+    </li>
+   </ul>
+  </li>
+  <li>
+   <strong>
+    Added: Showcase IDAP
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Showcase Laws of War
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: TT11: Downhill Rumble
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: TT12: Jungle Fever ** ***
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: TT13: Turbulence
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: TT14: Life in Danger ** ***
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: TT15: Off Road Excavation ** ***
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: IDAP map marker set
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: IDAP Orange UI color preset
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: International Humanitarian Law Field Manual entries
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Scripted
+    <a href="https://community.bistudio.com/wiki/Arma_3_Leaflets" target="_blank">
+     Leaflets
+    </a>
+    feature
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: 7 new
+    <a href="http://steamcommunity.com/stats/107410/achievements" target="_blank">
+     Steam Achievements
+    </a>
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: IDAP Time Trial Steam Leaderboards
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Laws of War DLC music tracks
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Main Menu spotlight tiles for Laws of War DLC content
+   </strong>
+  </li>
+ </ul>
+ <p>
+  * Restrictions apply for those who don’t own
+  <a href="https://store.bistudio.com/products/arma3-lawsofwar" target="_blank">
+   Arma 3 Laws of War DLC
+  </a>
+  .
+  <br/>
+  ** Content requires ownership of
+  <a href="https://store.bistudio.com/products/arma3-lawsofwar" target="_blank">
+   Arma 3 Laws of War DLC
+  </a>
+  .
+  <br/>
+  *** Content requires ownership of
+  <a href="https://store.bistudio.com/products/arma3-apex" target="_blank">
+   Arma 3 Apex
+  </a>
+  .
+ </p>
+ <ul>
+  <li>
+   <strong>
+    Added: Carrier Deck Objects
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: The
+    <a href="https://forums.bistudio.com/forums/topic/209195-laws-of-war-dlc-mines/" target="_blank">
+     Mine Detector
+    </a>
+    now features audio cues
+   </strong>
+   (the distance and direction of unrevealed mines are now both represented while the tool is in player's inventory)
+  </li>
+  <li>
+   Added: Asset-specific SFX for placement, triggering and defusal for the following explosives:
+   <ul>
+    <li>
+     APERS Bounding Mine
+    </li>
+    <li>
+     APERS Mine
+    </li>
+    <li>
+     APERS TripWire
+    </li>
+    <li>
+     AT Mine
+    </li>
+    <li>
+     Explosive Satchel Charge
+    </li>
+    <li>
+     Explosive Charge
+    </li>
+    <li>
+     Claymore Charge
+    </li>
+   </ul>
+  </li>
+  <li>
+   Added: Main Menu tile for the Malden terrain
+  </li>
+  <li>
+   Added: A waypoint indicator to the HUD of the A-164
+  </li>
+  <li>
+   Added: The task 'description' property can be now defined as a formatted array in the
+   <em>
+    CfgTaskDescriptions
+   </em>
+   class
+  </li>
+  <li>
+   Added: Support for insignia materials
+  </li>
+  <li>
+   Added: A new
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_allTurrets" target="_blank">
+    <em>
+     BIS_fnc_allTurrets
+    </em>
+   </a>
+   function
+  </li>
+  <li>
+   Added: An ability to pre-fill the search field using a fourth (optional) parameter for the
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_openFieldManual" target="_blank">
+    <em>
+     BIS_fnc_openFieldManual
+    </em>
+   </a>
+   function
+  </li>
+  <li>
+   Added: An optional third parameter for the
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_VRSpawnEffect" target="_blank">
+    <em>
+     BIS_fnc_VRSpawnEffect
+    </em>
+   </a>
+   function to select a large effect size (0: regular / default - 1: large)
+  </li>
+  <li>
+   Added: Laser designators now show a special cursor when the laser is active
+  </li>
+  <li>
+   Added: An ability to change the MFD color using the
+   <a href="https://community.bistudio.com/wiki/setUserMFDvalue" target="_blank">
+    setUserMFDvalue
+   </a>
+   script command
+  </li>
+  <li>
+   Added: New icons for non-default camo variants of the MK20 rifle
+  </li>
+  <li>
+   Added: Non-moving variants of wind turbines; you can find them in the editor as
+   <em>
+    "Wind Turbine (Off)"
+   </em>
+   and
+   <em>
+    "Wind Turbine (Off, Camo)"
+   </em>
+  </li>
+  <li>
+   Added: Light when firing launchers; also moved light and smoke effects from ammo to the weapon itself for the NLAW and Titan
+  </li>
+  <li>
+   Added: The scenario description in the loading screen now stretches vertically up to the height of the overview image
+  </li>
+  <li>
+   Added: A new
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_drawArrow" target="_blank">
+    <em>
+     BIS_fnc_drawArrow
+    </em>
+   </a>
+   function for drawing arrows on maps
+  </li>
+  <li>
+   Added: A
+   <em>
+    "Recompile Selected"
+   </em>
+   button is now available in the Functions Viewer
+  </li>
+  <li>
+   Added: Two liveries for the Buzzard plane (Grey hex and Brown hex)
+  </li>
+  <li>
+   Added: A new
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_fire" target="_blank">
+    <em>
+     BIS_fnc_fire
+    </em>
+   </a>
+   function
+  </li>
+  <li>
+   Added: Ambient sounds for fowls &amp; goats
+  </li>
+  <li>
+   Added: Sounds during parachute descent for both first and third person views
+  </li>
+  <li>
+   Added: The DLC Content Browser (LShift+P) can now show Steam Achievements available for a given DLC (currently configured only for Laws of War DLC)
+  </li>
+  <li>
+   Added: Camo selections to all sidearms which didn't have them before
+  </li>
+  <li>
+   Added: Camo selections to both remote designators
+  </li>
+  <li>
+   Added: New camo selection for the Mk200 machine gun
+  </li>
+  <li>
+   Added: Camo selections to all weapons which were missing them
+  </li>
+  <li>
+   Added: A new
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_initInspectable" target="_blank">
+    <em>
+     BIS_fnc_initInspectable
+    </em>
+   </a>
+   function to initialize an object with an action to inspect it (also used for leaflets)
+  </li>
+  <li>
+   Added: Cluster Bomb MFD icons for
+   <a href="https://arma3.com/dlc/jets" target="_blank">
+    Jets DLC
+   </a>
+   planes
+  </li>
+  <li>
+   Added: The Bobcat's plow now has a cosmetic animation with SFX via scripting (not intended as full feature, but for specific circumstances)
+  </li>
+  <li>
+   Added: An information prompt is displayed when the
+   <a href="https://community.bistudio.com/wiki/Arma_3_Custom_Info" target="_blank">
+    Info Panel
+   </a>
+   controls aren't mapped
+  </li>
+  <li>
+   Added: Specific Supports icon for helicopter CAS
+  </li>
+  <li>
+   Tweaked: Visual mine spotting abilities of character types were reduced as part of the Mine Detector tweaks (more manual effort required, but specialists are still more skilled)
+  </li>
+  <li>
+   Tweaked: The USS Freedom prop was overhauled (all models reworked, configuration and model config updated to represent a new model set - no changes to textures, geometries were updated)
+  </li>
+  <li>
+   Tweaked: Tactical Ping icon and sound
+  </li>
+  <li>
+   Tweaked: The Darter SFX are now using some of the improvements developed for the new Utility Drone
+  </li>
+  <li>
+   Tweaked: Pilots of the Wipeout, Buzzard and Neophron were changed to Fighter Pilots (no parachute, pistol only)
+  </li>
+  <li>
+   Tweaked: The availability of the debug console can now be configured using the
+   <em>
+    CfgDebugConsole
+   </em>
+   class
+  </li>
+  <li>
+   Tweaked: The debug console can now be configured with the
+   <em>
+    "enableDebugConsole"
+   </em>
+   root mod parameter
+  </li>
+  <li>
+   Tweaked: Flight model of the Black Wasp II plane (it should be more stable and have a more correct AoA behavior)
+  </li>
+  <li>
+   Tweaked: The durability of fighter jets was improved
+  </li>
+  <li>
+   Tweaked: Slightly reduced the maneuverability, damage and countermeasure resistance of MR missiles
+  </li>
+  <li>
+   Tweaked: The distance of the MR missile proximity fuse was increased
+  </li>
+  <li>
+   Tweaked: The intensity of Flora, Fauna, and Wind sound layers was adjusted (Stratis, Altis and Malden)
+  </li>
+  <li>
+   Tweaked: The AMRAAM missiles were replaced by ASRAAMs in the Wipeout AA loadout
+  </li>
+  <li>
+   Tweaked: The collision shape of characters when crawling to the sides was improved
+  </li>
+  <li>
+   Tweaked: Parachutes are no longer required in Showcase Fixed Wings due to the new ejection seat feature
+  </li>
+  <li>
+   Tweaked: VR blocks can now be also retextured using procedural textures along with material changing
+  </li>
+  <li>
+   Tweaked: The weight of the Vehicle Ammo Box was adjusted to make it able to be sling loaded by Mohawks and Ghosthawks
+  </li>
+  <li>
+   Tweaked: Rifles using caseless ammo do not eject (fake) empty cartridge models anymore
+  </li>
+  <li>
+   Tweaked: The
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_selectRandomWeighted" target="_blank">
+    <em>
+     BIS_fnc_selectRandomWeighted
+    </em>
+   </a>
+   function is now optimized
+  </li>
+  <li>
+   Tweaked: Jets are now using weapon relative CCIP calculations when locked onto other aircraft and using machineguns
+  </li>
+  <li>
+   Tweaked: The fire rates of the GSh cannon and M61 minigun were increased
+  </li>
+  <li>
+   Tweaked: Slightly lowered volumes for the Blackfoot Minigun and Slammer Coaxial weapons
+  </li>
+  <li>
+   Tweaked: Black Wasp, Shikra, Gryphon and Buzzard are now slightly more vulnerable to .50 cal weapons
+  </li>
+  <li>
+   Tweaked: The tyre penetration material was replaced with rubber where appropriate
+  </li>
+  <li>
+   Tweaked: The sound of wind in one of the Tanoa Main Menu world scenes was reduced
+  </li>
+  <li>
+   Tweaked: The mass value of the
+   <em>
+    b_leucaena_f
+   </em>
+   bush was reduced in order to deal less damage to vehicles
+  </li>
+  <li>
+   Tweaked: Combat Patrol - weather &amp; daytime presets are no longer forced for user-made scenarios
+  </li>
+  <li>
+   Tweaked: Improved civilian base class event handler inheritance for better compatibility with community addons
+  </li>
+  <li>
+   Tweaked: Icons of the TRG-20 now represent the current visual state
+  </li>
+  <li>
+   Tweaked: The function that does the adjustments to vehicles through Garage is now spawned (this way it works properly also for
+   <a href="https://community.bistudio.com/wiki/Arma_3_Simple_Objects" target="_blank">
+    Simple Objects
+   </a>
+   )
+  </li>
+  <li>
+   Tweaked: Classes for houses with door locks were changed from
+   <em>
+    house
+   </em>
+   to
+   <em>
+    housesimulated
+   </em>
+   to fix the
+   <em>
+    "Binarize missed persistence"
+   </em>
+   error in the RPT (
+   <a href="https://forums.bistudio.com/forums/topic/143930-general-discussion-dev-branch/?do=findComment&amp;comment=3172400" target="_blank">
+    https://forums.bistudio.com/forums/topic/143930-general-discussion-dev-branch/?do=findComment&amp;comment=3172400
+   </a>
+   )
+  </li>
+  <li>
+   Tweaked: Parachutes no longer have a target signature and they cannot be tracked anymore (too many collateral issues)
+  </li>
+  <li>
+   Tweaked: Time Trials now show the GPS by default (except for karts)
+  </li>
+  <li>
+   Tweaked: The arrival time of the Marid was improved in Showcase Combined Arms
+  </li>
+  <li>
+   Tweaked: AI soldiers are now keener to attack enemy armored vehicles
+  </li>
+  <li>
+   Tweaked: Vanilla weapons now use collimator technology for grenade launcher sights
+  </li>
+  <li>
+   Tweaked: The debug console and the
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_codePerformance" target="_blank">
+    <em>
+     BIS_fnc_codePerformance
+    </em>
+   </a>
+   function were improved
+  </li>
+  <li>
+   Tweaked: The player camera now shakes when ships drive nearby
+  </li>
+  <li>
+   Tweaked: The
+   <em>
+    "COPY RESULT"
+   </em>
+   Debug Console button now copies the whole result rather than just the timing
+  </li>
+  <li>
+   Tweaked: The Y-32 Xi'an (Vehicle Transport) is now again visible in Virtual Garage
+  </li>
+  <li>
+   Tweaked: Concrete Barrier now sticks to terrain instead of keeping horizontal placement
+  </li>
+  <li>
+   Tweaked: There is now an 'Unknown DLC' notification that is displayed when ownership cannot be correctly queried from Steam (please contact
+   <a href="https://support.bistudio.com/" target="_blank">
+    support
+   </a>
+   with details)
+  </li>
+  <li>
+   Tweaked: The Team Switch dialog can now be moved
+  </li>
+  <li>
+   Tweaked: Clicking on a mod icon next to an item description in Virtual Arsenal now opens the DLC Content Browser, not the Field Manual
+  </li>
+  <li>
+   Tweaked: The current function view in Functions Viewer is now auto-refreshed after recompiling
+  </li>
+  <li>
+   Tweaked: Double slash comments in code in the Debug Console are now ignored
+  </li>
+  <li>
+   Tweaked: Support requests can now be called only when the player is pointing on the ground when in the commanding menu
+  </li>
+  <li>
+   Tweaked: Main Menu spotlight upper-casing can now be disabled (
+   <em>
+    disableUpperCase = 1
+   </em>
+   )
+  </li>
+  <li>
+   Tweaked: Tracked vehicles are now properly showing dust when rolling through desert parts of Malden
+  </li>
+  <li>
+   Tweaked: Reloading the Mk-I EMR 7.62 mm was visually incorrect
+  </li>
+  <li>
+   Tweaked: Square brackets wrapping control names in hints are no longer highlighted, bringing focus on the controls themselves
+  </li>
+  <li>
+   Tweaked: The NLAW UI icon was replaced with a new one
+  </li>
+  <li>
+   Tweaked: The loadout and icon of the CSAT SF Paramedic was adjusted
+  </li>
+  <li>
+   Tweaked: Reload animations of the Mk18 rifle were improved
+  </li>
+  <li>
+   Tweaked: The CCIP mark on the Buzzard plane now has an improved shape
+  </li>
+  <li>
+   Tweaked: MRAPs are now more vulnerable against auto cannons from the front
+  </li>
+  <li>
+   Tweaked: Original AR-2 backpacks to identify which drone is inside of them (now that there is the new AL-6)
+  </li>
+  <li>
+   Tweaked: Texture usage on the M-200 machine gun was optimized
+  </li>
+  <li>
+   Tweaked: The CCIP for Kajman &amp; X'ian were slightly adjusted
+  </li>
+  <li>
+   Tweaked: Scalpel missiles are now slower and more agile
+  </li>
+  <li>
+   Tweaked: The visual appearance of MRAP displays was improved
+  </li>
+  <li>
+   Tweaked: Advanced Hints - if an action referenced in a hint is not bound to any key, the action name is displayed in red instead of a generic
+   <em>
+    "undefined"
+   </em>
+   (this should help players find out and set the keybinding for the action)
+  </li>
+  <li>
+   Tweaked: Slightly adjusted rocket impact point indicators for Kajman &amp; X'ian
+  </li>
+  <li>
+   Tweaked: Clicking on a DLC icon in the main menu now opens the DLC Content Browser, not the Field Manual
+  </li>
+  <li>
+   Tweaked: Adjusted the position of placed UAV Terminals (
+   <a href="https://feedback.bistudio.com/T126550" target="_blank">
+    https://feedback.bistudio.com/T126550
+   </a>
+   )
+  </li>
+  <li>
+   Tweaked: The Game Credits were updated
+  </li>
+  <li>
+   Tweaked: The debriefing presentation of usage of non-owned DLC assets has been improved; it now matches the visual style of the DLC Content Browser (Shift+P)
+  </li>
+  <li>
+   Tweaked: When previewing a DLC in the Content Browser (Shift+P), assets which the player used in the scenario are sorted first and marked with an exclamation mark
+  </li>
+  <li>
+   Fixed: Shadows were clipping on the Gryphon's nozzle
+  </li>
+  <li>
+   Fixed: Min / max FOV in Jets DLC aircraft is now consistent with the rest of the game
+  </li>
+  <li>
+   Fixed: The durability of the Brick Bungalow was too low
+  </li>
+  <li>
+   Fixed: The SDAR fire geometry material could stop 0.50 cal bullets (
+   <a href="http://feedback.arma3.com/view.php?id=24497" target="_blank">
+    http://feedback.arma3.com/view.php?id=24497
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: The probability of AI Skyfire fire modes at long distances was improved
+  </li>
+  <li>
+   Fixed: The check for an array value of the
+   <em>
+    enableDebugConsole
+   </em>
+   script command was missing
+  </li>
+  <li>
+   Fixed: Some planes were falling through the carrier deck (
+   <a href="https://forums.bistudio.com/forums/topic/206231-bug-report-uss-freedom/" target="_blank">
+    https://forums.bistudio.com/forums/topic/206231-bug-report-uss-freedom/
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: A string in Showcase Scuba was not localized
+  </li>
+  <li>
+   Fixed: The
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_moduleFriendlyFire" target="_blank">
+    <em>
+     BIS_fnc_moduleFriendlyFire
+    </em>
+   </a>
+   function would not correctly attribute friendly fire caused via player-controlled unarmed drones (collisions)
+  </li>
+  <li>
+   Fixed: Occlusion and obstruction sound for vehicle-mounted weapons was incorrect (
+   <a href="https://feedback.bistudio.com/T124559" target="_blank">
+    https://feedback.bistudio.com/T124559
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: The
+   <em>
+    "Environmental sound BattlefieldExplosions3 not found"
+   </em>
+   pop up error
+  </li>
+  <li>
+   Fixed: Many small localization tweaks and fixes
+  </li>
+  <li>
+   Fixed: Titan &amp; Signal Pistol had incorrect icons in the Field Manual
+  </li>
+  <li>
+   Fixed: Alpha sorting on Pawnee
+  </li>
+  <li>
+   Fixed: The command bar picture of the steerable parachute used an incorrect texture
+  </li>
+  <li>
+   Fixed: Sentences which were using
+   <em>
+    InLocation
+   </em>
+   (e.g.
+   <em>
+    "Move to point Alpha"
+   </em>
+   ) were not used when the checked position was closer than 50 meters to the location
+  </li>
+  <li>
+   Fixed:
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_animType" target="_blank">
+    <em>
+     BIS_fnc_animType
+    </em>
+   </a>
+   did not recognize
+   <em>
+    Apan
+   </em>
+   ,
+   <em>
+    Afds,
+    <em>
+     Afal
+    </em>
+   </em>
+   , and
+   <em>
+    Apar
+   </em>
+   anim types
+  </li>
+  <li>
+   Fixed:
+   <em>
+    "Environmental sound WindFast not found"
+   </em>
+   pop up error
+  </li>
+  <li>
+   Fixed: Karts in the Zeus Karts Race scenarios could spawn incorrectly in some cases
+  </li>
+  <li>
+   Fixed: The Tasks Manager could be opened during cutscenes
+  </li>
+  <li>
+   Fixed: The velocity indicator of the Caesar plane was not working correctly
+  </li>
+  <li>
+   Fixed: The pilot view of the MQ-12 Falcon would be set to maximal zoom after taking over the drone
+  </li>
+  <li>
+   Fixed: House Small 01 was too durable against vehicle weapons
+  </li>
+  <li>
+   Fixed: The AI Team Leader would never ask for healing in Showcase Combined Arms
+  </li>
+  <li>
+   Fixed: The smoke particle effect position for the NLAW and Titan launchers was incorrect
+  </li>
+  <li>
+   Fixed: The
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_addStackedEventHandler" target="_blank">
+    <em>
+     BIS_fnc_addStackedEventHandler
+    </em>
+   </a>
+   function did not accept an object argument or function name
+  </li>
+  <li>
+   Fixed: The
+   <a href="https://community.bistudio.com/wiki/BIS_fnc_addStackedEventHandler" target="_blank">
+    <em>
+     BIS_fnc_addStackedEventHandler
+    </em>
+   </a>
+   function was missing some native parameters, such as
+   <em>
+    _pos
+   </em>
+   in
+   <em>
+    <a href="https://community.bistudio.com/wiki/onMapSingleClick" target="_blank">
+     onMapSingleClick
+    </a>
+   </em>
+  </li>
+  <li>
+   Fixed: One of the Intel tasks in End Game Moddergat was too difficult to pick up due to small object sizes
+  </li>
+  <li>
+   Fixed: Wrecking your vehicle or driving over someone after a Time Trial will now fail the challenge
+  </li>
+  <li>
+   Fixed: Players would be teleported to water when killed in an exploded vehicle in Seize scenarios
+  </li>
+  <li>
+   Fixed: Placing the Butterflies and Seagulls module on a water surface by Zeus was behaving incorrectly
+  </li>
+  <li>
+   Fixed: Spotters were refusing to engage the player in Showcase Infantry
+  </li>
+  <li>
+   Fixed: Part of the Hatchback driving wheel was not animated correctly in third person view
+  </li>
+  <li>
+   Fixed: Mortar gunners would stare at the sky instead of into their weapon's optics
+  </li>
+  <li>
+   Fixed: Double click was taking focus away from double clicked Debug Console fields
+  </li>
+  <li>
+   Fixed: The control stick of the Neophron plane had a different length in its 1st and 2nd LOD
+  </li>
+  <li>
+   Fixed: The dot in GL sights was visible outside the sights
+  </li>
+  <li>
+   Fixed: Incorrect shadow when wearing Full Ghillie and the GA Carrier Rig
+  </li>
+  <li>
+   Fixed: Names of some Jets DLC assets in the DLC Content Browser were not displayed correctly
+  </li>
+  <li>
+   Fixed: The Hellcat was missing the HUD custom colorization feature
+  </li>
+  <li>
+   Fixed: The Blackfish VTOL was too fragile when touching the ground
+  </li>
+  <li>
+   Fixed: Progress of Showcase Zeus could be blocked on Veteran difficulty
+  </li>
+  <li>
+   Fixed: The RCO / ARCO / MRCO scopes did not work properly with the TRG rifle (
+   <a href="https://feedback.bistudio.com/T126045" target="_blank">
+    https://feedback.bistudio.com/T126045
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Karts couldn't be properly transported in another vehicle (i.e. Van) due to missing configuration for their bounding box
+  </li>
+  <li>
+   Fixed: Iron sights on the GM6 were folding in an incorrect direction
+  </li>
+  <li>
+   Fixed: Incorrect objective and enemy spawning in Combat Patrol (Tanoa)
+  </li>
+  <li>
+   Fixed: Ambient Occlusion related visual bugs with the Flat TV prop
+  </li>
+  <li>
+   Fixed: Visual artifacts on iron sights of weapons with an under barrel grenade launcher when certain scopes were attached to them
+  </li>
+  <li>
+   Fixed: Sections on the M-200 machine gun so that camo selections display correctly
+  </li>
+  <li>
+   Fixed: Clock, compass and gear indicators were not working properly on the dashboard of the MB 4WD
+  </li>
+  <li>
+   Fixed: The
+   <em>
+    AddUnits
+   </em>
+   method in the friendly fire module was not working properly
+  </li>
+  <li>
+   Fixed: Used premium assets from unowned Jets / Laws of War DLC were not listed during scenario debriefings
+  </li>
+  <li>
+   Fixed: Bullet penetration properties of the wooden Pallet assets were incorrect
+  </li>
+ </ul>
+ <p>
+  <strong>
+   <a href="https://community.bistudio.com/wiki/Eden_Editor" target="_blank">
+    Eden Editor
+   </a>
+  </strong>
+ </p>
+ <ul>
+  <li>
+   <strong>
+    Added: A new
+    <em>
+     "Edit Terrain Object"
+    </em>
+    module which allows for direct object manipulation
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: A new
+    <em>
+     "Hide Terrain Objects"
+    </em>
+    module which allows for hiding of multiple terrain objects
+   </strong>
+  </li>
+  <li>
+   Added: The CAS module now supports bomb runs (including cluster bombs)
+  </li>
+  <li>
+   Added: Animation Viewer can now be accessed from Eden Editor (
+   <em>
+    Tools
+   </em>
+   &gt;
+   <em>
+    Animation Viewer
+   </em>
+   )
+  </li>
+  <li>
+   Added: Splendid Camera can now be accessed from Eden Editor (
+   <em>
+    Tools
+   </em>
+   &gt;
+   <em>
+    Camera
+   </em>
+   )
+  </li>
+  <li>
+   Added: The debug console is now available by default in Eden Editor's multiplayer preview and for the host only
+  </li>
+  <li>
+   Added: Eden Editor attributes to allow re-texturing Tablets, Photos and VR Billboards
+  </li>
+  <li>
+   Added: Unexploded Ordnance and Training Mines to the Minefield module
+  </li>
+  <li>
+   Fixed: The position of the
+   <em>
+    "Mirror"
+   </em>
+   button in the pylons settings was incorrect
+  </li>
+  <li>
+   Fixed: The DLC attribute in Eden Editor for no DLC was not properly localized
+  </li>
+  <li>
+   Fixed: An editor preview for the Bar gate (open) was missing
+  </li>
+  <li>
+   Fixed: Motorboats had incorrect visibility of the police light bar in Eden Editor
+  </li>
+ </ul>
+ <p>
+  <strong>
+   Prologue (potential spoilers)
+  </strong>
+ </p>
+ <ul>
+  <li>
+   Fixed: Ragdolls of civilians were not visually correct in the Diplomatic Relations scenario
+  </li>
+ </ul>
+ <p>
+  <strong>
+   The East Wind (potential spoilers)
+  </strong>
+ </p>
+ <ul>
+  <li>
+   Tweaked: The player can no longer shoot during the quotation intro of the Signal Lost scenario
+  </li>
+  <li>
+   Fixed: The player wasn't attacked by enemies in the town in case he arrived at the position faster than the rest of the team in the Wet Work scenario
+  </li>
+  <li>
+   Fixed: Players could shoot their weapons during the intro of the Paradise Found scenario
+  </li>
+  <li>
+   Fixed: Levitating magazines on the beach in the Signal Lost scenario
+  </li>
+  <li>
+   Fixed: The Moral Fiber scenario could end when the wheels of convoy vehicles were destroyed
+  </li>
+  <li>
+   Fixed: Players could complete the
+   <em>
+    "Secure the Defenses"
+   </em>
+   task in the Resurgent West scenario without clearing out the area in some cases
+  </li>
+ </ul>
+ <p>
+  <strong>
+   Apex Protocol (potential spoilers)
+  </strong>
+ </p>
+ <ul>
+  <li>
+   Fixed: VTOLs could get stuck near cranes in some cases in the End Game scenario
+  </li>
+ </ul>
+ <h2>
+  ENGINE:
+ </h2>
+ <ul>
+  <li>
+   Added: An iteration of the Mine Detector using the
+   <a href="https://forums.bistudio.com/forums/topic/200468-jets-custom-info/" target="_blank">
+    Custom Info Panel
+   </a>
+   feature (unless your character automatically visually spots the mine, you’ll need to manually reveal it for type identity and mark it for others)
+  </li>
+  <li>
+   Added: A new
+   <a href="https://community.bistudio.com/wiki/allAirports" target="_blank">
+    allAirports
+   </a>
+   script command
+  </li>
+  <li>
+   Added:
+   <em>
+    extCameraParams[] = {-1}
+   </em>
+   to force the old external camera behavior
+  </li>
+  <li>
+   Added: A new
+   <em>
+    muzzleImpulseFactor
+   </em>
+   magazine parameter (range 0 - 1 to tweak the recoil force on vehicles)
+  </li>
+  <li>
+   Added: A new
+   <em>
+    CfgSoundEnvironToControllers
+   </em>
+   core class to have better control over connecting vehicle sounds to surfaces
+  </li>
+  <li>
+   Added: A new
+   <a href="https://community.bistudio.com/wiki/selectRandomWeighted" target="_blank">
+    selectRandomWeighted
+   </a>
+   script command
+  </li>
+  <li>
+   Added: A new
+   <a href="https://community.bistudio.com/wiki/isUIContext" target="_blank">
+    isUIContext
+   </a>
+   script command
+  </li>
+  <li>
+   Added: A new
+   <em>
+    viewDriverInExternal
+   </em>
+   parameter
+  </li>
+  <li>
+   Added: A new
+   <em>
+    ispip
+   </em>
+   animation source
+  </li>
+  <li>
+   Added: New
+   <em>
+    isTurret
+   </em>
+   and
+   <em>
+    isGun
+   </em>
+   parameters (removing problematic and hard-coded
+   <em>
+    "HitTurret"
+   </em>
+   &amp;
+   <em>
+    "HitGun"
+   </em>
+   dependencies;
+   <em>
+    "HitTurret"
+   </em>
+   &amp;
+   <em>
+    "HitGun"
+   </em>
+   still work as before)
+  </li>
+  <li>
+   Added: A new
+   <em>
+    clockhour24
+   </em>
+   animation source (it goes from 0 to 1 in 24h)
+  </li>
+  <li>
+   Added: A new
+   <a href="https://community.bistudio.com/wiki/drawTriangle" target="_blank">
+    drawTriangle
+   </a>
+   scripting command
+  </li>
+  <li>
+   Added: New MFD source
+   <em>
+    targetHeight
+   </em>
+  </li>
+  <li>
+   Added: New scipt commands for
+   <a href="https://community.bistudio.com/wiki/Arma_3_Custom_Info" target="_blank">
+    Info Panels
+   </a>
+   -
+   <em>
+    infoPanelComponents
+   </em>
+   ,
+   <em>
+    enableInfoPanelComponent
+   </em>
+   ,
+   <em>
+    infoPanelComponentEnabled
+   </em>
+   ,
+   <em>
+    setInfoPanel
+   </em>
+   ,
+   <em>
+    infoPanels
+   </em>
+   ,
+   <a href="https://community.bistudio.com/wiki/showHUD" target="_blank">
+    showHUD
+   </a>
+   (updated),
+   <a href="https://community.bistudio.com/wiki/shownHUD" target="_blank">
+    shownHUD
+   </a>
+   (updated)
+  </li>
+  <li>
+   Added: New
+   <em>
+    weaponHeading
+   </em>
+   ,
+   <em>
+    laserDist
+   </em>
+   ,
+   <em>
+    visionMode
+   </em>
+   , and
+   <em>
+    flirMode
+   </em>
+   MFD sources
+  </li>
+  <li>
+   Added: A new
+   <em>
+    displayNameMFDFormat
+   </em>
+   magazine config parameter (example:
+   <em>
+    displayNameMFDFormat = "A%1C"
+   </em>
+   , %1 for ammo count, %2 remaining mags count, %3 total mags count, %4 mag capacity)
+  </li>
+  <li>
+   Added: A new
+   <em>
+    ammoFormat
+   </em>
+   MFD source
+  </li>
+  <li>
+   Added: New
+   <em>
+    reloadMagazine
+   </em>
+   and
+   <em>
+    ammoRandom
+   </em>
+   pylon / pylonObject animation sources
+  </li>
+  <li>
+   Added: New
+   <em>
+    drivingstickRight
+   </em>
+   ,
+   <em>
+    drivingstickLeft
+   </em>
+   ,
+   <em>
+    drivingWheel
+   </em>
+   animation sources for armored vehicles
+  </li>
+  <li>
+   Added: A new
+   <em>
+    getUserMFDvalue
+   </em>
+   script command
+  </li>
+  <li>
+   Added: Randomized deployed mine orientation
+  </li>
+  <li>
+   Tweaked: AI skill inversion was
+   <a href="https://forums.bistudio.com/forums/topic/150499-ai-discussion-dev-branch/?page=187#comment-3220586" target="_blank">
+    refactored
+   </a>
+   (
+   <em>
+    Skill
+   </em>
+   and
+   <em>
+    Precision
+   </em>
+   values should now more correspond with the range: 0 - 1)
+  </li>
+  <li>
+   Tweaked: The
+   <a href="https://community.bistudio.com/wiki/disableAI" target="_blank">
+    disableAI
+   </a>
+   /
+   <a href="https://community.bistudio.com/wiki/enableAI" target="_blank">
+    enableAI
+   </a>
+   commands now work also for mine detection (
+   <em>
+    "MINEDETECTION"
+   </em>
+   )
+  </li>
+  <li>
+   Tweaked:
+   <em>
+    "Mine Detected"
+   </em>
+   messages are now played with an interval of 10 seconds
+  </li>
+  <li>
+   Tweaked: The
+   <a href="https://community.bistudio.com/wiki/diag_codePerformance" target="_blank">
+    diag_codePerformance
+   </a>
+   script command now allows full cycles of execution when
+   <em>
+    enableDebugConsole
+   </em>
+   is an array
+  </li>
+  <li>
+   Tweaked: The
+   <em>
+    shotShell
+   </em>
+   ,
+   <em>
+    shotSubmunitions
+   </em>
+   , and
+   <em>
+    shotGrenade
+   </em>
+   ammo simulation types now work also on pylons
+  </li>
+  <li>
+   Tweaked: The
+   <em>
+    shotIlluminating
+   </em>
+   ammo simulation type now works also on airplanes
+  </li>
+  <li>
+   Tweaked: Updated log messages relating to null objects or groups passed to
+   <a href="https://community.bistudio.com/wiki/remoteExec" target="_blank">
+    remoteExec
+   </a>
+   as arguments
+  </li>
+  <li>
+   Tweaked: The
+   <a href="https://community.bistudio.com/wiki/allowCrewInImmobile" target="_blank">
+    allowCrewInImmobile
+   </a>
+   script command now prevents AI vehicle crew to replace their dead drivers
+  </li>
+  <li>
+   Tweaked: The performance and behavior of flags was improved in MP
+  </li>
+  <li>
+   Tweaked: AI should now be able to spot enemies faster (linked to the skill inversion tweaking)
+  </li>
+  <li>
+   Tweaked: Spotting and aiming error values of AI were improved (idem)
+  </li>
+  <li>
+   Tweaked: The game may start up to 5 seconds faster
+  </li>
+  <li>
+   Tweaked: Small reduction in AI spotting speeds in connection to skill tweaks
+  </li>
+  <li>
+   Tweaked: Planes and helicopters with sensors are now locking faster
+  </li>
+  <li>
+   Fixed: The
+   <a href="https://community.bistudio.com/wiki/airportSide" target="_blank">
+    airportSide
+   </a>
+   script command was behaving incorrectly
+  </li>
+  <li>
+   Fixed: A crash connected to multiplayer
+  </li>
+  <li>
+   Fixed: Some IK hand animations in cockpits could appear to be lagging
+  </li>
+  <li>
+   Fixed: It was not possible to terminate an individual r2t source using the
+   <a href="https://community.bistudio.com/wiki/cameraEffect" target="_blank">
+    cameraEffect
+   </a>
+   script command (
+   <a href="https://feedback.bistudio.com/T81853" target="_blank">
+    https://feedback.bistudio.com/T81853
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Crash connected to the
+   <a href="https://community.bistudio.com/wiki/setUserMFDvalue" target="_blank">
+    setUserMFDvalue
+   </a>
+   script command
+  </li>
+  <li>
+   Fixed: The
+   <a href="https://community.bistudio.com/wiki/cutObj" target="_blank">
+    cutObj
+   </a>
+   script command did not support the
+   <em>
+    showInMap
+   </em>
+   parameter
+  </li>
+  <li>
+   Fixed: Server crash when deleting a vehicle in cargo (
+   <a href="https://feedback.bistudio.com/T125844" target="_blank">
+    https://feedback.bistudio.com/T125844
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Multiple-launched manually guided missiles could get confused (
+   <a href="https://feedback.bistudio.com/T126044" target="_blank">
+    https://feedback.bistudio.com/T126044
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: The commander's turret didn't work if the main turret was broken (it is properly independent on each other now)
+  </li>
+  <li>
+   Fixed: Crew members of two-seated vehicles could switch on the radar without the driver's knowledge
+  </li>
+  <li>
+   Fixed: There were issues with vehicle customization for vehicles simulated as Simple Objects
+  </li>
+  <li>
+   Fixed: Lock progress of missiles would disappear after switching from the gunner to the pilot position of the Falcon UAV
+  </li>
+  <li>
+   Fixed: Switching from a sidearm to launcher was not working correctly when in Firing From Vehicle positions
+  </li>
+  <li>
+   Fixed: The
+   <a href="https://community.bistudio.com/wiki/listRemoteTargets" target="_blank">
+    listRemoteTargets
+   </a>
+   command would give incorrect values with the remote turret Data Link activated (
+   <a href="https://feedback.bistudio.com/T125977" target="_blank">
+    https://feedback.bistudio.com/T125977
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Wire triggers of some mines were rotated unexpectedly
+  </li>
+  <li>
+   Fixed: Ordering a turned out AI gunner to fire would make him fire his personal weapon, not the vehicle's
+  </li>
+  <li>
+   Fixed: A message about acquiring ownership of DLCs could be displayed to players randomly (
+   <a href="https://steamcommunity.com/app/107410/discussions/2/2217311444332786817" target="_blank">
+    https://steamcommunity.com/app/107410/discussions/2/2217311444332786817
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Drivers of armored vehicles did not have death animations
+  </li>
+  <li>
+   Fixed: Potential crash
+  </li>
+  <li>
+   Fixed: Potential crash connected to SQS scripts
+  </li>
+  <li>
+   Fixed: It was not possible to change your role selection in the MP assignment screen in some cases (
+   <a href="https://feedback.bistudio.com/T125357" target="_blank">
+    https://feedback.bistudio.com/T125357
+   </a>
+   - though this reintroduces another smaller issue)
+  </li>
+  <li>
+   Fixed: AI gunners with high skills would refuse to engage targets in some cases
+  </li>
+  <li>
+   Fixed: Target marking / indication range could be affected by the user's view distance
+  </li>
+  <li>
+   Fixed: Precision of the CCIP was increased
+  </li>
+  <li>
+   Fixed: Potential CTD during creation of objects via scripting commands (
+   <a href="https://forums.bistudio.com/forums/topic/143930-general-discussion-dev-branch/?do=findComment&amp;comment=3228878" target="_blank">
+    https://forums.bistudio.com/forums/topic/143930-general-discussion-dev-branch/?do=findComment&amp;comment=3228878
+   </a>
+   )
+  </li>
+ </ul>
+ <p>
+  <strong>
+   <a href="https://community.bistudio.com/wiki/Eden_Editor" target="_blank">
+    Eden Editor
+   </a>
+  </strong>
+ </p>
+ <ul>
+  <li>
+   Added: Support for navigating the Open Scenario dialog just by keyboard
+  </li>
+  <li>
+   Added: An icon to the pylons settings to change the owner pilot / gunner of a weapon
+  </li>
+  <li>
+   Added:
+   <em>
+    "Laws of War"
+   </em>
+   tag to Eden Editor
+  </li>
+  <li>
+   Tweaked: The Open dialog now filters out folders without any scenario files
+  </li>
+  <li>
+   Fixed: Loading a scenario with Simple Objects would cause issues in some cases
+  </li>
+  <li>
+   Fixed: Potential crash connected to Eden Editor
+  </li>
+  <li>
+   Fixed: Potential crash when using a mod filter on an empty tree
+  </li>
+  <li>
+   Fixed: Config warning when using a mod filter on an empty object tree
+  </li>
+  <li>
+   Fixed: There would be no foliage in a scenario if a user hid it in Eden Editor and launched the scenario in MP (
+   <a href="https://www.reddit.com/r/arma/comments/6hlsmi/no_foliage_in_mission_bug_rc_build/" target="_blank">
+    https://www.reddit.com/r/arma/comments/6hlsmi/no_foliage_in_mission_bug_rc_build/
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: CTD when a certain type of JPG was used
+  </li>
+  <li>
+   Fixed: Incorrect collapsing behavior of the Asset Browser in some cases
+  </li>
+ </ul>
+ <h2>
+  LAUNCHER:
+ </h2>
+ <ul>
+  <li>
+   Added:
+   <em>
+    "Laws of War"
+   </em>
+   Launcher theme in the options
+  </li>
+  <li>
+   Added: Support for Laws of War DLC to the server browser
+  </li>
+  <li>
+   Fixed: The banner notification about the signature list for the server not being available was not visible (many thanks to
+   <em>
+    R3Vo
+   </em>
+   :
+   <a href="https://forums.bistudio.com/forums/topic/180024-official-arma-3-launcher-dev-branch/?do=findComment&amp;comment=3209965" target="_blank">
+    https://forums.bistudio.com/forums/topic/180024-official-arma-3-launcher-dev-branch/?do=findComment&amp;comment=3209965
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: A typo in the message for importing Steam mods from a list
+  </li>
+ </ul>
+ <h2>
+  SERVER:
+ </h2>
+ <ul>
+  <li>
+   Updated: Stand-alone Windows Dedicated Server (1.76)
+  </li>
+  <li>
+   Updated: Stand-alone Linux Dedicated Server (1.76)
+   <ul>
+    <li>
+     Known issue: Steam client modifies the
+     <em>
+      steam_appid.txt
+     </em>
+     file incorrectly. In case of issues, verify its content is:
+     <strong>
+      107410
+     </strong>
+    </li>
+    <li>
+     Known issue: Sometimes the add-ons are loaded from the wrong installation (e.g. main game)
+    </li>
+    <li>
+     Try adding
+     <em>
+      -mod=curator;kart;heli;mark;expansion
+      <em>
+       ;jets;argo;orange
+      </em>
+      ;dlcbundle;dlcbundle2
+     </em>
+     to your
+     <em>
+      arma3server.exe
+     </em>
+     shortcut
+    </li>
+   </ul>
+  </li>
+ </ul>
+</div>

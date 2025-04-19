@@ -1,0 +1,53 @@
+<div class="post-content">
+ <p>
+  FROM: Project Lead
+  <br>
+   TO: Arma 3 Users
+   <br>
+    UNIT: Main Branch
+    <br>
+     ACTIVITY: Hotfix: 1.22 (Steam MP fixes, Static network ports)
+     <br/>
+     SIZE: ~18.5 MB / ~7.5 MB
+    </br>
+   </br>
+  </br>
+ </p>
+ <h1>
+  CHANGELOG
+ </h1>
+ <h2>
+  ENGINE
+ </h2>
+ <ul>
+  <li>
+   The Steam query network port is now fixed to be always +1 in relation to the game network port (e.g. a server hosted via port 3202, has its Steam query port at 3203)
+  </li>
+  <li>
+   Removed: Ability to define a custom Steam query port on servers
+  </li>
+  <li>
+   Fixed: Connection string to support joining friends on listen servers
+  </li>
+  <li>
+   Added: Server game and Steam query ports are presented to a host when creating a server in-game, in the RPT log and the
+   <span>
+    Dedicated Server command window
+   </span>
+   (forward these to make sure clients can discover / connect)
+  </li>
+  <li>
+   Added: Joined sessions listed in the Steam history list
+  </li>
+  <li>
+   Hotfixed: Duplicating items in direct / LAN sessions through backpacks (
+   <a href="http://feedback.arma3.com/view.php?id=16927" target="_blank">
+    http://feedback.arma3.com/view.php?id=16927
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Client getting stuck in Zeus dialog after a server is terminated
+  </li>
+ </ul>
+</div>

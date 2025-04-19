@@ -1,0 +1,351 @@
+<div class="post-content">
+ <p>
+  FROM: Project Lead
+  <br>
+   TO: Arma 3 Users
+   <br>
+    UNIT: Main Branch
+    <br>
+     ACTIVITY: Game Update: 1.14 (Campaign episode "Win", CAS jets, Tempest truck, Altis upgrade)
+     <br/>
+     SIZE: ~1.8 GB
+    </br>
+   </br>
+  </br>
+ </p>
+ <h1>
+  CHANGELOG
+ </h1>
+ <h2 class="box_title">
+  DATA
+ </h2>
+ <ul>
+  <li>
+   <strong>
+    Added: Campaign episode “Win”
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added “Win” music tracks
+   </strong>
+   <ul>
+    <li>
+     3 event tracks (with variants)
+    </li>
+    <li>
+     4 background tracks
+    </li>
+    <li>
+     6 lead tracks
+    </li>
+   </ul>
+  </li>
+  <li>
+   <strong>
+    Added: Campaign completion Steam Achievements
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: To-199 Neophron CSAT CAS jet
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: A-164 Wipeout NATO CAS jet
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Tempest CSAT heavy truck with variants
+   </strong>
+  </li>
+  <li>
+   <strong>
+    Added: Altis Points Of Interest: Ghost Hotel compound and Stadium
+   </strong>
+  </li>
+  <li>
+   Updated: Altis: Several new structures were added (kiosks, lifeguard towers, playground accessories, tourist shelters and more)
+  </li>
+  <li>
+   Added: Various “Win”-related characters, items and objects
+  </li>
+  <li>
+   Added: 1 x new Radio Protocol
+  </li>
+  <li>
+   Removed obsolete classes of cargo poses
+  </li>
+  <li>
+   Adjusted volume levels on various weapons
+  </li>
+  <li>
+   Changed active elements in commander optics of Marshall, Cheetah, Mora and Kuma
+  </li>
+  <li>
+   Standardized
+   <em>
+    driveOnComponents
+   </em>
+   on tank tracks - they should now be better at passing low obstacles
+  </li>
+  <li>
+   Uniforms and accessories should be available in holders again
+  </li>
+  <li>
+   Increased
+   <em>
+    explosionShielding
+   </em>
+   parameter for artillery variants of turret guns was reverted back to the original value of 1 (it did not work well enough)
+  </li>
+  <li>
+   AAAs should have their radar back
+  </li>
+  <li>
+   Optimized explosives power after a fix of explosives on roads
+  </li>
+  <li>
+   Buzzard has new sounds for gear and flaps
+  </li>
+  <li>
+   Buzzard has improved materials in its cockpit
+  </li>
+  <li>
+   Stitches on coveralls made plastic
+  </li>
+  <li>
+   FIA medic should have a medkit in his bag
+  </li>
+  <li>
+   Trees use a new shader version to improve alpha sorting
+  </li>
+  <li>
+   Pilots of jets have their HUDs properly collimated
+  </li>
+  <li>
+   Tank crew should no longer use 'magic radar'
+  </li>
+  <li>
+   Fixed: Missing muzzleflash for RCWS UGV
+  </li>
+  <li>
+   Fixed: Hitpoints for lights of Van
+  </li>
+  <li>
+   Fixed: Indestructible radio tower in Showcase Vehicles (changed hitpoints in the model)
+  </li>
+  <li>
+   Fixed: Getting out of HEMTT animation for launchers
+  </li>
+  <li>
+   Fixed: Sounds of ACP-C2
+  </li>
+  <li>
+   Fixed: Smoke screen not working on Cheetah, Kamysh, Tigris and Gorgon
+  </li>
+  <li>
+   Fixed: Unresponsive controls in General Game Options tab
+  </li>
+  <li>
+   Fixed: initPlayerLocal.sqf and initPlayerServer.sqf sometimes received incorrect params upon JIP
+  </li>
+  <li>
+   Fixed: Wrongful hiding of subtitles in SP
+  </li>
+  <li>
+   Fixed: Multiple secondary explosions in MP (
+   <a href="http://feedback.arma3.com/view.php?id=16765" target="_blank">
+    http://feedback.arma3.com/view.php?id=16765
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: Combined Arms showcase would not end correctly on a Dedicated Server if players had already died during the mission
+  </li>
+  <li>
+   Tweaked: Sounds of weapon closures
+  </li>
+  <li>
+   Tweaked: Sounds of character breathing
+  </li>
+  <li>
+   Added: New samples for ACP-C2
+  </li>
+  <li>
+   Added: New sound for reloading UGLs
+  </li>
+  <li>
+   Added: New sound for church organs
+  </li>
+  <li>
+   Added: New variations for fatigue sounds
+  </li>
+  <li>
+   Added: GameSpy / Steam master server switch
+  </li>
+  <li>
+   Removed: Error message from getParamValue function
+  </li>
+  <li>
+   Improved: Slammer UP recoil animation
+  </li>
+ </ul>
+ <h2>
+  Possible campaign spoilers:
+ </h2>
+ <ul>
+  <li>
+   New voice-over work for Nikos has been added to "Survive" and "Adapt"
+  </li>
+  <li>
+   Fixed: The intro walking sequence in the "Survive" intro
+  </li>
+  <li>
+   Added: New beret and identity to Crossroads in the "Adapt" outro
+  </li>
+  <li>
+   Fixed: Drawdown 2035: synchronization of 'all clear' and animation at checkpoint
+  </li>
+  <li>
+   Radio Silence: reduced the difficulty of destroying the guard towers with the mortar
+  </li>
+  <li>
+   Fixed: "Index out of range" error, discovered when transiting from "Adapt" to "Win"
+  </li>
+  <li>
+   Fixed: In Crossing Paths, there was no background while the quotation video was playing
+  </li>
+ </ul>
+ <h2 class="box_title">
+  ENGINE
+ </h2>
+ <ul>
+  <li>
+   Added: Scripting command
+   <a href="https://community.bistudio.com/wiki/attachedObjects" target="_blank">
+    attachedObjects
+   </a>
+   for getting the list of objects attached to the given one
+  </li>
+  <li>
+   Added: Scripting command
+   <a href="https://community.bistudio.com/wiki/attachedTo" target="_blank">
+    attachedTo
+   </a>
+   for getting the object to which the given object is attached
+  </li>
+  <li>
+   <span>
+    Added: New scripting command for getting list of activated addons (
+   </span>
+   <a href="https://community.bistudio.com/wiki/activatedAddons" style="line-height: 1.6em;" target="_blank">
+    activatedAddons
+   </a>
+   <span>
+    )
+   </span>
+  </li>
+  <li>
+   Added: Sound: Ability to play loop sample in specified region, a sample has 3 parts: start, loop &amp; end - used for continuous fire mode. Loop region is set in SoundPars.loopBegin and SoundPars.loopLength, config definition: sound[] = {path, db3, 1, 2300, {32438, 24500}}
+  </li>
+  <li>
+   Added: Support for thermal black hot mode in PiP
+  </li>
+  <li>
+   Added: Prototype of weather and time synchronization for MP
+  </li>
+  <li>
+   Crosshair size roughly matches the extent of weapon sway
+  </li>
+  <li>
+   PIP mode (VIS, NV, TI) is the same as mode in AV optics (can be changed by the player while in control of the AV)
+  </li>
+  <li>
+   AI skills configuration changed: added Presets and Precision, removed Enemy-Friendly, redid the UI
+  </li>
+  <li>
+   Disabled idle poses while aiming and shooting
+  </li>
+  <li>
+   VRAM management changed (optimization)
+  </li>
+  <li>
+   Hotfixed: Module initialization order adjusted for the Linux Dedicated Server
+  </li>
+  <li>
+   Fixed: Water splashes when tanks land on the ground
+  </li>
+  <li>
+   Fixed: Dust from tracks while in the air
+  </li>
+  <li>
+   Fixed: Script command
+   <a href="https://community.bistudio.com/wiki/enableSimulationGlobal" target="_blank">
+    enableSimulationGlobal
+   </a>
+   didn’t work during scenario briefing
+  </li>
+  <li>
+   Fixed: Deleting task target
+  </li>
+  <li>
+   Fixed: Problems with skinned instancing when PiP is used
+  </li>
+  <li>
+   Fixed: Mines were ineffective on roads
+  </li>
+  <li>
+   Fixed: Drawing of alpha objects in PiP
+  </li>
+  <li>
+   Fixed: Gear up SFX triggered when starting as Flying
+  </li>
+  <li>
+   Fixed: Player can't see content of clothes or vests which are on the ground
+  </li>
+  <li>
+   Fixed: Weapon cloning (
+   <a href="http://feedback.arma3.com/view.php?id=17403" target="_blank">
+    http://feedback.arma3.com/view.php?id=17403
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: AI not using radar, when player does not have it
+  </li>
+  <li>
+   Fixed: After a helicopter would fly away, players could still put things into its inventory
+  </li>
+  <li>
+   Fixed: TakeWeapon puts weapon in weaponholder before taking it (
+   <a href="http://feedback.arma3.com/view.php?id=17760" target="_blank">
+    http://feedback.arma3.com/view.php?id=17760
+   </a>
+   )
+  </li>
+  <li>
+   Fixed: More correct behavior of scenario names in map, diary and interrupt display
+  </li>
+  <li>
+   Fixed: Crash that happened when using stereo samples where mono was expected
+  </li>
+  <li>
+   Fixed: Crash in MP display when a Steam mission filename is empty
+  </li>
+  <li>
+   Fixed: Invisible items in UI tree after sorting
+  </li>
+  <li>
+   Fixed: Crash opportunity
+  </li>
+  <li>
+   Fixed: Workaround for a Steam bug which caused the inability to host MP games on some subscribed missions
+  </li>
+  <li>
+   Fixed: Vest content disappearance after savegame load
+  </li>
+ </ul>
+</div>
