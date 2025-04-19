@@ -4,12 +4,15 @@
 # Dependencies:
 #	beautifulsoup4
 # 	requests
-#
 
 from bs4 import BeautifulSoup
 import requests
 import time
-import re
+
+pathChangelogRaw = r"output\ChangelogRaw.txt"
+pathChangelogFormatted = r"output\ChangelogFormatted.txt"
+startPageIndex = 1
+endPageIndex = 10#118
 
 def indexToUrl(i):
     if i < 3:
@@ -17,8 +20,8 @@ def indexToUrl(i):
     else:
         return f"https://dev.arma3.com/post/spotrep-00{i:03d}"
 
-indices = range(1, 118) # The latest SPOTREP is #00117.
-sourceFile = open(r"D:\Changelog.txt","w+", encoding="utf-8")
+indices = range(startPageIndex, endPageIndex) # The latest SPOTREP is #00117.
+sourceFile = open(pathChangelogRaw,"w+", encoding="utf-8")
 
 for i in indices:
     url = indexToUrl(i)
@@ -46,8 +49,8 @@ for i in indices:
     time.sleep(0.1) # Avoid flooding the server with requests.
 
 # Format sourceFile
-sourceFile = open(r"D:\Changelog.txt","r", encoding="utf-8")
-targetFile = open(r"D:\ChangelogBikiFOrmat.txt","w+", encoding="utf-8")
+sourceFile = open(pathChangelogRaw,"r", encoding="utf-8")
+targetFile = open(pathChangelogFormatted,"w+", encoding="utf-8")
 
 lines = sourceFile.readlines()
 
