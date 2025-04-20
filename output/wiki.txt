@@ -1,0 +1,1641 @@
+== SPOTREP-0001 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-0001|SPOTREP-0001}}
+
+FROM: Project Lead
+
+TO: Alpha Users
+
+UNIT: Arma 3 Alpha, Arma 3 Alpha Lite
+
+ACTIVITY: Game Update: 0.52 (shadow improvements, crash fixes, destructible windows)
+
+SIZE: ~310 MB
+
+== SPOTREP-0002 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-0002|SPOTREP-0002}}
+
+FROM: Project Lead
+
+TO: Alpha Users
+
+UNIT: Arma 3 Alpha, Arma 3 Alpha Lite
+
+ACTIVITY: Game Update: 0.54 (new fog technology, adjustable sidearm stances, crash fixes)
+
+SIZE: ~380 MB
+
+== SPOTREP-00003 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00003|SPOTREP-00003}}
+
+FROM: Project Lead
+
+TO: Alpha Users
+
+UNIT: Arma 3 Alpha, Arma 3 Alpha Lite
+
+ACTIVITY: Game Update: 0.56 (multiplayer security)
+
+SIZE: ~38 MB
+
+== SPOTREP-00004 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00004|SPOTREP-00004}}
+
+FROM: Project Lead
+
+TO: Alpha Users
+
+UNIT: Arma 3 Alpha, Arma 3 Alpha Lite
+
+ACTIVITY: Game Update: 0.58 (Dedicated Servers, lighting and audio tweaks, combat and stealth radio protocols)
+
+SIZE: ~855 MB
+
+== SPOTREP-00005 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00005|SPOTREP-00005}}
+
+FROM: Project Lead
+
+TO: Alpha Users
+
+UNIT: Arma 3 Alpha, Arma 3 Alpha Lite
+
+ACTIVITY: Game Update: 0.60 (Sniper Package)
+
+SIZE: ~552 MB
+
+== SPOTREP-00006 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00006|SPOTREP-00006}}
+
+FROM: Project Lead
+
+TO: Alpha / Beta Users
+
+UNIT: Arma 3 Beta
+
+ACTIVITY: Game Update: 0.70 (Beta release)
+
+SIZE: ~1.3 GB
+
+== SPOTREP-00007 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00007|SPOTREP-00007}}
+
+FROM: Project Lead
+
+TO: Beta Users
+
+UNIT: Arma 3 Beta
+
+ACTIVITY: Game Update: 0.72 (Interface layout options, Steam invites, Fatigue feedback, Fixathon)
+
+SIZE: ~885 MB
+
+== SPOTREP-00008 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00008|SPOTREP-00008}}
+
+FROM: Project Lead
+
+TO: Beta Users
+
+UNIT: Arma 3 Beta
+
+ACTIVITY: Game Update: 0.74 (BattlEye anti-cheat, APC Package)
+
+SIZE: ~905 MB
+
+== SPOTREP-00009 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00009|SPOTREP-00009}}
+
+FROM: Project Lead
+
+TO: Beta Users
+
+UNIT: Arma 3 Beta
+
+ACTIVITY: Game Update: 0.76 (
+
+Steam Workshop
+
+)
+
+SIZE: ~1.1 GB
+
+== SPOTREP-00010 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00010|SPOTREP-00010}}
+
+FROM: Project Lead
+
+TO: Beta Users
+
+UNIT: Arma 3 (Beta)
+
+ACTIVITY: Game Update: 1.00 (Release)
+
+SIZE: ~3.7 GB
+
+== SPOTREP-00011 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00011|SPOTREP-00011}}
+
+FROM: Project Lead
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Update: 1.02 (Altis performance, AI tweaks, Fixathon)
+
+SIZE: ~1 GB
+
+== SPOTREP-00012 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00012|SPOTREP-00012}}
+
+FROM: Project Lead
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Hotfix: 1.02 (Multiplayer stability)
+
+SIZE: ~16 MB
+
+== SPOTREP-00013 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00013|SPOTREP-00013}}
+
+FROM: Project Lead
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Update: 1.04 (Campaign episode "Survive", New weapons, Light shafts, Enhanced rain)
+
+SIZE: ~1.4 GB
+
+== SPOTREP-00014 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00014|SPOTREP-00014}}
+
+FROM: Project Lead
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Hotfix: 1.04 (Campaign menu)
+
+SIZE: ~16 MB
+
+== SPOTREP-00015 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00015|SPOTREP-00015}}
+
+FROM: Project Lead
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Update: 1.06 (Surround sound dialogues, Campaign fixes)
+
+SIZE: ~841 MB
+
+== SPOTREP-00016 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00016|SPOTREP-00016}}
+
+FROM: Project Lead
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Update: 1.08 (AAF Reinforcements Pack, Workshop improvements)
+
+SIZE: ~1 GB
+
+== SPOTREP-00017 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00017|SPOTREP-00017}}
+
+FROM: Project Lead
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Update: 1.10 (Campaign episode "Adapt", MP optimizations, HDAO)
+
+SIZE: ~961 MB
+
+== SPOTREP-00018 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00018|SPOTREP-00018}}
+
+FROM: Project Lead
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Hotfix: 1.10 (Debug tools disabled, Linux Server optimization)
+
+SIZE: ~16 MB
+
+== SPOTREP-00019 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00019|SPOTREP-00019}}
+
+FROM: Project Lead
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Update: 1.12 (Slammer UP tank, Vehicle optics, Linear car controls)
+
+SIZE: ~709 MB
+
+== SPOTREP-00020 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00020|SPOTREP-00020}}
+
+FROM: Project Lead
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Hotfix: 1.12 (MP crash fix)
+
+SIZE: ~16 MB
+
+== SPOTREP-00021 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00021|SPOTREP-00021}}
+
+FROM: Project Lead
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Update: 1.14 (Campaign episode "Win", CAS jets, Tempest truck, Altis upgrade)
+
+SIZE: ~1.8 GB
+
+== SPOTREP-00022 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00022|SPOTREP-00022}}
+
+FROM: Project Lead
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY:
+
+Hotfix: 1.14 (MP crash fix)
+
+SIZE:
+
+~16 MB
+
+== SPOTREP-00023 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00023|SPOTREP-00023}}
+
+FROM: Project Lead
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Update: 1.16 (Zeus)
+
+SIZE: ~822 MB
+
+== SPOTREP-00024 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00024|SPOTREP-00024}}
+
+FROM: Project Lead
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Update: 1.18 (Zeus enhancements, MP stability, Miscellaneous fixes)
+
+SIZE: ~794 MB
+
+== SPOTREP-00025 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00025|SPOTREP-00025}}
+
+FROM: Project Lead
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Hotfix: 1.18 (MP performance fix)
+
+SIZE: ~34 MB
+
+== SPOTREP-00026 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00026|SPOTREP-00026}}
+
+FROM: Project Lead
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Update: 1.20 (Karts DLC)
+
+SIZE: ~655 MB
+
+== SPOTREP-00027 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00027|SPOTREP-00027}}
+
+FROM: Project Lead
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Update: 1.22 (Campaign improvements, Linux server performance, GameSpy removal)
+
+SIZE: ~1021 MB
+
+== SPOTREP-00028 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00028|SPOTREP-00028}}
+
+FROM: Project Lead
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Hotfix: 1.22 (Steam MP fixes, Static network ports)
+
+SIZE: ~18.5 MB / ~7.5 MB
+
+== SPOTREP-00029 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00029|SPOTREP-00029}}
+
+Potential campaign spoilers:
+
+== SPOTREP-00030 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00030|SPOTREP-00030}}
+
+FROM: Project Lead
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Update: 1.26 (Guaranteed network messaging, Sharpen filter, Launcher presets, Launcher newsfeed)
+
+SIZE: ~846 MB
+
+== SPOTREP-00031 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00031|SPOTREP-00031}}
+
+FROM: Project Lead
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Hotfix: 1.28 (Multiplayer desync improvements)
+
+SIZE: ~17 MB / ~7 MB
+
+== SPOTREP-00032 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00032|SPOTREP-00032}}
+
+FROM: Project Lead
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Hotfix: 1.28 (Multiplayer stability improvements)
+
+SIZE: ~17 MB / ~7 MB
+
+== SPOTREP-00033 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00033|SPOTREP-00033}}
+
+FROM: Project Lead
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Hotfix: 1.30 (Multiplayer desync improvements)
+
+SIZE: ~23 MB / ~8 MB
+
+== SPOTREP-00034 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00034|SPOTREP-00034}}
+
+FROM: Project Lead
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Update: 1.32 (Fixathon, New script commands, New event handlers, Weapon Inertia)
+
+SIZE: ~1.2 GB
+
+== SPOTREP-00035 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00035|SPOTREP-00035}}
+
+FROM: Project Lead
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Hotfix: 1.32 (Campaign saves)
+
+SIZE: ~17 MB / ~7 MB
+
+== SPOTREP-00036 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00036|SPOTREP-00036}}
+
+FROM: Project Lead
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Update: 1.34 (Helicopters DLC, Sling Loading, Firing from Vehicles, Advanced Flight Model)
+
+SIZE:
+
+~1.2 GB
+
+== SPOTREP-00037 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00037|SPOTREP-00037}}
+
+FROM: Project Lead
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Update: 1.36 (Vortex Ring State, Launcher local mods, Headless Client revamp, CMAA)
+
+SIZE: ~1010 MB / ~611 MB
+
+== SPOTREP-00038 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00038|SPOTREP-00038}}
+
+FROM: Project Lead
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Update: 1.38 (PhysX library update, Multiplayer server optimizations)
+
+SIZE: ~687 MB / ~444 MB
+
+== SPOTREP-00039 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00039|SPOTREP-00039}}
+
+FROM: Encoding Lead
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Update: 1.40 (FFV Inertia, AI Improvements)
+
+SIZE: ~1.2 GB / ~675 MB
+
+== SPOTREP-00040 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00040|SPOTREP-00040}}
+
+FROM: Project Lead
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Update: 1.42 (Marksmen DLC, Weapon Stabilization, Recoil Overhaul, Environmental Audio, Workshop Mods)
+
+SIZE: ~1.4 GB / ~426 MB
+
+== SPOTREP-00041 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00041|SPOTREP-00041}}
+
+FROM: Project Lead
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Hotfix: 1.42 (Server Passwords, Weapon Deployment Glitches, Controller Sensitivity)
+
+SIZE: ~72 MB / ~10 MB
+
+== SPOTREP-00042 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00042|SPOTREP-00042}}
+
+FROM: Project Lead
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Update: 1.44 (BattlEye Service, Open-source PhysX, Netcode Optimizations, Launcher Improvements)
+
+SIZE: ~1.2 GB / ~623 MB
+
+== SPOTREP-00043 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00043|SPOTREP-00043}}
+
+FROM: Project Lead
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Update: 1.46 (Enhanced BattlEye Protection, Explosives SFX Tweaks, Vehicle Weapon SFX Tweaks)
+
+SIZE: ~1014 MB / ~420 MB
+
+== SPOTREP-00044 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00044|SPOTREP-00044}}
+
+FROM: Project Lead
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Hotfix: 1.46 (Display Driver Crashes, Server Crashes, BattlEye White-Listing)
+
+SIZE: ~17 MB / ~6 MB
+
+== SPOTREP-00045 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00045|SPOTREP-00045}}
+
+FROM: Project Lead
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Update: 1.48 (AI Smoke Cover, Holstered Sidearm Visualization, Naked Eye FoV, Script Commands)
+
+SIZE: ~905 MB / ~425 MB
+
+== SPOTREP-00046 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00046|SPOTREP-00046}}
+
+FROM: Project Lead
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Hotfix: 1.48 (Memory Footprint PhysX Data)
+
+SIZE: ~20 MB / ~6 MB
+
+== SPOTREP-00047 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00047|SPOTREP-00047}}
+
+FROM: Project Lead
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Update: 1.50 (File Patching, Remote Script Execution, Animation Tweaks, AI Visibility Tweaks, Script Commands)
+
+SIZE: ~889 MB / ~431 MB
+
+== SPOTREP-00048 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00048|SPOTREP-00048}}
+
+FROM: Project Lead
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Update: 1.52 (Maintenance, Crash Fixes, Memory Allocator)
+
+SIZE: ~645 MB / ~301 MB
+
+== SPOTREP-00049 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00049|SPOTREP-00049}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch (Windows)
+
+ACTIVITY: Game Update: 1.54 (Nexus Update, End Game, Spectator, Personal Protective Equipment, Stamina, Launcher Mod Dependencies)
+
+SIZE: ~2.2 GB / ~639 MB
+
+== SPOTREP-00050 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00050|SPOTREP-00050}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch (Windows)
+
+ACTIVITY: Hotfix: 1.54 (Miscellaneous)
+
+SIZE: ~25 MB / ~6 MB
+
+== SPOTREP-00051 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00051|SPOTREP-00051}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch (Windows)
+
+ACTIVITY: Hotfix: 1.54 (Miscellaneous)
+
+SIZE: ~119 MB / ~97 MB
+
+== SPOTREP-00052 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00052|SPOTREP-00052}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch (Windows)
+
+ACTIVITY: Game Update: 1.56 (Eden Update, Eden Editor, Combat Audio, Launcher-Based Server Browser, Fonts)
+
+SIZE: ~1.8 GB / ~694 MB
+
+== SPOTREP-00053 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00053|SPOTREP-00053}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch (Windows)
+
+ACTIVITY: Hotfix: 1.56 (Eden Editor, Miscellaneous)
+
+SIZE: ~43 MB / ~33 MB
+
+== SPOTREP-00054 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00054|SPOTREP-00054}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Update 1.58 (Tasks Overhaul, Weapon Switching on the Move, Action Menu Streamlining, Eden Editor Compositions)
+
+SIZE: ~1.3 GB / ~850 MB
+
+== SPOTREP-00055 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00055|SPOTREP-00055}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch (Windows)
+
+ACTIVITY: Hotfix: 1.58 (System Allocator Performance, Server Difficulty Settings, Crash Fixes)
+
+SIZE: ~27 MB / ~6.5 MB
+
+== SPOTREP-00056 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00056|SPOTREP-00056}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Update 1.60 (Visual Upgrade, Quick Play, Line Drawing, Respawn Screen, Targeting, Limping)
+
+SIZE: ~3.2 GB / ~469 MB
+
+== SPOTREP-00057 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00057|SPOTREP-00057}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Hotfix: 1.60 (Crash Fixes, Miscellaneous)
+
+SIZE: ~23 MB / ~6.6 MB
+
+== SPOTREP-00058 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00058|SPOTREP-00058}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Update 1.62 (Apex Expansion, Main Menu Overhaul, Vehicle in Vehicle Transport, Revive Overhaul, Environmental Audio Enhancements)
+
+SIZE: ~9.6 GB / ~1.5 GB (depends on Apex ownership)
+
+== SPOTREP-00059 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00059|SPOTREP-00059}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Update 1.64 (Apex Protocol Difficulty Overhaul, Vehicle Path-Following Improvements, Simple Objects Integration)
+
+SIZE: ~5.6 GB / ~1.0 GB (depends on Apex ownership)
+
+== SPOTREP-00060 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00060|SPOTREP-00060}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Hotfix 1.64 (Launcher PBO Signatures)
+
+SIZE: ~9.5 MB
+
+== SPOTREP-00061 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00061|SPOTREP-00061}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Hotfix 1.64 (Controller Fixes, MP Vehicle Movement, Miscellaneous)
+
+SIZE: ~35 MB / ~8 MB
+
+== SPOTREP-00062 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00062|SPOTREP-00062}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Update 1.66 (Footsteps Audio Overhaul, Tactical Ping, Maintenance)
+
+SIZE: ~10 GB / ~1.6 GB (depends on Apex ownership)
+
+== SPOTREP-00063 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00063|SPOTREP-00063}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Hotfix 1.66 (selectPlayer Command, Missile Warning)
+
+SIZE: ~93.4 MB / ~44.9 MB (depends on Apex ownership)
+
+== SPOTREP-00064 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00064|SPOTREP-00064}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Update 1.68 (64-bit Executables, Ambient Occlusion Overhaul, Maintenance)
+
+SIZE: ~10.4 GB / ~1.3 GB (depends on Apex ownership)
+
+== SPOTREP-00065 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00065|SPOTREP-00065}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Hotfix 1.68 (GPU Selection, Crash Fixes, Audio Fixes)
+
+SIZE: ~66 MB / ~25 MB (depends on Apex ownership)
+
+== SPOTREP-00066 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00066|SPOTREP-00066}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Hotfix 1.68 (Campaign Progress, Start-up Crash)
+
+SIZE: ~57 MB / ~18 MB (depends on Apex ownership)
+
+== SPOTREP-00067 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00067|SPOTREP-00067}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Update 1.70 (Jets DLC, Sensor Overhaul, Dynamic Vehicle Loadouts)
+
+SIZE: ~5.4 GB / ~1.0 GB (depends on Apex ownership)
+
+== SPOTREP-00068 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00068|SPOTREP-00068}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Hotfix 1.70 (Crash Fixes, Helicopter Third-person Camera)
+
+SIZE: ~66 MB / ~22 MB (depends on Apex ownership)
+
+== SPOTREP-00069 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00069|SPOTREP-00069}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Update 1.72 (Malden DLC, Combat Patrol, Flight Model Tweaks)
+
+SIZE: ~6.5 GB / ~1.1 GB (depends on Apex ownership)
+
+== SPOTREP-00070 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00070|SPOTREP-00070}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Hotfix 1.72 (Laser Targets, Drone Ownership)
+
+SIZE: ~40 MB / ~21 MB (depends on Apex ownership)
+
+== SPOTREP-00071 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00071|SPOTREP-00071}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Hotfix 1.72 (Chinese Languages)
+
+SIZE: ~8.7 MB / ~1.1 MB (depends on Apex ownership)
+
+== SPOTREP-00072 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00072|SPOTREP-00072}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Hotfix 1.74 (Net Code Security)
+
+SIZE: ~40 MB / ~17 MB
+
+== SPOTREP-00073 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00073|SPOTREP-00073}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Update 1.76 (Laws of War DLC, Mine Detector Enhancements)
+
+SIZE: ~9.0 GB / ~1.4 GB (depends on Apex ownership)
+
+== SPOTREP-00074 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00074|SPOTREP-00074}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Hotfix 1.76 (Stability Improvements)
+
+SIZE: ~57 MB / ~17 MB
+
+== SPOTREP-00075 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00075|SPOTREP-00075}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Language Update 1.76 (Turkish)
+
+SIZE: ~26 MB / ~3.5 MB
+
+== SPOTREP-00076 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00076|SPOTREP-00076}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Update 1.78 (Tac-Ops Mission Pack, Vehicle Physics Update, BattlEye Port Separation)
+
+SIZE: ~7.8 GB / ~1.1 GB (depends on Apex ownership)
+
+== SPOTREP-00077 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00077|SPOTREP-00077}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Hotfix 1.80 (BattlEye Port Fixes)
+
+SIZE: ~54 MB / ~18 MB
+
+== SPOTREP-00078 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00078|SPOTREP-00078}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Hotfix 1.80 (Crash Fixes, 'Unknown Enum Value' Errors)
+
+SIZE: ~66 MB / ~18 MB
+
+== SPOTREP-00079 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00079|SPOTREP-00079}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Update 1.82 (Tanks DLC, Interiors, Extended Damage Model, Vehicle Customization)
+
+SIZE: ~5.6 GB / ~1.1 GB
+
+== SPOTREP-00080 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00080|SPOTREP-00080}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Hotfix 1.82 (Crash Fixes, AI Behavior Tweaks, Scenario Fixes)
+
+SIZE: ~889 MB / ~134 MB
+
+== SPOTREP-00081 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00081|SPOTREP-00081}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Update 1.84 (Encore Update, Free Jets DLC Bonus Content, Fixes and Improvements)
+
+SIZE: ~3.0 GB / ~504 MB
+
+== SPOTREP-00082 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00082|SPOTREP-00082}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Update 1.86 (Warlords MP Mode, ADR-97 Weapon Pack, Multiplayer Security, Fixes and Improvements)
+
+SIZE: ~1.9 GB / ~483 MB
+
+== SPOTREP-00083 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00083|SPOTREP-00083}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Hotfix 1.88 (Multiplayer Compatibility Fixes)
+
+SIZE: ~38.7 MB / ~17.8 MB
+
+== SPOTREP-00084 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00084|SPOTREP-00084}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Hotfix #2 1.88 (Warlords Improvements, In-Game Server Browser Fix)
+
+SIZE: ~53.6 MB / ~17.9 MB
+
+== SPOTREP-00085 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00085|SPOTREP-00085}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Update 1.90 (Multiplayer Security, Warlords Improvements)
+
+SIZE: ~745.0 MB / ~249.3 MB
+
+== SPOTREP-00086 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00086|SPOTREP-00086}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Hotfix 1.90 (Multiplayer Security, Session Lost Messaging)
+
+SIZE: ~51.4 MB / ~17.9 MB
+
+== SPOTREP-00087 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00087|SPOTREP-00087}}
+
+SPOTREP #00087
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Hotfix #2 1.90 (Special Character Compatibility)
+
+SIZE: ~36.1MB / ~17.8 MB
+
+== SPOTREP-00088 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00088|SPOTREP-00088}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Update 1.92 (Launcher DLC Section, Dynamic Weapon Magazines)
+
+SIZE: ~1.3 GB / ~186 MB
+
+== SPOTREP-00089 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00089|SPOTREP-00089}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Update 1.94 (Contact Expansion, Livonia Terrain, Platform Assets)
+
+SIZE: ~10.2 GB / ~1.6 GB (depends on Contact ownership)
+
+== SPOTREP-00090 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00090|SPOTREP-00090}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Hotfix 1.94 (Arsenal Loadout Compatibility, Contact Campaign Fixes)
+
+SIZE: ~210 MB / ~20 MB (depends on Contact ownership)
+
+== SPOTREP-00091 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00091|SPOTREP-00091}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Update 1.96 (Contact Improvements, Miscellaneous Fixes)
+
+SIZE: ~7.8 GB / ~841 MB (depends on Contact ownership)
+
+== SPOTREP-00092 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00092|SPOTREP-00092}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Hotfix 1.96 (Addon Signature Compatibility, Miscellaneous Fixes)
+
+SIZE: ~38.7 MB / ~19.8 MB (depends on Contact ownership)
+
+== SPOTREP-00093 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00093|SPOTREP-00093}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Update 1.98 (Old Man, PhysX)
+
+SIZE: ~ 1.65 GB / ~ 486 MB (depends on Contact ownership)
+
+== SPOTREP-00094 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00094|SPOTREP-00094}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Hotfix 1.98 (Vehicle Desync, Miscellaneous Fixes)
+
+SIZE: ~99 MB / ~37 MB (depends on Contact ownership)
+
+== SPOTREP-00095 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00095|SPOTREP-00095}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Update 2.00 (CoF: Gray, Workshop Compositions, 64-bit Linux Server)
+
+SIZE: ~1.6 GB / ~558 MB (depends on Contact ownership)
+
+== SPOTREP-00096 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00096|SPOTREP-00096}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Update 2.02 (Art of War DLC)
+
+SIZE: ~1.5 GB / ~231 MB (depends on Contact ownership)
+
+== SPOTREP-00097 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00097|SPOTREP-00097}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Hotfix 2.02 (Miscellaneous Fixes)
+
+SIZE: ~419 MB / ~41 MB (depends on Contact ownership)
+
+== SPOTREP-00098 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00098|SPOTREP-00098}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Update 2.04 (Audio Options, SQF Bytecode, Creator DLC Support)
+
+SIZE: ~765 MB / ~104 MB (depends on Contact ownership)
+
+== SPOTREP-00099 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00099|SPOTREP-00099}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Mini-Update 2.04 (Creator DLC Support)
+
+SIZE: ~21.8 MB / ~10.1 MB (depends on Contact ownership)
+
+== SPOTREP-00100 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00100|SPOTREP-00100}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Update 2.06 (Modded Keybindings, Zeus Compositions, Scripting Support)
+
+SIZE: ~1.1 GB / ~213 MB (depends on Contact ownership)
+
+== SPOTREP-00101 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00101|SPOTREP-00101}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Mini-Update 2.06 (Creator DLC Support)
+
+SIZE: ~58 MB / ~18 MB (depends on Contact ownership)
+
+== SPOTREP-00102 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00102|SPOTREP-00102}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Update 2.08 (Steam Rich Presence, Scripted Lasers, Platform Support)
+
+SIZE: ~3.1 GB / ~340 MB (depends on Contact ownership)
+
+== SPOTREP-00103 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00103|SPOTREP-00103}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Hotfix 2.08 (Miscellaneous Fixes)
+
+SIZE: ~61 MB / ~44 MB
+
+== SPOTREP-00104 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00104|SPOTREP-00104}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Hotfix 2.08 (Miscellaneous Fixes)
+
+SIZE: ~61 MB / ~44 MB
+
+== SPOTREP-00105 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00105|SPOTREP-00105}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Update 2.10 (Thermal Imagery Enhancements, Scripted Terrain Deformation, Platform Support)
+
+SIZE: ~504 MB / ~36 MB (depends on Contact ownership)
+
+== SPOTREP-00106 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00106|SPOTREP-00106}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Hotfix 2.10 (Miscellaneous Fixes)
+
+SIZE: ~71 MB / ~21 MB (depends on Contact ownership)
+
+== SPOTREP-00107 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00107|SPOTREP-00107}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Hotfix 2.10 (Miscellaneous Fixes)
+
+SIZE: ~42 MB / ~18 MB (depends on Contact ownership)
+
+== SPOTREP-00108 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00108|SPOTREP-00108}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Hotfix 2.10 (Launcher)
+
+SIZE: ~15 MB
+
+== SPOTREP-00109 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00109|SPOTREP-00109}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Update 2.12 (Text to Texture, UI to Texture, Platform Support)
+
+SIZE: ~54 MB / ~48 MB (depends on Contact ownership)
+
+== SPOTREP-00110 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00110|SPOTREP-00110}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Mini-Update 2.12 (Creator DLC Support)
+
+SIZE: ~60 MB / ~18 MB
+
+== SPOTREP-00111 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00111|SPOTREP-00111}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Update 2.14 (Anniversary Bonus Content, Enhanced Video Options, Platform Support)
+
+SIZE: ~1.3 GB / ~49 MB (depends on Contact ownership)
+
+== SPOTREP-00112 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00112|SPOTREP-00112}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Hotfix 2.14 (Launcher)
+
+SIZE: ~1 MB / ~1 MB
+
+== SPOTREP-00113 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00113|SPOTREP-00113}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Hotfix 2.14 (T-100X)
+
+SIZE: ~1 MB / ~1 MB
+
+== SPOTREP-00114 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00114|SPOTREP-00114}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Mini-Update 2.16 (Creator DLC Support, Haze, Ultrawide)
+
+SIZE: ~28 MB / ~4 MB
+
+== SPOTREP-00115 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00115|SPOTREP-00115}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Update 2.18 (Grenades vs Glass / Water, Character Damage Consistency, Platform Support)
+
+SIZE: ~2.9 GB / ~167 MB (depends on Contact ownership)
+
+== SPOTREP-00116 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00116|SPOTREP-00116}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Hotfix 2.18 (Multiplayer Weapon Reloads, Miscellaneous Fixes)
+
+SIZE: ~55 MB / ~18 MB
+
+== SPOTREP-00117 ==
+
+{{Link|https://dev.arma3.com/post/spotrep-00117|SPOTREP-00117}}
+
+FROM: High Command
+
+TO: Arma 3 Users
+
+UNIT: Main Branch
+
+ACTIVITY: Game Mini-Update 2.18 (Creator DLC Support)
+
+SIZE: ~57 MB / ~18 MB
