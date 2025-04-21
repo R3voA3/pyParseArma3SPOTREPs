@@ -15,6 +15,15 @@ def buildURL(title):
 def buildURLWiki(url, title):
     return r'{{Link|' + url + '|' + title + r'}}'
 
+def replaceStuffInOutputFile(content):
+    test = r'In case of problems, please check the \
+   <a href="http://support.bistudio.com/arma-3" target=""> \
+    Bohemia Interactive support F.A.Q.'
+
+    content = content.replace(test, 'blabla')
+
+    return content
+
 def ignoreTAG(line):
     ignoreTAGs = [
         '<div class="post-content">',
@@ -36,7 +45,8 @@ def ignoreTAG(line):
         '</span>',
         '</h2>',
         '</h1>',
-        '<b>'
+        '</b>',
+        '</strong>'
     ]
 
     for tag in ignoreTAGs:
@@ -45,8 +55,6 @@ def ignoreTAG(line):
     return False
 
 def parseHTMLFiles():
-    pathWiki = r'output\\wiki.wiki'
-
     targetFile = open(pathWiki, 'w+', encoding='utf-8')
 
     # Get all source files
@@ -75,25 +83,6 @@ def parseHTMLFiles():
         linesFormatted.append('\n\n')
         linesFormatted.append(wikiLink)
         linesFormatted.append('\n\n')
-
-        # soup = bs(sourceFile, 'html.parser')
-        # paragraph = soup.p.get_text('\n\n', True)
-
-        # targetFile.write(paragraph)
-
-        # headlines = soup.find_all("h1")
-
-        # for headline in headlines:
-        #     targetFile.write("\n\n")
-        #     targetFile.write(f"=== {headline.get_text().strip()} ===")
-        #     targetFile.write("\n")
-
-        # firstHeadline = soup.find("h1")
-
-        # if (index == 0):
-        #     for child in soup.find_all():
-        #         print(child.contents)
-        #         print("------------")
 
         lines = sourceFile.readlines()
         liCount = 0
@@ -159,7 +148,7 @@ def parseHTMLFiles():
 
             if (line.startswith(r'<strong>') or
                 line.startswith(r'<b>')):
-                strongCount = True
+                strong = True
                 continue
 
             if (line.startswith(r'<h2 class="box_title">')):
@@ -172,8 +161,18 @@ def parseHTMLFiles():
         sourceFile.close()
 
         index = index =+ 1
-    targetFile.writelines(linesFormatted)
+
+    # Join all lines into one string
+    content = ''.join(linesFormatted)
+
+    # Do final replacements of weird stuff
+    content = replaceStuffInOutputFile(content)
+
+    # Write final content to file
+    targetFile.write(content)
     targetFile.close()
 
 if __name__ == '__main__':
+    pathWiki = r'output\\wiki.wiki'
+
     parseHTMLFiles()
