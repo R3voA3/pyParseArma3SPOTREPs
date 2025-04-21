@@ -1,3 +1,6 @@
+# Gets all changelogs from the BI website and stores
+# each changelog in its own file
+
 from bs4 import BeautifulSoup
 import requests
 import time
