@@ -110,6 +110,10 @@ def parseHTMLFiles():
                     isInsideHref = False
                 continue
 
+            if (line.startswith(r')')):
+                linesFormatted[-1] = linesFormatted[-1].strip() + r')' + r'\n'
+                continue
+
             if (liCount == 1):
                 lineFormatted = "* " + lineFormatted
 
