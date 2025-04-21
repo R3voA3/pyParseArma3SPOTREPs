@@ -90,10 +90,25 @@ def parseHTMLFiles():
         h2 = False
         strong = False
         boxInNextLine = False
+        isInsideHref = False
 
         for line in lines:
             line = line.lstrip()
             lineFormatted = line.lstrip()
+
+            # href detection
+            # anything between <href> and </a> is treated as one line
+            # and is added to the previous line
+            if ('href' in line or isInsideHref):
+                linesFormatted[-1] = linesFormatted[-1].strip() + ' ' + line.strip()
+                isInsideHref = True
+
+                # End of href reached
+                if ('</a>' in line):
+                    # Add an extra line break after </a>
+                    linesFormatted[-1] = linesFormatted[-1] + '\n'
+                    isInsideHref = False
+                continue
 
             if (liCount == 1):
                 lineFormatted = "* " + lineFormatted
